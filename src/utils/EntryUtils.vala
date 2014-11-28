@@ -16,6 +16,9 @@
 * with Calculus. If not, see http://www.gnu.org/licenses/.
 */
 
+using Calculus.Core;
+using Calculus.Core.Methods;
+
 namespace Calculus.Utils {
     public class EntryUtils : Object {
         public Gtk.Entry entry;
@@ -39,6 +42,25 @@ namespace Calculus.Utils {
         
         public void delEntry () {
             entry.set_text ("");
+        }
+        
+        public void calcEntry () {
+            if (entry.get_text () != "") {
+                string text = entry.get_text ();
+                TokenQueue tq = new TokenQueue (text);
+                for (int i = 0; i <= tq.get_max_pos (); i++) {
+                    stdout.printf (tq.get_token (i).get_content () + " ");
+                }
+                stdout.printf ("\n");
+                
+                List<Token> token_list = Methods.shunting_yard (tq);
+                foreach (Token token in token_list) {
+                    stdout.printf (token.get_content ().to_string () + " ");   
+                }
+                stdout.printf ("\n");
+                //double out_d = Methods.eval_postfix (token_list);
+                //entry.set_text (out_d.to_string ());
+            }
         }
     }
 }

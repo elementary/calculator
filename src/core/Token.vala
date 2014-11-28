@@ -16,27 +16,27 @@
 * with Calculus. If not, see http://www.gnu.org/licenses/.
 */
 
-using Gtk;
-using Granite.Widgets;
-
-namespace Calculus.Widgets {
-    public class Stack : Gtk.Stack {
-        public Calculus.Widgets.StandardWidget standard;
-        public Calculus.Widgets.ConversionWidget conversion;
+namespace Calculus.Core {
+    public enum TokenType {
+        NUMBER,
+        OPERATOR,
+        FUNCTION,
+        SEPARATOR,
+        PARENTHESIS_LEFT,
+        PARENTHESIS_RIGHT;
+    }
+    
+    public class Token : Object {
+        private string content;
+        private TokenType token_type;
         
-        public Stack () {
-            standard = new Calculus.Widgets.StandardWidget ();
-            conversion = new Calculus.Widgets.ConversionWidget ();
-            
-            this.set_transition_type (Gtk.StackTransitionType.SLIDE_UP_DOWN);
-            this.set_transition_duration (150);
-            
-            this.add_named (standard, "Standard");
-            this.add_named (conversion, "Conversion");
-            this.set_visible_child_name ("Standard");
-        
-            this.show_all ();
+        public Token (string in_content, TokenType in_token_type) {
+            content = in_content;
+            token_type = in_token_type;
         }
+        
+        public string get_content () { return content; }
+        public TokenType get_token_type () { return token_type; }
+        
     }
 }
-

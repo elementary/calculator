@@ -18,6 +18,7 @@
 
 using Gtk;
 using Granite.Widgets;
+using Calculus.Widgets;
 
 namespace Calculus.Widgets {
     public class Toolbar : Gtk.HeaderBar {
@@ -25,7 +26,7 @@ namespace Calculus.Widgets {
         private AppMenu app_menu;
         private Gtk.ComboBoxText combobox;
         
-        public Toolbar (Granite.Application app, Calculus.Widgets.Stack stack) {
+        public Toolbar (Granite.Application app, WidgetStack stack) {
             // Toolbar properties
             // compliant with elementary HIG
             get_style_context ().add_class ("primary-toolbar");

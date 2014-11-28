@@ -20,11 +20,11 @@ using Calculus.Widgets;
 
 namespace Calculus {
     public class CalculusApp : Granite.Application {
-        public Calculus.Widgets.Toolbar toolbar; 
-        private Calculus.Widgets.Stack stack;
+        public Toolbar toolbar; 
+        private WidgetStack stack;
     
         construct {
-            application_id = "org.embik.Calculus";
+            application_id = "org.Calculus";
             flags = ApplicationFlags.FLAGS_NONE;
                     
             program_name = "Calculus";
@@ -33,7 +33,7 @@ namespace Calculus {
             build_version = "0.1";
             app_icon = "accessories-calculator";
                     
-            about_authors = { "Marvin Beckers <ma-be@posteo.de>" };
+            about_authors = { "Marvin Beckers <marvin.beckers@posteo.de>" };
             about_comments = "a simple calc tool for elementary OS";
             about_license_type = Gtk.License.GPL_3_0;
             
@@ -47,9 +47,9 @@ namespace Calculus {
             this.add_window (window);
             
             // Main stack widget structure
-            stack = new Calculus.Widgets.Stack ();
+            stack = new WidgetStack ();
 
-            var toolbar = new Calculus.Widgets.Toolbar (this, stack);
+            var toolbar = new Toolbar (this, stack);
             
             window.set_titlebar (toolbar);       
             window.add (stack);

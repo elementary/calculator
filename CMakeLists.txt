@@ -1,4 +1,4 @@
-project (granite-calc)
+project (calculus)
 
 cmake_minimum_required (VERSION 2.8)
 
@@ -11,9 +11,11 @@ set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
 # what to call that directory where we install data too
 set (PKGDATADIR "${DATADIR}/calculus")
 set (EXEC_NAME "calculus")
-set (RELEASE_NAME "An app for simple calculations.")
+set (GETTEXT_PACKAGE "calculus")
+set (RELEASE_NAME "An elementary app for simple calculation.")
 set (VERSION "0.1")
 set (VERSION_INFO "initial development tries.")
+set (DOLLAR "$")
 
 # we're about to use pkgconfig to make sure dependencies are installed so let's find pkgconfig first
 find_package(PkgConfig)
@@ -30,17 +32,21 @@ link_directories(${DEPS_LIBRARY_DIRS})
 # make sure we have vala
 find_package(Vala REQUIRED)
 include(ValaVersion)
-ensure_vala_version("0.16" MINIMUM)
+ensure_vala_version("0.22" MINIMUM)
 
 # files we want to compile
 include(ValaPrecompile)
 vala_precompile(VALA_C ${EXEC_NAME}
-    src/Application.vala 
-    src/widgets/ToolBar.vala 
-    src/widgets/Stack.vala
+    src/Calculus.vala 
+    src/widgets/WidgetStack.vala
+    src/widgets/ToolBar.vala
     src/widgets/StandardWidget.vala
     src/widgets/ConversionWidget.vala
     src/utils/EntryUtils.vala
+    src/core/Stack.vala
+    src/core/Token.vala
+    src/core/TokenQueue.vala
+    src/core/Methods.vala
 
 # tell what libraries to use when compiling
 PACKAGES

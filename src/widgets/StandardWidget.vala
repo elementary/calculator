@@ -18,6 +18,8 @@
 
 using Gtk;
 using Granite.Widgets;
+using Calculus.Core;
+using Calculus.Core.Methods;
 
 namespace Calculus.Widgets {
     public class StandardWidget : Gtk.Grid {
@@ -25,6 +27,7 @@ namespace Calculus.Widgets {
         private Calculus.Utils.EntryUtils eutils;
         
         public StandardWidget () {
+            
             this.expand = true;
             this.orientation = Gtk.Orientation.VERTICAL;
             this.set_column_spacing (2);
@@ -39,8 +42,11 @@ namespace Calculus.Widgets {
             
             var button_back = new Gtk.Button.from_icon_name ("go-previous", Gtk.IconSize.SMALL_TOOLBAR);
             button_back.set_size_request(50, 40);
+            button_back.hexpand = true;
+            
             var button_del = new Gtk.Button.from_icon_name ("dialog-close", Gtk.IconSize.SMALL_TOOLBAR);
             button_del.set_size_request(50, 40);
+            button_del.hexpand = true;
             
             var button_add = new Gtk.Button.with_label ("+");
             var button_sub = new Gtk.Button.with_label ("-");
@@ -123,7 +129,7 @@ namespace Calculus.Widgets {
             button_percent.clicked.connect (() => { eutils.addToEntry ("%"); });
             
             button_calc.clicked.connect (() => {
-
+                eutils.calcEntry ();
             });
             
             button_del.clicked.connect (() => { 
