@@ -55,40 +55,70 @@ namespace Calculus.Core {
                 symbol = temp.slice (0, 1);
                 temp = temp.slice (1, temp.length);
                 
-                if (symbol == "1" || symbol == "2" || symbol == "3" || symbol == "4" 
-                || symbol == "5" || symbol == "6" || symbol == "7" || symbol == "8"
-                || symbol == "9" || symbol == "0" || symbol == ".") {
+                switch (symbol) {
+                case "1": case "2": case "3": case "4":
+                case "5": case "6": case "7": case "8":
+                case "9": case "0": case ".":
                     numbers.append (symbol);
-                } else if (symbol == "+" || symbol == "-" || symbol == "/" || symbol == "*" || symbol == "^") {
+                    break;
+                case "+": case "-": case "*": case "/":
+                case "^":
                     if (numbers.length () != 0) {
                         temp_numbers = "";
+                        
                         foreach (string n in numbers) 
                             temp_numbers = temp_numbers + n;
+                            
                         this.add (new Token (temp_numbers, TokenType.NUMBER));
                         numbers = new List<string> ();
                     }
                     this.add (new Token (symbol, TokenType.OPERATOR));
-                } else if (symbol == ",") {
+                    break;
+                case ",":
                     temp_numbers = "";
+                    
                     foreach (string n in numbers) 
                         temp_numbers = temp_numbers + n;
+                        
                     this.add (new Token (temp_numbers, TokenType.NUMBER));
                     numbers = new List<string> ();
                     this.add (new Token (",", TokenType.SEPARATOR));
-                } else if (symbol == "(") {
-                    this.add (new Token ("(", TokenType.PARENTHESIS_LEFT));
-                } else if (symbol == ")") {
+                    break;
+                case "(":
                     if (numbers.length () != 0) {
                         temp_numbers = "";
-                        foreach (string n in numbers) {
+                        
+                        foreach (string n in numbers)
                             temp_numbers = temp_numbers + n;
-                            //stdout.printf (" _" + n + "_ ");
-                            }
-                            stdout.printf("\n");
+                            
+                        this.add (new Token (temp_numbers, TokenType.NUMBER));
+                        this.add (new Token ("*", TokenType.OPERATOR));
+                    }
+                    this.add (new Token ("(", TokenType.PARENTHESIS_LEFT));
+                    break;
+                case ")":
+                
+                    if (numbers.length () != 0) {
+                        temp_numbers = "";
+                        
+                        foreach (string n in numbers) 
+                            temp_numbers = temp_numbers + n;
+
                         this.add (new Token (temp_numbers, TokenType.NUMBER));
                         numbers = new List<string> ();
                     }
                     this.add (new Token (")", TokenType.PARENTHESIS_RIGHT));
+                    break;
+                case "%":
+                    temp_numbers = "";
+                    
+                    foreach (string n in numbers)
+                        temp_numbers = temp_numbers + n;
+                    
+                    double temp_d = double.parse (temp_numbers) / 100;
+                    this.add (new Token (temp_d.to_string (), TokenType.NUMBER));
+                    numbers = new List<string> ();
+                    break;
                 } 
             }
             

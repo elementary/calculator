@@ -45,9 +45,11 @@ namespace Calculus.Core.Utils {
             if (entry.get_text () != "") {
                 string text = entry.get_text ();
                 TokenQueue tq = new TokenQueue (text);
-                List<Token> token_list = CoreMethods.shunting_yard (tq);
-                double out_d = CoreMethods.eval_postfix (token_list);
-                entry.set_text (out_d.to_string ());
+                try {
+                    List<Token> token_list = CoreMethods.shunting_yard (tq);
+                    double out_d = CoreMethods.eval_postfix (token_list);
+                    entry.set_text (out_d.to_string ());
+                } catch (ShuntingYardError e) { }
             }
         }
     }

@@ -19,22 +19,33 @@
 using Calculus.Widgets;
 
 namespace Calculus {
+    const string GETTEXT_PACKAGE = "calculus"; 
+    
     public class CalculusApp : Granite.Application {
         public Toolbar toolbar; 
         private WidgetStack stack;
     
         construct {
-            application_id = "org.Calculus";
+            application_id = "org.calculus";
             flags = ApplicationFlags.FLAGS_NONE;
                     
-            program_name = "Calculus";
+            program_name = _("Calculator");
             app_years = "2014";
-                
-            build_version = "0.1";
             app_icon = "accessories-calculator";
-                    
+            
+            build_data_dir = Build.DATADIR;
+            build_pkg_data_dir = Build.PKGDATADIR;
+            build_release_name = Build.RELEASE_NAME;
+            build_version = Build.VERSION;
+            build_version_info = Build.VERSION_INFO;
+            
+            app_launcher = "calculus.desktop";
+            application_id = "net.launchpad.calculus";
+            main_url = "https://launchpad.net/calculus";
+            bug_url = "https://bugs.launchpad.net/calculus";
+            help_url = "https://answers.launchpad.net/calculus";        
             about_authors = { "Marvin Beckers <marvin.beckers@posteo.de>" };
-            about_comments = "a simple calc tool for elementary OS";
+            about_comments = _("A simple calc tool for elementary OS.");
             about_license_type = Gtk.License.GPL_3_0;
             
         }
@@ -60,6 +71,11 @@ namespace Calculus {
     }
     
     public static int main (string[] args) {
+        Intl.setlocale(LocaleCategory.MESSAGES, "");
+        Intl.textdomain(GETTEXT_PACKAGE); 
+        Intl.bind_textdomain_codeset(GETTEXT_PACKAGE, "utf-8"); 
+        Intl.bindtextdomain(GETTEXT_PACKAGE, "./po"); 
+        
         var application = new CalculusApp ();
         return application.run (args);
     }

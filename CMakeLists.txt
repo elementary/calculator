@@ -5,17 +5,19 @@ cmake_minimum_required (VERSION 2.8)
 # tell cmake where its modules can be found in our project directory
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
-# where we install data directory (if we have any)
 set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
-
-# what to call that directory where we install data too
 set (PKGDATADIR "${DATADIR}/calculus")
+set (GETTEXT_PACKAGE "calculus")
 set (EXEC_NAME "calculus")
 set (GETTEXT_PACKAGE "calculus")
 set (RELEASE_NAME "An elementary app for simple calculation.")
 set (VERSION "0.1")
-set (VERSION_INFO "initial development tries.")
+set (VERSION_INFO "Alpha")
 set (DOLLAR "$")
+
+configure_file (${CMAKE_SOURCE_DIR}/config.h.cmake ${CMAKE_BINARY_DIR}/config.h)
+add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
+
 
 # we're about to use pkgconfig to make sure dependencies are installed so let's find pkgconfig first
 find_package(PkgConfig)
@@ -39,7 +41,7 @@ include(ValaPrecompile)
 vala_precompile(VALA_C ${EXEC_NAME}
     src/Calculus.vala 
     src/widgets/WidgetStack.vala
-    src/widgets/ToolBar.vala
+    src/widgets/Toolbar.vala
     src/widgets/StandardWidget.vala
     src/widgets/ConversionWidget.vala
     src/core/Stack.vala
@@ -47,15 +49,19 @@ vala_precompile(VALA_C ${EXEC_NAME}
     src/core/TokenQueue.vala
     src/core/utils/Entry.vala
     src/core/methods/CoreMethods.vala
-
-# tell what libraries to use when compiling
 PACKAGES
-    gtk+-3.0 
+    gtk+-3.0
     granite
+CUSTOM_VAPIS
+    vapi/config.vapi
+OPTIONS
+    --vapidir=${CMAKE_CURRENT_SOURCE_DIR}/vapi/
 )
+
 
 # tell cmake what to call the executable we just made
 add_executable(${EXEC_NAME} ${VALA_C})
+add_subdirectory (po)
 
 # install the binaries we just made
 install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
