@@ -52,6 +52,8 @@ namespace Calculus.Utils {
                     stdout.printf (tq.get_token (i).get_content () + " ");
                 }
                 stdout.printf ("\n");
+                stdout.printf ("Max Pos: " + tq.get_max_pos ().to_string () + "\n");
+                stdout.printf ("Element an Max Pos: " + tq.get_token (tq.get_max_pos ()).get_content () + "\n");
                 
                 List<Token> token_list = Methods.shunting_yard (tq);
                 foreach (Token token in token_list) {

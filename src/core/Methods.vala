@@ -57,21 +57,24 @@ namespace Calculus.Core.Methods {
                 if (opStack.peek ().get_token_type () != TokenType.PARENTHESIS_LEFT)
                     throw new ShuntingYardError.MISPLACED_MISMATCHED ("Either the seperatotor was misplaced or parentheses were mismatched.");
                 break;
-                
+             
             // (4) If the token is an operator, o1, then:
             case TokenType.OPERATOR:
-                // (4.1) while there is an operator token, o2, at the top of the stack, and
-                // (4.1) either o1 is left-associative and its precedence is *less than or equal* to that of o2,
-                // (4.1) or o1 if right associative, and has precedence *less than* that of o2,
-                // (4.1) then pop o2 off the stack, onto the output queue;
-                while (opStack.is_length (0) == false) {
-                    if (get_fixity (tq.get_token (i)) == Fixity.LEFT && get_precedence (tq.get_token (i)) <= get_precedence (opStack.peek ())
-                        || (get_fixity (tq.get_token (i)) == Fixity.RIGHT && get_precedence (tq.get_token (i)) < get_precedence (opStack.peek ())))
-                        output.append (opStack.pop ());
+                
+                Token op1 = tq.get_token (i);
+                Token op2 = opStack.peek ();
+                
+                while (!opStack.empty () && op2.get_token_type () == TokenType.OPERATOR &&              // (4.1) while there is an operator token, o2, at the top of the stack, and
+                (get_fixity (op2) == Fixity.LEFT && (get_precedence (op1) <= get_precedence (op2)) ||   // (4.1.1) either o1 is left-associative and its precedence is *less than or equal* to that of o2,
+                (get_fixity (op2) == Fixity.RIGHT && (get_precedence (op1) < get_precedence (op2)))     // (4.1.2) or o1 if right associative, and has precedence *less than* that of o2,
+                )) {      
+                    // (4.1.3) then pop o2 off the stack, onto the output queue;
+                    output.append (opStack.pop ());
+                    op2 = opStack.peek ();
                 }
                     
                 // (4.2) push o1 the stack.
-                opStack.push (tq.get_token (i));
+                opStack.push (op1);
                 
                 break;
             
@@ -83,6 +86,11 @@ namespace Calculus.Core.Methods {
             // (6) If the token is a right parenthesis:
             case TokenType.PARENTHESIS_RIGHT:
                 // (6.1) Until the token at the top of the stack is a left parenthesis, pop operators off the stack onto the output queue.
+                while (!(opStack.peek ().get_token_type () == TokenType.PARENTHESIS_LEFT) && !(opStack.empty ())) {
+                    output.append (opStack.pop ());
+                }
+                if (!(opStack.empty ())) 
+                    opStack.pop ();
                 // (6.2) Pop the left parenthesis from the stack, but not onto the output queue.
                 // (6.3) If the token at the top of the stack is a function token, pop it onto the output queue.
                 if (opStack.peek ().get_token_type () == TokenType.FUNCTION) 
@@ -154,9 +162,9 @@ namespace Calculus.Core.Methods {
     }
     
     private int get_precedence (Token t) {
-        /*  3 = exponents and roots
-            2 = multiplication and division
-            1 = addition and subtraction   */
+        //  3 = exponents and roots
+        //  2 = multiplication and division
+        //  1 = addition and subtraction   
         
         switch (t.get_content ()) {
             case "+": case "-":

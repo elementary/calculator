@@ -42,6 +42,10 @@ namespace Calculus.Core {
             return stack_array[stack_array.length - 1];
         }
         
+        public bool empty () {
+            return this.is_length (0);
+        }
+        
         public bool is_length (int in_length) {
             return (in_length == stack_array.length);
         }
