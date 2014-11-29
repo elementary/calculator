@@ -42,11 +42,11 @@ vala_precompile(VALA_C ${EXEC_NAME}
     src/widgets/ToolBar.vala
     src/widgets/StandardWidget.vala
     src/widgets/ConversionWidget.vala
-    src/utils/EntryUtils.vala
     src/core/Stack.vala
     src/core/Token.vala
     src/core/TokenQueue.vala
-    src/core/Methods.vala
+    src/core/utils/Entry.vala
+    src/core/methods/CoreMethods.vala
 
 # tell what libraries to use when compiling
 PACKAGES

@@ -18,11 +18,12 @@
 
 using Gtk;
 using Granite.Widgets;
+using Calculus.Core;
 
 namespace Calculus.Widgets {
     public class ConversionWidget : Gtk.Grid {
         public Gtk.Entry main_entry;
-        private Calculus.Utils.EntryUtils eutils;
+        private Core.Utils.Entry utils;
         
         public ConversionWidget () {
             this.expand = true;
@@ -34,7 +35,7 @@ namespace Calculus.Widgets {
             main_entry = new Gtk.Entry ();
             main_entry.set_size_request (250, 40);
             
-            eutils = new Calculus.Utils.EntryUtils (main_entry);
+            utils = new Core.Utils.Entry (main_entry);
             
             var button_back = new Gtk.Button.from_icon_name ("go-previous", Gtk.IconSize.SMALL_TOOLBAR);
             button_back.set_size_request(50, 40);

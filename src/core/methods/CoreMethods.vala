@@ -18,7 +18,7 @@
 
 using Calculus.Core;
 
-namespace Calculus.Core.Methods {
+namespace Calculus.Core.CoreMethods {
     public errordomain ShuntingYardError {
         MISPLACED_MISMATCHED,
         PARENTHESIS_MISPLACED
@@ -118,7 +118,6 @@ namespace Calculus.Core.Methods {
         Stack<Token> stack = new Stack<Token> ();
         
         foreach (Token t in in_tokenlist) {
-            //stdout.printf (t.get_content () + "\n");
             if (t.get_token_type () == TokenType.NUMBER) {
                 stack.push (t);
             } else if (t.get_token_type () == TokenType.OPERATOR) {

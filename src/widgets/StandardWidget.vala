@@ -19,12 +19,11 @@
 using Gtk;
 using Granite.Widgets;
 using Calculus.Core;
-using Calculus.Core.Methods;
 
 namespace Calculus.Widgets {
     public class StandardWidget : Gtk.Grid {
         public Gtk.Entry main_entry;
-        private Calculus.Utils.EntryUtils eutils;
+        private Core.Utils.Entry utils;
         
         public StandardWidget () {
             
@@ -38,7 +37,7 @@ namespace Calculus.Widgets {
             main_entry.set_size_request (250, 40);
             this.attach (main_entry, 0, 0, 3, 1);
             
-            eutils = new Calculus.Utils.EntryUtils (main_entry);
+            utils = new Core.Utils.Entry (main_entry);
             
             var button_back = new Gtk.Button.from_icon_name ("go-previous", Gtk.IconSize.SMALL_TOOLBAR);
             button_back.set_size_request(50, 40);
@@ -106,38 +105,38 @@ namespace Calculus.Widgets {
             this.attach (button_bracket_right, 5, 3, 1, 1);
             this.attach (button_calc, 4, 4, 2, 1);
             
-            button_0.clicked.connect (() => { eutils.addToEntry ("0"); });
-            button_1.clicked.connect (() => { eutils.addToEntry ("1"); });
-            button_2.clicked.connect (() => { eutils.addToEntry ("2"); });
-            button_3.clicked.connect (() => { eutils.addToEntry ("3"); });
-            button_4.clicked.connect (() => { eutils.addToEntry ("4"); });
-            button_5.clicked.connect (() => { eutils.addToEntry ("5"); });
-            button_6.clicked.connect (() => { eutils.addToEntry ("6"); });
-            button_7.clicked.connect (() => { eutils.addToEntry ("7"); });
-            button_8.clicked.connect (() => { eutils.addToEntry ("8"); });
-            button_9.clicked.connect (() => { eutils.addToEntry ("9"); });
+            button_0.clicked.connect (() => { utils.add ("0"); });
+            button_1.clicked.connect (() => { utils.add ("1"); });
+            button_2.clicked.connect (() => { utils.add ("2"); });
+            button_3.clicked.connect (() => { utils.add ("3"); });
+            button_4.clicked.connect (() => { utils.add ("4"); });
+            button_5.clicked.connect (() => { utils.add ("5"); });
+            button_6.clicked.connect (() => { utils.add ("6"); });
+            button_7.clicked.connect (() => { utils.add ("7"); });
+            button_8.clicked.connect (() => { utils.add ("8"); });
+            button_9.clicked.connect (() => { utils.add ("9"); });
             
-            button_add.clicked.connect (() => { eutils.addToEntry ("+"); });
-            button_sub.clicked.connect (() => { eutils.addToEntry ("-"); });
-            button_div.clicked.connect (() => { eutils.addToEntry ("/"); });
-            button_mult.clicked.connect (() => { eutils.addToEntry ("*"); });
+            button_add.clicked.connect (() => { utils.add ("+"); });
+            button_sub.clicked.connect (() => { utils.add ("-"); });
+            button_div.clicked.connect (() => { utils.add ("/"); });
+            button_mult.clicked.connect (() => { utils.add ("*"); });
             
-            button_bracket_left.clicked.connect (() => { eutils.addToEntry ("("); });
-            button_bracket_right.clicked.connect (() => { eutils.addToEntry (")"); });
+            button_bracket_left.clicked.connect (() => { utils.add ("("); });
+            button_bracket_right.clicked.connect (() => { utils.add (")"); });
             
-            button_point.clicked.connect (() => { eutils.addToEntry ("."); });
-            button_percent.clicked.connect (() => { eutils.addToEntry ("%"); });
+            button_point.clicked.connect (() => { utils.add ("."); });
+            button_percent.clicked.connect (() => { utils.add ("%"); });
             
             button_calc.clicked.connect (() => {
-                eutils.calcEntry ();
+                utils.calc ();
             });
             
             button_del.clicked.connect (() => { 
-                eutils.delEntry ();
+                utils.del ();
             });
             
             button_back.clicked.connect (() => {
-                eutils.backEntry ();
+                utils.back ();
             });
             
             this.show_all ();
