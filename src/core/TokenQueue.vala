@@ -60,11 +60,13 @@ namespace Calculus.Core {
                 || symbol == "9" || symbol == "0" || symbol == ".") {
                     numbers.append (symbol);
                 } else if (symbol == "+" || symbol == "-" || symbol == "/" || symbol == "*" || symbol == "^") {
-                    temp_numbers = "";
-                    foreach (string n in numbers) 
-                        temp_numbers = temp_numbers + n;
-                    this.add (new Token (temp_numbers, TokenType.NUMBER));
-                    numbers = new List<string> ();
+                    if (numbers.length () != 0) {
+                        temp_numbers = "";
+                        foreach (string n in numbers) 
+                            temp_numbers = temp_numbers + n;
+                        this.add (new Token (temp_numbers, TokenType.NUMBER));
+                        numbers = new List<string> ();
+                    }
                     this.add (new Token (symbol, TokenType.OPERATOR));
                 } else if (symbol == ",") {
                     temp_numbers = "";
@@ -73,7 +75,21 @@ namespace Calculus.Core {
                     this.add (new Token (temp_numbers, TokenType.NUMBER));
                     numbers = new List<string> ();
                     this.add (new Token (",", TokenType.SEPARATOR));
-                }
+                } else if (symbol == "(") {
+                    this.add (new Token ("(", TokenType.PARENTHESIS_LEFT));
+                } else if (symbol == ")") {
+                    if (numbers.length () != 0) {
+                        temp_numbers = "";
+                        foreach (string n in numbers) {
+                            temp_numbers = temp_numbers + n;
+                            //stdout.printf (" _" + n + "_ ");
+                            }
+                            stdout.printf("\n");
+                        this.add (new Token (temp_numbers, TokenType.NUMBER));
+                        numbers = new List<string> ();
+                    }
+                    this.add (new Token (")", TokenType.PARENTHESIS_RIGHT));
+                } 
             }
             
             /*  check if there is anything left in numbers (most likely it is)  */

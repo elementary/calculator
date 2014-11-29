@@ -48,20 +48,16 @@ namespace Calculus.Utils {
             if (entry.get_text () != "") {
                 string text = entry.get_text ();
                 TokenQueue tq = new TokenQueue (text);
-                for (int i = 0; i <= tq.get_max_pos (); i++) {
-                    stdout.printf (tq.get_token (i).get_content () + " ");
-                }
+                for (int i = 0; i <= tq.get_max_pos (); i++) 
+                    stdout.printf (tq.get_token (i).get_content () + " | " + tq.get_token (i).get_token_type ().to_string () + "\n");
                 stdout.printf ("\n");
-                stdout.printf ("Max Pos: " + tq.get_max_pos ().to_string () + "\n");
-                stdout.printf ("Element an Max Pos: " + tq.get_token (tq.get_max_pos ()).get_content () + "\n");
-                
                 List<Token> token_list = Methods.shunting_yard (tq);
-                foreach (Token token in token_list) {
-                    stdout.printf (token.get_content ().to_string () + " ");   
-                }
+                foreach (Token t  in token_list)
+                    stdout.printf (t.get_content () + " | " + t.get_token_type ().to_string () + "\n");
                 stdout.printf ("\n");
-                //double out_d = Methods.eval_postfix (token_list);
-                //entry.set_text (out_d.to_string ());
+                double out_d = Methods.eval_postfix (token_list);
+                //stdout.printf (out_d.to_string () + "\n");
+                entry.set_text (out_d.to_string ());
             }
         }
     }
