@@ -18,11 +18,9 @@
 
 using Calculus.Widgets;
 
-namespace Calculus {
-    const string GETTEXT_PACKAGE = Build.GETTEXT_PACKAGE; 
-    
+namespace Calculus { 
     public class CalculusApp : Granite.Application {
-        public Toolbar toolbar; 
+        public Calculus.Widgets.Toolbar toolbar; 
         private WidgetStack stack;
     
         construct {
@@ -61,7 +59,7 @@ namespace Calculus {
             // Main stack widget structure
             stack = new WidgetStack ();
 
-            var toolbar = new Toolbar (this, stack);
+            var toolbar = new Calculus.Widgets.Toolbar (this, stack);
             
             window.set_titlebar (toolbar);       
             window.add (stack);
@@ -72,10 +70,6 @@ namespace Calculus {
     }
     
     public static int main (string[] args) {
-        Intl.textdomain(GETTEXT_PACKAGE); 
-        Intl.bind_textdomain_codeset(GETTEXT_PACKAGE, "utf-8"); 
-        Intl.bindtextdomain(GETTEXT_PACKAGE, "./po"); 
-        
         var application = new CalculusApp ();
         return application.run (args);
     }

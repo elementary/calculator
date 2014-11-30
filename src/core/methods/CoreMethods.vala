@@ -124,8 +124,16 @@ namespace Calculus.Core.CoreMethods {
                 Token right = stack.pop ();
                 Token left = stack.pop ();
                 stack.push (compute_tokens (left, t, right));
-            } else {
+            } else if (t.get_token_type () == TokenType.FUNCTION) {
                 // TODO Implement function evaluating
+                switch (t.get_content ()) {
+                    case "sin":
+                        if (!stack.empty ()) {
+                            Token func_token = stack.pop ();
+                            //Token push_token = new Token ((GLib.Math.sin (double.parse (func_token.get_content ()))).to_string (), TokenType.NUMBER);
+                        }
+                        break;
+                }
             }
         }
         

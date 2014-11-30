@@ -41,7 +41,10 @@ namespace Calculus.Core.Utils {
         public void calc () {
             if (entry.get_text () != "") {
                 string text = entry.get_text ();
-                TokenQueue tq = new TokenQueue (text);
+                TokenQueue tq = null;
+                try {
+                    tq = new TokenQueue (text);
+                } catch (ParserError e) { }
                 try {
                     List<Token> token_list = CoreMethods.shunting_yard (tq);
                     double out_d = CoreMethods.eval_postfix (token_list);
