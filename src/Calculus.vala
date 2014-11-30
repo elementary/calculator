@@ -19,7 +19,7 @@
 using Calculus.Widgets;
 
 namespace Calculus {
-    const string GETTEXT_PACKAGE = "calculus"; 
+    const string GETTEXT_PACKAGE = Build.GETTEXT_PACKAGE; 
     
     public class CalculusApp : Granite.Application {
         public Toolbar toolbar; 
@@ -72,7 +72,6 @@ namespace Calculus {
     }
     
     public static int main (string[] args) {
-        Intl.setlocale(LocaleCategory.MESSAGES, "");
         Intl.textdomain(GETTEXT_PACKAGE); 
         Intl.bind_textdomain_codeset(GETTEXT_PACKAGE, "utf-8"); 
         Intl.bindtextdomain(GETTEXT_PACKAGE, "./po"); 
