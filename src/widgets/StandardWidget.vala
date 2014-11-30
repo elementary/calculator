@@ -24,9 +24,23 @@ namespace Calculus.Widgets {
     public class StandardWidget : Gtk.Grid {
         public Gtk.Entry main_entry;
         private Core.Utils.Entry utils;
+
+        private string[] button_types = { "0", "1", "2", "3",
+                                          "4", "5", "6", "7",
+                                          "8", "9", "0", "+",
+                                          "-", "*", "/", "%",
+                                          ".", "(", ")" };
         
+        private void button_clicked (Gtk.Button btn) {
+            var label = btn.get_label ();
+            foreach (var val in button_types) {
+                if (label == val) {
+                    utils.add (val);
+                    break;
+                }
+            }
+        }
         public StandardWidget () {
-            
             this.expand = true;
             this.orientation = Gtk.Orientation.VERTICAL;
             this.set_column_spacing (2);
@@ -105,27 +119,27 @@ namespace Calculus.Widgets {
             this.attach (button_bracket_right, 5, 3, 1, 1);
             this.attach (button_calc, 4, 4, 2, 1);
             
-            button_0.clicked.connect (() => { utils.add ("0"); });
-            button_1.clicked.connect (() => { utils.add ("1"); });
-            button_2.clicked.connect (() => { utils.add ("2"); });
-            button_3.clicked.connect (() => { utils.add ("3"); });
-            button_4.clicked.connect (() => { utils.add ("4"); });
-            button_5.clicked.connect (() => { utils.add ("5"); });
-            button_6.clicked.connect (() => { utils.add ("6"); });
-            button_7.clicked.connect (() => { utils.add ("7"); });
-            button_8.clicked.connect (() => { utils.add ("8"); });
-            button_9.clicked.connect (() => { utils.add ("9"); });
+            button_0.clicked.connect (button_clicked);
+            button_1.clicked.connect (button_clicked);
+            button_2.clicked.connect (button_clicked);
+            button_3.clicked.connect (button_clicked);
+            button_4.clicked.connect (button_clicked);
+            button_5.clicked.connect (button_clicked);
+            button_6.clicked.connect (button_clicked);
+            button_7.clicked.connect (button_clicked);
+            button_8.clicked.connect (button_clicked);
+            button_9.clicked.connect (button_clicked);
             
-            button_add.clicked.connect (() => { utils.add ("+"); });
-            button_sub.clicked.connect (() => { utils.add ("-"); });
-            button_div.clicked.connect (() => { utils.add ("/"); });
-            button_mult.clicked.connect (() => { utils.add ("*"); });
+            button_add.clicked.connect (button_clicked);
+            button_sub.clicked.connect (button_clicked);
+            button_div.clicked.connect (button_clicked);
+            button_mult.clicked.connect (button_clicked);
             
-            button_bracket_left.clicked.connect (() => { utils.add ("("); });
-            button_bracket_right.clicked.connect (() => { utils.add (")"); });
+            button_bracket_left.clicked.connect (button_clicked);
+            button_bracket_right.clicked.connect (button_clicked);
             
-            button_point.clicked.connect (() => { utils.add ("."); });
-            button_percent.clicked.connect (() => { utils.add ("%"); });
+            button_point.clicked.connect (button_clicked);
+            button_percent.clicked.connect (button_clicked);
             
             button_calc.clicked.connect (() => {
                 utils.calc ();
