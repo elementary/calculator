@@ -31,10 +31,7 @@ namespace Calculus.Core.Utils {
         }
         
         public void back () {
-            string str = "";
-            if (entry.get_text ().length != 0)
-                str = str.slice (0, (entry.get_text ().length - 1));
-            entry.set_text (str);
+            entry.backspace ();
         }
         
         public void del () {
