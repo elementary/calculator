@@ -34,17 +34,16 @@ namespace Calculus.Widgets {
             //this.title = "GraniteCalc";
             
             menu = new Gtk.Menu ();
-            Gtk.MenuItem item_settings = new Gtk.MenuItem.with_label (_("Settings"));
-            menu.add (item_settings);
+            //Gtk.MenuItem item_settings = new Gtk.MenuItem.with_label (_("Settings"));
+            //menu.add (item_settings);
             app_menu = app.create_appmenu (this.menu);
             this.pack_end (app_menu);
             
             combobox = new Gtk.ComboBoxText ();
+            combobox.set_size_request (125, 0);
             combobox.append_text (_("Standard"));
 		    //combobox.append_text ("Extended");
 		    //combobox.append_text ("Conversion");
-		    //combobox.append_text ("Fiscal");
-		    //combobox.append_text ("Computer Science");
 		    combobox.active = 0;
 
             this.pack_end (combobox);
