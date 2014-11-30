@@ -58,10 +58,10 @@ OPTIONS
     --vapidir=${CMAKE_CURRENT_SOURCE_DIR}/vapi/
 )
 
+add_subdirectory (po)
 
 # tell cmake what to call the executable we just made
 add_executable(${EXEC_NAME} ${VALA_C})
-add_subdirectory (po)
 
 # install the binaries we just made
 install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)

@@ -43,7 +43,8 @@ namespace Calculus {
             application_id = "net.launchpad.calculus";
             main_url = "https://launchpad.net/calculus";
             bug_url = "https://bugs.launchpad.net/calculus";
-            help_url = "https://answers.launchpad.net/calculus";        
+            help_url = "https://answers.launchpad.net/calculus"; 
+            translate_url = "https://translations.launchpad.net/calculus";       
             about_authors = { "Marvin Beckers <marvin.beckers@posteo.de>" };
             about_comments = _("A simple calc tool for elementary OS.");
             about_license_type = Gtk.License.GPL_3_0;
