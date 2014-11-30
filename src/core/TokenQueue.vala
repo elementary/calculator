@@ -17,13 +17,23 @@
 */
 
 namespace Calculus.Core { 
+    public errordomain ParserError {
+        SYNTAX
+    }
+    
     public class TokenQueue : Object {
         private string input_string;
         private Token[] token_array;
+        private List<string> numbers = new List<string> ();
+        private List<string> func = new List<string> ();
         
-        public TokenQueue (string exp) {
+        public TokenQueue (string exp) throws ParserError {
             input_string = exp;
-            this.parse (exp);
+            try {
+                this.parse (exp);
+            } catch (ParserError e) {
+                throw e;
+            }
         }
         
         // public functions.
@@ -38,20 +48,13 @@ namespace Calculus.Core {
         
         private void destroy_array () { token_array.resize (0); }
         
-        private void parse (string exp) {
-            // Parser functionality.
-            /* TODO: improve this parser. it's pretty bad at the moment, but does the job I guess */
-            
+        // parsing string into tokens.
+        private void parse (string exp) throws ParserError {
             string symbol = "";
-            string symbol_old = "";
             string temp = exp.replace (" ", "");
-            List<string> numbers = new List<string> ();
-            string temp_numbers = "";
-            
             this.destroy_array ();
             
             while (temp != "") {
-                symbol_old = symbol;
                 symbol = temp.slice (0, 1);
                 temp = temp.slice (1, temp.length);
                 
@@ -61,74 +64,76 @@ namespace Calculus.Core {
                 case "9": case "0": case ".":
                     numbers.append (symbol);
                     break;
+                case "a": case "b": case "c": case "d": case "e":
+                case "f": case "g": case "h": case "i": case "j":
+                case "k": case "l": case "m": case "n": case "o":
+                case "p": case "q": case "r": case "s": case "t":
+                case "u": case "v": case "w": case "x": case "y":
+                case "z":
+                    func.append (symbol);
+                    break;
                 case "+": case "-": case "*": case "/":
                 case "^":
-                    if (numbers.length () != 0) {
-                        temp_numbers = "";
-                        
-                        foreach (string n in numbers) 
-                            temp_numbers = temp_numbers + n;
-                            
-                        this.add (new Token (temp_numbers, TokenType.NUMBER));
+                    if (!this.is_empty (numbers)) {
+                        this.add (this.create_token (numbers));
                         numbers = new List<string> ();
                     }
                     this.add (new Token (symbol, TokenType.OPERATOR));
                     break;
                 case ",":
-                    temp_numbers = "";
-                    
-                    foreach (string n in numbers) 
-                        temp_numbers = temp_numbers + n;
-                        
-                    this.add (new Token (temp_numbers, TokenType.NUMBER));
-                    numbers = new List<string> ();
+                    if (!this.is_empty (numbers)) {
+                        this.add (this.create_token (numbers));
+                        numbers = new List<string> ();
+                    }
                     this.add (new Token (",", TokenType.SEPARATOR));
                     break;
                 case "(":
-                    if (numbers.length () != 0) {
-                        temp_numbers = "";
-                        
-                        foreach (string n in numbers)
-                            temp_numbers = temp_numbers + n;
-                            
-                        this.add (new Token (temp_numbers, TokenType.NUMBER));
+                    if (!this.is_empty (numbers)) {
+                        this.add (this.create_token (numbers));
+                        numbers = new List<string> ();
                         this.add (new Token ("*", TokenType.OPERATOR));
+                    } else if (!this.is_empty (func)) {
+                        this.add (this.create_token (func, TokenType.FUNCTION));
+                        func = new List<string> ();
                     }
                     this.add (new Token ("(", TokenType.PARENTHESIS_LEFT));
                     break;
                 case ")":
-                
-                    if (numbers.length () != 0) {
-                        temp_numbers = "";
-                        
-                        foreach (string n in numbers) 
-                            temp_numbers = temp_numbers + n;
-
-                        this.add (new Token (temp_numbers, TokenType.NUMBER));
+                    if (!this.is_empty (numbers)) {
+                        this.add (this.create_token (numbers));
                         numbers = new List<string> ();
                     }
                     this.add (new Token (")", TokenType.PARENTHESIS_RIGHT));
                     break;
                 case "%":
-                    temp_numbers = "";
-                    
-                    foreach (string n in numbers)
-                        temp_numbers = temp_numbers + n;
-                    
-                    double temp_d = double.parse (temp_numbers) / 100;
-                    this.add (new Token (temp_d.to_string (), TokenType.NUMBER));
-                    numbers = new List<string> ();
+                    if (!this.is_empty (numbers)) {
+                        this.add (this.create_token (numbers, TokenType.NUMBER, true));
+                        numbers = new List<string> ();
+                    }
                     break;
                 } 
             }
             
-            /*  check if there is anything left in numbers (most likely it is)  */
-            if (numbers.length () != 0) {
-                temp_numbers = "";
-                foreach (string n in numbers) 
-                    temp_numbers = temp_numbers + n;
-                this.add (new Token (temp_numbers, TokenType.NUMBER));
-            }  
+            // check if there is anything left in numbers (most likely it is) 
+            if (!this.is_empty (numbers)) {
+                this.add (this.create_token (numbers));
+                numbers = new List<string> ();
+            }
+        }
+        
+        private bool is_empty (List<string> ls) {
+            return (ls.length () == 0);
+        }
+        
+        private Token create_token (List<string> ls, TokenType tt = TokenType.NUMBER, bool percent = false) {
+            string temp = "";
+            foreach (string s in ls) 
+                temp = temp + s;
+            if (percent == true) {
+                double temp_d = double.parse (temp) / 100;
+                temp = temp_d.to_string ();
+            }
+            return new Token (temp, tt);
         }
     }
 }

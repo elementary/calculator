@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-30 11:49+0100\n"
+"POT-Creation-Date: 2014-11-30 17:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/widgets/Toolbar.vala:37
-msgid "Settings"
-msgstr ""
-
-#: ../src/widgets/Toolbar.vala:43
+#: ../src/widgets/Toolbar.vala:42
 msgid "Standard"
 msgstr ""
 
-#: ../src/Calculus.vala:32
+#: ../src/widgets/Toolbar.vala:43
+msgid "Extended"
+msgstr ""
+
+#: ../src/widgets/Toolbar.vala:44
+msgid "Conversion"
+msgstr ""
+
+#: ../src/Calculus.vala:30
 msgid "Calculator"
 msgstr ""
 
-#: ../src/Calculus.vala:49
+#: ../src/Calculus.vala:47
 msgid "A simple calc tool for elementary OS."
 msgstr ""

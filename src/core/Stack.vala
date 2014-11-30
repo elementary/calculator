@@ -49,5 +49,9 @@ namespace Calculus.Core {
         public bool is_length (int in_length) {
             return (in_length == stack_array.length);
         }
+        
+        public int get_length () {
+            return stack_array.length;
+        }
     }
 }
