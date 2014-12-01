@@ -2,28 +2,32 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-29 20:11+0100\n"
+"POT-Creation-Date: 2014-11-30 17:06+0100\n"
 "PO-Revision-Date: 2014-11-30 05:01+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-30 06:33+0000\n"
-"X-Generator: Launchpad (build 17267)\n"
+"X-Launchpad-Export-Date: 2014-12-01 07:14+0000\n"
+"X-Generator: Launchpad (build 17274)\n"
 
-#: src/Calculus.vala:48
-msgid "A simple calc tool for elementary OS."
+#: ../src/widgets/Toolbar.vala:42
+msgid "Standard"
 msgstr ""
 
-#: src/Calculus.vala:32
+#: ../src/widgets/Toolbar.vala:43
+msgid "Extended"
+msgstr ""
+
+#: ../src/widgets/Toolbar.vala:44
+msgid "Conversion"
+msgstr ""
+
+#: ../src/Calculus.vala:30
 msgid "Calculator"
 msgstr ""
 
-#: src/widgets/Toolbar.vala:37
-msgid "Settings"
-msgstr ""
-
-#: src/widgets/Toolbar.vala:43
-msgid "Standard"
+#: ../src/Calculus.vala:47
+msgid "A simple calc tool for elementary OS."
 msgstr ""
