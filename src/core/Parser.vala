@@ -122,7 +122,7 @@ namespace Calculus.Core {
                     
                     token_list.append (new Token (symbol.to_string (), TokenType.PARENTHESIS_RIGHT));
                 } else 
-                    throw new TOKENIZE_ERROR.UNKNOWN_SYMBOL ("The encountered symbol '" + symbol+ "' is unknown.");
+                    throw new TOKENIZE_ERROR.UNKNOWN_SYMBOL ("Encountered unknown symbol '" + symbol+ "'");
             }
             
             if (numbers != "") {
@@ -216,9 +216,8 @@ namespace Calculus.Core {
                     Token left = stack.pop ();
                     stack.push (compute_tokens (left, t, right));
                 } else if (t.get_token_type () == TokenType.FUNCTION) {
-                    // TODO Implement function evaluating
                     
-                }
+                }                
             }
         
             double out_d = double.parse (stack.pop ().get_content ());
