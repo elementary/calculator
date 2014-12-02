@@ -16,14 +16,16 @@
 * with Calculus. If not, see http://www.gnu.org/licenses/.
 */
 using Gtk;
-using Calculus.Core.CoreMethods;
+using Calculus.Core;
 
 namespace Calculus.Core.Utils {
     public class Entry : Object {
         private Gtk.Entry entry;
+        private Parser parser;
         
         public Entry (Gtk.Entry e) {
             entry = e;
+            parser = new Parser ();
         }
         
         public void add (string text) {
@@ -40,16 +42,12 @@ namespace Calculus.Core.Utils {
         
         public void calc () {
             if (entry.get_text () != "") {
-                string text = entry.get_text ();
-                TokenQueue tq = null;
+                double d = 0;
                 try {
-                    tq = new TokenQueue (text);
-                } catch (ParserError e) { }
-                try {
-                    List<Token> token_list = CoreMethods.shunting_yard (tq);
-                    double out_d = CoreMethods.eval_postfix (token_list);
-                    entry.set_text (out_d.to_string ());
-                } catch (ShuntingYardError e) { }
+                    d = parser.parse (entry.get_text ());
+                } catch (PARSER_ERROR e) { stdout.printf (e.message + " \n"); }
+
+                entry.set_text (d.to_string ());
             }
         }
     }

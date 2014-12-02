@@ -9,7 +9,6 @@ set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
 set (PKGDATADIR "${DATADIR}/calculus")
 set (GETTEXT_PACKAGE "calculus")
 set (EXEC_NAME "calculus")
-set (GETTEXT_PACKAGE "calculus")
 set (RELEASE_NAME "An elementary app for simple calculation.")
 set (VERSION "0.1")
 set (VERSION_INFO "Alpha")
@@ -27,7 +26,7 @@ pkg_check_modules(DEPS REQUIRED
     granite
 )
 add_definitions(${DEPS_CFLAGS})
-link_libraries(${DEPS_LIBRARIES})
+link_libraries(${DEPS_LIBRARIES} m)
 link_directories(${DEPS_LIBRARY_DIRS})
 
 # make sure we have vala
@@ -45,9 +44,8 @@ vala_precompile(VALA_C ${EXEC_NAME}
     src/widgets/ConversionWidget.vala
     src/core/Stack.vala
     src/core/Token.vala
-    src/core/TokenQueue.vala
+    src/core/Parser.vala
     src/core/utils/Entry.vala
-    src/core/methods/CoreMethods.vala
 PACKAGES
     gtk+-3.0
     granite
