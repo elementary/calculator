@@ -53,21 +53,20 @@ namespace Calculus.Core {
         private Function[] functions = {   Function () { symbol = "sin", eval = (a) => { return Math.sin (a); } },
                                             Function () { symbol = "cos", eval = (a) => { return Math.cos (a); } }  }; 
                                         
-        public double parse (string exp) throws PARSER_ERROR {
+        public static double parse (string exp) throws PARSER_ERROR {
+            Parser parser = new Parser ();
             List<Token> tokenized_list = new List<Token> ();
-            try { tokenized_list = tokenize_string (exp); 
+            try { tokenized_list = parser.tokenize_string (exp); 
             } catch (TOKENIZE_ERROR e) { throw new PARSER_ERROR.TOKENIZE (e.message); }
             
             List<Token> sorted_token_list = new List<Token> ();
-            try { sorted_token_list = shunting_yard (tokenized_list);
+            try { sorted_token_list = parser.shunting_yard (tokenized_list);
             } catch (SHUNTING_ERROR e) { throw new PARSER_ERROR.SHUNTING (e.message); }
             
             double d = 0;
-            try { d = eval_postfix (sorted_token_list); 
+            try { d = parser.eval_postfix (sorted_token_list); 
             } catch (EVAL_ERROR e) { throw new PARSER_ERROR.EVAL (e.message); }
             
-            foreach (Token t in tokenized_list) 
-                stdout.printf (t.get_content () + " | " + t.get_token_type ().to_string () + " \n");
             return d;
         }
         

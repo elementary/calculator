@@ -16,12 +16,8 @@
 * with Calculus. If not, see http://www.gnu.org/licenses/.
 */
 
-using Calculus.Widgets;
-
 namespace Calculus { 
     public class CalculusApp : Granite.Application {
-        public Calculus.Widgets.Toolbar toolbar; 
-        private WidgetStack stack;
     
         construct {
             application_id = "org.calculus";
@@ -50,22 +46,8 @@ namespace Calculus {
         }
         
         public override void activate () {
-            var window = new Gtk.Window ();
-            window.title = "Calculus";
-            window.window_position = Gtk.WindowPosition.CENTER;
-            
+            var window = new Calculus.MainWindow ();
             this.add_window (window);
-            
-            // Main stack widget structure
-            stack = new WidgetStack ();
-
-            var toolbar = new Calculus.Widgets.Toolbar (this, stack);
-            
-            window.set_titlebar (toolbar);       
-            window.add (stack);
-            window.set_resizable (false);
-            window.show_all ();
-        
         }     
     }
     

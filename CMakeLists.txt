@@ -37,15 +37,11 @@ ensure_vala_version("0.22" MINIMUM)
 # files we want to compile
 include(ValaPrecompile)
 vala_precompile(VALA_C ${EXEC_NAME}
-    src/Calculus.vala 
-    src/widgets/WidgetStack.vala
-    src/widgets/Toolbar.vala
-    src/widgets/StandardWidget.vala
-    src/widgets/ConversionWidget.vala
+    src/Calculus.vala
+    src/MainWindow.vala
     src/core/Stack.vala
     src/core/Token.vala
     src/core/Parser.vala
-    src/core/utils/Entry.vala
 PACKAGES
     gtk+-3.0
     granite

@@ -17,41 +17,51 @@
 */
 
 using Gtk;
-using Granite.Widgets;
 using Calculus.Core;
+using Granite.Widgets;
 
-namespace Calculus.Widgets {
-    public class StandardWidget : Gtk.Grid {
-        public Gtk.Entry main_entry;
-        private Core.Utils.Entry utils;
-
+namespace Calculus {
+    public class MainWindow : Gtk.Window {
+        private Gtk.HeaderBar headerbar;
+        private Gtk.Grid main_grid;
+        private Gtk.Grid sub_grid_1;
+        private Gtk.Grid sub_grid_2;
+        private Gtk.Entry entry;
+        
         private string[] button_types = { "0", "1", "2", "3",
                                           "4", "5", "6", "7",
                                           "8", "9", "0", "+",
                                           "-", "*", "/", "%",
                                           ".", "(", ")" };
         
-        private void button_clicked (Gtk.Button btn) {
-            var label = btn.get_label ();
-            foreach (var val in button_types) {
-                if (label == val) {
-                    utils.add (val);
-                    break;
-                }
-            }
+        public MainWindow () {
+            headerbar = new Gtk.HeaderBar ();
+            main_grid = new Gtk.Grid ();
+            sub_grid_1 = new Gtk.Grid ();
+            sub_grid_2 = new Gtk.Grid ();
+            
+            headerbar.get_style_context ().add_class ("primary-toolbar");
+            headerbar.show_close_button = true;
+            
+            this.set_titlebar (headerbar);
+            this.set_resizable (false);
+            this.window_position = Gtk.WindowPosition.CENTER;
+            
+            build_ui ();
         }
-        public StandardWidget () {
-            this.expand = true;
-            this.orientation = Gtk.Orientation.VERTICAL;
-            this.set_column_spacing (2);
-            this.set_row_spacing (2);
-            this.margin = 10;
+        
+        public void build_ui () {
+            main_grid.expand = true;
             
-            main_entry = new Gtk.Entry ();
-            main_entry.set_size_request (250, 40);
-            this.attach (main_entry, 0, 0, 3, 1);
+            sub_grid_1.expand = true;
+            sub_grid_1.orientation = Gtk.Orientation.VERTICAL;
+            sub_grid_1.set_column_spacing (2);
+            sub_grid_1.set_row_spacing (2);
+            sub_grid_1.margin = 10;
             
-            utils = new Core.Utils.Entry (main_entry);
+            entry = new Gtk.Entry ();
+            entry.set_size_request (250, 40);
+            sub_grid_1.attach (entry, 0, 0, 3, 1);
             
             var button_back = new Gtk.Button.from_icon_name ("go-previous", Gtk.IconSize.SMALL_TOOLBAR);
             button_back.set_size_request(50, 40);
@@ -87,37 +97,38 @@ namespace Calculus.Widgets {
             var button_8 = new Gtk.Button.with_label ("8");
             var button_9 = new Gtk.Button.with_label ("9");
             
+            //force size on all buttons in the grid
             button_0.set_size_request(0, 50);
             button_1.set_size_request(0, 50);
             button_4.set_size_request(0, 50);
             button_7.set_size_request(0, 50);
             
             //attach all buttons
-            this.attach (button_7, 0, 1, 1, 1);
-            this.attach (button_8, 1, 1, 1, 1);
-            this.attach (button_9, 2, 1, 1, 1);
+            sub_grid_1.attach (button_7, 0, 1, 1, 1);
+            sub_grid_1.attach (button_8, 1, 1, 1, 1);
+            sub_grid_1.attach (button_9, 2, 1, 1, 1);
             
-            this.attach (button_4, 0, 2, 1, 1);
-            this.attach (button_5, 1, 2, 1, 1);
-            this.attach (button_6, 2, 2, 1, 1);
+            sub_grid_1.attach (button_4, 0, 2, 1, 1);
+            sub_grid_1.attach (button_5, 1, 2, 1, 1);
+            sub_grid_1.attach (button_6, 2, 2, 1, 1);
             
-            this.attach (button_1, 0, 3, 1, 1);
-            this.attach (button_2, 1, 3, 1, 1);
-            this.attach (button_3, 2, 3, 1, 1);
+            sub_grid_1.attach (button_1, 0, 3, 1, 1);
+            sub_grid_1.attach (button_2, 1, 3, 1, 1);
+            sub_grid_1.attach (button_3, 2, 3, 1, 1);
             
-            this.attach (button_0, 0, 4, 1, 1);
-            this.attach (button_point, 1, 4, 1, 1);
-            this.attach (button_percent, 2, 4, 1, 1);
+            sub_grid_1.attach (button_0, 0, 4, 1, 1);
+            sub_grid_1.attach (button_point, 1, 4, 1, 1);
+            sub_grid_1.attach (button_percent, 2, 4, 1, 1);
             
-            this.attach (button_back, 4, 0, 1, 1);
-            this.attach (button_del, 5, 0, 1, 1);
-            this.attach (button_add, 4, 1, 1, 1);
-            this.attach (button_sub, 5, 1, 1, 1);
-            this.attach (button_mult, 4, 2, 1, 1);
-            this.attach (button_div, 5, 2, 1, 1);
-            this.attach (button_bracket_left, 4, 3, 1, 1);
-            this.attach (button_bracket_right, 5, 3, 1, 1);
-            this.attach (button_calc, 4, 4, 2, 1);
+            sub_grid_1.attach (button_back, 4, 0, 1, 1);
+            sub_grid_1.attach (button_del, 5, 0, 1, 1);
+            sub_grid_1.attach (button_add, 4, 1, 1, 1);
+            sub_grid_1.attach (button_sub, 5, 1, 1, 1);
+            sub_grid_1.attach (button_mult, 4, 2, 1, 1);
+            sub_grid_1.attach (button_div, 5, 2, 1, 1);
+            sub_grid_1.attach (button_bracket_left, 4, 3, 1, 1);
+            sub_grid_1.attach (button_bracket_right, 5, 3, 1, 1);
+            sub_grid_1.attach (button_calc, 4, 4, 2, 1);
             
             button_0.clicked.connect (button_clicked);
             button_1.clicked.connect (button_clicked);
@@ -141,19 +152,44 @@ namespace Calculus.Widgets {
             button_point.clicked.connect (button_clicked);
             button_percent.clicked.connect (button_clicked);
             
-            button_calc.clicked.connect (() => {
-                utils.calc ();
-            });
+            button_calc.clicked.connect (button_calc_clicked);
+            button_back.clicked.connect (button_back_clicked);
+            button_del.clicked.connect (button_del_clicked);
             
-            button_del.clicked.connect (() => { 
-                utils.del ();
-            });
-            
-            button_back.clicked.connect (() => {
-                utils.back ();
-            });
-            
+            sub_grid_1.show_all ();
+            main_grid.attach (sub_grid_1, 0, 0, 1, 1);
+            main_grid.show_all ();
+            this.add (main_grid);
             this.show_all ();
+        }
+        
+                private void button_clicked (Gtk.Button btn) {
+            var label = btn.get_label ();
+            foreach (var val in button_types) {
+                if (label == val) {
+                        entry.set_text (entry.get_text () + val);
+                    break;
+                }
+            }
+        }
+        
+        private void button_calc_clicked () {
+            if (entry.get_text () != "") {
+                double d = 0;
+                try {
+                    d = Parser.parse (entry.get_text ());
+                } catch (PARSER_ERROR e) { stdout.printf (e.message + " \n"); }
+
+                entry.set_text (d.to_string ());
+            }
+        } 
+        
+        private void button_back_clicked () {
+            entry.backspace ();
+        }
+        
+        private void button_del_clicked () {
+            entry.set_text ("");
         }
     }
 }
