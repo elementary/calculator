@@ -1,4 +1,4 @@
-/* Copyright 2014 Marvin Beckers <ma-be@posteo.de>
+/* Copyright 2014 Marvin Beckers <beckersmarvin@gmail.com>
 *
 * This file is part of Calculus.
 *

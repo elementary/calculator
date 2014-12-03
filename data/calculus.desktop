@@ -1,10 +1,12 @@
 [Desktop Entry]
-Name=Calculator
-Comment=A simple calc tool for elementary OS.
-Keywords=calculation;
-Exec=calculus
+Version=0.1
+Name=Calculus
+GenericName=Calculator
+Comment=Calculate in an elementary way.
+Exec=calculus %u
 Icon=accessories-calculator
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=GNOME;GTK;Utility;Calculator;
+Categories=GTK;Utility;Calculator;
+X-GNOME-Gettext-Domain=calculus

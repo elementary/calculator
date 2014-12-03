@@ -1,4 +1,4 @@
-/* Copyright 2014 Marvin Beckers <ma-be@posteo.de>
+/* Copyright 2014 Marvin Beckers <beckersmarvin@gmail.com>
 *
 * This file is part of Calculus.
 *
@@ -18,12 +18,26 @@
 
 namespace Calculus { 
     public class CalculusApp : Granite.Application {
+        /**
+         * Translatable launcher (.desktop) strings to be added to template (.pot) file.
+         * These strings should reflect any changes in these launcher keys in .desktop file
+         */
+        public const string CALCULATOR = N_("Calculator");
+        public const string PROGRAM_NAME = "Calculus";
+
+        public const string KEYWORDS = N_("GTK;Utility;Calculator;");
+        public const string COMMENT = N_("Calculate in an elementary way.");
+        public const string GENERIC_NAME = N_("Calculator");
+
+        public const string ABOUT_STOCK = N_("About Calculus");
+        /// TRANSLATORS: This is the shortcut used to view information about the application itself when its displayed name is the localized equivalent of "Videos".
+        public const string ABOUT_GENERIC = N_("About Calculator");
     
         construct {
             application_id = "org.calculus";
             flags = ApplicationFlags.FLAGS_NONE;
                     
-            program_name = _("Calculator");
+            program_name = PROGRAM_NAME;
             app_years = "2014";
             app_icon = "accessories-calculator";
             
@@ -42,7 +56,6 @@ namespace Calculus {
             about_authors = { "Marvin Beckers <marvin.beckers@posteo.de>" };
             about_comments = _("A simple calc tool for elementary OS.");
             about_license_type = Gtk.License.GPL_3_0;
-            
         }
         
         public override void activate () {

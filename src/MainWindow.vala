@@ -1,4 +1,4 @@
-/* Copyright 2014 Marvin Beckers <ma-be@posteo.de>
+/* Copyright 2014 Marvin Beckers <beckersmarvin@gmail.com>
 *
 * This file is part of Calculus.
 *
@@ -37,7 +37,7 @@ namespace Calculus {
                                             "6", "7", "8", "9", "0", "+",
                                             "-", "*", "/", "%", ".", "(", 
                                             ")", "^", "sin", "cos", "tan",
-                                            "sinh", "cosh", "tanh" };
+                                            "sinh", "cosh", "tanh" , "√", "π" };
 
         public MainWindow () {
             this.set_resizable (false);
@@ -206,13 +206,15 @@ namespace Calculus {
             sub_grid_2.margin_start = 0;
             
             var button_pow = new Gtk.Button.with_label ("^");
+            button_pow.get_style_context ().add_class ("h3");
             var button_sin = new Gtk.Button.with_label ("sin");
             var button_cos = new Gtk.Button.with_label ("cos");
             var button_tan = new Gtk.Button.with_label ("tan");
-            var button_pi = new Gtk.Button.with_label ("pi");
+            var button_pi = new Gtk.Button.with_label ("π");
             var button_par_left = new Gtk.Button.with_label ("(");
             
-            var button_sr = new Gtk.Button.with_label ("Wurzel");
+            var button_sr = new Gtk.Button.with_label ("√");
+            button_sr.get_style_context ().add_class ("h3");
             var button_sinh = new Gtk.Button.with_label ("sinh");
             var button_cosh = new Gtk.Button.with_label ("cosh");
             var button_tanh = new Gtk.Button.with_label ("tanh");
