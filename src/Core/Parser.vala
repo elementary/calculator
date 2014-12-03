@@ -20,7 +20,8 @@ namespace Calculus.Core {
     public errordomain TOKENIZE_ERROR {
         UNKNOWN_SYMBOL,
         NUMBER_INVALID,
-        FUNC_INVALID
+        FUNC_INVALID,
+        OPERATOR_INVALID
     }
     public errordomain SHUNTING_ERROR {
         DUMMY,
@@ -40,6 +41,7 @@ namespace Calculus.Core {
     public class Parser : Object {
         public Parser () { }
     
+        [CCode (has_target = false)]
         private delegate double Evaluation (double a, double b = 0);
         
         private struct Operator { string symbol; int prec; string fixity; Evaluation eval;}
@@ -47,7 +49,8 @@ namespace Calculus.Core {
                                             Operator () { symbol = "-", prec = 1, fixity = "LEFT", eval = (a, b) => { return a - b; } },
                                             Operator () { symbol = "*", prec = 2, fixity = "LEFT", eval = (a, b) => { return a * b; } }, 
                                             Operator () { symbol = "/", prec = 2, fixity = "LEFT", eval = (a, b) => { return a / b; } },
-                                            Operator () { symbol = "^", prec = 3, fixity = "RIGHT", eval = (a, b) => { return Math.pow (a, b); } }  };
+                                            Operator () { symbol = "^", prec = 3, fixity = "RIGHT", eval = (a, b) => { return Math.pow (a, b); } },
+                                            Operator () { symbol = "mod", prec = 3, fixity = "LEFT", eval = (a, b) => { return 0; } }  };
                                             
         private struct Function { string symbol; Evaluation eval; }
         private Function[] functions = {   Function () { symbol = "sin", eval = (a) => { return Math.sin (a); } },
@@ -74,31 +77,35 @@ namespace Calculus.Core {
         public List<Token> tokenize_string (string exp) throws TOKENIZE_ERROR {
             List<Token> token_list = new List<Token> ();
             string numbers = "";
-            string func = "";
+            string chars = "";
             string temp = exp.replace (" ","");
             string symbol = "";
+            bool is_negative = false;
             
             while (temp != "") {
+                
                 symbol = temp.slice (0, 1);
                 temp = temp.slice (1, temp.length);
                 
                 if (is_digit (symbol) || symbol == ".") {
                     numbers = numbers + symbol.to_string ();
                     
-                /*} else if (symbol.isalpha ()) {
-                    func = func + symbol.to_string ();*/
+                } else if (is_alpha (symbol)) {
+                    chars = chars + symbol.to_string ();
                     
                 } else if (is_operator (symbol)) {
                     if (numbers != "") {
-                        try { token_list.append (create_number_token (numbers));
+                        try { token_list.append (create_number_token (numbers, is_negative));
                         } catch (TOKENIZE_ERROR e) { throw e; }
                         numbers = "";
+                        is_negative = false;
+                        
+                        token_list.append (create_operator_token (symbol));
                     } else if (numbers == "" && symbol == "-") {
-                        try { token_list.append (create_number_token ("0"));
-                        } catch (TOKENIZE_ERROR e) { throw e; }
+                        is_negative = true;
+                        
+                        continue;
                     }
-                    
-                    token_list.append (new Token (symbol.to_string (), TokenType.OPERATOR));
                 } else if (symbol == "(") {
                     if (numbers != "") {
                         try { token_list.append (create_number_token (numbers));
@@ -106,10 +113,10 @@ namespace Calculus.Core {
                         numbers = "";
                         
                         token_list.append (new Token ("*", TokenType.OPERATOR));
-                    } else if (func != "") {
-                        try { token_list.append (create_func_token (func)); 
+                    } else if (chars != "" && is_function (chars)) {
+                        try { token_list.append (create_func_token (chars)); 
                         } catch (TOKENIZE_ERROR e) { throw e; }
-                        func = "";
+                        chars = "";
                     }
                     
                     token_list.append (new Token (symbol.to_string (), TokenType.PARENTHESIS_LEFT));
@@ -122,18 +129,19 @@ namespace Calculus.Core {
                     
                     token_list.append (new Token (symbol.to_string (), TokenType.PARENTHESIS_RIGHT));
                 } else 
-                    throw new TOKENIZE_ERROR.UNKNOWN_SYMBOL ("Encountered unknown symbol '" + symbol+ "'");
+                    throw new TOKENIZE_ERROR.UNKNOWN_SYMBOL ("Encountered unknown symbol '" + symbol+ "'.");
             }
             
             if (numbers != "") {
-                try { token_list.append (create_number_token (numbers));
+                try { token_list.append (create_number_token (numbers, is_negative));
                 } catch (TOKENIZE_ERROR e) { throw e; }
             }
             
             return token_list;
         }
         
-        public List<Token> shunting_yard (List<Token> token_list) {
+        //Djikstra's Shunting Yard algorithm for reordering a tokenized list into Reverse Polish Notation
+        public List<Token> shunting_yard (List<Token> token_list) throws SHUNTING_ERROR {
             List<Token> output = new List<Token> ();
             Stack<Token> opStack = new Stack<Token> ();
         
@@ -259,18 +267,35 @@ namespace Calculus.Core {
             return false;
         }
         
-        private Token create_number_token (string token_string) throws TOKENIZE_ERROR {
-            if (is_number (token_string))
-                return new Token (token_string, TokenType.NUMBER);
-            else
-                throw new TOKENIZE_ERROR.NUMBER_INVALID ("The number string is not valid.");
+        public static bool is_alpha (string s) {
+            if (/^\s$/.match (s)) 
+                return true;
+            return false;
+        }
+        
+        private Token create_number_token (string token_string, bool is_negative = false) throws TOKENIZE_ERROR {
+            if (is_number (token_string)) {
+                var token_string_output = token_string;
+                if (is_negative)
+                    token_string_output = ((-1) * double.parse (token_string)).to_string ();
+                
+                return new Token (token_string_output, TokenType.NUMBER);
+            } else
+                throw new TOKENIZE_ERROR.NUMBER_INVALID ("'%s' is no valid number.", token_string);
         }
         
         private Token create_func_token (string token_string) throws TOKENIZE_ERROR {
             if (is_function (token_string)) 
                 return new Token (token_string, TokenType.FUNCTION);
             else
-                throw new TOKENIZE_ERROR.FUNC_INVALID ("The function is not valid or not known.");
+                throw new TOKENIZE_ERROR.FUNC_INVALID ("'%s' is no valid function.", token_string);
+        }
+        
+        private Token create_operator_token (string token_string) throws TOKENIZE_ERROR {
+            if (is_operator (token_string))
+                return new Token (token_string, TokenType.OPERATOR);
+            else
+                throw new TOKENIZE_ERROR.OPERATOR_INVALID ("'%s' is no valid operator", token_string);
         }
         
         private Token compute_tokens (Token t1, Token t_op, Token t2) throws EVAL_ERROR {

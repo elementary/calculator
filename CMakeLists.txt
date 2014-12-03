@@ -39,9 +39,9 @@ include(ValaPrecompile)
 vala_precompile(VALA_C ${EXEC_NAME}
     src/Calculus.vala
     src/MainWindow.vala
-    src/core/Stack.vala
-    src/core/Token.vala
-    src/core/Parser.vala
+    src/Core/Stack.vala
+    src/Core/Token.vala
+    src/Core/Parser.vala
 PACKAGES
     gtk+-3.0
     granite
