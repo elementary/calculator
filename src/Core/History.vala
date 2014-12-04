@@ -17,22 +17,12 @@
 */
 
 namespace Calculus.Core {
-    public enum TokenType {
-        NUMBER,
-        OPERATOR,
-        FUNCTION,
-        SEPARATOR,
-        PARENTHESIS_LEFT,
-        PARENTHESIS_RIGHT;
-    }
-    
-    public class Token : Object {
-        public string content { get; private set; }
-        public TokenType token_type { get; private set; }
-        
-        public Token (string in_content, TokenType in_token_type) {
-            content = in_content;
-            token_type = in_token_type;
+    public class History : Object {
+        public string exp { get; private set; }
+        public double output { get; private set; }
+        public History (string in_exp, double in_output) {
+            exp = in_exp;
+            output = in_output;
         }
     }
 }

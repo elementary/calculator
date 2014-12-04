@@ -57,7 +57,10 @@ namespace Calculus.Core {
         private struct Function { string symbol; int inputs; Evaluation eval; }
         private Function[] functions = {   Function () { symbol = "sin", inputs = 1, eval = (a) => { return Math.sin (a); } },
                                             Function () { symbol = "cos", inputs = 1, eval = (a) => { return Math.cos (a); } },
-                                            Function () { symbol = "tan", inputs = 1, eval = (a) => { return Math.tan (a); } }  }; 
+                                            Function () { symbol = "tan", inputs = 1, eval = (a) => { return Math.tan (a); } },
+                                            Function () { symbol = "sinh", inputs = 1, eval = (a) => { return Math.sinh (a); } },
+                                            Function () { symbol = "cosh", inputs = 1, eval = (a) => { return Math.cosh (a); } },
+                                            Function () { symbol = "tanh", inputs = 1, eval = (a) => { return Math.tanh (a); } } }; 
                                         
         public static double parse (string exp) throws PARSER_ERROR {
             Parser parser = new Parser ();
@@ -157,7 +160,7 @@ namespace Calculus.Core {
             Stack<Token> opStack = new Stack<Token> ();
         
             foreach (Token t in token_list) {
-                switch (t.get_token_type ()) {
+                switch (t.token_type) {
                 case TokenType.NUMBER:
                     output.append (t);
                     break;
@@ -167,18 +170,18 @@ namespace Calculus.Core {
                     break;
 
                 case TokenType.SEPARATOR:
-                    while (opStack.peek ().get_token_type () != TokenType.PARENTHESIS_LEFT && opStack.is_length (0) == false) 
+                    while (opStack.peek ().token_type != TokenType.PARENTHESIS_LEFT && opStack.is_length (0) == false) 
                         output.append (opStack.pop ());
                     
-                    if (opStack.peek ().get_token_type () != TokenType.PARENTHESIS_LEFT)
+                    if (opStack.peek ().token_type != TokenType.PARENTHESIS_LEFT)
                         throw new SHUNTING_ERROR.DUMMY ("Either the seperatotor was misplaced or parentheses were mismatched.");
                     break;
                  
                 case TokenType.OPERATOR:
                     if (!opStack.empty ()) {
-                        Operator op1 = get_operator (t.get_content ());
+                        Operator op1 = get_operator (t.content);
                         Operator op2 = Operator ();
-                        try { op2 = get_operator (opStack.peek ().get_content ());
+                        try { op2 = get_operator (opStack.peek ().content);
                         } catch (SHUNTING_ERROR e) { }
 
                         while (!opStack.empty () &&              
@@ -187,7 +190,7 @@ namespace Calculus.Core {
                         {   
                             output.append (opStack.pop ());
                             if (!opStack.empty ())
-                                try { op2 = get_operator (opStack.peek ().get_content ());
+                                try { op2 = get_operator (opStack.peek ().content);
                                 } catch (SHUNTING_ERROR e) { }
                         }
                     }  
@@ -199,13 +202,13 @@ namespace Calculus.Core {
                     break;
                         
                 case TokenType.PARENTHESIS_RIGHT:
-                    while (!(opStack.peek ().get_token_type () == TokenType.PARENTHESIS_LEFT) && !opStack.empty ())
+                    while (!(opStack.peek ().token_type == TokenType.PARENTHESIS_LEFT) && !opStack.empty ())
                         output.append (opStack.pop ());
                         
                     if (!(opStack.empty ())) 
                         opStack.pop ();
                         
-                    if (!opStack.empty () && opStack.peek ().get_token_type () == TokenType.FUNCTION) 
+                    if (!opStack.empty () && opStack.peek ().token_type == TokenType.FUNCTION) 
                         output.append (opStack.pop ());
                     break;
                 default:
@@ -214,7 +217,7 @@ namespace Calculus.Core {
                 }
             }
             while (!opStack.empty ()) {
-                if (opStack.peek ().get_token_type () == TokenType.PARENTHESIS_LEFT) {
+                if (opStack.peek ().token_type == TokenType.PARENTHESIS_LEFT) {
                     /* TODO Throw mismatched error! */
                     break;
                 } else {
@@ -228,15 +231,15 @@ namespace Calculus.Core {
             Stack<Token> stack = new Stack<Token> ();
         
             foreach (Token t in token_list) {
-                if (t.get_token_type () == TokenType.NUMBER) {
+                if (t.token_type == TokenType.NUMBER) {
                     stack.push (t);
-                } else if (t.get_token_type () == TokenType.OPERATOR) {
+                } else if (t.token_type == TokenType.OPERATOR) {
                     Token right = stack.pop ();
                     Token left = stack.pop ();
                     stack.push (compute_tokens (left, t, right));
-                } else if (t.get_token_type () == TokenType.FUNCTION) {
+                } else if (t.token_type == TokenType.FUNCTION) {
                     try {
-                        Function f = get_function (t.get_content ());
+                        Function f = get_function (t.content);
                         Token t1 = stack.pop ();
                         Token t2 = new Token ("0", TokenType.NUMBER);
                         
@@ -248,7 +251,7 @@ namespace Calculus.Core {
                 }                
             }
         
-            double out_d = double.parse (stack.pop ().get_content ());
+            double out_d = double.parse (stack.pop ().content);
             return out_d;
         }
         
@@ -330,20 +333,20 @@ namespace Calculus.Core {
         
         private Token compute_tokens (Token t1, Token t_op, Token t2) throws EVAL_ERROR {
             try { 
-                Operator op = get_operator (t_op.get_content ());
-                var d = op.eval (double.parse (t1.get_content ()), double.parse (t2.get_content ()));
+                Operator op = get_operator (t_op.content);
+                var d = op.eval (double.parse (t1.content), double.parse (t2.content));
                 return new Token (d.to_string (), TokenType.NUMBER);
             } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_OPERATOR ("The given token was no operator."); }
         }
         
         private Token process_tokens (Token tf, Token t1, Token t2) throws EVAL_ERROR {
             try {
-                var f = get_function (tf.get_content ());
+                var f = get_function (tf.content);
                 var d = 0.0;
                 if (f.inputs == 1)
-                    d = f.eval (double.parse (t1.get_content ()));
+                    d = f.eval (double.parse (t1.content));
                 else
-                    d = f.eval (double.parse (t1.get_content ()), double.parse (t2.get_content ()));
+                    d = f.eval (double.parse (t1.content), double.parse (t2.content));
                 return new Token (d.to_string (), TokenType.NUMBER);
             } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_FUNCTION ("The given token was no function."); }
         

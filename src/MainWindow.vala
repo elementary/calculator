@@ -17,8 +17,8 @@
 */
 
 using Gtk;
-using Calculus.Core;
 using Granite.Widgets;
+using Calculus.Core;
 
 namespace Calculus {
     public class MainWindow : Gtk.Window {
@@ -33,6 +33,8 @@ namespace Calculus {
         private Gtk.Image extended_img_2;
         private Gtk.Button button_calc;
         
+        private List<History> history;
+        
         private string[] button_types = {  "0", "1", "2", "3", "4", "5", 
                                             "6", "7", "8", "9", "0", "+",
                                             "-", "*", "/", "%", ".", "(", 
@@ -42,6 +44,8 @@ namespace Calculus {
         public MainWindow () {
             this.set_resizable (false);
             this.window_position = Gtk.WindowPosition.CENTER;
+            
+            history = new List<History> ();
             
             this.build_titlebar ();
             this.build_ui ();
@@ -56,13 +60,15 @@ namespace Calculus {
             
             extended_img_1 = new Gtk.Image.from_icon_name ("pan-end-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
             extended_img_2 = new Gtk.Image.from_icon_name ("pan-start-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
+            var history_img = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
             
             var button_extended = new Gtk.ToggleButton ();
             button_extended.set_property ("image", extended_img_1);
             button_extended.set_tooltip_text (_("Show extended functionality"));
             button_extended.toggled.connect (toggle_grid);
             
-            var button_history = new Gtk.Button.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
+            var button_history = new Gtk.ToggleButton ();
+            button_history.set_property ("image", history_img);
             button_history.set_tooltip_text (_("History"));
             
             headerbar.pack_end (button_extended);
@@ -102,6 +108,7 @@ namespace Calculus {
             
             var button_back = new Gtk.Button.from_icon_name ("edit-clear-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
             var button_del = new Gtk.Button.with_label ("C");
+            button_del.set_tooltip_text (_("Clear entry"));
             button_del.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
             
             var button_add = new Gtk.Button.with_label ("+");

@@ -25,7 +25,7 @@ namespace Calculus {
         public const string CALCULATOR = N_("Calculator");
         public const string PROGRAM_NAME = "Calculus";
 
-        public const string KEYWORDS = N_("GTK;Utility;Calculator;");
+        public const string KEYWORDS = "GTK;Utility;Calculator;";
         public const string COMMENT = N_("Calculate in an elementary way.");
         public const string GENERIC_NAME = N_("Calculator");
 
@@ -52,7 +52,7 @@ namespace Calculus {
             bug_url = "https://bugs.launchpad.net/calculus";
             help_url = "https://answers.launchpad.net/calculus"; 
             translate_url = "https://translations.launchpad.net/calculus";       
-            about_authors = { "Marvin Beckers <marvin.beckers@posteo.de>" };
+            about_authors = { "Marvin Beckers <beckersmarvin@gmail.com>" };
             about_comments = _("A simple calc tool for elementary OS.");
             about_license_type = Gtk.License.GPL_3_0;
         }

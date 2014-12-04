@@ -16,23 +16,13 @@
 * with Calculus. If not, see http://www.gnu.org/licenses/.
 */
 
-namespace Calculus.Core {
-    public enum TokenType {
-        NUMBER,
-        OPERATOR,
-        FUNCTION,
-        SEPARATOR,
-        PARENTHESIS_LEFT,
-        PARENTHESIS_RIGHT;
-    }
+using Gtk;
+using Calculus.Core;
+using Granite.Widgets;
+
+namespace Calculus {
+    public class HistoryWindow : Gtk.Window {
     
-    public class Token : Object {
-        public string content { get; private set; }
-        public TokenType token_type { get; private set; }
-        
-        public Token (string in_content, TokenType in_token_type) {
-            content = in_content;
-            token_type = in_token_type;
-        }
+        public HistoryWindow (List<History> history) { }
     }
 }
