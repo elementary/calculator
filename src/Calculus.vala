@@ -30,7 +30,6 @@ namespace Calculus {
         public const string GENERIC_NAME = N_("Calculator");
 
         public const string ABOUT_STOCK = N_("About Calculus");
-        /// TRANSLATORS: This is the shortcut used to view information about the application itself when its displayed name is the localized equivalent of "Videos".
         public const string ABOUT_GENERIC = N_("About Calculator");
     
         construct {

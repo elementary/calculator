@@ -25,11 +25,13 @@ namespace Calculus.Core {
     }
     public errordomain SHUNTING_ERROR {
         DUMMY,
-        NO_OPERATOR
+        NO_OPERATOR,
+        NO_FUNCTION
     }
     public errordomain EVAL_ERROR {
         DUMMY,
-        NO_OPERATOR
+        NO_OPERATOR,
+        NO_FUNCTION
     }
     
     public errordomain PARSER_ERROR {
@@ -52,9 +54,10 @@ namespace Calculus.Core {
                                             Operator () { symbol = "^", prec = 3, fixity = "RIGHT", eval = (a, b) => { return Math.pow (a, b); } },
                                             Operator () { symbol = "mod", prec = 3, fixity = "LEFT", eval = (a, b) => { return 0; } }  };
                                             
-        private struct Function { string symbol; Evaluation eval; }
-        private Function[] functions = {   Function () { symbol = "sin", eval = (a) => { return Math.sin (a); } },
-                                            Function () { symbol = "cos", eval = (a) => { return Math.cos (a); } }  }; 
+        private struct Function { string symbol; int inputs; Evaluation eval; }
+        private Function[] functions = {   Function () { symbol = "sin", inputs = 1, eval = (a) => { return Math.sin (a); } },
+                                            Function () { symbol = "cos", inputs = 1, eval = (a) => { return Math.cos (a); } },
+                                            Function () { symbol = "tan", inputs = 1, eval = (a) => { return Math.tan (a); } }  }; 
                                         
         public static double parse (string exp) throws PARSER_ERROR {
             Parser parser = new Parser ();
@@ -88,36 +91,44 @@ namespace Calculus.Core {
                 temp = temp.slice (1, temp.length);
                 
                 if (is_digit (symbol) || symbol == ".") {
+                    if (chars != "" && is_function (chars)) {
+                        try { token_list.append (create_func_token (chars));
+                        } catch (TOKENIZE_ERROR e) { throw e; }
+                    }
                     numbers = numbers + symbol.to_string ();
-                    
                 } else if (is_alpha (symbol)) {
                     chars = chars + symbol.to_string ();
-                    
-                } else if (is_operator (symbol)) {
+                } else if (is_operator (symbol) || is_operator (chars)) {
                     if (numbers != "") {
                         try { token_list.append (create_number_token (numbers, is_negative));
                         } catch (TOKENIZE_ERROR e) { throw e; }
+                        
                         numbers = "";
+                        if (is_operator (chars))
+                            chars = "";
                         is_negative = false;
                         
-                        token_list.append (create_operator_token (symbol));
+                        try { token_list.append (create_operator_token (symbol));
+                        } catch (TOKENIZE_ERROR e) { throw e; }
                     } else if (numbers == "" && symbol == "-") {
                         is_negative = true;
-                        
                         continue;
                     }
                 } else if (symbol == "(") {
                     if (numbers != "") {
                         try { token_list.append (create_number_token (numbers));
                         } catch (TOKENIZE_ERROR e) { throw e; }
-                        numbers = "";
                         
+                        numbers = "";
                         token_list.append (new Token ("*", TokenType.OPERATOR));
                     } else if (chars != "" && is_function (chars)) {
                         try { token_list.append (create_func_token (chars)); 
                         } catch (TOKENIZE_ERROR e) { throw e; }
                         chars = "";
-                    }
+                    } else if (chars != "" && is_operator (chars)) {
+                        try { token_list.append (create_operator_token (chars));
+                        } catch (TOKENIZE_ERROR e) { throw e; }
+                    }   
                     
                     token_list.append (new Token (symbol.to_string (), TokenType.PARENTHESIS_LEFT));
                 } else if (symbol == ")") {
@@ -224,7 +235,16 @@ namespace Calculus.Core {
                     Token left = stack.pop ();
                     stack.push (compute_tokens (left, t, right));
                 } else if (t.get_token_type () == TokenType.FUNCTION) {
-                    
+                    try {
+                        Function f = get_function (t.get_content ());
+                        Token t1 = stack.pop ();
+                        Token t2 = new Token ("0", TokenType.NUMBER);
+                        
+                        if (f.inputs == 2)
+                            t2 = stack.pop ();
+                      
+                        stack.push (process_tokens (t, t1, t2));
+                    } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_FUNCTION (""); }
                 }                
             }
         
@@ -245,6 +265,14 @@ namespace Calculus.Core {
                     return o;
             }
             throw new SHUNTING_ERROR.NO_OPERATOR ("");
+        }
+        
+        private Function get_function (string s) throws SHUNTING_ERROR {
+            foreach (Function f in functions) {
+                if (f.symbol == s)
+                    return f;
+            }
+            throw new SHUNTING_ERROR.NO_FUNCTION ("");
         }
         
         private bool is_function (string s) {
@@ -268,8 +296,10 @@ namespace Calculus.Core {
         }
         
         public static bool is_alpha (string s) {
-            if (/^\s$/.match (s)) 
+            if (/^\w$/.match (s)) {
                 return true;
+                //stdout.printf ("match %s.", s);
+                }
             return false;
         }
         
@@ -301,9 +331,22 @@ namespace Calculus.Core {
         private Token compute_tokens (Token t1, Token t_op, Token t2) throws EVAL_ERROR {
             try { 
                 Operator op = get_operator (t_op.get_content ());
-                double d = op.eval (double.parse (t1.get_content ()), double.parse (t2.get_content ()));
+                var d = op.eval (double.parse (t1.get_content ()), double.parse (t2.get_content ()));
                 return new Token (d.to_string (), TokenType.NUMBER);
             } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_OPERATOR ("The given token was no operator."); }
+        }
+        
+        private Token process_tokens (Token tf, Token t1, Token t2) throws EVAL_ERROR {
+            try {
+                var f = get_function (tf.get_content ());
+                var d = 0.0;
+                if (f.inputs == 1)
+                    d = f.eval (double.parse (t1.get_content ()));
+                else
+                    d = f.eval (double.parse (t1.get_content ()), double.parse (t2.get_content ()));
+                return new Token (d.to_string (), TokenType.NUMBER);
+            } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_FUNCTION ("The given token was no function."); }
+        
         }
     }
 }
