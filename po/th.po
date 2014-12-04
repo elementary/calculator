@@ -2,32 +2,49 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-30 17:06+0100\n"
+"POT-Creation-Date: 2014-12-03 21:18+0100\n"
 "PO-Revision-Date: 2014-11-30 05:02+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-01 07:14+0000\n"
+"X-Launchpad-Export-Date: 2014-12-04 06:57+0000\n"
 "X-Generator: Launchpad (build 17274)\n"
 
-#: ../src/widgets/Toolbar.vala:42
-msgid "Standard"
-msgstr ""
-
-#: ../src/widgets/Toolbar.vala:43
-msgid "Extended"
-msgstr ""
-
-#: ../src/widgets/Toolbar.vala:44
-msgid "Conversion"
-msgstr ""
-
-#: ../src/Calculus.vala:30
+#: ../src/MainWindow.vala:54 ../src/Calculus.vala:25 ../src/Calculus.vala:30
 msgid "Calculator"
 msgstr ""
 
-#: ../src/Calculus.vala:47
+#: ../src/MainWindow.vala:62 ../src/MainWindow.vala:305
+msgid "Show extended functionality"
+msgstr ""
+
+#: ../src/MainWindow.vala:66
+msgid "History"
+msgstr ""
+
+#: ../src/MainWindow.vala:301
+msgid "Hide extended functionality"
+msgstr ""
+
+#: ../src/Calculus.vala:28
+msgid "GTK;Utility;Calculator;"
+msgstr ""
+
+#: ../src/Calculus.vala:29
+msgid "Calculate in an elementary way."
+msgstr ""
+
+#: ../src/Calculus.vala:32
+msgid "About Calculus"
+msgstr ""
+
+#. / TRANSLATORS: This is the shortcut used to view information about the application itself when its displayed name is the localized equivalent of "Videos".
+#: ../src/Calculus.vala:34
+msgid "About Calculator"
+msgstr ""
+
+#: ../src/Calculus.vala:57
 msgid "A simple calc tool for elementary OS."
 msgstr ""
