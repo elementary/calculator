@@ -23,12 +23,18 @@ namespace Calculus.Core {
         FUNCTION,
         SEPARATOR,
         PARENTHESIS_LEFT,
-        PARENTHESIS_RIGHT;
+        PARENTHESIS_RIGHT,
+        P_LEFT,
+        P_RIGHT,
+        
+        //basic TokenTypes for Scanner output
+        ALPHA,
+        EOF;
     }
     
     public class Token : Object {
         public string content { get; private set; }
-        public TokenType token_type { get; private set; }
+        public TokenType token_type { get; set; }
         
         public Token (string in_content, TokenType in_token_type) {
             content = in_content;

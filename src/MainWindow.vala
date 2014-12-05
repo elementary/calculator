@@ -279,15 +279,10 @@ namespace Calculus {
         }
         
         private void button_calc_clicked () {
-            //debug playground area
-            
-            //real code
             if (entry.get_text () != "") {
                 double d = 0;
-                try {
-                    d = Parser.parse (entry.get_text ());
-                } catch (PARSER_ERROR e) { stdout.printf (e.message + " \n"); }
-
+                d = Evaluation.evaluate (entry.get_text ());
+                history.append (new History (entry.get_text (), d));
                 entry.set_text (d.to_string ());
             }
         } 

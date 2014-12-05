@@ -1,12 +1,17 @@
 [Desktop Entry]
 Version=0.1
-Name=Calculus
-GenericName=Calculator
+Name=Calculator
 Comment=Calculate in an elementary way.
-Exec=calculus %u
+Exec=calculus %U
 Icon=accessories-calculator
 Terminal=false
 Type=Application
 StartupNotify=true
 Categories=GTK;Utility;Calculator;
 X-GNOME-Gettext-Domain=calculus
+
+X-Ayatana-Desktop-Shortcuts=AboutDialog
+
+[AboutDialog Shortcut Group]
+Name=About Calculator
+Exec=calculus --about

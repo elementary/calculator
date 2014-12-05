@@ -41,6 +41,9 @@ namespace Calculus.Core {
     }
     
     public class Parser : Object {
+        private unowned string str;
+        private char* pos;
+    
         public Parser () { }
     
         [CCode (has_target = false)]
@@ -54,14 +57,14 @@ namespace Calculus.Core {
                                             Operator () { symbol = "^", prec = 3, fixity = "RIGHT", eval = (a, b) => { return Math.pow (a, b); } },
                                             Operator () { symbol = "mod", prec = 3, fixity = "LEFT", eval = (a, b) => { return 0; } }  };
                                             
-        private struct Function { string symbol; int inputs; Evaluation eval; }
-        private Function[] functions = {   Function () { symbol = "sin", inputs = 1, eval = (a) => { return Math.sin (a); } },
+        private struct Function { string symbol; int inputs; Evaluation eval;}
+        private Function[] functions = {  Function () { symbol = "sin", inputs = 1, eval = (a) => { return Math.sin (a); } },
                                             Function () { symbol = "cos", inputs = 1, eval = (a) => { return Math.cos (a); } },
                                             Function () { symbol = "tan", inputs = 1, eval = (a) => { return Math.tan (a); } },
                                             Function () { symbol = "sinh", inputs = 1, eval = (a) => { return Math.sinh (a); } },
                                             Function () { symbol = "cosh", inputs = 1, eval = (a) => { return Math.cosh (a); } },
                                             Function () { symbol = "tanh", inputs = 1, eval = (a) => { return Math.tanh (a); } } }; 
-                                        
+                                            
         public static double parse (string exp) throws PARSER_ERROR {
             Parser parser = new Parser ();
             List<Token> tokenized_list = new List<Token> ();
@@ -79,6 +82,7 @@ namespace Calculus.Core {
             return d;
         }
         
+        
         // slice input string into logical tokens to work with after.
         public List<Token> tokenize_string (string exp) throws TOKENIZE_ERROR {
             List<Token> token_list = new List<Token> ();
@@ -87,6 +91,10 @@ namespace Calculus.Core {
             string temp = exp.replace (" ","");
             string symbol = "";
             bool is_negative = false;
+            
+            var chars_a = temp.to_utf8 ();
+            foreach (char c in chars_a)
+                stdout.printf ("%s \n", c.to_string ());
             
             while (temp != "") {
                 
@@ -99,6 +107,9 @@ namespace Calculus.Core {
                         } catch (TOKENIZE_ERROR e) { throw e; }
                     }
                     numbers = numbers + symbol.to_string ();
+                } else if (is_function (symbol) || symbol == "√") {
+                    try { token_list.append (create_func_token (chars));
+                    } catch (TOKENIZE_ERROR e) { throw e; }
                 } else if (is_alpha (symbol)) {
                     chars = chars + symbol.to_string ();
                 } else if (is_operator (symbol) || is_operator (chars)) {
@@ -140,7 +151,6 @@ namespace Calculus.Core {
                         } catch (TOKENIZE_ERROR e) { throw e; }
                         numbers = "";
                     }
-                    
                     token_list.append (new Token (symbol.to_string (), TokenType.PARENTHESIS_RIGHT));
                 } else 
                     throw new TOKENIZE_ERROR.UNKNOWN_SYMBOL ("Encountered unknown symbol '" + symbol+ "'.");
@@ -154,7 +164,7 @@ namespace Calculus.Core {
             return token_list;
         }
         
-        //Djikstra's Shunting Yard algorithm for reordering a tokenized list into Reverse Polish Notation
+        //Djikstra's Shunting Yard algorithm for ordering a tokenized list into Reverse Polish Notation
         public List<Token> shunting_yard (List<Token> token_list) throws SHUNTING_ERROR {
             List<Token> output = new List<Token> ();
             Stack<Token> opStack = new Stack<Token> ();
@@ -251,8 +261,7 @@ namespace Calculus.Core {
                 }                
             }
         
-            double out_d = double.parse (stack.pop ().content);
-            return out_d;
+            return double.parse (stack.pop ().content);
         }
         
         private bool is_operator (string s) {

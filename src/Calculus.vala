@@ -25,12 +25,8 @@ namespace Calculus {
         public const string CALCULATOR = N_("Calculator");
         public const string PROGRAM_NAME = "Calculus";
 
-        public const string KEYWORDS = "GTK;Utility;Calculator;";
         public const string COMMENT = N_("Calculate in an elementary way.");
-        public const string GENERIC_NAME = N_("Calculator");
-
-        public const string ABOUT_STOCK = N_("About Calculus");
-        public const string ABOUT_GENERIC = N_("About Calculator");
+        public const string ABOUT_STOCK = N_("About Calculator");
     
         construct {
             application_id = "org.calculus";

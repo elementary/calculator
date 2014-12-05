@@ -42,7 +42,8 @@ vala_precompile(VALA_C ${EXEC_NAME}
     src/HistoryWindow.vala
     src/Core/Stack.vala
     src/Core/Token.vala
-    src/Core/Parser.vala
+    src/Core/Scanner.vala
+    src/Core/Evaluation.vala
     src/Core/History.vala
 PACKAGES
     gtk+-3.0
@@ -61,5 +62,4 @@ add_executable(${EXEC_NAME} ${VALA_C})
 # install the binaries we just made
 install (TARGETS ${EXEC_NAME} RUNTIME DESTINATION bin)
 
-# install our .desktop file so the Applications menu will see it
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/calculus.desktop DESTINATION ${DATADIR}/applications/)
+add_subdirectory (data)
