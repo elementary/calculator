@@ -81,7 +81,10 @@ namespace Calculus.Core {
         }
         
         public string cut (double d, int d_places) {
-            return d.to_string ();
+            var s = ("%.5f".printf (d)).replace (",", ".");
+            while (s.last_index_of ("0") == s.length - 1)
+                s = s.slice (0, s.length - 1);
+            return s;
         }
         
         //doing some fixes and working on special cases after the Scanner did his basic work

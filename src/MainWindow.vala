@@ -312,8 +312,8 @@ namespace Calculus {
                     this.remove_error ();
                 } catch (OUT_ERROR e) {
                     infobar = new Gtk.InfoBar ();
-                    unowned Gtk.Container infobar_content_area = infobar.get_content_area ();
-                    infobar_content_area.add (new Gtk.Label (e.message));
+                    var content_area = infobar.get_content_area ();
+                    content_area.add (new Gtk.Label (e.message));
                     infobar.set_show_close_button (false);
                     infobar.set_message_type (Gtk.MessageType.ERROR);
                     
@@ -338,11 +338,12 @@ namespace Calculus {
                 //show extended functionality
                 button.set_property ("image", extended_img_2);
                 button.set_tooltip_text (_("Hide extended functionality"));
-                sub_grid_2.set_visible (true);
+                sub_grid_2.show ();
             } else {
+                //hide extended functionality
                 button.set_property ("image", extended_img_1);
                 button.set_tooltip_text (_("Show extended functionality"));
-                sub_grid_2.set_visible (false);
+                sub_grid_2.hide ();
             }
             //focusing button_calc because without a new focus it will cause weird window drawing problems.
             this.set_focus (button_calc);
