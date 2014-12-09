@@ -39,12 +39,11 @@ include(ValaPrecompile)
 vala_precompile(VALA_C ${EXEC_NAME}
     src/Calculus.vala
     src/MainWindow.vala
-    src/HistoryWindow.vala
+    src/HistoryDialog.vala
     src/Core/Stack.vala
     src/Core/Token.vala
     src/Core/Scanner.vala
     src/Core/Evaluation.vala
-    src/Core/History.vala
 PACKAGES
     gtk+-3.0
     granite

@@ -49,8 +49,10 @@ namespace Calculus {
             help_url = "https://answers.launchpad.net/calculus"; 
             translate_url = "https://translations.launchpad.net/calculus";       
             about_authors = { "Marvin Beckers <beckersmarvin@gmail.com>" };
-            about_comments = _("A simple calc tool for elementary OS.");
+            about_comments = "";
             about_license_type = Gtk.License.GPL_3_0;
+            
+            Intl.setlocale (LocaleCategory.ALL, "");
         }
         
         public override void activate () {

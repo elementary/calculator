@@ -50,6 +50,8 @@ namespace Calculus.Core {
                 stdout.printf ("[Error] %s \n", e.message);
             }
             
+            /*foreach (Token t in tokenlist) 
+                stdout.printf ("%s - %s \n", t.content, t.token_type.to_string ());*/
             return tokenlist;
         }
         
