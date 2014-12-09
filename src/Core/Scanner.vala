@@ -32,7 +32,7 @@ namespace Calculus.Core {
             pos = input_str;
         }
         
-        public static List<Token> scan (string input) {
+        public static List<Token> scan (string input) throws SCANNER_ERROR {
             Scanner scanner = new Scanner (input);
             TokenType type = TokenType.EOF;
             List<Token> tokenlist = new List<Token> ();
@@ -46,13 +46,9 @@ namespace Calculus.Core {
                     string substr = input.substring ((long) start, (long) len);
                     tokenlist.append (new Token (substr, type));
                 } while (type != TokenType.EOF);
-            } catch (Error e) {
-                stdout.printf ("[Error] %s \n", e.message);
-            }
             
-            /*foreach (Token t in tokenlist) 
-                stdout.printf ("%s - %s \n", t.content, t.token_type.to_string ());*/
-            return tokenlist;
+                return tokenlist;
+            } catch (SCANNER_ERROR e) { throw e; }
         }
         
         private TokenType next (out size_t start, out size_t len) throws SCANNER_ERROR {
@@ -91,7 +87,7 @@ namespace Calculus.Core {
             }
             
             //if no rule matches the character at pos, throw an error.
-            throw new SCANNER_ERROR.UNKNOWN_TOKEN ("Unknown Token.");       
+            throw new SCANNER_ERROR.UNKNOWN_TOKEN ("unknown or misplaced character '%s'", pos[0].to_string ());       
         }
         
         private void skip_spaces () {

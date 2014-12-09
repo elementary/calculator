@@ -7,7 +7,7 @@ Icon=accessories-calculator
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=GTK;Utility;Calculator;
+Categories=GTK;Utility;Office;
 X-GNOME-Gettext-Domain=calculus
 
 X-Ayatana-Desktop-Shortcuts=AboutDialog

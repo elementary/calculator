@@ -122,6 +122,7 @@ namespace Calculus {
                    this.added (val.get_string ());    
                 }
             }
+            this.hide ();
             this.destroy ();
         }
     }

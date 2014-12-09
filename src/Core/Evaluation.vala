@@ -19,17 +19,20 @@
 using GLib.Math;
 
 namespace Calculus.Core {
-    public errordomain EVAL_ERROR {
+    private errordomain EVAL_ERROR {
         NO_FUNCTION,
         NO_OPERATOR
     }
-    public errordomain CHECK_ERROR {
+    private errordomain CHECK_ERROR {
         ALPHA_INVALID
     }
-    public errordomain SHUNTING_ERROR {
+    private errordomain SHUNTING_ERROR {
         DUMMY,
         NO_OPERATOR,
         NO_FUNCTION
+    }
+    public errordomain OUT_ERROR {
+        ERROR
     }
     public class Evaluation : Object {
     
@@ -55,23 +58,29 @@ namespace Calculus.Core {
                                             Function () { symbol = "tanh", inputs = 1, eval = (a) => { return Math.tanh (a); } },
                                             Function () { symbol = "log", inputs = 1, eval = (a) => { return Math.log (a); } },
                                             Function () { symbol = "exp", inputs = 1, eval = (a) => { return Math.exp (a); } },
-                                            Function () { symbol = "sqrt", inputs = 1, eval = (a) => { return Math.sqrt (a); } } }; 
+                                            Function    () { symbol = "sqrt", inputs = 1, eval = (a) => { return Math.sqrt (a); } } }; 
         
-        public static string evaluate (string str, int round) {
-            List<Token> tokenlist = Scanner.scan (str);
-            var d = 0.0;
-            Evaluation e = new Evaluation ();
-            
+        public static string evaluate (string str, int d_places) throws OUT_ERROR {
             try {
-                tokenlist = e.check_tokens (tokenlist);
+                List<Token> tokenlist = Scanner.scan (str);
+                var d = 0.0;
+                Evaluation e = new Evaluation ();
+                
                 try {
-                    tokenlist = e.shunting_yard (tokenlist);
+                    tokenlist = e.check_tokens (tokenlist);
                     try {
-                        d = e.eval_postfix (tokenlist);
-                    } catch (EVAL_ERROR e) { }
-                } catch (SHUNTING_ERROR e) { }
-            } catch (CHECK_ERROR e) { }
-           
+                        tokenlist = e.shunting_yard (tokenlist);
+                        try {
+                            d = e.eval_postfix (tokenlist);
+                        } catch (EVAL_ERROR e) { throw new OUT_ERROR.ERROR (e.message); }
+                    } catch (SHUNTING_ERROR e) { throw new OUT_ERROR.ERROR (e.message); }
+                } catch (CHECK_ERROR e) { throw new OUT_ERROR.ERROR (e.message); }
+
+                return e.cut (d, d_places);
+            } catch (SCANNER_ERROR e) { throw new OUT_ERROR.ERROR (e.message); }
+        }
+        
+        public string cut (double d, int d_places) {
             return d.to_string ();
         }
         
@@ -110,7 +119,7 @@ namespace Calculus.Core {
         }
         
         //Djikstra's Shunting Yard algorithm for ordering a tokenized list into Reverse Polish Notation
-        public List<Token> shunting_yard (List<Token> token_list) throws SHUNTING_ERROR {
+        private List<Token> shunting_yard (List<Token> token_list) throws SHUNTING_ERROR {
             List<Token> output = new List<Token> ();
             Stack<Token> opStack = new Stack<Token> ();
         
@@ -180,8 +189,8 @@ namespace Calculus.Core {
                 }
             }
             
-            foreach (Token t in output)
-                stdout.printf ("%s - %s \n", t.content, t.token_type.to_string ());
+            /*foreach (Token t in output)
+                stdout.printf ("%s - %s \n", t.content, t.token_type.to_string ());*/
             return output;
         }
         
@@ -255,7 +264,7 @@ namespace Calculus.Core {
                 Operator op = get_operator (t_op);
                 //stdout.printf ("Testing parsing. '%s' - '%s' \n", (double.parse (t2.content)).to_string (), (double.parse (t1.content)).to_string ());
                 var d = (double)(op.eval (double.parse (t2.content), double.parse (t1.content)));
-                stdout.printf ("Computed Tokens '%s' '%s' '%s' to '%s'. \n", t2.content, t_op.content, t1.content, d.to_string ());
+                //stdout.printf ("Computed Tokens '%s' '%s' '%s' to '%s'. \n", t2.content, t_op.content, t1.content, d.to_string ());
                 return new Token (d.to_string (), TokenType.NUMBER);
             } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_OPERATOR ("The given token was no operator."); }
         }

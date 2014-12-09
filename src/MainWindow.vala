@@ -32,6 +32,7 @@ namespace Calculus {
         private Gtk.Image extended_img_1;
         private Gtk.Image extended_img_2;
         private Gtk.Button button_calc;
+        private Gtk.InfoBar? infobar;
         
         private List<History?> history;
         
@@ -90,8 +91,8 @@ namespace Calculus {
             
             build_grid_1 ();
             build_grid_2 ();
-            main_grid.attach (sub_grid_1, 0, 0, 1, 1);
-            main_grid.attach (sub_grid_2, 1, 0, 1, 1);
+            main_grid.attach (sub_grid_1, 0, 1, 1, 1);
+            main_grid.attach (sub_grid_2, 1, 1, 1, 1);
             
             main_grid.show_all ();
             this.add (main_grid);
@@ -107,32 +108,20 @@ namespace Calculus {
             sub_grid_1.set_row_spacing (3);
             sub_grid_1.margin = 10;
             
+            //create all widgets
             entry = new Gtk.Entry ();
-            entry.set_size_request (0, 50);
-            entry.get_style_context ().add_class ("h2");
-            sub_grid_1.attach (entry, 0, 0, 4, 1);
-            
-            var button_undo = new Gtk.Button.from_icon_name ("edit-undo-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
-            var button_del = new Gtk.Button.with_label ("C");
-            button_del.set_tooltip_text (_("Clear entry"));
-            button_del.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
-            
-            var button_add = new Gtk.Button.with_label (" + ");
-            button_add.get_style_context ().add_class ("h3");
-            var button_sub = new Gtk.Button.with_label (" - ");
-            button_sub.get_style_context ().add_class ("h3");
-            var button_mult = new Gtk.Button.with_label (" * ");
-            button_mult.get_style_context ().add_class ("h3");
-            var button_div = new Gtk.Button.with_label (" / ");
-            button_div.get_style_context ().add_class ("h3");
-     
             button_calc = new Gtk.Button.with_label ("=");
-            button_calc.get_style_context ().add_class ("h2");
-            button_calc.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            
+            var button_undo = new Gtk.Button.from_icon_name ("go-previous-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
+            var button_del = new Gtk.Button.with_label ("C");
+            var button_add = new Gtk.Button.with_label (" + ");
+            var button_sub = new Gtk.Button.with_label (" - ");
+            var button_mult = new Gtk.Button.with_label (" * ");
+            var button_div = new Gtk.Button.with_label (" / ");
+            
             var button_0 = new Gtk.Button.with_label ("0");
             var button_point = new Gtk.Button.with_label (".");
             var button_percent = new Gtk.Button.with_label ("%");
-            
             var button_1 = new Gtk.Button.with_label ("1");
             var button_2 = new Gtk.Button.with_label ("2");
             var button_3 = new Gtk.Button.with_label ("3");
@@ -145,7 +134,22 @@ namespace Calculus {
             var button_8 = new Gtk.Button.with_label ("8");
             var button_9 = new Gtk.Button.with_label ("9");
             
-            //force size on all buttons in the grid
+            //add style context to widgets
+            entry.get_style_context ().add_class ("h2");
+            button_del.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            button_add.get_style_context ().add_class ("h3");
+            button_sub.get_style_context ().add_class ("h3");
+            button_mult.get_style_context ().add_class ("h3");
+            button_div.get_style_context ().add_class ("h3");
+            button_calc.get_style_context ().add_class ("h2");
+            button_calc.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            
+            //set tooltips for widgets
+            button_del.set_tooltip_text (_("Clear entry"));
+            
+            //set size for some widgets to get desired layout
+            entry.set_size_request (0, 50);
+            
             button_0.set_size_request (0, 50);
             button_1.set_size_request (0, 50);
             button_4.set_size_request (0, 50);
@@ -156,7 +160,9 @@ namespace Calculus {
             button_percent.set_size_request (70, 50);
             button_add.set_size_request (70, 50);
             
-            //attach all buttons
+            //attach all widgets
+            sub_grid_1.attach (entry, 0, 0, 4, 1);
+            
             sub_grid_1.attach (button_7, 0, 2, 1, 1);
             sub_grid_1.attach (button_8, 1, 2, 1, 1);
             sub_grid_1.attach (button_9, 2, 2, 1, 1);
@@ -183,6 +189,9 @@ namespace Calculus {
             sub_grid_1.attach (button_calc, 2, 5, 2, 1);
             
             //connect button_clicked methods to buttons
+            entry.changed.connect (remove_error);
+            entry.activate.connect (button_calc_clicked);
+            
             button_0.clicked.connect (button_clicked);
             button_1.clicked.connect (button_clicked);
             button_2.clicked.connect (button_clicked);
@@ -218,8 +227,8 @@ namespace Calculus {
             sub_grid_2.margin = 10;
             sub_grid_2.margin_start = 0;
             
+            //create all widgets
             var button_pow = new Gtk.Button.with_label ("^");
-            button_pow.get_style_context ().add_class ("h3");
             var button_sin = new Gtk.Button.with_label ("sin");
             var button_cos = new Gtk.Button.with_label ("cos");
             var button_tan = new Gtk.Button.with_label ("tan");
@@ -233,6 +242,10 @@ namespace Calculus {
             var button_e = new Gtk.Button.with_label ("e");
             var button_par_right = new Gtk.Button.with_label (")");
             
+            //add style context to widgets
+            button_pow.get_style_context ().add_class ("h3");
+            
+            //set size for some widgets to get desired layout
             button_pow.set_size_request (60, 50);
             button_sr.set_size_request (60, 50);
             
@@ -275,32 +288,49 @@ namespace Calculus {
         
         private void button_clicked (Gtk.Button btn) {
             var label = btn.get_label ();
+            var builder = new StringBuilder (entry.get_text ());
+            ssize_t pos = entry.cursor_position;
+            if (pos == 0) 
+                pos = builder.len;
+            
             foreach (var val in button_types) {
                 if (label == val) {
-                        entry.set_text (entry.get_text () + val);
+                    builder.insert (pos, val);
                     break;
                 }
             }
+            
+            entry.set_text (builder.str);
         }
         
         private void button_calc_clicked () {
             if (entry.get_text () != "") {
-                var output = Evaluation.evaluate (entry.get_text (), round);
-                history.append (History () { exp = entry.get_text (), output = output } );
-                entry.set_text (output);
+                try {
+                    var output = Evaluation.evaluate (entry.get_text (), round);
+                    history.append (History () { exp = entry.get_text (), output = output } );
+                    entry.set_text (output);
+                    this.remove_error ();
+                } catch (OUT_ERROR e) {
+                    infobar = new Gtk.InfoBar ();
+                    unowned Gtk.Container infobar_content_area = infobar.get_content_area ();
+                    infobar_content_area.add (new Gtk.Label (e.message));
+                    infobar.set_show_close_button (false);
+                    infobar.set_message_type (Gtk.MessageType.ERROR);
+                    
+                    main_grid.attach (infobar, 0, 0, 2, 1);
+                    infobar.show_all ();
+                }
             }
         } 
         
         private void button_undo_clicked () {
-            //entry.backspace ();
-            float test = (float)33.0;
-            float test2 = 100.0f;
-            entry.set_text ((test / test2).to_string ());
+            entry.set_text ("");
         }
         
         private void button_del_clicked () {
             entry.set_text ("");
             this.set_focus (entry);
+            this.remove_error ();
         }
         
         private void toggle_grid (Gtk.ToggleButton button) {
@@ -325,6 +355,11 @@ namespace Calculus {
         
         private void history_added (string input) {
             entry.set_text (entry.get_text () + input);
+        }
+        
+        private void remove_error () {
+            if (infobar != null)
+                infobar.hide ();
         }
     }
 }
