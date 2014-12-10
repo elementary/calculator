@@ -44,8 +44,8 @@ namespace Calculus {
         private string[] button_types = {  "0", "1", "2", "3", "4", "5", 
                                             "6", "7", "8", "9", "0", " + ",
                                             " - ", " * ", " / ", "%", ".", "(", 
-                                            ")", "^", "sin", "cos", "tan",
-                                            "sinh", "cosh", "tanh" , "sqrt", "π" };
+                                            ")", "^", "sin", "cos", "tan", "√",
+                                            "sinh", "cosh", "tanh" , "sqrt", "π"};
 
         public MainWindow () {
             this.set_resizable (false);
@@ -146,6 +146,7 @@ namespace Calculus {
             
             //set tooltips for widgets
             button_del.set_tooltip_text (_("Clear entry"));
+            button_undo.set_tooltip_text (_("Backspace"));
             
             //set size for some widgets to get desired layout
             entry.set_size_request (0, 50);
@@ -232,10 +233,10 @@ namespace Calculus {
             var button_sin = new Gtk.Button.with_label ("sin");
             var button_cos = new Gtk.Button.with_label ("cos");
             var button_tan = new Gtk.Button.with_label ("tan");
-            var button_pi = new Gtk.Button.with_label ("pi");
+            var button_pi = new Gtk.Button.with_label ("π");
             var button_par_left = new Gtk.Button.with_label ("(");
             
-            var button_sr = new Gtk.Button.with_label ("sqrt");
+            var button_sr = new Gtk.Button.with_label ("√");
             var button_sinh = new Gtk.Button.with_label ("sinh");
             var button_cosh = new Gtk.Button.with_label ("cosh");
             var button_tanh = new Gtk.Button.with_label ("tanh");
@@ -249,25 +250,25 @@ namespace Calculus {
             button_pow.set_size_request (60, 50);
             button_sr.set_size_request (60, 50);
             
-            button_sin.set_size_request (0, 50);
-            button_cos.set_size_request (0, 50);
-            button_tan.set_size_request (0, 50);
-            button_pi.set_size_request (0, 50);
-            button_par_left.set_size_request (0, 50);
+            button_sin.set_size_request (60, 50);
+            button_cos.set_size_request (60, 50);
+            button_tan.set_size_request (60, 50);
+            button_pi.set_size_request (60, 50);
+            button_par_left.set_size_request (60, 50);
             
-            sub_grid_2.attach (button_pow, 0, 0, 1, 1);
-            sub_grid_2.attach (button_sin, 0, 1, 1, 1);
-            sub_grid_2.attach (button_cos, 0, 2, 1, 1);
-            sub_grid_2.attach (button_tan, 0, 3, 1, 1);
-            sub_grid_2.attach (button_pi, 0, 4, 1, 1);
-            sub_grid_2.attach (button_par_left, 0, 5, 1, 1);
+            sub_grid_2.attach (button_par_left, 0, 0, 1, 1);
+            sub_grid_2.attach (button_pow, 0, 1, 1, 1);
+            sub_grid_2.attach (button_sin, 0, 2, 1, 1);
+            sub_grid_2.attach (button_cos, 0, 3, 1, 1);
+            sub_grid_2.attach (button_tan, 0, 4, 1, 1);
+            sub_grid_2.attach (button_pi, 0, 5, 1, 1);
             
-            sub_grid_2.attach (button_sr, 1, 0, 1, 1);
-            sub_grid_2.attach (button_sinh, 1, 1, 1, 1);
-            sub_grid_2.attach (button_cosh, 1, 2, 1, 1);
-            sub_grid_2.attach (button_tanh, 1, 3, 1, 1);
-            sub_grid_2.attach (button_e, 1, 4, 1, 1);
-            sub_grid_2.attach (button_par_right, 1, 5, 1, 1);
+            sub_grid_2.attach (button_par_right, 1, 0, 1, 1);
+            sub_grid_2.attach (button_sr, 1, 1, 1, 1);
+            sub_grid_2.attach (button_sinh, 1, 2, 1, 1);
+            sub_grid_2.attach (button_cosh, 1, 3, 1, 1);
+            sub_grid_2.attach (button_tanh, 1, 4, 1, 1);
+            sub_grid_2.attach (button_e, 1, 5, 1, 1);
             
             button_pow.clicked.connect (button_clicked);
             button_sin.clicked.connect (button_clicked);
@@ -312,8 +313,7 @@ namespace Calculus {
                     this.remove_error ();
                 } catch (OUT_ERROR e) {
                     infobar = new Gtk.InfoBar ();
-                    var content_area = infobar.get_content_area ();
-                    content_area.add (new Gtk.Label (e.message));
+                    infobar.get_content_area ().add (new Gtk.Label (e.message));
                     infobar.set_show_close_button (false);
                     infobar.set_message_type (Gtk.MessageType.ERROR);
                     
@@ -324,7 +324,7 @@ namespace Calculus {
         } 
         
         private void button_undo_clicked () {
-            entry.set_text ("");
+            entry.set_text (entry.get_text ().slice (0, entry.get_text ().length - 1));
         }
         
         private void button_del_clicked () {

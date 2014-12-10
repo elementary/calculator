@@ -14,8 +14,6 @@
 *
 * You should have received a copy of the GNU General Public License along
 * with Calculus. If not, see http://www.gnu.org/licenses/.
-*
-* Thanks to flo @ #vala (gimpnet) for writing the basic scanner for me and providing endless knowledge.
 */
 
 namespace Calculus.Core {
@@ -23,76 +21,88 @@ namespace Calculus.Core {
         UNKNOWN_TOKEN
     }
     
+    
     public class Scanner {
-        private unowned string str;
-        private char* pos;
+        public unowned string str;
+        public int pos;
+        public unichar[] uc;
         
         public Scanner (string input_str) {
-            str = input_str;
-            pos = input_str;
+            this.str = input_str;
+            this.pos = 0;
+            this.uc = new unichar[0];
         }
         
         public static List<Token> scan (string input) throws SCANNER_ERROR {
             Scanner scanner = new Scanner (input);
             TokenType type = TokenType.EOF;
             List<Token> tokenlist = new List<Token> ();
-
+            int index = 0;
+            unowned unichar c = 0;
+            
+            for (int i = 0; input.get_next_char(ref index, out c); i++) {
+                scanner.uc.resize (scanner.uc.length + 1);
+                scanner.uc[scanner.uc.length - 1] = c;
+            }
+            
             try {
-                do {
-                    size_t start;
-                    size_t len;
+                while (scanner.pos < scanner.uc.length) {
+                    ssize_t start;
+                    ssize_t len;
+                    string substr = "";
                     
                     type = scanner.next (out start, out len);
-                    string substr = input.substring ((long) start, (long) len);
+                    for (ssize_t i = start; i < (start + len); i++)
+                        substr = substr + scanner.uc[i].to_string ();
                     tokenlist.append (new Token (substr, type));
-                } while (type != TokenType.EOF);
-            
+                }
                 return tokenlist;
             } catch (SCANNER_ERROR e) { throw e; }
         }
         
-        private TokenType next (out size_t start, out size_t len) throws SCANNER_ERROR {
-            skip_spaces ();
-            start = pos - (char*) str;
-            
-            if (pos[0].isdigit ()) {
-                while (pos[0].isdigit ())
-                    pos++;
-                if (pos[0] == '.')
-                    pos++;
-                while (pos[0].isdigit ())
-                    pos++;
-                len = pos - (char*) str - start;
-                return TokenType.NUMBER;
-            } else if (pos[0].isalpha ()) {
-                while (pos[0].isalpha ())
-                    pos++;
-                len = pos - (char*) str - start;
-                return TokenType.ALPHA;
-            } else if (pos[0] == '+' || pos[0] == '-' || pos[0] == '*' || pos[0] == '/' || pos[0] == '^' || pos[0] == '%') {
+        private TokenType next (out ssize_t start, out ssize_t len) throws SCANNER_ERROR {
+            while (uc[pos] == ' ' || uc[pos] == '\t')
                 pos++;
-                len = 1;
-                return TokenType.OPERATOR;
-            } else if (pos[0] == '(') {
+            start = pos;
+            
+            if (uc[pos].isdigit ()) {
+                while (uc[pos].isdigit ())
+                    pos++;
+                if (uc[pos] == '.')
+                    pos++;
+                while (uc[pos].isdigit ())
+                    pos++;
+                len = pos - start;
+                return TokenType.NUMBER;
+            } else if (uc[pos].isalpha ()) {
+                while (uc[pos].isalpha ())
+                    pos++;
+                len = pos - start;
+                return TokenType.ALPHA;
+            } else if (uc[pos] == '(') {
                 pos++;
                 len = 1;
                 return TokenType.P_LEFT;
-            } else if (pos[0] == ')') {
+            } else if (uc[pos] == ')') {
                 pos++;
                 len = 1;
                 return TokenType.P_RIGHT;
-            } else if (pos[0] == '\0') {
+            } else if (uc[pos] == '+' || uc[pos] == '-' || uc[pos] == '*' || 
+                        uc[pos] == '/' || uc[pos] == '^' || uc[pos] == '%') {
+                pos++;
+                len = 1;
+                return TokenType.OPERATOR;
+            } else if (uc[pos] == '√') {
+                pos++;
+                len = 1;
+                return TokenType.FUNCTION;
+            } else if (uc[pos] == '\0') {
                 len = 0;
                 return TokenType.EOF;
             }
             
             //if no rule matches the character at pos, throw an error.
-            throw new SCANNER_ERROR.UNKNOWN_TOKEN ("unknown or misplaced character '%s'", pos[0].to_string ());       
-        }
-        
-        private void skip_spaces () {
-            while (pos[0] == ' ' || pos[0] == '\t')
-                pos++;
+            throw new SCANNER_ERROR.UNKNOWN_TOKEN ("unknown or misplaced character '%s'", str.get_char (pos).to_string ());
         }
     }
 }

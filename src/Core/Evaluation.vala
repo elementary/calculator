@@ -21,7 +21,8 @@ using GLib.Math;
 namespace Calculus.Core {
     private errordomain EVAL_ERROR {
         NO_FUNCTION,
-        NO_OPERATOR
+        NO_OPERATOR,
+        NO_CONSTANT
     }
     private errordomain CHECK_ERROR {
         ALPHA_INVALID
@@ -29,15 +30,19 @@ namespace Calculus.Core {
     private errordomain SHUNTING_ERROR {
         DUMMY,
         NO_OPERATOR,
-        NO_FUNCTION
+        NO_FUNCTION,
+        NO_CONSTANT
     }
     public errordomain OUT_ERROR {
-        ERROR
+        EVAL_ERROR,
+        CHECK_ERROR,
+        SHUNTING_ERROR,
+        SCANNER_ERROR
     }
     public class Evaluation : Object {
     
         [CCode (has_target = false)]
-        private delegate double Eval (double a, double b = 0);
+        private delegate double Eval (double a = 0, double b = 0);
         
         private struct Operator { string symbol; int inputs; int prec; string fixity; Eval eval;}
         private Operator[] operators = {   Operator () { symbol = "+", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a + b; } },
@@ -58,12 +63,19 @@ namespace Calculus.Core {
                                             Function () { symbol = "tanh", inputs = 1, eval = (a) => { return Math.tanh (a); } },
                                             Function () { symbol = "log", inputs = 1, eval = (a) => { return Math.log (a); } },
                                             Function () { symbol = "exp", inputs = 1, eval = (a) => { return Math.exp (a); } },
-                                            Function    () { symbol = "sqrt", inputs = 1, eval = (a) => { return Math.sqrt (a); } } }; 
+                                            Function () { symbol = "sqrt", inputs = 1, eval = (a) => { return Math.sqrt (a); } },
+                                            Function () { symbol = "√", inputs = 1, eval = (a) => { return Math.sqrt (a); } } };
+                                            
+        private struct Constant { string symbol; Eval eval; }
+        private Constant[] constants = {   Constant () { symbol = "pi", eval = () => { return Math.PI; } },
+                                            Constant () { symbol = "π", eval = () => { return Math.PI; } }  };
         
         public static string evaluate (string str, int d_places) throws OUT_ERROR {
             try {
                 List<Token> tokenlist = Scanner.scan (str);
                 var d = 0.0;
+                /*foreach (Token t in tokenlist)
+                    stdout.printf ("%s || %s \n", t.content, t.token_type.to_string ());*/
                 Evaluation e = new Evaluation ();
                 
                 try {
@@ -72,19 +84,12 @@ namespace Calculus.Core {
                         tokenlist = e.shunting_yard (tokenlist);
                         try {
                             d = e.eval_postfix (tokenlist);
-                        } catch (EVAL_ERROR e) { throw new OUT_ERROR.ERROR (e.message); }
-                    } catch (SHUNTING_ERROR e) { throw new OUT_ERROR.ERROR (e.message); }
-                } catch (CHECK_ERROR e) { throw new OUT_ERROR.ERROR (e.message); }
+                        } catch (EVAL_ERROR e) { throw new OUT_ERROR.EVAL_ERROR (e.message); }
+                    } catch (SHUNTING_ERROR e) { throw new OUT_ERROR.SHUNTING_ERROR (e.message); }
+                } catch (CHECK_ERROR e) { throw new OUT_ERROR.CHECK_ERROR (e.message); }
 
                 return e.cut (d, d_places);
-            } catch (SCANNER_ERROR e) { throw new OUT_ERROR.ERROR (e.message); }
-        }
-        
-        public string cut (double d, int d_places) {
-            var s = ("%.5f".printf (d)).replace (",", ".");
-            while (s.last_index_of ("0") == s.length - 1)
-                s = s.slice (0, s.length - 1);
-            return s;
+            } catch (SCANNER_ERROR e) { throw new OUT_ERROR.SCANNER_ERROR (e.message); }
         }
         
         //doing some fixes and working on special cases after the Scanner did his basic work
@@ -106,8 +111,10 @@ namespace Calculus.Core {
                         tokenlist.append (new Token (t.content, TokenType.OPERATOR));
                     else if (is_function (t))
                         tokenlist.append (new Token (t.content, TokenType.FUNCTION));
+                    else if (is_constant (t))
+                        tokenlist.append (new Token (t.content, TokenType.CONSTANT));
                     else
-                        throw new CHECK_ERROR.ALPHA_INVALID ("Token '%s' is no valid function or operator", t.content);
+                        throw new CHECK_ERROR.ALPHA_INVALID ("'%s' is no valid function, operator or constant.", t.content);
                 } else if (t.token_type == TokenType.NUMBER && next_number_negative) {
                     var d = double.parse (t.content) * (-1);
                     tokenlist.append (new Token (d.to_string (), t.token_type));
@@ -115,9 +122,6 @@ namespace Calculus.Core {
                 } else 
                     tokenlist.append (t);
             }
-            
-            /*foreach (Token t in tokenlist)
-                stdout.printf ("%s - %s \n", t.content, t.token_type.to_string ());*/
             return tokenlist;
         }
         
@@ -131,8 +135,10 @@ namespace Calculus.Core {
                 case TokenType.NUMBER:
                     output.append (t);
                     break;
-
-               case TokenType.FUNCTION:
+                case TokenType.CONSTANT:
+                    output.append (t);
+                    break;
+                case TokenType.FUNCTION:
                     opStack.push (t);
                     break;
 
@@ -140,7 +146,7 @@ namespace Calculus.Core {
                     while (opStack.peek ().token_type != TokenType.P_LEFT && opStack.is_length (0) == false) 
                         output.append (opStack.pop ());
                     
-                    if (opStack.peek ().token_type != TokenType.PARENTHESIS_LEFT)
+                    if (opStack.peek ().token_type != TokenType.P_LEFT)
                         throw new SHUNTING_ERROR.DUMMY ("Either the seperator was misplaced or parentheses were mismatched.");
                     break;
                  
@@ -184,16 +190,13 @@ namespace Calculus.Core {
                 }
             }
             while (!opStack.empty ()) {
-                if (opStack.peek ().token_type == TokenType.PARENTHESIS_LEFT) {
+                if (opStack.peek ().token_type == TokenType.P_LEFT) {
                     /* TODO Throw mismatched error! */
                     break;
                 } else {
                     output.append (opStack.pop ());
                 }
             }
-            
-            /*foreach (Token t in output)
-                stdout.printf ("%s - %s \n", t.content, t.token_type.to_string ());*/
             return output;
         }
         
@@ -203,6 +206,11 @@ namespace Calculus.Core {
             foreach (Token t in token_list) {
                 if (t.token_type == TokenType.NUMBER) {
                     stack.push (t);
+                } else if (t.token_type == TokenType.CONSTANT) {
+                    try {
+                        Constant c = get_constant (t);
+                        stack.push (new Token (c.eval ().to_string (), TokenType.NUMBER));
+                    } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_CONSTANT (""); }
                 } else if (t.token_type == TokenType.OPERATOR) {
                     try {
                         Operator o = get_operator (t);
@@ -211,7 +219,7 @@ namespace Calculus.Core {
                         if (!stack.is_length (0) && o.inputs == 2)
                             t2 = stack.pop ();
                         stack.push (compute_tokens (t, t1, t2));
-                    } catch (SHUNTING_ERROR e) { }
+                    } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_OPERATOR (""); }
                 } else if (t.token_type == TokenType.FUNCTION) {
                     try {
                         Function f = get_function (t);
@@ -246,6 +254,14 @@ namespace Calculus.Core {
             return false;
         }
         
+        private bool is_constant (Token t) {
+            foreach (Constant c in constants) {
+                if (t.content == c.symbol)
+                    return true;
+            }
+            return false;
+        }
+        
         private Operator get_operator (Token t) throws SHUNTING_ERROR {
             foreach (Operator o in operators) {
                 if (t.content == o.symbol)
@@ -260,6 +276,14 @@ namespace Calculus.Core {
                     return f;
             }
             throw new SHUNTING_ERROR.NO_FUNCTION ("");
+        }
+        
+        private Constant get_constant (Token t) throws SHUNTING_ERROR {
+            foreach (Constant c in constants) {
+                if (t.content == c.symbol)
+                    return c;
+            }
+            throw new SHUNTING_ERROR.NO_CONSTANT ("");
         }
         
         private Token compute_tokens (Token t_op, Token t1, Token t2) throws EVAL_ERROR {
@@ -278,7 +302,15 @@ namespace Calculus.Core {
                 var d = (double)(f.eval (double.parse (t1.content), double.parse (t2.content)));
                 return new Token (d.to_string (), TokenType.NUMBER);
             } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_FUNCTION ("The given token was no function."); }
+        }
         
+        public string cut (double d, int d_places) {
+            var s = ("%.5f".printf (d)).replace (",", ".");
+            while (s.last_index_of ("0") == s.length - 1)
+                s = s.slice (0, s.length - 1);
+            if (s.last_index_of (".") == s.length - 1)
+                s = s.slice (0, s.length - 1);
+            return s;
         }
     }
 }

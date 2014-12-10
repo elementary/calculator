@@ -22,8 +22,7 @@ namespace Calculus.Core {
         OPERATOR,
         FUNCTION,
         SEPARATOR,
-        PARENTHESIS_LEFT,
-        PARENTHESIS_RIGHT,
+        CONSTANT,
         P_LEFT,
         P_RIGHT,
         

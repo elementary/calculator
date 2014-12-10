@@ -64,7 +64,7 @@ namespace Calculus {
                 view.expand = true;
                 
                 Gtk.CellRendererText cell = new Gtk.CellRendererText ();
-		        view.insert_column_with_attributes (-1, "Output", cell, "text", 0);
+		        view.insert_column_with_attributes (-1, "Result", cell, "text", 0);
 		        view.insert_column_with_attributes (-1, "Expression", cell, "text", 1);
                 
                 view.get_column (0).min_width = 100;
@@ -86,25 +86,25 @@ namespace Calculus {
             header.set_column_spacing (10);
             var header_label = new Gtk.Label (_("History"));
             var history_img = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.DND);
+            
             header_label.get_style_context ().add_class ("h2");
             header.attach (header_label, 1, 0, 1, 1);
             header.attach (history_img, 0, 0, 1, 1);
-            
             grid.attach (header, 0, 0, 1, 1);
-		    
+            
             content.pack_start (grid);
         }
         
         private void build_buttons () {
-            button_cp_expression = add_button (_("Add Output"), 100);
+            button_cp_expression = add_button (_("Add Result"), 100);
             button_cp_output = add_button (_("Add Expression"), 101);
+            
             if (history.length () == 0) {
                 button_cp_expression.sensitive = false;
                 button_cp_output.sensitive = false;
             }
             
             button_close = add_button (_("Close"), Gtk.ResponseType.CLOSE);
-            
             this.response.connect (on_response);
         }
         
