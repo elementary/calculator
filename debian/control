@@ -1,0 +1,14 @@
+Source: calculus
+Section: x11
+Priority: extra
+Maintainer: Marvin Beckers <beckersmarvin@gmail.com>
+Build-Depends: cmake (>= 2.8),
+               debhelper (>= 8.0.0),
+               valac-0.16 | valac (>= 0.16),
+               libgranite-dev (>= 0.3.0)
+Standards-Version: 3.9.3
+
+Package: calculus
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Calculate in an elementary way.
