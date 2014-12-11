@@ -5,7 +5,8 @@ Maintainer: Marvin Beckers <beckersmarvin@gmail.com>
 Build-Depends: cmake (>= 2.8),
                debhelper (>= 8.0.0),
                valac-0.22 | valac (>= 0.22),
-               libgranite-dev (>= 0.3.0)
+               libgranite-dev (>= 0.3.0),
+               gir1.2-gtk-3.0 (>= 3.12.2)
 Standards-Version: 3.9.3
 
 Package: calculus
