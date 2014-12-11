@@ -38,11 +38,13 @@ namespace Calculus.Core {
             TokenType type = TokenType.EOF;
             List<Token> tokenlist = new List<Token> ();
             int index = 0;
-            unowned unichar c = 0;
-            
+            unowned unichar c;
+           
             for (int i = 0; input.get_next_char(ref index, out c); i++) {
+                if (c != ' ') {
                 scanner.uc.resize (scanner.uc.length + 1);
                 scanner.uc[scanner.uc.length - 1] = c;
+                }
             }
             
             try {
@@ -52,8 +54,9 @@ namespace Calculus.Core {
                     string substr = "";
                     
                     type = scanner.next (out start, out len);
-                    for (ssize_t i = start; i < (start + len); i++)
+                    for (ssize_t i = start; i < (start + len); i++) {
                         substr = substr + scanner.uc[i].to_string ();
+                    }
                     tokenlist.append (new Token (substr, type));
                 }
                 return tokenlist;
@@ -61,10 +64,7 @@ namespace Calculus.Core {
         }
         
         private TokenType next (out ssize_t start, out ssize_t len) throws SCANNER_ERROR {
-            while (uc[pos] == ' ' || uc[pos] == '\t')
-                pos++;
             start = pos;
-            
             if (uc[pos].isdigit ()) {
                 while (uc[pos].isdigit ())
                     pos++;
@@ -74,6 +74,20 @@ namespace Calculus.Core {
                     pos++;
                 len = pos - start;
                 return TokenType.NUMBER;
+            } else if (uc[pos] == '+' || uc[pos] == '-' || uc[pos] == '*' || 
+                        uc[pos] == '/' || uc[pos] == '^' || uc[pos] == '%' ||
+                        uc[pos] == '÷' || uc[pos] == '×') {
+                pos++;
+                len = 1;
+                return TokenType.OPERATOR;
+            } else if (uc[pos] == '√') {
+                pos++;
+                len = 1;
+                return TokenType.FUNCTION;
+            } else if (uc[pos] == 'π') {
+                pos++;
+                len = 1;
+                return TokenType.CONSTANT;
             } else if (uc[pos].isalpha ()) {
                 while (uc[pos].isalpha ())
                     pos++;
@@ -87,22 +101,13 @@ namespace Calculus.Core {
                 pos++;
                 len = 1;
                 return TokenType.P_RIGHT;
-            } else if (uc[pos] == '+' || uc[pos] == '-' || uc[pos] == '*' || 
-                        uc[pos] == '/' || uc[pos] == '^' || uc[pos] == '%') {
-                pos++;
-                len = 1;
-                return TokenType.OPERATOR;
-            } else if (uc[pos] == '√') {
-                pos++;
-                len = 1;
-                return TokenType.FUNCTION;
             } else if (uc[pos] == '\0') {
                 len = 0;
                 return TokenType.EOF;
             }
             
             //if no rule matches the character at pos, throw an error.
-            throw new SCANNER_ERROR.UNKNOWN_TOKEN ("unknown or misplaced character '%s'", str.get_char (pos).to_string ());
+            throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("unknown or misplaced character '%s'"), str.get_char (pos).to_string ());
         }
     }
 }

@@ -48,7 +48,9 @@ namespace Calculus.Core {
         private Operator[] operators = {   Operator () { symbol = "+", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a + b; } },
                                             Operator () { symbol = "-", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a - b; } },
                                             Operator () { symbol = "*", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a * b; } }, 
+                                            Operator () { symbol = "×", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a * b; } },
                                             Operator () { symbol = "/", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a / b; } },
+                                            Operator () { symbol = "÷", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a / b; } },
                                             Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a % b; } },
                                             Operator () { symbol = "^", inputs = 2, prec = 3, fixity = "RIGHT", eval = (a, b) => { return Math.pow (a, b); } },
                                             Operator () { symbol = "e", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => { return a*Math.pow (10, b); } },
@@ -72,11 +74,9 @@ namespace Calculus.Core {
         
         public static string evaluate (string str, int d_places) throws OUT_ERROR {
             try {
-                List<Token> tokenlist = Scanner.scan (str);
+                var tokenlist = Scanner.scan (str);
                 var d = 0.0;
-                /*foreach (Token t in tokenlist)
-                    stdout.printf ("%s || %s \n", t.content, t.token_type.to_string ());*/
-                Evaluation e = new Evaluation ();
+                var e = new Evaluation ();
                 
                 try {
                     tokenlist = e.check_tokens (tokenlist);
@@ -98,14 +98,14 @@ namespace Calculus.Core {
             var next_number_negative = false;
             
             foreach (Token t in input_tokenlist) {
+                //determines whether the next number is negative ('-' as a sign in front)
                 if (t.content == "-" && t.token_type == TokenType.OPERATOR) {
-                
-                    //determines whether the next number is negative ('-' as a sign in front)
                     unowned List<Token>? element = tokenlist.last ();
                     if (element == null || (element != null && element.data.token_type != TokenType.NUMBER)) 
                         next_number_negative = true;
                     else
                         tokenlist.append (t);
+                //checking tokens that are words (for example cos, pi or sqrt) and changing their token type
                 } else if (t.token_type == TokenType.ALPHA) {
                     if (is_operator (t))
                         tokenlist.append (new Token (t.content, TokenType.OPERATOR));
@@ -114,7 +114,8 @@ namespace Calculus.Core {
                     else if (is_constant (t))
                         tokenlist.append (new Token (t.content, TokenType.CONSTANT));
                     else
-                        throw new CHECK_ERROR.ALPHA_INVALID ("'%s' is no valid function, operator or constant.", t.content);
+                        throw new CHECK_ERROR.ALPHA_INVALID (_("'%s' is no valid function, operator or constant."), t.content);
+                //last run determined the next number to be negative - that's what we are doing now
                 } else if (t.token_type == TokenType.NUMBER && next_number_negative) {
                     var d = double.parse (t.content) * (-1);
                     tokenlist.append (new Token (d.to_string (), t.token_type));
@@ -157,23 +158,23 @@ namespace Calculus.Core {
                         try { op2 = get_operator (opStack.peek ());
                         } catch (SHUNTING_ERROR e) { }
 
-                        while (!opStack.empty () &&              
-                        ((op2.fixity == "LEFT" && op1.prec <= op2.prec) ||   
+                        while (!opStack.empty () &&
+                        ((op2.fixity == "LEFT" && op1.prec <= op2.prec) ||
                         (op2.fixity == "RIGHT" && op1.prec < op2.prec)))
-                        {   
+                        {
                             output.append (opStack.pop ());
                             if (!opStack.empty ())
                                 try { op2 = get_operator (opStack.peek ());
                                 } catch (SHUNTING_ERROR e) { }
                         }
-                    }  
+                    }
                     opStack.push (t);
                     break;
                 
                 case TokenType.P_LEFT:
                     opStack.push (t);
                     break;
-                        
+                
                 case TokenType.P_RIGHT:
                     while (!(opStack.peek ().token_type == TokenType.P_LEFT) && !opStack.empty ())
                         output.append (opStack.pop ());
@@ -213,12 +214,14 @@ namespace Calculus.Core {
                     } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_CONSTANT (""); }
                 } else if (t.token_type == TokenType.OPERATOR) {
                     try {
+                        
                         Operator o = get_operator (t);
                         Token t1 = stack.pop ();
                         Token t2 = new Token ("0", TokenType.NUMBER);
                         if (!stack.is_length (0) && o.inputs == 2)
                             t2 = stack.pop ();
                         stack.push (compute_tokens (t, t1, t2));
+                        
                     } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_OPERATOR (""); }
                 } else if (t.token_type == TokenType.FUNCTION) {
                     try {
@@ -231,9 +234,8 @@ namespace Calculus.Core {
                       
                         stack.push (process_tokens (t, t1, t2));
                     } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_FUNCTION (""); }
-                }                
+                }
             }
-        
             return double.parse (stack.pop ().content);
         }
         
@@ -289,9 +291,7 @@ namespace Calculus.Core {
         private Token compute_tokens (Token t_op, Token t1, Token t2) throws EVAL_ERROR {
             try { 
                 Operator op = get_operator (t_op);
-                //stdout.printf ("Testing parsing. '%s' - '%s' \n", (double.parse (t2.content)).to_string (), (double.parse (t1.content)).to_string ());
                 var d = (double)(op.eval (double.parse (t2.content), double.parse (t1.content)));
-                //stdout.printf ("Computed Tokens '%s' '%s' '%s' to '%s'. \n", t2.content, t_op.content, t1.content, d.to_string ());
                 return new Token (d.to_string (), TokenType.NUMBER);
             } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_OPERATOR ("The given token was no operator."); }
         }
@@ -304,7 +304,7 @@ namespace Calculus.Core {
             } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_FUNCTION ("The given token was no function."); }
         }
         
-        public string cut (double d, int d_places) {
+        private string cut (double d, int d_places) {
             var s = ("%.5f".printf (d)).replace (",", ".");
             while (s.last_index_of ("0") == s.length - 1)
                 s = s.slice (0, s.length - 1);

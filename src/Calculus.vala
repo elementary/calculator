@@ -47,7 +47,7 @@ namespace Calculus {
             main_url = "https://launchpad.net/calculus";
             bug_url = "https://bugs.launchpad.net/calculus";
             help_url = "https://answers.launchpad.net/calculus"; 
-            translate_url = "https://translations.launchpad.net/calculus";       
+            translate_url = "https://translations.launchpad.net/calculus";
             about_authors = { "Marvin Beckers <beckersmarvin@gmail.com>" };
             about_comments = "";
             about_license_type = Gtk.License.GPL_3_0;
@@ -58,7 +58,7 @@ namespace Calculus {
         public override void activate () {
             var window = new Calculus.MainWindow ();
             this.add_window (window);
-        }     
+        }
     }
     
     public static int main (string[] args) {

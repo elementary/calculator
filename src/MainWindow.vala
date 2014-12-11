@@ -43,7 +43,7 @@ namespace Calculus {
         
         private string[] button_types = {  "0", "1", "2", "3", "4", "5", 
                                             "6", "7", "8", "9", "0", " + ",
-                                            " - ", " * ", " / ", "%", ".", "(", 
+                                            " - ", " × ", " ÷ ", "%", ".", "(", 
                                             ")", "^", "sin", "cos", "tan", "√",
                                             "sinh", "cosh", "tanh" , "sqrt", "π"};
 
@@ -110,14 +110,15 @@ namespace Calculus {
             
             //create all widgets
             entry = new Gtk.Entry ();
+            entry.set_text ("");
             button_calc = new Gtk.Button.with_label ("=");
             
             var button_undo = new Gtk.Button.from_icon_name ("go-previous-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
             var button_del = new Gtk.Button.with_label ("C");
             var button_add = new Gtk.Button.with_label (" + ");
             var button_sub = new Gtk.Button.with_label (" - ");
-            var button_mult = new Gtk.Button.with_label (" * ");
-            var button_div = new Gtk.Button.with_label (" / ");
+            var button_mult = new Gtk.Button.with_label (" × ");
+            var button_div = new Gtk.Button.with_label (" ÷ ");
             
             var button_0 = new Gtk.Button.with_label ("0");
             var button_point = new Gtk.Button.with_label (".");
