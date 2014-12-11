@@ -45,7 +45,7 @@ vala_precompile(VALA_C ${EXEC_NAME}
     src/Core/Scanner.vala
     src/Core/Evaluation.vala
 PACKAGES
-    gtk+-3.0
+    gtk+-3.0>=3.12
     granite
 CUSTOM_VAPIS
     vapi/config.vapi
