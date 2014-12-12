@@ -2,35 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-05 20:54+0100\n"
-"PO-Revision-Date: 2014-12-05 20:33+0000\n"
+"POT-Creation-Date: 2014-12-11 18:58+0100\n"
+"PO-Revision-Date: 2014-12-11 18:34+0000\n"
 "Last-Translator: Marvin Beckers <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-06 07:31+0000\n"
-"X-Generator: Launchpad (build 17274)\n"
+"X-Launchpad-Export-Date: 2014-12-12 06:54+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 
-#: ../src/MainWindow.vala:58 ../src/Calculus.vala:25
+#: ../src/Calculus.vala:25 ../src/MainWindow.vala:64
 msgid "Calculator"
 msgstr "Taschenrechner"
-
-#: ../src/MainWindow.vala:67 ../src/MainWindow.vala:307
-msgid "Show extended functionality"
-msgstr "Erweiterte Funktionalität anzeigen"
-
-#: ../src/MainWindow.vala:72
-msgid "History"
-msgstr "Verlauf"
-
-#: ../src/MainWindow.vala:111
-msgid "Clear entry"
-msgstr "Eingabe löschen"
-
-#: ../src/MainWindow.vala:303
-msgid "Hide extended functionality"
-msgstr "Erweiterte Funktionalität verstecken"
 
 #: ../src/Calculus.vala:28
 msgid "Calculate in an elementary way."
@@ -38,8 +22,49 @@ msgstr "Rechnen - einfach und elementar."
 
 #: ../src/Calculus.vala:29
 msgid "About Calculator"
-msgstr "Über Taschenrechner"
+msgstr "Info zu Taschenrechner"
 
-#: ../src/Calculus.vala:52
-msgid "A simple calc tool for elementary OS."
-msgstr "Ein simpler Taschenrechner für elementary OS."
+#: ../src/HistoryDialog.vala:37 ../src/HistoryDialog.vala:87
+#: ../src/MainWindow.vala:78
+msgid "History"
+msgstr "Verlauf"
+
+#: ../src/HistoryDialog.vala:80
+msgid "There is no calculation history yet."
+msgstr "Es gibt noch keinen Rechenverlauf."
+
+#: ../src/HistoryDialog.vala:99
+msgid "Add Result"
+msgstr "Ergebnis hinzufügen"
+
+#: ../src/HistoryDialog.vala:100
+msgid "Add Expression"
+msgstr "Ausdruck hinzufügen"
+
+#: ../src/HistoryDialog.vala:107
+msgid "Close"
+msgstr "Schließen"
+
+#: ../src/Core/Scanner.vala:110
+msgid "unknown or misplaced character '%s'"
+msgstr "Zeichen '%s' unbekannt oder deplaziert"
+
+#: ../src/Core/Evaluation.vala:117
+msgid "'%s' is no valid function, operator or constant."
+msgstr "'%s' ist keine gültige Funktion, Operation oder Konstante"
+
+#: ../src/MainWindow.vala:73 ../src/MainWindow.vala:346
+msgid "Show extended functionality"
+msgstr "Erweiterte Funktionalität anzeigen"
+
+#: ../src/MainWindow.vala:149
+msgid "Clear entry"
+msgstr "Eingabe löschen"
+
+#: ../src/MainWindow.vala:150
+msgid "Backspace"
+msgstr "Rückschritt"
+
+#: ../src/MainWindow.vala:341
+msgid "Hide extended functionality"
+msgstr "Erweiterte Funktionalität verstecken"

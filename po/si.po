@@ -2,34 +2,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-05 20:54+0100\n"
+"POT-Creation-Date: 2014-12-11 18:58+0100\n"
 "PO-Revision-Date: 2014-11-30 05:02+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-06 07:31+0000\n"
-"X-Generator: Launchpad (build 17274)\n"
+"X-Launchpad-Export-Date: 2014-12-12 06:55+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 
-#: ../src/MainWindow.vala:58 ../src/Calculus.vala:25
+#: ../src/Calculus.vala:25 ../src/MainWindow.vala:64
 msgid "Calculator"
-msgstr ""
-
-#: ../src/MainWindow.vala:67 ../src/MainWindow.vala:307
-msgid "Show extended functionality"
-msgstr ""
-
-#: ../src/MainWindow.vala:72
-msgid "History"
-msgstr ""
-
-#: ../src/MainWindow.vala:111
-msgid "Clear entry"
-msgstr ""
-
-#: ../src/MainWindow.vala:303
-msgid "Hide extended functionality"
 msgstr ""
 
 #: ../src/Calculus.vala:28
@@ -40,6 +24,47 @@ msgstr ""
 msgid "About Calculator"
 msgstr ""
 
-#: ../src/Calculus.vala:52
-msgid "A simple calc tool for elementary OS."
+#: ../src/HistoryDialog.vala:37 ../src/HistoryDialog.vala:87
+#: ../src/MainWindow.vala:78
+msgid "History"
+msgstr ""
+
+#: ../src/HistoryDialog.vala:80
+msgid "There is no calculation history yet."
+msgstr ""
+
+#: ../src/HistoryDialog.vala:99
+msgid "Add Result"
+msgstr ""
+
+#: ../src/HistoryDialog.vala:100
+msgid "Add Expression"
+msgstr ""
+
+#: ../src/HistoryDialog.vala:107
+msgid "Close"
+msgstr ""
+
+#: ../src/Core/Scanner.vala:110
+msgid "unknown or misplaced character '%s'"
+msgstr ""
+
+#: ../src/Core/Evaluation.vala:117
+msgid "'%s' is no valid function, operator or constant."
+msgstr ""
+
+#: ../src/MainWindow.vala:73 ../src/MainWindow.vala:346
+msgid "Show extended functionality"
+msgstr ""
+
+#: ../src/MainWindow.vala:149
+msgid "Clear entry"
+msgstr ""
+
+#: ../src/MainWindow.vala:150
+msgid "Backspace"
+msgstr ""
+
+#: ../src/MainWindow.vala:341
+msgid "Hide extended functionality"
 msgstr ""
