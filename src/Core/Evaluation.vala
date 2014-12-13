@@ -24,9 +24,6 @@ namespace Calculus.Core {
         NO_OPERATOR,
         NO_CONSTANT
     }
-    private errordomain CHECK_ERROR {
-        ALPHA_INVALID
-    }
     private errordomain SHUNTING_ERROR {
         DUMMY,
         NO_OPERATOR,

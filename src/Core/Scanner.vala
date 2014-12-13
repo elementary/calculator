@@ -35,9 +35,6 @@ namespace Calculus.Core {
         
         public static List<Token> scan (string input) throws SCANNER_ERROR {
             Scanner scanner = new Scanner (input);
-            TokenType type = TokenType.EOF;
-            TokenType last_type = TokenType.EOF;
-            List<Token> tokenlist = new List<Token> ();
             int index = 0;
             unowned unichar c;
             bool next_number_negative = false;
@@ -50,6 +47,9 @@ namespace Calculus.Core {
                 }
             }
             try {
+                TokenType type = TokenType.EOF;
+                TokenType last_type = TokenType.EOF;
+                List<Token> tokenlist = new List<Token> ();
                 while (scanner.pos < scanner.uc.length) {
                     ssize_t start;
                     ssize_t len;
