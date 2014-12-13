@@ -32,7 +32,7 @@ namespace Calculus.Core {
     }
     
     public class Token : Object {
-        public string content { get; private set; }
+        public string content { get; set; }
         public TokenType token_type { get; set; }
         
         public Token (string in_content, TokenType in_token_type) {

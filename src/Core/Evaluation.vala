@@ -79,51 +79,13 @@ namespace Calculus.Core {
                 var e = new Evaluation ();
                 
                 try {
-                    tokenlist = e.check_tokens (tokenlist);
+                    tokenlist = e.shunting_yard (tokenlist);
                     try {
-                        tokenlist = e.shunting_yard (tokenlist);
-                        try {
-                            d = e.eval_postfix (tokenlist);
-                        } catch (EVAL_ERROR e) { throw new OUT_ERROR.EVAL_ERROR (e.message); }
-                    } catch (SHUNTING_ERROR e) { throw new OUT_ERROR.SHUNTING_ERROR (e.message); }
-                } catch (CHECK_ERROR e) { throw new OUT_ERROR.CHECK_ERROR (e.message); }
-
+                        d = e.eval_postfix (tokenlist);
+                    } catch (EVAL_ERROR e) { throw new OUT_ERROR.EVAL_ERROR (e.message); }
+                } catch (SHUNTING_ERROR e) { throw new OUT_ERROR.SHUNTING_ERROR (e.message); }
                 return e.cut (d, d_places);
             } catch (SCANNER_ERROR e) { throw new OUT_ERROR.SCANNER_ERROR (e.message); }
-        }
-        
-        //doing some fixes and working on special cases after the Scanner did his basic work
-        private List<Token> check_tokens (List<Token> input_tokenlist) throws CHECK_ERROR {
-            var tokenlist = new List<Token> ();
-            var next_number_negative = false;
-            
-            foreach (Token t in input_tokenlist) {
-                //determines whether the next number is negative ('-' as a sign in front)
-                if (t.content == "-" && t.token_type == TokenType.OPERATOR) {
-                    unowned List<Token>? element = tokenlist.last ();
-                    if (element == null || (element != null && element.data.token_type != TokenType.NUMBER)) 
-                        next_number_negative = true;
-                    else
-                        tokenlist.append (t);
-                //checking tokens that are words (for example cos, pi or sqrt) and changing their token type
-                } else if (t.token_type == TokenType.ALPHA) {
-                    if (is_operator (t))
-                        tokenlist.append (new Token (t.content, TokenType.OPERATOR));
-                    else if (is_function (t))
-                        tokenlist.append (new Token (t.content, TokenType.FUNCTION));
-                    else if (is_constant (t))
-                        tokenlist.append (new Token (t.content, TokenType.CONSTANT));
-                    else
-                        throw new CHECK_ERROR.ALPHA_INVALID (_("'%s' is no valid function, operator or constant."), t.content);
-                //last run determined the next number to be negative - that's what we are doing now
-                } else if (t.token_type == TokenType.NUMBER && next_number_negative) {
-                    var d = double.parse (t.content) * (-1);
-                    tokenlist.append (new Token (d.to_string (), t.token_type));
-                    next_number_negative = false;
-                } else 
-                    tokenlist.append (t);
-            }
-            return tokenlist;
         }
         
         //Djikstra's Shunting Yard algorithm for ordering a tokenized list into Reverse Polish Notation
@@ -240,7 +202,7 @@ namespace Calculus.Core {
         }
         
         //checks for real TokenType (which are TokenType.ALPHA at the moment)
-        private bool is_operator (Token t) {
+        public bool is_operator (Token t) {
             foreach (Operator o in operators) {
                 if (t.content == o.symbol) 
                     return true;
@@ -248,7 +210,7 @@ namespace Calculus.Core {
             return false;
         }
         
-        private bool is_function (Token t) {
+        public bool is_function (Token t) {
             foreach (Function f in functions) {
                 if (t.content == f.symbol) 
                     return true;
@@ -256,7 +218,7 @@ namespace Calculus.Core {
             return false;
         }
         
-        private bool is_constant (Token t) {
+        public bool is_constant (Token t) {
             foreach (Constant c in constants) {
                 if (t.content == c.symbol)
                     return true;
