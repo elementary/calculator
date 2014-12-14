@@ -84,9 +84,14 @@ namespace Calculus.Core {
                         next_number_negative = false;
                     }
                     
-                    //checking if last token was a number and token now is a function or constant
+                    //checking if last token was a number and token now is a function, constant or parenthesis (left)
                     if (last_token != null && last_token.token_type == TokenType.NUMBER && 
-                    (t.token_type == TokenType.FUNCTION || t.token_type == TokenType.CONSTANT))
+                    (t.token_type == TokenType.FUNCTION || t.token_type == TokenType.CONSTANT || t.token_type == TokenType.P_LEFT))
+                        tokenlist.append (new Token ("*", TokenType.OPERATOR));
+
+                    //checking if last token was a parenthesis (right) and token now is a number
+                    //does the same as above, but splitted for readability
+                    if (last_token != null && last_token.token_type == TokenType.P_RIGHT && t.token_type == TokenType.NUMBER)
                         tokenlist.append (new Token ("*", TokenType.OPERATOR));
                     
                     tokenlist.append (t);
