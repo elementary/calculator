@@ -48,7 +48,7 @@ namespace Calculus.Core {
             }
             try {
                 TokenType type = TokenType.EOF;
-                TokenType last_type = TokenType.EOF;
+                unowned Token? last_token = null;
                 List<Token> tokenlist = new List<Token> ();
                 while (scanner.pos < scanner.uc.length) {
                     ssize_t start;
@@ -61,6 +61,7 @@ namespace Calculus.Core {
                     }
                     Token t = new Token (substr, type);
                     
+                    //identifying multicharacter tokens via Evaluation class. 
                     if (t.token_type == TokenType.ALPHA) {
                         if (e.is_operator (t))
                             t.token_type = TokenType.OPERATOR;
@@ -82,8 +83,14 @@ namespace Calculus.Core {
                         t.content = (double.parse (t.content) * (-1)).to_string ();
                         next_number_negative = false;
                     }
-                    last_type = t.token_type;
+                    
+                    //checking if last token was a number and token now is a function or constant
+                    if (last_token != null && last_token.token_type == TokenType.NUMBER && 
+                    (t.token_type == TokenType.FUNCTION || t.token_type == TokenType.CONSTANT))
+                        tokenlist.append (new Token ("*", TokenType.OPERATOR));
+                    
                     tokenlist.append (t);
+                    last_token = t;
                 }
                 return tokenlist;
             } catch (SCANNER_ERROR e) { throw e; }
