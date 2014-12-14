@@ -69,7 +69,7 @@ namespace Calculus.Core {
                         else if (e.is_constant (t))
                             t.token_type = TokenType.CONSTANT;
                         else
-                            throw new SCANNER_ERROR.ALPHA_INVALID (_("'%s' is no valid function, operator or constant."), t.content);
+                            throw new SCANNER_ERROR.ALPHA_INVALID (_("'%s' is invalid."), t.content);
                     
                     } else if (t.token_type == TokenType.OPERATOR && t.content == "-") {
                         unowned List<Token>? element = tokenlist.last ();

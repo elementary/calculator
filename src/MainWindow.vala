@@ -60,6 +60,7 @@ namespace Calculus {
         private void build_titlebar () {
             headerbar = new HeaderBar ();  
             headerbar.get_style_context ().add_class ("primary-toolbar");
+            //headerbar.get_style_context ().remove_class ("header-bar");
             headerbar.show_close_button = true;
             headerbar.set_title (_("Calculator"));
             this.set_titlebar (headerbar); 
@@ -71,11 +72,13 @@ namespace Calculus {
             var button_extended = new Gtk.ToggleButton ();
             button_extended.set_property ("image", extended_img_1);
             button_extended.set_tooltip_text (_("Show extended functionality"));
+            button_extended.set_relief (Gtk.ReliefStyle.NONE);
             button_extended.toggled.connect (toggle_grid);
             
             var button_history = new Gtk.Button ();
             button_history.set_property ("image", history_img);
             button_history.set_tooltip_text (_("History"));
+            button_history.set_relief (Gtk.ReliefStyle.NONE);
             button_history.clicked.connect (show_history);
             
             headerbar.pack_end (button_extended);
@@ -104,9 +107,9 @@ namespace Calculus {
         private void build_grid_1 () {
             sub_grid_1 = new Gtk.Grid ();
             sub_grid_1.orientation = Gtk.Orientation.VERTICAL;
-            sub_grid_1.set_column_spacing (3);
-            sub_grid_1.set_row_spacing (3);
-            sub_grid_1.margin = 10;
+            sub_grid_1.set_column_spacing (2);
+            sub_grid_1.set_row_spacing (2);
+            sub_grid_1.margin = 5;
             
             //create all widgets
             entry = new Gtk.Entry ();
@@ -150,17 +153,17 @@ namespace Calculus {
             button_undo.set_tooltip_text (_("Backspace"));
             
             //set size for some widgets to get desired layout
-            entry.set_size_request (0, 50);
+            entry.set_size_request (0, 45);
             
-            button_0.set_size_request (0, 50);
-            button_1.set_size_request (0, 50);
-            button_4.set_size_request (0, 50);
-            button_7.set_size_request (0, 50);
+            button_0.set_size_request (65, 45);
+            button_1.set_size_request (65, 45);
+            button_4.set_size_request (65, 45);
+            button_7.set_size_request (65, 45);
             
-            button_undo.set_size_request (70, 50);
-            button_del.set_size_request (70, 50);
-            button_percent.set_size_request (70, 50);
-            button_add.set_size_request (70, 50);
+            button_undo.set_size_request (65, 45);
+            button_del.set_size_request (65, 45);
+            button_percent.set_size_request (65, 45);
+            button_add.set_size_request (65, 45);
             
             //attach all widgets
             sub_grid_1.attach (entry, 0, 0, 4, 1);
@@ -224,9 +227,9 @@ namespace Calculus {
         private void build_grid_2 () {
             sub_grid_2 = new Gtk.Grid ();
             sub_grid_2.orientation = Gtk.Orientation.VERTICAL;
-            sub_grid_2.set_column_spacing (3);
-            sub_grid_2.set_row_spacing (3);
-            sub_grid_2.margin = 10;
+            sub_grid_2.set_column_spacing (2);
+            sub_grid_2.set_row_spacing (2);
+            sub_grid_2.margin = 5;
             sub_grid_2.margin_start = 0;
             
             //create all widgets
@@ -248,14 +251,14 @@ namespace Calculus {
             button_pow.get_style_context ().add_class ("h3");
             
             //set size for some widgets to get desired layout
-            button_pow.set_size_request (60, 50);
-            button_sr.set_size_request (60, 50);
+            button_pow.set_size_request (60, 45);
+            button_sr.set_size_request (60, 45);
             
-            button_sin.set_size_request (60, 50);
-            button_cos.set_size_request (60, 50);
-            button_tan.set_size_request (60, 50);
-            button_pi.set_size_request (60, 50);
-            button_par_left.set_size_request (60, 50);
+            button_sin.set_size_request (65, 45);
+            button_cos.set_size_request (65, 45);
+            button_tan.set_size_request (65, 45);
+            button_pi.set_size_request (65, 45);
+            button_par_left.set_size_request (65, 45);
             
             sub_grid_2.attach (button_par_left, 0, 0, 1, 1);
             sub_grid_2.attach (button_pow, 0, 1, 1, 1);

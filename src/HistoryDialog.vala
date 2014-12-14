@@ -64,8 +64,8 @@ namespace Calculus {
                 view.expand = true;
                 
                 Gtk.CellRendererText cell = new Gtk.CellRendererText ();
-		        view.insert_column_with_attributes (-1, "Result", cell, "text", 0);
-		        view.insert_column_with_attributes (-1, "Expression", cell, "text", 1);
+		        view.insert_column_with_attributes (-1, _("Result"), cell, "text", 0);
+		        view.insert_column_with_attributes (-1, _("Expression"), cell, "text", 1);
                 
                 view.get_column (0).min_width = 100;
                 view.get_column (0).max_width = 100;
