@@ -140,7 +140,7 @@ namespace Calculus.Core {
             }
             
             //if no rule matches the character at pos, throw an error.
-            throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("unknown or misplaced character '%s'"), str.get_char (pos).to_string ());
+            throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("'%s' is unknown."), str.get_char (pos).to_string ());
         }
     }
 }

@@ -309,12 +309,12 @@ namespace Calculus {
         }
         
         private void button_calc_clicked () {
+            this.remove_error ();
             if (entry.get_text () != "") {
                 try {
                     var output = Evaluation.evaluate (entry.get_text (), round);
                     history.append (History () { exp = entry.get_text (), output = output } );
                     entry.set_text (output);
-                    this.remove_error ();
                 } catch (OUT_ERROR e) {
                     infobar = new Gtk.InfoBar ();
                     infobar.get_content_area ().add (new Gtk.Label (e.message));

@@ -28,7 +28,9 @@ namespace Calculus.Core {
         DUMMY,
         NO_OPERATOR,
         NO_FUNCTION,
-        NO_CONSTANT
+        NO_CONSTANT,
+        MISMATCHED_P,
+        UNKNOWN_TOKEN
     }
     public errordomain OUT_ERROR {
         EVAL_ERROR,
@@ -107,7 +109,7 @@ namespace Calculus.Core {
                         output.append (opStack.pop ());
                     
                     if (opStack.peek ().token_type != TokenType.P_LEFT)
-                        throw new SHUNTING_ERROR.DUMMY ("Either the seperator was misplaced or parentheses were mismatched.");
+                        throw new SHUNTING_ERROR.MISMATCHED_P ("Content of parentheses is mismatched.");
                     break;
                  
                 case TokenType.OPERATOR:
@@ -145,17 +147,14 @@ namespace Calculus.Core {
                         output.append (opStack.pop ());
                     break;
                 default:
-                    /* TODO Throw error (you should never get here, but better throw one) */
-                    break;
+                        throw new SHUNTING_ERROR.UNKNOWN_TOKEN ("'%s' is unknown.", t.content);
                 }
             }
             while (!opStack.empty ()) {
-                if (opStack.peek ().token_type == TokenType.P_LEFT) {
-                    /* TODO Throw mismatched error! */
-                    break;
-                } else {
+                if (opStack.peek ().token_type == TokenType.P_LEFT)
+                    throw new SHUNTING_ERROR.MISMATCHED_P ("Mismatched left parenthesis.");
+                else
                     output.append (opStack.pop ());
-                }
             }
             return output;
         }
