@@ -76,10 +76,6 @@ namespace Calculus {
                 scrolled.add (view);
                 grid.attach (scrolled, 0, 1, 1, 1);
                 
-            } else {
-                var text = new Gtk.Label (_("There is no calculation history yet."));
-                text.get_style_context ().add_class ("h3");
-                grid.attach (text, 0, 1, 1, 1);
             }
             
             var header = new Gtk.Grid ();

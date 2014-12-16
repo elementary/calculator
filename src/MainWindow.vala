@@ -32,6 +32,7 @@ namespace Calculus {
         private Gtk.Image extended_img_1;
         private Gtk.Image extended_img_2;
         private Gtk.Button button_calc;
+		private Gtk.Button button_history;
         private Gtk.InfoBar? infobar;
         
         private List<History?> history;
@@ -65,8 +66,8 @@ namespace Calculus {
             headerbar.set_title (_("Calculator"));
             this.set_titlebar (headerbar); 
             
-            extended_img_1 = new Gtk.Image.from_icon_name ("pan-end-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
-            extended_img_2 = new Gtk.Image.from_icon_name ("pan-start-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
+            extended_img_1 = new Gtk.Image.from_icon_name ("pane-hide-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
+            extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
             var history_img = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
             
             var button_extended = new Gtk.ToggleButton ();
@@ -75,10 +76,11 @@ namespace Calculus {
             button_extended.set_relief (Gtk.ReliefStyle.NONE);
             button_extended.toggled.connect (toggle_grid);
             
-            var button_history = new Gtk.Button ();
+            button_history = new Gtk.Button ();
             button_history.set_property ("image", history_img);
             button_history.set_tooltip_text (_("History"));
             button_history.set_relief (Gtk.ReliefStyle.NONE);
+			button_history.set_sensitive (false);
             button_history.clicked.connect (show_history);
             
             headerbar.pack_end (button_extended);
@@ -137,7 +139,13 @@ namespace Calculus {
             var button_7 = new Gtk.Button.with_label ("7");
             var button_8 = new Gtk.Button.with_label ("8");
             var button_9 = new Gtk.Button.with_label ("9");
-            
+      		
+			button_undo.set_focus_on_click (false);
+			button_del.set_focus_on_click (false);
+			button_add.set_focus_on_click (false);
+			button_sub.set_focus_on_click (false);
+			button_div.set_focus_on_click (false);
+
             //add style context to widgets
             entry.get_style_context ().add_class ("h2");
             button_del.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
@@ -315,6 +323,7 @@ namespace Calculus {
                     var output = Evaluation.evaluate (entry.get_text (), round);
                     history.append (History () { exp = entry.get_text (), output = output } );
                     entry.set_text (output);
+					button_history.set_sensitive (true);
                 } catch (OUT_ERROR e) {
                     infobar = new Gtk.InfoBar ();
                     infobar.get_content_area ().add (new Gtk.Label (e.message));
