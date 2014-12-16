@@ -36,6 +36,7 @@ namespace Calculus {
         private Gtk.InfoBar? infobar;
         
         private List<History?> history;
+		private int position;
         
         //define the decimal places
         private int round = 5;
@@ -52,7 +53,8 @@ namespace Calculus {
             this.set_resizable (false);
             this.window_position = Gtk.WindowPosition.CENTER;
             
-            history = new List<History?> ();
+            this.history = new List<History?> ();
+			this.position = 0;
             
             this.build_titlebar ();
             this.build_ui ();
@@ -300,6 +302,7 @@ namespace Calculus {
         }
         
         private void button_clicked (Gtk.Button btn) {
+			this.position = entry.get_position ();
             var label = btn.get_label ();
             var builder = new StringBuilder (entry.get_text ());
             ssize_t pos = entry.cursor_position;
@@ -312,18 +315,24 @@ namespace Calculus {
                     break;
                 }
             }
-            
+            this.position += label.length;
+
             entry.set_text (builder.str);
+			entry.grab_focus ();
+			entry.set_position (position);
         }
         
         private void button_calc_clicked () {
+			this.position = entry.get_position ();
             this.remove_error ();
             if (entry.get_text () != "") {
                 try {
                     var output = Evaluation.evaluate (entry.get_text (), round);
-                    history.append (History () { exp = entry.get_text (), output = output } );
-                    entry.set_text (output);
-					button_history.set_sensitive (true);
+					if (entry.get_text () != output) {
+                    	history.append (History () { exp = entry.get_text (), output = output } );
+                    	entry.set_text (output);
+						button_history.set_sensitive (true);
+					}
                 } catch (OUT_ERROR e) {
                     infobar = new Gtk.InfoBar ();
                     infobar.get_content_area ().add (new Gtk.Label (e.message));
@@ -334,16 +343,27 @@ namespace Calculus {
                     infobar.show_all ();
                 }
             }
+
+			entry.grab_focus ();
+			entry.set_position (position);
         } 
         
         private void button_undo_clicked () {
+			this.position = entry.get_position () - 1;
             entry.set_text (entry.get_text ().slice (0, entry.get_text ().length - 1));
+
+			entry.grab_focus ();
+			entry.set_position (position);
         }
         
         private void button_del_clicked () {
+			this.position = 0;
             entry.set_text ("");
             this.set_focus (entry);
             this.remove_error ();
+
+			entry.grab_focus ();
+			entry.set_position (position);
         }
         
         private void toggle_grid (Gtk.ToggleButton button) {
