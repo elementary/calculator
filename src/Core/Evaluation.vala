@@ -30,7 +30,8 @@ namespace Calculus.Core {
         NO_FUNCTION,
         NO_CONSTANT,
         MISMATCHED_P,
-        UNKNOWN_TOKEN
+        UNKNOWN_TOKEN,
+		STACK_EMPTY
     }
     public errordomain OUT_ERROR {
         EVAL_ERROR,
@@ -105,8 +106,9 @@ namespace Calculus.Core {
                     break;
 
                 case TokenType.SEPARATOR:
-                    while (opStack.peek ().token_type != TokenType.P_LEFT && opStack.is_length (0) == false) 
-                        output.append (opStack.pop ());
+                    while (opStack.peek ().token_type != TokenType.P_LEFT && !opStack.empty ()) {
+						output.append (opStack.pop ());
+					}
                     
                     if (opStack.peek ().token_type != TokenType.P_LEFT)
                         throw new SHUNTING_ERROR.MISMATCHED_P ("Content of parentheses is mismatched.");
@@ -139,9 +141,10 @@ namespace Calculus.Core {
                 case TokenType.P_RIGHT:
                     while (!(opStack.peek ().token_type == TokenType.P_LEFT) && !opStack.empty ())
                         output.append (opStack.pop ());
-                        
-                    if (!(opStack.empty ())) 
+
+                    if (!(opStack.empty ())) {
                         opStack.pop ();
+					}
                         
                     if (!opStack.empty () && opStack.peek ().token_type == TokenType.FUNCTION) 
                         output.append (opStack.pop ());
