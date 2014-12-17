@@ -304,20 +304,15 @@ namespace Calculus {
         private void button_clicked (Gtk.Button btn) {
 			this.position = entry.get_position ();
             var label = btn.get_label ();
-            var builder = new StringBuilder (entry.get_text ());
-            ssize_t pos = entry.cursor_position;
-            if (pos == 0) 
-                pos = builder.len;
             
             foreach (var val in button_types) {
                 if (label == val) {
-                    builder.insert (pos, val);
+					entry.insert_at_cursor (label);
                     break;
                 }
             }
-            this.position += label.length;
+            this.position += (label.length);
 
-            entry.set_text (builder.str);
 			entry.grab_focus ();
 			entry.set_position (position);
         }
