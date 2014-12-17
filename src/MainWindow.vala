@@ -327,6 +327,8 @@ namespace Calculus {
                     	history.append (History () { exp = entry.get_text (), output = output } );
                     	entry.set_text (output);
 						button_history.set_sensitive (true);
+
+						position = output.length;
 					}
                 } catch (OUT_ERROR e) {
                     infobar = new Gtk.InfoBar ();
