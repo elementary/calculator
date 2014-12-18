@@ -346,11 +346,15 @@ namespace Calculus {
         } 
         
         private void button_undo_clicked () {
-			this.position = entry.get_position () - 1;
-            entry.set_text (entry.get_text ().slice (0, entry.get_text ().length - 1));
+			this.position = entry.get_position ();
+			if (entry.get_text ().length > 0) {
+				string sliced_1 = entry.get_text ().slice (0, position - 1);
+				string sliced_2 = entry.get_text ().slice (position, entry.get_text ().length);
+				entry.set_text (sliced_1 + sliced_2);
+			}
 
 			entry.grab_focus ();
-			entry.set_position (position);
+			entry.set_position (position - 1);
         }
         
         private void button_del_clicked () {
