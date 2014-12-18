@@ -3,76 +3,76 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-14 12:37+0100\n"
-"PO-Revision-Date: 2014-11-30 05:01+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-12-17 16:24+0000\n"
+"Last-Translator: Shawn McTear <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-15 06:38+0000\n"
+"X-Launchpad-Export-Date: 2014-12-18 07:15+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 
 #: ../src/Calculus.vala:25 ../src/MainWindow.vala:65
 msgid "Calculator"
-msgstr ""
+msgstr "Calculator"
 
 #: ../src/Calculus.vala:28
 msgid "Calculate in an elementary way."
-msgstr ""
+msgstr "Calculate in an elementary way."
 
 #: ../src/Calculus.vala:29
 msgid "About Calculator"
-msgstr ""
+msgstr "About Calculator"
 
 #: ../src/HistoryDialog.vala:37 ../src/HistoryDialog.vala:87
 #: ../src/MainWindow.vala:80
 msgid "History"
-msgstr ""
+msgstr "History"
 
 #: ../src/HistoryDialog.vala:67
 msgid "Result"
-msgstr ""
+msgstr "Result"
 
 #: ../src/HistoryDialog.vala:68
 msgid "Expression"
-msgstr ""
+msgstr "Expression"
 
 #: ../src/HistoryDialog.vala:80
 msgid "There is no calculation history yet."
-msgstr ""
+msgstr "There is no calculation history yet."
 
 #: ../src/HistoryDialog.vala:99
 msgid "Add Result"
-msgstr ""
+msgstr "Add Result"
 
 #: ../src/HistoryDialog.vala:100
 msgid "Add Expression"
-msgstr ""
+msgstr "Add Expression"
 
 #: ../src/HistoryDialog.vala:107
 msgid "Close"
-msgstr ""
+msgstr "Close"
 
 #: ../src/Core/Scanner.vala:73
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' is invalid."
 
 #: ../src/Core/Scanner.vala:148
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' is unknown."
 
 #: ../src/MainWindow.vala:74 ../src/MainWindow.vala:349
 msgid "Show extended functionality"
-msgstr ""
+msgstr "Show extended functionality"
 
 #: ../src/MainWindow.vala:152
 msgid "Clear entry"
-msgstr ""
+msgstr "Clear entry"
 
 #: ../src/MainWindow.vala:153
 msgid "Backspace"
-msgstr ""
+msgstr "Backspace"
 
 #: ../src/MainWindow.vala:344
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "Hide extended functionality"
