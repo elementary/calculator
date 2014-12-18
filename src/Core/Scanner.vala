@@ -114,7 +114,7 @@ namespace Calculus.Core {
                 return TokenType.NUMBER;
             } else if (uc[pos] == '+' || uc[pos] == '-' || uc[pos] == '*' || 
                         uc[pos] == '/' || uc[pos] == '^' || uc[pos] == '%' ||
-                        uc[pos] == '÷' || uc[pos] == '×') {
+                        uc[pos] == '÷' || uc[pos] == '×' || uc[pos] == '−') {
                 pos++;
                 len = 1;
                 return TokenType.OPERATOR;

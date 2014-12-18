@@ -47,6 +47,7 @@ namespace Calculus.Core {
         private struct Operator { string symbol; int inputs; int prec; string fixity; Eval eval;}
         private Operator[] operators = {   Operator () { symbol = "+", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a + b; } },
                                             Operator () { symbol = "-", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a - b; } },
+											Operator () { symbol = "−", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a - b; } },
                                             Operator () { symbol = "*", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a * b; } }, 
                                             Operator () { symbol = "×", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a * b; } },
                                             Operator () { symbol = "/", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a / b; } },
