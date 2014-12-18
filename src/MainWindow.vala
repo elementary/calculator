@@ -33,6 +33,7 @@ namespace Calculus {
         private Gtk.Image extended_img_2;
         private Gtk.Button button_calc;
 		private Gtk.Button button_history;
+		private Gtk.ToggleButton button_extended;
         private Gtk.InfoBar? infobar;
         
         private List<History?> history;
@@ -45,7 +46,7 @@ namespace Calculus {
         
         private string[] button_types = {  "0", "1", "2", "3", "4", "5", 
                                             "6", "7", "8", "9", "0", " + ",
-                                            " - ", " × ", " ÷ ", "%", ".", "(", 
+                                            " − ", " × ", " ÷ ", "%", ".", "(", 
                                             ")", "^", "sin", "cos", "tan", "√",
                                             "sinh", "cosh", "tanh" , "sqrt", "π"};
 
@@ -63,7 +64,6 @@ namespace Calculus {
         private void build_titlebar () {
             headerbar = new HeaderBar ();  
             headerbar.get_style_context ().add_class ("primary-toolbar");
-            //headerbar.get_style_context ().remove_class ("header-bar");
             headerbar.show_close_button = true;
             headerbar.set_title (_("Calculator"));
             this.set_titlebar (headerbar); 
@@ -72,7 +72,7 @@ namespace Calculus {
             extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
             var history_img = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
             
-            var button_extended = new Gtk.ToggleButton ();
+            button_extended = new Gtk.ToggleButton ();
             button_extended.set_property ("image", extended_img_1);
             button_extended.set_tooltip_text (_("Show extended functionality"));
             button_extended.set_relief (Gtk.ReliefStyle.NONE);
@@ -123,7 +123,7 @@ namespace Calculus {
             var button_undo = new Gtk.Button.from_icon_name ("go-previous-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
             var button_del = new Gtk.Button.with_label ("C");
             var button_add = new Gtk.Button.with_label (" + ");
-            var button_sub = new Gtk.Button.with_label (" - ");
+            var button_sub = new Gtk.Button.with_label (" − ");
             var button_mult = new Gtk.Button.with_label (" × ");
             var button_div = new Gtk.Button.with_label (" ÷ ");
             
@@ -364,6 +364,7 @@ namespace Calculus {
         }
         
         private void toggle_grid (Gtk.ToggleButton button) {
+			this.position = entry.get_position ();
             if (button.get_active ()) {
                 //show extended functionality
                 button.set_property ("image", extended_img_2);
@@ -376,12 +377,18 @@ namespace Calculus {
                 sub_grid_2.hide ();
             }
             //focusing button_calc because without a new focus it will cause weird window drawing problems.
-            this.set_focus (button_calc);
+            entry.grab_focus ();
+			entry.set_position (position);
         }
         
         private void show_history (Gtk.Button button) {
+			this.position = entry.get_position ();
+
             var history_dialog = new HistoryDialog (history);
             history_dialog.added.connect (history_added);
+
+			entry.grab_focus ();
+			entry.set_position (position);
         }
         
         private void history_added (string input) {

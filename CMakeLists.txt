@@ -38,7 +38,7 @@ ensure_vala_version("0.26" MINIMUM)
 include(ValaPrecompile)
 vala_precompile(VALA_C ${EXEC_NAME}
     src/Calculus.vala
-    src/MainWindow.vala
+    src/MainWindow.vala	
     src/HistoryDialog.vala
     src/Core/Stack.vala
     src/Core/Token.vala
