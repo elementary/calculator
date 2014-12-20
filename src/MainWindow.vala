@@ -35,6 +35,7 @@ namespace Calculus {
 		private Gtk.Button button_history;
 		private Gtk.ToggleButton button_extended;
         private Gtk.InfoBar? infobar;
+		private Gtk.Button button_pow;
         
         private List<History?> history;
 		private int position;
@@ -243,7 +244,10 @@ namespace Calculus {
             sub_grid_2.margin_start = 0;
             
             //create all widgets
-            var button_pow = new Gtk.Button.with_label ("^");
+			Gtk.Label pow_label = new Gtk.Label ("x<sup>y</sup>");
+			pow_label.set_use_markup (true);
+            button_pow = new Gtk.Button ();
+			button_pow.add (pow_label);
             var button_sin = new Gtk.Button.with_label ("sin");
             var button_cos = new Gtk.Button.with_label ("cos");
             var button_tan = new Gtk.Button.with_label ("tan");
@@ -303,14 +307,21 @@ namespace Calculus {
         
         private void button_clicked (Gtk.Button btn) {
 			this.position = entry.get_position ();
-            var label = btn.get_label ();
+			var label = "";
+			if (btn == button_pow) {
+				//button_pow is the only button without an convenient label, therefore it gets a special treatment
+				label = "^";
+				entry.insert_at_cursor (label);
+			} else {
+            	label = btn.get_label ();
             
-            foreach (var val in button_types) {
-                if (label == val) {
-					entry.insert_at_cursor (label);
-                    break;
-                }
-            }
+            	foreach (var val in button_types) {
+            	    if (label == val) {
+						entry.insert_at_cursor (label);
+            	        break;
+            	    }
+            	}
+			}
             this.position += (label.length);
 
 			entry.grab_focus ();
