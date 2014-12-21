@@ -50,6 +50,22 @@ namespace Calculus {
             grid.set_row_spacing (10);
             grid.margin = 10;
             grid.margin_top = 0;
+			content.pack_start (grid);
+
+			var header_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 10);
+			header_box.hexpand = true;
+			header_box.halign = Gtk.Align.CENTER;
+			header_box.margin_bottom = 20;
+
+			var history_img = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.DND);
+			header_box.pack_start (history_img);
+
+            var header_label = new Gtk.Label (_("History"));
+            header_label.get_style_context ().add_class ("h2");
+
+			header_box.pack_start (header_label);
+            grid.attach (header_box, 0, 0, 1, 1);
+
             
             if (history.length () > 0) {
                 list_store = new Gtk.ListStore (2, typeof (string), typeof (string));
@@ -77,30 +93,18 @@ namespace Calculus {
                 grid.attach (scrolled, 0, 1, 1, 1);
                 
             }
-            
-            var header = new Gtk.Grid ();
-            header.set_column_spacing (10);
-            var header_label = new Gtk.Label (_("History"));
-            var history_img = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.DND);
-            
-            header_label.get_style_context ().add_class ("h2");
-            header.attach (header_label, 1, 0, 1, 1);
-            header.attach (history_img, 0, 0, 1, 1);
-            grid.attach (header, 0, 0, 1, 1);
-            
-            content.pack_start (grid);
         }
         
         private void build_buttons () {
+			button_close = add_button (_("Close"), Gtk.ResponseType.CLOSE);
+			button_cp_output = add_button (_("Add Expression"), 101);
             button_cp_expression = add_button (_("Add Result"), 100);
-            button_cp_output = add_button (_("Add Expression"), 101);
             
             if (history.length () == 0) {
                 button_cp_expression.sensitive = false;
                 button_cp_output.sensitive = false;
             }
             
-            button_close = add_button (_("Close"), Gtk.ResponseType.CLOSE);
             this.response.connect (on_response);
         }
         
