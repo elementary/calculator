@@ -22,57 +22,49 @@ using Granite.Widgets;
 
 namespace Calculus {
     public class HistoryDialog : Gtk.Dialog {
-    
         private unowned List<MainWindow.History?> history;
         private Gtk.TreeView view;
-        private Gtk.Widget button_cp_expression;
-        private Gtk.Widget button_cp_output;
+		private Gtk.Grid grid;
+        private Gtk.Widget button_add;
+        //private Gtk.Widget button_cp_output;
         private Gtk.Widget button_close;
         private Gtk.ListStore list_store;
+
+		private Gtk.RadioButton expression_radio;
+		private Gtk.RadioButton result_radio;
         
         public signal void added (string text);
         
-        public HistoryDialog (List<MainWindow.History?> history) {
-            this.history = history;
-            this.title = _("History");
-            this.set_resizable (false);
+        public HistoryDialog (List<MainWindow.History?> _history) {
+            history = _history;
+            title = _("History");
+			set_size_request (450, 0);
+            set_resizable (false);
             
-            this.build_ui ();
-            this.build_buttons ();
-            this.show_all ();
+            build_ui ();
+            build_buttons ();
+            show_all ();
         }
         
         private void build_ui () {
             Gtk.Box content = get_content_area () as Gtk.Box;
-            Gtk.Grid grid = new Gtk.Grid ();
-            grid.expand = true;
-            grid.set_column_spacing (3);
-            grid.set_row_spacing (10);
-            grid.margin = 10;
-            grid.margin_top = 0;
+            get_action_area ().margin_right = 12;
+			get_action_area ().margin_bottom = 12;
+			grid = new Gtk.Grid ();
+			grid.expand = true;
+			grid.margin = 12;
+			grid.margin_top = 12;
+			grid.margin_bottom = 24;
+			grid.row_spacing = 10;
+			grid.column_spacing = 20;
 			content.pack_start (grid);
 
-			var header_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 10);
-			header_box.hexpand = true;
-			header_box.halign = Gtk.Align.CENTER;
-			header_box.margin_bottom = 20;
-
-			var history_img = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.DND);
-			header_box.pack_start (history_img);
-
-            var header_label = new Gtk.Label (_("History"));
-            header_label.get_style_context ().add_class ("h2");
-
-			header_box.pack_start (header_label);
-            grid.attach (header_box, 0, 0, 1, 1);
-
-            
             if (history.length () > 0) {
                 list_store = new Gtk.ListStore (2, typeof (string), typeof (string));
                 Gtk.TreeIter iter;
                 
                 foreach (MainWindow.History h in history) {
-                    list_store.append (out iter);
+                    list_store.insert (out iter, 0);
                     list_store.set (iter, 0, h.output, 1, h.exp);
                 }
 
@@ -87,43 +79,46 @@ namespace Calculus {
                 view.get_column (0).max_width = 100;
                 
                 Gtk.ScrolledWindow scrolled = new Gtk.ScrolledWindow (null, null);
-                scrolled.min_content_height = 150;
+                scrolled.min_content_height = 100;
                 scrolled.shadow_type = Gtk.ShadowType.IN;
                 scrolled.add (view);
-                grid.attach (scrolled, 0, 1, 1, 1);
-                
+                grid.attach (scrolled, 0, 0, 3, 1);
             }
+
+			var add_label = new Gtk.Label (_("Value to add:"));
+			add_label.halign = Gtk.Align.END;
+			grid.attach (add_label, 0, 1, 1, 1);
+
+			result_radio = new Gtk.RadioButton.with_label (null, _("Result"));
+			grid.attach (result_radio, 1, 1, 1, 1);
+
+			expression_radio = new Gtk.RadioButton.with_label_from_widget (result_radio, _("Expression"));
+			grid.attach (expression_radio, 2, 1, 1, 1);
         }
         
         private void build_buttons () {
 			button_close = add_button (_("Close"), Gtk.ResponseType.CLOSE);
-			button_cp_output = add_button (_("Add Expression"), 101);
-            button_cp_expression = add_button (_("Add Result"), 100);
-            
-            if (history.length () == 0) {
-                button_cp_expression.sensitive = false;
-                button_cp_output.sensitive = false;
-            }
-            
-            this.response.connect (on_response);
+			button_add = add_button (_("Add"), Gtk.ResponseType.OK);
+			button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+			response.connect (on_response);
         }
         
         private void on_response (Gtk.Dialog source, int response_id) {
-            if (response_id != Gtk.ResponseType.CLOSE) {
+            if (response_id == Gtk.ResponseType.OK) {
                 var selection = view.get_selection ();
                 Gtk.TreeIter iter;
                 if (selection.get_selected (null, out iter)) {
                     Value val = Value (typeof (string));;
-                    if (response_id == 100)
+                    if (result_radio.get_active ())
                         list_store.get_value (iter, 0, out val);
-                    else if (response_id == 101)
+                    else if (expression_radio.get_active ())
                         list_store.get_value (iter, 1, out val);
                    
-                   this.added (val.get_string ());    
+                   added (val.get_string ());
                 }
             }
-            this.hide ();
-            this.destroy ();
+            hide ();
+            destroy ();
         }
     }
 }
