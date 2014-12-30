@@ -40,6 +40,7 @@ namespace Calculus {
             title = _("History");
 			set_size_request (450, 0);
             set_resizable (false);
+			set_deletable (false);
             
             build_ui ();
             build_buttons ();

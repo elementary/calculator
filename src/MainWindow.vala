@@ -397,17 +397,20 @@ namespace Calculus {
         }
         
         private void show_history (Gtk.Button button) {
-			this.position = entry.get_position ();
+			position = entry.get_position ();
 
             var history_dialog = new HistoryDialog (history);
             history_dialog.added.connect (history_added);
 
 			entry.grab_focus ();
-			entry.set_position (position);
+			//entry.set_position (position);
         }
         
         private void history_added (string input) {
+			//position = entry.get_position ();
             entry.set_text (entry.get_text () + input);
+			position += input.length;
+			entry.set_position (position);
         }
         
         private void remove_error () {
