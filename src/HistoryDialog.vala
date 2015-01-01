@@ -26,7 +26,6 @@ namespace Calculus {
         private Gtk.TreeView view;
 		private Gtk.Grid grid;
         private Gtk.Widget button_add;
-        //private Gtk.Widget button_cp_output;
         private Gtk.Widget button_close;
         private Gtk.ListStore list_store;
 
