@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-30 23:05+0100\n"
-"PO-Revision-Date: 2014-12-31 11:46+0000\n"
-"Last-Translator: Marvin Beckers <Unknown>\n"
+"POT-Creation-Date: 2015-01-01 14:20+0100\n"
+"PO-Revision-Date: 2015-01-01 13:23+0000\n"
+"Last-Translator: UweS <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-01 06:37+0000\n"
+"X-Launchpad-Export-Date: 2015-01-02 06:14+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 
 #: ../src/Calculus.vala:25 ../src/MainWindow.vala:69
@@ -18,47 +18,47 @@ msgstr "Taschenrechner"
 
 #: ../src/Calculus.vala:28
 msgid "Calculate in an elementary way."
-msgstr "Rechnen - einfach und elementar."
+msgstr "Rechnen – einfach und elementar."
 
 #: ../src/Calculus.vala:29
 msgid "About Calculator"
 msgstr "Info zu Taschenrechner"
 
-#: ../src/HistoryDialog.vala:40 ../src/MainWindow.vala:84
+#: ../src/HistoryDialog.vala:39 ../src/MainWindow.vala:84
 msgid "History"
 msgstr "Verlauf"
 
-#: ../src/HistoryDialog.vala:76 ../src/HistoryDialog.vala:93
+#: ../src/HistoryDialog.vala:75 ../src/HistoryDialog.vala:92
 msgid "Result"
 msgstr "Ergebnis"
 
-#: ../src/HistoryDialog.vala:77 ../src/HistoryDialog.vala:96
+#: ../src/HistoryDialog.vala:76 ../src/HistoryDialog.vala:95
 msgid "Expression"
 msgstr "Ausdruck"
 
-#: ../src/HistoryDialog.vala:89
+#: ../src/HistoryDialog.vala:88
 msgid "Value to add:"
 msgstr "Hinzuzufügender Wert:"
 
-#: ../src/HistoryDialog.vala:101
+#: ../src/HistoryDialog.vala:100
 msgid "Close"
 msgstr "Schließen"
 
-#: ../src/HistoryDialog.vala:102
+#: ../src/HistoryDialog.vala:101
 msgid "Add"
 msgstr "Hinzufügen"
 
 #: ../src/Core/Scanner.vala:73
 msgid "'%s' is invalid."
-msgstr "'%s' ist ungültig."
+msgstr "»%s« ist ungültig."
 
 #: ../src/Core/Scanner.vala:148
 msgid "'%s' is unknown."
-msgstr "'%s' ist unbekannt."
+msgstr "»%s« ist unbekannt."
 
 #: ../src/MainWindow.vala:78 ../src/MainWindow.vala:391
 msgid "Show extended functionality"
-msgstr "Erweiterte Funktionalität anzeigen"
+msgstr "Erweiterte Funktionen anzeigen"
 
 #: ../src/MainWindow.vala:163
 msgid "Clear entry"
@@ -66,8 +66,8 @@ msgstr "Eingabe löschen"
 
 #: ../src/MainWindow.vala:164
 msgid "Backspace"
-msgstr "Rückschritt"
+msgstr "Rücktaste"
 
 #: ../src/MainWindow.vala:386
 msgid "Hide extended functionality"
-msgstr "Erweiterte Funktionalität verstecken"
+msgstr "Erweiterte Funktionen ausblenden"
