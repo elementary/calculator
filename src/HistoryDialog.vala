@@ -24,7 +24,7 @@ namespace Calculus {
     public class HistoryDialog : Gtk.Dialog {
         private unowned List<MainWindow.History?> history;
         private Gtk.TreeView view;
-		private Gtk.Grid grid;
+		private Gtk.Grid main_grid;
         private Gtk.Widget button_add;
         private Gtk.Widget button_close;
         private Gtk.ListStore list_store;
@@ -47,17 +47,15 @@ namespace Calculus {
         }
         
         private void build_ui () {
-            Gtk.Box content = get_content_area () as Gtk.Box;
-            get_action_area ().margin_right = 12;
-			get_action_area ().margin_bottom = 12;
-			grid = new Gtk.Grid ();
-			grid.expand = true;
-			grid.margin = 12;
-			grid.margin_top = 12;
-			grid.margin_bottom = 24;
-			grid.row_spacing = 10;
-			grid.column_spacing = 20;
-			content.pack_start (grid);
+			var content = get_content_area () as Gtk.Box;
+			get_action_area ().margin = 6;
+			main_grid = new Gtk.Grid ();
+			main_grid.expand = true;
+			main_grid.margin = 12;
+			main_grid.row_spacing = 10;
+			main_grid.column_spacing = 20;
+			main_grid.halign = Gtk.Align.END;
+			content.add (main_grid);
 
             if (history.length () > 0) {
                 list_store = new Gtk.ListStore (2, typeof (string), typeof (string));
@@ -65,35 +63,37 @@ namespace Calculus {
                 
                 foreach (MainWindow.History h in history) {
                     list_store.insert (out iter, 0);
-                    list_store.set (iter, 0, h.output, 1, h.exp);
+                    list_store.set (iter, 0, h.exp, 1, h.output);
                 }
 
                 view = new Gtk.TreeView.with_model (list_store);
                 view.expand = true;
+				view.set_headers_visible (false);
+				view.get_style_context ().add_class ("h3");
                 
                 Gtk.CellRendererText cell = new Gtk.CellRendererText ();
-		        view.insert_column_with_attributes (-1, _("Result"), cell, "text", 0);
-		        view.insert_column_with_attributes (-1, _("Expression"), cell, "text", 1);
+		        view.insert_column_with_attributes (-1, null, cell, "text", 0);
+		       	view.insert_column_with_attributes (-1, null, cell, "text", 1);
                 
-                view.get_column (0).min_width = 100;
-                view.get_column (0).max_width = 100;
+                view.get_column (1).min_width = 75;
+                view.get_column (0).min_width = 200;
                 
                 Gtk.ScrolledWindow scrolled = new Gtk.ScrolledWindow (null, null);
-                scrolled.min_content_height = 100;
+                scrolled.min_content_height = 125;
                 scrolled.shadow_type = Gtk.ShadowType.IN;
                 scrolled.add (view);
-                grid.attach (scrolled, 0, 0, 3, 1);
+                main_grid.attach (scrolled, 0, 0, 3, 1);
             }
 
 			var add_label = new Gtk.Label (_("Value to add:"));
 			add_label.halign = Gtk.Align.END;
-			grid.attach (add_label, 0, 1, 1, 1);
+			main_grid.attach (add_label, 0, 1, 1, 1);
 
 			result_radio = new Gtk.RadioButton.with_label (null, _("Result"));
-			grid.attach (result_radio, 1, 1, 1, 1);
+			main_grid.attach (result_radio, 1, 1, 1, 1);
 
 			expression_radio = new Gtk.RadioButton.with_label_from_widget (result_radio, _("Expression"));
-			grid.attach (expression_radio, 2, 1, 1, 1);
+			main_grid.attach (expression_radio, 2, 1, 1, 1);
         }
         
         private void build_buttons () {
@@ -110,9 +110,9 @@ namespace Calculus {
                 if (selection.get_selected (null, out iter)) {
                     Value val = Value (typeof (string));;
                     if (result_radio.get_active ())
-                        list_store.get_value (iter, 0, out val);
-                    else if (expression_radio.get_active ())
                         list_store.get_value (iter, 1, out val);
+                    else if (expression_radio.get_active ())
+                        list_store.get_value (iter, 0, out val);
                    
                    added (val.get_string ());
                 }
