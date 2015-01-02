@@ -415,6 +415,7 @@ namespace Calculus {
         private void show_history (Gtk.Button button) {
 			position = entry.get_position ();
 
+			button_history.set_sensitive (false);
             var history_dialog = new HistoryDialog (history);
             history_dialog.added.connect (history_added);
 
@@ -424,8 +425,9 @@ namespace Calculus {
         
         private void history_added (string input) {
 			//position = entry.get_position ();
-           	entry.insert_at_cursor (input);
+			entry.insert_at_cursor (input);
 			position += input.length;
+			button_history.set_sensitive (true);
 			entry.grab_focus ();
 			entry.set_position (position);
         }
