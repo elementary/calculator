@@ -1,4 +1,73 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-01 14:20+0100\n"
+"PO-Revision-Date: 2015-01-02 07:25+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-01-03 06:21+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
+
+#: ../src/Calculus.vala:25 ../src/MainWindow.vala:69
+msgid "Calculator"
+msgstr ""
+
+#: ../src/Calculus.vala:28
+msgid "Calculate in an elementary way."
+msgstr ""
+
+#: ../src/Calculus.vala:29
+msgid "About Calculator"
+msgstr ""
+
+#: ../src/HistoryDialog.vala:39 ../src/MainWindow.vala:84
+msgid "History"
+msgstr ""
+
+#: ../src/HistoryDialog.vala:75 ../src/HistoryDialog.vala:92
+msgid "Result"
+msgstr ""
+
+#: ../src/HistoryDialog.vala:76 ../src/HistoryDialog.vala:95
+msgid "Expression"
+msgstr ""
+
+#: ../src/HistoryDialog.vala:88
+msgid "Value to add:"
+msgstr ""
+
+#: ../src/HistoryDialog.vala:100
+msgid "Close"
+msgstr ""
+
+#: ../src/HistoryDialog.vala:101
+msgid "Add"
+msgstr ""
+
+#: ../src/Core/Scanner.vala:73
+msgid "'%s' is invalid."
+msgstr ""
+
+#: ../src/Core/Scanner.vala:148
+msgid "'%s' is unknown."
+msgstr ""
+
+#: ../src/MainWindow.vala:78 ../src/MainWindow.vala:391
+msgid "Show extended functionality"
+msgstr ""
+
+#: ../src/MainWindow.vala:163
+msgid "Clear entry"
+msgstr ""
+
+#: ../src/MainWindow.vala:164
+msgid "Backspace"
+msgstr ""
+
+#: ../src/MainWindow.vala:386
+msgid "Hide extended functionality"
+msgstr ""
