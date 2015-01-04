@@ -33,6 +33,7 @@ namespace Calculus {
 		private Gtk.RadioButton result_radio;
         
         public signal void added (string text);
+		public signal void closed ();
         
         public HistoryDialog (List<MainWindow.History?> _history) {
             history = _history;
@@ -90,10 +91,10 @@ namespace Calculus {
 			main_grid.attach (add_label, 0, 1, 1, 1);
 
 			result_radio = new Gtk.RadioButton.with_label (null, _("Result"));
-			main_grid.attach (result_radio, 1, 1, 1, 1);
+			main_grid.attach (result_radio, 2, 1, 1, 1);
 
 			expression_radio = new Gtk.RadioButton.with_label_from_widget (result_radio, _("Expression"));
-			main_grid.attach (expression_radio, 2, 1, 1, 1);
+			main_grid.attach (expression_radio, 1, 1, 1, 1);
         }
         
         private void build_buttons () {
@@ -117,6 +118,7 @@ namespace Calculus {
                    added (val.get_string ());
                 }
             }
+			closed ();
             hide ();
             destroy ();
         }

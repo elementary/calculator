@@ -418,6 +418,9 @@ namespace Calculus {
 			button_history.set_sensitive (false);
             var history_dialog = new HistoryDialog (history);
             history_dialog.added.connect (history_added);
+			history_dialog.closed.connect (() => {
+				button_history.set_sensitive (true);
+			});
 
 			//entry.grab_focus ();
 			//entry.set_position (position);
@@ -427,7 +430,6 @@ namespace Calculus {
 			//position = entry.get_position ();
 			entry.insert_at_cursor (input);
 			position += input.length;
-			button_history.set_sensitive (true);
 			entry.grab_focus ();
 			entry.set_position (position);
         }
