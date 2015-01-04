@@ -33,7 +33,6 @@ namespace Calculus {
 		private Gtk.RadioButton result_radio;
         
         public signal void added (string text);
-		public signal void closed ();
         
         public HistoryDialog (List<MainWindow.History?> _history) {
             history = _history;
@@ -118,7 +117,6 @@ namespace Calculus {
                    added (val.get_string ());
                 }
             }
-			closed ();
             hide ();
             destroy ();
         }

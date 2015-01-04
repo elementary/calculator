@@ -418,7 +418,7 @@ namespace Calculus {
 			button_history.set_sensitive (false);
             var history_dialog = new HistoryDialog (history);
             history_dialog.added.connect (history_added);
-			history_dialog.closed.connect (() => {
+			history_dialog.hide.connect (() => {
 				button_history.set_sensitive (true);
 			});
 
