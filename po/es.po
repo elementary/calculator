@@ -3,18 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-04 16:31+0100\n"
-"PO-Revision-Date: 2014-11-30 05:01+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-01-05 12:15+0000\n"
+"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-05 07:23+0000\n"
+"X-Launchpad-Export-Date: 2015-01-06 07:19+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 
 #: ../src/Calculus.vala:25 ../src/MainWindow.vala:70
 msgid "Calculator"
-msgstr ""
+msgstr "Calculadora"
 
 #: ../src/Calculus.vala:28
 msgid "Calculate in an elementary way."
@@ -22,47 +22,47 @@ msgstr ""
 
 #: ../src/Calculus.vala:29
 msgid "About Calculator"
-msgstr ""
+msgstr "Acerca de Calculadora"
 
 #: ../src/HistoryDialog.vala:40 ../src/MainWindow.vala:85
 msgid "History"
-msgstr ""
+msgstr "Historial"
 
 #: ../src/HistoryDialog.vala:89
 msgid "Value to add:"
-msgstr ""
+msgstr "Valor que sumar:"
 
 #: ../src/HistoryDialog.vala:93
 msgid "Result"
-msgstr ""
+msgstr "Resultado"
 
 #: ../src/HistoryDialog.vala:96
 msgid "Expression"
-msgstr ""
+msgstr "Expresión"
 
 #: ../src/HistoryDialog.vala:101
 msgid "Close"
-msgstr ""
+msgstr "Cerrar"
 
 #: ../src/HistoryDialog.vala:102
 msgid "Add"
-msgstr ""
+msgstr "Añadir"
 
 #: ../src/Core/Scanner.vala:73
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "«%s» no es válido."
 
 #: ../src/Core/Scanner.vala:148
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "«%s» es desconocido."
 
 #: ../src/MainWindow.vala:79 ../src/MainWindow.vala:407
 msgid "Show extended functionality"
-msgstr ""
+msgstr "Mostrar funciones adicionales"
 
 #: ../src/MainWindow.vala:167
 msgid "Clear entry"
-msgstr ""
+msgstr "Borrar entrada"
 
 #: ../src/MainWindow.vala:168
 msgid "Backspace"
@@ -70,8 +70,8 @@ msgstr ""
 
 #: ../src/MainWindow.vala:169
 msgid "Add last result"
-msgstr ""
+msgstr "Sumar el último resultado"
 
 #: ../src/MainWindow.vala:402
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "Ocultar funciones adicionales"
