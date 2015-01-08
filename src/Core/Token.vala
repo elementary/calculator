@@ -25,16 +25,15 @@ namespace Calculus.Core {
         CONSTANT,
         P_LEFT,
         P_RIGHT,
-        
         //basic TokenTypes for Scanner output
         ALPHA,
         EOF;
     }
-    
+
     public class Token : Object {
         public string content { get; set; }
         public TokenType token_type { get; set; }
-        
+
         public Token (string in_content, TokenType in_token_type) {
             content = in_content;
             token_type = in_token_type;

@@ -17,19 +17,19 @@
 */
 
 namespace Calculus.Core {
-	public errordomain STACK_ERROR {
-		EMPTY
-	}
+    public errordomain STACK_ERROR {
+        EMPTY
+    }
     public class Stack<TYPE> : Object {
         private TYPE?[] stack_array;
-        
+
         public Stack () { }
-        
+
         public void push (TYPE t) {
             stack_array.resize (stack_array.length + 1);
             stack_array[stack_array.length - 1] = t;
         }
-        
+
         public TYPE? pop () {
             if (!this.empty ()) {
                 TYPE output = stack_array[stack_array.length - 1];
@@ -38,22 +38,22 @@ namespace Calculus.Core {
                 return output;
             } else {
                 return null;
-				//throw new STACK_ERROR.EMPTY (_("Stack is empty."));
+                //throw new STACK_ERROR.EMPTY (_("Stack is empty."));
             }
         }
-        
+
         public TYPE? peek () {
             return stack_array[stack_array.length - 1];
         }
-        
+
         public bool empty () {
             return this.is_length (0);
         }
-        
+
         public bool is_length (int in_length) {
             return (in_length == stack_array.length);
         }
-        
+
         public int get_length () {
             return stack_array.length;
         }

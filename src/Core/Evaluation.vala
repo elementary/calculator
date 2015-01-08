@@ -31,7 +31,7 @@ namespace Calculus.Core {
         NO_CONSTANT,
         MISMATCHED_P,
         UNKNOWN_TOKEN,
-		STACK_EMPTY
+        STACK_EMPTY
     }
     public errordomain OUT_ERROR {
         EVAL_ERROR,
@@ -40,14 +40,14 @@ namespace Calculus.Core {
         SCANNER_ERROR
     }
     public class Evaluation : Object {
-    
+
         [CCode (has_target = false)]
         private delegate double Eval (double a = 0, double b = 0);
-        
+
         private struct Operator { string symbol; int inputs; int prec; string fixity; Eval eval;}
         private Operator[] operators = {   Operator () { symbol = "+", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a + b; } },
                                             Operator () { symbol = "-", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a - b; } },
-											Operator () { symbol = "−", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a - b; } },
+                                            Operator () { symbol = "−", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a - b; } },
                                             Operator () { symbol = "*", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a * b; } }, 
                                             Operator () { symbol = "×", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a * b; } },
                                             Operator () { symbol = "/", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a / b; } },
@@ -56,7 +56,7 @@ namespace Calculus.Core {
                                             Operator () { symbol = "^", inputs = 2, prec = 3, fixity = "RIGHT", eval = (a, b) => { return Math.pow (a, b); } },
                                             Operator () { symbol = "e", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => { return a*Math.pow (10, b); } },
                                             Operator () { symbol = "%", inputs = 1, prec = 5, fixity = "LEFT", eval = (a, b) => { return b / 100.0;} } };
-                                            
+
         private struct Function { string symbol; int inputs; Eval eval;}
         private Function[] functions = {  Function () { symbol = "sin", inputs = 1, eval = (a) => { return Math.sin (a); } },
                                             Function () { symbol = "cos", inputs = 1, eval = (a) => { return Math.cos (a); } },
@@ -68,17 +68,17 @@ namespace Calculus.Core {
                                             Function () { symbol = "exp", inputs = 1, eval = (a) => { return Math.exp (a); } },
                                             Function () { symbol = "sqrt", inputs = 1, eval = (a) => { return Math.sqrt (a); } },
                                             Function () { symbol = "√", inputs = 1, eval = (a) => { return Math.sqrt (a); } } };
-                                            
+
         private struct Constant { string symbol; Eval eval; }
         private Constant[] constants = {   Constant () { symbol = "pi", eval = () => { return Math.PI; } },
                                             Constant () { symbol = "π", eval = () => { return Math.PI; } }  };
-        
+
         public static string evaluate (string str, int d_places) throws OUT_ERROR {
             try {
                 var tokenlist = Scanner.scan (str);
                 var d = 0.0;
                 var e = new Evaluation ();
-                
+
                 try {
                     tokenlist = e.shunting_yard (tokenlist);
                     try {
@@ -88,12 +88,12 @@ namespace Calculus.Core {
                 return e.cut (d, d_places);
             } catch (SCANNER_ERROR e) { throw new OUT_ERROR.SCANNER_ERROR (e.message); }
         }
-        
+
         //Djikstra's Shunting Yard algorithm for ordering a tokenized list into Reverse Polish Notation
         private List<Token> shunting_yard (List<Token> token_list) throws SHUNTING_ERROR {
             List<Token> output = new List<Token> ();
             Stack<Token> opStack = new Stack<Token> ();
-        
+
             foreach (Token t in token_list) {
                 switch (t.token_type) {
                 case TokenType.NUMBER:
@@ -108,13 +108,13 @@ namespace Calculus.Core {
 
                 case TokenType.SEPARATOR:
                     while (opStack.peek ().token_type != TokenType.P_LEFT && !opStack.empty ()) {
-						output.append (opStack.pop ());
-					}
-                    
+                        output.append (opStack.pop ());
+                    }
+
                     if (opStack.peek ().token_type != TokenType.P_LEFT)
                         throw new SHUNTING_ERROR.MISMATCHED_P ("Content of parentheses is mismatched.");
                     break;
-                 
+
                 case TokenType.OPERATOR:
                     if (!opStack.empty ()) {
                         Operator op1 = get_operator (t);
@@ -124,8 +124,7 @@ namespace Calculus.Core {
 
                         while (!opStack.empty () &&
                         ((op2.fixity == "LEFT" && op1.prec <= op2.prec) ||
-                        (op2.fixity == "RIGHT" && op1.prec < op2.prec)))
-                        {
+                        (op2.fixity == "RIGHT" && op1.prec < op2.prec))) {
                             output.append (opStack.pop ());
                             if (!opStack.empty ())
                                 try { op2 = get_operator (opStack.peek ());
@@ -134,19 +133,18 @@ namespace Calculus.Core {
                     }
                     opStack.push (t);
                     break;
-                
+
                 case TokenType.P_LEFT:
                     opStack.push (t);
                     break;
-                
+
                 case TokenType.P_RIGHT:
                     while (!(opStack.peek ().token_type == TokenType.P_LEFT) && !opStack.empty ())
                         output.append (opStack.pop ());
 
-                    if (!(opStack.empty ())) {
+                    if (!(opStack.empty ()))
                         opStack.pop ();
-					}
-                        
+
                     if (!opStack.empty () && opStack.peek ().token_type == TokenType.FUNCTION) 
                         output.append (opStack.pop ());
                     break;
@@ -162,10 +160,10 @@ namespace Calculus.Core {
             }
             return output;
         }
-        
+
         private double eval_postfix (List<Token> token_list) throws EVAL_ERROR {
             Stack<Token> stack = new Stack<Token> ();
-            
+
             foreach (Token t in token_list) {
                 if (t.token_type == TokenType.NUMBER) {
                     stack.push (t);
@@ -176,31 +174,30 @@ namespace Calculus.Core {
                     } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_CONSTANT (""); }
                 } else if (t.token_type == TokenType.OPERATOR) {
                     try {
-                        
                         Operator o = get_operator (t);
                         Token t1 = stack.pop ();
                         Token t2 = new Token ("0", TokenType.NUMBER);
+
                         if (!stack.is_length (0) && o.inputs == 2)
                             t2 = stack.pop ();
                         stack.push (compute_tokens (t, t1, t2));
-                        
                     } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_OPERATOR (""); }
                 } else if (t.token_type == TokenType.FUNCTION) {
                     try {
                         Function f = get_function (t);
                         Token t1 = stack.pop ();
                         Token t2 = new Token ("0", TokenType.NUMBER);
-                        
+
                         if (f.inputs == 2)
                             t2 = stack.pop ();
-                      
+
                         stack.push (process_tokens (t, t1, t2));
                     } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_FUNCTION (""); }
                 }
             }
             return double.parse (stack.pop ().content);
         }
-        
+
         //checks for real TokenType (which are TokenType.ALPHA at the moment)
         public bool is_operator (Token t) {
             foreach (Operator o in operators) {
@@ -209,7 +206,7 @@ namespace Calculus.Core {
             }
             return false;
         }
-        
+
         public bool is_function (Token t) {
             foreach (Function f in functions) {
                 if (t.content == f.symbol) 
@@ -217,7 +214,7 @@ namespace Calculus.Core {
             }
             return false;
         }
-        
+
         public bool is_constant (Token t) {
             foreach (Constant c in constants) {
                 if (t.content == c.symbol)
@@ -225,7 +222,7 @@ namespace Calculus.Core {
             }
             return false;
         }
-        
+
         private Operator get_operator (Token t) throws SHUNTING_ERROR {
             foreach (Operator o in operators) {
                 if (t.content == o.symbol)
@@ -233,7 +230,7 @@ namespace Calculus.Core {
             }
             throw new SHUNTING_ERROR.NO_OPERATOR ("");
         }
-        
+
         private Function get_function (Token t) throws SHUNTING_ERROR {
             foreach (Function f in functions) {
                 if (t.content == f.symbol)
@@ -241,7 +238,7 @@ namespace Calculus.Core {
             }
             throw new SHUNTING_ERROR.NO_FUNCTION ("");
         }
-        
+
         private Constant get_constant (Token t) throws SHUNTING_ERROR {
             foreach (Constant c in constants) {
                 if (t.content == c.symbol)
@@ -249,7 +246,7 @@ namespace Calculus.Core {
             }
             throw new SHUNTING_ERROR.NO_CONSTANT ("");
         }
-        
+
         private Token compute_tokens (Token t_op, Token t1, Token t2) throws EVAL_ERROR {
             try { 
                 Operator op = get_operator (t_op);
@@ -257,7 +254,7 @@ namespace Calculus.Core {
                 return new Token (d.to_string (), TokenType.NUMBER);
             } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_OPERATOR ("The given token was no operator."); }
         }
-        
+
         private Token process_tokens (Token tf, Token t1, Token t2) throws EVAL_ERROR {
             try {
                 var f = get_function (tf);
@@ -265,7 +262,7 @@ namespace Calculus.Core {
                 return new Token (d.to_string (), TokenType.NUMBER);
             } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_FUNCTION ("The given token was no function."); }
         }
-        
+
         private string cut (double d, int d_places) {
             var s = ("%.5f".printf (d)).replace (",", ".");
             while (s.last_index_of ("0") == s.length - 1)

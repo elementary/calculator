@@ -21,29 +21,29 @@ namespace Calculus.Core {
         UNKNOWN_TOKEN,
         ALPHA_INVALID
     }
-    
+
     public class Scanner : Object {
         public unowned string str;
         public int pos;
         public unichar[] uc;
-        
+
         public Scanner (string input_str) {
             this.str = input_str;
             this.pos = 0;
             this.uc = new unichar[0];
         }
-        
+
         public static List<Token> scan (string input) throws SCANNER_ERROR {
             Scanner scanner = new Scanner (input);
             int index = 0;
             unowned unichar c;
             bool next_number_negative = false;
             Evaluation e = new Evaluation ();
-           
+
             for (int i = 0; input.get_next_char(ref index, out c); i++) {
                 if (c != ' ') {
-                scanner.uc.resize (scanner.uc.length + 1);
-                scanner.uc[scanner.uc.length - 1] = c;
+                    scanner.uc.resize (scanner.uc.length + 1);
+                    scanner.uc[scanner.uc.length - 1] = c;
                 }
             }
             try {
@@ -54,13 +54,13 @@ namespace Calculus.Core {
                     ssize_t start;
                     ssize_t len;
                     string substr = "";
-                    
+
                     type = scanner.next (out start, out len);
                     for (ssize_t i = start; i < (start + len); i++) {
                         substr = substr + scanner.uc[i].to_string ();
                     }
                     Token t = new Token (substr, type);
-                    
+
                     //identifying multicharacter tokens via Evaluation class. 
                     if (t.token_type == TokenType.ALPHA) {
                         if (e.is_operator (t))
@@ -71,19 +71,19 @@ namespace Calculus.Core {
                             t.token_type = TokenType.CONSTANT;
                         else
                             throw new SCANNER_ERROR.ALPHA_INVALID (_("'%s' is invalid."), t.content);
-                    
+
                     } else if (t.token_type == TokenType.OPERATOR && t.content == "-") {
                         if (last_token == null || (last_token != null && last_token.token_type != TokenType.NUMBER &&
                         last_token.token_type != TokenType.P_RIGHT)) {
                             next_number_negative = true;
                             continue;
                         }
-                    
+
                     } else if (t.token_type == TokenType.NUMBER && next_number_negative) {
                         t.content = (double.parse (t.content) * (-1)).to_string ();
                         next_number_negative = false;
                     }
-                    
+
                     //checking if last token was a number and token now is a function, constant or parenthesis (left)
                     if (last_token != null && last_token.token_type == TokenType.NUMBER && 
                     (t.token_type == TokenType.FUNCTION || t.token_type == TokenType.CONSTANT || t.token_type == TokenType.P_LEFT))
@@ -93,14 +93,14 @@ namespace Calculus.Core {
                     //does the same as above, but splitted for readability
                     if (last_token != null && last_token.token_type == TokenType.P_RIGHT && t.token_type == TokenType.NUMBER)
                         tokenlist.append (new Token ("*", TokenType.OPERATOR));
-                    
+
                     tokenlist.append (t);
                     last_token = t;
                 }
                 return tokenlist;
             } catch (SCANNER_ERROR e) { throw e; }
         }
-        
+
         private TokenType next (out ssize_t start, out ssize_t len) throws SCANNER_ERROR {
             start = pos;
             if (uc[pos].isdigit ()) {
@@ -143,7 +143,7 @@ namespace Calculus.Core {
                 len = 0;
                 return TokenType.EOF;
             }
-            
+
             //if no rule matches the character at pos, throw an error.
             throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("'%s' is unknown."), str.get_char (pos).to_string ());
         }

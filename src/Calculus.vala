@@ -27,21 +27,21 @@ namespace Calculus {
 
         public const string COMMENT = N_("Calculate in an elementary way.");
         public const string ABOUT_STOCK = N_("About Calculator");
-    
+
         construct {
             application_id = "org.calculus";
             flags = ApplicationFlags.FLAGS_NONE;
-                    
+
             program_name = PROGRAM_NAME;
             app_years = "2014";
             app_icon = "accessories-calculator";
-            
+
             build_data_dir = Build.DATADIR;
             build_pkg_data_dir = Build.PKGDATADIR;
             build_release_name = Build.RELEASE_NAME;
             build_version = Build.VERSION;
             build_version_info = Build.VERSION_INFO;
-            
+
             app_launcher = "calculus.desktop";
             application_id = "net.launchpad.calculus";
             main_url = "https://launchpad.net/calculus";
@@ -51,16 +51,16 @@ namespace Calculus {
             about_authors = { "Marvin Beckers <beckersmarvin@gmail.com>" };
             about_comments = "";
             about_license_type = Gtk.License.GPL_3_0;
-            
+
             Intl.setlocale (LocaleCategory.ALL, "");
         }
-        
+
         public override void activate () {
             var window = new Calculus.MainWindow ();
             this.add_window (window);
         }
     }
-    
+
     public static int main (string[] args) {
         var application = new CalculusApp ();
         return application.run (args);
