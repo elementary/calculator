@@ -16,13 +16,12 @@
 * with Calculus. If not, see http://www.gnu.org/licenses/.
 */
 
-using Gtk;
 using Granite.Widgets;
 using Calculus.Core;
 
 namespace Calculus {
     public class MainWindow : Gtk.Window {
-        private Gtk.HeaderBar headerbar;
+        private Gtk.HeaderBar       headerbar;
         private Gtk.Grid            main_grid;
         private Gtk.Grid            sub_grid_1;
         private Gtk.Grid            sub_grid_2;
@@ -64,7 +63,7 @@ namespace Calculus {
         }
 
         private void build_titlebar () {
-            headerbar = new HeaderBar ();  
+            headerbar = new Gtk.HeaderBar ();  
             headerbar.get_style_context ().add_class ("primary-toolbar");
             headerbar.show_close_button = true;
             headerbar.set_title (_("Calculator"));
