@@ -367,9 +367,21 @@ namespace Calculus {
         private void button_undo_clicked () {
             position = entry.get_position ();
             if (entry.get_text ().length > 0) {
-                string sliced_1 = entry.get_text ().slice (0, position - 1);
-                string sliced_2 = entry.get_text ().slice (position, entry.get_text ().length);
-                entry.set_text (sliced_1 + sliced_2);
+                string new_text = "";
+                int index = 0;
+                unowned unichar c;
+                List<unichar> news = new List<unichar> ();
+                
+                for (int i = 0; entry.get_text ().get_next_char(ref index, out c); i++) {
+                    if (i+1 != position)
+                        news.append (c);
+                }
+
+                foreach (unichar u in news) {
+                    new_text += u.to_string ();
+                }
+
+                entry.set_text (new_text);
             }
 
             entry.grab_focus ();
