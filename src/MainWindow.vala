@@ -45,11 +45,13 @@ namespace Calculus {
 
         public struct History { string exp; string output; }
 
-        private string[] button_types = {  "0", "1", "2", "3", "4", "5", 
-                                            "6", "7", "8", "9", "0", " + ",
-                                            " − ", " × ", " ÷ ", "%", ".", "(", 
-                                            ")", "^", "sin", "cos", "tan", "√",
-                                            "sinh", "cosh", "tanh" , "sqrt", "π"};
+        private string[] regular_buttons = {   "0", "1", "2", "3", "4", "5", 
+                                                "6", "7", "8", "9", "0", " + ",
+                                                " − ", " × ", " ÷ ", "%", ".", "(", 
+                                                ")", "^", "π"};
+
+        private string[] function_buttons = {  "sin", "cos", "tan", "√", "sinh", "cosh",
+                                                "tanh" , "sqrt"};
 
         public MainWindow () {
             set_resizable (false);
@@ -313,26 +315,33 @@ namespace Calculus {
         }
 
         private void button_clicked (Gtk.Button btn) {
-            position = entry.get_position ();
-            string label = "";
-            if (btn == button_pow) {
-                //button_pow is the only button without an convenient label, therefore it gets a special treatment
+            string label = btn.get_label ();
+            if (btn == button_pow)
                 label = "^";
-                entry.insert_at_cursor (label);
-            } else {
-                label = btn.get_label ();
 
-                foreach (var val in button_types) {
-                    if (label == val) {
-                        entry.insert_at_cursor (label);
-                        break;
-                    }
-                }
+            bool is_function = label in function_buttons;
+            bool is_regular = label in regular_buttons;
+            
+            if (!is_function && !is_regular)
+                return;
+
+            int selection_start = -1;
+            int selection_end = -1;
+            int new_position = entry.get_position ();
+
+            if (is_function && entry.get_selection_bounds (out selection_start, out selection_end)) {
+                string selected_text = entry.get_chars (selection_start, selection_end);
+                string function_call = label + "(" + selected_text + ")";
+                entry.delete_text (selection_start, selection_end);
+                entry.insert_text (function_call, -1, ref selection_start);
+                new_position += function_call.length;
+            } else {
+                entry.insert_at_cursor (label);
+                new_position += label.length;
             }
-            position += (label.length);
 
             entry.grab_focus ();
-            entry.set_position (position);
+            entry.set_position (new_position);
         }
 
         private void button_calc_clicked () {
