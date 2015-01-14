@@ -1,5 +1,5 @@
-calculus (0.1) trusty; urgency=low
+pantheon-calculator (0.1) trusty; urgency=low
 
   * Initial Release.
 
- -- Marvin Beckers <beckersmarvin@gmail.com>  Tue, 11 Dez 2014 17:48:00 +0100
+ -- Marvin Beckers <beckersmarvin@gmail.com>  Tue, 11 Dec 2014 17:48:00 +0100

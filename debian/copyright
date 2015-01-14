@@ -1,6 +1,6 @@
 Format: http://dep.debian.net/deps/dep5
-Upstream-Name: calculus
-Source: https://launchpad.net/calculus
+Upstream-Name: pantheon-calculator
+Source: https://launchpad.net/pantheon-calculator
 
 Files: *
 Copyright: 2014 Marvin Beckers
