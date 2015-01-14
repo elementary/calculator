@@ -6,12 +6,12 @@ cmake_minimum_required (VERSION 2.8)
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
 set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
-set (PKGDATADIR "${DATADIR}/calculus")
-set (GETTEXT_PACKAGE "calculus")
-set (EXEC_NAME "calculus")
+set (PKGDATADIR "${DATADIR}/pantheon-calculator")
+set (GETTEXT_PACKAGE "pantheon-calculator")
+set (EXEC_NAME "pantheon-calculator")
 set (RELEASE_NAME "An elementary app for simple calculation.")
 set (VERSION "0.1")
-set (VERSION_INFO "Alpha")
+set (VERSION_INFO "First Release")
 set (DOLLAR "$")
 
 configure_file (${CMAKE_SOURCE_DIR}/config.h.cmake ${CMAKE_BINARY_DIR}/config.h)
@@ -22,8 +22,8 @@ add_definitions (-w)
 find_package(PkgConfig)
 
 # now let's actually check for the required dependencies
-pkg_check_modules(DEPS REQUIRED 
-    gtk+-3.0 
+pkg_check_modules(DEPS REQUIRED
+    gtk+-3.0
     granite
 )
 add_definitions(${DEPS_CFLAGS})
@@ -38,8 +38,8 @@ ensure_vala_version("0.26" MINIMUM)
 # files we want to compile
 include(ValaPrecompile)
 vala_precompile(VALA_C ${EXEC_NAME}
-    src/Calculus.vala
-    src/MainWindow.vala	
+    src/PantheonCalculator.vala
+    src/MainWindow.vala
     src/HistoryDialog.vala
     src/Core/Stack.vala
     src/Core/Token.vala
