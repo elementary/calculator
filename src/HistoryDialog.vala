@@ -52,9 +52,9 @@ namespace PantheonCalculator {
             main_grid = new Gtk.Grid ();
             main_grid.expand = true;
             main_grid.margin = 12;
+            main_grid.margin_top = 0;
             main_grid.row_spacing = 10;
             main_grid.column_spacing = 20;
-            main_grid.halign = Gtk.Align.END;
             content.add (main_grid);
 
             if (history.length () > 0) {
@@ -90,9 +90,11 @@ namespace PantheonCalculator {
             main_grid.attach (add_label, 0, 1, 1, 1);
 
             result_radio = new Gtk.RadioButton.with_label (null, _("Result"));
+            result_radio.halign = Gtk.Align.END;
             main_grid.attach (result_radio, 2, 1, 1, 1);
 
             expression_radio = new Gtk.RadioButton.with_label_from_widget (result_radio, _("Expression"));
+            expression_radio.halign = Gtk.Align.END;
             main_grid.attach (expression_radio, 1, 1, 1, 1);
         }
 
