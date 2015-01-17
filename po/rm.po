@@ -2,50 +2,71 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-04 16:31+0100\n"
-"PO-Revision-Date: 2015-01-02 07:25+0000\n"
+"POT-Creation-Date: 2015-01-15 10:48-0600\n"
+"PO-Revision-Date: 2015-01-16 10:41+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-15 06:12+0000\n"
-"X-Generator: Launchpad (build 17303)\n"
+"X-Launchpad-Export-Date: 2015-01-17 06:52+0000\n"
+"X-Generator: Launchpad (build 17304)\n"
 
-#: ../src/Calculus.vala:25 ../src/MainWindow.vala:70
+#: ../src/PantheonCalculator.vala:25 ../src/PantheonCalculator.vala:26
+#: ../src/MainWindow.vala:71
 msgid "Calculator"
 msgstr ""
 
-#: ../src/Calculus.vala:28
+#: ../src/PantheonCalculator.vala:28
 msgid "Calculate in an elementary way."
 msgstr ""
 
-#: ../src/Calculus.vala:29
+#: ../src/PantheonCalculator.vala:29
 msgid "About Calculator"
 msgstr ""
 
-#: ../src/HistoryDialog.vala:40 ../src/MainWindow.vala:85
+#: ../src/HistoryDialog.vala:39 ../src/MainWindow.vala:86
 msgid "History"
 msgstr ""
 
-#: ../src/HistoryDialog.vala:89
+#: ../src/HistoryDialog.vala:88
 msgid "Value to add:"
 msgstr ""
 
-#: ../src/HistoryDialog.vala:93
+#: ../src/HistoryDialog.vala:92
 msgid "Result"
 msgstr ""
 
-#: ../src/HistoryDialog.vala:96
+#: ../src/HistoryDialog.vala:95
 msgid "Expression"
 msgstr ""
 
-#: ../src/HistoryDialog.vala:101
+#: ../src/HistoryDialog.vala:100
 msgid "Close"
 msgstr ""
 
-#: ../src/HistoryDialog.vala:102
+#: ../src/HistoryDialog.vala:101
 msgid "Add"
+msgstr ""
+
+#: ../src/MainWindow.vala:80 ../src/MainWindow.vala:428
+msgid "Show extended functionality"
+msgstr ""
+
+#: ../src/MainWindow.vala:168
+msgid "Clear entry"
+msgstr ""
+
+#: ../src/MainWindow.vala:169
+msgid "Backspace"
+msgstr ""
+
+#: ../src/MainWindow.vala:170
+msgid "Add last result"
+msgstr ""
+
+#: ../src/MainWindow.vala:423
+msgid "Hide extended functionality"
 msgstr ""
 
 #: ../src/Core/Scanner.vala:73
@@ -54,24 +75,4 @@ msgstr ""
 
 #: ../src/Core/Scanner.vala:148
 msgid "'%s' is unknown."
-msgstr ""
-
-#: ../src/MainWindow.vala:79 ../src/MainWindow.vala:407
-msgid "Show extended functionality"
-msgstr ""
-
-#: ../src/MainWindow.vala:167
-msgid "Clear entry"
-msgstr ""
-
-#: ../src/MainWindow.vala:168
-msgid "Backspace"
-msgstr ""
-
-#: ../src/MainWindow.vala:169
-msgid "Add last result"
-msgstr ""
-
-#: ../src/MainWindow.vala:402
-msgid "Hide extended functionality"
 msgstr ""
