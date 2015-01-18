@@ -202,10 +202,10 @@ namespace PantheonCalculator {
             sub_grid_1.attach (button_percent, 2, 1, 1, 1);
 
             sub_grid_1.attach (button_undo, 1, 1, 1, 1);
-            sub_grid_1.attach (button_add, 3, 1, 1, 1);
-            sub_grid_1.attach (button_sub, 3, 2, 1, 1);
-            sub_grid_1.attach (button_mult, 3, 3, 1, 1);
-            sub_grid_1.attach (button_div, 3, 4, 1, 1);
+            sub_grid_1.attach (button_div, 3, 1, 1, 1);
+            sub_grid_1.attach (button_mult, 3, 2, 1, 1);
+            sub_grid_1.attach (button_sub, 3, 3, 1, 1);
+            sub_grid_1.attach (button_add, 3, 4, 1, 1);
 
             sub_grid_1.attach (button_del, 0, 1, 1, 1);
             sub_grid_1.attach (button_calc, 3, 5, 1, 1);
