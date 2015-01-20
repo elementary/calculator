@@ -95,7 +95,7 @@ namespace PantheonCalculator.Core {
             Stack<Token> opStack = new Stack<Token> ();
 
             foreach (Token t in token_list) {
-                debug (t.content);
+                //debug (t.content);
                 switch (t.token_type) {
                 case TokenType.NUMBER:
                     output.append (t);
@@ -120,16 +120,21 @@ namespace PantheonCalculator.Core {
                     if (!opStack.empty ()) {
                         Operator op1 = get_operator (t);
                         Operator op2 = Operator ();
-                        try { op2 = get_operator (opStack.peek ());
+
+                        try {
+                            op2 = get_operator (opStack.peek ());
                         } catch (SHUNTING_ERROR e) { }
 
-                        while (!opStack.empty () &&
+                        while (!opStack.empty () && opStack.peek ().token_type == TokenType.OPERATOR &&
                         ((op2.fixity == "LEFT" && op1.prec <= op2.prec) ||
                         (op2.fixity == "RIGHT" && op1.prec < op2.prec))) {
                             output.append (opStack.pop ());
-                            if (!opStack.empty ())
-                                try { op2 = get_operator (opStack.peek ());
+
+                            if (!opStack.empty ()) {
+                                try {
+                                    op2 = get_operator (opStack.peek ());
                                 } catch (SHUNTING_ERROR e) { }
+                            }
                         }
                     }
                     opStack.push (t);
@@ -140,15 +145,19 @@ namespace PantheonCalculator.Core {
                     break;
 
                 case TokenType.P_RIGHT:
-                    
-                    while (!opStack.empty () && !(opStack.peek ().token_type == TokenType.P_LEFT))
-                        output.append (opStack.pop ());
+                    do {
+                        if (!opStack.empty () && !(opStack.peek ().token_type == TokenType.P_LEFT))
+                            output.append (opStack.pop ());
+                        else
+                            break;
+                    } while (!opStack.empty ());
 
-                    if (!(opStack.empty ()))
+                    if (!(opStack.empty ()) && opStack.peek ().token_type == TokenType.P_LEFT)
                         opStack.pop ();
 
                     if (!opStack.empty () && opStack.peek ().token_type == TokenType.FUNCTION)
                         output.append (opStack.pop ());
+
                     break;
                 default:
                         throw new SHUNTING_ERROR.UNKNOWN_TOKEN ("'%s' is unknown.", t.content);
@@ -156,11 +165,12 @@ namespace PantheonCalculator.Core {
             }
 
             while (!opStack.empty ()) {
-                if (opStack.peek ().token_type == TokenType.P_LEFT)
-                    throw new SHUNTING_ERROR.MISMATCHED_P ("Mismatched left parenthesis.");
+                if (opStack.peek ().token_type == TokenType.P_LEFT || opStack.peek ().token_type == TokenType.P_RIGHT)
+                    throw new SHUNTING_ERROR.MISMATCHED_P ("Mismatched parenthesis.");
                 else
                     output.append (opStack.pop ());
             }
+
             return output;
         }
 
@@ -204,7 +214,7 @@ namespace PantheonCalculator.Core {
         //checks for real TokenType (which are TokenType.ALPHA at the moment)
         public bool is_operator (Token t) {
             foreach (Operator o in operators) {
-                if (t.content == o.symbol) 
+                if (t.content == o.symbol)
                     return true;
             }
             return false;
@@ -212,7 +222,7 @@ namespace PantheonCalculator.Core {
 
         public bool is_function (Token t) {
             foreach (Function f in functions) {
-                if (t.content == f.symbol) 
+                if (t.content == f.symbol)
                     return true;
             }
             return false;

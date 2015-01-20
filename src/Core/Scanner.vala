@@ -84,8 +84,12 @@ namespace PantheonCalculator.Core {
                         next_number_negative = false;
                     }
 
-                    //checking if last token was a number and token now is a function, constant or parenthesis (left)
-                    if (last_token != null && last_token.token_type == TokenType.NUMBER && 
+                    /*
+                    * checking if last token was a number or parenthesis right
+                    * and token now is a function, constant or parenthesis (left)
+                    */
+                    if (last_token != null && 
+                    (last_token.token_type == TokenType.NUMBER || last_token.token_type == TokenType.P_RIGHT) && 
                     (t.token_type == TokenType.FUNCTION || t.token_type == TokenType.CONSTANT || t.token_type == TokenType.P_LEFT))
                         tokenlist.append (new Token ("*", TokenType.OPERATOR));
 
