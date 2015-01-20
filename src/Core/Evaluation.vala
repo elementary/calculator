@@ -83,10 +83,10 @@ namespace PantheonCalculator.Core {
                     tokenlist = e.shunting_yard (tokenlist);
                     try {
                         d = e.eval_postfix (tokenlist);
-                    } catch (EVAL_ERROR e) { throw new OUT_ERROR.EVAL_ERROR (e.message); }
-                } catch (SHUNTING_ERROR e) { throw new OUT_ERROR.SHUNTING_ERROR (e.message); }
+                    } catch (Error e) { throw new OUT_ERROR.EVAL_ERROR (e.message); }
+                } catch (Error e) { throw new OUT_ERROR.SHUNTING_ERROR (e.message); }
                 return e.cut (d, d_places);
-            } catch (SCANNER_ERROR e) { throw new OUT_ERROR.SCANNER_ERROR (e.message); }
+            } catch (Error e) { throw new OUT_ERROR.SCANNER_ERROR (e.message); }
         }
 
         //Djikstra's Shunting Yard algorithm for ordering a tokenized list into Reverse Polish Notation
@@ -95,6 +95,7 @@ namespace PantheonCalculator.Core {
             Stack<Token> opStack = new Stack<Token> ();
 
             foreach (Token t in token_list) {
+                debug (t.content);
                 switch (t.token_type) {
                 case TokenType.NUMBER:
                     output.append (t);
@@ -139,19 +140,21 @@ namespace PantheonCalculator.Core {
                     break;
 
                 case TokenType.P_RIGHT:
-                    while (!(opStack.peek ().token_type == TokenType.P_LEFT) && !opStack.empty ())
+                    
+                    while (!opStack.empty () && !(opStack.peek ().token_type == TokenType.P_LEFT))
                         output.append (opStack.pop ());
 
                     if (!(opStack.empty ()))
                         opStack.pop ();
 
-                    if (!opStack.empty () && opStack.peek ().token_type == TokenType.FUNCTION) 
+                    if (!opStack.empty () && opStack.peek ().token_type == TokenType.FUNCTION)
                         output.append (opStack.pop ());
                     break;
                 default:
                         throw new SHUNTING_ERROR.UNKNOWN_TOKEN ("'%s' is unknown.", t.content);
                 }
             }
+
             while (!opStack.empty ()) {
                 if (opStack.peek ().token_type == TokenType.P_LEFT)
                     throw new SHUNTING_ERROR.MISMATCHED_P ("Mismatched left parenthesis.");
