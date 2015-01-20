@@ -95,7 +95,6 @@ namespace PantheonCalculator.Core {
             Stack<Token> opStack = new Stack<Token> ();
 
             foreach (Token t in token_list) {
-                //debug (t.content);
                 switch (t.token_type) {
                 case TokenType.NUMBER:
                     output.append (t);
@@ -108,9 +107,8 @@ namespace PantheonCalculator.Core {
                     break;
 
                 case TokenType.SEPARATOR:
-                    while (opStack.peek ().token_type != TokenType.P_LEFT && !opStack.empty ()) {
+                    while (opStack.peek ().token_type != TokenType.P_LEFT && !opStack.empty ())
                         output.append (opStack.pop ());
-                    }
 
                     if (opStack.peek ().token_type != TokenType.P_LEFT)
                         throw new SHUNTING_ERROR.MISMATCHED_P ("Content of parentheses is mismatched.");
