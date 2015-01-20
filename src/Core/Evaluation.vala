@@ -143,12 +143,12 @@ namespace PantheonCalculator.Core {
                     break;
 
                 case TokenType.P_RIGHT:
-                    do {
-                        if (!opStack.empty () && !(opStack.peek ().token_type == TokenType.P_LEFT))
+                    while (!opStack.empty ()) {
+                        if (!(opStack.peek ().token_type == TokenType.P_LEFT))
                             output.append (opStack.pop ());
                         else
                             break;
-                    } while (!opStack.empty ());
+                    }
 
                     if (!(opStack.empty ()) && opStack.peek ().token_type == TokenType.P_LEFT)
                         opStack.pop ();
