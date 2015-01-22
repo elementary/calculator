@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-15 10:48-0600\n"
-"PO-Revision-Date: 2015-01-20 21:28+0000\n"
+"PO-Revision-Date: 2015-01-21 16:17+0000\n"
 "Last-Translator: ProsjektX <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-21 06:24+0000\n"
+"X-Launchpad-Export-Date: 2015-01-22 06:27+0000\n"
 "X-Generator: Launchpad (build 17306)\n"
 
 #: ../src/PantheonCalculator.vala:25 ../src/PantheonCalculator.vala:26
@@ -19,7 +19,7 @@ msgstr "Kalkulator"
 
 #: ../src/PantheonCalculator.vala:28
 msgid "Calculate in an elementary way."
-msgstr ""
+msgstr "Kalkuler på en elementær måte."
 
 #: ../src/PantheonCalculator.vala:29
 msgid "About Calculator"
@@ -31,7 +31,7 @@ msgstr "Historikk"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Value to add:"
-msgstr ""
+msgstr "Legg til verdi:"
 
 #: ../src/HistoryDialog.vala:92
 msgid "Result"
@@ -47,7 +47,7 @@ msgstr "Lukk"
 
 #: ../src/HistoryDialog.vala:101
 msgid "Add"
-msgstr ""
+msgstr "Legg til"
 
 #: ../src/MainWindow.vala:80 ../src/MainWindow.vala:428
 msgid "Show extended functionality"
@@ -55,24 +55,24 @@ msgstr "Vis utvidet funksjonalitet"
 
 #: ../src/MainWindow.vala:168
 msgid "Clear entry"
-msgstr ""
+msgstr "Slett innslag"
 
 #: ../src/MainWindow.vala:169
 msgid "Backspace"
-msgstr ""
+msgstr "Rettetast"
 
 #: ../src/MainWindow.vala:170
 msgid "Add last result"
-msgstr ""
+msgstr "Legg til siste resultat"
 
 #: ../src/MainWindow.vala:423
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "Ikke vis utvidet funksjonalitet"
 
 #: ../src/Core/Scanner.vala:73
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' er ugyldig."
 
 #: ../src/Core/Scanner.vala:148
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' er ukjent."
