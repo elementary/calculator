@@ -31,6 +31,8 @@ namespace PantheonCalculator {
         private Gtk.Button          button_calc;
         private Gtk.Button          button_history;
         private Gtk.Button          button_ans;
+        private Gtk.Button          button_undo;
+        private Gtk.Button          button_del;
         private Gtk.ToggleButton    button_extended;
         private Gtk.InfoBar?        infobar;
         private Gtk.Button          button_pow;
@@ -115,11 +117,12 @@ namespace PantheonCalculator {
         private void build_basic_ui () {
             entry = new Gtk.Entry ();
             entry.set_text ("");
+
             button_calc = new Gtk.Button.with_label ("=");
             button_ans = new Gtk.Button.with_label ("ANS");
+            button_undo = new Gtk.Button.from_icon_name ("go-previous-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
+            button_del = new Gtk.Button.with_label ("C");
 
-            var button_undo = new Gtk.Button.from_icon_name ("go-previous-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
-            var button_del = new Gtk.Button.with_label ("C");
             var button_add = new Gtk.Button.with_label (" + ");
             var button_sub = new Gtk.Button.with_label (" − ");
             var button_mult = new Gtk.Button.with_label (" × ");
@@ -139,12 +142,6 @@ namespace PantheonCalculator {
             var button_7 = new Gtk.Button.with_label ("7");
             var button_8 = new Gtk.Button.with_label ("8");
             var button_9 = new Gtk.Button.with_label ("9");
-
-            button_undo.set_focus_on_click (false);
-            button_del.set_focus_on_click (false);
-            button_add.set_focus_on_click (false);
-            button_sub.set_focus_on_click (false);
-            button_div.set_focus_on_click (false);
 
             button_ans.set_sensitive (false);
 
@@ -178,62 +175,39 @@ namespace PantheonCalculator {
             //attach all widgets
             main_grid.attach (entry, 0, 0, 4, 1);
 
-            main_grid.attach (button_7, 0, 2, 1, 1);
-            main_grid.attach (button_8, 1, 2, 1, 1);
-            main_grid.attach (button_9, 2, 2, 1, 1);
-
-            main_grid.attach (button_4, 0, 3, 1, 1);
-            main_grid.attach (button_5, 1, 3, 1, 1);
-            main_grid.attach (button_6, 2, 3, 1, 1);
-
-            main_grid.attach (button_1, 0, 4, 1, 1);
-            main_grid.attach (button_2, 1, 4, 1, 1);
-            main_grid.attach (button_3, 2, 4, 1, 1);
-
-            main_grid.attach (button_0, 0, 5, 1, 1);
-            main_grid.attach (button_point, 1, 5, 1, 1);
-            main_grid.attach (button_percent, 2, 1, 1, 1);
-
-            main_grid.attach (button_undo, 1, 1, 1, 1);
-            main_grid.attach (button_div, 3, 1, 1, 1);
-            main_grid.attach (button_mult, 3, 2, 1, 1);
-            main_grid.attach (button_sub, 3, 3, 1, 1);
-            main_grid.attach (button_add, 3, 4, 1, 1);
-
-            main_grid.attach (button_del, 0, 1, 1, 1);
-            main_grid.attach (button_calc, 3, 5, 1, 1);
-            main_grid.attach (button_ans, 2, 5, 1, 1);
-
-            //connect button_clicked methods to buttons
             entry.changed.connect (remove_error);
             entry.activate.connect (button_calc_clicked);
 
-            basic_button_list.append (button_0);
-            basic_button_list.append (button_1);
-            basic_button_list.append (button_2);
-            basic_button_list.append (button_3);
-            basic_button_list.append (button_4);
-            basic_button_list.append (button_5);
-            basic_button_list.append (button_6);
+            basic_button_list.append (button_del);
             basic_button_list.append (button_7);
-            basic_button_list.append (button_8);
-            basic_button_list.append (button_9);
+            basic_button_list.append (button_4);
+            basic_button_list.append (button_1);
+            basic_button_list.append (button_0);
 
-            basic_button_list.append (button_add);
-            basic_button_list.append (button_sub);
+            basic_button_list.append (button_undo);
+            basic_button_list.append (button_8);
+            basic_button_list.append (button_5);
+            basic_button_list.append (button_2);
+            basic_button_list.append (button_point);
+
+            basic_button_list.append (button_percent);
+            basic_button_list.append (button_9);
+            basic_button_list.append (button_6);
+            basic_button_list.append (button_3);
+            basic_button_list.append (button_ans);
+
             basic_button_list.append (button_div);
             basic_button_list.append (button_mult);
+            basic_button_list.append (button_sub);
+            basic_button_list.append (button_add);
+            basic_button_list.append (button_calc);
 
-            basic_button_list.append (button_point);
-            basic_button_list.append (button_percent);
-
-            foreach (Gtk.Button b_button in basic_button_list)
+            int pos = 0;
+            foreach (Gtk.Button b_button in basic_button_list) {
+                main_grid.attach (b_button, (pos / 5), (pos % 5 + 1), 1, 1);
                 b_button.clicked.connect (button_clicked);
-
-            button_calc.clicked.connect (button_calc_clicked);
-            button_undo.clicked.connect (button_undo_clicked);
-            button_del.clicked.connect (button_del_clicked);
-            button_ans.clicked.connect (button_ans_clicked);
+                pos++;
+            }
         }
 
         private void build_extended_ui () {
@@ -286,33 +260,43 @@ namespace PantheonCalculator {
         }
 
         private void button_clicked (Gtk.Button btn) {
-            string label = btn.get_label ();
-            if (btn == button_pow)
-                label = "^";
+            if (btn == button_calc)
+                button_calc_clicked ();
+            else if (btn == button_undo)
+                button_undo_clicked ();
+            else if (btn == button_del)
+                button_del_clicked ();
+            else if (btn == button_ans)
+                button_ans_clicked ();
+            else {
+                string label = btn.get_label ();
+                if (btn == button_pow)
+                    label = "^";
 
-            bool is_function = label in function_buttons;
-            bool is_regular = label in regular_buttons;
-            
-            if (!is_function && !is_regular)
-                return;
+                bool is_function = label in function_buttons;
+                bool is_regular = label in regular_buttons;
+                
+                if (!is_function && !is_regular)
+                    return;
 
-            int selection_start = -1;
-            int selection_end = -1;
-            int new_position = entry.get_position ();
+                int selection_start = -1;
+                int selection_end = -1;
+                int new_position = entry.get_position ();
 
-            if (is_function && entry.get_selection_bounds (out selection_start, out selection_end)) {
-                string selected_text = entry.get_chars (selection_start, selection_end);
-                string function_call = label + "(" + selected_text + ")";
-                entry.delete_text (selection_start, selection_end);
-                entry.insert_text (function_call, -1, ref selection_start);
-                new_position += function_call.length;
-            } else {
-                entry.insert_at_cursor (label);
-                new_position += label.length;
+                if (is_function && entry.get_selection_bounds (out selection_start, out selection_end)) {
+                    string selected_text = entry.get_chars (selection_start, selection_end);
+                    string function_call = label + "(" + selected_text + ")";
+                    entry.delete_text (selection_start, selection_end);
+                    entry.insert_text (function_call, -1, ref selection_start);
+                    new_position += function_call.length;
+                } else {
+                    entry.insert_at_cursor (label);
+                    new_position += label.length;
+                }
+
+                entry.grab_focus ();
+                entry.set_position (new_position);
             }
-
-            entry.grab_focus ();
-            entry.set_position (new_position);
         }
 
         private void button_calc_clicked () {
@@ -351,7 +335,7 @@ namespace PantheonCalculator {
                 int index = 0;
                 unowned unichar c;
                 List<unichar> news = new List<unichar> ();
-                
+
                 for (int i = 0; entry.get_text ().get_next_char(ref index, out c); i++) {
                     if (i+1 != position)
                         news.append (c);
