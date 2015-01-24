@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema path="/org/pantheon/calculator/saved-state/" id="org.pantheon.calculator.saved-state" gettext-domain="pantheon-calculator">
+        <key name="extended-shown" type="b">
+            <default>false</default>
+            <summary>Saves the state of the extended panel (open or closed).</summary>
+            <description>Saves the state of the extended panel (open or closed).</description>
+        </key>
+        <key name="entry-content" type="s">
+            <default>""</default>
+            <summary>Saves the content of the entry field for calculations.</summary>
+            <description>Saves the content of the entry field for calculations.</description>
+        </key>
+        <key name="decimal-places" type="i">
+            <default>5</default>
+            <summary>Saves the decimal places for displayed values.</summary>
+            <description>Saves the decimal places for displayed values.</description>
+        </key>
+    </schema>
+</schemalist>
