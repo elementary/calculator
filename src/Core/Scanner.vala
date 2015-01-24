@@ -103,7 +103,12 @@ namespace PantheonCalculator.Core {
 
         private TokenType next (out ssize_t start, out ssize_t len) throws SCANNER_ERROR {
             start = pos;
-            if (uc[pos].isdigit ()) {
+            if (uc[pos] == '.') {
+                while (uc[pos].isdigit ())
+                    pos++;
+                len = pos - start;
+                return TokenType.NUMBER;
+            } else if (uc[pos].isdigit ()) {
                 while (uc[pos].isdigit ())
                     pos++;
                 if (uc[pos] == '.')
