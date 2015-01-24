@@ -18,6 +18,7 @@
 
 namespace PantheonCalculator.Core {
     public enum TokenType {
+        NULL_NUMBER,
         NUMBER,
         OPERATOR,
         FUNCTION,

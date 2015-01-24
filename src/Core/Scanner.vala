@@ -82,6 +82,9 @@ namespace PantheonCalculator.Core {
                     } else if (t.token_type == TokenType.NUMBER && next_number_negative) {
                         t.content = (double.parse (t.content) * (-1)).to_string ();
                         next_number_negative = false;
+                    } else if (t.token_type == TokenType.NULL_NUMBER) {
+                        t.content = "0" + t.content;
+                        t.token_type = TokenType.NUMBER;
                     }
 
                     /*
@@ -104,10 +107,11 @@ namespace PantheonCalculator.Core {
         private TokenType next (out ssize_t start, out ssize_t len) throws SCANNER_ERROR {
             start = pos;
             if (uc[pos] == '.') {
+                pos++;
                 while (uc[pos].isdigit ())
                     pos++;
                 len = pos - start;
-                return TokenType.NUMBER;
+                return TokenType.NULL_NUMBER;
             } else if (uc[pos].isdigit ()) {
                 while (uc[pos].isdigit ())
                     pos++;
