@@ -21,6 +21,8 @@ using PantheonCalculator.Core;
 
 namespace PantheonCalculator {
     public class MainWindow : Gtk.Window {
+        private Settings            settings;
+
         private Gtk.HeaderBar       headerbar;
         private Gtk.Grid            main_grid;
         private Gtk.Entry           entry;
@@ -45,7 +47,7 @@ namespace PantheonCalculator {
         private int                 position;
 
         //define the decimal places
-        private int round = 5;
+        private int decimal_places;
 
         public struct History { string exp; string output; }
 
@@ -61,15 +63,26 @@ namespace PantheonCalculator {
             set_resizable (false);
             window_position = Gtk.WindowPosition.CENTER;
 
+            settings = new Settings ("org.pantheon.calculator.saved-state");
+            decimal_places = settings.get_int ("decimal-places");
+
             history = new List<History?> ();
             position = 0;
 
             build_titlebar ();
             build_ui ();
+
+            button_extended.set_active (settings.get_boolean ("extended-shown"));
+
+            this.destroy.connect (() => {
+                debug ("saving settings to gsettings");
+                settings.set_boolean ("extended-shown", button_extended.get_active ());
+                settings.set_string ("entry-content", entry.get_text ());
+            });
         }
 
         private void build_titlebar () {
-            headerbar = new Gtk.HeaderBar ();  
+            headerbar = new Gtk.HeaderBar ();
             headerbar.get_style_context ().add_class ("primary-toolbar");
             headerbar.show_close_button = true;
             headerbar.set_title (_("Calculator"));
@@ -116,7 +129,7 @@ namespace PantheonCalculator {
 
         private void build_basic_ui () {
             entry = new Gtk.Entry ();
-            entry.set_text ("");
+            entry.set_text (settings.get_string ("entry-content"));
 
             button_calc = new Gtk.Button.with_label ("=");
             button_ans = new Gtk.Button.with_label ("ANS");
@@ -304,7 +317,7 @@ namespace PantheonCalculator {
             remove_error ();
             if (entry.get_text () != "") {
                 try {
-                    var output = Evaluation.evaluate (entry.get_text (), round);
+                    var output = Evaluation.evaluate (entry.get_text (), decimal_places);
                     if (entry.get_text () != output) {
                         history.append (History () { exp = entry.get_text (), output = output } );
                         entry.set_text (output);

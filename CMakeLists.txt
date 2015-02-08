@@ -54,6 +54,9 @@ OPTIONS
     --vapidir=${CMAKE_CURRENT_SOURCE_DIR}/vapi/
 )
 
+include(GSettings)
+add_schema("data/org.pantheon.calculator.gschema.xml")
+
 add_subdirectory (po)
 
 # tell cmake what to call the executable we just made
