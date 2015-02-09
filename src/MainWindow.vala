@@ -54,7 +54,7 @@ namespace PantheonCalculator {
         private string[] regular_buttons = {   "0", "1", "2", "3", "4", "5", 
                                                 "6", "7", "8", "9", "0", " + ",
                                                 " − ", " × ", " ÷ ", "%", ".", "(", 
-                                                ")", "^", "π"};
+                                                ")", "^", "π", "e", Posix.nl_langinfo (Posix.NLItem.RADIXCHAR)};
 
         private string[] function_buttons = {  "sin", "cos", "tan", "√", "sinh", "cosh",
                                                 "tanh" , "sqrt"};
@@ -142,7 +142,7 @@ namespace PantheonCalculator {
             var button_div = new Gtk.Button.with_label (" ÷ ");
 
             var button_0 = new Gtk.Button.with_label ("0");
-            var button_point = new Gtk.Button.with_label (".");
+            var button_point = new Gtk.Button.with_label (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR));
             var button_percent = new Gtk.Button.with_label ("%");
             var button_1 = new Gtk.Button.with_label ("1");
             var button_2 = new Gtk.Button.with_label ("2");
