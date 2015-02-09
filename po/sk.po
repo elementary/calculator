@@ -3,19 +3,19 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-15 10:48-0600\n"
-"PO-Revision-Date: 2015-01-16 10:41+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-02-08 10:20+0000\n"
+"Last-Translator: Ivan Cizik <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-17 06:52+0000\n"
-"X-Generator: Launchpad (build 17304)\n"
+"X-Launchpad-Export-Date: 2015-02-09 06:03+0000\n"
+"X-Generator: Launchpad (build 17331)\n"
 
 #: ../src/PantheonCalculator.vala:25 ../src/PantheonCalculator.vala:26
 #: ../src/MainWindow.vala:71
 msgid "Calculator"
-msgstr ""
+msgstr "Kalkulačka"
 
 #: ../src/PantheonCalculator.vala:28
 msgid "Calculate in an elementary way."
@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../src/PantheonCalculator.vala:29
 msgid "About Calculator"
-msgstr ""
+msgstr "O programe Kalkulačka"
 
 #: ../src/HistoryDialog.vala:39 ../src/MainWindow.vala:86
 msgid "History"
-msgstr ""
+msgstr "História"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Value to add:"
@@ -35,44 +35,44 @@ msgstr ""
 
 #: ../src/HistoryDialog.vala:92
 msgid "Result"
-msgstr ""
+msgstr "Výsledok"
 
 #: ../src/HistoryDialog.vala:95
 msgid "Expression"
-msgstr ""
+msgstr "Výraz"
 
 #: ../src/HistoryDialog.vala:100
 msgid "Close"
-msgstr ""
+msgstr "Zatvoriť"
 
 #: ../src/HistoryDialog.vala:101
 msgid "Add"
-msgstr ""
+msgstr "Pridaj"
 
 #: ../src/MainWindow.vala:80 ../src/MainWindow.vala:428
 msgid "Show extended functionality"
-msgstr ""
+msgstr "Zobraz rozšírene funkcie"
 
 #: ../src/MainWindow.vala:168
 msgid "Clear entry"
-msgstr ""
+msgstr "Vymazať položku"
 
 #: ../src/MainWindow.vala:169
 msgid "Backspace"
-msgstr ""
+msgstr "Späť"
 
 #: ../src/MainWindow.vala:170
 msgid "Add last result"
-msgstr ""
+msgstr "Pridaj posledný výsledok"
 
 #: ../src/MainWindow.vala:423
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "Skryť rozšírené funkcie"
 
 #: ../src/Core/Scanner.vala:73
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' je neplatný."
 
 #: ../src/Core/Scanner.vala:148
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' je neznáme."
