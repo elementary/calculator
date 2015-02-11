@@ -3,76 +3,76 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-15 10:48-0600\n"
-"PO-Revision-Date: 2015-01-16 10:40+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-02-10 08:41+0000\n"
+"Last-Translator: Samuel Cardoso <samu.cadoso@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-17 06:51+0000\n"
-"X-Generator: Launchpad (build 17304)\n"
+"X-Launchpad-Export-Date: 2015-02-11 06:12+0000\n"
+"X-Generator: Launchpad (build 17336)\n"
 
 #: ../src/PantheonCalculator.vala:25 ../src/PantheonCalculator.vala:26
 #: ../src/MainWindow.vala:71
 msgid "Calculator"
-msgstr ""
+msgstr "Calculatrice"
 
 #: ../src/PantheonCalculator.vala:28
 msgid "Calculate in an elementary way."
-msgstr ""
+msgstr "Calculez de façon élementaire."
 
 #: ../src/PantheonCalculator.vala:29
 msgid "About Calculator"
-msgstr ""
+msgstr "À propos de Calculatrice"
 
 #: ../src/HistoryDialog.vala:39 ../src/MainWindow.vala:86
 msgid "History"
-msgstr ""
+msgstr "Historique"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Value to add:"
-msgstr ""
+msgstr "Valeur à ajouter:"
 
 #: ../src/HistoryDialog.vala:92
 msgid "Result"
-msgstr ""
+msgstr "Résultat"
 
 #: ../src/HistoryDialog.vala:95
 msgid "Expression"
-msgstr ""
+msgstr "Expression"
 
 #: ../src/HistoryDialog.vala:100
 msgid "Close"
-msgstr ""
+msgstr "Fermer"
 
 #: ../src/HistoryDialog.vala:101
 msgid "Add"
-msgstr ""
+msgstr "Ajouter"
 
 #: ../src/MainWindow.vala:80 ../src/MainWindow.vala:428
 msgid "Show extended functionality"
-msgstr ""
+msgstr "Afficher les fonctionnalités avancées"
 
 #: ../src/MainWindow.vala:168
 msgid "Clear entry"
-msgstr ""
+msgstr "Effacer l'entrée"
 
 #: ../src/MainWindow.vala:169
 msgid "Backspace"
-msgstr ""
+msgstr "Retour arrière"
 
 #: ../src/MainWindow.vala:170
 msgid "Add last result"
-msgstr ""
+msgstr "Ajouter le dernier résultat"
 
 #: ../src/MainWindow.vala:423
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "Cacher les fonctionnalités avancées"
 
 #: ../src/Core/Scanner.vala:73
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' est invalide."
 
 #: ../src/Core/Scanner.vala:148
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' est inconnu."
