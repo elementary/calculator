@@ -48,6 +48,7 @@ vala_precompile(VALA_C ${EXEC_NAME}
 PACKAGES
     gtk+-3.0>=3.12
     granite
+    posix
 CUSTOM_VAPIS
     vapi/config.vapi
 OPTIONS

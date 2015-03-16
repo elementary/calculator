@@ -27,10 +27,13 @@ namespace PantheonCalculator.Core {
         public int pos;
         public unichar[] uc;
 
-        public Scanner (string input_str) {
-            this.str = input_str;
+        private unichar decimal_symbol;
+
+        public Scanner (string str) {
+            this.str = str;
             this.pos = 0;
             this.uc = new unichar[0];
+            this.decimal_symbol = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0];
         }
 
         public static List<Token> scan (string input) throws SCANNER_ERROR {
@@ -57,8 +60,12 @@ namespace PantheonCalculator.Core {
 
                     type = scanner.next (out start, out len);
                     for (ssize_t i = start; i < (start + len); i++) {
-                        substr = substr + scanner.uc[i].to_string ();
+                        if (scanner.uc[i] == scanner.decimal_symbol)
+                            substr += ".";
+                        else
+                            substr += scanner.uc[i].to_string ();
                     }
+
                     Token t = new Token (substr, type);
 
                     //identifying multicharacter tokens via Evaluation class. 
@@ -106,7 +113,7 @@ namespace PantheonCalculator.Core {
 
         private TokenType next (out ssize_t start, out ssize_t len) throws SCANNER_ERROR {
             start = pos;
-            if (uc[pos] == '.') {
+            if (uc[pos] == this.decimal_symbol) {
                 pos++;
                 while (uc[pos].isdigit ())
                     pos++;
@@ -115,7 +122,7 @@ namespace PantheonCalculator.Core {
             } else if (uc[pos].isdigit ()) {
                 while (uc[pos].isdigit ())
                     pos++;
-                if (uc[pos] == '.')
+                if (uc[pos] == this.decimal_symbol)
                     pos++;
                 while (uc[pos].isdigit ())
                     pos++;

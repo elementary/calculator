@@ -275,10 +275,10 @@ namespace PantheonCalculator.Core {
         }
 
         private string cut (double d, int d_places) {
-            var s = ("%.5f".printf (d)).replace (",", ".");
+            var s = ("%.5f".printf (d));
             while (s.last_index_of ("0") == s.length - 1)
                 s = s.slice (0, s.length - 1);
-            if (s.last_index_of (".") == s.length - 1)
+            if (s.last_index_of (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR)) == s.length - 1)
                 s = s.slice (0, s.length - 1);
             return s;
         }
