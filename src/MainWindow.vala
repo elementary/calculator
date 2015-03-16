@@ -34,7 +34,11 @@ namespace PantheonCalculator {
         private Gtk.Button          button_undo;
         private Gtk.Button          button_del;
         private Gtk.ToggleButton    button_extended;
-        private Gtk.InfoBar?        infobar;
+
+        private Gtk.InfoBar infobar;
+        private Gtk.Label infobar_label;
+
+        private Gtk.Grid global_grid;
 
         private List<History?>      history;
         private int                 position;
@@ -56,7 +60,6 @@ namespace PantheonCalculator {
 
             build_titlebar ();
             build_ui ();
-
 
             this.destroy.connect (() => {
                 debug ("saving settings to gsettings");
@@ -103,7 +106,19 @@ namespace PantheonCalculator {
             build_extended_ui ();
             button_extended.active = settings.get_boolean ("extended-shown");
 
-            add (main_grid);
+            infobar = new Gtk.InfoBar ();
+            infobar_label = new Gtk.Label ("");
+            infobar.get_content_area ().add (infobar_label);
+            infobar.show_close_button = false;
+            infobar.message_type = Gtk.MessageType.ERROR;
+            infobar.no_show_all = true;
+
+            global_grid = new Gtk.Grid ();
+            global_grid.orientation = Gtk.Orientation.VERTICAL;
+            global_grid.add (infobar);
+            global_grid.add (main_grid);
+
+            add (global_grid);
             show_all ();
         }
 
@@ -287,7 +302,6 @@ namespace PantheonCalculator {
 
         private void button_calc_clicked () {
             position = entry.get_position ();
-            remove_error ();
             if (entry.get_text () != "") {
                 try {
                     var output = Core.Evaluation.evaluate (entry.get_text (), decimal_places);
@@ -298,16 +312,16 @@ namespace PantheonCalculator {
                         button_ans.set_sensitive (true);
 
                         position = output.length;
+                        remove_error ();
                     }
                 } catch (Core.OUT_ERROR e) {
-                    infobar = new Gtk.InfoBar ();
-                    infobar.get_content_area ().add (new Gtk.Label (e.message));
-                    infobar.set_show_close_button (false);
-                    infobar.set_message_type (Gtk.MessageType.ERROR);
-
-                    main_grid.attach (infobar, 0, 0, 2, 1);
+                    infobar_label.label = e.message;
+                    infobar.no_show_all = false;
                     infobar.show_all ();
+                    infobar.no_show_all = true;
                 }
+            } else {
+                remove_error ();
             }
 
             entry.grab_focus ();
@@ -391,8 +405,7 @@ namespace PantheonCalculator {
         }
 
         private void remove_error () {
-            if (infobar != null)
-                infobar.hide ();
+            infobar.hide ();
         }
     }
 }
