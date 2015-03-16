@@ -3,43 +3,43 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-15 10:48-0600\n"
-"PO-Revision-Date: 2015-03-02 23:06+0000\n"
-"Last-Translator: Leo Milano <leonardomilano13@gmail.com>\n"
+"PO-Revision-Date: 2015-03-15 19:14+0000\n"
+"Last-Translator: lem8r <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-03 05:41+0000\n"
-"X-Generator: Launchpad (build 17361)\n"
+"X-Launchpad-Export-Date: 2015-03-16 05:51+0000\n"
+"X-Generator: Launchpad (build 17389)\n"
 
 #: ../src/PantheonCalculator.vala:25 ../src/PantheonCalculator.vala:26
 #: ../src/MainWindow.vala:71
 msgid "Calculator"
-msgstr ""
+msgstr "Калькулятор"
 
 #: ../src/PantheonCalculator.vala:28
 msgid "Calculate in an elementary way."
-msgstr ""
+msgstr "Рахувати в стилі elementary"
 
 #: ../src/PantheonCalculator.vala:29
 msgid "About Calculator"
-msgstr "Про програму"
+msgstr "Про калькулятор"
 
 #: ../src/HistoryDialog.vala:39 ../src/MainWindow.vala:86
 msgid "History"
-msgstr ""
+msgstr "Історія"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Value to add:"
-msgstr ""
+msgstr "Додати значення:"
 
 #: ../src/HistoryDialog.vala:92
 msgid "Result"
-msgstr ""
+msgstr "Результат"
 
 #: ../src/HistoryDialog.vala:95
 msgid "Expression"
-msgstr ""
+msgstr "Вираз"
 
 #: ../src/HistoryDialog.vala:100
 msgid "Close"
@@ -47,32 +47,32 @@ msgstr "Закрити"
 
 #: ../src/HistoryDialog.vala:101
 msgid "Add"
-msgstr ""
+msgstr "Додати"
 
 #: ../src/MainWindow.vala:80 ../src/MainWindow.vala:428
 msgid "Show extended functionality"
-msgstr ""
+msgstr "Показати додаткові функції"
 
 #: ../src/MainWindow.vala:168
 msgid "Clear entry"
-msgstr ""
+msgstr "Очистити запис"
 
 #: ../src/MainWindow.vala:169
 msgid "Backspace"
-msgstr ""
+msgstr "Видалити попередній символ"
 
 #: ../src/MainWindow.vala:170
 msgid "Add last result"
-msgstr ""
+msgstr "Додати останній результат"
 
 #: ../src/MainWindow.vala:423
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "Сховати додаткові функції"
 
 #: ../src/Core/Scanner.vala:73
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' є недопустимим."
 
 #: ../src/Core/Scanner.vala:148
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' є невідомим."
