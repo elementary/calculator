@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-15 10:48-0600\n"
-"PO-Revision-Date: 2015-01-16 11:10+0000\n"
-"Last-Translator: Cody Garver <cody@elementaryos.org>\n"
+"PO-Revision-Date: 2015-03-21 02:30+0000\n"
+"Last-Translator: Aleck <aleck.r.pang@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-17 06:52+0000\n"
-"X-Generator: Launchpad (build 17304)\n"
+"X-Launchpad-Export-Date: 2015-03-21 05:31+0000\n"
+"X-Generator: Launchpad (build 17405)\n"
 
 #: ../src/PantheonCalculator.vala:25 ../src/PantheonCalculator.vala:26
 #: ../src/MainWindow.vala:71
@@ -31,7 +31,7 @@ msgstr "History"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Value to add:"
-msgstr ""
+msgstr "Value to add:"
 
 #: ../src/HistoryDialog.vala:92
 msgid "Result"
@@ -47,7 +47,7 @@ msgstr "Close"
 
 #: ../src/HistoryDialog.vala:101
 msgid "Add"
-msgstr ""
+msgstr "Add"
 
 #: ../src/MainWindow.vala:80 ../src/MainWindow.vala:428
 msgid "Show extended functionality"
@@ -63,7 +63,7 @@ msgstr "Backspace"
 
 #: ../src/MainWindow.vala:170
 msgid "Add last result"
-msgstr ""
+msgstr "Add last result"
 
 #: ../src/MainWindow.vala:423
 msgid "Hide extended functionality"
