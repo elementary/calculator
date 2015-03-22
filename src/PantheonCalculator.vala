@@ -23,7 +23,7 @@ namespace PantheonCalculator {
          * These strings should reflect any changes in these launcher keys in .desktop file
          */
         public const string CALCULATOR = N_("Calculator");
-        public const string PROGRAM_NAME = _("Calculator");
+        public const string PROGRAM_NAME = N_("Calculator");
 
         public const string COMMENT = N_("Calculate in an elementary way.");
         public const string ABOUT_STOCK = N_("About Calculator");
@@ -33,7 +33,7 @@ namespace PantheonCalculator {
             flags = ApplicationFlags.FLAGS_NONE;
 
             program_name = PROGRAM_NAME;
-            app_years = "2014";
+            app_years = "2014-2015";
             app_icon = "accessories-calculator";
 
             build_data_dir = Build.DATADIR;
