@@ -16,10 +16,6 @@
 * with Pantheon Calculator. If not, see http://www.gnu.org/licenses/.
 */
 
-using Gtk;
-using PantheonCalculator.Core;
-using Granite.Widgets;
-
 namespace PantheonCalculator {
     public class HistoryDialog : Gtk.Dialog {
         private unowned List<MainWindow.History?> history;

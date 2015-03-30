@@ -39,6 +39,7 @@ ensure_vala_version("0.26" MINIMUM)
 include(ValaPrecompile)
 vala_precompile(VALA_C ${EXEC_NAME}
     src/PantheonCalculator.vala
+    src/Button.vala
     src/MainWindow.vala
     src/HistoryDialog.vala
     src/Core/Stack.vala

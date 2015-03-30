@@ -16,15 +16,13 @@
 * with Pantheon Calculator. If not, see http://www.gnu.org/licenses/.
 */
 
-using Granite.Widgets;
-using PantheonCalculator.Core;
-
 namespace PantheonCalculator {
     public class MainWindow : Gtk.Window {
         private Settings            settings;
 
         private Gtk.HeaderBar       headerbar;
         private Gtk.Grid            main_grid;
+        private Gtk.Revealer        extended_revealer;
         private Gtk.Entry           entry;
 
         // widgets I need to access
@@ -36,12 +34,11 @@ namespace PantheonCalculator {
         private Gtk.Button          button_undo;
         private Gtk.Button          button_del;
         private Gtk.ToggleButton    button_extended;
-        private Gtk.InfoBar?        infobar;
-        private Gtk.Button          button_pow;
-        private Gtk.Box             margin_box;
 
-        private List<weak Gtk.Button>    basic_button_list;
-        private List<weak Gtk.Button>    extended_button_list;
+        private Gtk.InfoBar infobar;
+        private Gtk.Label infobar_label;
+
+        private Gtk.Grid global_grid;
 
         private List<History?>      history;
         private int                 position;
@@ -50,14 +47,6 @@ namespace PantheonCalculator {
         private int decimal_places;
 
         public struct History { string exp; string output; }
-
-        private string[] regular_buttons = {   "0", "1", "2", "3", "4", "5", 
-                                                "6", "7", "8", "9", "0", " + ",
-                                                " − ", " × ", " ÷ ", "%", ".", "(", 
-                                                ")", "^", "π", "e", Posix.nl_langinfo (Posix.NLItem.RADIXCHAR)};
-
-        private string[] function_buttons = {  "sin", "cos", "tan", "√", "sinh", "cosh",
-                                                "tanh" , "sqrt"};
 
         public MainWindow () {
             set_resizable (false);
@@ -72,8 +61,6 @@ namespace PantheonCalculator {
             build_titlebar ();
             build_ui ();
 
-            button_extended.set_active (settings.get_boolean ("extended-shown"));
-
             this.destroy.connect (() => {
                 debug ("saving settings to gsettings");
                 settings.set_boolean ("extended-shown", button_extended.get_active ());
@@ -83,26 +70,24 @@ namespace PantheonCalculator {
 
         private void build_titlebar () {
             headerbar = new Gtk.HeaderBar ();
-            headerbar.get_style_context ().add_class ("primary-toolbar");
             headerbar.show_close_button = true;
             headerbar.set_title (_("Calculator"));
             set_titlebar (headerbar); 
 
             extended_img_1 = new Gtk.Image.from_icon_name ("pane-hide-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
             extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
-            var history_img = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
 
             button_extended = new Gtk.ToggleButton ();
-            button_extended.set_property ("image", extended_img_1);
-            button_extended.set_tooltip_text (_("Show extended functionality"));
-            button_extended.set_relief (Gtk.ReliefStyle.NONE);
+            button_extended.image = extended_img_1;
+            button_extended.tooltip_text = _("Show extended functionality");
+            button_extended.relief = Gtk.ReliefStyle.NONE;
             button_extended.toggled.connect (toggle_grid);
 
             button_history = new Gtk.Button ();
-            button_history.set_property ("image", history_img);
-            button_history.set_tooltip_text (_("History"));
-            button_history.set_relief (Gtk.ReliefStyle.NONE);
-            button_history.set_sensitive (false);
+            button_history.image = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
+            button_history.tooltip_text = _("History");
+            button_history.relief = Gtk.ReliefStyle.NONE;
+            button_history.sensitive = false;
             button_history.clicked.connect (show_history);
 
             headerbar.pack_end (button_extended);
@@ -112,212 +97,214 @@ namespace PantheonCalculator {
         private void build_ui () {
             main_grid = new Gtk.Grid ();
             main_grid.orientation = Gtk.Orientation.VERTICAL;
-            main_grid.set_column_spacing (2);
-            main_grid.set_row_spacing (2);
-            main_grid.margin = 5;
+            main_grid.row_spacing = 3;
+            main_grid.margin = 6;
             main_grid.expand = true;
             main_grid.halign = Gtk.Align.CENTER;
 
             build_basic_ui ();
             build_extended_ui ();
+            button_extended.active = settings.get_boolean ("extended-shown");
 
-            add (main_grid);
+            infobar = new Gtk.InfoBar ();
+            infobar_label = new Gtk.Label ("");
+            infobar.get_content_area ().add (infobar_label);
+            infobar.show_close_button = false;
+            infobar.message_type = Gtk.MessageType.ERROR;
+            infobar.no_show_all = true;
+
+            global_grid = new Gtk.Grid ();
+            global_grid.orientation = Gtk.Orientation.VERTICAL;
+            global_grid.add (infobar);
+            global_grid.add (main_grid);
+
+            add (global_grid);
             show_all ();
-
-            toggle_grid (button_extended);
         }
 
         private void build_basic_ui () {
             entry = new Gtk.Entry ();
             entry.set_text (settings.get_string ("entry-content"));
-
-            button_calc = new Gtk.Button.with_label ("=");
-            button_ans = new Gtk.Button.with_label ("ANS");
-            button_undo = new Gtk.Button.from_icon_name ("go-previous-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
-            button_del = new Gtk.Button.with_label ("C");
-
-            var button_add = new Gtk.Button.with_label (" + ");
-            var button_sub = new Gtk.Button.with_label (" − ");
-            var button_mult = new Gtk.Button.with_label (" × ");
-            var button_div = new Gtk.Button.with_label (" ÷ ");
-
-            var button_0 = new Gtk.Button.with_label ("0");
-            var button_point = new Gtk.Button.with_label (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR));
-            var button_percent = new Gtk.Button.with_label ("%");
-            var button_1 = new Gtk.Button.with_label ("1");
-            var button_2 = new Gtk.Button.with_label ("2");
-            var button_3 = new Gtk.Button.with_label ("3");
-
-            var button_4 = new Gtk.Button.with_label ("4");
-            var button_5 = new Gtk.Button.with_label ("5");
-            var button_6 = new Gtk.Button.with_label ("6");
-
-            var button_7 = new Gtk.Button.with_label ("7");
-            var button_8 = new Gtk.Button.with_label ("8");
-            var button_9 = new Gtk.Button.with_label ("9");
-
-            button_ans.set_sensitive (false);
-
-            //add style context to widgets
             entry.get_style_context ().add_class ("h2");
-            button_del.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
-            button_add.get_style_context ().add_class ("h3");
-            button_sub.get_style_context ().add_class ("h3");
-            button_mult.get_style_context ().add_class ("h3");
-            button_div.get_style_context ().add_class ("h3");
+
+            button_calc = new Button ("=", _("Calculate Result"));
             button_calc.get_style_context ().add_class ("h2");
             button_calc.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            button_ans = new Button ("ANS", _("Add last result"));
+            button_ans.sensitive = false;
+            button_undo = new Button.from_icon_name ("go-previous-symbolic", _("Backspace"));
+            button_del = new Button ("C", _("Clear entry"));
+            button_del.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
-            //set tooltips for widgets
-            button_del.set_tooltip_text (_("Clear entry"));
-            button_undo.set_tooltip_text (_("Backspace"));
-            button_ans.set_tooltip_text (_("Add last result"));
+            var button_add = new Button (" + ", _("Add"));
+            button_add.function = "+";
+            button_add.get_style_context ().add_class ("h3");
+            var button_sub = new Button (" − ", _("Subtract"));
+            button_sub.function = "−";
+            button_sub.get_style_context ().add_class ("h3");
+            var button_mult = new Button (" × ", _("Multiply"));
+            button_mult.function = "×";
+            button_mult.get_style_context ().add_class ("h3");
+            var button_div = new Button (" ÷ ", _("Divide"));
+            button_div.function = "÷";
+            button_div.get_style_context ().add_class ("h3");
 
-            //set size for some widgets to get desired layout
-            entry.set_size_request (0, 45);
-            button_0.set_size_request (65, 45);
-            button_1.set_size_request (65, 45);
-            button_4.set_size_request (65, 45);
-            button_7.set_size_request (65, 45);
+            var button_0 = new Button ("0");
+            var button_point = new Button (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR));
+            var button_percent = new Button ("%", _("Percentage"));
+            var button_1 = new Button ("1");
+            var button_2 = new Button ("2");
+            var button_3 = new Button ("3");
 
-            button_undo.set_size_request (65, 45);
-            button_del.set_size_request (65, 45);
-            button_percent.set_size_request (65, 45);
-            button_add.set_size_request (65, 45);
+            var button_4 = new Button ("4");
+            var button_5 = new Button ("5");
+            var button_6 = new Button ("6");
+
+            var button_7 = new Button ("7");
+            var button_8 = new Button ("8");
+            var button_9 = new Button ("9");
+
+            var basic_grid = new Gtk.Grid ();
+            basic_grid.column_spacing = 3;
+            basic_grid.row_spacing = 3;
+            basic_grid.valign = Gtk.Align.END;
+            basic_grid.attach (button_del,     0, 0, 1, 1);
+            basic_grid.attach (button_undo,    1, 0, 1, 1);
+            basic_grid.attach (button_percent, 2, 0, 1, 1);
+            basic_grid.attach (button_div,     3, 0, 1, 1);
+
+            basic_grid.attach (button_7,    0, 1, 1, 1);
+            basic_grid.attach (button_8,    1, 1, 1, 1);
+            basic_grid.attach (button_9,    2, 1, 1, 1);
+            basic_grid.attach (button_mult, 3, 1, 1, 1);
+
+            basic_grid.attach (button_4,    0, 2, 1, 1);
+            basic_grid.attach (button_5,    1, 2, 1, 1);
+            basic_grid.attach (button_6,    2, 2, 1, 1);
+            basic_grid.attach (button_sub,  3, 2, 1, 1);
+
+            basic_grid.attach (button_1,    0, 3, 1, 1);
+            basic_grid.attach (button_2,    1, 3, 1, 1);
+            basic_grid.attach (button_3,    2, 3, 1, 1);
+            basic_grid.attach (button_add,  3, 3, 1, 1);
+
+            basic_grid.attach (button_0,     0, 4, 1, 1);
+            basic_grid.attach (button_point, 1, 4, 1, 1);
+            basic_grid.attach (button_ans,   2, 4, 1, 1);
+            basic_grid.attach (button_calc,  3, 4, 1, 1);
 
             //attach all widgets
-            main_grid.attach (entry, 0, 0, 4, 1);
+            main_grid.attach (entry, 0, 0, 1, 1);
+            main_grid.attach (basic_grid, 0, 1, 1, 1);
 
             entry.changed.connect (remove_error);
             entry.activate.connect (button_calc_clicked);
 
-            basic_button_list.append (button_del);
-            basic_button_list.append (button_7);
-            basic_button_list.append (button_4);
-            basic_button_list.append (button_1);
-            basic_button_list.append (button_0);
-
-            basic_button_list.append (button_undo);
-            basic_button_list.append (button_8);
-            basic_button_list.append (button_5);
-            basic_button_list.append (button_2);
-            basic_button_list.append (button_point);
-
-            basic_button_list.append (button_percent);
-            basic_button_list.append (button_9);
-            basic_button_list.append (button_6);
-            basic_button_list.append (button_3);
-            basic_button_list.append (button_ans);
-
-            basic_button_list.append (button_div);
-            basic_button_list.append (button_mult);
-            basic_button_list.append (button_sub);
-            basic_button_list.append (button_add);
-            basic_button_list.append (button_calc);
-
-            int pos = 0;
-            foreach (Gtk.Button b_button in basic_button_list) {
-                main_grid.attach (b_button, (pos / 5), (pos % 5 + 1), 1, 1);
-                b_button.clicked.connect (button_clicked);
-                pos++;
-            }
+            button_calc.clicked.connect (() => {button_calc_clicked ();});
+            button_undo.clicked.connect (() => {button_undo_clicked ();});
+            button_del.clicked.connect (() => {button_del_clicked ();});
+            button_ans.clicked.connect (() => {button_ans_clicked ();});
+            button_add.clicked.connect (() => {regular_button_clicked (button_add.function);});
+            button_sub.clicked.connect (() => {regular_button_clicked (button_sub.function);});
+            button_mult.clicked.connect (() => {regular_button_clicked (button_mult.function);});
+            button_div.clicked.connect (() => {regular_button_clicked (button_div.function);});
+            button_0.clicked.connect (() => {regular_button_clicked (button_0.function);});
+            button_1.clicked.connect (() => {regular_button_clicked (button_1.function);});
+            button_2.clicked.connect (() => {regular_button_clicked (button_2.function);});
+            button_3.clicked.connect (() => {regular_button_clicked (button_3.function);});
+            button_4.clicked.connect (() => {regular_button_clicked (button_4.function);});
+            button_5.clicked.connect (() => {regular_button_clicked (button_5.function);});
+            button_6.clicked.connect (() => {regular_button_clicked (button_6.function);});
+            button_7.clicked.connect (() => {regular_button_clicked (button_7.function);});
+            button_8.clicked.connect (() => {regular_button_clicked (button_8.function);});
+            button_9.clicked.connect (() => {regular_button_clicked (button_9.function);});
+            button_point.clicked.connect (() => {regular_button_clicked (button_point.function);});
+            button_percent.clicked.connect (() => {regular_button_clicked (button_percent.function);});
         }
 
         private void build_extended_ui () {
-            button_pow = new Gtk.Button ();
-            var pow_label = new Gtk.Label ("x<sup>y</sup>");
-            pow_label.set_use_markup (true);
-            button_pow.add (pow_label);
+            var button_par_left = new Button ("(", _("Start Group"));
+            var button_par_right = new Button (")", _("End Group"));
+            var button_pow = new Button ("x<sup>y</sup>", _("Exponent"));
+            button_pow.function = "^";
+            var button_sr = new Button ("√", _("Root"));
+            var button_sin = new Button ("sin", _("Sine"));
+            var button_sinh = new Button ("sinh", _("Hyperbolic Sine"));
+            var button_cos = new Button ("cos", _("Cosine"));
+            var button_cosh = new Button ("cosh", _("Hyperbolic Cosine"));
+            var button_tan = new Button ("tan", _("Tangent"));
+            var button_tanh = new Button ("tanh", _("Hyperbolic Tangent"));
+            var button_pi = new Button ("π", _("Pi"));
+            var button_e = new Button ("e", _("Euler's Number"));
 
-            var button_sin = new Gtk.Button.with_label ("sin");
-            var button_cos = new Gtk.Button.with_label ("cos");
-            var button_tan = new Gtk.Button.with_label ("tan");
-            var button_pi = new Gtk.Button.with_label ("π");
-            var button_par_left = new Gtk.Button.with_label ("(");
+            var extended_grid = new Gtk.Grid ();
+            extended_grid.margin_start = 3;
+            extended_grid.column_spacing = 3;
+            extended_grid.row_spacing = 3;
+            extended_grid.valign = Gtk.Align.END;
+            extended_grid.attach (button_par_left,  0, 0, 1, 1);
+            extended_grid.attach (button_par_right, 1, 0, 1, 1);
+            extended_grid.attach (button_pow,       0, 1, 1, 1);
+            extended_grid.attach (button_sr,        1, 1, 1, 1);
+            extended_grid.attach (button_sin,       0, 2, 1, 1);
+            extended_grid.attach (button_sinh,      1, 2, 1, 1);
+            extended_grid.attach (button_cos,       0, 3, 1, 1);
+            extended_grid.attach (button_cosh,      1, 3, 1, 1);
+            extended_grid.attach (button_tan,       0, 4, 1, 1);
+            extended_grid.attach (button_tanh,      1, 4, 1, 1);
+            extended_grid.attach (button_pi,        0, 5, 1, 1);
+            extended_grid.attach (button_e,         1, 5, 1, 1);
 
-            var button_sr = new Gtk.Button.with_label ("√");
-            var button_sinh = new Gtk.Button.with_label ("sinh");
-            var button_cosh = new Gtk.Button.with_label ("cosh");
-            var button_tanh = new Gtk.Button.with_label ("tanh");
-            var button_e = new Gtk.Button.with_label ("e");
-            var button_par_right = new Gtk.Button.with_label (")");
+            extended_revealer = new Gtk.Revealer ();
+            extended_revealer.set_transition_type (Gtk.RevealerTransitionType.SLIDE_LEFT);
+            extended_revealer.show_all ();
+            extended_revealer.add (extended_grid);
+            main_grid.attach (extended_revealer, 1, 0, 1, 2);
 
-            //set size for some widgets to get desired layout
-            button_par_left.set_size_request (65, 45);
-            button_par_right.set_size_request (65, 45);
-
-            margin_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-            margin_box.set_size_request (0, 12);
-            main_grid.attach (margin_box, 4, 0, 1, 6);
-
-            extended_button_list.append (button_par_left);
-            extended_button_list.append (button_pow);
-            extended_button_list.append (button_sin);
-            extended_button_list.append (button_cos);
-            extended_button_list.append (button_tan);
-            extended_button_list.append (button_pi);
-
-            extended_button_list.append (button_par_right);
-            extended_button_list.append (button_sr);
-            extended_button_list.append (button_sinh);
-            extended_button_list.append (button_cosh);
-            extended_button_list.append (button_tanh);
-            extended_button_list.append (button_e);
-
-            int pos = 0;
-            foreach (Gtk.Button e_button in extended_button_list) {
-                main_grid.attach (e_button, (pos / 6 + 5), (pos % 6), 1, 1);
-                e_button.clicked.connect (button_clicked);
-                pos++;
-            }
+            button_pi.clicked.connect (() => {regular_button_clicked (button_pi.function);});
+            button_e.clicked.connect (() => {regular_button_clicked (button_e.function);});
+            button_pow.clicked.connect (() => {regular_button_clicked (button_pow.function);});
+            button_par_left.clicked.connect (() => {regular_button_clicked (button_par_left.function);});
+            button_par_right.clicked.connect (() => {regular_button_clicked (button_par_right.function);});
+            button_sr.clicked.connect (() => {function_button_clicked (button_sr.function);});
+            button_sin.clicked.connect (() => {function_button_clicked (button_sin.function);});
+            button_sinh.clicked.connect (() => {function_button_clicked (button_sinh.function);});
+            button_cos.clicked.connect (() => {function_button_clicked (button_cos.function);});
+            button_cosh.clicked.connect (() => {function_button_clicked (button_cosh.function);});
+            button_tan.clicked.connect (() => {function_button_clicked (button_tan.function);});
+            button_tanh.clicked.connect (() => {function_button_clicked (button_tanh.function);});
         }
 
-        private void button_clicked (Gtk.Button btn) {
-            if (btn == button_calc)
-                button_calc_clicked ();
-            else if (btn == button_undo)
-                button_undo_clicked ();
-            else if (btn == button_del)
-                button_del_clicked ();
-            else if (btn == button_ans)
-                button_ans_clicked ();
-            else {
-                string label = btn.get_label ();
-                if (btn == button_pow)
-                    label = "^";
+        private void regular_button_clicked (string label) {
+            int new_position = entry.get_position ();
+            entry.insert_at_cursor (label);
+            new_position += label.length;
+            entry.grab_focus ();
+            entry.set_position (new_position);
+        }
 
-                bool is_function = label in function_buttons;
-                bool is_regular = label in regular_buttons;
-                
-                if (!is_function && !is_regular)
-                    return;
-
-                int selection_start = -1;
-                int selection_end = -1;
-                int new_position = entry.get_position ();
-
-                if (is_function && entry.get_selection_bounds (out selection_start, out selection_end)) {
-                    string selected_text = entry.get_chars (selection_start, selection_end);
-                    string function_call = label + "(" + selected_text + ")";
-                    entry.delete_text (selection_start, selection_end);
-                    entry.insert_text (function_call, -1, ref selection_start);
-                    new_position += function_call.length;
-                } else {
-                    entry.insert_at_cursor (label);
-                    new_position += label.length;
-                }
-
+        private void function_button_clicked (string label) {
+            int selection_start = -1;
+            int selection_end = -1;
+            int new_position = entry.get_position ();
+            if (entry.get_selection_bounds (out selection_start, out selection_end)) {
+                string selected_text = entry.get_chars (selection_start, selection_end);
+                string function_call = label + "(" + selected_text + ")";
+                entry.delete_text (selection_start, selection_end);
+                entry.insert_text (function_call, -1, ref selection_start);
+                new_position += function_call.length;
                 entry.grab_focus ();
                 entry.set_position (new_position);
+            } else {
+                regular_button_clicked (label);
             }
         }
 
         private void button_calc_clicked () {
             position = entry.get_position ();
-            remove_error ();
             if (entry.get_text () != "") {
                 try {
-                    var output = Evaluation.evaluate (entry.get_text (), decimal_places);
+                    var output = Core.Evaluation.evaluate (entry.get_text (), decimal_places);
                     if (entry.get_text () != output) {
                         history.append (History () { exp = entry.get_text (), output = output } );
                         entry.set_text (output);
@@ -325,16 +312,16 @@ namespace PantheonCalculator {
                         button_ans.set_sensitive (true);
 
                         position = output.length;
+                        remove_error ();
                     }
-                } catch (OUT_ERROR e) {
-                    infobar = new Gtk.InfoBar ();
-                    infobar.get_content_area ().add (new Gtk.Label (e.message));
-                    infobar.set_show_close_button (false);
-                    infobar.set_message_type (Gtk.MessageType.ERROR);
-
-                    main_grid.attach (infobar, 0, 0, 2, 1);
+                } catch (Core.OUT_ERROR e) {
+                    infobar_label.label = e.message;
+                    infobar.no_show_all = false;
                     infobar.show_all ();
+                    infobar.no_show_all = true;
                 }
+            } else {
+                remove_error ();
             }
 
             entry.grab_focus ();
@@ -387,20 +374,14 @@ namespace PantheonCalculator {
             position = entry.get_position ();
             if (button.get_active ()) {
                 //show extended functionality
-                button.set_property ("image", extended_img_2);
-                button.set_tooltip_text (_("Hide extended functionality"));
-
-                margin_box.show ();
-                foreach (Gtk.Button e_button in extended_button_list)
-                    e_button.show ();
+                button.image = extended_img_2;
+                button.tooltip_text = _("Hide extended functionality");
+                extended_revealer.set_reveal_child (true);
             } else {
                 //hide extended functionality
-                button.set_property ("image", extended_img_1);
-                button.set_tooltip_text (_("Show extended functionality"));
-
-                margin_box.hide ();
-                foreach (Gtk.Button e_button in extended_button_list)
-                    e_button.hide ();
+                button.image = extended_img_1;
+                button.tooltip_text = _("Show extended functionality");
+                extended_revealer.set_reveal_child (false);
             }
             //focusing button_calc because without a new focus it will cause weird window drawing problems.
             entry.grab_focus ();
@@ -409,8 +390,7 @@ namespace PantheonCalculator {
 
         private void show_history (Gtk.Button button) {
             position = entry.get_position ();
-
-            button_history.set_sensitive (false);
+            button_history.sensitive = false;
 
             var history_dialog = new HistoryDialog (history);
             history_dialog.added.connect (history_added);
@@ -425,8 +405,7 @@ namespace PantheonCalculator {
         }
 
         private void remove_error () {
-            if (infobar != null)
-                infobar.hide ();
+            infobar.hide ();
         }
     }
 }
