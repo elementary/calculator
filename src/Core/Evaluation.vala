@@ -54,7 +54,7 @@ namespace PantheonCalculator.Core {
                                             Operator () { symbol = "÷", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a / b; } },
                                             Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a % b; } },
                                             Operator () { symbol = "^", inputs = 2, prec = 3, fixity = "RIGHT", eval = (a, b) => { return Math.pow (a, b); } },
-                                            Operator () { symbol = "e", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => { return a*Math.pow (10, b); } },
+                                            Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => { return a*Math.pow (10, b); } },
                                             Operator () { symbol = "%", inputs = 1, prec = 5, fixity = "LEFT", eval = (a, b) => { return b / 100.0;} } };
 
         private struct Function { string symbol; int inputs; Eval eval;}
@@ -71,7 +71,8 @@ namespace PantheonCalculator.Core {
 
         private struct Constant { string symbol; Eval eval; }
         private Constant[] constants = {   Constant () { symbol = "pi", eval = () => { return Math.PI; } },
-                                            Constant () { symbol = "π", eval = () => { return Math.PI; } }  };
+                                            Constant () { symbol = "π", eval = () => { return Math.PI; } },
+                                            Constant () { symbol = "e", eval = () => { return Math.E; } }  };
 
         public static string evaluate (string str, int d_places) throws OUT_ERROR {
             try {
