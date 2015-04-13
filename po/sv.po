@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-15 10:48-0600\n"
-"PO-Revision-Date: 2015-03-02 13:57+0000\n"
-"Last-Translator: Tobias Ahlström <tobias.ahlstrom@gmail.com>\n"
+"PO-Revision-Date: 2015-04-12 07:37+0000\n"
+"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-03 05:41+0000\n"
-"X-Generator: Launchpad (build 17361)\n"
+"X-Launchpad-Export-Date: 2015-04-13 05:31+0000\n"
+"X-Generator: Launchpad (build 17423)\n"
 
 #: ../src/PantheonCalculator.vala:25 ../src/PantheonCalculator.vala:26
 #: ../src/MainWindow.vala:71
@@ -19,7 +19,7 @@ msgstr "Kalkylator"
 
 #: ../src/PantheonCalculator.vala:28
 msgid "Calculate in an elementary way."
-msgstr ""
+msgstr "Räkna på ett elementärt sätt."
 
 #: ../src/PantheonCalculator.vala:29
 msgid "About Calculator"
