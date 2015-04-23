@@ -24,7 +24,7 @@ namespace PantheonCalculator.Core {
 
     public class Scanner : Object {
         public unowned string str;
-        public int pos;
+        public ssize_t pos;
         public unichar[] uc;
 
         private unichar decimal_symbol;
@@ -43,7 +43,7 @@ namespace PantheonCalculator.Core {
             bool next_number_negative = false;
             Evaluation e = new Evaluation ();
 
-            for (int i = 0; input.get_next_char(ref index, out c); i++) {
+            for (int i = 0; input.get_next_char (ref index, out c); i++) {
                 if (c != ' ') {
                     scanner.uc.resize (scanner.uc.length + 1);
                     scanner.uc[scanner.uc.length - 1] = c;
@@ -68,7 +68,7 @@ namespace PantheonCalculator.Core {
 
                     Token t = new Token (substr, type);
 
-                    //identifying multicharacter tokens via Evaluation class. 
+                    //identifying multicharacter tokens via Evaluation class.
                     if (t.token_type == TokenType.ALPHA) {
                         if (e.is_operator (t))
                             t.token_type = TokenType.OPERATOR;
@@ -98,7 +98,7 @@ namespace PantheonCalculator.Core {
                     * checking if last token was a number or parenthesis right
                     * and token now is a function, constant or parenthesis (left)
                     */
-                    if (last_token != null && 
+                    if (last_token != null &&
                     (last_token.token_type == TokenType.NUMBER || last_token.token_type == TokenType.P_RIGHT) &&
                     (t.token_type == TokenType.FUNCTION || t.token_type == TokenType.CONSTANT
                     || t.token_type == TokenType.P_LEFT || t.token_type == TokenType.NUMBER))
@@ -115,20 +115,20 @@ namespace PantheonCalculator.Core {
             start = pos;
             if (uc[pos] == this.decimal_symbol) {
                 pos++;
-                while (uc[pos].isdigit ())
+                while (uc[pos].isdigit () && pos < uc.length)
                     pos++;
                 len = pos - start;
                 return TokenType.NULL_NUMBER;
             } else if (uc[pos].isdigit ()) {
-                while (uc[pos].isdigit ())
+                while (uc[pos].isdigit () && pos < uc.length)
                     pos++;
                 if (uc[pos] == this.decimal_symbol)
                     pos++;
-                while (uc[pos].isdigit ())
+                while (uc[pos].isdigit () && pos < uc.length)
                     pos++;
                 len = pos - start;
                 return TokenType.NUMBER;
-            } else if (uc[pos] == '+' || uc[pos] == '-' || uc[pos] == '*' || 
+            } else if (uc[pos] == '+' || uc[pos] == '-' || uc[pos] == '*' ||
                         uc[pos] == '/' || uc[pos] == '^' || uc[pos] == '%' ||
                         uc[pos] == '÷' || uc[pos] == '×' || uc[pos] == '−') {
                 pos++;
@@ -143,7 +143,7 @@ namespace PantheonCalculator.Core {
                 len = 1;
                 return TokenType.CONSTANT;
             } else if (uc[pos].isalpha ()) {
-                while (uc[pos].isalpha ())
+                while (uc[pos].isalpha () && pos < uc.length)
                     pos++;
                 len = pos - start;
                 return TokenType.ALPHA;
