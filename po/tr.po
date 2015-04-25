@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-15 10:48-0600\n"
-"PO-Revision-Date: 2015-02-11 17:24+0000\n"
-"Last-Translator: Ramazan Buğdaycı <Unknown>\n"
+"PO-Revision-Date: 2015-04-24 07:01+0000\n"
+"Last-Translator: Cemre <cemredeliklitas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-12 06:48+0000\n"
-"X-Generator: Launchpad (build 17336)\n"
+"X-Launchpad-Export-Date: 2015-04-25 05:24+0000\n"
+"X-Generator: Launchpad (build 17430)\n"
 
 #: ../src/PantheonCalculator.vala:25 ../src/PantheonCalculator.vala:26
 #: ../src/MainWindow.vala:71
@@ -19,7 +19,7 @@ msgstr "Hesap Makinesi"
 
 #: ../src/PantheonCalculator.vala:28
 msgid "Calculate in an elementary way."
-msgstr ""
+msgstr "Basit hesaplama"
 
 #: ../src/PantheonCalculator.vala:29
 msgid "About Calculator"
@@ -31,7 +31,7 @@ msgstr "Geçmiş"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Value to add:"
-msgstr ""
+msgstr "Eklenecek değer:"
 
 #: ../src/HistoryDialog.vala:92
 msgid "Result"
@@ -47,32 +47,32 @@ msgstr "Kapat"
 
 #: ../src/HistoryDialog.vala:101
 msgid "Add"
-msgstr ""
+msgstr "Ekle"
 
 #: ../src/MainWindow.vala:80 ../src/MainWindow.vala:428
 msgid "Show extended functionality"
-msgstr ""
+msgstr "Gelişmiş özellikleri göster"
 
 #: ../src/MainWindow.vala:168
 msgid "Clear entry"
-msgstr ""
+msgstr "Girdiyi sil"
 
 #: ../src/MainWindow.vala:169
 msgid "Backspace"
-msgstr ""
+msgstr "Geri al tuşu"
 
 #: ../src/MainWindow.vala:170
 msgid "Add last result"
-msgstr ""
+msgstr "Son sonucu ekle"
 
 #: ../src/MainWindow.vala:423
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "Gelişmiş özellikleri gizle"
 
 #: ../src/Core/Scanner.vala:73
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' geçersiz."
 
 #: ../src/Core/Scanner.vala:148
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' bilinmiyor."
