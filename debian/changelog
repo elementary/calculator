@@ -1,3 +1,9 @@
+pantheon-calculator (0.1.0.1) trusty; urgency=low
+
+  * Fixed out of range problem (lp:1421608)
+
+ -- Cody Garver <cody@elementaryos.org>  Wed, 20 May 2015 00:42:47 -0500
+
 pantheon-calculator (0.1) trusty; urgency=low
 
   * Initial Release.
