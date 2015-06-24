@@ -1,0 +1,83 @@
+# Silesian translation for pantheon-calculator
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the pantheon-calculator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-calculator\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-01-15 10:48-0600\n"
+"PO-Revision-Date: 2015-06-23 13:00+0000\n"
+"Last-Translator: Grzegorz Kulik <Unknown>\n"
+"Language-Team: Silesian <szl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-06-24 05:23+0000\n"
+"X-Generator: Launchpad (build 17572)\n"
+
+#: ../src/PantheonCalculator.vala:25 ../src/PantheonCalculator.vala:26
+#: ../src/MainWindow.vala:71
+msgid "Calculator"
+msgstr "Kalkulatōr"
+
+#: ../src/PantheonCalculator.vala:28
+msgid "Calculate in an elementary way."
+msgstr "Rachuj we stylu Elementary"
+
+#: ../src/PantheonCalculator.vala:29
+msgid "About Calculator"
+msgstr "Ô Kalkulatōrze"
+
+#: ../src/HistoryDialog.vala:39 ../src/MainWindow.vala:86
+msgid "History"
+msgstr "Historyjŏ"
+
+#: ../src/HistoryDialog.vala:88
+msgid "Value to add:"
+msgstr "Werta do przidaniŏ"
+
+#: ../src/HistoryDialog.vala:92
+msgid "Result"
+msgstr "Wynik"
+
+#: ../src/HistoryDialog.vala:95
+msgid "Expression"
+msgstr "Wyraz"
+
+#: ../src/HistoryDialog.vala:100
+msgid "Close"
+msgstr "Zawrzij"
+
+#: ../src/HistoryDialog.vala:101
+msgid "Add"
+msgstr "Przidej"
+
+#: ../src/MainWindow.vala:80 ../src/MainWindow.vala:428
+msgid "Show extended functionality"
+msgstr "Pokŏż rozszyrzowane możności"
+
+#: ../src/MainWindow.vala:168
+msgid "Clear entry"
+msgstr "Wysnŏż pole"
+
+#: ../src/MainWindow.vala:169
+msgid "Backspace"
+msgstr "Kasuj"
+
+#: ../src/MainWindow.vala:170
+msgid "Add last result"
+msgstr "Przidej ôstatni wynik"
+
+#: ../src/MainWindow.vala:423
+msgid "Hide extended functionality"
+msgstr "Skryj rozszyrzowane możności"
+
+#: ../src/Core/Scanner.vala:73
+msgid "'%s' is invalid."
+msgstr "'%s' je niynŏlyżny."
+
+#: ../src/Core/Scanner.vala:148
+msgid "'%s' is unknown."
+msgstr "'%s' je niyznōmy."
