@@ -3,19 +3,19 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-15 10:48-0600\n"
-"PO-Revision-Date: 2015-01-16 10:40+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-06-25 17:52+0000\n"
+"Last-Translator: mahsum <mahsum_kral_2172@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-17 06:51+0000\n"
-"X-Generator: Launchpad (build 17304)\n"
+"X-Launchpad-Export-Date: 2015-06-26 04:50+0000\n"
+"X-Generator: Launchpad (build 17578)\n"
 
 #: ../src/PantheonCalculator.vala:25 ../src/PantheonCalculator.vala:26
 #: ../src/MainWindow.vala:71
 msgid "Calculator"
-msgstr ""
+msgstr "Makîneya Hesaban"
 
 #: ../src/PantheonCalculator.vala:28
 msgid "Calculate in an elementary way."
@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../src/PantheonCalculator.vala:29
 msgid "About Calculator"
-msgstr ""
+msgstr "Derbarê Makîneya Hesaban"
 
 #: ../src/HistoryDialog.vala:39 ../src/MainWindow.vala:86
 msgid "History"
-msgstr ""
+msgstr "Dîrok"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Value to add:"
@@ -35,23 +35,23 @@ msgstr ""
 
 #: ../src/HistoryDialog.vala:92
 msgid "Result"
-msgstr ""
+msgstr "dawî"
 
 #: ../src/HistoryDialog.vala:95
 msgid "Expression"
-msgstr ""
+msgstr "vegotin"
 
 #: ../src/HistoryDialog.vala:100
 msgid "Close"
-msgstr ""
+msgstr "Bigire"
 
 #: ../src/HistoryDialog.vala:101
 msgid "Add"
-msgstr ""
+msgstr "Zêde bike"
 
 #: ../src/MainWindow.vala:80 ../src/MainWindow.vala:428
 msgid "Show extended functionality"
-msgstr ""
+msgstr "Taybete pêşketî şanîbıde"
 
 #: ../src/MainWindow.vala:168
 msgid "Clear entry"
