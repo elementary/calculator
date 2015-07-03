@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-15 10:48-0600\n"
-"PO-Revision-Date: 2015-02-14 16:41+0000\n"
-"Last-Translator: Mohammad Hossein Mojatehdi <mhm5000@gmail.com>\n"
+"PO-Revision-Date: 2015-07-02 18:35+0000\n"
+"Last-Translator: awat <ali.aliyan1@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-15 05:51+0000\n"
-"X-Generator: Launchpad (build 17341)\n"
+"X-Launchpad-Export-Date: 2015-07-03 05:38+0000\n"
+"X-Generator: Launchpad (build 17597)\n"
 
 #: ../src/PantheonCalculator.vala:25 ../src/PantheonCalculator.vala:26
 #: ../src/MainWindow.vala:71
@@ -27,7 +27,7 @@ msgstr "درباره‌ی ماشین‌حساب"
 
 #: ../src/HistoryDialog.vala:39 ../src/MainWindow.vala:86
 msgid "History"
-msgstr "تاریخچه"
+msgstr "پیشینه"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Value to add:"
@@ -35,11 +35,11 @@ msgstr ""
 
 #: ../src/HistoryDialog.vala:92
 msgid "Result"
-msgstr "جواب"
+msgstr "نتیجه"
 
 #: ../src/HistoryDialog.vala:95
 msgid "Expression"
-msgstr ""
+msgstr "عبارت"
 
 #: ../src/HistoryDialog.vala:100
 msgid "Close"
@@ -55,15 +55,15 @@ msgstr ""
 
 #: ../src/MainWindow.vala:168
 msgid "Clear entry"
-msgstr ""
+msgstr "پاک کردن ورودی"
 
 #: ../src/MainWindow.vala:169
 msgid "Backspace"
-msgstr ""
+msgstr "Backspace"
 
 #: ../src/MainWindow.vala:170
 msgid "Add last result"
-msgstr ""
+msgstr "افزودن آخرین نتیجه"
 
 #: ../src/MainWindow.vala:423
 msgid "Hide extended functionality"
@@ -71,8 +71,8 @@ msgstr ""
 
 #: ../src/Core/Scanner.vala:73
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' غیر قابل قبول است"
 
 #: ../src/Core/Scanner.vala:148
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' ناشناخته است"
