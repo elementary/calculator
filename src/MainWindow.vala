@@ -410,8 +410,10 @@ namespace PantheonCalculator {
         }
 
         private bool key_pressed (Gdk.EventKey key) {
-            if (key.keyval == Gdk.Key.Escape) {
-                button_del_clicked ();
+            switch (key.keyval) {
+                case Gdk.Key.Escape:
+                    button_del_clicked ();
+                    break;
             }
 
             return false;
