@@ -66,6 +66,7 @@ namespace PantheonCalculator {
                 settings.set_boolean ("extended-shown", button_extended.get_active ());
                 settings.set_string ("entry-content", entry.get_text ());
             });
+            this.key_press_event.connect (key_pressed);
         }
 
         private void build_titlebar () {
@@ -406,6 +407,16 @@ namespace PantheonCalculator {
 
         private void remove_error () {
             infobar.hide ();
+        }
+
+        private bool key_pressed (Gdk.EventKey key) {
+            switch (key.keyval) {
+                case Gdk.Key.Escape:
+                    button_del_clicked ();
+                    break;
+            }
+
+            return false;
         }
     }
 }
