@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-16 00:15+0200\n"
-"PO-Revision-Date: 2015-02-27 16:53+0000\n"
-"Last-Translator: Anand Kumar <Unknown>\n"
+"PO-Revision-Date: 2015-09-17 11:05+0000\n"
+"Last-Translator: Vishal Biswas <vshlbiswas@ymail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:32+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-09-18 05:24+0000\n"
+"X-Generator: Launchpad (build 17746)\n"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
 msgid "History"
@@ -30,7 +30,7 @@ msgstr "एक्सप्रेशन"
 
 #: ../src/HistoryDialog.vala:98
 msgid "Close"
-msgstr "बंद करें"
+msgstr "बंद"
 
 #: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:140
 msgid "Add"
@@ -47,7 +47,7 @@ msgstr "'%s' अज्ञात है."
 #: ../src/MainWindow.vala:75 ../src/PantheonCalculator.vala:25
 #: ../src/PantheonCalculator.vala:26
 msgid "Calculator"
-msgstr "कैलकुलेटर"
+msgstr "गणक"
 
 #: ../src/MainWindow.vala:83 ../src/MainWindow.vala:384
 msgid "Show extended functionality"
@@ -55,7 +55,7 @@ msgstr "विस्तृत कार्यक्षमता दिखाए�
 
 #: ../src/MainWindow.vala:131
 msgid "Calculate Result"
-msgstr ""
+msgstr "परिणाम गणणा"
 
 #: ../src/MainWindow.vala:134
 msgid "Add last result"
@@ -71,67 +71,67 @@ msgstr "प्रविष्टि साफ करें"
 
 #: ../src/MainWindow.vala:143
 msgid "Subtract"
-msgstr ""
+msgstr "घटाएँ"
 
 #: ../src/MainWindow.vala:146
 msgid "Multiply"
-msgstr ""
+msgstr "गुणा"
 
 #: ../src/MainWindow.vala:149
 msgid "Divide"
-msgstr ""
+msgstr "भाग"
 
 #: ../src/MainWindow.vala:155
 msgid "Percentage"
-msgstr ""
+msgstr "प्रतिशत"
 
 #: ../src/MainWindow.vala:227
 msgid "Start Group"
-msgstr ""
+msgstr "समूह शुरू"
 
 #: ../src/MainWindow.vala:228
 msgid "End Group"
-msgstr ""
+msgstr "अंत समूह"
 
 #: ../src/MainWindow.vala:229
 msgid "Exponent"
-msgstr ""
+msgstr "घातांक"
 
 #: ../src/MainWindow.vala:231
 msgid "Root"
-msgstr ""
+msgstr "वर्गमूल"
 
 #: ../src/MainWindow.vala:232
 msgid "Sine"
-msgstr ""
+msgstr "ज्या"
 
 #: ../src/MainWindow.vala:233
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "अतिपरवलयिक साइन"
 
 #: ../src/MainWindow.vala:234
 msgid "Cosine"
-msgstr ""
+msgstr "कोटिज्या"
 
 #: ../src/MainWindow.vala:235
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "अतिपरवलयिक कोसाइन"
 
 #: ../src/MainWindow.vala:236
 msgid "Tangent"
-msgstr ""
+msgstr "स्पर्शज्या"
 
 #: ../src/MainWindow.vala:237
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "अतिपरवलयिक टैन्जेन्ट"
 
 #: ../src/MainWindow.vala:238
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
 #: ../src/MainWindow.vala:239
 msgid "Euler's Number"
-msgstr ""
+msgstr "यूलर का क्रमांक"
 
 #: ../src/MainWindow.vala:379
 msgid "Hide extended functionality"
@@ -143,4 +143,4 @@ msgstr "कैलकुलेट करें एलीमेंट्री अ
 
 #: ../src/PantheonCalculator.vala:29
 msgid "About Calculator"
-msgstr "कैलकुलेटर  के बारे में"
+msgstr "गणक के बारे में"
