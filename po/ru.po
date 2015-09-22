@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-16 00:15+0200\n"
-"PO-Revision-Date: 2015-07-05 08:06+0000\n"
-"Last-Translator: Sergei <ink.dude@mail.ru>\n"
+"PO-Revision-Date: 2015-09-21 13:25+0000\n"
+"Last-Translator: crow <crow@rikka.io>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:32+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-09-22 05:49+0000\n"
+"X-Generator: Launchpad (build 17749)\n"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
 msgid "History"
@@ -87,11 +87,11 @@ msgstr ""
 
 #: ../src/MainWindow.vala:227
 msgid "Start Group"
-msgstr ""
+msgstr "Открыть скобки"
 
 #: ../src/MainWindow.vala:228
 msgid "End Group"
-msgstr ""
+msgstr "Закрыть скобки"
 
 #: ../src/MainWindow.vala:229
 msgid "Exponent"
