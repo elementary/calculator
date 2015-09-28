@@ -1,5 +1,4 @@
 [Desktop Entry]
-Version=0.1
 Name=Calculator
 Comment=Calculate in an elementary way.
 Exec=pantheon-calculator %U
@@ -7,7 +6,7 @@ Icon=accessories-calculator
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=GTK;Utility;Office;
+Categories=GNOME;GTK;Utility;Calculator;
 X-GNOME-Gettext-Domain=pantheon-calculator
 
 X-Ayatana-Desktop-Shortcuts=AboutDialog
