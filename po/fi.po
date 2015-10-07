@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-16 00:15+0200\n"
-"PO-Revision-Date: 2015-09-16 05:30+0000\n"
+"PO-Revision-Date: 2015-10-06 10:36+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-17 05:34+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-10-07 05:44+0000\n"
+"X-Generator: Launchpad (build 17802)\n"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
 msgid "History"
@@ -83,7 +83,7 @@ msgstr "Jaa"
 
 #: ../src/MainWindow.vala:155
 msgid "Percentage"
-msgstr ""
+msgstr "Prosenttiosuus"
 
 #: ../src/MainWindow.vala:227
 msgid "Start Group"
