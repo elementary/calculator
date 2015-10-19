@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-16 00:15+0200\n"
-"PO-Revision-Date: 2015-04-06 15:51+0000\n"
-"Last-Translator: Kanin Pornsinsiriruk <kaninmike@gmail.com>\n"
+"PO-Revision-Date: 2015-10-18 15:26+0000\n"
+"Last-Translator: Rockworld <sumoisrock@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:32+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-10-19 05:23+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
 msgid "History"
@@ -55,7 +55,7 @@ msgstr "แสดงฟังก์ชั่นเพิ่มเติม"
 
 #: ../src/MainWindow.vala:131
 msgid "Calculate Result"
-msgstr ""
+msgstr "คำนวณผลลัพธ์"
 
 #: ../src/MainWindow.vala:134
 msgid "Add last result"
@@ -75,23 +75,23 @@ msgstr ""
 
 #: ../src/MainWindow.vala:146
 msgid "Multiply"
-msgstr ""
+msgstr "คูณ"
 
 #: ../src/MainWindow.vala:149
 msgid "Divide"
-msgstr ""
+msgstr "หาร"
 
 #: ../src/MainWindow.vala:155
 msgid "Percentage"
-msgstr ""
+msgstr "หาเปอร์เซ็นต์"
 
 #: ../src/MainWindow.vala:227
 msgid "Start Group"
-msgstr ""
+msgstr "เริ่มกลุ่ม"
 
 #: ../src/MainWindow.vala:228
 msgid "End Group"
-msgstr ""
+msgstr "จบกลุ่ม"
 
 #: ../src/MainWindow.vala:229
 msgid "Exponent"
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../src/MainWindow.vala:231
 msgid "Root"
-msgstr ""
+msgstr "ราก"
 
 #: ../src/MainWindow.vala:232
 msgid "Sine"
@@ -127,7 +127,7 @@ msgstr ""
 
 #: ../src/MainWindow.vala:238
 msgid "Pi"
-msgstr ""
+msgstr "ไพ"
 
 #: ../src/MainWindow.vala:239
 msgid "Euler's Number"
