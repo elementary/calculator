@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-16 00:15+0200\n"
-"PO-Revision-Date: 2015-09-21 13:25+0000\n"
-"Last-Translator: crow <crow@rikka.io>\n"
+"PO-Revision-Date: 2015-10-19 23:52+0000\n"
+"Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-22 05:49+0000\n"
-"X-Generator: Launchpad (build 17749)\n"
+"X-Launchpad-Export-Date: 2015-10-20 05:27+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
 msgid "History"
@@ -55,7 +55,7 @@ msgstr "Показать дополнительную функционально
 
 #: ../src/MainWindow.vala:131
 msgid "Calculate Result"
-msgstr ""
+msgstr "Вычислить результат"
 
 #: ../src/MainWindow.vala:134
 msgid "Add last result"
@@ -71,19 +71,19 @@ msgstr "Очистить запись"
 
 #: ../src/MainWindow.vala:143
 msgid "Subtract"
-msgstr ""
+msgstr "Вычитание"
 
 #: ../src/MainWindow.vala:146
 msgid "Multiply"
-msgstr ""
+msgstr "Умножение"
 
 #: ../src/MainWindow.vala:149
 msgid "Divide"
-msgstr ""
+msgstr "Деление"
 
 #: ../src/MainWindow.vala:155
 msgid "Percentage"
-msgstr ""
+msgstr "Проценты"
 
 #: ../src/MainWindow.vala:227
 msgid "Start Group"
@@ -95,43 +95,43 @@ msgstr "Закрыть скобки"
 
 #: ../src/MainWindow.vala:229
 msgid "Exponent"
-msgstr ""
+msgstr "Степень"
 
 #: ../src/MainWindow.vala:231
 msgid "Root"
-msgstr ""
+msgstr "Корень"
 
 #: ../src/MainWindow.vala:232
 msgid "Sine"
-msgstr ""
+msgstr "Синус"
 
 #: ../src/MainWindow.vala:233
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Гиперболический синус"
 
 #: ../src/MainWindow.vala:234
 msgid "Cosine"
-msgstr ""
+msgstr "Косинус"
 
 #: ../src/MainWindow.vala:235
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Гиперболический косинус"
 
 #: ../src/MainWindow.vala:236
 msgid "Tangent"
-msgstr ""
+msgstr "Тангенс"
 
 #: ../src/MainWindow.vala:237
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Гиперболический тангенс"
 
 #: ../src/MainWindow.vala:238
 msgid "Pi"
-msgstr ""
+msgstr "Число Пи"
 
 #: ../src/MainWindow.vala:239
 msgid "Euler's Number"
-msgstr ""
+msgstr "Число Эйлера"
 
 #: ../src/MainWindow.vala:379
 msgid "Hide extended functionality"
