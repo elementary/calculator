@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-16 00:15+0200\n"
-"PO-Revision-Date: 2015-10-19 23:52+0000\n"
-"Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
+"PO-Revision-Date: 2015-10-21 16:38+0000\n"
+"Last-Translator: zEvilz <zevilz13@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-21 06:04+0000\n"
+"X-Launchpad-Export-Date: 2015-10-22 05:37+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
@@ -55,7 +55,7 @@ msgstr "Показать дополнительную функционально
 
 #: ../src/MainWindow.vala:131
 msgid "Calculate Result"
-msgstr "Вычислить результат"
+msgstr "Показать результат"
 
 #: ../src/MainWindow.vala:134
 msgid "Add last result"
@@ -67,7 +67,7 @@ msgstr "Назад (Стереть)"
 
 #: ../src/MainWindow.vala:137
 msgid "Clear entry"
-msgstr "Очистить запись"
+msgstr "Очистить поле ввода"
 
 #: ../src/MainWindow.vala:143
 msgid "Subtract"
