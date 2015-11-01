@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-16 00:15+0200\n"
-"PO-Revision-Date: 2015-06-24 18:19+0000\n"
-"Last-Translator: Lucas Santos <lucas.santos.silva2011@gmail.com>\n"
+"PO-Revision-Date: 2015-10-31 23:45+0000\n"
+"Last-Translator: Cleiton Floss <cleitonfloss@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:32+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-11-01 05:23+0000\n"
+"X-Generator: Launchpad (build 17838)\n"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
 msgid "History"
@@ -55,7 +55,7 @@ msgstr "Mostrar outras funcionalidades"
 
 #: ../src/MainWindow.vala:131
 msgid "Calculate Result"
-msgstr ""
+msgstr "Calcular resultado"
 
 #: ../src/MainWindow.vala:134
 msgid "Add last result"
@@ -71,67 +71,67 @@ msgstr "Limpar entrada"
 
 #: ../src/MainWindow.vala:143
 msgid "Subtract"
-msgstr ""
+msgstr "Subtrair"
 
 #: ../src/MainWindow.vala:146
 msgid "Multiply"
-msgstr ""
+msgstr "Multiplicar"
 
 #: ../src/MainWindow.vala:149
 msgid "Divide"
-msgstr ""
+msgstr "Dividir"
 
 #: ../src/MainWindow.vala:155
 msgid "Percentage"
-msgstr ""
+msgstr "Porcentagem"
 
 #: ../src/MainWindow.vala:227
 msgid "Start Group"
-msgstr ""
+msgstr "Início de grupo"
 
 #: ../src/MainWindow.vala:228
 msgid "End Group"
-msgstr ""
+msgstr "Término de grupo"
 
 #: ../src/MainWindow.vala:229
 msgid "Exponent"
-msgstr ""
+msgstr "Expoente"
 
 #: ../src/MainWindow.vala:231
 msgid "Root"
-msgstr ""
+msgstr "Raiz"
 
 #: ../src/MainWindow.vala:232
 msgid "Sine"
-msgstr ""
+msgstr "Seno"
 
 #: ../src/MainWindow.vala:233
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Seno hiperbólico"
 
 #: ../src/MainWindow.vala:234
 msgid "Cosine"
-msgstr ""
+msgstr "Cosseno"
 
 #: ../src/MainWindow.vala:235
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Cosseno hiperbólico"
 
 #: ../src/MainWindow.vala:236
 msgid "Tangent"
-msgstr ""
+msgstr "Tangente"
 
 #: ../src/MainWindow.vala:237
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Tangente hiperbólica"
 
 #: ../src/MainWindow.vala:238
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
 #: ../src/MainWindow.vala:239
 msgid "Euler's Number"
-msgstr ""
+msgstr "Constante de Euler"
 
 #: ../src/MainWindow.vala:379
 msgid "Hide extended functionality"
