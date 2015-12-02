@@ -3,51 +3,51 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-16 00:15+0200\n"
-"PO-Revision-Date: 2015-01-16 10:40+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-12-01 22:31+0000\n"
+"Last-Translator: Félix Brezo <felixbrezo@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:31+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-12-02 05:27+0000\n"
+"X-Generator: Launchpad (build 17856)\n"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
 msgid "History"
-msgstr ""
+msgstr "Historikoa"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
-msgstr ""
+msgstr "Balio"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Result"
-msgstr ""
+msgstr "Emaitza"
 
 #: ../src/HistoryDialog.vala:92
 msgid "Expression"
-msgstr ""
+msgstr "Adierazpena"
 
 #: ../src/HistoryDialog.vala:98
 msgid "Close"
-msgstr ""
+msgstr "Itxi"
 
 #: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:140
 msgid "Add"
-msgstr ""
+msgstr "Gehitu"
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' baliogabea da."
 
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' ezezaguna da."
 
 #: ../src/MainWindow.vala:75 ../src/PantheonCalculator.vala:25
 #: ../src/PantheonCalculator.vala:26
 msgid "Calculator"
-msgstr ""
+msgstr "Kalkulagailua"
 
 #: ../src/MainWindow.vala:83 ../src/MainWindow.vala:384
 msgid "Show extended functionality"
@@ -55,83 +55,83 @@ msgstr ""
 
 #: ../src/MainWindow.vala:131
 msgid "Calculate Result"
-msgstr ""
+msgstr "Kalkulatu emaitza"
 
 #: ../src/MainWindow.vala:134
 msgid "Add last result"
-msgstr ""
+msgstr "Gehitu azken emaitza"
 
 #: ../src/MainWindow.vala:136
 msgid "Backspace"
-msgstr ""
+msgstr "Atzera tekla"
 
 #: ../src/MainWindow.vala:137
 msgid "Clear entry"
-msgstr ""
+msgstr "Garbitu sarrera"
 
 #: ../src/MainWindow.vala:143
 msgid "Subtract"
-msgstr ""
+msgstr "Kendu"
 
 #: ../src/MainWindow.vala:146
 msgid "Multiply"
-msgstr ""
+msgstr "Biderkatu"
 
 #: ../src/MainWindow.vala:149
 msgid "Divide"
-msgstr ""
+msgstr "Zatitu"
 
 #: ../src/MainWindow.vala:155
 msgid "Percentage"
-msgstr ""
+msgstr "Ehunekoa"
 
 #: ../src/MainWindow.vala:227
 msgid "Start Group"
-msgstr ""
+msgstr "Hasi taldea"
 
 #: ../src/MainWindow.vala:228
 msgid "End Group"
-msgstr ""
+msgstr "Bukatu taldea"
 
 #: ../src/MainWindow.vala:229
 msgid "Exponent"
-msgstr ""
+msgstr "Berretzailea"
 
 #: ../src/MainWindow.vala:231
 msgid "Root"
-msgstr ""
+msgstr "Erroa"
 
 #: ../src/MainWindow.vala:232
 msgid "Sine"
-msgstr ""
+msgstr "Sinua"
 
 #: ../src/MainWindow.vala:233
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Sinu hiperbolikoa"
 
 #: ../src/MainWindow.vala:234
 msgid "Cosine"
-msgstr ""
+msgstr "Kosinua"
 
 #: ../src/MainWindow.vala:235
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Kosinu hiperbolikoa"
 
 #: ../src/MainWindow.vala:236
 msgid "Tangent"
-msgstr ""
+msgstr "Tangentea"
 
 #: ../src/MainWindow.vala:237
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Tangente hiperbolikoa"
 
 #: ../src/MainWindow.vala:238
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
 #: ../src/MainWindow.vala:239
 msgid "Euler's Number"
-msgstr ""
+msgstr "Eulerren zenbakia"
 
 #: ../src/MainWindow.vala:379
 msgid "Hide extended functionality"
@@ -139,8 +139,8 @@ msgstr ""
 
 #: ../src/PantheonCalculator.vala:28
 msgid "Calculate in an elementary way."
-msgstr ""
+msgstr "Kalkulatu oinarrizko moduan"
 
 #: ../src/PantheonCalculator.vala:29
 msgid "About Calculator"
-msgstr ""
+msgstr "Kalkulagailuari buruz"
