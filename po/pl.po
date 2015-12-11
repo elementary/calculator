@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-16 00:15+0200\n"
-"PO-Revision-Date: 2015-12-08 10:12+0000\n"
+"PO-Revision-Date: 2015-12-09 10:27+0000\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-09 05:31+0000\n"
-"X-Generator: Launchpad (build 17862)\n"
+"X-Launchpad-Export-Date: 2015-12-11 05:43+0000\n"
+"X-Generator: Launchpad (build 17865)\n"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
 msgid "History"
@@ -87,11 +87,11 @@ msgstr "Procentowo"
 
 #: ../src/MainWindow.vala:227
 msgid "Start Group"
-msgstr ""
+msgstr "Otwórz nawias"
 
 #: ../src/MainWindow.vala:228
 msgid "End Group"
-msgstr ""
+msgstr "Zamknij nawias"
 
 #: ../src/MainWindow.vala:229
 msgid "Exponent"
@@ -99,7 +99,7 @@ msgstr "Spotęguj"
 
 #: ../src/MainWindow.vala:231
 msgid "Root"
-msgstr ""
+msgstr "Pierwiastek"
 
 #: ../src/MainWindow.vala:232
 msgid "Sine"
@@ -131,7 +131,7 @@ msgstr "Pi"
 
 #: ../src/MainWindow.vala:239
 msgid "Euler's Number"
-msgstr ""
+msgstr "Liczba Eulera"
 
 #: ../src/MainWindow.vala:379
 msgid "Hide extended functionality"
