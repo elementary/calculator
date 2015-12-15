@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-09-16 00:15+0200\n"
-"PO-Revision-Date: 2015-09-27 16:58+0000\n"
-"Last-Translator: mporten <Unknown>\n"
+"PO-Revision-Date: 2015-12-14 14:41+0000\n"
+"Last-Translator: dominik <joshi1999@yahoo.de>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-28 06:02+0000\n"
-"X-Generator: Launchpad (build 17754)\n"
+"X-Launchpad-Export-Date: 2015-12-15 05:24+0000\n"
+"X-Generator: Launchpad (build 17865)\n"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
 msgid "History"
@@ -92,11 +92,11 @@ msgstr "Prozent"
 
 #: ../src/MainWindow.vala:227
 msgid "Start Group"
-msgstr ""
+msgstr "Gruppen Anfang"
 
 #: ../src/MainWindow.vala:228
 msgid "End Group"
-msgstr ""
+msgstr "Gruppen Ende"
 
 #: ../src/MainWindow.vala:229
 msgid "Exponent"
