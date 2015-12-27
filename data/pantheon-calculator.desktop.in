@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Calculator
-Comment=Calculate in an elementary way.
+Comment=Solve simple equations
 Exec=pantheon-calculator %U
 Icon=accessories-calculator
 Terminal=false
