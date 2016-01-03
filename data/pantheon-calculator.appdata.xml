@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2015 elementary, LLC <contact@elementary.io> -->
-<application>
-  <id type="desktop">pantheon-calculator.desktop</id>
-  <metadata_license>CC0</metadata_license>
-  <project_group>elementary</project_group>
-  <project_license>GPL-3.0+</project_license>
-  <name>Calculator</name>
-  <icon type="stock">accessories-calculator</icon>
-  <summary>A simple calculator</summary>
-  <description>
-    <p>
-      Calculator is basically calculator app.
-    </p>
-  </description>
-  <url type="homepage">http://elementary.io/</url>
-  <updatecontact>contact_at_elementary.io</updatecontact>
-</application>
+<component type="desktop">
+    <id>pantheon-calculator.desktop</id>
+    <metadata_license>CC0-1.0</metadata_license>
+    <project_group>elementary</project_group>
+    <project_license>GPL-3.0+</project_license>
+    <name>Calculator</name>
+    <summary>Solve simple equations</summary>
+    <description>
+        <p>
+            A simple calculator for everyday use. It supports basic and some
+            scientific calculations.
+        </p>
+    </description>
+    <provides>
+        <binary>pantheon-calculator</binary>
+    ​</provides>
+    <developer_name>elementary LLC.</developer_name>
+    <url type="homepage">https://elementary.io/</url>
+    <url type="bugtracker">https://bugs.launchpad.net/pantheon-calculator</url>
+    <url type="donation">https://elementary.io/get-involved#funding</url>
+    <url type="help">https://elementaryos.stackexchange.com/questions/tagged/calculator</url>
+    <update_contact>contact_at_elementary.io</update_contact>
+</component>
