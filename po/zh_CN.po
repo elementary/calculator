@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-16 00:15+0200\n"
-"PO-Revision-Date: 2015-11-25 07:44+0000\n"
+"PO-Revision-Date: 2016-01-26 13:18+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-11-26 05:22+0000\n"
-"X-Generator: Launchpad (build 17850)\n"
+"X-Launchpad-Export-Date: 2016-01-27 05:22+0000\n"
+"X-Generator: Launchpad (build 17902)\n"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
 msgid "History"
@@ -18,7 +18,7 @@ msgstr "历史"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
-msgstr "添加的项："
+msgstr "添加的值："
 
 #: ../src/HistoryDialog.vala:88
 msgid "Result"
@@ -55,7 +55,7 @@ msgstr "高级"
 
 #: ../src/MainWindow.vala:131
 msgid "Calculate Result"
-msgstr "计算结果"
+msgstr "结果"
 
 #: ../src/MainWindow.vala:134
 msgid "Add last result"
@@ -87,11 +87,11 @@ msgstr "百分数"
 
 #: ../src/MainWindow.vala:227
 msgid "Start Group"
-msgstr "左括号"
+msgstr "左括弧"
 
 #: ../src/MainWindow.vala:228
 msgid "End Group"
-msgstr "右括号"
+msgstr "右括弧"
 
 #: ../src/MainWindow.vala:229
 msgid "Exponent"
@@ -135,7 +135,7 @@ msgstr "欧拉数"
 
 #: ../src/MainWindow.vala:379
 msgid "Hide extended functionality"
-msgstr "隐藏高级功能"
+msgstr "简单"
 
 #: ../src/PantheonCalculator.vala:28
 msgid "Calculate in an elementary way."
