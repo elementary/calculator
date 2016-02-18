@@ -8,9 +8,8 @@ Type=Application
 StartupNotify=true
 Categories=GNOME;GTK;Utility;Calculator;
 X-GNOME-Gettext-Domain=pantheon-calculator
+Actions=AboutDialog;
 
-X-Ayatana-Desktop-Shortcuts=AboutDialog
-
-[AboutDialog Shortcut Group]
+[Desktop Action AboutDialog]
 Name=About Calculator
 Exec=pantheon-calculator --about
