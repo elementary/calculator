@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-16 00:15+0200\n"
-"PO-Revision-Date: 2015-02-07 21:38+0000\n"
+"PO-Revision-Date: 2016-03-04 17:51+0000\n"
 "Last-Translator: Yvo Marques <macghivo@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:32+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2016-03-05 06:05+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
 msgid "History"
@@ -38,11 +38,11 @@ msgstr "Dobäisetzen"
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
-msgstr "'%s' Aas Inkorrekt"
+msgstr "'%s' aas Inkorrekt."
 
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
-msgstr "'%s' Aas onbekannt"
+msgstr "'%s' aas onbekannt."
 
 #: ../src/MainWindow.vala:75 ../src/PantheonCalculator.vala:25
 #: ../src/PantheonCalculator.vala:26
