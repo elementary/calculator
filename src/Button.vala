@@ -21,7 +21,7 @@
 
 public class PantheonCalculator.Button : Gtk.Button {
     private const int WIDTH = 65;
-    private const int HEIGHT = 45;
+    private const int HEIGHT = 43;
     public string function = null;
 
     public Button (string label, string? description = null) {
@@ -29,11 +29,6 @@ public class PantheonCalculator.Button : Gtk.Button {
         var lbl = new Gtk.Label (label);
         lbl.use_markup = true;
         image = lbl;
-        tooltip_text = description;
-    }
-
-    public Button.from_icon_name (string icon_name, string? description = null) {
-        image = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.BUTTON);
         tooltip_text = description;
     }
 
