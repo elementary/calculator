@@ -75,19 +75,17 @@ namespace PantheonCalculator {
             headerbar.set_title (_("Calculator"));
             set_titlebar (headerbar); 
 
-            extended_img_1 = new Gtk.Image.from_icon_name ("pane-hide-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
-            extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
+            extended_img_1 = new Gtk.Image.from_icon_name ("pane-hide-symbolic", Gtk.IconSize.MENU);
+            extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic", Gtk.IconSize.MENU);
 
             button_extended = new Gtk.ToggleButton ();
             button_extended.image = extended_img_1;
             button_extended.tooltip_text = _("Show extended functionality");
-            button_extended.relief = Gtk.ReliefStyle.NONE;
             button_extended.toggled.connect (toggle_grid);
 
             button_history = new Gtk.Button ();
-            button_history.image = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.LARGE_TOOLBAR);
+            button_history.image = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.MENU);
             button_history.tooltip_text = _("History");
-            button_history.relief = Gtk.ReliefStyle.NONE;
             button_history.sensitive = false;
             button_history.clicked.connect (show_history);
 
@@ -97,11 +95,7 @@ namespace PantheonCalculator {
 
         private void build_ui () {
             main_grid = new Gtk.Grid ();
-            main_grid.orientation = Gtk.Orientation.VERTICAL;
-            main_grid.row_spacing = 3;
             main_grid.margin = 6;
-            main_grid.expand = true;
-            main_grid.halign = Gtk.Align.CENTER;
 
             build_basic_ui ();
             build_extended_ui ();
@@ -125,6 +119,7 @@ namespace PantheonCalculator {
 
         private void build_basic_ui () {
             entry = new Gtk.Entry ();
+            entry.set_alignment (1);
             entry.set_text (settings.get_string ("entry-content"));
             entry.get_style_context ().add_class ("h2");
 
@@ -133,7 +128,7 @@ namespace PantheonCalculator {
             button_calc.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
             button_ans = new Button ("ANS", _("Add last result"));
             button_ans.sensitive = false;
-            button_undo = new Button.from_icon_name ("go-previous-symbolic", _("Backspace"));
+            button_undo = new Button ("Del", _("Backspace"));
             button_del = new Button ("C", _("Clear entry"));
             button_del.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
@@ -166,37 +161,36 @@ namespace PantheonCalculator {
             var button_9 = new Button ("9");
 
             var basic_grid = new Gtk.Grid ();
-            basic_grid.column_spacing = 3;
-            basic_grid.row_spacing = 3;
-            basic_grid.valign = Gtk.Align.END;
-            basic_grid.attach (button_del,     0, 0, 1, 1);
-            basic_grid.attach (button_undo,    1, 0, 1, 1);
-            basic_grid.attach (button_percent, 2, 0, 1, 1);
-            basic_grid.attach (button_div,     3, 0, 1, 1);
+            basic_grid.column_spacing = 6;
+            basic_grid.row_spacing = 6;
+            basic_grid.attach (entry, 0, 0, 4, 1);
+            basic_grid.attach (button_del,     0, 1, 1, 1);
+            basic_grid.attach (button_undo,    1, 1, 1, 1);
+            basic_grid.attach (button_percent, 2, 1, 1, 1);
+            basic_grid.attach (button_div,     3, 1, 1, 1);
 
-            basic_grid.attach (button_7,    0, 1, 1, 1);
-            basic_grid.attach (button_8,    1, 1, 1, 1);
-            basic_grid.attach (button_9,    2, 1, 1, 1);
-            basic_grid.attach (button_mult, 3, 1, 1, 1);
+            basic_grid.attach (button_7,    0, 2, 1, 1);
+            basic_grid.attach (button_8,    1, 2, 1, 1);
+            basic_grid.attach (button_9,    2, 2, 1, 1);
+            basic_grid.attach (button_mult, 3, 2, 1, 1);
 
-            basic_grid.attach (button_4,    0, 2, 1, 1);
-            basic_grid.attach (button_5,    1, 2, 1, 1);
-            basic_grid.attach (button_6,    2, 2, 1, 1);
-            basic_grid.attach (button_sub,  3, 2, 1, 1);
+            basic_grid.attach (button_4,    0, 3, 1, 1);
+            basic_grid.attach (button_5,    1, 3, 1, 1);
+            basic_grid.attach (button_6,    2, 3, 1, 1);
+            basic_grid.attach (button_sub,  3, 3, 1, 1);
 
-            basic_grid.attach (button_1,    0, 3, 1, 1);
-            basic_grid.attach (button_2,    1, 3, 1, 1);
-            basic_grid.attach (button_3,    2, 3, 1, 1);
-            basic_grid.attach (button_add,  3, 3, 1, 1);
+            basic_grid.attach (button_1,    0, 4, 1, 1);
+            basic_grid.attach (button_2,    1, 4, 1, 1);
+            basic_grid.attach (button_3,    2, 4, 1, 1);
+            basic_grid.attach (button_add,  3, 4, 1, 1);
 
-            basic_grid.attach (button_0,     0, 4, 1, 1);
-            basic_grid.attach (button_point, 1, 4, 1, 1);
-            basic_grid.attach (button_ans,   2, 4, 1, 1);
-            basic_grid.attach (button_calc,  3, 4, 1, 1);
+            basic_grid.attach (button_0,     0, 5, 1, 1);
+            basic_grid.attach (button_point, 1, 5, 1, 1);
+            basic_grid.attach (button_ans,   2, 5, 1, 1);
+            basic_grid.attach (button_calc,  3, 5, 1, 1);
 
             //attach all widgets
-            main_grid.attach (entry, 0, 0, 1, 1);
-            main_grid.attach (basic_grid, 0, 1, 1, 1);
+            main_grid.add (basic_grid);
 
             entry.changed.connect (remove_error);
             entry.activate.connect (button_calc_clicked);
@@ -239,9 +233,9 @@ namespace PantheonCalculator {
             var button_e = new Button ("e", _("Euler's Number"));
 
             var extended_grid = new Gtk.Grid ();
-            extended_grid.margin_start = 3;
-            extended_grid.column_spacing = 3;
-            extended_grid.row_spacing = 3;
+            extended_grid.margin_start = 6;
+            extended_grid.column_spacing = 6;
+            extended_grid.row_spacing = 6;
             extended_grid.valign = Gtk.Align.END;
             extended_grid.attach (button_par_left,  0, 0, 1, 1);
             extended_grid.attach (button_par_right, 1, 0, 1, 1);
@@ -260,7 +254,7 @@ namespace PantheonCalculator {
             extended_revealer.set_transition_type (Gtk.RevealerTransitionType.SLIDE_LEFT);
             extended_revealer.show_all ();
             extended_revealer.add (extended_grid);
-            main_grid.attach (extended_revealer, 1, 0, 1, 2);
+            main_grid.add (extended_revealer);
 
             button_pi.clicked.connect (() => {regular_button_clicked (button_pi.function);});
             button_e.clicked.connect (() => {regular_button_clicked (button_e.function);});
