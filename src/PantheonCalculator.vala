@@ -18,16 +18,6 @@
 
 namespace PantheonCalculator { 
     public class PantheonCalculatorApp : Granite.Application {
-        /**
-         * Translatable launcher (.desktop) strings to be added to template (.pot) file.
-         * These strings should reflect any changes in these launcher keys in .desktop file
-         */
-        public const string CALCULATOR = N_("Calculator");
-        public const string PROGRAM_NAME = N_("Calculator");
-
-        public const string COMMENT = N_("Calculate in an elementary way.");
-        public const string ABOUT_STOCK = N_("About Calculator");
-
         construct {
             application_id = "org.pantheon.calculator";
             flags = ApplicationFlags.FLAGS_NONE;
