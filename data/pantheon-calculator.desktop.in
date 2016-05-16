@@ -1,15 +1,14 @@
 [Desktop Entry]
-Name=Calculator
-Comment=Solve simple equations
+_Name=Calculator
+_Comment=Solve simple equations
 Exec=pantheon-calculator %U
 Icon=accessories-calculator
 Terminal=false
 Type=Application
 StartupNotify=true
 Categories=GNOME;GTK;Utility;Calculator;
-X-GNOME-Gettext-Domain=pantheon-calculator
 Actions=AboutDialog;
 
 [Desktop Action AboutDialog]
-Name=About Calculator
+_Name=About Calculator
 Exec=pantheon-calculator --about
