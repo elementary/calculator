@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-16 00:15+0200\n"
+"POT-Creation-Date: 2016-05-04 19:19+0400\n"
 "PO-Revision-Date: 2015-04-11 11:00+0000\n"
 "Last-Translator: Sandeep Pinge <spinge@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-15 05:47+0000\n"
-"X-Generator: Launchpad (build 17939)\n"
+"X-Launchpad-Export-Date: 2016-05-17 05:49+0000\n"
+"X-Generator: Launchpad (build 18025)\n"
 
-#: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:89
+#: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:88
 msgid "History"
 msgstr "इतिहास"
 
@@ -32,9 +32,101 @@ msgstr "सूत्रीकरण"
 msgid "Close"
 msgstr "बंद करा"
 
-#: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:140
+#: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:135
 msgid "Add"
 msgstr "जोडा"
+
+#: ../src/MainWindow.vala:75
+msgid "Calculator"
+msgstr "गणनयंत्र"
+
+#: ../src/MainWindow.vala:83 ../src/MainWindow.vala:378
+msgid "Show extended functionality"
+msgstr "विस्तारित कार्यक्षमतेला दर्शवा"
+
+#: ../src/MainWindow.vala:126
+msgid "Calculate Result"
+msgstr ""
+
+#: ../src/MainWindow.vala:129
+msgid "Add last result"
+msgstr "गेला निकाल जोडा"
+
+#: ../src/MainWindow.vala:131
+msgid "Backspace"
+msgstr "बॅकस्पेस"
+
+#: ../src/MainWindow.vala:132
+msgid "Clear entry"
+msgstr "नोंद खोडा"
+
+#: ../src/MainWindow.vala:138
+msgid "Subtract"
+msgstr ""
+
+#: ../src/MainWindow.vala:141
+msgid "Multiply"
+msgstr ""
+
+#: ../src/MainWindow.vala:144
+msgid "Divide"
+msgstr ""
+
+#: ../src/MainWindow.vala:150
+msgid "Percentage"
+msgstr ""
+
+#: ../src/MainWindow.vala:221
+msgid "Start Group"
+msgstr ""
+
+#: ../src/MainWindow.vala:222
+msgid "End Group"
+msgstr ""
+
+#: ../src/MainWindow.vala:223
+msgid "Exponent"
+msgstr ""
+
+#: ../src/MainWindow.vala:225
+msgid "Root"
+msgstr ""
+
+#: ../src/MainWindow.vala:226
+msgid "Sine"
+msgstr ""
+
+#: ../src/MainWindow.vala:227
+msgid "Hyperbolic Sine"
+msgstr ""
+
+#: ../src/MainWindow.vala:228
+msgid "Cosine"
+msgstr ""
+
+#: ../src/MainWindow.vala:229
+msgid "Hyperbolic Cosine"
+msgstr ""
+
+#: ../src/MainWindow.vala:230
+msgid "Tangent"
+msgstr ""
+
+#: ../src/MainWindow.vala:231
+msgid "Hyperbolic Tangent"
+msgstr ""
+
+#: ../src/MainWindow.vala:232
+msgid "Pi"
+msgstr ""
+
+#: ../src/MainWindow.vala:233
+msgid "Euler's Number"
+msgstr ""
+
+#: ../src/MainWindow.vala:373
+msgid "Hide extended functionality"
+msgstr "विस्तारित कार्यक्षमतेला लपवा"
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
@@ -43,104 +135,3 @@ msgstr "'%s' अवैध आहे."
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
 msgstr "'%s' अज्ञात आहे."
-
-#: ../src/MainWindow.vala:75 ../src/PantheonCalculator.vala:25
-#: ../src/PantheonCalculator.vala:26
-msgid "Calculator"
-msgstr "गणनयंत्र"
-
-#: ../src/MainWindow.vala:83 ../src/MainWindow.vala:384
-msgid "Show extended functionality"
-msgstr "विस्तारित कार्यक्षमतेला दर्शवा"
-
-#: ../src/MainWindow.vala:131
-msgid "Calculate Result"
-msgstr ""
-
-#: ../src/MainWindow.vala:134
-msgid "Add last result"
-msgstr "गेला निकाल जोडा"
-
-#: ../src/MainWindow.vala:136
-msgid "Backspace"
-msgstr "बॅकस्पेस"
-
-#: ../src/MainWindow.vala:137
-msgid "Clear entry"
-msgstr "नोंद खोडा"
-
-#: ../src/MainWindow.vala:143
-msgid "Subtract"
-msgstr ""
-
-#: ../src/MainWindow.vala:146
-msgid "Multiply"
-msgstr ""
-
-#: ../src/MainWindow.vala:149
-msgid "Divide"
-msgstr ""
-
-#: ../src/MainWindow.vala:155
-msgid "Percentage"
-msgstr ""
-
-#: ../src/MainWindow.vala:227
-msgid "Start Group"
-msgstr ""
-
-#: ../src/MainWindow.vala:228
-msgid "End Group"
-msgstr ""
-
-#: ../src/MainWindow.vala:229
-msgid "Exponent"
-msgstr ""
-
-#: ../src/MainWindow.vala:231
-msgid "Root"
-msgstr ""
-
-#: ../src/MainWindow.vala:232
-msgid "Sine"
-msgstr ""
-
-#: ../src/MainWindow.vala:233
-msgid "Hyperbolic Sine"
-msgstr ""
-
-#: ../src/MainWindow.vala:234
-msgid "Cosine"
-msgstr ""
-
-#: ../src/MainWindow.vala:235
-msgid "Hyperbolic Cosine"
-msgstr ""
-
-#: ../src/MainWindow.vala:236
-msgid "Tangent"
-msgstr ""
-
-#: ../src/MainWindow.vala:237
-msgid "Hyperbolic Tangent"
-msgstr ""
-
-#: ../src/MainWindow.vala:238
-msgid "Pi"
-msgstr ""
-
-#: ../src/MainWindow.vala:239
-msgid "Euler's Number"
-msgstr ""
-
-#: ../src/MainWindow.vala:379
-msgid "Hide extended functionality"
-msgstr "विस्तारित कार्यक्षमतेला लपवा"
-
-#: ../src/PantheonCalculator.vala:28
-msgid "Calculate in an elementary way."
-msgstr "प्राथमिक प्रकारे मोजा."
-
-#: ../src/PantheonCalculator.vala:29
-msgid "About Calculator"
-msgstr "गणनयंत्र बद्दल"
