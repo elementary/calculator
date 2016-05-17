@@ -22,8 +22,8 @@ namespace PantheonCalculator {
             application_id = "org.pantheon.calculator";
             flags = ApplicationFlags.FLAGS_NONE;
 
-            program_name = PROGRAM_NAME;
-            app_years = "2014-2015";
+            program_name = _("Calculator");
+            app_years = "2014-2016";
             app_icon = "accessories-calculator";
 
             build_data_dir = Build.DATADIR;
