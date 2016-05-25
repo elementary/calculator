@@ -1,4 +1,4 @@
-configure_file (pantheon-calculator.desktop.in ${CMAKE_CURRENT_BINARY_DIR}/pantheon-calculator.desktop)
+configure_file (pantheon-calculator.desktop.in.in ${CMAKE_CURRENT_BINARY_DIR}/pantheon-calculator.desktop.in)
 configure_file_translation (${CMAKE_CURRENT_BINARY_DIR}/pantheon-calculator.desktop.in ${CMAKE_CURRENT_BINARY_DIR}/pantheon-calculator.desktop ${CMAKE_SOURCE_DIR}/po/)
 configure_file_translation (${CMAKE_CURRENT_SOURCE_DIR}/pantheon-calculator.appdata.xml.in ${CMAKE_CURRENT_BINARY_DIR}/pantheon-calculator.appdata.xml ${CMAKE_SOURCE_DIR}/po/)
 install (FILES ${CMAKE_CURRENT_BINARY_DIR}/pantheon-calculator.desktop DESTINATION share/applications)
