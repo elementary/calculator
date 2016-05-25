@@ -60,7 +60,7 @@ namespace PantheonCalculator.Core {
 
                     type = scanner.next (out start, out len);
                     for (ssize_t i = start; i < (start + len); i++) {
-                        if (scanner.uc[i] == scanner.decimal_symbol)
+                        if (scanner.uc[i] == scanner.decimal_symbol || scanner.uc[i] == '.')
                             substr += ".";
                         else
                             substr += scanner.uc[i].to_string ();
@@ -113,7 +113,7 @@ namespace PantheonCalculator.Core {
 
         private TokenType next (out ssize_t start, out ssize_t len) throws SCANNER_ERROR {
             start = pos;
-            if (uc[pos] == this.decimal_symbol) {
+            if (uc[pos] == this.decimal_symbol || this.uc[pos] == '.') {
                 pos++;
                 while (uc[pos].isdigit () && pos < uc.length)
                     pos++;
@@ -122,7 +122,7 @@ namespace PantheonCalculator.Core {
             } else if (uc[pos].isdigit ()) {
                 while (uc[pos].isdigit () && pos < uc.length)
                     pos++;
-                if (uc[pos] == this.decimal_symbol)
+                if (uc[pos] == this.decimal_symbol || this.uc[pos] == '.')
                     pos++;
                 while (uc[pos].isdigit () && pos < uc.length)
                     pos++;
