@@ -4,7 +4,7 @@ add_translations_catalog (${GETTEXT_PACKAGE}
     ../src
     ../src/widgets
     DESKTOP_FILES
-        ../data/pantheon-calculator.desktop.in
+        ../data/pantheon-calculator.desktop.in.in
     APPDATA_FILES
         ../data/pantheon-calculator.appdata.xml.in
 )

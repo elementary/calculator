@@ -39,6 +39,7 @@ namespace PantheonCalculator {
             translate_url = "https://translations.launchpad.net/pantheon-calculator";
             about_authors = { "Marvin Beckers <beckersmarvin@gmail.com>" };
             about_comments = "";
+            about_translators = _("translator-credits");
             about_license_type = Gtk.License.GPL_3_0;
 
             Intl.setlocale (LocaleCategory.ALL, "");
