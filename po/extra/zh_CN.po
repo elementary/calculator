@@ -1,0 +1,32 @@
+# Chinese (Simplified) translation for pantheon-calculator
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the pantheon-calculator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-calculator\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-05-26 00:08+0200\n"
+"PO-Revision-Date: 2016-05-31 10:15+0000\n"
+"Last-Translator: colindemian <dengmengpc@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-06-01 05:45+0000\n"
+"X-Generator: Launchpad (build 18053)\n"
+
+msgid "Calculator"
+msgstr "计算器"
+
+msgid "Solve simple equations"
+msgstr "解决简单的公式计算"
+
+msgid "About Calculator"
+msgstr "关于计算器"
+
+msgid ""
+"A simple calculator for everyday use. It supports basic and some scientific "
+"calculations."
+msgstr "简单易用的计算器，支持常规计算和部分科学计算。"
