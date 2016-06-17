@@ -3,22 +3,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-26 00:08+0200\n"
-"PO-Revision-Date: 2016-05-27 15:29+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
+"PO-Revision-Date: 2016-06-16 17:36+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-28 05:27+0000\n"
-"X-Generator: Launchpad (build 18053)\n"
+"X-Launchpad-Export-Date: 2016-06-17 05:33+0000\n"
+"X-Generator: Launchpad (build 18097)\n"
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
-msgstr "'%s' 无效。"
+msgstr "'%s' 无效"
 
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
-msgstr "'%s' 未知。"
+msgstr "'%s' 未知"
 
 #: ../src/MainWindow.vala:75 ../src/PantheonCalculator.vala:25
 msgid "Calculator"
@@ -34,7 +34,7 @@ msgstr "历史"
 
 #: ../src/MainWindow.vala:126
 msgid "Calculate Result"
-msgstr "结果"
+msgstr "等于"
 
 #: ../src/MainWindow.vala:129
 msgid "Add last result"
