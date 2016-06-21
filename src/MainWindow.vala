@@ -61,11 +61,9 @@ namespace PantheonCalculator {
             build_titlebar ();
             build_ui ();
 
-            this.destroy.connect (() => {
-                debug ("saving settings to gsettings");
-                settings.set_boolean ("extended-shown", button_extended.get_active ());
-                settings.set_string ("entry-content", entry.get_text ());
-            });
+            settings.bind ("extended-shown", button_extended, "active", SettingsBindFlags.DEFAULT);
+            settings.bind ("entry-content", entry, "text", SettingsBindFlags.DEFAULT);
+
             this.key_press_event.connect (key_pressed);
         }
 
