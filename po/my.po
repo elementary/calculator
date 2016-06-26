@@ -3,139 +3,141 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-26 00:08+0200\n"
-"PO-Revision-Date: 2016-05-25 22:12+0000\n"
-"Last-Translator: Launchpad Translations Administrators <Unknown>\n"
+"PO-Revision-Date: 2016-06-24 03:50+0000\n"
+"Last-Translator: Bone Pyae Sone <bone.burma@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-26 05:34+0000\n"
-"X-Generator: Launchpad (build 18053)\n"
+"X-Launchpad-Export-Date: 2016-06-26 05:49+0000\n"
+"X-Generator: Launchpad (build 18111)\n"
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' မှာ မရပါ"
 
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' ကို မသိရှိပါ"
 
 #: ../src/MainWindow.vala:75 ../src/PantheonCalculator.vala:25
 msgid "Calculator"
-msgstr ""
+msgstr "ဂဏန်းတွက်စက်"
 
 #: ../src/MainWindow.vala:83 ../src/MainWindow.vala:378
 msgid "Show extended functionality"
-msgstr ""
+msgstr "ထပ်တိုးထားသည့် ဖန်ရှင်များပြ"
 
 #: ../src/MainWindow.vala:88 ../src/HistoryDialog.vala:35
 msgid "History"
-msgstr ""
+msgstr "မှတ်တမ်း"
 
 #: ../src/MainWindow.vala:126
 msgid "Calculate Result"
-msgstr ""
+msgstr "အဖြေတွက်"
 
 #: ../src/MainWindow.vala:129
 msgid "Add last result"
-msgstr ""
+msgstr "နောက်ဆုံးအဖြေကို ထပ်ထည့်"
 
 #: ../src/MainWindow.vala:131
 msgid "Backspace"
-msgstr ""
+msgstr "Backspace"
 
 #: ../src/MainWindow.vala:132
 msgid "Clear entry"
-msgstr ""
+msgstr "အားလုံးဖျက်"
 
 #: ../src/MainWindow.vala:135 ../src/HistoryDialog.vala:99
 msgid "Add"
-msgstr ""
+msgstr "ပေါင်းထည့်"
 
 #: ../src/MainWindow.vala:138
 msgid "Subtract"
-msgstr ""
+msgstr "အနှုတ်"
 
 #: ../src/MainWindow.vala:141
 msgid "Multiply"
-msgstr ""
+msgstr "အမြှောက်"
 
 #: ../src/MainWindow.vala:144
 msgid "Divide"
-msgstr ""
+msgstr "အစား"
 
 #: ../src/MainWindow.vala:150
 msgid "Percentage"
-msgstr ""
+msgstr "ရာခိုင်နူန်း"
 
 #: ../src/MainWindow.vala:221
 msgid "Start Group"
-msgstr ""
+msgstr "အဖွဲ့ဖွဲ့"
 
 #: ../src/MainWindow.vala:222
 msgid "End Group"
-msgstr ""
+msgstr "အဖွဲ့ပိတ်"
 
 #: ../src/MainWindow.vala:223
 msgid "Exponent"
-msgstr ""
+msgstr "ထပ်ကိန်း"
 
 #: ../src/MainWindow.vala:225
 msgid "Root"
-msgstr ""
+msgstr "ကိန်းရင်း"
 
 #: ../src/MainWindow.vala:226
 msgid "Sine"
-msgstr ""
+msgstr "Sine"
 
 #: ../src/MainWindow.vala:227
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Hyperbolic Sine"
 
 #: ../src/MainWindow.vala:228
 msgid "Cosine"
-msgstr ""
+msgstr "Cosine"
 
 #: ../src/MainWindow.vala:229
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Hyperbolic Cosine"
 
 #: ../src/MainWindow.vala:230
 msgid "Tangent"
-msgstr ""
+msgstr "Tangent"
 
 #: ../src/MainWindow.vala:231
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Hyperbolic Tangent"
 
 #: ../src/MainWindow.vala:232
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
 #: ../src/MainWindow.vala:233
 msgid "Euler's Number"
-msgstr ""
+msgstr "Euler's နံပါတ်"
 
 #: ../src/MainWindow.vala:373
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "ထပ်တိုးဖန်ရှင်"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
-msgstr ""
+msgstr "ထပ်ပေါင်းမည့်တန်ဖိုး"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Result"
-msgstr ""
+msgstr "ရလဒ်"
 
 #: ../src/HistoryDialog.vala:92
 msgid "Expression"
-msgstr ""
+msgstr "ထုတ်ဖော်ချက်"
 
 #: ../src/HistoryDialog.vala:98
 msgid "Close"
-msgstr ""
+msgstr "ပိတ်"
 
 #: ../src/PantheonCalculator.vala:42
 msgid "translator-credits"
 msgstr ""
+"Launchpad Contributions:\n"
+"  Bone Pyae Sone https://launchpad.net/~bonepyaesone"
