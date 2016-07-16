@@ -22,6 +22,8 @@ namespace PantheonCalculator {
             application_id = "org.pantheon.calculator";
             flags = ApplicationFlags.FLAGS_NONE;
 
+            Intl.setlocale (LocaleCategory.ALL, "");
+
             program_name = _("Calculator");
             app_years = "2014-2016";
             app_icon = "accessories-calculator";
@@ -41,8 +43,6 @@ namespace PantheonCalculator {
             about_comments = "";
             about_translators = _("translator-credits");
             about_license_type = Gtk.License.GPL_3_0;
-
-            Intl.setlocale (LocaleCategory.ALL, "");
         }
 
         public override void activate () {
