@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-26 00:08+0200\n"
-"PO-Revision-Date: 2016-05-27 15:28+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
+"PO-Revision-Date: 2016-07-22 14:02+0000\n"
+"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-28 05:27+0000\n"
-"X-Generator: Launchpad (build 18053)\n"
+"X-Launchpad-Export-Date: 2016-07-23 05:29+0000\n"
+"X-Generator: Launchpad (build 18147)\n"
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
@@ -34,7 +34,7 @@ msgstr "Historik"
 
 #: ../src/MainWindow.vala:126
 msgid "Calculate Result"
-msgstr ""
+msgstr "Beräkna resultat"
 
 #: ../src/MainWindow.vala:129
 msgid "Add last result"
@@ -54,67 +54,67 @@ msgstr "Lägg till"
 
 #: ../src/MainWindow.vala:138
 msgid "Subtract"
-msgstr ""
+msgstr "Subtrahera"
 
 #: ../src/MainWindow.vala:141
 msgid "Multiply"
-msgstr ""
+msgstr "Multiplicera"
 
 #: ../src/MainWindow.vala:144
 msgid "Divide"
-msgstr ""
+msgstr "Dividera"
 
 #: ../src/MainWindow.vala:150
 msgid "Percentage"
-msgstr ""
+msgstr "Procent"
 
 #: ../src/MainWindow.vala:221
 msgid "Start Group"
-msgstr ""
+msgstr "Börja gruppering"
 
 #: ../src/MainWindow.vala:222
 msgid "End Group"
-msgstr ""
+msgstr "Avsluta gruppering"
 
 #: ../src/MainWindow.vala:223
 msgid "Exponent"
-msgstr ""
+msgstr "Exponent"
 
 #: ../src/MainWindow.vala:225
 msgid "Root"
-msgstr ""
+msgstr "Kvadratrot"
 
 #: ../src/MainWindow.vala:226
 msgid "Sine"
-msgstr ""
+msgstr "Sinus"
 
 #: ../src/MainWindow.vala:227
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Hyperbolisk sinus"
 
 #: ../src/MainWindow.vala:228
 msgid "Cosine"
-msgstr ""
+msgstr "Cosinus"
 
 #: ../src/MainWindow.vala:229
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Hyperbolisk cosinus"
 
 #: ../src/MainWindow.vala:230
 msgid "Tangent"
-msgstr ""
+msgstr "Tangens"
 
 #: ../src/MainWindow.vala:231
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Hyperbolisk tangens"
 
 #: ../src/MainWindow.vala:232
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
 #: ../src/MainWindow.vala:233
 msgid "Euler's Number"
-msgstr ""
+msgstr "Eulers tal"
 
 #: ../src/MainWindow.vala:373
 msgid "Hide extended functionality"
