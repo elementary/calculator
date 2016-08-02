@@ -9,12 +9,12 @@
     <description>
         <_p>
             A simple calculator for everyday use. It supports basic and some
-            scientific calculations.
+            scientific calculations including trigonometry functions, sin, cos, and tan.
         </_p>
     </description>
     <provides>
         <binary>pantheon-calculator</binary>
-    ​</provides>
+    </provides>
     <developer_name>elementary LLC.</developer_name>
     <url type="homepage">https://elementary.io/</url>
     <url type="bugtracker">https://bugs.launchpad.net/pantheon-calculator</url>

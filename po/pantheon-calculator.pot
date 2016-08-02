@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-26 00:08+0200\n"
+"POT-Creation-Date: 2016-08-02 13:40-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,112 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/Core/Scanner.vala:80
-msgid "'%s' is invalid."
-msgstr ""
-
-#: ../src/Core/Scanner.vala:164
-msgid "'%s' is unknown."
-msgstr ""
-
-#: ../src/MainWindow.vala:75 ../src/PantheonCalculator.vala:25
+#: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
 msgstr ""
 
-#: ../src/MainWindow.vala:83 ../src/MainWindow.vala:378
-msgid "Show extended functionality"
+#: ../src/PantheonCalculator.vala:44
+msgid "translator-credits"
 msgstr ""
 
-#: ../src/MainWindow.vala:88 ../src/HistoryDialog.vala:35
+#: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:86
 msgid "History"
-msgstr ""
-
-#: ../src/MainWindow.vala:126
-msgid "Calculate Result"
-msgstr ""
-
-#: ../src/MainWindow.vala:129
-msgid "Add last result"
-msgstr ""
-
-#: ../src/MainWindow.vala:131
-msgid "Backspace"
-msgstr ""
-
-#: ../src/MainWindow.vala:132
-msgid "Clear entry"
-msgstr ""
-
-#: ../src/MainWindow.vala:135 ../src/HistoryDialog.vala:99
-msgid "Add"
-msgstr ""
-
-#: ../src/MainWindow.vala:138
-msgid "Subtract"
-msgstr ""
-
-#: ../src/MainWindow.vala:141
-msgid "Multiply"
-msgstr ""
-
-#: ../src/MainWindow.vala:144
-msgid "Divide"
-msgstr ""
-
-#: ../src/MainWindow.vala:150
-msgid "Percentage"
-msgstr ""
-
-#: ../src/MainWindow.vala:221
-msgid "Start Group"
-msgstr ""
-
-#: ../src/MainWindow.vala:222
-msgid "End Group"
-msgstr ""
-
-#: ../src/MainWindow.vala:223
-msgid "Exponent"
-msgstr ""
-
-#: ../src/MainWindow.vala:225
-msgid "Root"
-msgstr ""
-
-#: ../src/MainWindow.vala:226
-msgid "Sine"
-msgstr ""
-
-#: ../src/MainWindow.vala:227
-msgid "Hyperbolic Sine"
-msgstr ""
-
-#: ../src/MainWindow.vala:228
-msgid "Cosine"
-msgstr ""
-
-#: ../src/MainWindow.vala:229
-msgid "Hyperbolic Cosine"
-msgstr ""
-
-#: ../src/MainWindow.vala:230
-msgid "Tangent"
-msgstr ""
-
-#: ../src/MainWindow.vala:231
-msgid "Hyperbolic Tangent"
-msgstr ""
-
-#: ../src/MainWindow.vala:232
-msgid "Pi"
-msgstr ""
-
-#: ../src/MainWindow.vala:233
-msgid "Euler's Number"
-msgstr ""
-
-#: ../src/MainWindow.vala:373
-msgid "Hide extended functionality"
 msgstr ""
 
 #: ../src/HistoryDialog.vala:84
@@ -141,6 +45,102 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: ../src/PantheonCalculator.vala:42
-msgid "translator-credits"
+#: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:133
+msgid "Add"
+msgstr ""
+
+#: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
+msgid "Show extended functionality"
+msgstr ""
+
+#: ../src/MainWindow.vala:124
+msgid "Calculate Result"
+msgstr ""
+
+#: ../src/MainWindow.vala:127
+msgid "Add last result"
+msgstr ""
+
+#: ../src/MainWindow.vala:129
+msgid "Backspace"
+msgstr ""
+
+#: ../src/MainWindow.vala:130
+msgid "Clear entry"
+msgstr ""
+
+#: ../src/MainWindow.vala:136
+msgid "Subtract"
+msgstr ""
+
+#: ../src/MainWindow.vala:139
+msgid "Multiply"
+msgstr ""
+
+#: ../src/MainWindow.vala:142
+msgid "Divide"
+msgstr ""
+
+#: ../src/MainWindow.vala:148
+msgid "Percentage"
+msgstr ""
+
+#: ../src/MainWindow.vala:219
+msgid "Start Group"
+msgstr ""
+
+#: ../src/MainWindow.vala:220
+msgid "End Group"
+msgstr ""
+
+#: ../src/MainWindow.vala:221
+msgid "Exponent"
+msgstr ""
+
+#: ../src/MainWindow.vala:223
+msgid "Root"
+msgstr ""
+
+#: ../src/MainWindow.vala:224
+msgid "Sine"
+msgstr ""
+
+#: ../src/MainWindow.vala:225
+msgid "Hyperbolic Sine"
+msgstr ""
+
+#: ../src/MainWindow.vala:226
+msgid "Cosine"
+msgstr ""
+
+#: ../src/MainWindow.vala:227
+msgid "Hyperbolic Cosine"
+msgstr ""
+
+#: ../src/MainWindow.vala:228
+msgid "Tangent"
+msgstr ""
+
+#: ../src/MainWindow.vala:229
+msgid "Hyperbolic Tangent"
+msgstr ""
+
+#: ../src/MainWindow.vala:230
+msgid "Pi"
+msgstr ""
+
+#: ../src/MainWindow.vala:231
+msgid "Euler's Number"
+msgstr ""
+
+#: ../src/MainWindow.vala:371
+msgid "Hide extended functionality"
+msgstr ""
+
+#: ../src/Core/Scanner.vala:80
+msgid "'%s' is invalid."
+msgstr ""
+
+#: ../src/Core/Scanner.vala:164
+msgid "'%s' is unknown."
 msgstr ""
