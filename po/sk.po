@@ -2,123 +2,32 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-26 00:08+0200\n"
+"POT-Creation-Date: 2016-08-02 13:40-0700\n"
 "PO-Revision-Date: 2016-05-27 15:28+0000\n"
 "Last-Translator: Maxwell Barvian <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-28 05:27+0000\n"
-"X-Generator: Launchpad (build 18053)\n"
+"X-Launchpad-Export-Date: 2016-08-03 05:37+0000\n"
+"X-Generator: Launchpad (build 18169)\n"
 
-#: ../src/Core/Scanner.vala:80
-msgid "'%s' is invalid."
-msgstr "'%s' je neplatný."
-
-#: ../src/Core/Scanner.vala:164
-msgid "'%s' is unknown."
-msgstr "'%s' je neznáme."
-
-#: ../src/MainWindow.vala:75 ../src/PantheonCalculator.vala:25
+#: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
 msgstr "Kalkulačka"
 
-#: ../src/MainWindow.vala:83 ../src/MainWindow.vala:378
-msgid "Show extended functionality"
-msgstr "Zobraz rozšírene funkcie"
+#: ../src/PantheonCalculator.vala:44
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Ivan Cizik https://launchpad.net/~ivancizik\n"
+"  Lukáš Papík https://launchpad.net/~stereo839\n"
+"  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
+"  Ľubomír Hlavko https://launchpad.net/~5lubo555"
 
-#: ../src/MainWindow.vala:88 ../src/HistoryDialog.vala:35
+#: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:86
 msgid "History"
 msgstr "História"
-
-#: ../src/MainWindow.vala:126
-msgid "Calculate Result"
-msgstr "Vypočítať výsledok"
-
-#: ../src/MainWindow.vala:129
-msgid "Add last result"
-msgstr "Pridaj posledný výsledok"
-
-#: ../src/MainWindow.vala:131
-msgid "Backspace"
-msgstr "Späť"
-
-#: ../src/MainWindow.vala:132
-msgid "Clear entry"
-msgstr "Vymazať položku"
-
-#: ../src/MainWindow.vala:135 ../src/HistoryDialog.vala:99
-msgid "Add"
-msgstr "Pridaj"
-
-#: ../src/MainWindow.vala:138
-msgid "Subtract"
-msgstr "Odčítať"
-
-#: ../src/MainWindow.vala:141
-msgid "Multiply"
-msgstr "Násobiť"
-
-#: ../src/MainWindow.vala:144
-msgid "Divide"
-msgstr "Deliť"
-
-#: ../src/MainWindow.vala:150
-msgid "Percentage"
-msgstr "Percentá"
-
-#: ../src/MainWindow.vala:221
-msgid "Start Group"
-msgstr "Začať Skupinu"
-
-#: ../src/MainWindow.vala:222
-msgid "End Group"
-msgstr "Ukončiť Skupinu"
-
-#: ../src/MainWindow.vala:223
-msgid "Exponent"
-msgstr "Exponent"
-
-#: ../src/MainWindow.vala:225
-msgid "Root"
-msgstr "Koreň"
-
-#: ../src/MainWindow.vala:226
-msgid "Sine"
-msgstr "Sínus"
-
-#: ../src/MainWindow.vala:227
-msgid "Hyperbolic Sine"
-msgstr "Hyperbolický sínus"
-
-#: ../src/MainWindow.vala:228
-msgid "Cosine"
-msgstr "Kosínus"
-
-#: ../src/MainWindow.vala:229
-msgid "Hyperbolic Cosine"
-msgstr "Hyperbolický kosínus"
-
-#: ../src/MainWindow.vala:230
-msgid "Tangent"
-msgstr "Tangens"
-
-#: ../src/MainWindow.vala:231
-msgid "Hyperbolic Tangent"
-msgstr "Hyperbolický tangens"
-
-#: ../src/MainWindow.vala:232
-msgid "Pi"
-msgstr "Pí"
-
-#: ../src/MainWindow.vala:233
-msgid "Euler's Number"
-msgstr "Eulerovo číslo"
-
-#: ../src/MainWindow.vala:373
-msgid "Hide extended functionality"
-msgstr "Skryť rozšírené funkcie"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
@@ -136,11 +45,102 @@ msgstr "Výraz"
 msgid "Close"
 msgstr "Zatvoriť"
 
-#: ../src/PantheonCalculator.vala:42
-msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"  Ivan Cizik https://launchpad.net/~ivancizik\n"
-"  Lukáš Papík https://launchpad.net/~stereo839\n"
-"  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
-"  Ľubomír Hlavko https://launchpad.net/~5lubo555"
+#: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:133
+msgid "Add"
+msgstr "Pridaj"
+
+#: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
+msgid "Show extended functionality"
+msgstr "Zobraz rozšírene funkcie"
+
+#: ../src/MainWindow.vala:124
+msgid "Calculate Result"
+msgstr "Vypočítať výsledok"
+
+#: ../src/MainWindow.vala:127
+msgid "Add last result"
+msgstr "Pridaj posledný výsledok"
+
+#: ../src/MainWindow.vala:129
+msgid "Backspace"
+msgstr "Späť"
+
+#: ../src/MainWindow.vala:130
+msgid "Clear entry"
+msgstr "Vymazať položku"
+
+#: ../src/MainWindow.vala:136
+msgid "Subtract"
+msgstr "Odčítať"
+
+#: ../src/MainWindow.vala:139
+msgid "Multiply"
+msgstr "Násobiť"
+
+#: ../src/MainWindow.vala:142
+msgid "Divide"
+msgstr "Deliť"
+
+#: ../src/MainWindow.vala:148
+msgid "Percentage"
+msgstr "Percentá"
+
+#: ../src/MainWindow.vala:219
+msgid "Start Group"
+msgstr "Začať Skupinu"
+
+#: ../src/MainWindow.vala:220
+msgid "End Group"
+msgstr "Ukončiť Skupinu"
+
+#: ../src/MainWindow.vala:221
+msgid "Exponent"
+msgstr "Exponent"
+
+#: ../src/MainWindow.vala:223
+msgid "Root"
+msgstr "Koreň"
+
+#: ../src/MainWindow.vala:224
+msgid "Sine"
+msgstr "Sínus"
+
+#: ../src/MainWindow.vala:225
+msgid "Hyperbolic Sine"
+msgstr "Hyperbolický sínus"
+
+#: ../src/MainWindow.vala:226
+msgid "Cosine"
+msgstr "Kosínus"
+
+#: ../src/MainWindow.vala:227
+msgid "Hyperbolic Cosine"
+msgstr "Hyperbolický kosínus"
+
+#: ../src/MainWindow.vala:228
+msgid "Tangent"
+msgstr "Tangens"
+
+#: ../src/MainWindow.vala:229
+msgid "Hyperbolic Tangent"
+msgstr "Hyperbolický tangens"
+
+#: ../src/MainWindow.vala:230
+msgid "Pi"
+msgstr "Pí"
+
+#: ../src/MainWindow.vala:231
+msgid "Euler's Number"
+msgstr "Eulerovo číslo"
+
+#: ../src/MainWindow.vala:371
+msgid "Hide extended functionality"
+msgstr "Skryť rozšírené funkcie"
+
+#: ../src/Core/Scanner.vala:80
+msgid "'%s' is invalid."
+msgstr "'%s' je neplatný."
+
+#: ../src/Core/Scanner.vala:164
+msgid "'%s' is unknown."
+msgstr "'%s' je neznáme."
