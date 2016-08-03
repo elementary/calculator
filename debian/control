@@ -1,7 +1,7 @@
 Source: pantheon-calculator
 Section: x11
 Priority: extra
-Maintainer: Marvin Beckers <beckersmarvin@gmail.com>
+Maintainer: Cody Garver <cody@elementary.io>
 Build-Depends: cmake (>= 2.8),
                debhelper (>= 8.0.0),
                intltool,
