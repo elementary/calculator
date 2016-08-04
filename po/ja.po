@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2016-08-02 15:48+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
+"PO-Revision-Date: 2016-08-03 15:09+0000\n"
+"Last-Translator: Jun Takeda <takeda.jun@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-03 05:36+0000\n"
+"X-Launchpad-Export-Date: 2016-08-04 05:33+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
@@ -22,6 +22,7 @@ msgstr ""
 "Launchpad Contributions:\n"
 "  BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) https://launchpad.net/~balloon\n"
 "  J.S.Sebastian https://launchpad.net/~j-s-sebastian-x\n"
+"  Jun Takeda https://launchpad.net/~takeda-jun\n"
 "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
 "  Ryota Goto https://launchpad.net/~sarcaphx510"
 
@@ -31,7 +32,7 @@ msgstr "履歴"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
-msgstr ""
+msgstr "追加する値："
 
 #: ../src/HistoryDialog.vala:88
 msgid "Result"
@@ -39,7 +40,7 @@ msgstr "結果"
 
 #: ../src/HistoryDialog.vala:92
 msgid "Expression"
-msgstr ""
+msgstr "式"
 
 #: ../src/HistoryDialog.vala:98
 msgid "Close"
@@ -47,7 +48,7 @@ msgstr "閉じる"
 
 #: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:133
 msgid "Add"
-msgstr "加算"
+msgstr "足し算"
 
 #: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
 msgid "Show extended functionality"
@@ -59,11 +60,11 @@ msgstr "計算結果"
 
 #: ../src/MainWindow.vala:127
 msgid "Add last result"
-msgstr ""
+msgstr "最後の結果を追加"
 
 #: ../src/MainWindow.vala:129
 msgid "Backspace"
-msgstr "バックスペース"
+msgstr "左の一文字文字を削除"
 
 #: ../src/MainWindow.vala:130
 msgid "Clear entry"
@@ -71,15 +72,15 @@ msgstr "エントリーのクリア"
 
 #: ../src/MainWindow.vala:136
 msgid "Subtract"
-msgstr "減算"
+msgstr "引き算"
 
 #: ../src/MainWindow.vala:139
 msgid "Multiply"
-msgstr "乗算"
+msgstr "掛け算"
 
 #: ../src/MainWindow.vala:142
 msgid "Divide"
-msgstr "除算"
+msgstr "割り算"
 
 #: ../src/MainWindow.vala:148
 msgid "Percentage"
@@ -87,43 +88,43 @@ msgstr "パーセント"
 
 #: ../src/MainWindow.vala:219
 msgid "Start Group"
-msgstr ""
+msgstr "括弧"
 
 #: ../src/MainWindow.vala:220
 msgid "End Group"
-msgstr ""
+msgstr "括弧閉じる"
 
 #: ../src/MainWindow.vala:221
 msgid "Exponent"
-msgstr ""
+msgstr "指数"
 
 #: ../src/MainWindow.vala:223
 msgid "Root"
-msgstr ""
+msgstr "平方根"
 
 #: ../src/MainWindow.vala:224
 msgid "Sine"
-msgstr ""
+msgstr "サイン"
 
 #: ../src/MainWindow.vala:225
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "ハイパボリックサイン"
 
 #: ../src/MainWindow.vala:226
 msgid "Cosine"
-msgstr ""
+msgstr "コサイン"
 
 #: ../src/MainWindow.vala:227
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "ハイパボリックコサイン"
 
 #: ../src/MainWindow.vala:228
 msgid "Tangent"
-msgstr ""
+msgstr "タンジェント"
 
 #: ../src/MainWindow.vala:229
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "ハイパボリックタンジェント"
 
 #: ../src/MainWindow.vala:230
 msgid "Pi"
@@ -131,7 +132,7 @@ msgstr "円周率"
 
 #: ../src/MainWindow.vala:231
 msgid "Euler's Number"
-msgstr ""
+msgstr "自然対数の底"
 
 #: ../src/MainWindow.vala:371
 msgid "Hide extended functionality"
@@ -139,8 +140,8 @@ msgstr "追加機能を隠す"
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' は不正です。"
 
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' は不明です。"
