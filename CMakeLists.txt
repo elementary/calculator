@@ -10,7 +10,7 @@ set (PKGDATADIR "${DATADIR}/pantheon-calculator")
 set (GETTEXT_PACKAGE "pantheon-calculator")
 set (EXEC_NAME "pantheon-calculator")
 set (RELEASE_NAME "An elementary app for simple calculation.")
-set (VERSION "0.1.0.1")
+set (VERSION "0.1.1")
 set (VERSION_INFO "First Release")
 set (DOLLAR "$")
 
