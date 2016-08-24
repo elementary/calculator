@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2016-05-27 15:29+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
+"PO-Revision-Date: 2016-08-23 18:11+0000\n"
+"Last-Translator: Maxim Taranov <png2378@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-03 05:36+0000\n"
-"X-Generator: Launchpad (build 18169)\n"
+"X-Launchpad-Export-Date: 2016-08-24 05:31+0000\n"
+"X-Generator: Launchpad (build 18179)\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
@@ -29,6 +29,7 @@ msgstr ""
 "  Igor https://launchpad.net/~igortrefilov\n"
 "  Ilya Bizyaev https://launchpad.net/~bizyaev-game\n"
 "  Lesha Ogonkov https://launchpad.net/~ogonkov\n"
+"  Maxim Taranov https://launchpad.net/~png2378\n"
 "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
 "  Sergei https://launchpad.net/~ink-dude\n"
 "  Xantalion https://launchpad.net/~xantalion\n"
@@ -151,8 +152,8 @@ msgstr "Скрыть дополнительную функциональност
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
-msgstr "'%s' не действителен."
+msgstr "«%s» недействителен."
 
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
-msgstr "'%s' не известен."
+msgstr "«%s» неизвестен."
