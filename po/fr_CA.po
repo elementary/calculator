@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2016-05-27 15:29+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
+"PO-Revision-Date: 2016-08-24 16:30+0000\n"
+"Last-Translator: Nate <natejms@outlook.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-03 05:37+0000\n"
-"X-Generator: Launchpad (build 18169)\n"
+"X-Launchpad-Export-Date: 2016-08-25 05:33+0000\n"
+"X-Generator: Launchpad (build 18179)\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
@@ -21,111 +21,112 @@ msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
+"  Nate https://launchpad.net/~natejms\n"
 "  Patrick Daley https://launchpad.net/~pjdaley95"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:86
 msgid "History"
-msgstr ""
+msgstr "Histoire"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
-msgstr ""
+msgstr "Valeur d'ajouter:"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Result"
-msgstr ""
+msgstr "Résultat"
 
 #: ../src/HistoryDialog.vala:92
 msgid "Expression"
-msgstr ""
+msgstr "Expression"
 
 #: ../src/HistoryDialog.vala:98
 msgid "Close"
-msgstr ""
+msgstr "Fermer"
 
 #: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:133
 msgid "Add"
-msgstr ""
+msgstr "Ajouter"
 
 #: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
 msgid "Show extended functionality"
-msgstr ""
+msgstr "Montrer fonctionnalité supplémentaire"
 
 #: ../src/MainWindow.vala:124
 msgid "Calculate Result"
-msgstr ""
+msgstr "Calculé le résultat"
 
 #: ../src/MainWindow.vala:127
 msgid "Add last result"
-msgstr ""
+msgstr "Ajouter le résultat dernier"
 
 #: ../src/MainWindow.vala:129
 msgid "Backspace"
-msgstr ""
+msgstr "Retour arrière"
 
 #: ../src/MainWindow.vala:130
 msgid "Clear entry"
-msgstr ""
+msgstr "Vider l'entrée"
 
 #: ../src/MainWindow.vala:136
 msgid "Subtract"
-msgstr ""
+msgstr "Soustraire"
 
 #: ../src/MainWindow.vala:139
 msgid "Multiply"
-msgstr ""
+msgstr "Multiplier"
 
 #: ../src/MainWindow.vala:142
 msgid "Divide"
-msgstr ""
+msgstr "Diviser"
 
 #: ../src/MainWindow.vala:148
 msgid "Percentage"
-msgstr ""
+msgstr "Pourcentage"
 
 #: ../src/MainWindow.vala:219
 msgid "Start Group"
-msgstr ""
+msgstr "Commencer la groupe"
 
 #: ../src/MainWindow.vala:220
 msgid "End Group"
-msgstr ""
+msgstr "Finir le groupe"
 
 #: ../src/MainWindow.vala:221
 msgid "Exponent"
-msgstr ""
+msgstr "Exposant"
 
 #: ../src/MainWindow.vala:223
 msgid "Root"
-msgstr ""
+msgstr "Racine"
 
 #: ../src/MainWindow.vala:224
 msgid "Sine"
-msgstr ""
+msgstr "Sinus"
 
 #: ../src/MainWindow.vala:225
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Sinus Hyperbolique"
 
 #: ../src/MainWindow.vala:226
 msgid "Cosine"
-msgstr ""
+msgstr "Cosinus"
 
 #: ../src/MainWindow.vala:227
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Cosinus Hyperbolique"
 
 #: ../src/MainWindow.vala:228
 msgid "Tangent"
-msgstr ""
+msgstr "Tangente"
 
 #: ../src/MainWindow.vala:229
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Tangente Hyperbolique"
 
 #: ../src/MainWindow.vala:230
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
 #: ../src/MainWindow.vala:231
 msgid "Euler's Number"
@@ -133,12 +134,12 @@ msgstr ""
 
 #: ../src/MainWindow.vala:371
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "Cacher la fonctionnalité supplémentaire"
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' est non valide"
 
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' est inconnu"
