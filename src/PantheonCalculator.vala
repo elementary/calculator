@@ -34,7 +34,7 @@ namespace PantheonCalculator {
             build_version = Build.VERSION;
             build_version_info = Build.VERSION_INFO;
 
-            app_launcher = "pantheon-calculator.desktop";
+            app_launcher = "org.pantheon.calculator.desktop";
             main_url = "https://launchpad.net/pantheon-calculator";
             bug_url = "https://bugs.launchpad.net/pantheon-calculator";
             help_url = "https://answers.launchpad.net/pantheon-calculator"; 
