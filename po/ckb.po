@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2016-05-27 15:29+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
+"PO-Revision-Date: 2016-09-12 17:23+0000\n"
+"Last-Translator: rasti <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-03 05:37+0000\n"
-"X-Generator: Launchpad (build 18169)\n"
+"X-Launchpad-Export-Date: 2016-09-13 06:04+0000\n"
+"X-Generator: Launchpad (build 18186)\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
@@ -22,7 +22,8 @@ msgstr ""
 "Launchpad Contributions:\n"
 "  Haval Abdulkarim https://launchpad.net/~haval-abdulkarim\n"
 "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
-"  qezwan https://launchpad.net/~qezwan"
+"  qezwan https://launchpad.net/~qezwan\n"
+"  rasti https://launchpad.net/~rasti"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:86
 msgid "History"
@@ -46,7 +47,7 @@ msgstr "داخستن"
 
 #: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:133
 msgid "Add"
-msgstr "زیادكردن"
+msgstr "زۆركردن"
 
 #: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
 msgid "Show extended functionality"
@@ -54,7 +55,7 @@ msgstr ""
 
 #: ../src/MainWindow.vala:124
 msgid "Calculate Result"
-msgstr ""
+msgstr "ئەنجامی ژمێرەر"
 
 #: ../src/MainWindow.vala:127
 msgid "Add last result"
@@ -82,7 +83,7 @@ msgstr ""
 
 #: ../src/MainWindow.vala:148
 msgid "Percentage"
-msgstr ""
+msgstr "ڕێژەی سەدی"
 
 #: ../src/MainWindow.vala:219
 msgid "Start Group"
@@ -102,7 +103,7 @@ msgstr ""
 
 #: ../src/MainWindow.vala:224
 msgid "Sine"
-msgstr ""
+msgstr "ساین"
 
 #: ../src/MainWindow.vala:225
 msgid "Hyperbolic Sine"
@@ -110,7 +111,7 @@ msgstr ""
 
 #: ../src/MainWindow.vala:226
 msgid "Cosine"
-msgstr ""
+msgstr "کۆساین"
 
 #: ../src/MainWindow.vala:227
 msgid "Hyperbolic Cosine"
@@ -118,7 +119,7 @@ msgstr ""
 
 #: ../src/MainWindow.vala:228
 msgid "Tangent"
-msgstr ""
+msgstr "لێکەوت"
 
 #: ../src/MainWindow.vala:229
 msgid "Hyperbolic Tangent"
@@ -126,7 +127,7 @@ msgstr ""
 
 #: ../src/MainWindow.vala:230
 msgid "Pi"
-msgstr ""
+msgstr "پای"
 
 #: ../src/MainWindow.vala:231
 msgid "Euler's Number"
@@ -138,7 +139,7 @@ msgstr ""
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' نادروستە."
 
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
