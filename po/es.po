@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2016-08-03 21:42+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
+"PO-Revision-Date: 2016-09-13 22:38+0000\n"
+"Last-Translator: Félix Brezo <felixbrezo@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-04 05:33+0000\n"
-"X-Generator: Launchpad (build 18169)\n"
+"X-Launchpad-Export-Date: 2016-09-14 06:01+0000\n"
+"X-Generator: Launchpad (build 18186)\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
@@ -27,6 +27,7 @@ msgstr ""
 "  Luis Oropeza https://launchpad.net/~luis-oropeza-129\n"
 "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
 "  Miguel R P https://launchpad.net/~miguelonrp2001\n"
+"  Oscar Miranda https://launchpad.net/~oscarmiranda3615\n"
 "  Ricardo Canul https://launchpad.net/~ricardocanul7\n"
 "  Rybun https://launchpad.net/~mail-rybun\n"
 "  avijo https://launchpad.net/~oscarj-ms\n"
@@ -63,7 +64,7 @@ msgstr "Mostrar más funciones"
 
 #: ../src/MainWindow.vala:124
 msgid "Calculate Result"
-msgstr ""
+msgstr "Calcular resultado"
 
 #: ../src/MainWindow.vala:127
 msgid "Add last result"
@@ -79,67 +80,67 @@ msgstr "Borrar entrada"
 
 #: ../src/MainWindow.vala:136
 msgid "Subtract"
-msgstr ""
+msgstr "Restar"
 
 #: ../src/MainWindow.vala:139
 msgid "Multiply"
-msgstr ""
+msgstr "Multiplicar"
 
 #: ../src/MainWindow.vala:142
 msgid "Divide"
-msgstr ""
+msgstr "Dividir"
 
 #: ../src/MainWindow.vala:148
 msgid "Percentage"
-msgstr ""
+msgstr "Porcentaje"
 
 #: ../src/MainWindow.vala:219
 msgid "Start Group"
-msgstr ""
+msgstr "Abrir grupo"
 
 #: ../src/MainWindow.vala:220
 msgid "End Group"
-msgstr ""
+msgstr "Cerrar grupo"
 
 #: ../src/MainWindow.vala:221
 msgid "Exponent"
-msgstr ""
+msgstr "Exponencial"
 
 #: ../src/MainWindow.vala:223
 msgid "Root"
-msgstr ""
+msgstr "Raíz cuadrada"
 
 #: ../src/MainWindow.vala:224
 msgid "Sine"
-msgstr ""
+msgstr "Seno"
 
 #: ../src/MainWindow.vala:225
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Seno hiperbólico"
 
 #: ../src/MainWindow.vala:226
 msgid "Cosine"
-msgstr ""
+msgstr "Coseno"
 
 #: ../src/MainWindow.vala:227
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Coseno hiperbólico"
 
 #: ../src/MainWindow.vala:228
 msgid "Tangent"
-msgstr ""
+msgstr "Tangente"
 
 #: ../src/MainWindow.vala:229
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Tangente hiperbólica"
 
 #: ../src/MainWindow.vala:230
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
 #: ../src/MainWindow.vala:231
 msgid "Euler's Number"
-msgstr ""
+msgstr "Número de Euler"
 
 #: ../src/MainWindow.vala:371
 msgid "Hide extended functionality"
