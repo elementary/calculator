@@ -49,6 +49,7 @@ namespace PantheonCalculator {
         public struct History { string exp; string output; }
 
         public MainWindow () {
+            get_style_context ().add_class ("rounded");
             set_resizable (false);
             window_position = Gtk.WindowPosition.CENTER;
 
