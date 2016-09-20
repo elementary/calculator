@@ -1,3 +1,9 @@
+pantheon-calculator (0.1.1.1) xenial; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Tue, 20 Sep 2016 06:45:21 -0500
+
 pantheon-calculator (0.1.1) xenial; urgency=medium
 
   * New upstream release.
