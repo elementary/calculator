@@ -1,16 +1,17 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2016-09-17 08:42+0000\n"
+"PO-Revision-Date: 2016-10-16 11:24+0000\n"
 "Last-Translator: Waqar Ahmed <waqar.17a@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-09-27 06:41+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
+"X-Launchpad-Export-Date: 2016-10-17 06:41+0000\n"
+"X-Generator: Launchpad (build 18232)\n"
+"Language: ur\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
@@ -48,39 +49,39 @@ msgstr "جمع"
 
 #: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
 msgid "Show extended functionality"
-msgstr ""
+msgstr "مزید functionality دکھائیں"
 
 #: ../src/MainWindow.vala:124
 msgid "Calculate Result"
-msgstr ""
+msgstr "نتیجہ کیلکولیٹ کریں"
 
 #: ../src/MainWindow.vala:127
 msgid "Add last result"
-msgstr ""
+msgstr "آخری نتیجہ شامل کریں"
 
 #: ../src/MainWindow.vala:129
 msgid "Backspace"
-msgstr ""
+msgstr "بیک سپیس"
 
 #: ../src/MainWindow.vala:130
 msgid "Clear entry"
-msgstr ""
+msgstr "اندراج صاف کریں"
 
 #: ../src/MainWindow.vala:136
 msgid "Subtract"
-msgstr ""
+msgstr "تفریق"
 
 #: ../src/MainWindow.vala:139
 msgid "Multiply"
-msgstr ""
+msgstr "ضرب"
 
 #: ../src/MainWindow.vala:142
 msgid "Divide"
-msgstr ""
+msgstr "تقسیم"
 
 #: ../src/MainWindow.vala:148
 msgid "Percentage"
-msgstr ""
+msgstr "فیصد"
 
 #: ../src/MainWindow.vala:219
 msgid "Start Group"
@@ -96,11 +97,11 @@ msgstr ""
 
 #: ../src/MainWindow.vala:223
 msgid "Root"
-msgstr ""
+msgstr "روٹ"
 
 #: ../src/MainWindow.vala:224
 msgid "Sine"
-msgstr ""
+msgstr "سائن"
 
 #: ../src/MainWindow.vala:225
 msgid "Hyperbolic Sine"
@@ -108,7 +109,7 @@ msgstr ""
 
 #: ../src/MainWindow.vala:226
 msgid "Cosine"
-msgstr ""
+msgstr "کوسائن"
 
 #: ../src/MainWindow.vala:227
 msgid "Hyperbolic Cosine"
@@ -116,7 +117,7 @@ msgstr ""
 
 #: ../src/MainWindow.vala:228
 msgid "Tangent"
-msgstr ""
+msgstr "ٹینجنٹ"
 
 #: ../src/MainWindow.vala:229
 msgid "Hyperbolic Tangent"
@@ -124,7 +125,7 @@ msgstr ""
 
 #: ../src/MainWindow.vala:230
 msgid "Pi"
-msgstr ""
+msgstr "پائی"
 
 #: ../src/MainWindow.vala:231
 msgid "Euler's Number"
@@ -132,12 +133,12 @@ msgstr ""
 
 #: ../src/MainWindow.vala:371
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "مزید functionality چھپائیں"
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' ناموزوں ہے"
 
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' نامعلوم"
