@@ -121,6 +121,8 @@ namespace PantheonCalculator {
             entry.set_alignment (1);
             entry.set_text (settings.get_string ("entry-content"));
             entry.get_style_context ().add_class ("h2");
+            entry.vexpand = true;
+            entry.valign = Gtk.Align.CENTER;
 
             button_calc = new Button ("=", _("Calculate Result"));
             button_calc.get_style_context ().add_class ("h2");
@@ -162,6 +164,8 @@ namespace PantheonCalculator {
             var basic_grid = new Gtk.Grid ();
             basic_grid.column_spacing = 6;
             basic_grid.row_spacing = 6;
+            basic_grid.valign = Gtk.Align.FILL;
+
             basic_grid.attach (entry, 0, 0, 4, 1);
             basic_grid.attach (button_del,     0, 1, 1, 1);
             basic_grid.attach (button_undo,    1, 1, 1, 1);
