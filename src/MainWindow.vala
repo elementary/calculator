@@ -31,8 +31,8 @@ namespace PantheonCalculator {
         private Gtk.Button          button_calc;
         private Gtk.Button          button_history;
         private Gtk.Button          button_ans;
-        private Gtk.Button          button_undo;
         private Gtk.Button          button_del;
+        private Gtk.Button          button_clr;
         private Gtk.ToggleButton    button_extended;
 
         private Gtk.InfoBar infobar;
@@ -129,9 +129,9 @@ namespace PantheonCalculator {
             button_calc.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
             button_ans = new Button ("ANS", _("Add last result"));
             button_ans.sensitive = false;
-            button_undo = new Button ("Del", _("Backspace"));
-            button_del = new Button ("C", _("Clear entry"));
-            button_del.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            button_del = new Button ("Del", _("Backspace"));
+            button_clr = new Button ("C", _("Clear entry"));
+            button_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
             var button_add = new Button (" + ", _("Add"));
             button_add.function = "+";
@@ -167,8 +167,8 @@ namespace PantheonCalculator {
             basic_grid.valign = Gtk.Align.FILL;
 
             basic_grid.attach (entry, 0, 0, 4, 1);
-            basic_grid.attach (button_del,     0, 1, 1, 1);
-            basic_grid.attach (button_undo,    1, 1, 1, 1);
+            basic_grid.attach (button_clr,     0, 1, 1, 1);
+            basic_grid.attach (button_del,    1, 1, 1, 1);
             basic_grid.attach (button_percent, 2, 1, 1, 1);
             basic_grid.attach (button_div,     3, 1, 1, 1);
 
@@ -199,8 +199,8 @@ namespace PantheonCalculator {
             entry.activate.connect (button_calc_clicked);
 
             button_calc.clicked.connect (() => {button_calc_clicked ();});
-            button_undo.clicked.connect (() => {button_undo_clicked ();});
             button_del.clicked.connect (() => {button_del_clicked ();});
+            button_clr.clicked.connect (() => {button_clr_clicked ();});
             button_ans.clicked.connect (() => {button_ans_clicked ();});
             button_add.clicked.connect (() => {regular_button_clicked (button_add.function);});
             button_sub.clicked.connect (() => {regular_button_clicked (button_sub.function);});
@@ -326,7 +326,7 @@ namespace PantheonCalculator {
             entry.set_position (position);
         }
 
-        private void button_undo_clicked () {
+        private void button_del_clicked () {
             position = entry.get_position ();
             if (entry.get_text ().length > 0) {
                 string new_text = "";
@@ -350,7 +350,7 @@ namespace PantheonCalculator {
             entry.set_position (position - 1);
         }
 
-        private void button_del_clicked () {
+        private void button_clr_clicked () {
             position = 0;
             entry.set_text ("");
             set_focus (entry);
@@ -410,7 +410,7 @@ namespace PantheonCalculator {
             bool retval = false;
             switch (key.keyval) {
                 case Gdk.Key.Escape:
-                    button_del_clicked ();
+                    button_clr_clicked ();
                     break;
                 case Gdk.Key.KP_Divide:
                 case Gdk.Key.slash:
