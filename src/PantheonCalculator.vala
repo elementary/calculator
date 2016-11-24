@@ -43,6 +43,11 @@ namespace PantheonCalculator {
             about_comments = "";
             about_translators = _("translator-credits");
             about_license_type = Gtk.License.GPL_3_0;
+            
+            SimpleAction quit_action = new SimpleAction ("quit", null);
+            quit_action.activate.connect (quit);
+            add_action (quit_action);
+            add_accelerator ("<Control>q", "app.quit", null);
         }
 
         public override void activate () {
