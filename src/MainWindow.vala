@@ -73,11 +73,8 @@ namespace PantheonCalculator {
 
             this.key_press_event.connect (key_pressed);
 
-            delete_event.connect ((event) => {
-                int x_pos, y_pos;
-                get_position (out x_pos, out y_pos);
-                settings.set_int ("window-x", x_pos);
-                settings.set_int ("window-y", y_pos);
+            delete_event.connect((event) => {
+                save_state ();
                 return false;
             });
         }
@@ -441,6 +438,13 @@ namespace PantheonCalculator {
                     break;
             }
             return retval;
+        }
+
+        public void save_state () {
+            int x_pos, y_pos;
+            get_position (out x_pos, out y_pos);
+            settings.set_int ("window-x", x_pos);
+            settings.set_int ("window-y", y_pos);
         }
     }
 }
