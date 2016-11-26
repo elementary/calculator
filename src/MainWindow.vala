@@ -59,6 +59,12 @@ namespace PantheonCalculator {
             history = new List<History?> ();
             position = 0;
 
+            int x = settings.get_int ("window-x");
+            int y = settings.get_int ("window-y");
+            if (x != -100 && y != -100) {
+                move (x, y);
+            }
+
             build_titlebar ();
             build_ui ();
 
@@ -66,6 +72,14 @@ namespace PantheonCalculator {
             settings.bind ("entry-content", entry, "text", SettingsBindFlags.DEFAULT);
 
             this.key_press_event.connect (key_pressed);
+
+            delete_event.connect ((event) => {
+                int x_pos, y_pos;
+                get_position (out x_pos, out y_pos);
+                settings.set_int ("window-x", x_pos);
+                settings.set_int ("window-y", y_pos);
+                return false;
+            });
         }
 
         private void build_titlebar () {
