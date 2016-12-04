@@ -16,7 +16,9 @@
 * with Pantheon Calculator. If not, see http://www.gnu.org/licenses/.
 */
 
-namespace PantheonCalculator { 
+namespace PantheonCalculator {
+    PantheonCalculator.MainWindow window = null;
+
     public class PantheonCalculatorApp : Granite.Application {
         construct {
             application_id = "org.pantheon.calculator";
@@ -43,10 +45,20 @@ namespace PantheonCalculator {
             about_comments = "";
             about_translators = _("translator-credits");
             about_license_type = Gtk.License.GPL_3_0;
+            
+            SimpleAction quit_action = new SimpleAction ("quit", null);
+            quit_action.activate.connect (() => {
+                if (window != null) {
+                    window.save_state ();
+                    window.destroy ();
+                }
+            });
+            add_action (quit_action);
+            add_accelerator ("<Control>q", "app.quit", null);
         }
 
         public override void activate () {
-            var window = new PantheonCalculator.MainWindow ();
+            window = new PantheonCalculator.MainWindow ();
             this.add_window (window);
         }
     }
