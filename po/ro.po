@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2016-05-27 15:29+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
+"PO-Revision-Date: 2016-12-16 10:22+0000\n"
+"Last-Translator: Marius Albina <marius.albina@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-12 05:11+0000\n"
-"X-Generator: Launchpad (build 18292)\n"
+"X-Launchpad-Export-Date: 2016-12-17 05:18+0000\n"
+"X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
@@ -24,13 +24,14 @@ msgstr ""
 "  Danny https://launchpad.net/~dani-bejan2000\n"
 "  Edi https://launchpad.net/~edi-frb\n"
 "  Furkan Ege Öztürk https://launchpad.net/~furkanegeozturk\n"
+"  Marius Albina https://launchpad.net/~marius-albina\n"
 "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
 "  TDT https://launchpad.net/~the-dirtchamber\n"
 "  Ungurianu Alexandru https://launchpad.net/~alexandru-ungurianu"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:86
 msgid "History"
-msgstr "Istorie"
+msgstr "Istoric"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
@@ -46,11 +47,11 @@ msgstr "Expresie"
 
 #: ../src/HistoryDialog.vala:98
 msgid "Close"
-msgstr "Închideți"
+msgstr "Închide"
 
 #: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:133
 msgid "Add"
-msgstr "Adăugați"
+msgstr "Adaugă"
 
 #: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
 msgid "Show extended functionality"
@@ -58,7 +59,7 @@ msgstr "Afişează facilități extinse"
 
 #: ../src/MainWindow.vala:124
 msgid "Calculate Result"
-msgstr ""
+msgstr "Calculează rezultatul"
 
 #: ../src/MainWindow.vala:127
 msgid "Add last result"
@@ -70,71 +71,71 @@ msgstr "șterge"
 
 #: ../src/MainWindow.vala:130
 msgid "Clear entry"
-msgstr "Șterge valoarea"
+msgstr "Șterge intrarea"
 
 #: ../src/MainWindow.vala:136
 msgid "Subtract"
-msgstr ""
+msgstr "Scade"
 
 #: ../src/MainWindow.vala:139
 msgid "Multiply"
-msgstr ""
+msgstr "Înmulţeşte"
 
 #: ../src/MainWindow.vala:142
 msgid "Divide"
-msgstr ""
+msgstr "Împarte"
 
 #: ../src/MainWindow.vala:148
 msgid "Percentage"
-msgstr ""
+msgstr "Procentaj"
 
 #: ../src/MainWindow.vala:219
 msgid "Start Group"
-msgstr ""
+msgstr "Start grup"
 
 #: ../src/MainWindow.vala:220
 msgid "End Group"
-msgstr ""
+msgstr "Sfârșit grup"
 
 #: ../src/MainWindow.vala:221
 msgid "Exponent"
-msgstr ""
+msgstr "Exponent"
 
 #: ../src/MainWindow.vala:223
 msgid "Root"
-msgstr ""
+msgstr "Rădăcina"
 
 #: ../src/MainWindow.vala:224
 msgid "Sine"
-msgstr ""
+msgstr "Sinus"
 
 #: ../src/MainWindow.vala:225
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Sinus hiperbolic"
 
 #: ../src/MainWindow.vala:226
 msgid "Cosine"
-msgstr ""
+msgstr "Cosinus"
 
 #: ../src/MainWindow.vala:227
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Cosinus hiperbolic"
 
 #: ../src/MainWindow.vala:228
 msgid "Tangent"
-msgstr ""
+msgstr "Tangentă"
 
 #: ../src/MainWindow.vala:229
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Tangentă hiperbolică"
 
 #: ../src/MainWindow.vala:230
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
 #: ../src/MainWindow.vala:231
 msgid "Euler's Number"
-msgstr ""
+msgstr "Numărul lui Euler"
 
 #: ../src/MainWindow.vala:371
 msgid "Hide extended functionality"
@@ -142,7 +143,7 @@ msgstr "Ascunde funcționalitățile extinse"
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
-msgstr "'%s' este nevalabil."
+msgstr "'%s' nu este valid."
 
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
