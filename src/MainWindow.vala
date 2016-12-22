@@ -68,9 +68,6 @@ namespace PantheonCalculator {
             build_titlebar ();
             build_ui ();
 
-            settings.bind ("extended-shown", button_extended, "active", SettingsBindFlags.DEFAULT);
-            settings.bind ("entry-content", entry, "text", SettingsBindFlags.DEFAULT);
-
             this.key_press_event.connect (key_pressed);
 
             delete_event.connect((event) => {
@@ -445,6 +442,9 @@ namespace PantheonCalculator {
             get_position (out x_pos, out y_pos);
             settings.set_int ("window-x", x_pos);
             settings.set_int ("window-y", y_pos);
+
+            settings.set_boolean ("extended-shown", button_extended.active);
+            settings.set_string ("entry-content", entry.text);
         }
     }
 }
