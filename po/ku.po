@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2017-01-28 01:11+0000\n"
+"PO-Revision-Date: 2017-01-28 15:24+0000\n"
 "Last-Translator: Rokar <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-28 05:47+0000\n"
+"X-Launchpad-Export-Date: 2017-01-29 04:52+0000\n"
 "X-Generator: Launchpad (build 18315)\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
@@ -82,11 +82,11 @@ msgstr "Perçekirin"
 
 #: ../src/MainWindow.vala:148
 msgid "Percentage"
-msgstr ""
+msgstr "Rêje"
 
 #: ../src/MainWindow.vala:219
 msgid "Start Group"
-msgstr ""
+msgstr "koma destpêk"
 
 #: ../src/MainWindow.vala:220
 msgid "End Group"
