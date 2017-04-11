@@ -1,4 +1,4 @@
-#Calculator
+# Calculator
 [![Translation status](https://l10n.elementary.io/widgets/calculator/-/svg-badge.svg)](https://l10n.elementary.io/projects/calculator/?utm_source=widget)
 
 ## Building, Testing, and Installation
