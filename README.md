@@ -3,6 +3,11 @@
 
 ## Building, Testing, and Installation
 
+You'll need the following dependencies:
+* cmake
+* libgranite-dev
+* valac
+
 It's recommended to create a clean build environment
 
     mkdir build
