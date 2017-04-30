@@ -48,7 +48,7 @@ namespace PantheonCalculator.Core {
         private Operator[] operators = {   Operator () { symbol = "+", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a + b; } },
                                             Operator () { symbol = "-", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a - b; } },
                                             Operator () { symbol = "−", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a - b; } },
-                                            Operator () { symbol = "*", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a * b; } }, 
+                                            Operator () { symbol = "*", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a * b; } },
                                             Operator () { symbol = "×", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a * b; } },
                                             Operator () { symbol = "/", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a / b; } },
                                             Operator () { symbol = "÷", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a / b; } },
@@ -260,7 +260,7 @@ namespace PantheonCalculator.Core {
         }
 
         private Token compute_tokens (Token t_op, Token t1, Token t2) throws EVAL_ERROR {
-            try { 
+            try {
                 Operator op = get_operator (t_op);
                 var d = (double)(op.eval (double.parse (t2.content), double.parse (t1.content)));
                 return new Token (d.to_string (), TokenType.NUMBER);
@@ -276,7 +276,7 @@ namespace PantheonCalculator.Core {
         }
 
         private string cut (double d, int d_places) {
-            var s = ("%.5f".printf (d));
+            var s = ("%.9f".printf (d));
             while (s.last_index_of ("0") == s.length - 1)
                 s = s.slice (0, s.length - 1);
             if (s.last_index_of (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR)) == s.length - 1)
