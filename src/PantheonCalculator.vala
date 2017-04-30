@@ -37,10 +37,10 @@ namespace PantheonCalculator {
             build_version_info = Build.VERSION_INFO;
 
             app_launcher = "org.pantheon.calculator.desktop";
-            main_url = "https://launchpad.net/pantheon-calculator";
-            bug_url = "https://bugs.launchpad.net/pantheon-calculator";
-            help_url = "https://answers.launchpad.net/pantheon-calculator"; 
-            translate_url = "https://translations.launchpad.net/pantheon-calculator";
+            main_url = "https://github.com/elementary/calculator";
+            bug_url = "https://github.com/elementary/calculator/issues";
+            help_url = "https://elementaryos.stackexchange.com/questions/tagged/calculator"; 
+            translate_url = "https://l10n.elementary.io/projects/calculator";
             about_authors = { "Marvin Beckers <beckersmarvin@gmail.com>" };
             about_comments = "";
             about_translators = _("translator-credits");
