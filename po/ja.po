@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2017-04-30 01:12+0000\n"
+"PO-Revision-Date: 2017-05-16 07:41+0000\n"
 "Last-Translator: Ryo Nakano <nscnskichiro0911@gmail.com>\n"
 "Language-Team: Japanese "
 "<https://l10n.elementary.io/projects/calculator/calculator/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
-msgstr "電卓"
+msgstr "計算機"
 
 #: ../src/PantheonCalculator.vala:44
 msgid "translator-credits"
