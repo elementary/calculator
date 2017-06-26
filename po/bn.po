@@ -3,14 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2016-05-27 15:29+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-29 13:09+0000\n"
+"Last-Translator: Zahidul Hossain <choyan.009@gmail.com>\n"
+"Language-Team: bn (generated) "
+"<https://l10n.elementary.io/projects/calculator/calculator/bn/>\n"
+"Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
@@ -30,7 +33,7 @@ msgstr "পূর্ববর্তী ফলাফল"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
-msgstr "যা যোগ করতে চানঃ"
+msgstr "যা যোগ করতে চান:"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Result"
@@ -54,7 +57,7 @@ msgstr "বর্ধিত কার্যকারিতা দেখান"
 
 #: ../src/MainWindow.vala:124
 msgid "Calculate Result"
-msgstr ""
+msgstr "ফলাফল গণনা করুন"
 
 #: ../src/MainWindow.vala:127
 msgid "Add last result"
@@ -70,67 +73,67 @@ msgstr "এন্ট্রি মুছে ফেলুন"
 
 #: ../src/MainWindow.vala:136
 msgid "Subtract"
-msgstr ""
+msgstr "বিয়োগ করুন"
 
 #: ../src/MainWindow.vala:139
 msgid "Multiply"
-msgstr ""
+msgstr "গুণ করুন"
 
 #: ../src/MainWindow.vala:142
 msgid "Divide"
-msgstr ""
+msgstr "ভাগ করুন"
 
 #: ../src/MainWindow.vala:148
 msgid "Percentage"
-msgstr ""
+msgstr "শতাংশ"
 
 #: ../src/MainWindow.vala:219
 msgid "Start Group"
-msgstr ""
+msgstr "গ্রুপ শুরু করুন"
 
 #: ../src/MainWindow.vala:220
 msgid "End Group"
-msgstr ""
+msgstr "গ্রুপ শেষ করুন"
 
 #: ../src/MainWindow.vala:221
 msgid "Exponent"
-msgstr ""
+msgstr "সূচক"
 
 #: ../src/MainWindow.vala:223
 msgid "Root"
-msgstr ""
+msgstr "মূল"
 
 #: ../src/MainWindow.vala:224
 msgid "Sine"
-msgstr ""
+msgstr "সাইন"
 
 #: ../src/MainWindow.vala:225
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "হাইপারবলিক সাইন"
 
 #: ../src/MainWindow.vala:226
 msgid "Cosine"
-msgstr ""
+msgstr "কোসাইন"
 
 #: ../src/MainWindow.vala:227
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "হাইপারবলিক কোসাইন"
 
 #: ../src/MainWindow.vala:228
 msgid "Tangent"
-msgstr ""
+msgstr "ট্যানজেন্ট"
 
 #: ../src/MainWindow.vala:229
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "হাইপারবলিক ট্যানজেন্ট"
 
 #: ../src/MainWindow.vala:230
 msgid "Pi"
-msgstr ""
+msgstr "পাই"
 
 #: ../src/MainWindow.vala:231
 msgid "Euler's Number"
-msgstr ""
+msgstr "ইউলারের নাম্বার"
 
 #: ../src/MainWindow.vala:371
 msgid "Hide extended functionality"
@@ -138,8 +141,8 @@ msgstr "বর্ধিত কার্যকারিতা লুকান"
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
-msgstr "'%s' গ্রহণযোগ্য নয়"
+msgstr "'%s' গ্রহণযোগ্য নয়।"
 
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
-msgstr "'%s\" অজানা"
+msgstr "'%s\" অজানা।"

@@ -3,18 +3,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2016-05-27 15:27+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-06-16 17:33+0000\n"
+"Last-Translator: Rajeev Kumar <irajeevankumar@gmail.com>\n"
+"Language-Team: Tamil "
+"<https://l10n.elementary.io/projects/calculator/calculator/ta/>\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
-msgstr ""
+msgstr "கால்குலேட்டர்"
 
 #: ../src/PantheonCalculator.vala:44
 msgid "translator-credits"
@@ -30,7 +33,7 @@ msgstr "வரலாறு"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
-msgstr "கூட்ட வேண்டிய மதிப்புகள்"
+msgstr "கூட்ட வேண்டிய மதிப்புகள்:"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Result"
@@ -110,27 +113,27 @@ msgstr "குவிபிறை சைன்"
 
 #: ../src/MainWindow.vala:226
 msgid "Cosine"
-msgstr ""
+msgstr "கோசைன்"
 
 #: ../src/MainWindow.vala:227
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "குவிபிறை கோசைன்"
 
 #: ../src/MainWindow.vala:228
 msgid "Tangent"
-msgstr ""
+msgstr "தொடுகோடு"
 
 #: ../src/MainWindow.vala:229
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "குவிபிறை தொடுகோடு"
 
 #: ../src/MainWindow.vala:230
 msgid "Pi"
-msgstr ""
+msgstr "பை"
 
 #: ../src/MainWindow.vala:231
 msgid "Euler's Number"
-msgstr ""
+msgstr "ஆய்லர் எண்"
 
 #: ../src/MainWindow.vala:371
 msgid "Hide extended functionality"
@@ -138,8 +141,8 @@ msgstr "நீட்டிக்கப்பட்ட செயல்பாட�
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."
-msgstr "'%s' தவறானது"
+msgstr "'%s' தவறானது."
 
 #: ../src/Core/Scanner.vala:164
 msgid "'%s' is unknown."
-msgstr "'%s' அறியப்படாதது"
+msgstr "'%s' அறியப்படாதது."

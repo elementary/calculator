@@ -3,14 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2016-12-17 07:47+0000\n"
-"Last-Translator: Marius Albina <marius.albina@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-06-12 20:55+0000\n"
+"Last-Translator: Nicolae Crefelean <kneekoo@yahoo.com>\n"
+"Language-Team: Romanian "
+"<https://l10n.elementary.io/projects/calculator/calculator/ro/>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
@@ -19,7 +23,7 @@ msgstr "Calculator"
 #: ../src/PantheonCalculator.vala:44
 msgid "translator-credits"
 msgstr ""
-"Launchpad Contributions:\n"
+"Contribuții Launchpad:\n"
 "  AbsoluteVasilii https://launchpad.net/~basil-russu\n"
 "  Danny https://launchpad.net/~dani-bejan2000\n"
 "  Edi https://launchpad.net/~edi-frb\n"
@@ -27,7 +31,8 @@ msgstr ""
 "  Marius Albina https://launchpad.net/~marius-albina\n"
 "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
 "  TDT https://launchpad.net/~the-dirtchamber\n"
-"  Ungurianu Alexandru https://launchpad.net/~alexandru-ungurianu"
+"  Ungurianu Alexandru https://launchpad.net/~alexandru-ungurianu\n"
+"  Nicolae Crefelean https://launchpad.net/~kneekoo"
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:86
 msgid "History"
@@ -35,7 +40,7 @@ msgstr "Istoric"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
-msgstr "Valoare de adăugat"
+msgstr "Valoare de adăugat:"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Result"
@@ -55,7 +60,7 @@ msgstr "Adaugă"
 
 #: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
 msgid "Show extended functionality"
-msgstr "Afişează facilități extinse"
+msgstr "Afișează facilitățile extinse"
 
 #: ../src/MainWindow.vala:124
 msgid "Calculate Result"
@@ -63,7 +68,7 @@ msgstr "Calculează rezultatul"
 
 #: ../src/MainWindow.vala:127
 msgid "Add last result"
-msgstr "Adăugaţi ultimul rezultat"
+msgstr "Adaugă ultimul rezultat"
 
 #: ../src/MainWindow.vala:129
 msgid "Backspace"
