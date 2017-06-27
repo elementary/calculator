@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2017-06-06 19:00+0000\n"
+"PO-Revision-Date: 2017-06-19 14:51+0000\n"
 "Last-Translator: Lawrence Aberba <karabutaworld@gmail.com>\n"
 "Language-Team: Akan "
 "<https://l10n.elementary.io/projects/calculator/calculator/ak/>\n"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../src/HistoryDialog.vala:88
 msgid "Result"
-msgstr ""
+msgstr "Nea afi mu aba"
 
 #: ../src/HistoryDialog.vala:92
 msgid "Expression"
