@@ -20,5 +20,6 @@
     <url type="bugtracker">https://bugs.launchpad.net/pantheon-calculator</url>
     <url type="donation">https://elementary.io/get-involved#funding</url>
     <url type="help">https://elementaryos.stackexchange.com/questions/tagged/calculator</url>
+    <url type="translate">https://l10n.elementary.io/projects/calculator</url>
     <update_contact>contact_at_elementary.io</update_contact>
 </component>
