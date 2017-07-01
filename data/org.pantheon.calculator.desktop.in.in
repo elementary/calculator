@@ -7,8 +7,3 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=GNOME;GTK;Utility;Calculator;
-Actions=AboutDialog;
-
-[Desktop Action AboutDialog]
-_Name=About Calculator
-Exec=pantheon-calculator --about

@@ -37,14 +37,6 @@ namespace PantheonCalculator {
             build_version_info = Build.VERSION_INFO;
 
             app_launcher = "org.pantheon.calculator.desktop";
-            main_url = "https://github.com/elementary/calculator";
-            bug_url = "https://github.com/elementary/calculator/issues";
-            help_url = "https://elementaryos.stackexchange.com/questions/tagged/calculator"; 
-            translate_url = "https://l10n.elementary.io/projects/calculator";
-            about_authors = { "Marvin Beckers <beckersmarvin@gmail.com>" };
-            about_comments = "";
-            about_translators = _("translator-credits");
-            about_license_type = Gtk.License.GPL_3_0;
             
             SimpleAction quit_action = new SimpleAction ("quit", null);
             quit_action.activate.connect (() => {
