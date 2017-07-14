@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2016-05-27 15:28+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2017-07-04 14:54+0000\n"
+"Last-Translator: Bokor Pavol <bokor.pavol@gmail.com>\n"
+"Language-Team: Slovak "
+"<https://l10n.elementary.io/projects/calculator/calculator/sk/>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
@@ -32,7 +34,7 @@ msgstr "História"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
-msgstr "Pridaná hodnota"
+msgstr "Hodnota, ktorú chcete pridať:"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Result"
@@ -96,7 +98,7 @@ msgstr "Ukončiť Skupinu"
 
 #: ../src/MainWindow.vala:221
 msgid "Exponent"
-msgstr "Exponent"
+msgstr "Exponent (mocniteľ)"
 
 #: ../src/MainWindow.vala:223
 msgid "Root"
