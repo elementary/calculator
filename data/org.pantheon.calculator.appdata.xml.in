@@ -17,7 +17,7 @@
     </provides>
     <developer_name>elementary LLC.</developer_name>
     <url type="homepage">https://elementary.io/</url>
-    <url type="bugtracker">https://bugs.launchpad.net/pantheon-calculator</url>
+    <url type="bugtracker">https://github.com/elementary/calculator/issues</url>
     <url type="donation">https://elementary.io/get-involved#funding</url>
     <url type="help">https://elementaryos.stackexchange.com/questions/tagged/calculator</url>
     <url type="translate">https://l10n.elementary.io/projects/calculator</url>
