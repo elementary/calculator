@@ -264,7 +264,7 @@ namespace PantheonCalculator.Core {
                 Operator op = get_operator (t_op);
                 var d = (double)(op.eval (double.parse (t2.content), double.parse (t1.content)));
                 if (fabs (d) - 0.0 < double.EPSILON) { 
-		        d = 0.0;
+		    d = 0.0;
 		}
                 return new Token (d.to_string (), TokenType.NUMBER);
             } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_OPERATOR ("The given token was no operator."); }
@@ -275,7 +275,7 @@ namespace PantheonCalculator.Core {
                 var f = get_function (tf);
                 var d = (double)(f.eval (double.parse (t1.content), double.parse (t2.content)));
 		if (fabs (d) - 0.0 < double.EPSILON) { 
-		        d = 0.0; 
+		    d = 0.0; 
 		}
                 return new Token (d.to_string (), TokenType.NUMBER);
             } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_FUNCTION ("The given token was no function."); }
