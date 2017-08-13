@@ -20,7 +20,7 @@ Run `cmake` to configure the build environment and then `make` to build
     cmake -DCMAKE_INSTALL_PREFIX=/usr ..
     make
     
-To install, use `make install`, then execute with `pantheon-calculator`
+To install, use `make install`, then execute with `io.elementary.calculator`
 
     sudo make install
-    pantheon-calculator
+    io.elementary.calculator
