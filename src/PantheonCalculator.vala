@@ -21,13 +21,13 @@ namespace PantheonCalculator {
 
     public class PantheonCalculatorApp : Granite.Application {
         construct {
-            application_id = "org.pantheon.calculator";
+            application_id = "io.elementary.calculator";
             flags = ApplicationFlags.FLAGS_NONE;
 
             Intl.setlocale (LocaleCategory.ALL, "");
 
             program_name = _("Calculator");
-            app_years = "2014-2016";
+            app_years = "2014-2017";
             app_icon = "accessories-calculator";
 
             build_data_dir = Build.DATADIR;

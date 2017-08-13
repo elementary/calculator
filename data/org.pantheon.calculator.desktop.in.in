@@ -1,7 +1,7 @@
 [Desktop Entry]
 _Name=Calculator
 _Comment=Solve simple equations
-Exec=pantheon-calculator %U
+Exec=io.elementary.calculator %U
 Icon=accessories-calculator
 Terminal=false
 Type=Application
