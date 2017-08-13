@@ -10,7 +10,7 @@ set (PKGDATADIR "${DATADIR}/io.elementary.calculator")
 set (GETTEXT_PACKAGE "io.elementary.calculator")
 set (EXEC_NAME "io.elementary.calculator")
 set (RELEASE_NAME "An elementary app for simple calculation.")
-set (VERSION "0.1.2")
+set (VERSION "0.1.3")
 set (VERSION_INFO "First Release")
 set (DOLLAR "$")
 
