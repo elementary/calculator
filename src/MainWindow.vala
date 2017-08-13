@@ -78,6 +78,7 @@ namespace PantheonCalculator {
 
         private void build_titlebar () {
             headerbar = new Gtk.HeaderBar ();
+            headerbar.has_subtitle = false;
             headerbar.show_close_button = true;
             headerbar.set_title (_("Calculator"));
             set_titlebar (headerbar); 
