@@ -13,7 +13,7 @@
         </_p>
     </description>
     <provides>
-        <binary>pantheon-calculator</binary>
+        <binary>io.elementary.calculator</binary>
     </provides>
     <developer_name>elementary LLC.</developer_name>
     <url type="homepage">https://elementary.io/</url>
