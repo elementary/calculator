@@ -53,7 +53,7 @@ namespace PantheonCalculator {
             set_resizable (false);
             window_position = Gtk.WindowPosition.CENTER;
 
-            settings = new Settings ("org.pantheon.calculator.saved-state");
+            settings = new Settings ("io.elementary.calculator.saved-state");
             decimal_places = settings.get_int ("decimal-places");
 
             history = new List<History?> ();

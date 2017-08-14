@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-    <schema path="/org/pantheon/calculator/saved-state/" id="org.pantheon.calculator.saved-state" gettext-domain="pantheon-calculator">
+    <schema path="/io/elementary/calculator/saved-state/" id="io.elementary.calculator.saved-state" gettext-domain="io.elementary.calculator">
         <key name="extended-shown" type="b">
             <default>false</default>
             <summary>Saves the state of the extended panel (open or closed).</summary>
