@@ -57,7 +57,7 @@ OPTIONS
 )
 
 include(GSettings)
-add_schema("data/org.pantheon.calculator.gschema.xml")
+add_schema("data/io.elementary.calculator.gschema.xml")
 
 add_subdirectory (po)
 
