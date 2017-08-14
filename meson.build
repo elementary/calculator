@@ -2,12 +2,6 @@ project('io.elementary.calculator', 'vala', 'c')
 
 i18n = import('i18n')
 
-dependencies = [
-        dependency('glib-2.0'),
-        dependency('gobject-2.0'),
-        dependency('gtk+-3.0')
-]
-
 add_global_arguments('-DGETTEXT_PACKAGE="io.elementary.calculator"', language:'c')
 
 executable(
