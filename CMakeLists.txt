@@ -1,4 +1,4 @@
-project (calculus)
+project (io.elementary.calculator)
 
 cmake_minimum_required (VERSION 2.8)
 
@@ -6,11 +6,11 @@ cmake_minimum_required (VERSION 2.8)
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
 set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
-set (PKGDATADIR "${DATADIR}/pantheon-calculator")
-set (GETTEXT_PACKAGE "pantheon-calculator")
-set (EXEC_NAME "pantheon-calculator")
+set (PKGDATADIR "${DATADIR}/io.elementary.calculator")
+set (GETTEXT_PACKAGE "io.elementary.calculator")
+set (EXEC_NAME "io.elementary.calculator")
 set (RELEASE_NAME "An elementary app for simple calculation.")
-set (VERSION "0.1.2")
+set (VERSION "0.1.3")
 set (VERSION_INFO "First Release")
 set (DOLLAR "$")
 
@@ -57,7 +57,7 @@ OPTIONS
 )
 
 include(GSettings)
-add_schema("data/org.pantheon.calculator.gschema.xml")
+add_schema("data/io.elementary.calculator.gschema.xml")
 
 add_subdirectory (po)
 

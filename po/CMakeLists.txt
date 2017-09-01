@@ -6,5 +6,5 @@ add_translations_catalog (${GETTEXT_PACKAGE}
     DESKTOP_FILES
         ../data/pantheon-calculator.desktop.in.in
     APPDATA_FILES
-        ../data/pantheon-calculator.appdata.xml.in
+        ../data/io.elementary.calculator.appdata.xml.in
 )
