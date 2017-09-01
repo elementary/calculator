@@ -44,7 +44,7 @@ namespace PantheonCalculator.Core {
             Evaluation e = new Evaluation ();
 
             for (int i = 0; input.get_next_char (ref index, out c); i++) {
-                if (c != ' ') {
+                if (c != ' ' && c != ',') {
                     scanner.uc.resize (scanner.uc.length + 1);
                     scanner.uc[scanner.uc.length - 1] = c;
                 }

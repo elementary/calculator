@@ -287,7 +287,22 @@ namespace PantheonCalculator.Core {
                 s = s.slice (0, s.length - 1);
             if (s.last_index_of (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR)) == s.length - 1)
                 s = s.slice (0, s.length - 1);
+	    s = insert_commas (s);
             return s;
         }
     }
+
+	private string insert_commas (string s) {
+		var builder = new StringBuilder (s);
+		var decimalPos = s.last_index_of(".");
+		if(decimalPos == -1){
+			decimalPos = s.length;
+		}
+		for (int i = decimalPos - 3; i > 0; i-=3) {
+	    		builder.insert (i, ",");
+           	}
+		return builder.str;
+        }
+
 }
+
