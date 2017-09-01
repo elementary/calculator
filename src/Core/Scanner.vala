@@ -28,13 +28,16 @@ namespace PantheonCalculator.Core {
         public unichar[] uc;
 
         private unichar decimal_symbol;
+	private unichar separator_symbol;
 
         public Scanner (string str) {
             this.str = str;
             this.pos = 0;
             this.uc = new unichar[0];
             this.decimal_symbol = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0];
+	    this.separator_symbol = Posix.nl_langinfo (Posix.NLItem.THOUSEP).to_utf8 ()[0];
         }
+
 
         public static List<Token> scan (string input) throws SCANNER_ERROR {
             Scanner scanner = new Scanner (input);
@@ -44,7 +47,7 @@ namespace PantheonCalculator.Core {
             Evaluation e = new Evaluation ();
 
             for (int i = 0; input.get_next_char (ref index, out c); i++) {
-                if (c != ' ' && c != ',') {
+                if (c != ' ' && c != scanner.separator_symbol) {
                     scanner.uc.resize (scanner.uc.length + 1);
                     scanner.uc[scanner.uc.length - 1] = c;
                 }

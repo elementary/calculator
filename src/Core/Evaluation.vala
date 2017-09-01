@@ -287,19 +287,21 @@ namespace PantheonCalculator.Core {
                 s = s.slice (0, s.length - 1);
             if (s.last_index_of (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR)) == s.length - 1)
                 s = s.slice (0, s.length - 1);
-	    s = insert_commas (s);
+	    s = insert_separators (s);
             return s;
         }
     }
 
-	private string insert_commas (string s) {
+	private string insert_separators (string s) {
+		unichar decimal_symbol = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0];
+ 		unichar separator_symbol = Posix.nl_langinfo (Posix.NLItem.THOUSEP).to_utf8 ()[0];
 		var builder = new StringBuilder (s);
-		var decimalPos = s.last_index_of(".");
+		var decimalPos = s.last_index_of_char(decimal_symbol);
 		if(decimalPos == -1){
 			decimalPos = s.length;
 		}
 		for (int i = decimalPos - 3; i > 0; i-=3) {
-	    		builder.insert (i, ",");
+	    		builder.insert_unichar (i, separator_symbol);
            	}
 		return builder.str;
         }
