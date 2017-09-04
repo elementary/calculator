@@ -77,12 +77,12 @@ namespace PantheonCalculator {
         }
 
         public void undo () {
-            uint hist_length = history.length () - 1;
-            unowned List<History?> last_el = history.nth (hist_length);
-            if (last_el != null) {
-                entry.set_text (last_el.data.exp);
+            unowned List<History?> previous_entry = history.last ();
+            if (previous_entry != null) {
+                entry.set_text (previous_entry.data.exp);
             }
-            history.remove_link (last_el);
+
+            history.remove_link (previous_entry);
         }
 
         private void build_titlebar () {
