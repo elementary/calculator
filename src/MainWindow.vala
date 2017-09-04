@@ -82,7 +82,6 @@ namespace PantheonCalculator {
                 entry.set_text (previous_entry.data.exp);
                 history.remove_link (previous_entry);
             }
-
         }
 
         private void build_titlebar () {
