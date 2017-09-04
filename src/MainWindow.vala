@@ -76,14 +76,14 @@ namespace PantheonCalculator {
             });
         }
 
-        public void undo() {
-            unowned List<History?> prev_entry = history.last();
-            uint hist_length = history.length()-1;
+        public void undo () {
+            unowned List<History?> prev_entry = history.last ();
+            uint hist_length = history.length () - 1;
             unowned List<History?> last_el = history.nth (hist_length);
             if (prev_entry != null) {
                 entry.set_text (prev_entry.data.exp);
             }
-            history.remove_link(last_el);
+            history.remove_link (last_el);
         }
 
         private void build_titlebar () {
