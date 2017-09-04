@@ -80,9 +80,9 @@ namespace PantheonCalculator {
             unowned List<History?> previous_entry = history.last ();
             if (previous_entry != null) {
                 entry.set_text (previous_entry.data.exp);
+                history.remove_link (previous_entry);
             }
 
-            history.remove_link (previous_entry);
         }
 
         private void build_titlebar () {
