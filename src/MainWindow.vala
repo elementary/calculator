@@ -76,6 +76,14 @@ namespace PantheonCalculator {
             });
         }
 
+        public void undo () {
+            unowned List<History?> previous_entry = history.last ();
+            if (previous_entry != null) {
+                entry.set_text (previous_entry.data.exp);
+                history.remove_link (previous_entry);
+            }
+        }
+
         private void build_titlebar () {
             headerbar = new Gtk.HeaderBar ();
             headerbar.has_subtitle = false;
