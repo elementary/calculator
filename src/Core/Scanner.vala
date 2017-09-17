@@ -23,19 +23,19 @@ namespace PantheonCalculator.Core {
     }
 
     public class Scanner : Object {
-        public unowned string str;
+        public unowned string str { get; construct set; }
         public ssize_t pos;
         public unichar[] uc;
 
         private unichar decimal_symbol;
-	private unichar separator_symbol;
+        private unichar separator_symbol;
 
         public Scanner (string str) {
-            this.str = str;
-            this.pos = 0;
-            this.uc = new unichar[0];
-            this.decimal_symbol = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0];
-	    this.separator_symbol = Posix.nl_langinfo (Posix.NLItem.THOUSEP).to_utf8 ()[0];
+			Object (str: str,
+					pos: 0,
+					uc: new unichar[0],
+					decimal_symbol: Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0],
+					separator_symbol: Posix.nl_langinfo (Posix.NLItem.THOUSEP).to_utf8 ()[0]);
         }
 
 
