@@ -79,7 +79,7 @@ namespace PantheonCalculator.Core {
                         else
                             throw new SCANNER_ERROR.ALPHA_INVALID (_("'%s' is invalid."), t.content);
 
-                    } else if (t.token_type == TokenType.OPERATOR && t.content == "-") {
+                    } else if (t.token_type == TokenType.OPERATOR && (t.content == "-" || t.content == "−")) {
                         if (last_token == null || (last_token != null && last_token.token_type != TokenType.NUMBER &&
                         last_token.token_type != TokenType.P_RIGHT)) {
                             next_number_negative = true;

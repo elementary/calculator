@@ -39,7 +39,11 @@ namespace PantheonCalculator {
                     window.destroy ();
                 }
             });
+            SimpleAction undo_action = new SimpleAction ("undo", null);
+            undo_action.activate.connect (() => window.undo ());
+            add_action (undo_action);
             add_action (quit_action);
+            add_accelerator ("<Control>z", "app.undo", null);
             add_accelerator ("<Control>q", "app.quit", null);
         }
 
