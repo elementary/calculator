@@ -33,7 +33,7 @@ namespace PantheonCalculator.Core {
         public Scanner (string str) {
 			Object (str: str,
 					pos: 0,
-					uc: new unichar[0],
+					uc: new unichar[0]
 					decimal_symbol: Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0],
 					separator_symbol: Posix.nl_langinfo (Posix.NLItem.THOUSEP).to_utf8 ()[0]);
         }
