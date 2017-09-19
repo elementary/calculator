@@ -6,21 +6,17 @@
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
-* cmake
 * libgranite-dev
+* meson
 * valac
-
-It's recommended to create a clean build environment
-
-    mkdir build
-    cd build/
     
-Run `cmake` to configure the build environment and then `make` to build
+Run `meson` to configure the build environment and then `ninja` to build
 
-    cmake -DCMAKE_INSTALL_PREFIX=/usr ..
-    make
+    meson build --prefix=/usr
+    cd build
+    ninja
     
-To install, use `make install`, then execute with `io.elementary.calculator`
+To install, use `ninja install`, then execute with `io.elementary.calculator`
 
-    sudo make install
+    sudo ninja install
     io.elementary.calculator

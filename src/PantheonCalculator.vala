@@ -30,12 +30,6 @@ namespace PantheonCalculator {
             app_years = "2014-2017";
             app_icon = "accessories-calculator";
 
-            build_data_dir = Build.DATADIR;
-            build_pkg_data_dir = Build.PKGDATADIR;
-            build_release_name = Build.RELEASE_NAME;
-            build_version = Build.VERSION;
-            build_version_info = Build.VERSION_INFO;
-
             app_launcher = "org.pantheon.calculator.desktop";
             
             SimpleAction quit_action = new SimpleAction ("quit", null);
