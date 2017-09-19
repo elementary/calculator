@@ -4,7 +4,7 @@ services:
  - docker
 
 env:
- - DEPENDENCY_PACKAGES="meson libgranite-dev valac"
+ - DEPENDENCY_PACKAGES="appstream desktop-file-utils meson libgranite-dev valac"
 
 install:
  - docker pull elementary/docker:loki
