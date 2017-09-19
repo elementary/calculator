@@ -5,12 +5,13 @@
     <metadata_license>CC0-1.0</metadata_license>
     <project_group>elementary</project_group>
     <project_license>GPL-3.0+</project_license>
-    <_name>Calculator</_name>
+    <name>Calculator</name>
+    <summary>Solve simple equations</summary>
     <description>
-        <_p>
+        <p>
             A simple calculator for everyday use. It supports basic and some
             scientific calculations including trigonometry functions, sin, cos, and tan.
-        </_p>
+        </p>
     </description>
     <provides>
         <binary>io.elementary.calculator</binary>
