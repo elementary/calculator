@@ -10,11 +10,11 @@ You'll need the following dependencies:
 * meson
 * valac
     
-Run `meson` to configure the build environment and then `ninja` to build
+Run `meson build` to configure the build environment. Change to the build directory and run `ninja test` to build and run automated tests
 
     meson build --prefix=/usr
     cd build
-    ninja
+    ninja test
     
 To install, use `ninja install`, then execute with `io.elementary.calculator`
 
