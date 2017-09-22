@@ -1,6 +1,6 @@
 [Desktop Entry]
-_Name=Calculator
-_Comment=Solve simple equations
+Name=Calculator
+Comment=Solve simple equations
 Exec=io.elementary.calculator %U
 Icon=accessories-calculator
 Terminal=false
