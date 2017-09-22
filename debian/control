@@ -2,7 +2,8 @@ Source: pantheon-calculator
 Section: x11
 Priority: extra
 Maintainer: Cody Garver <cody@elementary.io>
-Build-Depends: debhelper (>= 8.0.0),
+Build-Depends: appstream,
+               debhelper (>= 8.0.0),
                desktop-file-utils,
                gettext,
                libgranite-dev (>= 0.3.0),
