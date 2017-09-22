@@ -24,16 +24,15 @@ namespace PantheonCalculator.Core {
 
     public class Scanner : Object {
         public unowned string str { get; construct set; }
-        public ssize_t pos { get; construct set; }
-        public unichar[] uc { get; construct set; } 
+        public ssize_t pos { get; set; default = 0; }
 
-        private unichar decimal_symbol;
-        private unichar separator_symbol;
+        public unichar[] uc = new unichar[0];
+
+        public unichar decimal_symbol { get; construct set; }
+        public unichar separator_symbol { get; construct set; }
 
         public Scanner (string str) {
-	    Object (str: str, 
-                    pos: 0,
-                    uc: new unichar[0],
+	    Object (str: str,
                     decimal_symbol: Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0],
                     separator_symbol: Posix.nl_langinfo (Posix.NLItem.THOUSEP).to_utf8 ()[0]);
         }
