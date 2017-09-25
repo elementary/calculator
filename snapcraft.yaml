@@ -8,15 +8,28 @@ description: |
 grade: stable
 confinement: strict
 
+plugs:
+  elementary-platform-loki:
+    interface: content
+    target: $SNAP/gnome-platform
+    default-provider: elementary-platform-loki:elementary-platform-loki
+
+slots:
+  calculator:
+    interface: dbus
+    bus: session
+    name: io.elementary.calculator
+
 apps:
   calculator:
     command: desktop-launch $SNAP/usr/bin/io.elementary.calculator
     plugs:
       - x11
       - gsettings
+      - unity7
 
 parts:
-  desktop-elementary:
+  elementary:
     plugin: nil
     prepare: |
       add-apt-repository -y ppa:elementary-os/stable
@@ -30,7 +43,7 @@ parts:
       apt update
       apt dist-upgrade -y
   calculator:
-    after: [desktop-elementary, desktop-gtk3]
+    after: [elementary, desktop-gnome-platform]
     plugin: meson
     meson-parameters: [--prefix=/usr]
     source: .
