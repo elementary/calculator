@@ -27,6 +27,7 @@ apps:
       - x11
       - gsettings
       - unity7
+    desktop: usr/share/applications/org.pantheon.calculator.desktop
 
 parts:
   elementary:
