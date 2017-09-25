@@ -23,17 +23,18 @@ namespace PantheonCalculator.Core {
     }
 
     public class Scanner : Object {
-        public unowned string str;
-        public ssize_t pos;
-        public unichar[] uc;
+        public unowned string str { get; construct set; }
+        public ssize_t pos { get; set; default = 0; }
 
-        private unichar decimal_symbol;
+        public unichar[] uc = new unichar[0];
+
+        public unichar decimal_symbol { get; construct set; }
+        public unichar separator_symbol { get; construct set; }
 
         public Scanner (string str) {
-            this.str = str;
-            this.pos = 0;
-            this.uc = new unichar[0];
-            this.decimal_symbol = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0];
+	    Object (str: str,
+                    decimal_symbol: Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0],
+                    separator_symbol: Posix.nl_langinfo (Posix.NLItem.THOUSEP).to_utf8 ()[0]);
         }
 
         public static List<Token> scan (string input) throws SCANNER_ERROR {
@@ -44,7 +45,7 @@ namespace PantheonCalculator.Core {
             Evaluation e = new Evaluation ();
 
             for (int i = 0; input.get_next_char (ref index, out c); i++) {
-                if (c != ' ') {
+                if (c != ' ' && c != scanner.separator_symbol) {
                     scanner.uc.resize (scanner.uc.length + 1);
                     scanner.uc[scanner.uc.length - 1] = c;
                 }
