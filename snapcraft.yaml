@@ -43,6 +43,7 @@ parts:
       apt update
       apt dist-upgrade -y
   calculator:
+    build-attributes: [no-system-libraries]
     after: [elementary, desktop-gnome-platform]
     plugin: meson
     meson-parameters: [--prefix=/usr]
