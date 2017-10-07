@@ -9,14 +9,14 @@ You'll need the following dependencies:
 * libgranite-dev
 * meson
 * valac
-    
+
 Run `meson build` to configure the build environment. Change to the build directory and run `ninja test` to build and run automated tests
 
     meson build --prefix=/usr
     cd build
     ninja test
-    
-To install, use `ninja install`, then execute with `io.elementary.calculator`
+
+To install, use `ninja install`, then execute with `com.github.elementary.calculator`
 
     sudo ninja install
-    io.elementary.calculator
+    com.github.elementary.calculator

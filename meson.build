@@ -1,8 +1,8 @@
-project('io.elementary.calculator', 'vala', 'c')
+project('com.github.elementary.calculator', 'vala', 'c')
 
 i18n = import('i18n')
 
-add_global_arguments('-DGETTEXT_PACKAGE="io.elementary.calculator"', language:'c')
+add_global_arguments('-DGETTEXT_PACKAGE="com.github.elementary.calculator"', language:'c')
 
 executable(
     meson.project_name(),
