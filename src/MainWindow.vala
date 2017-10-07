@@ -89,7 +89,7 @@ namespace PantheonCalculator {
             headerbar.has_subtitle = false;
             headerbar.show_close_button = true;
             headerbar.set_title (_("Calculator"));
-            set_titlebar (headerbar); 
+            set_titlebar (headerbar);
 
             extended_img_1 = new Gtk.Image.from_icon_name ("pane-hide-symbolic", Gtk.IconSize.MENU);
             extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic", Gtk.IconSize.MENU);
@@ -436,7 +436,7 @@ namespace PantheonCalculator {
                 case Gdk.Key.KP_Multiply:
                 case Gdk.Key.asterisk:
                     key.keyval = Gdk.Key.multiply;
-                    break; 
+                    break;
                 case Gdk.Key.KP_Subtract:
                 case Gdk.Key.minus:
                     regular_button_clicked ("−");

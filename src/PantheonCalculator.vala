@@ -31,7 +31,7 @@ namespace PantheonCalculator {
             app_icon = "accessories-calculator";
 
             app_launcher = "org.pantheon.calculator.desktop";
-            
+
             SimpleAction quit_action = new SimpleAction ("quit", null);
             quit_action.activate.connect (() => {
                 if (window != null) {
@@ -58,4 +58,3 @@ namespace PantheonCalculator {
         return application.run (args);
     }
 }
-
