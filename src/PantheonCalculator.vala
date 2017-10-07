@@ -21,7 +21,7 @@ namespace PantheonCalculator {
 
     public class PantheonCalculatorApp : Granite.Application {
         construct {
-            application_id = "com.github.elementary.calculator";
+            application_id = "io.elementary.calculator";
             flags = ApplicationFlags.FLAGS_NONE;
 
             Intl.setlocale (LocaleCategory.ALL, "");
@@ -30,7 +30,7 @@ namespace PantheonCalculator {
             app_years = "2014-2017";
             app_icon = "accessories-calculator";
 
-            app_launcher = "com.github.elementary.calculator.desktop";
+            app_launcher = "io.elementary.calculator.desktop";
 
             SimpleAction quit_action = new SimpleAction ("quit", null);
             quit_action.activate.connect (() => {

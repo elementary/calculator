@@ -16,7 +16,7 @@ Run `meson build` to configure the build environment. Change to the build direct
     cd build
     ninja test
 
-To install, use `ninja install`, then execute with `com.github.elementary.calculator`
+To install, use `ninja install`, then execute with `io.elementary.calculator`
 
     sudo ninja install
-    com.github.elementary.calculator
+    io.elementary.calculator

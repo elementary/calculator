@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Calculator
 Comment=Solve simple equations
-Exec=com.github.elementary.calculator %U
+Exec=io.elementary.calculator %U
 Icon=accessories-calculator
 Terminal=false
 Type=Application
