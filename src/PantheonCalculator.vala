@@ -30,7 +30,7 @@ namespace PantheonCalculator {
             app_years = "2014-2017";
             app_icon = "accessories-calculator";
 
-            app_launcher = "org.pantheon.calculator.desktop";
+            app_launcher = "io.elementary.calculator.desktop";
 
             SimpleAction quit_action = new SimpleAction ("quit", null);
             quit_action.activate.connect (() => {
