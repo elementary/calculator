@@ -34,6 +34,7 @@ namespace PantheonCalculator {
         private Gtk.Button          button_del;
         private Gtk.Button          button_clr;
         private Gtk.ToggleButton    button_extended;
+        private HistoryDialog history_dialog;
 
         private Gtk.InfoBar infobar;
         private Gtk.Label infobar_label;
@@ -321,7 +322,9 @@ namespace PantheonCalculator {
                 try {
                     var output = Core.Evaluation.evaluate (entry.get_text (), decimal_places);
                     if (entry.get_text () != output) {
-                        history.append (History () { exp = entry.get_text (), output = output } );
+                        History history_entry = History () { exp = entry.get_text (), output = output };
+                        history.append (history_entry);
+                        update_history_dialog (history_entry);
                         entry.set_text (output);
                         button_history.set_sensitive (true);
                         button_ans.set_sensitive (true);
@@ -407,9 +410,15 @@ namespace PantheonCalculator {
             position = entry.get_position ();
             button_history.sensitive = false;
 
-            var history_dialog = new HistoryDialog (history);
+            history_dialog = new HistoryDialog (history);
             history_dialog.added.connect (history_added);
             history_dialog.hide.connect (() => button_history.set_sensitive (true));
+        }
+
+        private void update_history_dialog (History entry) {
+            if (history_dialog != null) {
+                history_dialog.append (entry);
+            }
         }
 
         private void history_added (string input) {
