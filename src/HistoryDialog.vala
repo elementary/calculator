@@ -42,6 +42,12 @@ namespace PantheonCalculator {
             show_all ();
         }
 
+        public void append (MainWindow.History entry) {
+            Gtk.TreeIter iter;
+            list_store.insert (out iter, 0);
+            list_store.set (iter, 0, entry.exp, 1, entry.output);
+        }
+
         private void build_ui () {
             var content = get_content_area () as Gtk.Box;
             get_action_area ().margin = 6;
