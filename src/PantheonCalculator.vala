@@ -27,8 +27,6 @@ namespace PantheonCalculator {
             Intl.setlocale (LocaleCategory.ALL, "");
 
             program_name = _("Calculator");
-            app_years = "2014-2017";
-            app_icon = "accessories-calculator";
 
             app_launcher = "io.elementary.calculator.desktop";
 
