@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2017-05-02 18:57+0000\n"
-"Last-Translator: ckhaerudin <ckhaerudin@gmail.com>\n"
+"PO-Revision-Date: 2017-12-10 00:11+0000\n"
+"Last-Translator: Liffindra Angga Zaaldian <liffindra.zaaldian@icloud.com>\n"
 "Language-Team: Indonesian "
-"<https://l10n.elementary.io/projects/calculator/calculator/id/>\n"
+"<https://weblate.elementary.io/projects/calculator/calculator/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.17.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
@@ -38,7 +38,7 @@ msgstr "Riwayat"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
-msgstr "Nilai yang akan di tambah:"
+msgstr "Nilai yang akan ditambah:"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Result"
@@ -70,11 +70,11 @@ msgstr "Tambahkan hasil perhitungan terakhir"
 
 #: ../src/MainWindow.vala:129
 msgid "Backspace"
-msgstr "Backspace"
+msgstr "Hapus"
 
 #: ../src/MainWindow.vala:130
 msgid "Clear entry"
-msgstr "Hapus isian"
+msgstr "Bersihkan isian"
 
 #: ../src/MainWindow.vala:136
 msgid "Subtract"
@@ -138,11 +138,11 @@ msgstr "Pi"
 
 #: ../src/MainWindow.vala:231
 msgid "Euler's Number"
-msgstr "Nomor Euler"
+msgstr "Angka Euler"
 
 #: ../src/MainWindow.vala:371
 msgid "Hide extended functionality"
-msgstr "Sembunyikan fungsi extended"
+msgstr "Sembunyikan fungsi lainnya"
 
 #: ../src/Core/Scanner.vala:80
 msgid "'%s' is invalid."

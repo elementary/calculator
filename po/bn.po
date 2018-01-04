@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2017-04-29 13:09+0000\n"
-"Last-Translator: Zahidul Hossain <choyan.009@gmail.com>\n"
-"Language-Team: bn (generated) "
-"<https://l10n.elementary.io/projects/calculator/calculator/bn/>\n"
+"PO-Revision-Date: 2018-01-04 00:13+0000\n"
+"Last-Translator: Arkadeepta Roy <arkadeepta.roy2016@vitstudent.ac.in>\n"
+"Language-Team: Bengali "
+"<https://weblate.elementary.io/projects/calculator/calculator/bn/>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
@@ -65,7 +65,7 @@ msgstr "শেষ ফলাফল যোগ করুন"
 
 #: ../src/MainWindow.vala:129
 msgid "Backspace"
-msgstr "Backspace"
+msgstr "ব্যাকস্পেস"
 
 #: ../src/MainWindow.vala:130
 msgid "Clear entry"
@@ -101,7 +101,7 @@ msgstr "সূচক"
 
 #: ../src/MainWindow.vala:223
 msgid "Root"
-msgstr "মূল"
+msgstr "বর্গমূল"
 
 #: ../src/MainWindow.vala:224
 msgid "Sine"

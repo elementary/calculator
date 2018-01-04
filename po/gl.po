@@ -3,19 +3,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2016-05-27 15:28+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2017-12-31 00:13+0000\n"
+"Last-Translator: Brandan <brandanpl@gmail.com>\n"
+"Language-Team: Galician "
+"<https://weblate.elementary.io/projects/calculator/calculator/gl/>\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
 msgid "Calculator"
-msgstr ""
+msgstr "Calculadora"
 
 #: ../src/PantheonCalculator.vala:44
 msgid "translator-credits"
@@ -27,39 +29,39 @@ msgstr ""
 
 #: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:86
 msgid "History"
-msgstr ""
+msgstr "Historial"
 
 #: ../src/HistoryDialog.vala:84
 msgid "Value to add:"
-msgstr ""
+msgstr "Valor para engadir:"
 
 #: ../src/HistoryDialog.vala:88
 msgid "Result"
-msgstr ""
+msgstr "Resultado"
 
 #: ../src/HistoryDialog.vala:92
 msgid "Expression"
-msgstr ""
+msgstr "Expresión"
 
 #: ../src/HistoryDialog.vala:98
 msgid "Close"
-msgstr ""
+msgstr "Pechar"
 
 #: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:133
 msgid "Add"
-msgstr ""
+msgstr "Engadir"
 
 #: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
 msgid "Show extended functionality"
-msgstr ""
+msgstr "Mostrar funcionalidade extendida"
 
 #: ../src/MainWindow.vala:124
 msgid "Calculate Result"
-msgstr ""
+msgstr "Calcular Resultado"
 
 #: ../src/MainWindow.vala:127
 msgid "Add last result"
-msgstr ""
+msgstr "Engadir último resultado"
 
 #: ../src/MainWindow.vala:129
 msgid "Backspace"
@@ -75,23 +77,23 @@ msgstr ""
 
 #: ../src/MainWindow.vala:139
 msgid "Multiply"
-msgstr ""
+msgstr "Multiplicar"
 
 #: ../src/MainWindow.vala:142
 msgid "Divide"
-msgstr ""
+msgstr "Dividir"
 
 #: ../src/MainWindow.vala:148
 msgid "Percentage"
-msgstr ""
+msgstr "Porcentaxe"
 
 #: ../src/MainWindow.vala:219
 msgid "Start Group"
-msgstr ""
+msgstr "Comezar Grupo"
 
 #: ../src/MainWindow.vala:220
 msgid "End Group"
-msgstr ""
+msgstr "Rematar Grupo"
 
 #: ../src/MainWindow.vala:221
 msgid "Exponent"
