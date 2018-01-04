@@ -6,8 +6,9 @@
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
+
 * libgranite-dev
-* meson
+* meson >= 0.43.0
 * valac
 
 Run `meson build` to configure the build environment. Change to the build directory and run `ninja test` to build and run automated tests
