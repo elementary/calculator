@@ -33,6 +33,18 @@ namespace PantheonCalculator {
         private Gtk.Button          button_ans;
         private Gtk.Button          button_del;
         private Gtk.Button          button_clr;
+
+        // =========== MEMORY Buttons ============
+        //substract/add the current value from the stored value.
+        private Gtk.Button          button_Mplus;
+        private Gtk.Button          button_Mminus;
+        //memory recall
+        private Gtk.Button          button_MR;   
+        //memory clear   
+        private Gtk.Button          button_MC;
+        private string              memory;
+        // ======================================
+
         private Gtk.ToggleButton    button_extended;
         private HistoryDialog history_dialog;
 
@@ -59,6 +71,8 @@ namespace PantheonCalculator {
 
             history = new List<History?> ();
             position = 0;
+
+            memory = null;
 
             int x = settings.get_int ("window-x");
             int y = settings.get_int ("window-y");
@@ -150,6 +164,15 @@ namespace PantheonCalculator {
             button_del = new Button ("Del", _("Backspace"));
             button_clr = new Button ("C", _("Clear entry"));
             button_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            
+            button_Mplus = new Button ("M+", _("Add value to memory"));
+            button_Mminus = new Button ("M-", _("Substract value from memory"));
+            button_MR = new Button ("MR", _("Memory Recall")); 
+            button_MR.sensitive = false;
+            button_MR.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            button_MC = new Button ("MC", _("Memory clear"));
+            button_MC.sensitive = false;
+            button_MC.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
             var button_add = new Button (" + ", _("Add"));
             button_add.function = "+";
@@ -181,34 +204,40 @@ namespace PantheonCalculator {
 
             var basic_grid = new Gtk.Grid ();
             basic_grid.column_spacing = 6;
-            basic_grid.row_spacing = 6;
+            basic_grid.row_spacing = 7;
             basic_grid.valign = Gtk.Align.FILL;
 
             basic_grid.attach (entry, 0, 0, 4, 1);
-            basic_grid.attach (button_clr,     0, 1, 1, 1);
-            basic_grid.attach (button_del,    1, 1, 1, 1);
-            basic_grid.attach (button_percent, 2, 1, 1, 1);
-            basic_grid.attach (button_div,     3, 1, 1, 1);
 
-            basic_grid.attach (button_7,    0, 2, 1, 1);
-            basic_grid.attach (button_8,    1, 2, 1, 1);
-            basic_grid.attach (button_9,    2, 2, 1, 1);
-            basic_grid.attach (button_mult, 3, 2, 1, 1);
+            basic_grid.attach (button_MC,    0, 1, 1, 1);
+            basic_grid.attach (button_MR,    1, 1, 1, 1);
+            basic_grid.attach (button_Mplus,    2, 1, 1, 1);
+            basic_grid.attach (button_Mminus, 3, 1, 1, 1);
 
-            basic_grid.attach (button_4,    0, 3, 1, 1);
-            basic_grid.attach (button_5,    1, 3, 1, 1);
-            basic_grid.attach (button_6,    2, 3, 1, 1);
-            basic_grid.attach (button_sub,  3, 3, 1, 1);
+            basic_grid.attach (button_clr,     0, 2, 1, 1);
+            basic_grid.attach (button_del,    1, 2, 1, 1);
+            basic_grid.attach (button_percent, 2, 2, 1, 1);
+            basic_grid.attach (button_div,     3, 2, 1, 1);
 
-            basic_grid.attach (button_1,    0, 4, 1, 1);
-            basic_grid.attach (button_2,    1, 4, 1, 1);
-            basic_grid.attach (button_3,    2, 4, 1, 1);
-            basic_grid.attach (button_add,  3, 4, 1, 1);
+            basic_grid.attach (button_7,    0, 3, 1, 1);
+            basic_grid.attach (button_8,    1, 3, 1, 1);
+            basic_grid.attach (button_9,    2, 3, 1, 1);
+            basic_grid.attach (button_mult, 3, 3, 1, 1);
 
-            basic_grid.attach (button_0,     0, 5, 1, 1);
-            basic_grid.attach (button_point, 1, 5, 1, 1);
-            basic_grid.attach (button_ans,   2, 5, 1, 1);
-            basic_grid.attach (button_calc,  3, 5, 1, 1);
+            basic_grid.attach (button_4,    0, 4, 1, 1);
+            basic_grid.attach (button_5,    1, 4, 1, 1);
+            basic_grid.attach (button_6,    2, 4, 1, 1);
+            basic_grid.attach (button_sub,  3, 4, 1, 1);
+
+            basic_grid.attach (button_1,    0, 5, 1, 1);
+            basic_grid.attach (button_2,    1, 5, 1, 1);
+            basic_grid.attach (button_3,    2, 5, 1, 1);
+            basic_grid.attach (button_add,  3, 5, 1, 1);
+
+            basic_grid.attach (button_0,     0, 6, 1, 1);
+            basic_grid.attach (button_point, 1, 6, 1, 1);
+            basic_grid.attach (button_ans,   2, 6, 1, 1);
+            basic_grid.attach (button_calc,  3, 6, 1, 1);
 
             //attach all widgets
             main_grid.add (basic_grid);
@@ -236,6 +265,10 @@ namespace PantheonCalculator {
             button_9.clicked.connect (() => {regular_button_clicked (button_9.function);});
             button_point.clicked.connect (() => {regular_button_clicked (button_point.function);});
             button_percent.clicked.connect (() => {regular_button_clicked (button_percent.function);});
+            button_MC.clicked.connect (() => {button_Memory_clr_clicked ();});
+            button_MR.clicked.connect (() => {button_Memory_recall_clicked ();});
+            button_Mplus.clicked.connect (() => {button_Memory_Add_clicked ();});
+            button_Mminus.clicked.connect (() => {button_Memory_sub_clicked ();});
         }
 
         private void build_extended_ui () {
@@ -378,6 +411,44 @@ namespace PantheonCalculator {
 
             entry.grab_focus ();
             entry.set_position (position);
+        }
+
+        private void button_Memory_clr_clicked () {
+
+        }
+
+        private void button_Memory_recall_clicked () {
+
+        }
+
+        private void button_Memory_Add_clicked () {
+            if (entry.get_text () != "") {
+                try {
+                    var output = Core.Evaluation.evaluate (entry.get_text (), decimal_places);
+                    if (entry.get_text () != output) {
+                        History history_entry = History () { exp = entry.get_text (), output = output };
+                        history.append (history_entry);
+                        update_history_dialog (history_entry);
+                        entry.set_text (output);
+                        button_history.set_sensitive (true);
+                        button_ans.set_sensitive (true);
+
+                        position = output.length;
+                        remove_error ();
+                    }
+                } catch (Core.OUT_ERROR e) {
+                    infobar_label.label = e.message;
+                    infobar.no_show_all = false;
+                    infobar.show_all ();
+                    infobar.no_show_all = true;
+                }
+            } else {
+                remove_error ();
+            }
+        }
+
+        private void button_Memory_sub_clicked () {
+
         }
 
         private void button_ans_clicked () {
