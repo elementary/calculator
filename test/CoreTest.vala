@@ -69,6 +69,9 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("10 + 5 - 10%", "14.9"); // https://github.com/elementary/calculator/issues/44
         assert_equal ("10 - 10% + 5", "14.9"); // https://github.com/elementary/calculator/issues/44
 
+        // assert_equal ("11111111111111111-1", "11111111111111110"); // https://github.com/elementary/calculator/issues/46
+        // assert_equal ("777777777777777777+1", "777777777777777778"); // https://github.com/elementary/calculator/issues/46
+
         return 0;
     }
 
