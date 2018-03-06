@@ -61,7 +61,11 @@ namespace PantheonCalculator.Core {
 
                     type = scanner.next (out start, out len);
                     for (ssize_t i = start; i < (start + len); i++) {
-                        substr += scanner.uc[i].to_string ();
+                        if (scanner.uc[i] == scanner.decimal_symbol) {
+                            substr += ".";
+                        } else {
+                            substr += scanner.uc[i].to_string ();
+                        }
                     }
 
                     Token t = new Token (substr, type);
