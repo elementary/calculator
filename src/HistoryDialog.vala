@@ -114,12 +114,13 @@ namespace PantheonCalculator {
                 if (selection.get_selected (null, out iter)) {
                     Value val = Value (typeof (string));
 
-                    if (result_radio.get_active ())
+                    if (result_radio.get_active ()) {
                         list_store.get_value (iter, 1, out val);
-                    else if (expression_radio.get_active ())
+                    } else if (expression_radio.get_active ()) {
                         list_store.get_value (iter, 0, out val);
+                    }
 
-                   added (val.get_string ());
+                    added (val.get_string ());
                 }
             }
             hide ();
