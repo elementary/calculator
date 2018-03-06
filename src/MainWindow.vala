@@ -436,26 +436,22 @@ namespace PantheonCalculator {
         private bool key_pressed (Gdk.EventKey key) {
             bool retval = false;
             switch (key.keyval) {
-                case Gdk.Key.Escape: {
+                case Gdk.Key.Escape:
                     button_clr_clicked ();
                     break;
-                }
                 case Gdk.Key.KP_Divide:
-                case Gdk.Key.slash: {
+                case Gdk.Key.slash:
                     key.keyval = Gdk.Key.division;
                     break;
-                }
                 case Gdk.Key.KP_Multiply:
-                case Gdk.Key.asterisk: {
+                case Gdk.Key.asterisk:
                     key.keyval = Gdk.Key.multiply;
                     break;
-                }
                 case Gdk.Key.KP_Subtract:
-                case Gdk.Key.minus: {
+                case Gdk.Key.minus:
                     regular_button_clicked ("−");
                     retval = true;
                     break;
-                }
             }
             return retval;
         }

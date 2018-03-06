@@ -103,19 +103,16 @@ namespace PantheonCalculator.Core {
 
             foreach (Token t in token_list) {
                 switch (t.token_type) {
-                    case TokenType.NUMBER: {
+                    case TokenType.NUMBER:
                         output.append (t);
                         break;
-                    }
-                    case TokenType.CONSTANT: {
+                    case TokenType.CONSTANT:
                         output.append (t);
                         break;
-                    }
-                    case TokenType.FUNCTION: {
+                    case TokenType.FUNCTION:
                         opStack.push (t);
                         break;
-                    }
-                    case TokenType.SEPARATOR: {
+                    case TokenType.SEPARATOR:
                         while (opStack.peek ().token_type != TokenType.P_LEFT && !opStack.empty ()) {
                             output.append (opStack.pop ());
                         }
@@ -124,8 +121,7 @@ namespace PantheonCalculator.Core {
                             throw new SHUNTING_ERROR.MISMATCHED_P ("Content of parentheses is mismatched.");
                         }
                         break;
-                    }
-                    case TokenType.OPERATOR: {
+                    case TokenType.OPERATOR:
                         if (!opStack.empty ()) {
                             Operator op1 = get_operator (t);
                             Operator op2 = Operator ();
@@ -148,12 +144,10 @@ namespace PantheonCalculator.Core {
                         }
                         opStack.push (t);
                         break;
-                    }
-                    case TokenType.P_LEFT: {
+                    case TokenType.P_LEFT:
                         opStack.push (t);
                         break;
-                    }
-                    case TokenType.P_RIGHT: {
+                    case TokenType.P_RIGHT:
                         while (!opStack.empty ()) {
                             if (!(opStack.peek ().token_type == TokenType.P_LEFT)) {
                                 output.append (opStack.pop ());
@@ -171,10 +165,8 @@ namespace PantheonCalculator.Core {
                         }
 
                         break;
-                    }
-                    default: {
+                    default:
                         throw new SHUNTING_ERROR.UNKNOWN_TOKEN ("'%s' is unknown.", t.content);
-                    }
                 }
             }
 
