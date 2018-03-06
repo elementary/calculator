@@ -72,6 +72,10 @@ class PantheonCalculator.Core.CoreTest : Object {
         // assert_equal ("11111111111111111-1", "11111111111111110"); // https://github.com/elementary/calculator/issues/46
         // assert_equal ("777777777777777777+1", "777777777777777778"); // https://github.com/elementary/calculator/issues/46
 
+        assert_throw ("2+(2", "Mismatched parenthesis.");
+        assert_throw ("2+f", "'f' is invalid.");
+        // assert_throw ("&", "'L' is invalid."); // https://github.com/elementary/calculator/issues/52
+
         return 0;
     }
 
@@ -79,10 +83,25 @@ class PantheonCalculator.Core.CoreTest : Object {
         try {
             string eval_result = Evaluation.evaluate (input, 0);
             if (eval_result != result) {
-                error ("%s is %s, but should be %s\n", input, eval_result, result);
+                error ("%s is %s, but should be %s", input, eval_result, result);
             }
-        } catch (OUT_ERROR e) {
+        } catch (Error e) {
             error ("Exception at input %s", input);
+        }
+    }
+
+    static void assert_throw (string input, string message) {
+        Error eval_error = null;
+        try {
+            Evaluation.evaluate (input, 0);
+        } catch (Error e) {
+            eval_error = e;
+        }
+
+        if (eval_error == null) {
+            error ("%s did not throw", input);
+        } else if (eval_error.message != message) {
+            error ("%s did throw %s, but should %s", input, eval_error.message, message);
         }
     }
 }
