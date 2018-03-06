@@ -23,7 +23,7 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("0+0", "0");
         assert_equal ("2+2", "4");
         assert_equal ("4.23 + 1.11", "5.34");
-        assert_equal ("25.123 - 234.2", "-209.077");
+        assert_equal ("25.123 - 234.2", "-209.077"); // https://github.com/elementary/calculator/issues/48
 
         assert_equal ("1*1", "1");
         assert_equal ("11 * 1.1", "12.1");
@@ -33,7 +33,7 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("-5 * -2", "10"); // https://github.com/elementary/calculator/issues/37
         assert_equal ("-1 / −1", "1"); // https://github.com/elementary/calculator/pull/38/files
         assert_equal ("144 / 15", "9.6");
-        assert_equal ("144000 / 12", "12000");
+        assert_equal ("144000 / 12", "12000"); // https://github.com/elementary/calculator/issues/48
 
         assert_equal ("2^5", "32");
         assert_equal ("3456^0.5 - sqrt(3456)", "0");
