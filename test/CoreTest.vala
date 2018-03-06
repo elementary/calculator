@@ -68,6 +68,8 @@ class PantheonCalculator.Core.CoreTest : Object {
 
         assert_throw ("2+(2", "Mismatched parenthesis.");
         assert_throw ("2+f", "'f' is invalid.");
+        assert_throw ("&", "'&' is unknown."); // https://github.com/elementary/calculator/issues/52
+        assert_throw ("2+(3-#", "'#' is unknown."); // https://github.com/elementary/calculator/issues/52
 
         return 0;
     }

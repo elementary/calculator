@@ -23,7 +23,6 @@ namespace PantheonCalculator.Core {
     }
 
     public class Scanner : Object {
-        public unowned string str { get; construct set; }
         public ssize_t pos { get; set; default = 0; }
 
         public unichar[] uc = new unichar[0];
@@ -31,14 +30,13 @@ namespace PantheonCalculator.Core {
         public unichar decimal_symbol { get; construct set; }
         public unichar separator_symbol { get; construct set; }
 
-        public Scanner (string str) {
-            Object (str: str,
-                    decimal_symbol: Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0],
+        public Scanner () {
+            Object (decimal_symbol: Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0],
                     separator_symbol: Posix.nl_langinfo (Posix.NLItem.THOUSEP).to_utf8 ()[0]);
         }
 
         public static List<Token> scan (string input) throws SCANNER_ERROR {
-            Scanner scanner = new Scanner (input);
+            Scanner scanner = new Scanner ();
             int index = 0;
             unowned unichar c;
             bool next_number_negative = false;
@@ -112,7 +110,9 @@ namespace PantheonCalculator.Core {
                     last_token = t;
                 }
                 return tokenlist;
-            } catch (SCANNER_ERROR e) { throw e; }
+            } catch (SCANNER_ERROR e) {
+                throw e;
+            }
         }
 
         private TokenType next (out ssize_t start, out ssize_t len) throws SCANNER_ERROR {
@@ -169,8 +169,7 @@ namespace PantheonCalculator.Core {
                 return TokenType.EOF;
             }
 
-            //if no rule matches the character at pos, throw an error.
-            throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("'%s' is unknown."), str.get_char (pos).to_string ());
+            throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("'%s' is unknown."), uc[pos].to_string ());
         }
     }
 }
