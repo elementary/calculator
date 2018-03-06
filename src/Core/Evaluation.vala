@@ -99,7 +99,7 @@ namespace PantheonCalculator.Core {
         //Djikstra's Shunting Yard algorithm for ordering a tokenized list into Reverse Polish Notation
         private List<Token> shunting_yard (List<Token> token_list) throws SHUNTING_ERROR {
             List<Token> output = new List<Token> ();
-            Stack<Token> opStack = new Stack<Token> ();
+            Queue<Token> opStack = new Queue<Token> ();
 
             foreach (Token t in token_list) {
                 switch (t.token_type) {
@@ -110,58 +110,58 @@ namespace PantheonCalculator.Core {
                         output.append (t);
                         break;
                     case TokenType.FUNCTION:
-                        opStack.push (t);
+                        opStack.push_tail (t);
                         break;
                     case TokenType.SEPARATOR:
-                        while (opStack.peek ().token_type != TokenType.P_LEFT && !opStack.empty ()) {
-                            output.append (opStack.pop ());
+                        while (opStack.peek_tail ().token_type != TokenType.P_LEFT && !opStack.is_empty ()) {
+                            output.append (opStack.pop_tail ());
                         }
 
-                        if (opStack.peek ().token_type != TokenType.P_LEFT) {
+                        if (opStack.peek_tail ().token_type != TokenType.P_LEFT) {
                             throw new SHUNTING_ERROR.MISMATCHED_P ("Content of parentheses is mismatched.");
                         }
                         break;
                     case TokenType.OPERATOR:
-                        if (!opStack.empty ()) {
+                        if (!opStack.is_empty ()) {
                             Operator op1 = get_operator (t);
                             Operator op2 = Operator ();
 
                             try {
-                                op2 = get_operator (opStack.peek ());
+                                op2 = get_operator (opStack.peek_tail ());
                             } catch (SHUNTING_ERROR e) { }
 
-                            while (!opStack.empty () && opStack.peek ().token_type == TokenType.OPERATOR &&
+                            while (!opStack.is_empty () && opStack.peek_tail ().token_type == TokenType.OPERATOR &&
                             ((op2.fixity == "LEFT" && op1.prec <= op2.prec) ||
                             (op2.fixity == "RIGHT" && op1.prec < op2.prec))) {
-                                output.append (opStack.pop ());
+                                output.append (opStack.pop_tail ());
 
-                                if (!opStack.empty ()) {
+                                if (!opStack.is_empty ()) {
                                     try {
-                                        op2 = get_operator (opStack.peek ());
+                                        op2 = get_operator (opStack.peek_tail ());
                                     } catch (SHUNTING_ERROR e) { }
                                 }
                             }
                         }
-                        opStack.push (t);
+                        opStack.push_tail (t);
                         break;
                     case TokenType.P_LEFT:
-                        opStack.push (t);
+                        opStack.push_tail (t);
                         break;
                     case TokenType.P_RIGHT:
-                        while (!opStack.empty ()) {
-                            if (!(opStack.peek ().token_type == TokenType.P_LEFT)) {
-                                output.append (opStack.pop ());
+                        while (!opStack.is_empty ()) {
+                            if (!(opStack.peek_tail ().token_type == TokenType.P_LEFT)) {
+                                output.append (opStack.pop_tail ());
                             } else {
                                 break;
                             }
                         }
 
-                        if (!(opStack.empty ()) && opStack.peek ().token_type == TokenType.P_LEFT) {
-                            opStack.pop ();
+                        if (!(opStack.is_empty ()) && opStack.peek_tail ().token_type == TokenType.P_LEFT) {
+                            opStack.pop_tail ();
                         }
 
-                        if (!opStack.empty () && opStack.peek ().token_type == TokenType.FUNCTION) {
-                            output.append (opStack.pop ());
+                        if (!opStack.is_empty () && opStack.peek_tail ().token_type == TokenType.FUNCTION) {
+                            output.append (opStack.pop_tail ());
                         }
 
                         break;
@@ -170,11 +170,11 @@ namespace PantheonCalculator.Core {
                 }
             }
 
-            while (!opStack.empty ()) {
-                if (opStack.peek ().token_type == TokenType.P_LEFT || opStack.peek ().token_type == TokenType.P_RIGHT) {
+            while (!opStack.is_empty ()) {
+                if (opStack.peek_tail ().token_type == TokenType.P_LEFT || opStack.peek_tail ().token_type == TokenType.P_RIGHT) {
                     throw new SHUNTING_ERROR.MISMATCHED_P ("Mismatched parenthesis.");
                 } else {
-                    output.append (opStack.pop ());
+                    output.append (opStack.pop_tail ());
                 }
             }
 
@@ -182,48 +182,48 @@ namespace PantheonCalculator.Core {
         }
 
         private double eval_postfix (List<Token> token_list) throws EVAL_ERROR {
-            Stack<Token> stack = new Stack<Token> ();
+            Queue<Token> stack = new Queue<Token> ();
 
             foreach (Token t in token_list) {
                 if (t.token_type == TokenType.NUMBER) {
-                    stack.push (t);
+                    stack.push_tail (t);
                 } else if (t.token_type == TokenType.CONSTANT) {
                     try {
                         Constant c = get_constant (t);
-                        stack.push (new Token (c.eval ().to_string (), TokenType.NUMBER));
+                        stack.push_tail (new Token (c.eval ().to_string (), TokenType.NUMBER));
                     } catch (SHUNTING_ERROR e) {
                         throw new EVAL_ERROR.NO_CONSTANT ("");
                     }
                 } else if (t.token_type == TokenType.OPERATOR) {
                     try {
                         Operator o = get_operator (t);
-                        Token t1 = stack.pop ();
+                        Token t1 = stack.pop_tail ();
                         Token t2 = new Token ("0", TokenType.NUMBER);
 
-                        if (!stack.is_length (0) && o.inputs == 2) {
-                            t2 = stack.pop ();
+                        if (!stack.is_empty () && o.inputs == 2) {
+                            t2 = stack.pop_tail ();
                         }
-                        stack.push (compute_tokens (t, t1, t2));
+                        stack.push_tail (compute_tokens (t, t1, t2));
                     } catch (SHUNTING_ERROR e) {
                         throw new EVAL_ERROR.NO_OPERATOR ("");
                     }
                 } else if (t.token_type == TokenType.FUNCTION) {
                     try {
                         Function f = get_function (t);
-                        Token t1 = stack.pop ();
+                        Token t1 = stack.pop_tail ();
                         Token t2 = new Token ("0", TokenType.NUMBER);
 
                         if (f.inputs == 2) {
-                            t2 = stack.pop ();
+                            t2 = stack.pop_tail ();
                         }
 
-                        stack.push (process_tokens (t, t1, t2));
+                        stack.push_tail (process_tokens (t, t1, t2));
                     } catch (SHUNTING_ERROR e) {
                         throw new EVAL_ERROR.NO_FUNCTION ("");
                     }
                 }
             }
-            return double.parse (stack.pop ().content);
+            return double.parse (stack.pop_tail ().content);
         }
 
         //checks for real TokenType (which are TokenType.ALPHA at the moment)
