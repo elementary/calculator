@@ -20,7 +20,6 @@
 class PantheonCalculator.Core.CoreTest : Object {
     public static int main (string[] args) {
 
-        // assert_equal ("", "");
         assert_equal ("0+0", "0");
         assert_equal ("2+2", "4");
         assert_equal ("4.23 + 1.11", "5.34");
@@ -28,15 +27,21 @@ class PantheonCalculator.Core.CoreTest : Object {
 
         assert_equal ("1*1", "1");
         assert_equal ("11 * 1.1", "12.1");
-        assert_equal ("2 × -2", "-4");
+        assert_equal ("5 × -1", "-5"); // https://github.com/elementary/calculator/issues/37
+        assert_equal ("5 × -2", "-10"); // https://github.com/elementary/calculator/issues/37
+        assert_equal ("-5 * -1", "5"); // https://github.com/elementary/calculator/issues/37
+        assert_equal ("-5 * -2", "10"); // https://github.com/elementary/calculator/issues/37
+        assert_equal ("-1 / −1", "1"); // https://github.com/elementary/calculator/pull/38/files
         assert_equal ("144 / 15", "9.6");
         // assert_equal ("144000 / 12", "12000");
 
         assert_equal ("2^5", "32");
         assert_equal ("3456^0.5 - sqrt(3456)", "0");
-        assert_equal ("1.1E2 - 1E1", "100");
         assert_equal ("723 mod 5", "3");
         assert_equal ("2%", "0.02");
+
+        assert_equal ("14E-2", "0.14"); // https://github.com/elementary/calculator/issues/16
+        assert_equal ("1.1E2 - 1E1", "100");
 
         assert_equal ("pi", "3.141592654");
         assert_equal ("(π)", "3.141592654");
@@ -46,6 +51,7 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("√423", "20.566963801");
 
         assert_equal ("sin(pi ÷ 2)", "1");
+        assert_equal ("sin(-pi)", "0"); // https://github.com/elementary/calculator/issues/1
         assert_equal ("cos(90)", "-0.448073616");
         assert_equal ("sinh(2)", "3.626860408");
         assert_equal ("cosh(2)", "3.762195691");
@@ -59,6 +65,9 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("sqrt(-1 + 423 + 1) + (3.23 * 8.56) - sin(90 + 0.2)", "47.428606036");
         assert_equal ("e^5.25 / exp(5.25)", "1");
         assert_equal ("exp(log(2.2))", "2.2");
+        assert_equal ("3.141592654*3.141592654", "9.869604404"); // https://github.com/elementary/calculator/issues/7
+        assert_equal ("10 + 5 - 10%", "14.9"); // https://github.com/elementary/calculator/issues/44
+        assert_equal ("10 - 10% + 5", "14.9"); // https://github.com/elementary/calculator/issues/44
 
         return 0;
     }
