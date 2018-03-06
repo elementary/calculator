@@ -32,7 +32,7 @@ namespace PantheonCalculator.Core {
         public unichar separator_symbol { get; construct set; }
 
         public Scanner (string str) {
-	    Object (str: str,
+            Object (str: str,
                     decimal_symbol: Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0],
                     separator_symbol: Posix.nl_langinfo (Posix.NLItem.THOUSEP).to_utf8 ()[0]);
         }
@@ -61,24 +61,26 @@ namespace PantheonCalculator.Core {
 
                     type = scanner.next (out start, out len);
                     for (ssize_t i = start; i < (start + len); i++) {
-                        if (scanner.uc[i] == scanner.decimal_symbol || scanner.uc[i] == '.')
+                        if (scanner.uc[i] == scanner.decimal_symbol || scanner.uc[i] == '.') {
                             substr += ".";
-                        else
+                        } else {
                             substr += scanner.uc[i].to_string ();
+                        }
                     }
 
                     Token t = new Token (substr, type);
 
                     //identifying multicharacter tokens via Evaluation class.
                     if (t.token_type == TokenType.ALPHA) {
-                        if (e.is_operator (t))
+                        if (e.is_operator (t)) {
                             t.token_type = TokenType.OPERATOR;
-                        else if (e.is_function (t))
+                        } else if (e.is_function (t)) {
                             t.token_type = TokenType.FUNCTION;
-                        else if (e.is_constant (t))
+                        } else if (e.is_constant (t)) {
                             t.token_type = TokenType.CONSTANT;
-                        else
+                        } else {
                             throw new SCANNER_ERROR.ALPHA_INVALID (_("'%s' is invalid."), t.content);
+                        }
 
                     } else if (t.token_type == TokenType.OPERATOR && (t.content == "-" || t.content == "−")) {
                         if (last_token == null || (last_token != null && last_token.token_type != TokenType.NUMBER &&
@@ -102,8 +104,9 @@ namespace PantheonCalculator.Core {
                     if (last_token != null &&
                     (last_token.token_type == TokenType.NUMBER || last_token.token_type == TokenType.P_RIGHT) &&
                     (t.token_type == TokenType.FUNCTION || t.token_type == TokenType.CONSTANT
-                    || t.token_type == TokenType.P_LEFT || t.token_type == TokenType.NUMBER))
+                    || t.token_type == TokenType.P_LEFT || t.token_type == TokenType.NUMBER)) {
                         tokenlist.append (new Token ("*", TokenType.OPERATOR));
+                    }
 
                     tokenlist.append (t);
                     last_token = t;
@@ -116,17 +119,21 @@ namespace PantheonCalculator.Core {
             start = pos;
             if (uc[pos] == this.decimal_symbol || this.uc[pos] == '.') {
                 pos++;
-                while (uc[pos].isdigit () && pos < uc.length)
+                while (uc[pos].isdigit () && pos < uc.length) {
                     pos++;
+                }
                 len = pos - start;
                 return TokenType.NULL_NUMBER;
             } else if (uc[pos].isdigit ()) {
-                while (uc[pos].isdigit () && pos < uc.length)
+                while (uc[pos].isdigit () && pos < uc.length) {
                     pos++;
-                if (uc[pos] == this.decimal_symbol || this.uc[pos] == '.')
+                }
+                if (uc[pos] == this.decimal_symbol || this.uc[pos] == '.') {
                     pos++;
-                while (uc[pos].isdigit () && pos < uc.length)
+                }
+                while (uc[pos].isdigit () && pos < uc.length) {
                     pos++;
+                }
                 len = pos - start;
                 return TokenType.NUMBER;
             } else if (uc[pos] == '+' || uc[pos] == '-' || uc[pos] == '*' ||
@@ -144,8 +151,9 @@ namespace PantheonCalculator.Core {
                 len = 1;
                 return TokenType.CONSTANT;
             } else if (uc[pos].isalpha ()) {
-                while (uc[pos].isalpha () && pos < uc.length)
+                while (uc[pos].isalpha () && pos < uc.length) {
                     pos++;
+                }
                 len = pos - start;
                 return TokenType.ALPHA;
             } else if (uc[pos] == '(') {
