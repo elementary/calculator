@@ -321,15 +321,16 @@ namespace PantheonCalculator.Core {
     }
 
     private string insert_separators (string s) {
-        unichar decimal_symbol = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0];
-        unichar separator_symbol = Posix.nl_langinfo (Posix.NLItem.THOUSEP).to_utf8 ()[0];
+        string decimal_symbol = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR);
+        string separator_symbol = Posix.nl_langinfo (Posix.NLItem.THOUSEP);
+
         var builder = new StringBuilder (s);
-        var decimalPos = s.last_index_of_char (decimal_symbol);
+        var decimalPos = s.last_index_of (decimal_symbol);
         if (decimalPos == -1) {
             decimalPos = s.length;
         }
         for (int i = decimalPos - 3; i > 0; i -= 3) {
-            builder.insert_unichar (i, separator_symbol);
+            builder.insert (i, separator_symbol);
         }
         return builder.str;
     }
