@@ -84,10 +84,16 @@ namespace PantheonCalculator.Core {
                     tokenlist = e.shunting_yard (tokenlist);
                     try {
                         d = e.eval_postfix (tokenlist);
-                    } catch (Error e) { throw new OUT_ERROR.EVAL_ERROR (e.message); }
-                } catch (Error e) { throw new OUT_ERROR.SHUNTING_ERROR (e.message); }
+                    } catch (Error e) {
+                        throw new OUT_ERROR.EVAL_ERROR (e.message);
+                    }
+                } catch (Error e) {
+                    throw new OUT_ERROR.SHUNTING_ERROR (e.message);
+                }
                 return e.cut (d, d_places);
-            } catch (Error e) { throw new OUT_ERROR.SCANNER_ERROR (e.message); }
+            } catch (Error e) {
+                throw new OUT_ERROR.SCANNER_ERROR (e.message);
+            }
         }
 
         //Djikstra's Shunting Yard algorithm for ordering a tokenized list into Reverse Polish Notation
@@ -193,7 +199,9 @@ namespace PantheonCalculator.Core {
                     try {
                         Constant c = get_constant (t);
                         stack.push (new Token (c.eval ().to_string (), TokenType.NUMBER));
-                    } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_CONSTANT (""); }
+                    } catch (SHUNTING_ERROR e) {
+                        throw new EVAL_ERROR.NO_CONSTANT ("");
+                    }
                 } else if (t.token_type == TokenType.OPERATOR) {
                     try {
                         Operator o = get_operator (t);
@@ -204,7 +212,9 @@ namespace PantheonCalculator.Core {
                             t2 = stack.pop ();
                         }
                         stack.push (compute_tokens (t, t1, t2));
-                    } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_OPERATOR (""); }
+                    } catch (SHUNTING_ERROR e) {
+                        throw new EVAL_ERROR.NO_OPERATOR ("");
+                    }
                 } else if (t.token_type == TokenType.FUNCTION) {
                     try {
                         Function f = get_function (t);
@@ -216,7 +226,9 @@ namespace PantheonCalculator.Core {
                         }
 
                         stack.push (process_tokens (t, t1, t2));
-                    } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_FUNCTION (""); }
+                    } catch (SHUNTING_ERROR e) {
+                        throw new EVAL_ERROR.NO_FUNCTION ("");
+                    }
                 }
             }
             return double.parse (stack.pop ().content);
@@ -282,21 +294,25 @@ namespace PantheonCalculator.Core {
                 Operator op = get_operator (t_op);
                 var d = (double)(op.eval (double.parse (t2.content), double.parse (t1.content)));
                 if (fabs (d) - 0.0 < double.EPSILON) {
-            d = 0.0;
-        }
+                    d = 0.0;
+                }
                 return new Token (d.to_string (), TokenType.NUMBER);
-            } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_OPERATOR ("The given token was no operator."); }
+            } catch (SHUNTING_ERROR e) {
+                throw new EVAL_ERROR.NO_OPERATOR ("The given token was no operator.");
+            }
         }
 
         private Token process_tokens (Token tf, Token t1, Token t2) throws EVAL_ERROR {
             try {
                 var f = get_function (tf);
                 var d = (double)(f.eval (double.parse (t1.content), double.parse (t2.content)));
-        if (fabs (d) - 0.0 < double.EPSILON) {
-            d = 0.0;
-        }
+                if (fabs (d) - 0.0 < double.EPSILON) {
+                    d = 0.0;
+                }
                 return new Token (d.to_string (), TokenType.NUMBER);
-            } catch (SHUNTING_ERROR e) { throw new EVAL_ERROR.NO_FUNCTION ("The given token was no function."); }
+            } catch (SHUNTING_ERROR e) {
+                throw new EVAL_ERROR.NO_FUNCTION ("The given token was no function.");
+            }
         }
 
         private string cut (double d, int d_places) {
@@ -320,7 +336,7 @@ namespace PantheonCalculator.Core {
         if (decimalPos == -1) {
             decimalPos = s.length;
         }
-        for (int i = decimalPos - 3; i > 0; i-=3) {
+        for (int i = decimalPos - 3; i > 0; i -= 3) {
             builder.insert_unichar (i, separator_symbol);
         }
         return builder.str;
