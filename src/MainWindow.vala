@@ -18,22 +18,22 @@
 
 namespace PantheonCalculator {
     public class MainWindow : Gtk.Window {
-        private Settings            settings;
+        private Settings settings;
 
-        private Gtk.HeaderBar       headerbar;
-        private Gtk.Grid            main_grid;
-        private Gtk.Revealer        extended_revealer;
-        private Gtk.Entry           entry;
+        private Gtk.HeaderBar headerbar;
+        private Gtk.Grid main_grid;
+        private Gtk.Revealer extended_revealer;
+        private Gtk.Entry entry;
 
         // widgets I need to access
-        private Gtk.Image           extended_img_1;
-        private Gtk.Image           extended_img_2;
-        private Gtk.Button          button_calc;
-        private Gtk.Button          button_history;
-        private Gtk.Button          button_ans;
-        private Gtk.Button          button_del;
-        private Gtk.Button          button_clr;
-        private Gtk.ToggleButton    button_extended;
+        private Gtk.Image extended_img_1;
+        private Gtk.Image extended_img_2;
+        private Gtk.Button button_calc;
+        private Gtk.Button button_history;
+        private Gtk.Button button_ans;
+        private Gtk.Button button_del;
+        private Gtk.Button button_clr;
+        private Gtk.ToggleButton button_extended;
         private HistoryDialog history_dialog;
 
         private Gtk.InfoBar infobar;
@@ -41,8 +41,8 @@ namespace PantheonCalculator {
 
         private Gtk.Grid global_grid;
 
-        private List<History?>      history;
-        private int                 position;
+        private List<History?> history;
+        private int position;
 
         //define the decimal places
         private int decimal_places;
@@ -71,7 +71,7 @@ namespace PantheonCalculator {
 
             this.key_press_event.connect (key_pressed);
 
-            delete_event.connect((event) => {
+            delete_event.connect ((event) => {
                 save_state ();
                 return false;
             });
@@ -185,30 +185,30 @@ namespace PantheonCalculator {
             basic_grid.valign = Gtk.Align.FILL;
 
             basic_grid.attach (entry, 0, 0, 4, 1);
-            basic_grid.attach (button_clr,     0, 1, 1, 1);
-            basic_grid.attach (button_del,    1, 1, 1, 1);
+            basic_grid.attach (button_clr, 0, 1, 1, 1);
+            basic_grid.attach (button_del, 1, 1, 1, 1);
             basic_grid.attach (button_percent, 2, 1, 1, 1);
-            basic_grid.attach (button_div,     3, 1, 1, 1);
+            basic_grid.attach (button_div, 3, 1, 1, 1);
 
-            basic_grid.attach (button_7,    0, 2, 1, 1);
-            basic_grid.attach (button_8,    1, 2, 1, 1);
-            basic_grid.attach (button_9,    2, 2, 1, 1);
+            basic_grid.attach (button_7, 0, 2, 1, 1);
+            basic_grid.attach (button_8, 1, 2, 1, 1);
+            basic_grid.attach (button_9, 2, 2, 1, 1);
             basic_grid.attach (button_mult, 3, 2, 1, 1);
 
-            basic_grid.attach (button_4,    0, 3, 1, 1);
-            basic_grid.attach (button_5,    1, 3, 1, 1);
-            basic_grid.attach (button_6,    2, 3, 1, 1);
-            basic_grid.attach (button_sub,  3, 3, 1, 1);
+            basic_grid.attach (button_4, 0, 3, 1, 1);
+            basic_grid.attach (button_5, 1, 3, 1, 1);
+            basic_grid.attach (button_6, 2, 3, 1, 1);
+            basic_grid.attach (button_sub, 3, 3, 1, 1);
 
-            basic_grid.attach (button_1,    0, 4, 1, 1);
-            basic_grid.attach (button_2,    1, 4, 1, 1);
-            basic_grid.attach (button_3,    2, 4, 1, 1);
-            basic_grid.attach (button_add,  3, 4, 1, 1);
+            basic_grid.attach (button_1, 0, 4, 1, 1);
+            basic_grid.attach (button_2, 1, 4, 1, 1);
+            basic_grid.attach (button_3, 2, 4, 1, 1);
+            basic_grid.attach (button_add, 3, 4, 1, 1);
 
-            basic_grid.attach (button_0,     0, 5, 1, 1);
+            basic_grid.attach (button_0, 0, 5, 1, 1);
             basic_grid.attach (button_point, 1, 5, 1, 1);
-            basic_grid.attach (button_ans,   2, 5, 1, 1);
-            basic_grid.attach (button_calc,  3, 5, 1, 1);
+            basic_grid.attach (button_ans, 2, 5, 1, 1);
+            basic_grid.attach (button_calc, 3, 5, 1, 1);
 
             //attach all widgets
             main_grid.add (basic_grid);
@@ -258,18 +258,18 @@ namespace PantheonCalculator {
             extended_grid.column_spacing = 6;
             extended_grid.row_spacing = 6;
             extended_grid.valign = Gtk.Align.END;
-            extended_grid.attach (button_par_left,  0, 0, 1, 1);
+            extended_grid.attach (button_par_left, 0, 0, 1, 1);
             extended_grid.attach (button_par_right, 1, 0, 1, 1);
-            extended_grid.attach (button_pow,       0, 1, 1, 1);
-            extended_grid.attach (button_sr,        1, 1, 1, 1);
-            extended_grid.attach (button_sin,       0, 2, 1, 1);
-            extended_grid.attach (button_sinh,      1, 2, 1, 1);
-            extended_grid.attach (button_cos,       0, 3, 1, 1);
-            extended_grid.attach (button_cosh,      1, 3, 1, 1);
-            extended_grid.attach (button_tan,       0, 4, 1, 1);
-            extended_grid.attach (button_tanh,      1, 4, 1, 1);
-            extended_grid.attach (button_pi,        0, 5, 1, 1);
-            extended_grid.attach (button_e,         1, 5, 1, 1);
+            extended_grid.attach (button_pow, 0, 1, 1, 1);
+            extended_grid.attach (button_sr, 1, 1, 1, 1);
+            extended_grid.attach (button_sin, 0, 2, 1, 1);
+            extended_grid.attach (button_sinh, 1, 2, 1, 1);
+            extended_grid.attach (button_cos, 0, 3, 1, 1);
+            extended_grid.attach (button_cosh, 1, 3, 1, 1);
+            extended_grid.attach (button_tan, 0, 4, 1, 1);
+            extended_grid.attach (button_tanh, 1, 4, 1, 1);
+            extended_grid.attach (button_pi, 0, 5, 1, 1);
+            extended_grid.attach (button_e, 1, 5, 1, 1);
 
             extended_revealer = new Gtk.Revealer ();
             extended_revealer.set_transition_type (Gtk.RevealerTransitionType.SLIDE_LEFT);
@@ -354,9 +354,10 @@ namespace PantheonCalculator {
                 unowned unichar c;
                 List<unichar> news = new List<unichar> ();
 
-                for (int i = 0; entry.get_text ().get_next_char(ref index, out c); i++) {
-                    if (i+1 != position)
+                for (int i = 0; entry.get_text ().get_next_char (ref index, out c); i++) {
+                    if (i+1 != position) {
                         news.append (c);
+                    }
                 }
 
                 foreach (unichar u in news) {
