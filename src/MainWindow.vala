@@ -169,10 +169,10 @@ namespace PantheonCalculator {
             button_Mminus = new Button ("M-", _("Substract value from memory"));
             button_MR = new Button ("MR", _("Memory Recall")); 
             button_MR.sensitive = false;
-            button_MR.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            button_MR.get_style_context ().add_class (Gtk.STYLE_CLASS_TOOLBAR);
             button_MC = new Button ("MC", _("Memory clear"));
             button_MC.sensitive = false;
-            button_MC.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            button_MC.get_style_context ().add_class (Gtk.STYLE_CLASS_TOOLBAR);
 
             var button_add = new Button (" + ", _("Add"));
             button_add.function = "+";
@@ -289,20 +289,20 @@ namespace PantheonCalculator {
             var extended_grid = new Gtk.Grid ();
             extended_grid.margin_start = 6;
             extended_grid.column_spacing = 6;
-            extended_grid.row_spacing = 6;
+            extended_grid.row_spacing = 7;
             extended_grid.valign = Gtk.Align.END;
-            extended_grid.attach (button_par_left,  0, 0, 1, 1);
-            extended_grid.attach (button_par_right, 1, 0, 1, 1);
-            extended_grid.attach (button_pow,       0, 1, 1, 1);
-            extended_grid.attach (button_sr,        1, 1, 1, 1);
-            extended_grid.attach (button_sin,       0, 2, 1, 1);
-            extended_grid.attach (button_sinh,      1, 2, 1, 1);
-            extended_grid.attach (button_cos,       0, 3, 1, 1);
-            extended_grid.attach (button_cosh,      1, 3, 1, 1);
-            extended_grid.attach (button_tan,       0, 4, 1, 1);
-            extended_grid.attach (button_tanh,      1, 4, 1, 1);
-            extended_grid.attach (button_pi,        0, 5, 1, 1);
-            extended_grid.attach (button_e,         1, 5, 1, 1);
+            extended_grid.attach (button_par_left,  0, 1, 1, 1);
+            extended_grid.attach (button_par_right, 1, 1, 1, 1);
+            extended_grid.attach (button_pow,       0, 2, 1, 1);
+            extended_grid.attach (button_sr,        1, 2, 1, 1);
+            extended_grid.attach (button_sin,       0, 3, 1, 1);
+            extended_grid.attach (button_sinh,      1, 3, 1, 1);
+            extended_grid.attach (button_cos,       0, 4, 1, 1);
+            extended_grid.attach (button_cosh,      1, 4, 1, 1);
+            extended_grid.attach (button_tan,       0, 5, 1, 1);
+            extended_grid.attach (button_tanh,      1, 5, 1, 1);
+            extended_grid.attach (button_pi,        0, 6, 1, 1);
+            extended_grid.attach (button_e,         1, 6, 1, 1);
 
             extended_revealer = new Gtk.Revealer ();
             extended_revealer.set_transition_type (Gtk.RevealerTransitionType.SLIDE_LEFT);
@@ -414,41 +414,50 @@ namespace PantheonCalculator {
         }
 
         private void button_Memory_clr_clicked () {
+            memory = null;
 
+            button_MR.sensitive = false;
+            button_MC.sensitive = false;
         }
 
         private void button_Memory_recall_clicked () {
+            entry.set_text(memory);
+        }
 
+        private void memory_function(string functionality) {
+            var stored_mem = memory;
+            if (memory == null) {
+                stored_mem = "0";
+            }
+            var result = stored_mem + functionality + entry.get_text ();
+            try {
+                result = Core.Evaluation.evaluate (result, decimal_places);
+            } catch (Core.OUT_ERROR e) {
+                infobar_label.label = e.message;
+                infobar.no_show_all = false;
+                infobar.show_all ();
+                infobar.no_show_all = true;
+            }
+
+            memory = result;
         }
 
         private void button_Memory_Add_clicked () {
             if (entry.get_text () != "") {
-                try {
-                    var output = Core.Evaluation.evaluate (entry.get_text (), decimal_places);
-                    if (entry.get_text () != output) {
-                        History history_entry = History () { exp = entry.get_text (), output = output };
-                        history.append (history_entry);
-                        update_history_dialog (history_entry);
-                        entry.set_text (output);
-                        button_history.set_sensitive (true);
-                        button_ans.set_sensitive (true);
+                memory_function("+");
 
-                        position = output.length;
-                        remove_error ();
-                    }
-                } catch (Core.OUT_ERROR e) {
-                    infobar_label.label = e.message;
-                    infobar.no_show_all = false;
-                    infobar.show_all ();
-                    infobar.no_show_all = true;
-                }
-            } else {
-                remove_error ();
+                button_MR.sensitive = true;
+                button_MC.sensitive = true;
             }
         }
 
         private void button_Memory_sub_clicked () {
+            if (entry.get_text () != "") {
+                memory_function("-");
 
+                button_MR.sensitive = true;
+                button_MC.sensitive = true;
+            }
         }
 
         private void button_ans_clicked () {
