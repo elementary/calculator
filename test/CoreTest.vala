@@ -82,6 +82,7 @@ class PantheonCalculator.Core.CoreTest : Object {
     }
 
     static void assert_equal (string input, string result, unichar decimal_symbol = '.', unichar separator_symbol = ',') {
+        Evaluation.scanner = new Scanner ();
         Evaluation.scanner.decimal_symbol = decimal_symbol;
         Evaluation.scanner.separator_symbol = separator_symbol;
 
