@@ -74,9 +74,12 @@ namespace PantheonCalculator.Core {
                                             Constant () { symbol = "π", eval = () => { return Math.PI; } },
                                             Constant () { symbol = "e", eval = () => { return Math.E; } } };
 
+
+        public static Scanner scanner = new Scanner ();
+
         public static string evaluate (string str, int d_places) throws OUT_ERROR {
             try {
-                var tokenlist = Scanner.scan (str);
+                var tokenlist = scanner.scan (str);
                 var d = 0.0;
                 var e = new Evaluation ();
 
@@ -90,7 +93,7 @@ namespace PantheonCalculator.Core {
                 } catch (Error e) {
                     throw new OUT_ERROR.SHUNTING_ERROR (e.message);
                 }
-                return e.cut (d, d_places);
+                return e.number_to_string (d, d_places);
             } catch (Error e) {
                 throw new OUT_ERROR.SCANNER_ERROR (e.message);
             }
@@ -307,31 +310,34 @@ namespace PantheonCalculator.Core {
             }
         }
 
-        private string cut (double d, int d_places) {
-            var s = ("%.9f".printf (d));
-            while (s.last_index_of ("0") == s.length - 1) {
-                s = s.slice (0, s.length - 1);
-            }
-            if (s.last_index_of (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR)) == s.length - 1) {
-                s = s.slice (0, s.length - 1);
-            }
-            s = insert_separators (s);
-            return s;
-        }
-    }
+        private string number_to_string (double d, int d_places) {
+            string decimal_symbol = scanner.decimal_symbol.to_string ();
+            string separator_symbol = scanner.separator_symbol.to_string ();
 
-    private string insert_separators (string s) {
-        string decimal_symbol = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR);
-        string separator_symbol = Posix.nl_langinfo (Posix.NLItem.THOUSEP);
+            string s = ("%.9f".printf (d));
+            string s_localized = s.replace (".", decimal_symbol);
 
-        var builder = new StringBuilder (s);
-        var decimalPos = s.last_index_of (decimal_symbol);
-        if (decimalPos == -1) {
-            decimalPos = s.length;
+            while (s_localized.has_suffix ("0")) {
+                s_localized = s_localized.slice (0, -1);
+            }
+            if (s_localized.has_suffix (decimal_symbol)) {
+                s_localized = s_localized.slice (0, -1);
+            }
+
+            var builder = new StringBuilder (s_localized);
+            var decimalPos = s_localized.last_index_of (decimal_symbol);
+            if (decimalPos == -1) {
+                decimalPos = s_localized.length;
+            }
+
+            int end_position = 0;
+            if (s_localized.has_prefix ("-")) {
+                end_position = 1;
+            }
+            for (int i = decimalPos - 3; i > end_position; i -= 3) {
+                builder.insert (i, separator_symbol);
+            }
+            return builder.str;
         }
-        for (int i = decimalPos - 3; i > 0; i -= 3) {
-            builder.insert (i, separator_symbol);
-        }
-        return builder.str;
     }
 }

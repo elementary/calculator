@@ -23,48 +23,45 @@ namespace PantheonCalculator.Core {
     }
 
     public class Scanner : Object {
-        public unowned string str { get; construct set; }
-        public ssize_t pos { get; set; default = 0; }
+        private ssize_t pos { get; set; default = 0; }
 
-        public unichar[] uc = new unichar[0];
+        private unichar[] uc = new unichar[0];
 
-        public unichar decimal_symbol { get; construct set; }
-        public unichar separator_symbol { get; construct set; }
+        public unichar decimal_symbol { get; set; }
+        public unichar separator_symbol { get; set; }
 
-        public Scanner (string str) {
-            Object (str: str,
-                    decimal_symbol: Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0],
-                    separator_symbol: Posix.nl_langinfo (Posix.NLItem.THOUSEP).to_utf8 ()[0]);
+        public Scanner () {
+            decimal_symbol = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).get_char (0);
+            separator_symbol = Posix.nl_langinfo (Posix.NLItem.THOUSEP).get_char (0);
         }
 
-        public static List<Token> scan (string input) throws SCANNER_ERROR {
-            Scanner scanner = new Scanner (input);
+        public List<Token> scan (string input) throws SCANNER_ERROR {
             int index = 0;
             unowned unichar c;
             bool next_number_negative = false;
             Evaluation e = new Evaluation ();
 
             for (int i = 0; input.get_next_char (ref index, out c); i++) {
-                if (c != ' ' && c != scanner.separator_symbol) {
-                    scanner.uc.resize (scanner.uc.length + 1);
-                    scanner.uc[scanner.uc.length - 1] = c;
+                if (c != ' ' && c != separator_symbol) {
+                    uc.resize (uc.length + 1);
+                    uc[uc.length - 1] = c;
                 }
             }
             try {
                 TokenType type = TokenType.EOF;
                 unowned Token? last_token = null;
                 List<Token> tokenlist = new List<Token> ();
-                while (scanner.pos < scanner.uc.length) {
+                while (pos < uc.length) {
                     ssize_t start;
                     ssize_t len;
                     string substr = "";
 
-                    type = scanner.next (out start, out len);
+                    type = next (out start, out len);
                     for (ssize_t i = start; i < (start + len); i++) {
-                        if (scanner.uc[i] == scanner.decimal_symbol) {
+                        if (uc[i] == decimal_symbol) {
                             substr += ".";
                         } else {
-                            substr += scanner.uc[i].to_string ();
+                            substr += uc[i].to_string ();
                         }
                     }
 
@@ -170,7 +167,7 @@ namespace PantheonCalculator.Core {
             }
 
             //if no rule matches the character at pos, throw an error.
-            throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("'%s' is unknown."), str.get_char (pos).to_string ());
+            throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("'%s' is unknown."), uc[pos].to_string ());
         }
     }
 }
