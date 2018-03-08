@@ -1,20 +1,22 @@
-/* Copyright 2014 Marvin Beckers <beckersmarvin@gmail.com>
-*
-* This file is part of Pantheon Calculator
-*
-* Pantheon Calculator is free software: you can redistribute it
-* and/or modify it under the terms of the GNU General Public License as
-* published by the Free Software Foundation, either version 3 of the
-* License, or (at your option) any later version.
-*
-* Pantheon Calculator is distributed in the hope that it will be
-* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
-* Public License for more details.
-*
-* You should have received a copy of the GNU General Public License along
-* with Pantheon Calculator. If not, see http://www.gnu.org/licenses/.
-*/
+/*-
+ * Copyright (c) 2018 elementary LLC. (https://elementary.io)
+ *               2014 Marvin Beckers <beckersmarvin@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * Authored by: Marvin Beckers <beckersmarvin@gmail.com>
+ */
 
 using GLib.Math;
 
@@ -24,6 +26,7 @@ namespace PantheonCalculator.Core {
         NO_OPERATOR,
         NO_CONSTANT
     }
+
     private errordomain SHUNTING_ERROR {
         DUMMY,
         NO_OPERATOR,
@@ -33,46 +36,54 @@ namespace PantheonCalculator.Core {
         UNKNOWN_TOKEN,
         STACK_EMPTY
     }
+
     public errordomain OUT_ERROR {
         EVAL_ERROR,
         CHECK_ERROR,
         SHUNTING_ERROR,
         SCANNER_ERROR
     }
+
     public class Evaluation : Object {
 
         [CCode (has_target = false)]
         private delegate double Eval (double a = 0, double b = 0);
 
         private struct Operator { string symbol; int inputs; int prec; string fixity; Eval eval;}
-        private Operator[] operators = { Operator () { symbol = "+", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a + b; } },
-                                            Operator () { symbol = "-", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a - b; } },
-                                            Operator () { symbol = "−", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => { return a - b; } },
-                                            Operator () { symbol = "*", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a * b; } },
-                                            Operator () { symbol = "×", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a * b; } },
-                                            Operator () { symbol = "/", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a / b; } },
-                                            Operator () { symbol = "÷", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a / b; } },
-                                            Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => { return a % b; } },
-                                            Operator () { symbol = "^", inputs = 2, prec = 3, fixity = "RIGHT", eval = (a, b) => { return Math.pow (a, b); } },
-                                            Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => { return a*Math.pow (10, b); } },
-                                            Operator () { symbol = "%", inputs = 1, prec = 5, fixity = "LEFT", eval = (a, b) => { return b / 100.0;} } };
+        private Operator[] operators = {
+            Operator () { symbol = "+", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => a + b },
+            Operator () { symbol = "-", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => a - b },
+            Operator () { symbol = "−", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => a - b },
+            Operator () { symbol = "*", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a * b },
+            Operator () { symbol = "×", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a * b },
+            Operator () { symbol = "/", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a / b },
+            Operator () { symbol = "÷", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a / b },
+            Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) =>  a % b },
+            Operator () { symbol = "^", inputs = 2, prec = 3, fixity = "RIGHT", eval = (a, b) => Math.pow (a, b) },
+            Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => a*Math.pow (10, b) },
+            Operator () { symbol = "%", inputs = 1, prec = 5, fixity = "LEFT", eval = (a, b) => b / 100.0 }
+        };
 
         private struct Function { string symbol; int inputs; Eval eval;}
-        private Function[] functions = { Function () { symbol = "sin", inputs = 1, eval = (a) => { return Math.sin (a); } },
-                                            Function () { symbol = "cos", inputs = 1, eval = (a) => { return Math.cos (a); } },
-                                            Function () { symbol = "tan", inputs = 1, eval = (a) => { return Math.tan (a); } },
-                                            Function () { symbol = "sinh", inputs = 1, eval = (a) => { return Math.sinh (a); } },
-                                            Function () { symbol = "cosh", inputs = 1, eval = (a) => { return Math.cosh (a); } },
-                                            Function () { symbol = "tanh", inputs = 1, eval = (a) => { return Math.tanh (a); } },
-                                            Function () { symbol = "log", inputs = 1, eval = (a) => { return Math.log (a); } },
-                                            Function () { symbol = "exp", inputs = 1, eval = (a) => { return Math.exp (a); } },
-                                            Function () { symbol = "sqrt", inputs = 1, eval = (a) => { return Math.sqrt (a); } },
-                                            Function () { symbol = "√", inputs = 1, eval = (a) => { return Math.sqrt (a); } } };
+        private Function[] functions = {
+            Function () { symbol = "sin", inputs = 1, eval = (a) => Math.sin (a) },
+            Function () { symbol = "cos", inputs = 1, eval = (a) => Math.cos (a) },
+            Function () { symbol = "tan", inputs = 1, eval = (a) => Math.tan (a) },
+            Function () { symbol = "sinh", inputs = 1, eval = (a) => Math.sinh (a) },
+            Function () { symbol = "cosh", inputs = 1, eval = (a) => Math.cosh (a) },
+            Function () { symbol = "tanh", inputs = 1, eval = (a) => Math.tanh (a) },
+            Function () { symbol = "log", inputs = 1, eval = (a) => Math.log (a) },
+            Function () { symbol = "exp", inputs = 1, eval = (a) => Math.exp (a) },
+            Function () { symbol = "sqrt", inputs = 1, eval = (a) => Math.sqrt (a) },
+            Function () { symbol = "√", inputs = 1, eval = (a) => Math.sqrt (a) }
+        };
 
         private struct Constant { string symbol; Eval eval; }
-        private Constant[] constants = { Constant () { symbol = "pi", eval = () => { return Math.PI; } },
-                                            Constant () { symbol = "π", eval = () => { return Math.PI; } },
-                                            Constant () { symbol = "e", eval = () => { return Math.E; } } };
+        private Constant[] constants = {
+            Constant () { symbol = "pi", eval = () => Math.PI },
+            Constant () { symbol = "π", eval = () => Math.PI },
+            Constant () { symbol = "e", eval = () => Math.E }
+        };
 
 
         public Scanner scanner = new Scanner ();
@@ -100,7 +111,7 @@ namespace PantheonCalculator.Core {
             }
         }
 
-        //Djikstra's Shunting Yard algorithm for ordering a tokenized list into Reverse Polish Notation
+        /* Djikstra's Shunting Yard algorithm for ordering a tokenized list into Reverse Polish Notation */
         private List<Token> shunting_yard (List<Token> token_list) throws SHUNTING_ERROR {
             List<Token> output = new List<Token> ();
             Queue<Token> opStack = new Queue<Token> ();
@@ -230,7 +241,7 @@ namespace PantheonCalculator.Core {
             return double.parse (stack.pop_tail ().content);
         }
 
-        //checks for real TokenType (which are TokenType.ALPHA at the moment)
+        /* Checks for real TokenType (which are TokenType.ALPHA at the moment) */
         public bool is_operator (Token t) {
             foreach (Operator o in operators) {
                 if (t.content == o.symbol) {
