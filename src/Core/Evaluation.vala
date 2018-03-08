@@ -75,25 +75,26 @@ namespace PantheonCalculator.Core {
                                             Constant () { symbol = "e", eval = () => { return Math.E; } } };
 
 
-        public static Scanner scanner = new Scanner ();
+        public Scanner scanner = new Scanner ();
 
-        public static string evaluate (string str, int d_places) throws OUT_ERROR {
+        public Evaluation () { }
+
+        public string evaluate (string str, int d_places) throws OUT_ERROR {
             try {
                 var tokenlist = scanner.scan (str);
                 var d = 0.0;
-                var e = new Evaluation ();
 
                 try {
-                    tokenlist = e.shunting_yard (tokenlist);
+                    tokenlist = shunting_yard (tokenlist);
                     try {
-                        d = e.eval_postfix (tokenlist);
+                        d = eval_postfix (tokenlist);
                     } catch (Error e) {
                         throw new OUT_ERROR.EVAL_ERROR (e.message);
                     }
                 } catch (Error e) {
                     throw new OUT_ERROR.SHUNTING_ERROR (e.message);
                 }
-                return e.number_to_string (d, d_places);
+                return number_to_string (d, d_places);
             } catch (Error e) {
                 throw new OUT_ERROR.SCANNER_ERROR (e.message);
             }
@@ -311,21 +312,20 @@ namespace PantheonCalculator.Core {
         }
 
         private string number_to_string (double d, int d_places) {
-            string decimal_symbol = scanner.decimal_symbol.to_string ();
-            string separator_symbol = scanner.separator_symbol.to_string ();
-
             string s = ("%.9f".printf (d));
-            string s_localized = s.replace (".", decimal_symbol);
+            string s_localized = s.replace (".", scanner.decimal_symbol);
 
+            /* Remove trailing 0s or decimal symbol */
             while (s_localized.has_suffix ("0")) {
                 s_localized = s_localized.slice (0, -1);
             }
-            if (s_localized.has_suffix (decimal_symbol)) {
+            if (s_localized.has_suffix (scanner.decimal_symbol)) {
                 s_localized = s_localized.slice (0, -1);
             }
 
+            /* Insert separator symbol in large numbers */
             var builder = new StringBuilder (s_localized);
-            var decimalPos = s_localized.last_index_of (decimal_symbol);
+            var decimalPos = s_localized.last_index_of (scanner.decimal_symbol);
             if (decimalPos == -1) {
                 decimalPos = s_localized.length;
             }
@@ -335,7 +335,7 @@ namespace PantheonCalculator.Core {
                 end_position = 1;
             }
             for (int i = decimalPos - 3; i > end_position; i -= 3) {
-                builder.insert (i, separator_symbol);
+                builder.insert (i, scanner.separator_symbol);
             }
             return builder.str;
         }

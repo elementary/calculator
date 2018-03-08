@@ -23,6 +23,7 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("0+0", "0");
         assert_equal ("2+2", "4");
         assert_equal ("4.23 + 1.11", "5.34");
+        assert_equal (".13 + .51", "0.64");
         assert_equal ("25.123 - 234.2", "-209.077"); // https://github.com/elementary/calculator/issues/48
 
         assert_equal ("1*1", "1");
@@ -32,6 +33,7 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("-5 * -1", "5"); // https://github.com/elementary/calculator/issues/37
         assert_equal ("-5 * -2", "10"); // https://github.com/elementary/calculator/issues/37
         assert_equal ("-1 / −1", "1"); // https://github.com/elementary/calculator/pull/38/files
+        assert_equal ("89 * 56", "4,984"); // https://github.com/elementary/calculator/issues/48
         assert_equal ("144 / 15", "9.6");
         assert_equal ("1440 / 15", "96");
         assert_equal ("14400 / 12", "1,200"); // https://github.com/elementary/calculator/issues/48
@@ -70,10 +72,11 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("10 + 5 - 10%", "14.9"); // https://github.com/elementary/calculator/issues/44
         assert_equal ("10 - 10% + 5", "14.9"); // https://github.com/elementary/calculator/issues/44
 
-        assert_equal ("25,123 - 234,2", "-209,077", ',', '.'); // https://github.com/elementary/calculator/issues/48
-        assert_equal ("25.000,123 - 234000,2", "-209.000,077", ',', '.'); // https://github.com/elementary/calculator/issues/48
-        assert_equal ("144000 / 12", "12.000", ',', '.'); // https://github.com/elementary/calculator/issues/48
-        assert_equal ("144000 / 12", "12 000", ',', ' '); // https://github.com/elementary/calculator/issues/48
+        assert_equal ("25,123 - 234,2", "-209,077", ",", "."); // https://github.com/elementary/calculator/issues/48
+        assert_equal ("25.000,123 - 234000,2", "-209.000,077", ",", "."); // https://github.com/elementary/calculator/issues/48
+        assert_equal ("89 * 56", "4.984", ",", "."); // https://github.com/elementary/calculator/issues/48
+        assert_equal ("144000 / 12", "12.000", ",", "."); // https://github.com/elementary/calculator/issues/48
+        assert_equal ("144000 / 12", "12 000", ",", " "); // https://github.com/elementary/calculator/issues/48
 
         assert_throw ("2+(2", "Mismatched parenthesis.");
         assert_throw ("2+f", "'f' is invalid.");
@@ -81,13 +84,13 @@ class PantheonCalculator.Core.CoreTest : Object {
         return 0;
     }
 
-    static void assert_equal (string input, string result, unichar decimal_symbol = '.', unichar separator_symbol = ',') {
-        Evaluation.scanner = new Scanner ();
-        Evaluation.scanner.decimal_symbol = decimal_symbol;
-        Evaluation.scanner.separator_symbol = separator_symbol;
+    static void assert_equal (string input, string result, string decimal_symbol = ".", string separator_symbol = ",") {
+        var eval = new Evaluation ();
+        eval.scanner.decimal_symbol = decimal_symbol;
+        eval.scanner.separator_symbol = separator_symbol;
 
         try {
-            string eval_result = Evaluation.evaluate (input, 0);
+            string eval_result = eval.evaluate (input, 0);
             if (eval_result != result) {
                 error ("%s is %s, but should be %s", input, eval_result, result);
             }
@@ -98,8 +101,10 @@ class PantheonCalculator.Core.CoreTest : Object {
 
     static void assert_throw (string input, string message) {
         Error eval_error = null;
+        var eval = new Evaluation ();
+
         try {
-            Evaluation.evaluate (input, 0);
+            eval.evaluate (input, 0);
         } catch (Error e) {
             eval_error = e;
         }

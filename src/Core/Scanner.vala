@@ -23,16 +23,15 @@ namespace PantheonCalculator.Core {
     }
 
     public class Scanner : Object {
-        private ssize_t pos { get; set; default = 0; }
+        private ssize_t pos;
+        private unichar[] uc;
 
-        private unichar[] uc = new unichar[0];
-
-        public unichar decimal_symbol { get; set; }
-        public unichar separator_symbol { get; set; }
+        public string decimal_symbol { get; set; }
+        public string separator_symbol { get; set; }
 
         public Scanner () {
-            decimal_symbol = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).get_char (0);
-            separator_symbol = Posix.nl_langinfo (Posix.NLItem.THOUSEP).get_char (0);
+            decimal_symbol = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR);
+            separator_symbol = Posix.nl_langinfo (Posix.NLItem.THOUSEP);
         }
 
         public List<Token> scan (string input) throws SCANNER_ERROR {
@@ -41,33 +40,33 @@ namespace PantheonCalculator.Core {
             bool next_number_negative = false;
             Evaluation e = new Evaluation ();
 
-            for (int i = 0; input.get_next_char (ref index, out c); i++) {
-                if (c != ' ' && c != separator_symbol) {
-                    uc.resize (uc.length + 1);
-                    uc[uc.length - 1] = c;
-                }
+            string str = input.replace (" ", "");
+            str = str.replace (separator_symbol, "");
+
+            pos = 0;
+            uc = new unichar[str.char_count ()];
+            for (int i = 0; str.get_next_char (ref index, out c); i++) {
+                uc[i] = c;
             }
+
             try {
                 TokenType type = TokenType.EOF;
                 unowned Token? last_token = null;
                 List<Token> tokenlist = new List<Token> ();
                 while (pos < uc.length) {
-                    ssize_t start;
-                    ssize_t len;
-                    string substr = "";
-
+                    ssize_t start, len;
                     type = next (out start, out len);
+
+                    string substr = "";
                     for (ssize_t i = start; i < (start + len); i++) {
-                        if (uc[i] == decimal_symbol) {
-                            substr += ".";
-                        } else {
-                            substr += uc[i].to_string ();
-                        }
+                        substr += uc[i].to_string ();
                     }
+
+                    substr = substr.replace (decimal_symbol, ".");
 
                     Token t = new Token (substr, type);
 
-                    //identifying multicharacter tokens via Evaluation class.
+                    /* Identifying multicharacter tokens via Evaluation class. */
                     if (t.token_type == TokenType.ALPHA) {
                         if (e.is_operator (t)) {
                             t.token_type = TokenType.OPERATOR;
@@ -109,12 +108,14 @@ namespace PantheonCalculator.Core {
                     last_token = t;
                 }
                 return tokenlist;
-            } catch (SCANNER_ERROR e) { throw e; }
+            } catch (SCANNER_ERROR e) {
+                throw e;
+            }
         }
 
         private TokenType next (out ssize_t start, out ssize_t len) throws SCANNER_ERROR {
             start = pos;
-            if (uc[pos] == this.decimal_symbol) {
+            if (uc[pos] == decimal_symbol.get_char (0)) {
                 pos++;
                 while (uc[pos].isdigit () && pos < uc.length) {
                     pos++;
@@ -125,7 +126,7 @@ namespace PantheonCalculator.Core {
                 while (uc[pos].isdigit () && pos < uc.length) {
                     pos++;
                 }
-                if (uc[pos] == this.decimal_symbol) {
+                if (uc[pos] == decimal_symbol.get_char (0)) {
                     pos++;
                 }
                 while (uc[pos].isdigit () && pos < uc.length) {
@@ -166,7 +167,7 @@ namespace PantheonCalculator.Core {
                 return TokenType.EOF;
             }
 
-            //if no rule matches the character at pos, throw an error.
+            /* If no rule matches the character at pos, throw an error. */
             throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("'%s' is unknown."), uc[pos].to_string ());
         }
     }
