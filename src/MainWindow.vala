@@ -1,20 +1,21 @@
-/* Copyright 2014 Marvin Beckers <beckersmarvin@gmail.com>
-*
-* This file is part of Pantheon Calculator
-*
-* Pantheon Calculator is free software: you can redistribute it
-* and/or modify it under the terms of the GNU General Public License as
-* published by the Free Software Foundation, either version 3 of the
-* License, or (at your option) any later version.
-*
-* Pantheon Calculator is distributed in the hope that it will be
-* useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
-* Public License for more details.
-*
-* You should have received a copy of the GNU General Public License along
-* with Pantheon Calculator. If not, see http://www.gnu.org/licenses/.
-*/
+/*-
+ * Copyright (c) 2014-2018 elementary LLC. (https://elementary.io)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * Authored by: Marvin Beckers <beckersmarvin@gmail.com>
+ */
 
 namespace PantheonCalculator {
     public class MainWindow : Gtk.Window {
@@ -25,7 +26,7 @@ namespace PantheonCalculator {
         private Gtk.Revealer extended_revealer;
         private Gtk.Entry entry;
 
-        // widgets I need to access
+        /* Widgets I need to access */
         private Gtk.Image extended_img_1;
         private Gtk.Image extended_img_2;
         private Gtk.Button button_calc;
@@ -44,7 +45,7 @@ namespace PantheonCalculator {
         private List<History?> history;
         private int position;
 
-        //define the decimal places
+        /* Define the decimal places */
         private int decimal_places;
 
         public struct History { string exp; string output; }
@@ -210,7 +211,6 @@ namespace PantheonCalculator {
             basic_grid.attach (button_ans, 2, 5, 1, 1);
             basic_grid.attach (button_calc, 3, 5, 1, 1);
 
-            //attach all widgets
             main_grid.add (basic_grid);
 
             entry.changed.connect (remove_error);
@@ -392,17 +392,17 @@ namespace PantheonCalculator {
         private void toggle_grid (Gtk.ToggleButton button) {
             position = entry.get_position ();
             if (button.get_active ()) {
-                //show extended functionality
+                /* Show extended functionality */
                 button.image = extended_img_2;
                 button.tooltip_text = _("Hide extended functionality");
                 extended_revealer.set_reveal_child (true);
             } else {
-                //hide extended functionality
+                /* Hide extended functionality */
                 button.image = extended_img_1;
                 button.tooltip_text = _("Show extended functionality");
                 extended_revealer.set_reveal_child (false);
             }
-            //focusing button_calc because without a new focus it will cause weird window drawing problems.
+            /* Focusing button_calc because without a new focus it will cause weird window drawing problems. */
             entry.grab_focus ();
             entry.set_position (position);
         }
