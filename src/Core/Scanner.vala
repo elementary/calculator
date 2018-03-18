@@ -81,8 +81,12 @@ namespace PantheonCalculator.Core {
                         }
 
                     } else if (t.token_type == TokenType.OPERATOR && (t.content == "-" || t.content == "−")) {
-                        if (last_token == null || (last_token != null && last_token.token_type != TokenType.NUMBER &&
-                        last_token.token_type != TokenType.P_RIGHT)) {
+                        /* Define last_tokens, where a next minus is a number, not an operator */
+                        if (last_token == null || (
+                            (last_token.token_type == TokenType.OPERATOR && last_token.content != "%") ||
+                            (last_token.token_type == TokenType.FUNCTION) ||
+                            (last_token.token_type == TokenType.P_LEFT)
+                        )) {
                             next_number_negative = true;
                             continue;
                         }

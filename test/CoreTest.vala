@@ -32,6 +32,7 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("-5 * -2", "10"); // https://github.com/elementary/calculator/issues/37
         assert_equal ("-1 / −1", "1"); // https://github.com/elementary/calculator/pull/38/files
         assert_equal ("89 * 56", "4,984"); // https://github.com/elementary/calculator/issues/48
+        assert_equal ("-1 / (−1)", "1"); // https://github.com/elementary/calculator/issues/59
         assert_equal ("144 / 15", "9.6");
         assert_equal ("1440 / 15", "96");
         assert_equal ("14400 / 12", "1,200"); // https://github.com/elementary/calculator/issues/48
@@ -39,13 +40,16 @@ class PantheonCalculator.Core.CoreTest : Object {
 
         assert_equal ("2^5", "32");
         assert_equal ("3456^0.5 - sqrt(3456)", "0");
+        assert_equal ("3456^-0.5 * sqrt(3456)", "1");
         assert_equal ("723 mod 5", "3");
         assert_equal ("2%", "0.02");
+        assert_equal ("(2 + 2)% - 0.04", "0"); // https://github.com/elementary/calculator/issues/59
 
         assert_equal ("14E-2", "0.14"); // https://github.com/elementary/calculator/issues/16
         assert_equal ("1.1E2 - 1E1", "100");
 
         assert_equal ("pi", "3.141592654");
+        assert_equal ("pi - 2", "1.141592654"); // https://github.com/elementary/calculator/issues/59
         assert_equal ("(π)", "3.141592654");
         assert_equal ("e", "2.718281828");
 
