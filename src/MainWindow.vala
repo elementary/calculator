@@ -185,6 +185,7 @@ namespace PantheonCalculator {
             basic_grid.column_spacing = 6;
             basic_grid.row_spacing = 6;
             basic_grid.valign = Gtk.Align.FILL;
+            basic_grid.set_row_homogeneous (true);
 
             basic_grid.attach (entry, 0, 0, 4, 1);
             basic_grid.attach (button_clr, 0, 1, 1, 1);
