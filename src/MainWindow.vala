@@ -321,8 +321,10 @@ namespace PantheonCalculator {
         private void button_calc_clicked () {
             position = entry.get_position ();
             if (entry.get_text () != "") {
+                var eval = new Core.Evaluation ();
+
                 try {
-                    var output = Core.Evaluation.evaluate (entry.get_text (), decimal_places);
+                    var output = eval.evaluate (entry.get_text (), decimal_places);
                     if (entry.get_text () != output) {
                         History history_entry = History () { exp = entry.get_text (), output = output };
                         history.append (history_entry);

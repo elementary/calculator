@@ -32,19 +32,23 @@ namespace PantheonCalculator {
 
             app_launcher = "io.elementary.calculator.desktop";
 
-            SimpleAction quit_action = new SimpleAction ("quit", null);
+            var quit_action = new SimpleAction ("quit", null);
+            var undo_action = new SimpleAction ("undo", null);
+
+            add_action (quit_action);
+            add_action (undo_action);
+
+            set_accels_for_action ("app.quit", {"<Control>q"});
+            set_accels_for_action ("app.undo", {"<Control>z"});
+
             quit_action.activate.connect (() => {
                 if (window != null) {
                     window.save_state ();
                     window.destroy ();
                 }
             });
-            SimpleAction undo_action = new SimpleAction ("undo", null);
+
             undo_action.activate.connect (() => window.undo ());
-            add_action (undo_action);
-            add_action (quit_action);
-            add_accelerator ("<Control>z", "app.undo", null);
-            add_accelerator ("<Control>q", "app.quit", null);
         }
 
         public override void activate () {
