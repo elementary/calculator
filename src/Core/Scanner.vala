@@ -25,54 +25,50 @@ namespace PantheonCalculator.Core {
     }
 
     public class Scanner : Object {
-        public unowned string str { get; construct set; }
-        public ssize_t pos { get; set; default = 0; }
+        private ssize_t pos;
+        private unichar[] uc;
 
-        public unichar[] uc = new unichar[0];
+        public string decimal_symbol { get; set; }
+        public string separator_symbol { get; set; }
 
-        public unichar decimal_symbol { get; construct set; }
-        public unichar separator_symbol { get; construct set; }
-
-        public Scanner (string str) {
-            Object (str: str,
-                    decimal_symbol: Posix.nl_langinfo (Posix.NLItem.RADIXCHAR).to_utf8 ()[0],
-                    separator_symbol: Posix.nl_langinfo (Posix.NLItem.THOUSEP).to_utf8 ()[0]);
+        public Scanner () {
+            decimal_symbol = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR);
+            separator_symbol = Posix.nl_langinfo (Posix.NLItem.THOUSEP);
         }
 
-        public static List<Token> scan (string input) throws SCANNER_ERROR {
-            Scanner scanner = new Scanner (input);
+        public List<Token> scan (string input) throws SCANNER_ERROR {
             int index = 0;
             unowned unichar c;
             bool next_number_negative = false;
             Evaluation e = new Evaluation ();
 
-            for (int i = 0; input.get_next_char (ref index, out c); i++) {
-                if (c != ' ' && c != scanner.separator_symbol) {
-                    scanner.uc.resize (scanner.uc.length + 1);
-                    scanner.uc[scanner.uc.length - 1] = c;
-                }
+            string str = input.replace (" ", "");
+            str = str.replace (separator_symbol, "");
+
+            pos = 0;
+            uc = new unichar[str.char_count ()];
+            for (int i = 0; str.get_next_char (ref index, out c); i++) {
+                uc[i] = c;
             }
+
             try {
                 TokenType type = TokenType.EOF;
                 unowned Token? last_token = null;
                 List<Token> tokenlist = new List<Token> ();
-                while (scanner.pos < scanner.uc.length) {
-                    ssize_t start;
-                    ssize_t len;
-                    string substr = "";
+                while (pos < uc.length) {
+                    ssize_t start, len;
+                    type = next (out start, out len);
 
-                    type = scanner.next (out start, out len);
+                    string substr = "";
                     for (ssize_t i = start; i < (start + len); i++) {
-                        if (scanner.uc[i] == scanner.decimal_symbol || scanner.uc[i] == '.') {
-                            substr += ".";
-                        } else {
-                            substr += scanner.uc[i].to_string ();
-                        }
+                        substr += uc[i].to_string ();
                     }
+
+                    substr = substr.replace (decimal_symbol, ".");
 
                     Token t = new Token (substr, type);
 
-                    //identifying multicharacter tokens via Evaluation class.
+                    /* Identifying multicharacter tokens via Evaluation class. */
                     if (t.token_type == TokenType.ALPHA) {
                         if (e.is_operator (t)) {
                             t.token_type = TokenType.OPERATOR;
@@ -118,12 +114,14 @@ namespace PantheonCalculator.Core {
                     last_token = t;
                 }
                 return tokenlist;
-            } catch (SCANNER_ERROR e) { throw e; }
+            } catch (SCANNER_ERROR e) {
+                throw e;
+            }
         }
 
         private TokenType next (out ssize_t start, out ssize_t len) throws SCANNER_ERROR {
             start = pos;
-            if (uc[pos] == this.decimal_symbol || this.uc[pos] == '.') {
+            if (uc[pos] == decimal_symbol.get_char (0)) {
                 pos++;
                 while (uc[pos].isdigit () && pos < uc.length) {
                     pos++;
@@ -134,7 +132,7 @@ namespace PantheonCalculator.Core {
                 while (uc[pos].isdigit () && pos < uc.length) {
                     pos++;
                 }
-                if (uc[pos] == this.decimal_symbol || this.uc[pos] == '.') {
+                if (uc[pos] == decimal_symbol.get_char (0)) {
                     pos++;
                 }
                 while (uc[pos].isdigit () && pos < uc.length) {
@@ -175,8 +173,8 @@ namespace PantheonCalculator.Core {
                 return TokenType.EOF;
             }
 
-            //if no rule matches the character at pos, throw an error.
-            throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("'%s' is unknown."), str.get_char (pos).to_string ());
+            /* If no rule matches the character at pos, throw an error. */
+            throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("'%s' is unknown."), uc[pos].to_string ());
         }
     }
 }
