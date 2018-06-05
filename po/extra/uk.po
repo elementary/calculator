@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:40-0700\n"
+"POT-Creation-Date: 2018-06-05 10:26-0700\n"
 "PO-Revision-Date: 2016-08-10 18:28+0000\n"
 "Last-Translator: Roman Sytnyk <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -18,15 +18,17 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
+#: data/io.elementary.calculator.appdata.xml.in:8
+#: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
 msgstr "Калькулятор"
 
+#: data/io.elementary.calculator.appdata.xml.in:9
+#: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
 msgstr "Вирішити прості рівняння"
 
-msgid "About Calculator"
-msgstr "Про програму"
-
+#: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
@@ -34,3 +36,14 @@ msgstr ""
 "Простий калькулятор для повсякденного використання. Він підтримує базові і "
 "деякі наукові розрахунки, включаючи тригонометричні функції, синус, косинус "
 "і тангенс"
+
+#: data/io.elementary.calculator.appdata.xml.in:48
+msgid "elementary LLC."
+msgstr ""
+
+#: data/io.elementary.calculator.desktop.in:6
+msgid "accessories-calculator"
+msgstr ""
+
+#~ msgid "About Calculator"
+#~ msgstr "Про програму"

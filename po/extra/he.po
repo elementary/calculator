@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:40-0700\n"
+"POT-Creation-Date: 2018-06-05 10:26-0700\n"
 "PO-Revision-Date: 2016-10-17 22:41+0000\n"
 "Last-Translator: Niv Baehr <Unknown>\n"
 "Language-Team: Hebrew <he@li.org>\n"
@@ -18,18 +18,31 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
+#: data/io.elementary.calculator.appdata.xml.in:8
+#: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
 msgstr "מחשבון"
 
+#: data/io.elementary.calculator.appdata.xml.in:9
+#: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
 msgstr "פתרון משוואות פשוטות"
 
-msgid "About Calculator"
-msgstr "על אודות המחשבון"
-
+#: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
 "מחשבון פשוט לשימוש יומיומי. תומך בחישובים בסיסיים ואף מעט מדעיים כולל "
 "פונקציות טריגונומטריות – סינוס, קוסינוס וטנגנס."
+
+#: data/io.elementary.calculator.appdata.xml.in:48
+msgid "elementary LLC."
+msgstr ""
+
+#: data/io.elementary.calculator.desktop.in:6
+msgid "accessories-calculator"
+msgstr ""
+
+#~ msgid "About Calculator"
+#~ msgstr "על אודות המחשבון"

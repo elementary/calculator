@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:40-0700\n"
+"POT-Creation-Date: 2018-06-05 10:26-0700\n"
 "PO-Revision-Date: 2017-02-26 18:08+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -18,18 +18,31 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-27 05:40+0000\n"
 "X-Generator: Launchpad (build 18328)\n"
 
+#: data/io.elementary.calculator.appdata.xml.in:8
+#: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
 msgstr "Kalkulačka"
 
+#: data/io.elementary.calculator.appdata.xml.in:9
+#: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
 msgstr "Řešte jednoduché výpočty"
 
-msgid "About Calculator"
-msgstr "O aplikaci Kalkulačka"
-
+#: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
 "Jednoduchá kalkulačka pro každodenní použití. Podporuje základní i některé "
 "vědecké výpočty, včetně goniometrických funkcí sinus, kosinus a tangens."
+
+#: data/io.elementary.calculator.appdata.xml.in:48
+msgid "elementary LLC."
+msgstr ""
+
+#: data/io.elementary.calculator.desktop.in:6
+msgid "accessories-calculator"
+msgstr ""
+
+#~ msgid "About Calculator"
+#~ msgstr "O aplikaci Kalkulačka"
