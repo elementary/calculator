@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:40-0700\n"
+"POT-Creation-Date: 2018-06-05 10:25-0700\n"
 "PO-Revision-Date: 2017-06-16 17:33+0000\n"
 "Last-Translator: Rajeev Kumar <irajeevankumar@gmail.com>\n"
-"Language-Team: Tamil "
-"<https://l10n.elementary.io/projects/calculator/calculator/ta/>\n"
+"Language-Team: Tamil <https://l10n.elementary.io/projects/calculator/"
+"calculator/ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,134 +15,135 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
+#: src/PantheonCalculator.vala:31 src/MainWindow.vala:94
 msgid "Calculator"
 msgstr "கால்குலேட்டர்"
 
-#: ../src/PantheonCalculator.vala:44
-msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"  Afrish Khan S https://launchpad.net/~ryanafrish7\n"
-"  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
-"  அவினாஷ் Avinash https://launchpad.net/~avinashachu007"
-
-#: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:86
-msgid "History"
-msgstr "வரலாறு"
-
-#: ../src/HistoryDialog.vala:84
-msgid "Value to add:"
-msgstr "கூட்ட வேண்டிய மதிப்புகள்:"
-
-#: ../src/HistoryDialog.vala:88
-msgid "Result"
-msgstr "முடிவு"
-
-#: ../src/HistoryDialog.vala:92
-msgid "Expression"
-msgstr "கோவை"
-
-#: ../src/HistoryDialog.vala:98
-msgid "Close"
-msgstr "மூடு"
-
-#: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:133
-msgid "Add"
-msgstr "கூட்டு"
-
-#: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
+#: src/MainWindow.vala:102 src/MainWindow.vala:406
 msgid "Show extended functionality"
 msgstr "நீட்டிக்கப்பட்ட செயல்பாடுகள் காட்ட"
 
-#: ../src/MainWindow.vala:124
+#: src/MainWindow.vala:107 src/HistoryDialog.vala:37
+msgid "History"
+msgstr "வரலாறு"
+
+#: src/MainWindow.vala:147
 msgid "Calculate Result"
 msgstr "முடிவை கணக்கிடு"
 
-#: ../src/MainWindow.vala:127
+#: src/MainWindow.vala:150
 msgid "Add last result"
 msgstr "கடைசி பதிலை கூட்டு"
 
-#: ../src/MainWindow.vala:129
+#: src/MainWindow.vala:152
 msgid "Backspace"
 msgstr "பின்நகர்வு"
 
-#: ../src/MainWindow.vala:130
+#: src/MainWindow.vala:153
 msgid "Clear entry"
 msgstr "பதிவை அழி"
 
-#: ../src/MainWindow.vala:136
+#: src/MainWindow.vala:156 src/HistoryDialog.vala:107
+msgid "Add"
+msgstr "கூட்டு"
+
+#: src/MainWindow.vala:159
 msgid "Subtract"
 msgstr "கழித்தல்"
 
-#: ../src/MainWindow.vala:139
+#: src/MainWindow.vala:162
 msgid "Multiply"
 msgstr "பெருக்கல்"
 
-#: ../src/MainWindow.vala:142
+#: src/MainWindow.vala:165
 msgid "Divide"
 msgstr "வகுத்தல்"
 
-#: ../src/MainWindow.vala:148
+#: src/MainWindow.vala:171
 msgid "Percentage"
 msgstr "சதவிகிதம்"
 
-#: ../src/MainWindow.vala:219
+#: src/MainWindow.vala:244
 msgid "Start Group"
 msgstr "குழுவை ஆரம்பி"
 
-#: ../src/MainWindow.vala:220
+#: src/MainWindow.vala:245
 msgid "End Group"
 msgstr "குழுவை முடி"
 
-#: ../src/MainWindow.vala:221
+#: src/MainWindow.vala:246
 msgid "Exponent"
 msgstr "அடுக்குக்குறி"
 
-#: ../src/MainWindow.vala:223
+#: src/MainWindow.vala:248
 msgid "Root"
 msgstr "வர்க்க மூலம்"
 
-#: ../src/MainWindow.vala:224
+#: src/MainWindow.vala:249
 msgid "Sine"
 msgstr "சைன்"
 
-#: ../src/MainWindow.vala:225
+#: src/MainWindow.vala:250
 msgid "Hyperbolic Sine"
 msgstr "குவிபிறை சைன்"
 
-#: ../src/MainWindow.vala:226
+#: src/MainWindow.vala:251
 msgid "Cosine"
 msgstr "கோசைன்"
 
-#: ../src/MainWindow.vala:227
+#: src/MainWindow.vala:252
 msgid "Hyperbolic Cosine"
 msgstr "குவிபிறை கோசைன்"
 
-#: ../src/MainWindow.vala:228
+#: src/MainWindow.vala:253
 msgid "Tangent"
 msgstr "தொடுகோடு"
 
-#: ../src/MainWindow.vala:229
+#: src/MainWindow.vala:254
 msgid "Hyperbolic Tangent"
 msgstr "குவிபிறை தொடுகோடு"
 
-#: ../src/MainWindow.vala:230
+#: src/MainWindow.vala:255
 msgid "Pi"
 msgstr "பை"
 
-#: ../src/MainWindow.vala:231
+#: src/MainWindow.vala:256
 msgid "Euler's Number"
 msgstr "ஆய்லர் எண்"
 
-#: ../src/MainWindow.vala:371
+#: src/MainWindow.vala:401
 msgid "Hide extended functionality"
 msgstr "நீட்டிக்கப்பட்ட செயல்பாடு மறை"
 
-#: ../src/Core/Scanner.vala:80
+#: src/HistoryDialog.vala:92
+msgid "Value to add:"
+msgstr "கூட்ட வேண்டிய மதிப்புகள்:"
+
+#: src/HistoryDialog.vala:96
+msgid "Result"
+msgstr "முடிவு"
+
+#: src/HistoryDialog.vala:100
+msgid "Expression"
+msgstr "கோவை"
+
+#: src/HistoryDialog.vala:106
+msgid "Close"
+msgstr "மூடு"
+
+#: src/Core/Scanner.vala:80
+#, c-format
 msgid "'%s' is invalid."
 msgstr "'%s' தவறானது."
 
-#: ../src/Core/Scanner.vala:164
+#: src/Core/Scanner.vala:177
+#, c-format
 msgid "'%s' is unknown."
 msgstr "'%s' அறியப்படாதது."
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  Afrish Khan S https://launchpad.net/~ryanafrish7\n"
+#~ "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
+#~ "  அவினாஷ் Avinash https://launchpad.net/~avinashachu007"
