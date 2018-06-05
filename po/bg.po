@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:40-0700\n"
+"POT-Creation-Date: 2018-06-05 10:25-0700\n"
 "PO-Revision-Date: 2017-06-18 12:31+0000\n"
 "Last-Translator: Valentin Kirilov <val.kirilov@gmail.com>\n"
-"Language-Team: Bulgarian "
-"<https://l10n.elementary.io/projects/calculator/calculator/bg/>\n"
+"Language-Team: Bulgarian <https://l10n.elementary.io/projects/calculator/"
+"calculator/bg/>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,135 +15,136 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
+#: src/PantheonCalculator.vala:31 src/MainWindow.vala:94
 msgid "Calculator"
 msgstr "Калкулатор"
 
-#: ../src/PantheonCalculator.vala:44
-msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
-"  Petar Djakov https://launchpad.net/~shinnobivalley\n"
-"  felroric https://launchpad.net/~toddi222\n"
-"  Адмирал АнимЕ https://launchpad.net/~aeternus-arcis"
-
-#: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:86
-msgid "History"
-msgstr "Хронология"
-
-#: ../src/HistoryDialog.vala:84
-msgid "Value to add:"
-msgstr "Стойност за добавяне:"
-
-#: ../src/HistoryDialog.vala:88
-msgid "Result"
-msgstr "Резултат"
-
-#: ../src/HistoryDialog.vala:92
-msgid "Expression"
-msgstr "Израз"
-
-#: ../src/HistoryDialog.vala:98
-msgid "Close"
-msgstr "Затваряне"
-
-#: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:133
-msgid "Add"
-msgstr "Добавяне"
-
-#: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
+#: src/MainWindow.vala:102 src/MainWindow.vala:406
 msgid "Show extended functionality"
 msgstr "Показване на разширените функции"
 
-#: ../src/MainWindow.vala:124
+#: src/MainWindow.vala:107 src/HistoryDialog.vala:37
+msgid "History"
+msgstr "Хронология"
+
+#: src/MainWindow.vala:147
 msgid "Calculate Result"
 msgstr "Смятане на резултата"
 
-#: ../src/MainWindow.vala:127
+#: src/MainWindow.vala:150
 msgid "Add last result"
 msgstr "Добавяне на последния резултат"
 
-#: ../src/MainWindow.vala:129
+#: src/MainWindow.vala:152
 msgid "Backspace"
 msgstr "Изтриване на предишния знак"
 
-#: ../src/MainWindow.vala:130
+#: src/MainWindow.vala:153
 msgid "Clear entry"
 msgstr "Изчистване на въведеното"
 
-#: ../src/MainWindow.vala:136
+#: src/MainWindow.vala:156 src/HistoryDialog.vala:107
+msgid "Add"
+msgstr "Добавяне"
+
+#: src/MainWindow.vala:159
 msgid "Subtract"
 msgstr "Изваждане"
 
-#: ../src/MainWindow.vala:139
+#: src/MainWindow.vala:162
 msgid "Multiply"
 msgstr "Умножаване"
 
-#: ../src/MainWindow.vala:142
+#: src/MainWindow.vala:165
 msgid "Divide"
 msgstr "Деление"
 
-#: ../src/MainWindow.vala:148
+#: src/MainWindow.vala:171
 msgid "Percentage"
 msgstr "Процент"
 
-#: ../src/MainWindow.vala:219
+#: src/MainWindow.vala:244
 msgid "Start Group"
 msgstr "Начална група"
 
-#: ../src/MainWindow.vala:220
+#: src/MainWindow.vala:245
 msgid "End Group"
 msgstr "Крайна група"
 
-#: ../src/MainWindow.vala:221
+#: src/MainWindow.vala:246
 msgid "Exponent"
 msgstr "Експонента"
 
-#: ../src/MainWindow.vala:223
+#: src/MainWindow.vala:248
 msgid "Root"
 msgstr "Корен"
 
-#: ../src/MainWindow.vala:224
+#: src/MainWindow.vala:249
 msgid "Sine"
 msgstr "Синус"
 
-#: ../src/MainWindow.vala:225
+#: src/MainWindow.vala:250
 msgid "Hyperbolic Sine"
 msgstr "Хиперболичен синус"
 
-#: ../src/MainWindow.vala:226
+#: src/MainWindow.vala:251
 msgid "Cosine"
 msgstr "Косинус"
 
-#: ../src/MainWindow.vala:227
+#: src/MainWindow.vala:252
 msgid "Hyperbolic Cosine"
 msgstr "Хиперболичен косинус"
 
-#: ../src/MainWindow.vala:228
+#: src/MainWindow.vala:253
 msgid "Tangent"
 msgstr "Тангенс"
 
-#: ../src/MainWindow.vala:229
+#: src/MainWindow.vala:254
 msgid "Hyperbolic Tangent"
 msgstr "Хиперболичен тангенс"
 
-#: ../src/MainWindow.vala:230
+#: src/MainWindow.vala:255
 msgid "Pi"
 msgstr "Пи"
 
-#: ../src/MainWindow.vala:231
+#: src/MainWindow.vala:256
 msgid "Euler's Number"
 msgstr "Число на Ойлер"
 
-#: ../src/MainWindow.vala:371
+#: src/MainWindow.vala:401
 msgid "Hide extended functionality"
 msgstr "Скрий разширени функции"
 
-#: ../src/Core/Scanner.vala:80
+#: src/HistoryDialog.vala:92
+msgid "Value to add:"
+msgstr "Стойност за добавяне:"
+
+#: src/HistoryDialog.vala:96
+msgid "Result"
+msgstr "Резултат"
+
+#: src/HistoryDialog.vala:100
+msgid "Expression"
+msgstr "Израз"
+
+#: src/HistoryDialog.vala:106
+msgid "Close"
+msgstr "Затваряне"
+
+#: src/Core/Scanner.vala:80
+#, c-format
 msgid "'%s' is invalid."
 msgstr "'%s' не е валидно."
 
-#: ../src/Core/Scanner.vala:164
+#: src/Core/Scanner.vala:177
+#, c-format
 msgid "'%s' is unknown."
 msgstr "'%s'  е непознат символ."
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
+#~ "  Petar Djakov https://launchpad.net/~shinnobivalley\n"
+#~ "  felroric https://launchpad.net/~toddi222\n"
+#~ "  Адмирал АнимЕ https://launchpad.net/~aeternus-arcis"

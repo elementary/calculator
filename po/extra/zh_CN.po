@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:40-0700\n"
+"POT-Creation-Date: 2018-06-05 10:26-0700\n"
 "PO-Revision-Date: 2016-08-05 10:35+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
@@ -18,16 +18,29 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
+#: data/io.elementary.calculator.appdata.xml.in:8
+#: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
 msgstr "计算器"
 
+#: data/io.elementary.calculator.appdata.xml.in:9
+#: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
 msgstr "解决简单的公式计算"
 
-msgid "About Calculator"
-msgstr "关于计算器"
-
+#: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr "一款能满足日常计算需求的计算器。支持基础计算和部分科学计算。"
+
+#: data/io.elementary.calculator.appdata.xml.in:48
+msgid "elementary LLC."
+msgstr ""
+
+#: data/io.elementary.calculator.desktop.in:6
+msgid "accessories-calculator"
+msgstr ""
+
+#~ msgid "About Calculator"
+#~ msgstr "关于计算器"

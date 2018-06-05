@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:40-0700\n"
+"POT-Creation-Date: 2018-06-05 10:26-0700\n"
 "PO-Revision-Date: 2018-01-03 19:17+0000\n"
 "Last-Translator: Arkadeepta Roy <arkadeepta.roy2016@vitstudent.ac.in>\n"
-"Language-Team: Bengali "
-"<https://weblate.elementary.io/projects/calculator/extra/bn/>\n"
+"Language-Team: Bengali <https://weblate.elementary.io/projects/calculator/"
+"extra/bn/>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,18 +20,31 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
+#: data/io.elementary.calculator.appdata.xml.in:8
+#: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
 msgstr "ক্যালকুলেটর"
 
+#: data/io.elementary.calculator.appdata.xml.in:9
+#: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
 msgstr "সাধারণ সমীকরণ সমাধান করুন"
 
-msgid "About Calculator"
-msgstr "ক্যালকুলেটর সম্পর্কে"
-
+#: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
-"দৈনন্দিন ব্যবহারের জন্য একটি সহজ ক্যালকুলেটর। এটা মৌলিক এবং ত্রিকোণমিতি ফাং"
-"শন, পাপ, কস, এবং তান সহ কিছু বৈজ্ঞানিক গণনা সমর্থন করে।"
+"দৈনন্দিন ব্যবহারের জন্য একটি সহজ ক্যালকুলেটর। এটা মৌলিক এবং ত্রিকোণমিতি ফাংশন, "
+"পাপ, কস, এবং তান সহ কিছু বৈজ্ঞানিক গণনা সমর্থন করে।"
+
+#: data/io.elementary.calculator.appdata.xml.in:48
+msgid "elementary LLC."
+msgstr ""
+
+#: data/io.elementary.calculator.desktop.in:6
+msgid "accessories-calculator"
+msgstr ""
+
+#~ msgid "About Calculator"
+#~ msgstr "ক্যালকুলেটর সম্পর্কে"
