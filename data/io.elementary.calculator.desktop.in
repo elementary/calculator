@@ -2,6 +2,7 @@
 Name=Calculator
 Comment=Solve simple equations
 Exec=io.elementary.calculator %U
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=accessories-calculator
 Terminal=false
 Type=Application
