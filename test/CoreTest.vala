@@ -81,6 +81,8 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("144000 / 12", "12 000", ",", " "); // https://github.com/elementary/calculator/issues/48
 
         assert_throw ("2+(2", "Mismatched parenthesis.");
+        assert_throw ("(1+1", "Mismatched parenthesis.");
+        assert_throw ("1+1)", "Mismatched parenthesis.");
         assert_throw ("2+f", "'f' is invalid.");
 
         return 0;
