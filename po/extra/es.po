@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 10:26-0700\n"
-"PO-Revision-Date: 2018-06-07 00:08+0000\n"
-"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
+"PO-Revision-Date: 2018-06-14 00:08+0000\n"
+"Last-Translator: Iuninefrendor <iuninefrendor@gmail.com>\n"
 "Language-Team: Spanish "
 "<https://weblate.elementary.io/projects/calculator/extra/es/>\n"
 "Language: es\n"
@@ -44,8 +44,9 @@ msgid "elementary LLC."
 msgstr "elementary LLC."
 
 #: data/io.elementary.calculator.desktop.in:6
+#, fuzzy
 msgid "accessories-calculator"
-msgstr "accesorios-calculadora"
+msgstr "accessories-calculator"
 
 #~ msgid "About Calculator"
 #~ msgstr "Acerca de Calculadora"
