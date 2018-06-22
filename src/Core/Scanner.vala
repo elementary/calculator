@@ -21,7 +21,8 @@
 namespace PantheonCalculator.Core {
     public errordomain SCANNER_ERROR {
         UNKNOWN_TOKEN,
-        ALPHA_INVALID
+        ALPHA_INVALID,
+        MISMATCHED_PARENTHESES
     }
 
     public class Scanner : Object {
@@ -55,6 +56,7 @@ namespace PantheonCalculator.Core {
                 TokenType type = TokenType.EOF;
                 unowned Token? last_token = null;
                 List<Token> tokenlist = new List<Token> ();
+                int parentheses_balance_counter = 0;
                 while (pos < uc.length) {
                     ssize_t start, len;
                     type = next (out start, out len);
@@ -104,15 +106,27 @@ namespace PantheonCalculator.Core {
                     * and token now is a function, constant or parenthesis (left)
                     */
                     if (last_token != null &&
-                    (last_token.token_type == TokenType.NUMBER || last_token.token_type == TokenType.P_RIGHT) &&
-                    (t.token_type == TokenType.FUNCTION || t.token_type == TokenType.CONSTANT
-                    || t.token_type == TokenType.P_LEFT || t.token_type == TokenType.NUMBER)) {
+                       (last_token.token_type == TokenType.NUMBER || last_token.token_type == TokenType.P_RIGHT) &&
+                       (t.token_type == TokenType.FUNCTION || t.token_type == TokenType.CONSTANT || 
+                        t.token_type == TokenType.P_LEFT || t.token_type == TokenType.NUMBER)
+                    ) {
                         tokenlist.append (new Token ("*", TokenType.OPERATOR));
+                    }
+
+                    if (t.token_type == TokenType.P_LEFT) {
+                        parentheses_balance_counter -= 1;
+                    } else if (t.token_type == TokenType.P_RIGHT) {
+                        parentheses_balance_counter += 1;
                     }
 
                     tokenlist.append (t);
                     last_token = t;
                 }
+
+                if (parentheses_balance_counter != 0) {
+                    throw new SCANNER_ERROR.MISMATCHED_PARENTHESES (_("Mismatched parenthesis."));
+                }
+
                 return tokenlist;
             } catch (SCANNER_ERROR e) {
                 throw e;

@@ -124,7 +124,7 @@ namespace PantheonCalculator {
             infobar_label = new Gtk.Label ("");
             infobar.get_content_area ().add (infobar_label);
             infobar.show_close_button = false;
-            infobar.message_type = Gtk.MessageType.ERROR;
+            infobar.message_type = Gtk.MessageType.WARNING;
             infobar.no_show_all = true;
 
             global_grid = new Gtk.Grid ();
