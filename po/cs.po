@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 10:32-0700\n"
-"PO-Revision-Date: 2018-06-29 20:01+0000\n"
+"PO-Revision-Date: 2018-06-30 00:02+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/calculator/"
 "calculator/cs/>\n"
@@ -138,7 +138,7 @@ msgstr "'%s' je neplatný."
 
 #: src/Core/Scanner.vala:127
 msgid "Mismatched parenthesis."
-msgstr "Nespárovatelné závorky"
+msgstr "Nespárovatelné závorky."
 
 #: src/Core/Scanner.vala:191
 #, c-format
