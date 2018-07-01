@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-27 10:32-0700\n"
-"PO-Revision-Date: 2016-12-20 07:16+0000\n"
-"Last-Translator: Davidmp <rbndavid@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-07-01 13:54+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/calculator/"
+"calculator/ca/>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: src/PantheonCalculator.vala:31 src/MainWindow.vala:94
 msgid "Calculator"
@@ -136,7 +138,7 @@ msgstr "«%s» no és vàlid."
 
 #: src/Core/Scanner.vala:127
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "Parèntesis no coincidents."
 
 #: src/Core/Scanner.vala:191
 #, c-format
