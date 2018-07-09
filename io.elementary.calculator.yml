@@ -1,0 +1,48 @@
+app-id: io.elementary.calculator
+branch: stable
+runtime: org.gnome.Sdk
+runtime-version: '3.28'
+sdk: org.gnome.Sdk
+base: io.elementary.Loki.BaseApp
+base-version: stable
+command: io.elementary.calculator
+finish-args:
+- "--share=ipc"
+- "--socket=x11"
+- "--socket=wayland"
+- "--filesystem=xdg-run/dconf"
+- "--filesystem=~/.config/dconf:ro"
+- "--talk-name=ca.desrt.dconf"
+- "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+build-options:
+  cflags: "-O2 -g"
+  cxxflags: "-O2 -g"
+  env:
+    V: '1'
+cleanup:
+- "/include"
+- "/lib/pkgconfig"
+- "/share/pkgconfig"
+- "/share/aclocal"
+- "/man"
+- "/share/man"
+- "/share/gtk-doc"
+- "*.la"
+- "*.a"
+modules:
+- name: appstream
+  buildsystem: meson
+  config-opts:
+  - -Dstemming=false
+  cleanup:
+  - '*'
+  sources:
+  - type: archive
+    url: https://github.com/ximion/appstream/archive/APPSTREAM_0_12_1.tar.gz
+    sha256: 8f720ced48fda243f78f5a38a57b61b4f49b67119a749b6eee2599c0c3b9e16e
+- name: io.elementary.calculator
+  buildsystem: meson
+  sources:
+  - type: git
+    url: https://github.com/elementary/calculator
+    tag: '0.1.4'
