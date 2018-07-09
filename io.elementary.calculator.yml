@@ -14,21 +14,6 @@ finish-args:
 - "--filesystem=~/.config/dconf:ro"
 - "--talk-name=ca.desrt.dconf"
 - "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
-build-options:
-  cflags: "-O2 -g"
-  cxxflags: "-O2 -g"
-  env:
-    V: '1'
-cleanup:
-- "/include"
-- "/lib/pkgconfig"
-- "/share/pkgconfig"
-- "/share/aclocal"
-- "/man"
-- "/share/man"
-- "/share/gtk-doc"
-- "*.la"
-- "*.a"
 modules:
 - name: appstream
   buildsystem: meson
@@ -42,6 +27,8 @@ modules:
     sha256: 8f720ced48fda243f78f5a38a57b61b4f49b67119a749b6eee2599c0c3b9e16e
 - name: io.elementary.calculator
   buildsystem: meson
+  config-opts:
+  - --buildtype=release
   sources:
   - type: git
     url: https://github.com/elementary/calculator
