@@ -1,0 +1,41 @@
+# Swahili translations for extra package.
+# Copyright (C) 2018 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 14:31-0700\n"
+"PO-Revision-Date: 2018-07-12 14:31-0700\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: sw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/io.elementary.calculator.appdata.xml.in:8
+#: data/io.elementary.calculator.desktop.in:3
+msgid "Calculator"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:9
+#: data/io.elementary.calculator.desktop.in:4
+msgid "Solve simple equations"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:11
+msgid ""
+"A simple calculator for everyday use. It supports basic and some scientific "
+"calculations including trigonometry functions, sin, cos, and tan."
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:48
+msgid "elementary LLC."
+msgstr ""
+
+#: data/io.elementary.calculator.desktop.in:6
+msgid "accessories-calculator"
+msgstr ""
