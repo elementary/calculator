@@ -1,6 +1,6 @@
-Source: pantheon-calculator
+Source: io.elementary.calculator
 Section: x11
-Priority: extra
+Priority: optional
 Maintainer: Cody Garver <cody@elementary.io>
 Build-Depends: appstream,
                debhelper (>= 10.5.1),
