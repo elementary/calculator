@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 10:25-0700\n"
+"POT-Creation-Date: 2018-07-12 14:31-0700\n"
 "PO-Revision-Date: 2017-08-22 19:14+0000\n"
 "Last-Translator: anjelo del carmen <anjelo2009@live.com>\n"
 "Language-Team: Tagalog <https://weblate.elementary.io/projects/calculator/"
@@ -131,12 +131,17 @@ msgstr "Ekspresyon"
 msgid "Close"
 msgstr "Isara"
 
-#: src/Core/Scanner.vala:80
+#: src/Core/Scanner.vala:82
 #, c-format
 msgid "'%s' is invalid."
 msgstr "'%s' ay hindi pwede."
 
-#: src/Core/Scanner.vala:177
+#: src/Core/Scanner.vala:127
+msgid "Mismatched parenthesis."
+msgstr ""
+
+#. If no rule matches the character at pos, throw an error.
+#: src/Core/Scanner.vala:191
 #, c-format
 msgid "'%s' is unknown."
 msgstr "'%s' ay hindi alam."
