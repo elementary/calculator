@@ -128,7 +128,7 @@ namespace PantheonCalculator.Core {
                         op_stack.push_tail (t);
                         break;
                     case TokenType.SEPARATOR:
-                        while (op_stack.peek_tail ().token_type != TokenType.P_LEFT && !op_stack.is_empty ()) {
+                        while (!op_stack.is_empty () && op_stack.peek_tail ().token_type != TokenType.P_LEFT) {
                             output.append (op_stack.pop_tail ());
                         }
 
@@ -171,7 +171,7 @@ namespace PantheonCalculator.Core {
                             }
                         }
 
-                        if (!(op_stack.is_empty ()) && op_stack.peek_tail ().token_type == TokenType.P_LEFT) {
+                        if (!op_stack.is_empty () && op_stack.peek_tail ().token_type == TokenType.P_LEFT) {
                             op_stack.pop_tail ();
                         }
 
