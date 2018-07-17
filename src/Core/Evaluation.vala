@@ -164,7 +164,7 @@ namespace PantheonCalculator.Core {
                         break;
                     case TokenType.P_RIGHT:
                         while (!op_stack.is_empty ()) {
-                            if (!(op_stack.peek_tail ().token_type == TokenType.P_LEFT)) {
+                            if (op_stack.peek_tail ().token_type != TokenType.P_LEFT) {
                                 output.append (op_stack.pop_tail ());
                             } else {
                                 break;
