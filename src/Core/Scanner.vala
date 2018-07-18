@@ -41,7 +41,6 @@ namespace PantheonCalculator.Core {
             int index = 0;
             unowned unichar c;
             bool next_number_negative = false;
-            Evaluation e = new Evaluation ();
 
             string str = input.replace (" ", "");
             str = str.replace (separator_symbol, "");
@@ -52,96 +51,82 @@ namespace PantheonCalculator.Core {
                 uc[i] = c;
             }
 
-            try {
-                TokenType type = TokenType.EOF;
-                unowned Token? last_token = null;
-                List<Token> tokenlist = new List<Token> ();
-                int parentheses_balance_counter = 0;
-                while (pos < uc.length) {
-                    ssize_t start, len;
-                    type = next (out start, out len);
+            Token? last_token = null;
+            List<Token> token_list = new List<Token> ();
+            int parentheses_balance_counter = 0;
+            while (pos < uc.length) {
+                Token t = next_token ();
 
-                    string substr = "";
-                    for (ssize_t i = start; i < (start + len); i++) {
-                        substr += uc[i].to_string ();
+                /* Identifying multicharacter tokens via Evaluation class. */
+                if (t.token_type == TokenType.ALPHA) {
+                    if (Evaluation.is_operator (t)) {
+                        t.token_type = TokenType.OPERATOR;
+                    } else if (Evaluation.is_function (t)) {
+                        t.token_type = TokenType.FUNCTION;
+                    } else if (Evaluation.is_constant (t)) {
+                        t.token_type = TokenType.CONSTANT;
+                    } else {
+                        throw new SCANNER_ERROR.ALPHA_INVALID (_("'%s' is invalid."), t.content);
                     }
 
-                    substr = substr.replace (decimal_symbol, ".");
-
-                    Token t = new Token (substr, type);
-
-                    /* Identifying multicharacter tokens via Evaluation class. */
-                    if (t.token_type == TokenType.ALPHA) {
-                        if (e.is_operator (t)) {
-                            t.token_type = TokenType.OPERATOR;
-                        } else if (e.is_function (t)) {
-                            t.token_type = TokenType.FUNCTION;
-                        } else if (e.is_constant (t)) {
-                            t.token_type = TokenType.CONSTANT;
-                        } else {
-                            throw new SCANNER_ERROR.ALPHA_INVALID (_("'%s' is invalid."), t.content);
-                        }
-
-                    } else if (t.token_type == TokenType.OPERATOR && (t.content == "-" || t.content == "−")) {
-                        /* Define last_tokens, where a next minus is a number, not an operator */
-                        if (last_token == null || (
-                            (last_token.token_type == TokenType.OPERATOR && last_token.content != "%") ||
-                            (last_token.token_type == TokenType.FUNCTION) ||
-                            (last_token.token_type == TokenType.P_LEFT)
-                        )) {
-                            next_number_negative = true;
-                            continue;
-                        }
-
-                    } else if (t.token_type == TokenType.NUMBER && next_number_negative) {
-                        t.content = (double.parse (t.content) * (-1)).to_string ();
-                        next_number_negative = false;
-                    } else if (t.token_type == TokenType.NULL_NUMBER) {
-                        t.content = "0" + t.content;
-                        t.token_type = TokenType.NUMBER;
+                } else if (t.token_type == TokenType.OPERATOR && (t.content == "-" || t.content == "−")) {
+                    /* Define last_tokens, where a next minus is a number, not an operator */
+                    if (last_token == null || (
+                        (last_token.token_type == TokenType.OPERATOR && last_token.content != "%") ||
+                        (last_token.token_type == TokenType.FUNCTION) ||
+                        (last_token.token_type == TokenType.P_LEFT)
+                    )) {
+                        next_number_negative = true;
+                        continue;
                     }
 
-                    /*
-                    * checking if last token was a number or parenthesis right
-                    * and token now is a function, constant or parenthesis (left)
-                    */
-                    if (last_token != null &&
-                       (last_token.token_type == TokenType.NUMBER || last_token.token_type == TokenType.P_RIGHT) &&
-                       (t.token_type == TokenType.FUNCTION || t.token_type == TokenType.CONSTANT || 
-                        t.token_type == TokenType.P_LEFT || t.token_type == TokenType.NUMBER)
-                    ) {
-                        tokenlist.append (new Token ("*", TokenType.OPERATOR));
-                    }
-
-                    if (t.token_type == TokenType.P_LEFT) {
-                        parentheses_balance_counter -= 1;
-                    } else if (t.token_type == TokenType.P_RIGHT) {
-                        parentheses_balance_counter += 1;
-                    }
-
-                    tokenlist.append (t);
-                    last_token = t;
+                } else if (t.token_type == TokenType.NUMBER && next_number_negative) {
+                    t.content = (double.parse (t.content) * (-1)).to_string ();
+                    next_number_negative = false;
+                } else if (t.token_type == TokenType.NULL_NUMBER) {
+                    t.content = "0" + t.content;
+                    t.token_type = TokenType.NUMBER;
                 }
 
-                if (parentheses_balance_counter != 0) {
-                    throw new SCANNER_ERROR.MISMATCHED_PARENTHESES (_("Mismatched parenthesis."));
+                /*
+                * Checking if last token was a number or parenthesis right
+                * and token now is a function, constant or parenthesis (left)
+                */
+                if (last_token != null &&
+                   (last_token.token_type == TokenType.NUMBER || last_token.token_type == TokenType.P_RIGHT) &&
+                   (t.token_type == TokenType.FUNCTION || t.token_type == TokenType.CONSTANT ||
+                    t.token_type == TokenType.P_LEFT || t.token_type == TokenType.NUMBER)
+                ) {
+                    token_list.append (new Token ("*", TokenType.OPERATOR));
                 }
 
-                return tokenlist;
-            } catch (SCANNER_ERROR e) {
-                throw e;
+                if (t.token_type == TokenType.P_LEFT) {
+                    parentheses_balance_counter -= 1;
+                } else if (t.token_type == TokenType.P_RIGHT) {
+                    parentheses_balance_counter += 1;
+                }
+
+                token_list.append (t);
+                last_token = t;
             }
+
+            if (parentheses_balance_counter != 0) {
+                throw new SCANNER_ERROR.MISMATCHED_PARENTHESES (_("Mismatched parenthesis."));
+            }
+
+            return token_list;
         }
 
-        private TokenType next (out ssize_t start, out ssize_t len) throws SCANNER_ERROR {
-            start = pos;
+        private Token next_token () throws SCANNER_ERROR {
+            ssize_t start = pos;
+            TokenType type;
+
             if (uc[pos] == decimal_symbol.get_char (0)) {
                 pos++;
                 while (uc[pos].isdigit () && pos < uc.length) {
                     pos++;
                 }
-                len = pos - start;
-                return TokenType.NULL_NUMBER;
+                type = TokenType.NULL_NUMBER;
             } else if (uc[pos].isdigit ()) {
                 while (uc[pos].isdigit () && pos < uc.length) {
                     pos++;
@@ -152,43 +137,43 @@ namespace PantheonCalculator.Core {
                 while (uc[pos].isdigit () && pos < uc.length) {
                     pos++;
                 }
-                len = pos - start;
-                return TokenType.NUMBER;
+                type = TokenType.NUMBER;
             } else if (uc[pos] == '+' || uc[pos] == '-' || uc[pos] == '*' ||
                         uc[pos] == '/' || uc[pos] == '^' || uc[pos] == '%' ||
                         uc[pos] == '÷' || uc[pos] == '×' || uc[pos] == '−') {
                 pos++;
-                len = 1;
-                return TokenType.OPERATOR;
+                type = TokenType.OPERATOR;
             } else if (uc[pos] == '√') {
                 pos++;
-                len = 1;
-                return TokenType.FUNCTION;
+                type = TokenType.FUNCTION;
             } else if (uc[pos] == 'π') {
                 pos++;
-                len = 1;
-                return TokenType.CONSTANT;
+                type = TokenType.CONSTANT;
             } else if (uc[pos].isalpha ()) {
                 while (uc[pos].isalpha () && pos < uc.length) {
                     pos++;
                 }
-                len = pos - start;
-                return TokenType.ALPHA;
+                type = TokenType.ALPHA;
             } else if (uc[pos] == '(') {
                 pos++;
-                len = 1;
-                return TokenType.P_LEFT;
+                type = TokenType.P_LEFT;
             } else if (uc[pos] == ')') {
                 pos++;
-                len = 1;
-                return TokenType.P_RIGHT;
+                type = TokenType.P_RIGHT;
             } else if (uc[pos] == '\0') {
-                len = 0;
-                return TokenType.EOF;
+                type = TokenType.EOF;
+            } else {
+                /* If no rule matches the character at pos, throw an error. */
+                throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("'%s' is unknown."), uc[pos].to_string ());
             }
 
-            /* If no rule matches the character at pos, throw an error. */
-            throw new SCANNER_ERROR.UNKNOWN_TOKEN (_("'%s' is unknown."), uc[pos].to_string ());
+            string substr = "";
+            for (ssize_t i = start; i < pos; i++) {
+                substr += uc[i].to_string ();
+            }
+            substr = substr.replace (decimal_symbol, ".");
+
+            return new Token (substr, type);
         }
     }
 }
