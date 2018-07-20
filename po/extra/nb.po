@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 10:32-0700\n"
-"PO-Revision-Date: 2018-06-06 00:07+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"POT-Creation-Date: 2018-07-12 14:31-0700\n"
+"PO-Revision-Date: 2018-07-20 00:06+0000\n"
+"Last-Translator: Nils K <slx@nilsk.net>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "calculator/extra/nb/>\n"
 "Language: nb\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 06:59+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -41,7 +41,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:48
 msgid "elementary LLC."
-msgstr "elementary LLC. (selskap med begrenset ansvar)"
+msgstr "elementary LLC."
 
 #: data/io.elementary.calculator.desktop.in:6
 msgid "accessories-calculator"

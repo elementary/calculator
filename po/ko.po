@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 10:32-0700\n"
+"POT-Creation-Date: 2018-07-12 14:31-0700\n"
 "PO-Revision-Date: 2018-06-27 22:05+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/calculator/"
@@ -140,6 +140,7 @@ msgstr "'%s'은 (는) 잘못되었습니다."
 msgid "Mismatched parenthesis."
 msgstr "괄호가 맞지 않았습니다."
 
+#. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:191
 #, c-format
 msgid "'%s' is unknown."

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-27 10:32-0700\n"
+"POT-Creation-Date: 2018-07-12 14:31-0700\n"
 "PO-Revision-Date: 2018-05-27 08:53+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/calculator/"
@@ -138,6 +138,7 @@ msgstr "'%s' este nevalidă."
 msgid "Mismatched parenthesis."
 msgstr ""
 
+#. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:191
 #, c-format
 msgid "'%s' is unknown."
