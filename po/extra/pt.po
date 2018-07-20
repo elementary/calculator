@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 14:29-0700\n"
-"PO-Revision-Date: 2018-06-19 00:08+0000\n"
-"Last-Translator: Philippe Silva <philippe.silva@outlook.com>\n"
+"PO-Revision-Date: 2018-07-20 11:03+0000\n"
+"Last-Translator: Christophe Silva <Christophesilva80@gmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/calculator/"
 "extra/pt/>\n"
 "Language: pt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -45,7 +45,7 @@ msgstr "elementary LLC."
 
 #: data/io.elementary.calculator.desktop.in:6
 msgid "accessories-calculator"
-msgstr ""
+msgstr "acessórios-calculador"
 
 #~ msgid "About Calculator"
 #~ msgstr "Sobre a Calculadora"
