@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 14:31-0700\n"
-"PO-Revision-Date: 2018-08-18 09:16+0000\n"
+"PO-Revision-Date: 2018-08-21 00:01+0000\n"
 "Last-Translator: Tucan Holmes <tucan.web.swiss@gmail.com>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/calculator/"
 "extra/de/>\n"
@@ -45,7 +45,7 @@ msgstr "elementary LLC."
 
 #: data/io.elementary.calculator.desktop.in:6
 msgid "accessories-calculator"
-msgstr "accessories-calculator"
+msgstr ""
 
 #~ msgid "About Calculator"
 #~ msgstr "Info zu Taschenrechner"
