@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 14:31-0700\n"
-"PO-Revision-Date: 2018-08-23 18:42+0000\n"
+"PO-Revision-Date: 2018-08-24 00:01+0000\n"
 "Last-Translator: Anand Kumar <anand@anandkumar.net>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/calculator/"
 "extra/hi/>\n"
@@ -44,7 +44,7 @@ msgstr "एलीमेंट्री एलएलसी."
 
 #: data/io.elementary.calculator.desktop.in:6
 msgid "accessories-calculator"
-msgstr "सामान-कैलकुलेटर"
+msgstr "एक्सेसरीज़-कैलकुलेटर"
 
 #~ msgid "About Calculator"
 #~ msgstr "गणक के बारे में"
