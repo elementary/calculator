@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 14:29-0700\n"
 "PO-Revision-Date: 2018-08-30 00:06+0000\n"
-"Last-Translator: Mihailov Vasilievic Filho <mihailov.vf@gmail.com>\n"
+"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "calculator/extra/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -45,7 +45,7 @@ msgstr "elementary LLC."
 
 #: data/io.elementary.calculator.desktop.in:6
 msgid "accessories-calculator"
-msgstr ""
+msgstr "accessories-calculator"
 
 #~ msgid "About Calculator"
 #~ msgstr "Sobre a calculadora"
