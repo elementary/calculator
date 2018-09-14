@@ -23,6 +23,6 @@ install:
 script:
   - houston ci
     --type system-app
-    --name-appstream io.elementary.calculator.desktop
+    --name-appstream io.elementary.calculator
     --name-domain io.elementary.calculator
     --name-human Calculator
