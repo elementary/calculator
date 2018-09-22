@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 14:31-0700\n"
-"PO-Revision-Date: 2017-08-22 19:14+0000\n"
-"Last-Translator: anjelo del carmen <anjelo2009@live.com>\n"
+"PO-Revision-Date: 2018-09-22 01:27+0000\n"
+"Last-Translator: Axel Philip Advento <badwolf.bloodseeker.rev@gmail.com>\n"
 "Language-Team: Tagalog <https://weblate.elementary.io/projects/calculator/"
 "calculator/tl/>\n"
 "Language: tl\n"
@@ -12,16 +12,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/PantheonCalculator.vala:31 src/MainWindow.vala:94
 msgid "Calculator"
-msgstr "Kalkulador"
+msgstr "Talatuusan"
 
 #: src/MainWindow.vala:102 src/MainWindow.vala:406
 msgid "Show extended functionality"
-msgstr ""
+msgstr "Ipakita ang mga pinalawak na kakayahan"
 
 #: src/MainWindow.vala:107 src/HistoryDialog.vala:37
 msgid "History"
@@ -61,7 +61,7 @@ msgstr "Hatiin"
 
 #: src/MainWindow.vala:171
 msgid "Percentage"
-msgstr "Porsyento"
+msgstr "Bahagdan"
 
 #: src/MainWindow.vala:244
 msgid "Start Group"
@@ -69,7 +69,7 @@ msgstr "Magsimula ng Grupo"
 
 #: src/MainWindow.vala:245
 msgid "End Group"
-msgstr ""
+msgstr "Tapusin ang Grupo"
 
 #: src/MainWindow.vala:246
 msgid "Exponent"
@@ -81,7 +81,7 @@ msgstr "Root"
 
 #: src/MainWindow.vala:249
 msgid "Sine"
-msgstr ""
+msgstr "Sine"
 
 #: src/MainWindow.vala:250
 msgid "Hyperbolic Sine"
@@ -97,7 +97,7 @@ msgstr "Cosine na Hyperbolic"
 
 #: src/MainWindow.vala:253
 msgid "Tangent"
-msgstr "Tengent"
+msgstr "Tangent"
 
 #: src/MainWindow.vala:254
 msgid "Hyperbolic Tangent"
@@ -113,11 +113,11 @@ msgstr "Numero ni Euler"
 
 #: src/MainWindow.vala:401
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "Itago ang mga pinalawak na kakayahan"
 
 #: src/HistoryDialog.vala:92
 msgid "Value to add:"
-msgstr "Halaga ng idadagdag:"
+msgstr "Halaga na idadagdag:"
 
 #: src/HistoryDialog.vala:96
 msgid "Result"
@@ -138,7 +138,7 @@ msgstr "'%s' ay hindi pwede."
 
 #: src/Core/Scanner.vala:127
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "Hindi tugmang parenthesis."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:191
