@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 14:31-0700\n"
-"PO-Revision-Date: 2018-09-23 00:06+0000\n"
+"PO-Revision-Date: 2018-09-24 00:04+0000\n"
 "Last-Translator: Axel Philip Advento <badwolf.bloodseeker.rev@gmail.com>\n"
 "Language-Team: Tagalog <https://weblate.elementary.io/projects/calculator/"
 "calculator/tl/>\n"
@@ -29,7 +29,7 @@ msgstr "Kasaysayan"
 
 #: src/MainWindow.vala:147
 msgid "Calculate Result"
-msgstr "Kalkulahin ang resulta"
+msgstr "Tuusin ang resulta"
 
 #: src/MainWindow.vala:150
 msgid "Add last result"
@@ -45,7 +45,7 @@ msgstr "Burahin ang laman"
 
 #: src/MainWindow.vala:156 src/HistoryDialog.vala:107
 msgid "Add"
-msgstr "I-dagdag"
+msgstr "Idagdag"
 
 #: src/MainWindow.vala:159
 msgid "Subtract"
