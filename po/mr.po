@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 14:31-0700\n"
-"PO-Revision-Date: 2018-09-29 17:20+0000\n"
+"PO-Revision-Date: 2018-09-30 00:09+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/calculator/"
 "calculator/mr/>\n"
@@ -29,7 +29,7 @@ msgstr "इतिहास"
 
 #: src/MainWindow.vala:147
 msgid "Calculate Result"
-msgstr ""
+msgstr "उत्तर काढा"
 
 #: src/MainWindow.vala:150
 msgid "Add last result"
@@ -49,67 +49,67 @@ msgstr "जोडा"
 
 #: src/MainWindow.vala:159
 msgid "Subtract"
-msgstr ""
+msgstr "वजा करा"
 
 #: src/MainWindow.vala:162
 msgid "Multiply"
-msgstr ""
+msgstr "गुणा"
 
 #: src/MainWindow.vala:165
 msgid "Divide"
-msgstr ""
+msgstr "भागाकार करा"
 
 #: src/MainWindow.vala:171
 msgid "Percentage"
-msgstr ""
+msgstr "टक्केवारी"
 
 #: src/MainWindow.vala:244
 msgid "Start Group"
-msgstr ""
+msgstr "समूह सुरु करा"
 
 #: src/MainWindow.vala:245
 msgid "End Group"
-msgstr ""
+msgstr "समूह बंद करा"
 
 #: src/MainWindow.vala:246
 msgid "Exponent"
-msgstr ""
+msgstr "घातांक"
 
 #: src/MainWindow.vala:248
 msgid "Root"
-msgstr ""
+msgstr "वर्गमूळ"
 
 #: src/MainWindow.vala:249
 msgid "Sine"
-msgstr ""
+msgstr "साइन"
 
 #: src/MainWindow.vala:250
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "हायपरबोलीक साइन"
 
 #: src/MainWindow.vala:251
 msgid "Cosine"
-msgstr ""
+msgstr "कोसाइन"
 
 #: src/MainWindow.vala:252
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "हायपरबोलीक कोसाइन"
 
 #: src/MainWindow.vala:253
 msgid "Tangent"
-msgstr ""
+msgstr "स्पर्शक(टँजेन्ट)"
 
 #: src/MainWindow.vala:254
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "हायपरबोलीक स्पर्शक(टँजेन्ट)"
 
 #: src/MainWindow.vala:255
 msgid "Pi"
-msgstr ""
+msgstr "pi"
 
 #: src/MainWindow.vala:256
 msgid "Euler's Number"
-msgstr ""
+msgstr "युलर संख्या"
 
 #: src/MainWindow.vala:401
 msgid "Hide extended functionality"
