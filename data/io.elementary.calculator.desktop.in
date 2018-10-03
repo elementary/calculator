@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Calculator
 Comment=Solve simple equations
-Keywords=calculation;arithmetic;scientific;financial;
+Keywords=Calculation;Arithmetic;Scientific;Financial;
 Exec=io.elementary.calculator %U
 Icon=accessories-calculator
 Terminal=false
