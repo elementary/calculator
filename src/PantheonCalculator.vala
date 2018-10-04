@@ -21,16 +21,12 @@
 namespace PantheonCalculator {
     PantheonCalculator.MainWindow window = null;
 
-    public class PantheonCalculatorApp : Granite.Application {
+    public class PantheonCalculatorApp : Gtk.Application {
         construct {
             application_id = "io.elementary.calculator";
             flags = ApplicationFlags.FLAGS_NONE;
 
             Intl.setlocale (LocaleCategory.ALL, "");
-
-            program_name = _("Calculator");
-
-            app_launcher = "io.elementary.calculator.desktop";
 
             var quit_action = new SimpleAction ("quit", null);
             var undo_action = new SimpleAction ("undo", null);
