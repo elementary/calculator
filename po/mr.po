@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 14:31-0700\n"
-"PO-Revision-Date: 2018-10-11 13:16+0000\n"
+"PO-Revision-Date: 2018-10-12 00:04+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/calculator/"
 "calculator/mr/>\n"
@@ -117,7 +117,7 @@ msgstr "विस्तारित कार्यक्षमतेला ल�
 
 #: src/HistoryDialog.vala:92
 msgid "Value to add:"
-msgstr "मूल्य जोडा"
+msgstr "मूल्य जोडा :"
 
 #: src/HistoryDialog.vala:96
 msgid "Result"
@@ -138,7 +138,7 @@ msgstr "'%s' अवैध आहे."
 
 #: src/Core/Scanner.vala:127
 msgid "Mismatched parenthesis."
-msgstr "विसंगत कंस"
+msgstr "विसंगत कंस."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:191
