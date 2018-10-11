@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-12 14:31-0700\n"
-"PO-Revision-Date: 2018-09-30 00:09+0000\n"
+"PO-Revision-Date: 2018-10-11 13:16+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/calculator/"
 "calculator/mr/>\n"
@@ -138,7 +138,7 @@ msgstr "'%s' अवैध आहे."
 
 #: src/Core/Scanner.vala:127
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "विसंगत कंस"
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:191
