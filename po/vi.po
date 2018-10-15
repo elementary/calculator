@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-12 14:31-0700\n"
+"POT-Creation-Date: 2018-10-15 13:15-0700\n"
 "PO-Revision-Date: 2017-12-30 00:07+0000\n"
 "Last-Translator: Hải Hồ <hochihai1997@gmail.com>\n"
 "Language-Team: Vietnamese <https://weblate.elementary.io/projects/calculator/"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/PantheonCalculator.vala:31 src/MainWindow.vala:94
+#: src/MainWindow.vala:94
 msgid "Calculator"
 msgstr "Máy tính"
 
@@ -131,17 +131,17 @@ msgstr "Biểu thức"
 msgid "Close"
 msgstr "Đóng"
 
-#: src/Core/Scanner.vala:82
+#: src/Core/Scanner.vala:69
 #, c-format
 msgid "'%s' is invalid."
 msgstr "'%s' không có hiệu lực."
 
-#: src/Core/Scanner.vala:127
+#: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
 msgstr ""
 
 #. If no rule matches the character at pos, throw an error.
-#: src/Core/Scanner.vala:191
+#: src/Core/Scanner.vala:167
 #, c-format
 msgid "'%s' is unknown."
 msgstr "'%s' không xác định."
