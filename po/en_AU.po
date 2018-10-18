@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-12 19:07+0200\n"
+"POT-Creation-Date: 2018-10-18 05:23-0500\n"
 "PO-Revision-Date: 2017-07-21 01:05+0000\n"
 "Last-Translator: Thomas Sviund <sviundt@gmail.com>\n"
 "Language-Team: English (Australia) <https://weblate.elementary.io/projects/"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/PantheonCalculator.vala:31 src/MainWindow.vala:94
+#: src/MainWindow.vala:94
 msgid "Calculator"
 msgstr ""
 
@@ -132,17 +132,17 @@ msgstr "Expression"
 msgid "Close"
 msgstr "Close"
 
-#: src/Core/Scanner.vala:82
+#: src/Core/Scanner.vala:69
 #, c-format
 msgid "'%s' is invalid."
 msgstr ""
 
-#: src/Core/Scanner.vala:127
+#: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
 msgstr ""
 
 #. If no rule matches the character at pos, throw an error.
-#: src/Core/Scanner.vala:191
+#: src/Core/Scanner.vala:167
 #, c-format
 msgid "'%s' is unknown."
 msgstr ""
