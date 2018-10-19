@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-18 05:23-0500\n"
-"PO-Revision-Date: 2016-07-22 14:02+0000\n"
-"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-10-19 16:47+0000\n"
+"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
+"Language-Team: Swedish <https://weblate.elementary.io/projects/calculator/"
+"calculator/sv/>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: src/MainWindow.vala:94
 msgid "Calculator"
@@ -136,7 +138,7 @@ msgstr "'%s' är ogiltigt."
 
 #: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "Parenteser stämmer ej."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:167
