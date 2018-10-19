@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-18 05:23-0500\n"
-"PO-Revision-Date: 2018-08-30 15:22+0000\n"
+"PO-Revision-Date: 2018-10-20 00:10+0000\n"
 "Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/calculator/"
 "extra/tr/>\n"
@@ -44,7 +44,7 @@ msgstr "elementary LLC."
 
 #: data/io.elementary.calculator.desktop.in:6
 msgid "accessories-calculator"
-msgstr "aksesuarlar-hesap makinesi"
+msgstr "accessories-calculator"
 
 #~ msgid "About Calculator"
 #~ msgstr "Hesap Makinesi Hakkında"
