@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-18 05:23-0500\n"
-"PO-Revision-Date: 2018-01-23 07:52+0000\n"
-"Last-Translator: Liffindra Angga Zaaldian <liffindra.zaaldian@icloud.com>\n"
+"PO-Revision-Date: 2018-10-21 10:55+0000\n"
+"Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/calculator/"
 "calculator/id/>\n"
 "Language: id\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:94
@@ -138,7 +138,7 @@ msgstr "'%s' tidak cocok."
 
 #: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "Tanda kurung tidak cocok."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:167
