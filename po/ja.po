@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-18 05:23-0500\n"
-"PO-Revision-Date: 2018-10-05 00:07+0000\n"
+"PO-Revision-Date: 2018-10-30 00:04+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/calculator/"
 "calculator/ja/>\n"
@@ -41,7 +41,7 @@ msgstr "左の一文字文字を削除"
 
 #: src/MainWindow.vala:153
 msgid "Clear entry"
-msgstr "エントリーをクリア"
+msgstr "エントリーを消去"
 
 #: src/MainWindow.vala:156 src/HistoryDialog.vala:107
 msgid "Add"
