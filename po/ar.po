@@ -114,7 +114,7 @@ msgstr "عدد أولر"
 
 #: src/MainWindow.vala:401
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "إخفاء الوظائف المتقدَمــة"
 
 #: src/HistoryDialog.vala:92
 msgid "Value to add:"
