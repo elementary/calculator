@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-18 05:23-0500\n"
 "PO-Revision-Date: 2018-12-02 00:44+0000\n"
-"Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
+"Last-Translator: hanix <lrdhanix@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/calculator/"
 "calculator/ar/>\n"
 "Language: ar\n"
@@ -62,7 +62,7 @@ msgstr "قسمة"
 
 #: src/MainWindow.vala:171
 msgid "Percentage"
-msgstr ""
+msgstr "النسبة المئوية"
 
 #: src/MainWindow.vala:244
 msgid "Start Group"
@@ -74,15 +74,15 @@ msgstr ""
 
 #: src/MainWindow.vala:246
 msgid "Exponent"
-msgstr ""
+msgstr "الأُس"
 
 #: src/MainWindow.vala:248
 msgid "Root"
-msgstr ""
+msgstr "الجذر"
 
 #: src/MainWindow.vala:249
 msgid "Sine"
-msgstr ""
+msgstr "جَيْب"
 
 #: src/MainWindow.vala:250
 msgid "Hyperbolic Sine"
@@ -90,15 +90,15 @@ msgstr ""
 
 #: src/MainWindow.vala:251
 msgid "Cosine"
-msgstr ""
+msgstr "جَيْب التَمامِ"
 
 #: src/MainWindow.vala:252
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "تجَيْب"
 
 #: src/MainWindow.vala:253
 msgid "Tangent"
-msgstr ""
+msgstr "المُماسّ"
 
 #: src/MainWindow.vala:254
 msgid "Hyperbolic Tangent"
@@ -106,11 +106,11 @@ msgstr ""
 
 #: src/MainWindow.vala:255
 msgid "Pi"
-msgstr ""
+msgstr "بــاي"
 
 #: src/MainWindow.vala:256
 msgid "Euler's Number"
-msgstr ""
+msgstr "عدد أولر"
 
 #: src/MainWindow.vala:401
 msgid "Hide extended functionality"
