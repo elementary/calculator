@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-18 05:23-0500\n"
-"PO-Revision-Date: 2018-12-02 00:42+0000\n"
+"PO-Revision-Date: 2018-12-02 00:44+0000\n"
 "Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/calculator/"
 "calculator/ar/>\n"
@@ -46,7 +46,7 @@ msgstr "مسح منطقة الإدخال"
 
 #: src/MainWindow.vala:156 src/HistoryDialog.vala:107
 msgid "Add"
-msgstr "أضف"
+msgstr "إضافة"
 
 #: src/MainWindow.vala:159
 msgid "Subtract"
@@ -58,7 +58,7 @@ msgstr "ضرب"
 
 #: src/MainWindow.vala:165
 msgid "Divide"
-msgstr "تقسيم"
+msgstr "قسمة"
 
 #: src/MainWindow.vala:171
 msgid "Percentage"
