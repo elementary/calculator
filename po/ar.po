@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-18 05:23-0500\n"
 "PO-Revision-Date: 2018-12-02 05:30+0000\n"
-"Last-Translator: Mohelm97 <mohelm97@gmail.com>\n"
+"Last-Translator: hanix <lrdhanix@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/calculator/"
 "calculator/ar/>\n"
 "Language: ar\n"
@@ -130,7 +130,7 @@ msgstr "العبارة"
 
 #: src/HistoryDialog.vala:106
 msgid "Close"
-msgstr ""
+msgstr "إغلاق"
 
 #: src/Core/Scanner.vala:69
 #, c-format
@@ -145,7 +145,7 @@ msgstr "الأقواس غير متطابقة."
 #: src/Core/Scanner.vala:167
 #, c-format
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' مجهول."
 
 #~ msgid "translator-credits"
 #~ msgstr ""
