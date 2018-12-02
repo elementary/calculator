@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-18 05:23-0500\n"
 "PO-Revision-Date: 2018-12-02 00:42+0000\n"
-"Last-Translator: chaib nassim <chaib.nassim@outlook.com>\n"
+"Last-Translator: hanix <lrdhanix@gmail.com>\n"
 "Language-Team: Arabic <https://weblate.elementary.io/projects/calculator/"
 "calculator/ar/>\n"
 "Language: ar\n"
@@ -42,7 +42,7 @@ msgstr "حذف"
 
 #: src/MainWindow.vala:153
 msgid "Clear entry"
-msgstr ""
+msgstr "مسح منطقة الإدخال"
 
 #: src/MainWindow.vala:156 src/HistoryDialog.vala:107
 msgid "Add"
@@ -54,11 +54,11 @@ msgstr ""
 
 #: src/MainWindow.vala:162
 msgid "Multiply"
-msgstr ""
+msgstr "ضرب"
 
 #: src/MainWindow.vala:165
 msgid "Divide"
-msgstr ""
+msgstr "تقسيم"
 
 #: src/MainWindow.vala:171
 msgid "Percentage"
