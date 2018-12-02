@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-18 05:23-0500\n"
-"PO-Revision-Date: 2018-11-22 00:01+0000\n"
+"PO-Revision-Date: 2018-12-02 06:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/calculator/"
 "calculator/ja/>\n"
@@ -117,7 +117,7 @@ msgstr "追加機能を表示しない"
 
 #: src/HistoryDialog.vala:92
 msgid "Value to add:"
-msgstr "追加する値："
+msgstr "追加する値:"
 
 #: src/HistoryDialog.vala:96
 msgid "Result"
