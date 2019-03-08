@@ -1,3 +1,9 @@
+pantheon-calculator (1.5.2) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <codygarver@gmail.com>  Fri, 08 Mar 2019 04:38:29 -0600
+
 pantheon-calculator (1.5.1) bionic; urgency=medium
 
   * New upstream release.
