@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-18 05:23-0500\n"
-"PO-Revision-Date: 2019-03-11 14:22+0000\n"
-"Last-Translator: chaib nassim <chaib.nassim@outlook.com>\n"
+"PO-Revision-Date: 2019-03-12 14:26+0000\n"
+"Last-Translator: hanix <lrdhanix@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/calculator/"
 "calculator/ar/>\n"
 "Language: ar\n"
@@ -118,11 +118,11 @@ msgstr "إخفاء الإعدادات المتقدمة"
 
 #: src/HistoryDialog.vala:92
 msgid "Value to add:"
-msgstr "القيمة للإضافة:"
+msgstr "قــيمــة الإضافـــة:"
 
 #: src/HistoryDialog.vala:96
 msgid "Result"
-msgstr "النتيجة"
+msgstr "النَتيـــجـة"
 
 #: src/HistoryDialog.vala:100
 msgid "Expression"
