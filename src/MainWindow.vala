@@ -443,6 +443,14 @@ namespace PantheonCalculator {
                 case Gdk.Key.Escape:
                     button_clr_clicked ();
                     break;
+                case Gdk.Key.KP_Decimal:
+                case Gdk.Key.KP_Separator:
+                case Gdk.Key.decimalpoint:
+                case Gdk.Key.period:
+                case Gdk.Key.comma:
+                    decimal () ;
+                    key.keyval = Gdk.Key.Right;
+                    break;
                 case Gdk.Key.KP_Divide:
                 case Gdk.Key.slash:
                     key.keyval = Gdk.Key.division;
@@ -468,6 +476,11 @@ namespace PantheonCalculator {
 
             settings.set_boolean ("extended-shown", button_extended.active);
             settings.set_string ("entry-content", entry.text);
+        }
+
+        public void decimal () {
+            var new_decimal = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR); 
+            entry.insert_at_cursor (new_decimal);
         }
     }
 }
