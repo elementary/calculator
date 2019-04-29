@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-18 05:23-0500\n"
-"PO-Revision-Date: 2018-08-12 11:02+0000\n"
+"PO-Revision-Date: 2019-01-16 00:03+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "calculator/calculator/zh_Hans/>\n"
@@ -134,17 +134,17 @@ msgstr "关闭"
 #: src/Core/Scanner.vala:69
 #, c-format
 msgid "'%s' is invalid."
-msgstr "'%s' 无效"
+msgstr "'%s' 无效。"
 
 #: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
-msgstr "括号匹配有误"
+msgstr "括号匹配有误。"
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:167
 #, c-format
 msgid "'%s' is unknown."
-msgstr "'%s' 未知"
+msgstr "'%s' 未知。"
 
 #~ msgid "translator-credits"
 #~ msgstr ""
