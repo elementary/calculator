@@ -448,7 +448,8 @@ namespace PantheonCalculator {
                 case Gdk.Key.decimalpoint:
                 case Gdk.Key.period:
                 case Gdk.Key.comma:
-                    decimal () ;
+                    unowned string new_decimal = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR);
+                    entry.insert_at_cursor (new_decimal);
                     key.keyval = Gdk.Key.Right;
                     break;
                 case Gdk.Key.KP_Divide:
@@ -465,6 +466,7 @@ namespace PantheonCalculator {
                     retval = true;
                     break;
             }
+
             return retval;
         }
 
@@ -478,9 +480,5 @@ namespace PantheonCalculator {
             settings.set_string ("entry-content", entry.text);
         }
 
-        public void decimal () {
-            var new_decimal = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR); 
-            entry.insert_at_cursor (new_decimal);
-        }
     }
 }
