@@ -1,138 +1,137 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:42+0200\n"
-"PO-Revision-Date: 2016-12-19 08:30+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-06-26 18:53+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: szl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
 
 #: src/MainWindow.vala:94
 msgid "Calculator"
-msgstr "ھېسابلىغۇچ"
+msgstr ""
 
 #: src/MainWindow.vala:102 src/MainWindow.vala:406
 msgid "Show extended functionality"
-msgstr "ئالىي ئىقتىدارلىرىنى كۆرسىتىش"
+msgstr ""
 
 #: src/MainWindow.vala:107 src/HistoryDialog.vala:37
 msgid "History"
-msgstr "تارىخ"
+msgstr ""
 
 #: src/MainWindow.vala:147
 msgid "Calculate Result"
-msgstr "ھېسابلاش نەتىجىسى"
+msgstr ""
 
 #: src/MainWindow.vala:150
 msgid "Add last result"
-msgstr "ئالدىنقى قىتىملىق نەتىجىنى قىتىش"
+msgstr ""
 
 #: src/MainWindow.vala:152
 msgid "Backspace"
-msgstr "ئارقىغا قايتىش"
+msgstr ""
 
 #: src/MainWindow.vala:153
 msgid "Clear entry"
-msgstr "ئۆچۈرۈش"
+msgstr ""
 
 #: src/MainWindow.vala:156 src/HistoryDialog.vala:107
 msgid "Add"
-msgstr "قىتىش"
+msgstr ""
 
 #: src/MainWindow.vala:159
 msgid "Subtract"
-msgstr "ئېلىش"
+msgstr ""
 
 #: src/MainWindow.vala:162
 msgid "Multiply"
-msgstr "كۆپەيتىش"
+msgstr ""
 
 #: src/MainWindow.vala:165
 msgid "Divide"
-msgstr "بۆلۈش"
+msgstr ""
 
 #: src/MainWindow.vala:171
 msgid "Percentage"
-msgstr "پىرسەنت"
+msgstr ""
 
 #: src/MainWindow.vala:244
 msgid "Start Group"
-msgstr "سول تىرناق"
+msgstr ""
 
 #: src/MainWindow.vala:245
 msgid "End Group"
-msgstr "ئوڭ تىرناق"
+msgstr ""
 
 #: src/MainWindow.vala:246
 msgid "Exponent"
-msgstr "كۆرسەتكۈچ"
+msgstr ""
 
 #: src/MainWindow.vala:248
 msgid "Root"
-msgstr "غول مۇندەرىجە"
+msgstr ""
 
 #: src/MainWindow.vala:249
 msgid "Sine"
-msgstr "سىنۇس"
+msgstr ""
 
 #: src/MainWindow.vala:250
 msgid "Hyperbolic Sine"
-msgstr "گىپېربولالىق سىنۇس"
+msgstr ""
 
 #: src/MainWindow.vala:251
 msgid "Cosine"
-msgstr "كوسىنوس"
+msgstr ""
 
 #: src/MainWindow.vala:252
 msgid "Hyperbolic Cosine"
-msgstr "گىپېربولالىق كوسىنوس"
+msgstr ""
 
 #: src/MainWindow.vala:253
 msgid "Tangent"
-msgstr "تانگېنس"
+msgstr ""
 
 #: src/MainWindow.vala:254
 msgid "Hyperbolic Tangent"
-msgstr "گىپېربولالىق تانگېنس"
+msgstr ""
 
 #: src/MainWindow.vala:255
 msgid "Pi"
-msgstr "π"
+msgstr ""
 
 #: src/MainWindow.vala:256
 msgid "Euler's Number"
-msgstr "ئولار سانى"
+msgstr ""
 
 #: src/MainWindow.vala:401
 msgid "Hide extended functionality"
-msgstr "ئالىي ئىقتىدارلىرىنى يوشۇرۇش"
+msgstr ""
 
 #: src/HistoryDialog.vala:92
 msgid "Value to add:"
-msgstr "قاتىدىغان قىممەت"
+msgstr ""
 
 #: src/HistoryDialog.vala:96
 msgid "Result"
-msgstr "نەتىجە"
+msgstr ""
 
 #: src/HistoryDialog.vala:100
 msgid "Expression"
-msgstr "ئىپادە"
+msgstr ""
 
 #: src/HistoryDialog.vala:106
 msgid "Close"
-msgstr "تاقاش"
+msgstr ""
 
 #: src/Core/Scanner.vala:69
 #, c-format
 msgid "'%s' is invalid."
-msgstr "'%s'  ئىناۋەتسىز."
+msgstr ""
 
 #: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
@@ -142,10 +141,4 @@ msgstr ""
 #: src/Core/Scanner.vala:167
 #, c-format
 msgid "'%s' is unknown."
-msgstr "'%s'  نامەلۇم."
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Launchpad Contributions:\n"
-#~ "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
-#~ "  ablimet https://launchpad.net/~ablimet"
+msgstr ""
