@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
+"POT-Creation-Date: 2019-08-12 13:08+0200\n"
 "PO-Revision-Date: 2019-01-07 00:02+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Sanskrit <https://weblate.elementary.io/projects/calculator/"
@@ -39,6 +39,11 @@ msgstr ""
 msgid "elementary LLC."
 msgstr ""
 
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
+msgid "Calculation;Mathematics;Arithmetic;Scientific;"
+msgstr ""
+
+#: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
 msgstr ""
