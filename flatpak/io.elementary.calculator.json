@@ -1,0 +1,39 @@
+{
+    "app-id": "io.elementary.calculator",
+    "base": "io.elementary.BaseApp",
+    "base-version": "juno",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.30",
+    "sdk": "org.gnome.Sdk",
+    "command": "io.elementary.calculator",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--talk-name=org.gnome.SessionManager",
+        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
+        "--talk-name=ca.desrt.dconf",
+        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+    ],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/man",
+        "/share/doc",
+        "/share/gtk-doc",
+        "/share/man",
+        "/share/pkgconfig",
+        "/share/vala",
+        "*.la",
+        "*.a"
+    ],
+    "modules": [{
+        "name": "calculator",
+        "buildsystem": "meson",
+        "sources": [{
+            "type": "git",
+            "url": "https://github.com/elementary/calculator.git",
+            "commit": "73aa8307940c5c34278cde387e4bdff052156000"
+        }]
+    }]
+}
