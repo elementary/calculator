@@ -47,12 +47,12 @@ namespace PantheonCalculator {
         public const string ACTION_PREFIX = "win.";
         public const string ACTION_CLEAR = "action-clear";
 
-        private const ActionEntry[] action_entries = {
+        private const ActionEntry[] ACTION_ENTRIES = {
             { ACTION_CLEAR, action_clear }
         };
 
         construct {
-            add_action_entries (action_entries, this);
+            add_action_entries (ACTION_ENTRIES, this);
 
             var application_instance = (Gtk.Application) GLib.Application.get_default ();
             application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_CLEAR, {"Escape"});
