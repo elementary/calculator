@@ -34,7 +34,6 @@ namespace PantheonCalculator {
         private Gtk.Button button_history;
         private Gtk.Button button_ans;
         private Gtk.Button button_del;
-        private Gtk.Button button_clr;
         private Gtk.ToggleButton button_extended;
         private HistoryDialog history_dialog;
 
@@ -169,7 +168,12 @@ namespace PantheonCalculator {
             button_ans = new Button ("ANS", _("Add last result"));
             button_ans.sensitive = false;
             button_del = new Button ("Del", _("Backspace"));
-            button_clr = new Button ("C", _("Clear entry"));
+            var button_clr = new Button ("C");
+            button_clr.action_name = ACTION_PREFIX + ACTION_CLEAR;
+            button_clr.tooltip_markup = Granite.markup_accel_tooltip (
+                ((Gtk.Application) GLib.Application.get_default ()).get_accels_for_action (button_clr.action_name),
+                _("Clear entry")
+            );
             button_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
             var button_add = new Button (" + ", _("Add"));
@@ -239,7 +243,6 @@ namespace PantheonCalculator {
 
             button_calc.clicked.connect (() => {button_calc_clicked ();});
             button_del.clicked.connect (() => {button_del_clicked ();});
-            button_clr.clicked.connect (() => {action_clear ();});
             button_ans.clicked.connect (() => {button_ans_clicked ();});
             button_add.clicked.connect (() => {regular_button_clicked (button_add.function);});
             button_sub.clicked.connect (() => {regular_button_clicked (button_sub.function);});
