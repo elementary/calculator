@@ -1,6 +1,6 @@
 /*-
- * Copyright (c) 2018 elementary LLC. (https://elementary.io)
- *               2014 Marvin Beckers <beckersmarvin@gmail.com>
+ * Copyright 2018-2019 elementary, Inc. (https://elementary.io)
+ *           2014 Marvin Beckers <beckersmarvin@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,12 +22,8 @@ namespace PantheonCalculator {
     public class MainWindow : Gtk.Window {
         private Settings settings;
 
-        private Gtk.HeaderBar headerbar;
-        private Gtk.Grid main_grid;
         private Gtk.Revealer extended_revealer;
         private Gtk.Entry entry;
-
-        /* Widgets I need to access */
         private Gtk.Image extended_img_1;
         private Gtk.Image extended_img_2;
         private Gtk.Button button_calc;
@@ -40,8 +36,6 @@ namespace PantheonCalculator {
 
         private Gtk.InfoBar infobar;
         private Gtk.Label infobar_label;
-
-        private Gtk.Grid global_grid;
 
         private List<History?> history;
         private int position;
@@ -68,32 +62,6 @@ namespace PantheonCalculator {
                 move (x, y);
             }
 
-            build_titlebar ();
-            build_ui ();
-
-            this.key_press_event.connect (key_pressed);
-
-            delete_event.connect ((event) => {
-                save_state ();
-                return false;
-            });
-        }
-
-        public void undo () {
-            unowned List<History?> previous_entry = history.last ();
-            if (previous_entry != null) {
-                entry.set_text (previous_entry.data.exp);
-                history.remove_link (previous_entry);
-            }
-        }
-
-        private void build_titlebar () {
-            headerbar = new Gtk.HeaderBar ();
-            headerbar.has_subtitle = false;
-            headerbar.show_close_button = true;
-            headerbar.set_title (_("Calculator"));
-            set_titlebar (headerbar);
-
             extended_img_1 = new Gtk.Image.from_icon_name ("pane-hide-symbolic", Gtk.IconSize.MENU);
             extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic", Gtk.IconSize.MENU);
 
@@ -108,35 +76,15 @@ namespace PantheonCalculator {
             button_history.sensitive = false;
             button_history.clicked.connect (show_history);
 
+            var headerbar = new Gtk.HeaderBar ();
+            headerbar.has_subtitle = false;
+            headerbar.show_close_button = true;
+            headerbar.set_title (_("Calculator"));
             headerbar.pack_end (button_extended);
             headerbar.pack_end (button_history);
-        }
 
-        private void build_ui () {
-            main_grid = new Gtk.Grid ();
-            main_grid.margin = 6;
+            set_titlebar (headerbar);
 
-            build_basic_ui ();
-            build_extended_ui ();
-            button_extended.active = settings.get_boolean ("extended-shown");
-
-            infobar = new Gtk.InfoBar ();
-            infobar_label = new Gtk.Label ("");
-            infobar.get_content_area ().add (infobar_label);
-            infobar.show_close_button = false;
-            infobar.message_type = Gtk.MessageType.WARNING;
-            infobar.no_show_all = true;
-
-            global_grid = new Gtk.Grid ();
-            global_grid.orientation = Gtk.Orientation.VERTICAL;
-            global_grid.add (infobar);
-            global_grid.add (main_grid);
-
-            add (global_grid);
-            show_all ();
-        }
-
-        private void build_basic_ui () {
             entry = new Gtk.Entry ();
             entry.set_alignment (1);
             entry.set_text (settings.get_string ("entry-content"));
@@ -147,21 +95,27 @@ namespace PantheonCalculator {
             button_calc = new Button ("=", _("Calculate Result"));
             button_calc.get_style_context ().add_class ("h2");
             button_calc.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+
             button_ans = new Button ("ANS", _("Add last result"));
             button_ans.sensitive = false;
+
             button_del = new Button ("Del", _("Backspace"));
+
             button_clr = new Button ("C", _("Clear entry"));
             button_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
             var button_add = new Button (" + ", _("Add"));
             button_add.function = "+";
             button_add.get_style_context ().add_class ("h3");
+
             var button_sub = new Button (" − ", _("Subtract"));
             button_sub.function = "−";
             button_sub.get_style_context ().add_class ("h3");
+
             var button_mult = new Button (" × ", _("Multiply"));
             button_mult.function = "×";
             button_mult.get_style_context ().add_class ("h3");
+
             var button_div = new Button (" ÷ ", _("Divide"));
             button_div.function = "÷";
             button_div.get_style_context ().add_class ("h3");
@@ -213,34 +167,6 @@ namespace PantheonCalculator {
             basic_grid.attach (button_ans, 2, 5, 1, 1);
             basic_grid.attach (button_calc, 3, 5, 1, 1);
 
-            main_grid.add (basic_grid);
-
-            entry.changed.connect (remove_error);
-            entry.activate.connect (button_calc_clicked);
-
-            button_calc.clicked.connect (() => {button_calc_clicked ();});
-            button_del.clicked.connect (() => {button_del_clicked ();});
-            button_clr.clicked.connect (() => {button_clr_clicked ();});
-            button_ans.clicked.connect (() => {button_ans_clicked ();});
-            button_add.clicked.connect (() => {regular_button_clicked (button_add.function);});
-            button_sub.clicked.connect (() => {regular_button_clicked (button_sub.function);});
-            button_mult.clicked.connect (() => {regular_button_clicked (button_mult.function);});
-            button_div.clicked.connect (() => {regular_button_clicked (button_div.function);});
-            button_0.clicked.connect (() => {regular_button_clicked (button_0.function);});
-            button_1.clicked.connect (() => {regular_button_clicked (button_1.function);});
-            button_2.clicked.connect (() => {regular_button_clicked (button_2.function);});
-            button_3.clicked.connect (() => {regular_button_clicked (button_3.function);});
-            button_4.clicked.connect (() => {regular_button_clicked (button_4.function);});
-            button_5.clicked.connect (() => {regular_button_clicked (button_5.function);});
-            button_6.clicked.connect (() => {regular_button_clicked (button_6.function);});
-            button_7.clicked.connect (() => {regular_button_clicked (button_7.function);});
-            button_8.clicked.connect (() => {regular_button_clicked (button_8.function);});
-            button_9.clicked.connect (() => {regular_button_clicked (button_9.function);});
-            button_point.clicked.connect (() => {regular_button_clicked (button_point.function);});
-            button_percent.clicked.connect (() => {regular_button_clicked (button_percent.function);});
-        }
-
-        private void build_extended_ui () {
             var button_par_left = new Button ("(", _("Start Group"));
             var button_par_right = new Button (")", _("End Group"));
             var button_pow = new Button ("x<sup>y</sup>", _("Exponent"));
@@ -277,7 +203,55 @@ namespace PantheonCalculator {
             extended_revealer.set_transition_type (Gtk.RevealerTransitionType.SLIDE_LEFT);
             extended_revealer.show_all ();
             extended_revealer.add (extended_grid);
+
+            var main_grid = new Gtk.Grid ();
+            main_grid.margin = 6;
+            main_grid.add (basic_grid);
             main_grid.add (extended_revealer);
+
+            infobar = new Gtk.InfoBar ();
+            infobar_label = new Gtk.Label ("");
+            infobar.get_content_area ().add (infobar_label);
+            infobar.show_close_button = false;
+            infobar.message_type = Gtk.MessageType.WARNING;
+            infobar.no_show_all = true;
+
+            var global_grid = new Gtk.Grid ();
+            global_grid.orientation = Gtk.Orientation.VERTICAL;
+            global_grid.add (infobar);
+            global_grid.add (main_grid);
+
+            add (global_grid);
+
+            button_extended.active = settings.get_boolean ("extended-shown");
+
+            show_all ();
+
+            this.key_press_event.connect (key_pressed);
+
+            entry.changed.connect (remove_error);
+            entry.activate.connect (button_calc_clicked);
+
+            button_calc.clicked.connect (() => {button_calc_clicked ();});
+            button_del.clicked.connect (() => {button_del_clicked ();});
+            button_clr.clicked.connect (() => {button_clr_clicked ();});
+            button_ans.clicked.connect (() => {button_ans_clicked ();});
+            button_add.clicked.connect (() => {regular_button_clicked (button_add.function);});
+            button_sub.clicked.connect (() => {regular_button_clicked (button_sub.function);});
+            button_mult.clicked.connect (() => {regular_button_clicked (button_mult.function);});
+            button_div.clicked.connect (() => {regular_button_clicked (button_div.function);});
+            button_0.clicked.connect (() => {regular_button_clicked (button_0.function);});
+            button_1.clicked.connect (() => {regular_button_clicked (button_1.function);});
+            button_2.clicked.connect (() => {regular_button_clicked (button_2.function);});
+            button_3.clicked.connect (() => {regular_button_clicked (button_3.function);});
+            button_4.clicked.connect (() => {regular_button_clicked (button_4.function);});
+            button_5.clicked.connect (() => {regular_button_clicked (button_5.function);});
+            button_6.clicked.connect (() => {regular_button_clicked (button_6.function);});
+            button_7.clicked.connect (() => {regular_button_clicked (button_7.function);});
+            button_8.clicked.connect (() => {regular_button_clicked (button_8.function);});
+            button_9.clicked.connect (() => {regular_button_clicked (button_9.function);});
+            button_point.clicked.connect (() => {regular_button_clicked (button_point.function);});
+            button_percent.clicked.connect (() => {regular_button_clicked (button_percent.function);});
 
             button_pi.clicked.connect (() => {regular_button_clicked (button_pi.function);});
             button_e.clicked.connect (() => {regular_button_clicked (button_e.function);});
@@ -291,6 +265,19 @@ namespace PantheonCalculator {
             button_cosh.clicked.connect (() => {function_button_clicked (button_cosh.function);});
             button_tan.clicked.connect (() => {function_button_clicked (button_tan.function);});
             button_tanh.clicked.connect (() => {function_button_clicked (button_tanh.function);});
+
+            delete_event.connect ((event) => {
+                save_state ();
+                return false;
+            });
+        }
+
+        public void undo () {
+            unowned List<History?> previous_entry = history.last ();
+            if (previous_entry != null) {
+                entry.set_text (previous_entry.data.exp);
+                history.remove_link (previous_entry);
+            }
         }
 
         private void regular_button_clicked (string label) {
@@ -443,6 +430,15 @@ namespace PantheonCalculator {
                 case Gdk.Key.Escape:
                     button_clr_clicked ();
                     break;
+                case Gdk.Key.KP_Decimal:
+                case Gdk.Key.KP_Separator:
+                case Gdk.Key.decimalpoint:
+                case Gdk.Key.period:
+                case Gdk.Key.comma:
+                    unowned string new_decimal = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR);
+                    entry.insert_at_cursor (new_decimal);
+                    key.keyval = Gdk.Key.Right;
+                    break;
                 case Gdk.Key.KP_Divide:
                 case Gdk.Key.slash:
                     key.keyval = Gdk.Key.division;
@@ -457,6 +453,7 @@ namespace PantheonCalculator {
                     retval = true;
                     break;
             }
+
             return retval;
         }
 
