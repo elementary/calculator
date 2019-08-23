@@ -1,6 +1,6 @@
 /*-
- * Copyright (c) 2018 elementary LLC. (https://elementary.io)
- *               2014 Marvin Beckers <beckersmarvin@gmail.com>
+ * Copyright 2018-2019 elementary, Inc. (https://elementary.io)
+ *           2014 Marvin Beckers <beckersmarvin@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -68,26 +68,6 @@ namespace PantheonCalculator {
                 move (x, y);
             }
 
-            build_titlebar ();
-            build_ui ();
-
-            this.key_press_event.connect (key_pressed);
-
-            delete_event.connect ((event) => {
-                save_state ();
-                return false;
-            });
-        }
-
-        public void undo () {
-            unowned List<History?> previous_entry = history.last ();
-            if (previous_entry != null) {
-                entry.set_text (previous_entry.data.exp);
-                history.remove_link (previous_entry);
-            }
-        }
-
-        private void build_titlebar () {
             headerbar = new Gtk.HeaderBar ();
             headerbar.has_subtitle = false;
             headerbar.show_close_button = true;
@@ -110,33 +90,10 @@ namespace PantheonCalculator {
 
             headerbar.pack_end (button_extended);
             headerbar.pack_end (button_history);
-        }
 
-        private void build_ui () {
             main_grid = new Gtk.Grid ();
             main_grid.margin = 6;
 
-            build_basic_ui ();
-            build_extended_ui ();
-            button_extended.active = settings.get_boolean ("extended-shown");
-
-            infobar = new Gtk.InfoBar ();
-            infobar_label = new Gtk.Label ("");
-            infobar.get_content_area ().add (infobar_label);
-            infobar.show_close_button = false;
-            infobar.message_type = Gtk.MessageType.WARNING;
-            infobar.no_show_all = true;
-
-            global_grid = new Gtk.Grid ();
-            global_grid.orientation = Gtk.Orientation.VERTICAL;
-            global_grid.add (infobar);
-            global_grid.add (main_grid);
-
-            add (global_grid);
-            show_all ();
-        }
-
-        private void build_basic_ui () {
             entry = new Gtk.Entry ();
             entry.set_alignment (1);
             entry.set_text (settings.get_string ("entry-content"));
@@ -238,9 +195,7 @@ namespace PantheonCalculator {
             button_9.clicked.connect (() => {regular_button_clicked (button_9.function);});
             button_point.clicked.connect (() => {regular_button_clicked (button_point.function);});
             button_percent.clicked.connect (() => {regular_button_clicked (button_percent.function);});
-        }
 
-        private void build_extended_ui () {
             var button_par_left = new Button ("(", _("Start Group"));
             var button_par_right = new Button (")", _("End Group"));
             var button_pow = new Button ("x<sup>y</sup>", _("Exponent"));
@@ -291,6 +246,39 @@ namespace PantheonCalculator {
             button_cosh.clicked.connect (() => {function_button_clicked (button_cosh.function);});
             button_tan.clicked.connect (() => {function_button_clicked (button_tan.function);});
             button_tanh.clicked.connect (() => {function_button_clicked (button_tanh.function);});
+
+            button_extended.active = settings.get_boolean ("extended-shown");
+
+            infobar = new Gtk.InfoBar ();
+            infobar_label = new Gtk.Label ("");
+            infobar.get_content_area ().add (infobar_label);
+            infobar.show_close_button = false;
+            infobar.message_type = Gtk.MessageType.WARNING;
+            infobar.no_show_all = true;
+
+            global_grid = new Gtk.Grid ();
+            global_grid.orientation = Gtk.Orientation.VERTICAL;
+            global_grid.add (infobar);
+            global_grid.add (main_grid);
+
+            add (global_grid);
+
+            show_all ();
+
+            this.key_press_event.connect (key_pressed);
+
+            delete_event.connect ((event) => {
+                save_state ();
+                return false;
+            });
+        }
+
+        public void undo () {
+            unowned List<History?> previous_entry = history.last ();
+            if (previous_entry != null) {
+                entry.set_text (previous_entry.data.exp);
+                history.remove_link (previous_entry);
+            }
         }
 
         private void regular_button_clicked (string label) {
@@ -479,6 +467,5 @@ namespace PantheonCalculator {
             settings.set_boolean ("extended-shown", button_extended.active);
             settings.set_string ("entry-content", entry.text);
         }
-
     }
 }
