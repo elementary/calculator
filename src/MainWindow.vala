@@ -19,7 +19,7 @@
  */
 
 namespace PantheonCalculator {
-    public class MainWindow : Gtk.Window {
+    public class MainWindow : Gtk.ApplicationWindow {
         private Settings settings;
 
         private Gtk.HeaderBar headerbar;
@@ -51,7 +51,26 @@ namespace PantheonCalculator {
 
         public struct History { string exp; string output; }
 
-        public MainWindow () {
+        public const string ACTION_PREFIX = "win.";
+        public const string ACTION_CLEAR = "action-clear";
+
+        private static Gee.MultiMap<string, string> action_accelerators = new Gee.HashMultiMap<string, string> ();
+
+        private const ActionEntry[] action_entries = {
+            { ACTION_CLEAR, action_clear }
+        };
+
+        static construct {
+            action_accelerators[ACTION_CLEAR] = "Escape";
+        }
+
+        construct {
+            add_action_entries (action_entries, this);
+
+            foreach (var action in action_accelerators.get_keys ()) {
+                ((Gtk.Application) GLib.Application.get_default ()).set_accels_for_action (ACTION_PREFIX + action, action_accelerators[action].to_array ());
+            }
+
             get_style_context ().add_class ("rounded");
             set_resizable (false);
             window_position = Gtk.WindowPosition.CENTER;
@@ -220,7 +239,7 @@ namespace PantheonCalculator {
 
             button_calc.clicked.connect (() => {button_calc_clicked ();});
             button_del.clicked.connect (() => {button_del_clicked ();});
-            button_clr.clicked.connect (() => {button_clr_clicked ();});
+            button_clr.clicked.connect (() => {action_clear ();});
             button_ans.clicked.connect (() => {button_ans_clicked ();});
             button_add.clicked.connect (() => {regular_button_clicked (button_add.function);});
             button_sub.clicked.connect (() => {regular_button_clicked (button_sub.function);});
@@ -375,7 +394,7 @@ namespace PantheonCalculator {
             entry.set_position (position - 1);
         }
 
-        private void button_clr_clicked () {
+        private void action_clear () {
             position = 0;
             entry.set_text ("");
             set_focus (entry);
@@ -440,9 +459,6 @@ namespace PantheonCalculator {
         private bool key_pressed (Gdk.EventKey key) {
             bool retval = false;
             switch (key.keyval) {
-                case Gdk.Key.Escape:
-                    button_clr_clicked ();
-                    break;
                 case Gdk.Key.KP_Decimal:
                 case Gdk.Key.KP_Separator:
                 case Gdk.Key.decimalpoint:
