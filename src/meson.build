@@ -10,7 +10,7 @@ executable(
     dependencies: [
         core_deps,
         dependency('gtk+-3.0'),
-        dependency('granite')
+        dependency('granite', version: '>=0.5')
     ],
     install : true
 )
