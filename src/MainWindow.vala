@@ -88,12 +88,12 @@ namespace PantheonCalculator {
             entry = new Gtk.Entry ();
             entry.set_alignment (1);
             entry.set_text (settings.get_string ("entry-content"));
-            entry.get_style_context ().add_class ("h2");
+            entry.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
             entry.vexpand = true;
             entry.valign = Gtk.Align.CENTER;
 
             button_calc = new Button ("=", _("Calculate Result"));
-            button_calc.get_style_context ().add_class ("h2");
+            button_calc.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
             button_calc.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
             button_ans = new Button ("ANS", _("Add last result"));
@@ -106,19 +106,19 @@ namespace PantheonCalculator {
 
             var button_add = new Button (" + ", _("Add"));
             button_add.function = "+";
-            button_add.get_style_context ().add_class ("h3");
+            button_add.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_sub = new Button (" − ", _("Subtract"));
             button_sub.function = "−";
-            button_sub.get_style_context ().add_class ("h3");
+            button_sub.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_mult = new Button (" × ", _("Multiply"));
             button_mult.function = "×";
-            button_mult.get_style_context ().add_class ("h3");
+            button_mult.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_div = new Button (" ÷ ", _("Divide"));
             button_div.function = "÷";
-            button_div.get_style_context ().add_class ("h3");
+            button_div.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_0 = new Button ("0");
             var button_point = new Button (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR));
