@@ -298,6 +298,7 @@ namespace PantheonCalculator {
             int selection_start, selection_end, selection_length;
             bool is_text_selected = entry.get_selection_bounds (out selection_start, out selection_end);
             if (is_text_selected) {
+                new_position = selection_end;
                 entry.delete_selection ();
                 selection_length = selection_end-selection_start;
                 new_position -= selection_length;
