@@ -209,12 +209,13 @@ namespace PantheonCalculator {
             main_grid.add (basic_grid);
             main_grid.add (extended_revealer);
 
-            infobar = new Gtk.InfoBar ();
             infobar_label = new Gtk.Label ("");
-            infobar.get_content_area ().add (infobar_label);
-            infobar.show_close_button = false;
+
+            infobar = new Gtk.InfoBar ();
             infobar.message_type = Gtk.MessageType.WARNING;
-            infobar.no_show_all = true;
+            infobar.revealed = false;
+            infobar.show_close_button = false;
+            infobar.get_content_area ().add (infobar_label);
 
             var global_grid = new Gtk.Grid ();
             global_grid.orientation = Gtk.Orientation.VERTICAL;
@@ -333,9 +334,7 @@ namespace PantheonCalculator {
                     }
                 } catch (Core.OUT_ERROR e) {
                     infobar_label.label = e.message;
-                    infobar.no_show_all = false;
-                    infobar.show_all ();
-                    infobar.no_show_all = true;
+                    infobar.revealed = true;
                 }
             } else {
                 remove_error ();
@@ -429,7 +428,7 @@ namespace PantheonCalculator {
         }
 
         private void remove_error () {
-            infobar.hide ();
+            infobar.revealed = false;
         }
 
         private bool key_pressed (Gdk.EventKey key) {
