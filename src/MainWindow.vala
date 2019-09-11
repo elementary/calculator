@@ -283,6 +283,14 @@ namespace PantheonCalculator {
 
         private void regular_button_clicked (string label) {
             int new_position = entry.get_position ();
+            int selection_start, selection_end, selection_length;
+            bool is_text_selected = entry.get_selection_bounds (out selection_start, out selection_end);
+            if (is_text_selected) {
+                new_position = selection_end;
+                entry.delete_selection ();
+                selection_length = selection_end-selection_start;
+                new_position -= selection_length;
+            }
             entry.insert_at_cursor (label);
             new_position += label.length;
             entry.grab_focus ();
