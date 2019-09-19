@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2018 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2018-2019 elementary, Inc. (https://elementary.io)
  *               2014 Marvin Beckers <beckersmarvin@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -50,7 +50,7 @@ namespace PantheonCalculator.Core {
         private delegate double Eval (double a = 0, double b = 0);
 
         private struct Operator { string symbol; int inputs; int prec; string fixity; Eval eval;}
-        static Operator[] OPERATORS = {
+        static Operator[] OPERATORS = { // vala-lint=naming-convention
             Operator () { symbol = "+", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => a + b },
             Operator () { symbol = "-", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => a - b },
             Operator () { symbol = "−", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => a - b },
@@ -58,14 +58,14 @@ namespace PantheonCalculator.Core {
             Operator () { symbol = "×", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a * b },
             Operator () { symbol = "/", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a / b },
             Operator () { symbol = "÷", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a / b },
-            Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) =>  a % b },
+            Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a % b },
             Operator () { symbol = "^", inputs = 2, prec = 3, fixity = "RIGHT", eval = (a, b) => Math.pow (a, b) },
-            Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => a*Math.pow (10, b) },
+            Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => a * Math.pow (10, b) },
             Operator () { symbol = "%", inputs = 1, prec = 5, fixity = "LEFT", eval = (a, b) => b / 100.0 }
         };
 
         private struct Function { string symbol; int inputs; Eval eval;}
-        static Function[] FUNCTIONS = {
+        static Function[] FUNCTIONS = { // vala-lint=naming-convention
             Function () { symbol = "sin", inputs = 1, eval = (a) => Math.sin (a) },
             Function () { symbol = "cos", inputs = 1, eval = (a) => Math.cos (a) },
             Function () { symbol = "tan", inputs = 1, eval = (a) => Math.tan (a) },
@@ -79,7 +79,7 @@ namespace PantheonCalculator.Core {
         };
 
         private struct Constant { string symbol; Eval eval; }
-        static Constant[] CONSTANTS = {
+        static Constant[] CONSTANTS = { // vala-lint=naming-convention
             Constant () { symbol = "pi", eval = () => Math.PI },
             Constant () { symbol = "π", eval = () => Math.PI },
             Constant () { symbol = "e", eval = () => Math.E }
@@ -186,7 +186,9 @@ namespace PantheonCalculator.Core {
             }
 
             while (!op_stack.is_empty ()) {
-                if (op_stack.peek_tail ().token_type == TokenType.P_LEFT || op_stack.peek_tail ().token_type == TokenType.P_RIGHT) {
+                if (op_stack.peek_tail ().token_type == TokenType.P_LEFT ||
+                    op_stack.peek_tail ().token_type == TokenType.P_RIGHT
+                ) {
                     throw new SHUNTING_ERROR.MISMATCHED_P ("Mismatched parenthesis.");
                 } else {
                     output.append (op_stack.pop_tail ());
