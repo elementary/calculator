@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2018-2019 elementary, Inc. (https://elementary.io)
+ * Copyright (c) 2018 elementary LLC. (https://elementary.io)
  *               2014 Marvin Beckers <beckersmarvin@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -50,7 +50,7 @@ namespace PantheonCalculator.Core {
         private delegate double Eval (double a = 0, double b = 0);
 
         private struct Operator { string symbol; int inputs; int prec; string fixity; Eval eval;}
-        static Operator[] OPERATORS = { // vala-lint=naming-convention
+        static Operator[] OPERATORS = {
             Operator () { symbol = "+", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => a + b },
             Operator () { symbol = "-", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => a - b },
             Operator () { symbol = "−", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => a - b },
@@ -65,7 +65,7 @@ namespace PantheonCalculator.Core {
         };
 
         private struct Function { string symbol; int inputs; Eval eval;}
-        static Function[] FUNCTIONS = { // vala-lint=naming-convention
+        static Function[] FUNCTIONS = {
             Function () { symbol = "sin", inputs = 1, eval = (a) => Math.sin (a) },
             Function () { symbol = "cos", inputs = 1, eval = (a) => Math.cos (a) },
             Function () { symbol = "tan", inputs = 1, eval = (a) => Math.tan (a) },
@@ -79,7 +79,7 @@ namespace PantheonCalculator.Core {
         };
 
         private struct Constant { string symbol; Eval eval; }
-        static Constant[] CONSTANTS = { // vala-lint=naming-convention
+        static Constant[] CONSTANTS = {
             Constant () { symbol = "pi", eval = () => Math.PI },
             Constant () { symbol = "π", eval = () => Math.PI },
             Constant () { symbol = "e", eval = () => Math.E }

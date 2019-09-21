@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2018-2019 elementary, Inc. (https://elementary.io)
+ * Copyright (c) 2018 elementary LLC. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -75,7 +75,7 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("10 - 10% + 5", "14.9"); // https://github.com/elementary/calculator/issues/44
 
         assert_equal ("25,123 - 234,2", "-209,077", ",", "."); // https://github.com/elementary/calculator/issues/48
-        assert_equal ("25.000,123 - 234000,2", "-209.000,077", ",", "."); // https://github.com/elementary/calculator/issues/48 vala-lint=line-length
+        assert_equal ("25.000,123 - 234000,2", "-209.000,077", ",", "."); // https://github.com/elementary/calculator/issues/48
         assert_equal ("89 * 56", "4.984", ",", "."); // https://github.com/elementary/calculator/issues/48
         assert_equal ("144000 / 12", "12.000", ",", "."); // https://github.com/elementary/calculator/issues/48
         assert_equal ("144000 / 12", "12 000", ",", " "); // https://github.com/elementary/calculator/issues/48
