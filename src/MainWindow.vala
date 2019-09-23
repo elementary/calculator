@@ -303,7 +303,7 @@ namespace PantheonCalculator {
             if (is_text_selected) {
                 new_position = selection_end;
                 entry.delete_selection ();
-                selection_length = selection_end-selection_start;
+                selection_length = selection_end - selection_start;
                 new_position -= selection_length;
             }
             entry.insert_at_cursor (label);

@@ -58,9 +58,9 @@ namespace PantheonCalculator.Core {
             Operator () { symbol = "×", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a * b },
             Operator () { symbol = "/", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a / b },
             Operator () { symbol = "÷", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a / b },
-            Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) =>  a % b },
+            Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a % b },
             Operator () { symbol = "^", inputs = 2, prec = 3, fixity = "RIGHT", eval = (a, b) => Math.pow (a, b) },
-            Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => a*Math.pow (10, b) },
+            Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => a * Math.pow (10, b) },
             Operator () { symbol = "%", inputs = 1, prec = 5, fixity = "LEFT", eval = (a, b) => b / 100.0 }
         };
 
@@ -186,7 +186,9 @@ namespace PantheonCalculator.Core {
             }
 
             while (!op_stack.is_empty ()) {
-                if (op_stack.peek_tail ().token_type == TokenType.P_LEFT || op_stack.peek_tail ().token_type == TokenType.P_RIGHT) {
+                if (op_stack.peek_tail ().token_type == TokenType.P_LEFT ||
+                    op_stack.peek_tail ().token_type == TokenType.P_RIGHT
+                ) {
                     throw new SHUNTING_ERROR.MISMATCHED_P ("Mismatched parenthesis.");
                 } else {
                     output.append (op_stack.pop_tail ());
