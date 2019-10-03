@@ -99,9 +99,24 @@ namespace PantheonCalculator {
             entry = new Gtk.Entry ();
             entry.set_alignment (1);
             entry.set_text (settings.get_string ("entry-content"));
-            entry.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
-            entry.vexpand = true;
+            entry.get_style_context ().add_class ("flat");
+            entry.expand = true;
             entry.valign = Gtk.Align.CENTER;
+
+            var fraction_preview = new Gtk.Label ("⅝");
+            fraction_preview.halign = Gtk.Align.END;
+            fraction_preview.margin_end = 6;
+
+            var view = new Gtk.Grid ();
+            view.orientation = Gtk.Orientation.VERTICAL;
+
+            var view_context = view.get_style_context ();
+            view_context.add_class ("view");
+            view_context.add_class ("frame");
+            view_context.add_class (Granite.STYLE_CLASS_H2_LABEL);
+
+            view.add (entry);
+            view.add (fraction_preview);
 
             button_calc = new Button ("=", _("Calculate Result"));
             button_calc.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
@@ -155,9 +170,8 @@ namespace PantheonCalculator {
             basic_grid.column_spacing = 6;
             basic_grid.row_spacing = 6;
             basic_grid.valign = Gtk.Align.FILL;
-            basic_grid.set_row_homogeneous (true);
 
-            basic_grid.attach (entry, 0, 0, 4, 1);
+            basic_grid.attach (view, 0, 0, 4, 1);
             basic_grid.attach (button_clr, 0, 1, 1, 1);
             basic_grid.attach (button_del, 1, 1, 1, 1);
             basic_grid.attach (button_percent, 2, 1, 1, 1);
