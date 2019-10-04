@@ -19,7 +19,7 @@
  */
 
 namespace PantheonCalculator {
-    public class MainWindow : Gtk.Window {
+    public class MainWindow : Gtk.ApplicationWindow {
         private Settings settings;
 
         private Gtk.Revealer extended_revealer;
@@ -30,7 +30,6 @@ namespace PantheonCalculator {
         private Gtk.Button button_history;
         private Gtk.Button button_ans;
         private Gtk.Button button_del;
-        private Gtk.Button button_clr;
         private Gtk.ToggleButton button_extended;
         private HistoryDialog history_dialog;
 
@@ -45,7 +44,19 @@ namespace PantheonCalculator {
 
         public struct History { string exp; string output; }
 
-        public MainWindow () {
+        public const string ACTION_PREFIX = "win.";
+        public const string ACTION_CLEAR = "action-clear";
+
+        private const ActionEntry[] ACTION_ENTRIES = {
+            { ACTION_CLEAR, action_clear }
+        };
+
+        construct {
+            add_action_entries (ACTION_ENTRIES, this);
+
+            var application_instance = (Gtk.Application) GLib.Application.get_default ();
+            application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_CLEAR, {"Escape"});
+
             get_style_context ().add_class ("rounded");
             set_resizable (false);
             window_position = Gtk.WindowPosition.CENTER;
@@ -101,7 +112,12 @@ namespace PantheonCalculator {
 
             button_del = new Button ("Del", _("Backspace"));
 
-            button_clr = new Button ("C", _("Clear entry"));
+            var button_clr = new Button ("C");
+            button_clr.action_name = ACTION_PREFIX + ACTION_CLEAR;
+            button_clr.tooltip_markup = Granite.markup_accel_tooltip (
+                application_instance.get_accels_for_action (button_clr.action_name),
+                _("Clear entry")
+            );
             button_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
             var button_add = new Button (" + ", _("Add"));
@@ -209,12 +225,13 @@ namespace PantheonCalculator {
             main_grid.add (basic_grid);
             main_grid.add (extended_revealer);
 
-            infobar = new Gtk.InfoBar ();
             infobar_label = new Gtk.Label ("");
-            infobar.get_content_area ().add (infobar_label);
-            infobar.show_close_button = false;
+
+            infobar = new Gtk.InfoBar ();
             infobar.message_type = Gtk.MessageType.WARNING;
-            infobar.no_show_all = true;
+            infobar.revealed = false;
+            infobar.show_close_button = false;
+            infobar.get_content_area ().add (infobar_label);
 
             var global_grid = new Gtk.Grid ();
             global_grid.orientation = Gtk.Orientation.VERTICAL;
@@ -234,7 +251,6 @@ namespace PantheonCalculator {
 
             button_calc.clicked.connect (() => {button_calc_clicked ();});
             button_del.clicked.connect (() => {button_del_clicked ();});
-            button_clr.clicked.connect (() => {button_clr_clicked ();});
             button_ans.clicked.connect (() => {button_ans_clicked ();});
             button_add.clicked.connect (() => {regular_button_clicked (button_add.function);});
             button_sub.clicked.connect (() => {regular_button_clicked (button_sub.function);});
@@ -287,7 +303,7 @@ namespace PantheonCalculator {
             if (is_text_selected) {
                 new_position = selection_end;
                 entry.delete_selection ();
-                selection_length = selection_end-selection_start;
+                selection_length = selection_end - selection_start;
                 new_position -= selection_length;
             }
             entry.insert_at_cursor (label);
@@ -333,9 +349,7 @@ namespace PantheonCalculator {
                     }
                 } catch (Core.OUT_ERROR e) {
                     infobar_label.label = e.message;
-                    infobar.no_show_all = false;
-                    infobar.show_all ();
-                    infobar.no_show_all = true;
+                    infobar.revealed = true;
                 }
             } else {
                 remove_error ();
@@ -370,7 +384,7 @@ namespace PantheonCalculator {
             entry.set_position (position - 1);
         }
 
-        private void button_clr_clicked () {
+        private void action_clear () {
             position = 0;
             entry.set_text ("");
             set_focus (entry);
@@ -429,15 +443,12 @@ namespace PantheonCalculator {
         }
 
         private void remove_error () {
-            infobar.hide ();
+            infobar.revealed = false;
         }
 
         private bool key_pressed (Gdk.EventKey key) {
             bool retval = false;
             switch (key.keyval) {
-                case Gdk.Key.Escape:
-                    button_clr_clicked ();
-                    break;
                 case Gdk.Key.KP_Decimal:
                 case Gdk.Key.KP_Separator:
                 case Gdk.Key.decimalpoint:
