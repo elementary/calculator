@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:42+0200\n"
-"PO-Revision-Date: 2018-05-22 00:08+0000\n"
-"Last-Translator: Brais Oliveira Sanjurjo <1brais.oliveira@gmail.com>\n"
-"Language-Team: Galician <https://weblate.elementary.io/projects/calculator/"
+"PO-Revision-Date: 2019-09-27 14:23+0000\n"
+"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"Language-Team: Galician <https://l10n.elementary.io/projects/calculator/"
 "calculator/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:94
@@ -37,19 +37,19 @@ msgstr "Engadir último resultado"
 
 #: src/MainWindow.vala:152
 msgid "Backspace"
-msgstr ""
+msgstr "Retroceso"
 
 #: src/MainWindow.vala:153
 msgid "Clear entry"
-msgstr ""
+msgstr "Limpar entrada"
 
 #: src/MainWindow.vala:156 src/HistoryDialog.vala:107
 msgid "Add"
-msgstr "Engadir"
+msgstr "Sumar"
 
 #: src/MainWindow.vala:159
 msgid "Subtract"
-msgstr ""
+msgstr "Restar"
 
 #: src/MainWindow.vala:162
 msgid "Multiply"
@@ -73,19 +73,19 @@ msgstr "Rematar Grupo"
 
 #: src/MainWindow.vala:246
 msgid "Exponent"
-msgstr ""
+msgstr "Exponencial"
 
 #: src/MainWindow.vala:248
 msgid "Root"
-msgstr ""
+msgstr "Raíz cadrada"
 
 #: src/MainWindow.vala:249
 msgid "Sine"
-msgstr ""
+msgstr "Seno"
 
 #: src/MainWindow.vala:250
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Seno hiperbólico"
 
 #: src/MainWindow.vala:251
 msgid "Cosine"
@@ -97,27 +97,27 @@ msgstr "Coseno hiperbólico"
 
 #: src/MainWindow.vala:253
 msgid "Tangent"
-msgstr ""
+msgstr "Tanxente"
 
 #: src/MainWindow.vala:254
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Tanxente hiperbólica"
 
 #: src/MainWindow.vala:255
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
 #: src/MainWindow.vala:256
 msgid "Euler's Number"
-msgstr ""
+msgstr "Número de Euler"
 
 #: src/MainWindow.vala:401
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "Ocultar funcións adicionais"
 
 #: src/HistoryDialog.vala:92
 msgid "Value to add:"
-msgstr "Valor para engadir:"
+msgstr "Valor para sumar:"
 
 #: src/HistoryDialog.vala:96
 msgid "Result"
@@ -134,17 +134,17 @@ msgstr "Pechar"
 #: src/Core/Scanner.vala:69
 #, c-format
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "«%s» non é válido."
 
 #: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "Paréntese non coincidente."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:167
 #, c-format
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "«%s» é descoñecido."
 
 #~ msgid "translator-credits"
 #~ msgstr ""
