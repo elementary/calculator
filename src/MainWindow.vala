@@ -103,9 +103,10 @@ namespace PantheonCalculator {
             entry.expand = true;
             entry.valign = Gtk.Align.CENTER;
 
-            var fraction_preview = new Gtk.Label ("2⅝");
+            var fraction_preview = new Gtk.Label ("""2<span font_weight="500" size="xx-small" rise="8192">5</span>⁄<span font_weight="500" size="xx-small">8</span>""");
             fraction_preview.halign = Gtk.Align.END;
             fraction_preview.margin_end = 6;
+            fraction_preview.use_markup = true;
 
             var view = new Gtk.Grid ();
             view.orientation = Gtk.Orientation.VERTICAL;
