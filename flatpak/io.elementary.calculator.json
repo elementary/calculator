@@ -3,7 +3,7 @@
     "base": "io.elementary.BaseApp",
     "base-version": "juno",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.30",
+    "runtime-version": "3.34",
     "sdk": "org.gnome.Sdk",
     "command": "io.elementary.calculator",
     "finish-args": [
@@ -11,9 +11,7 @@
         "--socket=x11",
         "--socket=wayland",
         "--talk-name=org.gnome.SessionManager",
-        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--metadata=X-DConf=migrate-path=/io/elementary/calculator/"
     ],
     "cleanup": [
         "/include",
