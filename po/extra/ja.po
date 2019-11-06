@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:42+0000\n"
+"POT-Creation-Date: 2019-11-06 19:24+0000\n"
 "PO-Revision-Date: 2019-08-13 19:22+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
@@ -38,8 +38,25 @@ msgstr ""
 "日常で利用するのにシンプルな電卓です。基本的な計算やサイン、コサイン、タン"
 "ジェントといった三角関数を含むいくつかの科学的な計算をサポートします。"
 
-#: data/io.elementary.calculator.appdata.xml.in:48
-msgid "elementary LLC."
+#: data/io.elementary.calculator.appdata.xml.in:17
+msgid "Animate Infobar when hiding and showing"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:18
+msgid "Fix selection replace"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Improved decimal separator localization"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:20
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:57
+#, fuzzy
+msgid "elementary, Inc."
 msgstr "elementary LLC."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!

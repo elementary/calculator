@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:42+0000\n"
+"POT-Creation-Date: 2019-11-06 19:24+0000\n"
 "PO-Revision-Date: 2019-08-26 21:22+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/calculator/extra/"
@@ -38,8 +38,25 @@ msgstr ""
 "آلة حاسبة بسيطة للإستخدام اليومي. تدعم الدوال البسيطة وبعض الدوال العلمية "
 "مثل دوال حساب المثلثات، الجيب، جيب التمام، والظل."
 
-#: data/io.elementary.calculator.appdata.xml.in:48
-msgid "elementary LLC."
+#: data/io.elementary.calculator.appdata.xml.in:17
+msgid "Animate Infobar when hiding and showing"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:18
+msgid "Fix selection replace"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Improved decimal separator localization"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:20
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:57
+#, fuzzy
+msgid "elementary, Inc."
 msgstr "elementary LLC."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!

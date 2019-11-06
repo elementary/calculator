@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:42+0000\n"
+"POT-Creation-Date: 2019-11-06 19:24+0000\n"
 "PO-Revision-Date: 2018-06-15 00:09+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/calculator/"
@@ -38,8 +38,25 @@ msgstr ""
 "Egy egyszerű számológép mindennapi használatra. Képes egyszerű és tudományos "
 "számításra, például: trigonometrikus függvények, sin, cos, tg."
 
-#: data/io.elementary.calculator.appdata.xml.in:48
-msgid "elementary LLC."
+#: data/io.elementary.calculator.appdata.xml.in:17
+msgid "Animate Infobar when hiding and showing"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:18
+msgid "Fix selection replace"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Improved decimal separator localization"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:20
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:57
+#, fuzzy
+msgid "elementary, Inc."
 msgstr "elementary LLC."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!

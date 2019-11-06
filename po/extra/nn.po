@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 16:42+0000\n"
+"POT-Creation-Date: 2019-11-06 19:24+0000\n"
 "PO-Revision-Date: 2019-01-03 18:17+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
@@ -38,8 +38,25 @@ msgstr ""
 "vitskaplege, utrekningar – inkludert trigonometrifunksjonar, sinus, cosinus "
 "og tangens."
 
-#: data/io.elementary.calculator.appdata.xml.in:48
-msgid "elementary LLC."
+#: data/io.elementary.calculator.appdata.xml.in:17
+msgid "Animate Infobar when hiding and showing"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:18
+msgid "Fix selection replace"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Improved decimal separator localization"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:20
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:57
+#, fuzzy
+msgid "elementary, Inc."
 msgstr "elementary LLC."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
