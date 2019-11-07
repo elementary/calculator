@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 19:24+0000\n"
-"PO-Revision-Date: 2019-08-26 21:22+0000\n"
+"PO-Revision-Date: 2019-11-09 11:24+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/calculator/"
 "extra/eo/>\n"
@@ -40,24 +40,23 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "Animate Infobar when hiding and showing"
-msgstr ""
+msgstr "Animacii la informbreton dum montro-malmontro"
 
 #: data/io.elementary.calculator.appdata.xml.in:18
 msgid "Fix selection replace"
-msgstr ""
+msgstr "Ripari anstataŭon de elektaĵo"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Improved decimal separator localization"
-msgstr ""
+msgstr "Lokumiga plibonigo de dekuma disigilo"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "Updated translations"
-msgstr ""
+msgstr "Ĝisdatigitaj tradukoj"
 
 #: data/io.elementary.calculator.appdata.xml.in:57
-#, fuzzy
 msgid "elementary, Inc."
-msgstr "elementary LLC."
+msgstr "elementary, Inc."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
