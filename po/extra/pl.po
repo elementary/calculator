@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 19:24+0000\n"
-"PO-Revision-Date: 2019-11-14 21:11+0000\n"
+"PO-Revision-Date: 2019-11-15 21:24+0000\n"
 "Last-Translator: Cholewka <mdcholewka@gmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/calculator/extra/"
 "pl/>\n"
@@ -41,29 +41,28 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "Animate Infobar when hiding and showing"
-msgstr "Animuj pasek informacyjny, kiedy się chowa lub pokazuje"
+msgstr "Animuj pasek informacyjny podczas chowania lub wyświetlania"
 
 #: data/io.elementary.calculator.appdata.xml.in:18
 msgid "Fix selection replace"
-msgstr ""
+msgstr "Napraw zamianę zaznaczenia"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Improved decimal separator localization"
-msgstr ""
+msgstr "Zmieniono lokalizację separatora liczb dziesiętnych"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "Updated translations"
-msgstr ""
+msgstr "Zaktualizowano tłumaczenia"
 
 #: data/io.elementary.calculator.appdata.xml.in:57
-#, fuzzy
 msgid "elementary, Inc."
-msgstr "elementary LLC."
+msgstr "elementary, Inc."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "Kalkulator;Matematyka;Arytmetyka;Naukowy;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
