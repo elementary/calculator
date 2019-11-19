@@ -1,3 +1,32 @@
+pantheon-calculator (1.5.3) bionic; urgency=medium
+
+  * Release 1.5.3 (#117)
+  * Travis: Downgrade node to 10
+  * Update translation template
+  * AppData: Add 1.5.3 release data
+  * Add Release to Actions
+  * Update translation template
+  * Add Gettext Updates to Actions
+  * Add Lint to CI (#113)
+  * Evaluation: Fix variable naming convention
+  * Lint src and test (#111)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml (#112)
+  * MainWindow: Use GLib.Action for clear (#104)
+  * MainWindow: Animate infobar hide/show (#106)
+  * Fix for selection and replace (#102)
+  * Added flatpak manifest (#101)
+  * Use Granite style constants (#105)
+  * MainWindow: Get rid of single-use methods (#103)
+  * Update extra translation template
+  * Add keywords to desktop file (continued) (#89)
+  * Fix #88 and #92 by changing decimal key behavior (#94)
+  * Add Silesian and update translation template
+  * Create FUNDING.yml
+  * Remove unused po files and update LINGUAS
+
+ -- Cody Garver <cody@elementary.io>  Tue, 19 Nov 2019 16:38:39 +0000
+
 pantheon-calculator (1.5.2) bionic; urgency=medium
 
   * New upstream release.
