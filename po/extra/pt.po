@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 19:24+0000\n"
+"POT-Creation-Date: 2019-11-24 19:21+0000\n"
 "PO-Revision-Date: 2019-11-09 11:24+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/calculator/"
@@ -40,22 +40,27 @@ msgstr ""
 "coseno, e tangente."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-msgid "Animate Infobar when hiding and showing"
-msgstr "Animar a barra de informação ao ocultar e mostrar"
+msgid "Fix missing icon for Ukrainian"
+msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:18
-msgid "Fix selection replace"
-msgstr "Corrigir seleção substituir"
-
-#: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Improved decimal separator localization"
-msgstr "Localização melhorada do separador decimal"
-
-#: data/io.elementary.calculator.appdata.xml.in:20
+#: data/io.elementary.calculator.appdata.xml.in:28
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/io.elementary.calculator.appdata.xml.in:57
+#: data/io.elementary.calculator.appdata.xml.in:25
+msgid "Animate Infobar when hiding and showing"
+msgstr "Animar a barra de informação ao ocultar e mostrar"
+
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Fix selection replace"
+msgstr "Corrigir seleção substituir"
+
+#: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Improved decimal separator localization"
+msgstr "Localização melhorada do separador decimal"
+
+#: data/io.elementary.calculator.appdata.xml.in:65
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

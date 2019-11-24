@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 19:24+0000\n"
+"POT-Creation-Date: 2019-11-24 19:21+0000\n"
 "PO-Revision-Date: 2019-01-09 00:01+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
@@ -40,22 +40,27 @@ msgstr ""
 "cosinus, og tangens."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-msgid "Animate Infobar when hiding and showing"
+msgid "Fix missing icon for Ukrainian"
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:18
-msgid "Fix selection replace"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Improved decimal separator localization"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:20
+#: data/io.elementary.calculator.appdata.xml.in:28
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:57
+#: data/io.elementary.calculator.appdata.xml.in:25
+msgid "Animate Infobar when hiding and showing"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Fix selection replace"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Improved decimal separator localization"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:65
 #, fuzzy
 msgid "elementary, Inc."
 msgstr "elementary LLC. (selskap med begrenset ansvar)"

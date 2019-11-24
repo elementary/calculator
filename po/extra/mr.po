@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 19:24+0000\n"
+"POT-Creation-Date: 2019-11-24 19:21+0000\n"
 "PO-Revision-Date: 2019-11-09 11:24+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/calculator/extra/"
@@ -38,22 +38,27 @@ msgstr ""
 "त्रिकोणमिती functions ,sin cos आणि tan वगैरे करण्यासाठी उपयुक्त."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-msgid "Animate Infobar when hiding and showing"
-msgstr "लपवित असताना आणि दर्शवित असताना इन्फोबार एनिमेट करा"
+msgid "Fix missing icon for Ukrainian"
+msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:18
-msgid "Fix selection replace"
-msgstr "निवड पुनर्स्थित करणे दुरुस्त करा"
-
-#: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Improved decimal separator localization"
-msgstr "सुधारित दशांश विभाजक स्थानिकीकरण"
-
-#: data/io.elementary.calculator.appdata.xml.in:20
+#: data/io.elementary.calculator.appdata.xml.in:28
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/io.elementary.calculator.appdata.xml.in:57
+#: data/io.elementary.calculator.appdata.xml.in:25
+msgid "Animate Infobar when hiding and showing"
+msgstr "लपवित असताना आणि दर्शवित असताना इन्फोबार एनिमेट करा"
+
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Fix selection replace"
+msgstr "निवड पुनर्स्थित करणे दुरुस्त करा"
+
+#: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Improved decimal separator localization"
+msgstr "सुधारित दशांश विभाजक स्थानिकीकरण"
+
+#: data/io.elementary.calculator.appdata.xml.in:65
 msgid "elementary, Inc."
 msgstr "एलिमेंटरी, Inc."
 
