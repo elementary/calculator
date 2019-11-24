@@ -1,3 +1,9 @@
+pantheon-calculator (1.5.4) bionic; urgency=medium
+
+  * Release 1.5.4 (#119)
+
+ -- Cody Garver <cody@elementary.io>  Sun, 24 Nov 2019 19:20:55 +0000
+
 pantheon-calculator (1.5.3) bionic; urgency=medium
 
   * Release 1.5.3 (#117)
