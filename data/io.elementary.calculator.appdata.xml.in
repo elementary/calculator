@@ -11,6 +11,14 @@
     <p>A simple calculator for everyday use. It supports basic and some scientific calculations including trigonometry functions, sin, cos, and tan.</p>
   </description>
   <releases>
+    <release version="1.5.4" date="2019-11-24" urgency="medium">
+      <description>
+        <ul>
+          <li>Fix missing icon for Ukrainian</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.5.3" date="2019-11-15" urgency="medium">
       <description>
         <ul>
