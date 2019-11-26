@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-24 19:21+0000\n"
-"PO-Revision-Date: 2019-10-27 19:24+0000\n"
+"PO-Revision-Date: 2019-11-29 02:25+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/calculator/extra/"
 "he/>\n"
@@ -40,29 +40,28 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgstr "תיקון סמל חסר לאוקראינית"
 
 #: data/io.elementary.calculator.appdata.xml.in:18
 #: data/io.elementary.calculator.appdata.xml.in:28
 msgid "Updated translations"
-msgstr ""
+msgstr "עודכנו תרגומים"
 
 #: data/io.elementary.calculator.appdata.xml.in:25
 msgid "Animate Infobar when hiding and showing"
-msgstr ""
+msgstr "הנפשת פס המידע בעת הסתרה או הצגה"
 
 #: data/io.elementary.calculator.appdata.xml.in:26
 msgid "Fix selection replace"
-msgstr ""
+msgstr "תיקון החלפת בחירה"
 
 #: data/io.elementary.calculator.appdata.xml.in:27
 msgid "Improved decimal separator localization"
-msgstr ""
+msgstr "התאמת מפריד אלפים השתפרה"
 
 #: data/io.elementary.calculator.appdata.xml.in:65
-#, fuzzy
 msgid "elementary, Inc."
-msgstr "elementary LLC.‎"
+msgstr "elementary בע״מ."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
