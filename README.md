@@ -7,7 +7,7 @@
 
 You'll need the following dependencies:
 
-* libgranite-dev
+* granite >= 0.5
 * meson >= 0.43.0
 * valac
 

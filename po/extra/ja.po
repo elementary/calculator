@@ -7,30 +7,70 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:40-0700\n"
-"PO-Revision-Date: 2018-01-10 00:03+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
-"Language-Team: Japanese "
-"<https://weblate.elementary.io/projects/calculator/extra/ja/>\n"
+"POT-Creation-Date: 2019-11-24 19:21+0000\n"
+"PO-Revision-Date: 2019-11-09 11:24+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
+"extra/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
+#: data/io.elementary.calculator.appdata.xml.in:8
+#: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
 msgstr "電卓"
 
+#: data/io.elementary.calculator.appdata.xml.in:9
+#: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
 msgstr "簡単な式を計算します"
 
-msgid "About Calculator"
-msgstr "電卓について"
-
+#: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
-"日常で利用するのにシンプルな電卓です。基本的な計算やサイン、コサイン、タンジェントといった三角関数を含むいくつかの科学的な計算をサポートします。"
+"日常で利用するのにシンプルな電卓です。基本的な計算やサイン、コサイン、タン"
+"ジェントといった三角関数を含むいくつかの科学的な計算をサポートします。"
+
+#: data/io.elementary.calculator.appdata.xml.in:17
+msgid "Fix missing icon for Ukrainian"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:18
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Updated translations"
+msgstr "翻訳の更新"
+
+#: data/io.elementary.calculator.appdata.xml.in:25
+msgid "Animate Infobar when hiding and showing"
+msgstr "情報バーの表示／非表示の際にアニメーションを追加"
+
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Fix selection replace"
+msgstr "選択範囲の置き換えの際の問題を修正"
+
+#: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Improved decimal separator localization"
+msgstr "小数点のローカライゼーションの改善"
+
+#: data/io.elementary.calculator.appdata.xml.in:65
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/io.elementary.calculator.desktop.in:6
+msgid "Calculation;Mathematics;Arithmetic;Scientific;"
+msgstr "Calculation;Mathematics;Arithmetic;Scientific;計算;数学;算数;科学;"
+
+#: data/io.elementary.calculator.desktop.in:8
+msgid "accessories-calculator"
+msgstr "accessories-calculator"
+
+#~ msgid "About Calculator"
+#~ msgstr "電卓について"

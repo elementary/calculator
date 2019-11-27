@@ -1,16 +1,27 @@
-language: generic
+---
+
+language: node_js
+
+node_js:
+  - 10/*
+
+sudo: required
 
 services:
- - docker
+  - docker
 
-env:
- - DEPENDENCY_PACKAGES="appstream desktop-file-utils meson libgranite-dev valac"
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - libstdc++-5-dev
 
 install:
- - docker pull elementary/docker:loki
- - docker run -v "$PWD":/tmp/build-dir elementary/docker:loki /bin/sh -c "apt-get update && apt-get -y install $DEPENDENCY_PACKAGES && cd /tmp/build-dir && meson build && cd build && ninja test"
- - docker pull elementary/docker:loki-unstable
- - docker run -v "$PWD":/tmp/build-dir elementary/docker:loki-unstable /bin/sh -c "apt-get update && apt-get -y install $DEPENDENCY_PACKAGES && cd /tmp/build-dir && rm -rf build && meson build && cd build && ninja test"
+  - npm i -g @elementaryos/houston
 
 script:
- - echo BUILDS PASSED
+  - houston ci
+    --type system-app
+    --name-domain io.elementary.calculator
+    --name-human Calculator

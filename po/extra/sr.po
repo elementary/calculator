@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:40-0700\n"
+"POT-Creation-Date: 2019-11-24 19:21+0000\n"
 "PO-Revision-Date: 2017-01-06 07:48+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <sr@li.org>\n"
@@ -18,15 +18,17 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-01-07 06:15+0000\n"
 "X-Generator: Launchpad (build 18302)\n"
 
+#: data/io.elementary.calculator.appdata.xml.in:8
+#: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
 msgstr "Калкулатор"
 
+#: data/io.elementary.calculator.appdata.xml.in:9
+#: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
 msgstr "Решите једноставне једначине"
 
-msgid "About Calculator"
-msgstr "О Калкулатору"
-
+#: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
@@ -34,3 +36,40 @@ msgstr ""
 "Једноставан калкулатор за свакодневну употребу. Подржава основне и неке "
 "научне прорачуне укључујући тригонометријске функције синуса, косинуса и "
 "тангеса."
+
+#: data/io.elementary.calculator.appdata.xml.in:17
+msgid "Fix missing icon for Ukrainian"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:18
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:25
+msgid "Animate Infobar when hiding and showing"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Fix selection replace"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Improved decimal separator localization"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:65
+msgid "elementary, Inc."
+msgstr ""
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/io.elementary.calculator.desktop.in:6
+msgid "Calculation;Mathematics;Arithmetic;Scientific;"
+msgstr ""
+
+#: data/io.elementary.calculator.desktop.in:8
+msgid "accessories-calculator"
+msgstr ""
+
+#~ msgid "About Calculator"
+#~ msgstr "О Калкулатору"

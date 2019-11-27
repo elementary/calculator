@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:40-0700\n"
+"POT-Creation-Date: 2019-11-24 19:21+0000\n"
 "PO-Revision-Date: 2018-01-04 00:13+0000\n"
 "Last-Translator: Arkadeepta Roy <arkadeepta.roy2016@vitstudent.ac.in>\n"
-"Language-Team: Bengali "
-"<https://weblate.elementary.io/projects/calculator/calculator/bn/>\n"
+"Language-Team: Bengali <https://weblate.elementary.io/projects/calculator/"
+"calculator/bn/>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,134 +15,140 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
-msgid "Calculator"
-msgstr "ক্যালকুলেটর"
-
-#: ../src/PantheonCalculator.vala:44
-msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
-"  Mishkat Nur Rahman https://launchpad.net/~mishkat2008\n"
-"  Soumen Kamilya https://launchpad.net/~soumen-kamilya"
-
-#: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:86
-msgid "History"
-msgstr "পূর্ববর্তী ফলাফল"
-
-#: ../src/HistoryDialog.vala:84
-msgid "Value to add:"
-msgstr "যা যোগ করতে চান:"
-
-#: ../src/HistoryDialog.vala:88
-msgid "Result"
-msgstr "ফলাফল"
-
-#: ../src/HistoryDialog.vala:92
-msgid "Expression"
-msgstr "অভিব্যক্তি"
-
-#: ../src/HistoryDialog.vala:98
-msgid "Close"
-msgstr "বন্ধ করুন"
-
-#: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:133
-msgid "Add"
-msgstr "যোগ করুন"
-
-#: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
+#: src/MainWindow.vala:81 src/MainWindow.vala:415
 msgid "Show extended functionality"
 msgstr "বর্ধিত কার্যকারিতা দেখান"
 
-#: ../src/MainWindow.vala:124
+#: src/MainWindow.vala:86 src/HistoryDialog.vala:37
+msgid "History"
+msgstr "পূর্ববর্তী ফলাফল"
+
+#: src/MainWindow.vala:93
+msgid "Calculator"
+msgstr "ক্যালকুলেটর"
+
+#: src/MainWindow.vala:106
 msgid "Calculate Result"
 msgstr "ফলাফল গণনা করুন"
 
-#: ../src/MainWindow.vala:127
+#: src/MainWindow.vala:110
 msgid "Add last result"
 msgstr "শেষ ফলাফল যোগ করুন"
 
-#: ../src/MainWindow.vala:129
+#: src/MainWindow.vala:113
 msgid "Backspace"
 msgstr "ব্যাকস্পেস"
 
-#: ../src/MainWindow.vala:130
+#: src/MainWindow.vala:119
 msgid "Clear entry"
 msgstr "এন্ট্রি মুছে ফেলুন"
 
-#: ../src/MainWindow.vala:136
+#: src/MainWindow.vala:123 src/HistoryDialog.vala:107
+msgid "Add"
+msgstr "যোগ করুন"
+
+#: src/MainWindow.vala:127
 msgid "Subtract"
 msgstr "বিয়োগ করুন"
 
-#: ../src/MainWindow.vala:139
+#: src/MainWindow.vala:131
 msgid "Multiply"
 msgstr "গুণ করুন"
 
-#: ../src/MainWindow.vala:142
+#: src/MainWindow.vala:135
 msgid "Divide"
 msgstr "ভাগ করুন"
 
-#: ../src/MainWindow.vala:148
+#: src/MainWindow.vala:141
 msgid "Percentage"
 msgstr "শতাংশ"
 
-#: ../src/MainWindow.vala:219
+#: src/MainWindow.vala:186
 msgid "Start Group"
 msgstr "গ্রুপ শুরু করুন"
 
-#: ../src/MainWindow.vala:220
+#: src/MainWindow.vala:187
 msgid "End Group"
 msgstr "গ্রুপ শেষ করুন"
 
-#: ../src/MainWindow.vala:221
+#: src/MainWindow.vala:188
 msgid "Exponent"
 msgstr "সূচক"
 
-#: ../src/MainWindow.vala:223
+#: src/MainWindow.vala:190
 msgid "Root"
 msgstr "বর্গমূল"
 
-#: ../src/MainWindow.vala:224
+#: src/MainWindow.vala:191
 msgid "Sine"
 msgstr "সাইন"
 
-#: ../src/MainWindow.vala:225
+#: src/MainWindow.vala:192
 msgid "Hyperbolic Sine"
 msgstr "হাইপারবলিক সাইন"
 
-#: ../src/MainWindow.vala:226
+#: src/MainWindow.vala:193
 msgid "Cosine"
 msgstr "কোসাইন"
 
-#: ../src/MainWindow.vala:227
+#: src/MainWindow.vala:194
 msgid "Hyperbolic Cosine"
 msgstr "হাইপারবলিক কোসাইন"
 
-#: ../src/MainWindow.vala:228
+#: src/MainWindow.vala:195
 msgid "Tangent"
 msgstr "ট্যানজেন্ট"
 
-#: ../src/MainWindow.vala:229
+#: src/MainWindow.vala:196
 msgid "Hyperbolic Tangent"
 msgstr "হাইপারবলিক ট্যানজেন্ট"
 
-#: ../src/MainWindow.vala:230
+#: src/MainWindow.vala:197
 msgid "Pi"
 msgstr "পাই"
 
-#: ../src/MainWindow.vala:231
+#: src/MainWindow.vala:198
 msgid "Euler's Number"
 msgstr "ইউলারের নাম্বার"
 
-#: ../src/MainWindow.vala:371
+#: src/MainWindow.vala:410
 msgid "Hide extended functionality"
 msgstr "বর্ধিত কার্যকারিতা লুকান"
 
-#: ../src/Core/Scanner.vala:80
+#: src/HistoryDialog.vala:92
+msgid "Value to add:"
+msgstr "যা যোগ করতে চান:"
+
+#: src/HistoryDialog.vala:96
+msgid "Result"
+msgstr "ফলাফল"
+
+#: src/HistoryDialog.vala:100
+msgid "Expression"
+msgstr "অভিব্যক্তি"
+
+#: src/HistoryDialog.vala:106
+msgid "Close"
+msgstr "বন্ধ করুন"
+
+#: src/Core/Scanner.vala:69
+#, c-format
 msgid "'%s' is invalid."
 msgstr "'%s' গ্রহণযোগ্য নয়।"
 
-#: ../src/Core/Scanner.vala:164
+#: src/Core/Scanner.vala:114
+msgid "Mismatched parenthesis."
+msgstr ""
+
+#. If no rule matches the character at pos, throw an error.
+#: src/Core/Scanner.vala:167
+#, c-format
 msgid "'%s' is unknown."
 msgstr "'%s\" অজানা।"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
+#~ "  Mishkat Nur Rahman https://launchpad.net/~mishkat2008\n"
+#~ "  Soumen Kamilya https://launchpad.net/~soumen-kamilya"

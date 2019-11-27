@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:40-0700\n"
+"POT-Creation-Date: 2019-11-24 19:21+0000\n"
 "PO-Revision-Date: 2017-06-17 21:34+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
-"Language-Team: Dutch "
-"<https://l10n.elementary.io/projects/calculator/extra/nl/>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/extra/"
+"nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,15 +20,17 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-03-20 06:06+0000\n"
 
+#: data/io.elementary.calculator.appdata.xml.in:8
+#: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
 msgstr "Rekenmachine"
 
+#: data/io.elementary.calculator.appdata.xml.in:9
+#: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
 msgstr "Los simpele vergelijkingen op"
 
-msgid "About Calculator"
-msgstr "Over Rekenmachine"
-
+#: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
@@ -36,3 +38,40 @@ msgstr ""
 "Een simpele rekenmachine voor dagelijks gebruik. Het ondersteunt "
 "basisberekeningen en sommige wetenschappelijke berekening, waaronder "
 "trigonometrische functies zoals sin, cos en tan."
+
+#: data/io.elementary.calculator.appdata.xml.in:17
+msgid "Fix missing icon for Ukrainian"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:18
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:25
+msgid "Animate Infobar when hiding and showing"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Fix selection replace"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Improved decimal separator localization"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:65
+msgid "elementary, Inc."
+msgstr ""
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/io.elementary.calculator.desktop.in:6
+msgid "Calculation;Mathematics;Arithmetic;Scientific;"
+msgstr ""
+
+#: data/io.elementary.calculator.desktop.in:8
+msgid "accessories-calculator"
+msgstr ""
+
+#~ msgid "About Calculator"
+#~ msgstr "Over Rekenmachine"

@@ -1,7 +1,6 @@
 core_test = executable(
     meson.project_name() + '-test',
     'CoreTest.vala',
-    meson.source_root() + '/src/Core/Stack.vala',
     meson.source_root() + '/src/Core/Token.vala',
     meson.source_root() + '/src/Core/Scanner.vala',
     meson.source_root() + '/src/Core/Evaluation.vala',

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 13:40-0700\n"
+"POT-Creation-Date: 2019-11-24 19:21+0000\n"
 "PO-Revision-Date: 2016-05-27 15:29+0000\n"
 "Last-Translator: Maxwell Barvian <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,134 +13,140 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: ../src/PantheonCalculator.vala:27 ../src/MainWindow.vala:73
-msgid "Calculator"
-msgstr "Kalkulagailua"
-
-#: ../src/PantheonCalculator.vala:44
-msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"  Félix Brezo https://launchpad.net/~febrezo\n"
-"  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
-"  jmikelf https://launchpad.net/~jmikelf"
-
-#: ../src/HistoryDialog.vala:35 ../src/MainWindow.vala:86
-msgid "History"
-msgstr "Historikoa"
-
-#: ../src/HistoryDialog.vala:84
-msgid "Value to add:"
-msgstr "Balio"
-
-#: ../src/HistoryDialog.vala:88
-msgid "Result"
-msgstr "Emaitza"
-
-#: ../src/HistoryDialog.vala:92
-msgid "Expression"
-msgstr "Adierazpena"
-
-#: ../src/HistoryDialog.vala:98
-msgid "Close"
-msgstr "Itxi"
-
-#: ../src/HistoryDialog.vala:99 ../src/MainWindow.vala:133
-msgid "Add"
-msgstr "Gehitu"
-
-#: ../src/MainWindow.vala:81 ../src/MainWindow.vala:376
+#: src/MainWindow.vala:81 src/MainWindow.vala:415
 msgid "Show extended functionality"
 msgstr ""
 
-#: ../src/MainWindow.vala:124
+#: src/MainWindow.vala:86 src/HistoryDialog.vala:37
+msgid "History"
+msgstr "Historikoa"
+
+#: src/MainWindow.vala:93
+msgid "Calculator"
+msgstr "Kalkulagailua"
+
+#: src/MainWindow.vala:106
 msgid "Calculate Result"
 msgstr "Kalkulatu emaitza"
 
-#: ../src/MainWindow.vala:127
+#: src/MainWindow.vala:110
 msgid "Add last result"
 msgstr "Gehitu azken emaitza"
 
-#: ../src/MainWindow.vala:129
+#: src/MainWindow.vala:113
 msgid "Backspace"
 msgstr "Atzera tekla"
 
-#: ../src/MainWindow.vala:130
+#: src/MainWindow.vala:119
 msgid "Clear entry"
 msgstr "Garbitu sarrera"
 
-#: ../src/MainWindow.vala:136
+#: src/MainWindow.vala:123 src/HistoryDialog.vala:107
+msgid "Add"
+msgstr "Gehitu"
+
+#: src/MainWindow.vala:127
 msgid "Subtract"
 msgstr "Kendu"
 
-#: ../src/MainWindow.vala:139
+#: src/MainWindow.vala:131
 msgid "Multiply"
 msgstr "Biderkatu"
 
-#: ../src/MainWindow.vala:142
+#: src/MainWindow.vala:135
 msgid "Divide"
 msgstr "Zatitu"
 
-#: ../src/MainWindow.vala:148
+#: src/MainWindow.vala:141
 msgid "Percentage"
 msgstr "Ehunekoa"
 
-#: ../src/MainWindow.vala:219
+#: src/MainWindow.vala:186
 msgid "Start Group"
 msgstr "Hasi taldea"
 
-#: ../src/MainWindow.vala:220
+#: src/MainWindow.vala:187
 msgid "End Group"
 msgstr "Bukatu taldea"
 
-#: ../src/MainWindow.vala:221
+#: src/MainWindow.vala:188
 msgid "Exponent"
 msgstr "Berretzailea"
 
-#: ../src/MainWindow.vala:223
+#: src/MainWindow.vala:190
 msgid "Root"
 msgstr "Erroa"
 
-#: ../src/MainWindow.vala:224
+#: src/MainWindow.vala:191
 msgid "Sine"
 msgstr "Sinua"
 
-#: ../src/MainWindow.vala:225
+#: src/MainWindow.vala:192
 msgid "Hyperbolic Sine"
 msgstr "Sinu hiperbolikoa"
 
-#: ../src/MainWindow.vala:226
+#: src/MainWindow.vala:193
 msgid "Cosine"
 msgstr "Kosinua"
 
-#: ../src/MainWindow.vala:227
+#: src/MainWindow.vala:194
 msgid "Hyperbolic Cosine"
 msgstr "Kosinu hiperbolikoa"
 
-#: ../src/MainWindow.vala:228
+#: src/MainWindow.vala:195
 msgid "Tangent"
 msgstr "Tangentea"
 
-#: ../src/MainWindow.vala:229
+#: src/MainWindow.vala:196
 msgid "Hyperbolic Tangent"
 msgstr "Tangente hiperbolikoa"
 
-#: ../src/MainWindow.vala:230
+#: src/MainWindow.vala:197
 msgid "Pi"
 msgstr "Pi"
 
-#: ../src/MainWindow.vala:231
+#: src/MainWindow.vala:198
 msgid "Euler's Number"
 msgstr "Eulerren zenbakia"
 
-#: ../src/MainWindow.vala:371
+#: src/MainWindow.vala:410
 msgid "Hide extended functionality"
 msgstr ""
 
-#: ../src/Core/Scanner.vala:80
+#: src/HistoryDialog.vala:92
+msgid "Value to add:"
+msgstr "Balio"
+
+#: src/HistoryDialog.vala:96
+msgid "Result"
+msgstr "Emaitza"
+
+#: src/HistoryDialog.vala:100
+msgid "Expression"
+msgstr "Adierazpena"
+
+#: src/HistoryDialog.vala:106
+msgid "Close"
+msgstr "Itxi"
+
+#: src/Core/Scanner.vala:69
+#, c-format
 msgid "'%s' is invalid."
 msgstr "'%s' baliogabea da."
 
-#: ../src/Core/Scanner.vala:164
+#: src/Core/Scanner.vala:114
+msgid "Mismatched parenthesis."
+msgstr ""
+
+#. If no rule matches the character at pos, throw an error.
+#: src/Core/Scanner.vala:167
+#, c-format
 msgid "'%s' is unknown."
 msgstr "'%s' ezezaguna da."
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  Félix Brezo https://launchpad.net/~febrezo\n"
+#~ "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
+#~ "  jmikelf https://launchpad.net/~jmikelf"
