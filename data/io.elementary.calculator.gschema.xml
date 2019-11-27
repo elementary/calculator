@@ -11,6 +11,11 @@
             <summary>Saves the content of the entry field for calculations.</summary>
             <description>Saves the content of the entry field for calculations.</description>
         </key>
+        <key name="memory-content" type="s">
+            <default>""</default>
+            <summary>Saves the content of the memory.</summary>
+            <description>Saves the content of the memory.</description>
+        </key>
         <key name="decimal-places" type="i">
             <default>5</default>
             <summary>Saves the decimal places for displayed values.</summary>

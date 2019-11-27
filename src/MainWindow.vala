@@ -22,8 +22,6 @@ namespace PantheonCalculator {
     public class MainWindow : Gtk.ApplicationWindow {
         private Settings settings;
 
-        private Gtk.HeaderBar headerbar;
-        private Gtk.Grid main_grid;
         private Gtk.Revealer extended_revealer;
         private Gtk.Entry entry;
 
@@ -33,13 +31,23 @@ namespace PantheonCalculator {
         private Gtk.Button button_history;
         private Gtk.Button button_ans;
         private Gtk.Button button_del;
-        private Gtk.Button button_clr;
 
         private Gtk.Button button_mem_add;
         private Gtk.Button button_mem_sub;
         private Gtk.Button button_mem_recall;
         private Gtk.Button button_mem_clr;
-        private string memory;
+        private string? _memory = null;
+        private string? memory {
+            get {
+                return _memory;
+            }
+
+            set {
+                _memory = value;
+                button_mem_clr.sensitive = _memory != null;
+                button_mem_recall.sensitive = _memory != null;
+            }
+        }
 
         private Gtk.ToggleButton button_extended;
         private HistoryDialog history_dialog;
@@ -79,8 +87,6 @@ namespace PantheonCalculator {
             history = new List<History?> ();
             position = 0;
 
-            memory = null;
-
             int x = settings.get_int ("window-x");
             int y = settings.get_int ("window-y");
             if (x != -100 && y != -100) {
@@ -113,6 +119,7 @@ namespace PantheonCalculator {
             entry = new Gtk.Entry ();
             entry.set_alignment (1);
             entry.set_text (settings.get_string ("entry-content"));
+
             entry.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
             entry.vexpand = true;
             entry.valign = Gtk.Align.CENTER;
@@ -142,6 +149,7 @@ namespace PantheonCalculator {
             button_mem_clr = new Button ("MC", _("Memory clear"));
             button_mem_clr.sensitive = false;
             button_mem_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_TOOLBAR);
+            memory = settings.get_string ("memory-content");
 
             var button_add = new Button (" + ", _("Add"));
             button_add.function = "+";
@@ -566,6 +574,7 @@ namespace PantheonCalculator {
 
             settings.set_boolean ("extended-shown", button_extended.active);
             settings.set_string ("entry-content", entry.text);
+            settings.set_string ("memory-content", memory);
         }
     }
 }
