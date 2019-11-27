@@ -20,35 +20,30 @@
 
 namespace PantheonCalculator {
     public class MainWindow : Gtk.ApplicationWindow {
-        private Settings            settings;
+        private Settings settings;
 
-        private Gtk.HeaderBar       headerbar;
-        private Gtk.Grid            main_grid;
-        private Gtk.Revealer        extended_revealer;
-        private Gtk.Entry           entry;
+        private Gtk.HeaderBar headerbar;
+        private Gtk.Grid main_grid;
+        private Gtk.Revealer extended_revealer;
+        private Gtk.Entry entry;
 
-        // widgets I need to access
-        private Gtk.Image           extended_img_1;
-        private Gtk.Image           extended_img_2;
-        private Gtk.Button          button_calc;
-        private Gtk.Button          button_history;
-        private Gtk.Button          button_ans;
-        private Gtk.Button          button_del;
-        private Gtk.Button          button_clr;
+        private Gtk.Image extended_img_1;
+        private Gtk.Image extended_img_2;
+        private Gtk.Button button_calc;
+        private Gtk.Button button_history;
+        private Gtk.Button button_ans;
+        private Gtk.Button button_del;
+        private Gtk.Button button_clr;
 
-        // =========== MEMORY Buttons ============
-        //substract/add the current value from the stored value.
-        private Gtk.Button          button_Mplus;
-        private Gtk.Button          button_Mminus;
-        //memory recall
-        private Gtk.Button          button_MR;
-        //memory clear
-        private Gtk.Button          button_MC;
-        private string              memory;
-        // ======================================
+        private Gtk.Button button_Mplus;
+        private Gtk.Button button_Mminus;
+        private Gtk.Button button_MR;
+        private Gtk.Button button_MC;
+        private string memory;
 
         private Gtk.ToggleButton button_extended;
         private HistoryDialog history_dialog;
+
         private Gtk.InfoBar infobar;
         private Gtk.Label infobar_label;
         private Gtk.Grid basic_grid;
@@ -181,41 +176,41 @@ namespace PantheonCalculator {
 
             basic_grid = new Gtk.Grid ();
             basic_grid.column_spacing = 6;
-            basic_grid.row_spacing = 7;
+            basic_grid.row_spacing = 6;
             basic_grid.valign = Gtk.Align.FILL;
             basic_grid.set_row_homogeneous (true);
 
             basic_grid.attach (entry, 0, 0, 4, 1);
 
-            basic_grid.attach (button_MC,    0, 1, 1, 1);
-            basic_grid.attach (button_MR,    1, 1, 1, 1);
-            basic_grid.attach (button_Mplus,    2, 1, 1, 1);
+            basic_grid.attach (button_MC, 0, 1, 1, 1);
+            basic_grid.attach (button_MR, 1, 1, 1, 1);
+            basic_grid.attach (button_Mplus, 2, 1, 1, 1);
             basic_grid.attach (button_Mminus, 3, 1, 1, 1);
 
-            basic_grid.attach (button_clr,     0, 2, 1, 1);
-            basic_grid.attach (button_del,    1, 2, 1, 1);
+            basic_grid.attach (button_clr, 0, 2, 1, 1);
+            basic_grid.attach (button_del, 1, 2, 1, 1);
             basic_grid.attach (button_percent, 2, 2, 1, 1);
-            basic_grid.attach (button_div,     3, 2, 1, 1);
+            basic_grid.attach (button_div, 3, 2, 1, 1);
 
-            basic_grid.attach (button_7,    0, 3, 1, 1);
-            basic_grid.attach (button_8,    1, 3, 1, 1);
-            basic_grid.attach (button_9,    2, 3, 1, 1);
+            basic_grid.attach (button_7, 0, 3, 1, 1);
+            basic_grid.attach (button_8, 1, 3, 1, 1);
+            basic_grid.attach (button_9, 2, 3, 1, 1);
             basic_grid.attach (button_mult, 3, 3, 1, 1);
 
-            basic_grid.attach (button_4,    0, 4, 1, 1);
-            basic_grid.attach (button_5,    1, 4, 1, 1);
-            basic_grid.attach (button_6,    2, 4, 1, 1);
-            basic_grid.attach (button_sub,  3, 4, 1, 1);
+            basic_grid.attach (button_4, 0, 4, 1, 1);
+            basic_grid.attach (button_5, 1, 4, 1, 1);
+            basic_grid.attach (button_6, 2, 4, 1, 1);
+            basic_grid.attach (button_sub, 3, 4, 1, 1);
 
-            basic_grid.attach (button_1,    0, 5, 1, 1);
-            basic_grid.attach (button_2,    1, 5, 1, 1);
-            basic_grid.attach (button_3,    2, 5, 1, 1);
-            basic_grid.attach (button_add,  3, 5, 1, 1);
+            basic_grid.attach (button_1, 0, 5, 1, 1);
+            basic_grid.attach (button_2, 1, 5, 1, 1);
+            basic_grid.attach (button_3, 2, 5, 1, 1);
+            basic_grid.attach (button_add, 3, 5, 1, 1);
 
-            basic_grid.attach (button_0,     0, 6, 1, 1);
+            basic_grid.attach (button_0, 0, 6, 1, 1);
             basic_grid.attach (button_point, 1, 6, 1, 1);
-            basic_grid.attach (button_ans,   2, 6, 1, 1);
-            basic_grid.attach (button_calc,  3, 6, 1, 1);
+            basic_grid.attach (button_ans, 2, 6, 1, 1);
+            basic_grid.attach (button_calc, 3, 6, 1, 1);
 
             var button_par_left = new Button ("(", _("Start Group"));
             var button_par_right = new Button (")", _("End Group"));
@@ -236,7 +231,6 @@ namespace PantheonCalculator {
             extended_grid.column_spacing = 6;
             extended_grid.row_spacing = 7;
             extended_grid.valign = Gtk.Align.END;
-
             extended_grid.attach (button_par_left, 0, 0, 1, 1);
             extended_grid.attach (button_par_right, 1, 0, 1, 1);
             extended_grid.attach (button_pow, 0, 1, 1, 1);
@@ -281,26 +275,9 @@ namespace PantheonCalculator {
 
             this.key_press_event.connect (key_pressed);
 
-            delete_event.connect ((event) => {
-                save_state ();
-                return false;
-            });
-
             entry.changed.connect (remove_error);
             entry.activate.connect (button_calc_clicked);
 
-            button_pi.clicked.connect (() => {regular_button_clicked (button_pi.function);});
-            button_e.clicked.connect (() => {regular_button_clicked (button_e.function);});
-            button_pow.clicked.connect (() => {regular_button_clicked (button_pow.function);});
-            button_par_left.clicked.connect (() => {regular_button_clicked (button_par_left.function);});
-            button_par_right.clicked.connect (() => {regular_button_clicked (button_par_right.function);});
-            button_sr.clicked.connect (() => {function_button_clicked (button_sr.function);});
-            button_sin.clicked.connect (() => {function_button_clicked (button_sin.function);});
-            button_sinh.clicked.connect (() => {function_button_clicked (button_sinh.function);});
-            button_cos.clicked.connect (() => {function_button_clicked (button_cos.function);});
-            button_cosh.clicked.connect (() => {function_button_clicked (button_cosh.function);});
-            button_tan.clicked.connect (() => {function_button_clicked (button_tan.function);});
-            button_tanh.clicked.connect (() => {function_button_clicked (button_tanh.function);});
             button_calc.clicked.connect (() => {button_calc_clicked ();});
             button_del.clicked.connect (() => {button_del_clicked ();});
             button_ans.clicked.connect (() => {button_ans_clicked ();});
@@ -324,6 +301,24 @@ namespace PantheonCalculator {
             button_MR.clicked.connect (() => {button_Memory_recall_clicked ();});
             button_Mplus.clicked.connect (() => {button_Memory_Add_clicked ();});
             button_Mminus.clicked.connect (() => {button_Memory_sub_clicked ();});
+
+            button_pi.clicked.connect (() => {regular_button_clicked (button_pi.function);});
+            button_e.clicked.connect (() => {regular_button_clicked (button_e.function);});
+            button_pow.clicked.connect (() => {regular_button_clicked (button_pow.function);});
+            button_par_left.clicked.connect (() => {regular_button_clicked (button_par_left.function);});
+            button_par_right.clicked.connect (() => {regular_button_clicked (button_par_right.function);});
+            button_sr.clicked.connect (() => {function_button_clicked (button_sr.function);});
+            button_sin.clicked.connect (() => {function_button_clicked (button_sin.function);});
+            button_sinh.clicked.connect (() => {function_button_clicked (button_sinh.function);});
+            button_cos.clicked.connect (() => {function_button_clicked (button_cos.function);});
+            button_cosh.clicked.connect (() => {function_button_clicked (button_cosh.function);});
+            button_tan.clicked.connect (() => {function_button_clicked (button_tan.function);});
+            button_tanh.clicked.connect (() => {function_button_clicked (button_tanh.function);});
+
+            delete_event.connect ((event) => {
+                save_state ();
+                return false;
+            });
         }
 
         public void undo () {
