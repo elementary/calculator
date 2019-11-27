@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-12 13:08+0200\n"
-"PO-Revision-Date: 2019-08-15 09:22+0000\n"
+"POT-Creation-Date: 2019-11-24 19:21+0000\n"
+"PO-Revision-Date: 2019-11-09 11:24+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/calculator/extra/"
 "ca/>\n"
@@ -39,9 +39,30 @@ msgstr ""
 "i alguns càlculs científics que inclouen funcions trigonomètriques, sinus, "
 "cosinus, i tangents."
 
-#: data/io.elementary.calculator.appdata.xml.in:48
-msgid "elementary LLC."
-msgstr "elementary LLC."
+#: data/io.elementary.calculator.appdata.xml.in:17
+msgid "Fix missing icon for Ukrainian"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:18
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Updated translations"
+msgstr "Traduccions actualitzades"
+
+#: data/io.elementary.calculator.appdata.xml.in:25
+msgid "Animate Infobar when hiding and showing"
+msgstr "Animació de la barra d'informació quan s'amaga i quan es mostra"
+
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Fix selection replace"
+msgstr "Correcció de la selecció del reemplaçament"
+
+#: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Improved decimal separator localization"
+msgstr "Localització del separador decimal millorada"
+
+#: data/io.elementary.calculator.appdata.xml.in:65
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6

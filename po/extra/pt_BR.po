@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-12 13:08+0200\n"
-"PO-Revision-Date: 2019-08-21 23:22+0000\n"
+"POT-Creation-Date: 2019-11-24 19:21+0000\n"
+"PO-Revision-Date: 2019-11-22 02:24+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "calculator/extra/pt_BR/>\n"
@@ -39,17 +39,35 @@ msgstr ""
 "alguns científicos, incluindo funções de trigonometria, seno, cosseno e "
 "tangente."
 
-#: data/io.elementary.calculator.appdata.xml.in:48
-msgid "elementary LLC."
-msgstr "elementary LLC."
+#: data/io.elementary.calculator.appdata.xml.in:17
+msgid "Fix missing icon for Ukrainian"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:18
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Updated translations"
+msgstr "Traduções atualizadas"
+
+#: data/io.elementary.calculator.appdata.xml.in:25
+msgid "Animate Infobar when hiding and showing"
+msgstr "Animar a barra de informação ao ocultar e exibir"
+
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Fix selection replace"
+msgstr "Corrigir seleção substituir"
+
+#: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Improved decimal separator localization"
+msgstr "Localização aprimorada do separador decimal"
+
+#: data/io.elementary.calculator.appdata.xml.in:65
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
-"Tradutores: termos de pesquisa para encontrar este aplicativo. NÃO traduza "
-"ou localize os pontos e vírgulas! A lista também DEVE terminar com um ponto "
-"e vírgula!"
+msgstr "Calculation;Mathematics;Arithmetic;Scientific;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
