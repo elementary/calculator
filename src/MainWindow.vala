@@ -35,10 +35,10 @@ namespace PantheonCalculator {
         private Gtk.Button button_del;
         private Gtk.Button button_clr;
 
-        private Gtk.Button button_Mplus;
-        private Gtk.Button button_Mminus;
-        private Gtk.Button button_MR;
-        private Gtk.Button button_MC;
+        private Gtk.Button button_mem_add;
+        private Gtk.Button button_mem_sub;
+        private Gtk.Button button_mem_recall;
+        private Gtk.Button button_mem_clr;
         private string memory;
 
         private Gtk.ToggleButton button_extended;
@@ -134,14 +134,14 @@ namespace PantheonCalculator {
             );
             button_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
-            button_Mplus = new Button ("M+", _("Add value to memory"));
-            button_Mminus = new Button ("M-", _("Substract value from memory"));
-            button_MR = new Button ("MR", _("Memory Recall"));
-            button_MR.sensitive = false;
-            button_MR.get_style_context ().add_class (Gtk.STYLE_CLASS_TOOLBAR);
-            button_MC = new Button ("MC", _("Memory clear"));
-            button_MC.sensitive = false;
-            button_MC.get_style_context ().add_class (Gtk.STYLE_CLASS_TOOLBAR);
+            button_mem_add = new Button ("M+", _("Add value to memory"));
+            button_mem_sub = new Button ("M-", _("Substract value from memory"));
+            button_mem_recall = new Button ("MR", _("Memory Recall"));
+            button_mem_recall.sensitive = false;
+            button_mem_recall.get_style_context ().add_class (Gtk.STYLE_CLASS_TOOLBAR);
+            button_mem_clr = new Button ("MC", _("Memory clear"));
+            button_mem_clr.sensitive = false;
+            button_mem_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_TOOLBAR);
 
             var button_add = new Button (" + ", _("Add"));
             button_add.function = "+";
@@ -182,10 +182,10 @@ namespace PantheonCalculator {
 
             basic_grid.attach (entry, 0, 0, 4, 1);
 
-            basic_grid.attach (button_MC, 0, 1, 1, 1);
-            basic_grid.attach (button_MR, 1, 1, 1, 1);
-            basic_grid.attach (button_Mplus, 2, 1, 1, 1);
-            basic_grid.attach (button_Mminus, 3, 1, 1, 1);
+            basic_grid.attach (button_mem_clr, 0, 1, 1, 1);
+            basic_grid.attach (button_mem_recall, 1, 1, 1, 1);
+            basic_grid.attach (button_mem_add, 2, 1, 1, 1);
+            basic_grid.attach (button_mem_sub, 3, 1, 1, 1);
 
             basic_grid.attach (button_clr, 0, 2, 1, 1);
             basic_grid.attach (button_del, 1, 2, 1, 1);
@@ -297,10 +297,10 @@ namespace PantheonCalculator {
             button_9.clicked.connect (() => {regular_button_clicked (button_9.function);});
             button_point.clicked.connect (() => {regular_button_clicked (button_point.function);});
             button_percent.clicked.connect (() => {regular_button_clicked (button_percent.function);});
-            button_MC.clicked.connect (() => {button_Memory_clr_clicked ();});
-            button_MR.clicked.connect (() => {button_Memory_recall_clicked ();});
-            button_Mplus.clicked.connect (() => {button_Memory_Add_clicked ();});
-            button_Mminus.clicked.connect (() => {button_Memory_sub_clicked ();});
+            button_mem_clr.clicked.connect (() => {button_mem_clr_clicked ();});
+            button_mem_recall.clicked.connect (() => {button_mem_recall_clicked ();});
+            button_mem_add.clicked.connect (() => {button_mem_add_clicked ();});
+            button_mem_sub.clicked.connect (() => {button_mem_sub_clicked ();});
 
             button_pi.clicked.connect (() => {regular_button_clicked (button_pi.function);});
             button_e.clicked.connect (() => {regular_button_clicked (button_e.function);});
@@ -427,18 +427,18 @@ namespace PantheonCalculator {
             entry.set_position (position);
         }
 
-        private void button_Memory_clr_clicked () {
+        private void button_mem_clr_clicked () {
             memory = null;
 
-            button_MR.sensitive = false;
-            button_MC.sensitive = false;
+            button_mem_recall.sensitive = false;
+            button_mem_clr.sensitive = false;
         }
 
-        private void button_Memory_recall_clicked () {
-            entry.set_text(memory);
+        private void button_mem_recall_clicked () {
+            entry.set_text (memory);
         }
 
-        private void memory_function(string functionality) {
+        private void memory_function (string functionality) {
             var stored_mem = memory;
             if (memory == null) {
                 stored_mem = "0";
@@ -457,21 +457,21 @@ namespace PantheonCalculator {
             memory = result;
         }
 
-        private void button_Memory_Add_clicked () {
+        private void button_mem_add_clicked () {
             if (entry.get_text () != "") {
-                memory_function("+");
+                memory_function ("+");
 
-                button_MR.sensitive = true;
-                button_MC.sensitive = true;
+                button_mem_recall.sensitive = true;
+                button_mem_clr.sensitive = true;
             }
         }
 
-        private void button_Memory_sub_clicked () {
+        private void button_mem_sub_clicked () {
             if (entry.get_text () != "") {
-                memory_function("-");
+                memory_function ("-");
 
-                button_MR.sensitive = true;
-                button_MC.sensitive = true;
+                button_mem_recall.sensitive = true;
+                button_mem_clr.sensitive = true;
             }
         }
 
