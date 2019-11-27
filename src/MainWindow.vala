@@ -180,8 +180,6 @@ namespace PantheonCalculator {
             basic_grid.valign = Gtk.Align.FILL;
             basic_grid.set_row_homogeneous (true);
 
-            basic_grid.attach (entry, 0, 0, 4, 1);
-
             basic_grid.attach (button_mem_clr, 0, 1, 1, 1);
             basic_grid.attach (button_mem_recall, 1, 1, 1, 1);
             basic_grid.attach (button_mem_add, 2, 1, 1, 1);
@@ -251,8 +249,11 @@ namespace PantheonCalculator {
 
             var main_grid = new Gtk.Grid ();
             main_grid.margin = 6;
-            main_grid.add (basic_grid);
-            main_grid.add (extended_revealer);
+            main_grid.row_spacing = 6;
+            main_grid.orientation = Gtk.Orientation.HORIZONTAL;
+            main_grid.attach (entry, 0, 0, 2, 1);
+            main_grid.attach (basic_grid, 0, 1, 1, 1);
+            main_grid.attach (extended_revealer, 1, 1, 1, 1);
 
             infobar_label = new Gtk.Label ("");
 
