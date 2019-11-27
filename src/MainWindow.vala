@@ -307,7 +307,7 @@ namespace PantheonCalculator {
                 new_position -= selection_length;
             }
             entry.insert_at_cursor (label);
-            new_position += label.char_count();
+            new_position += label.char_count ();
             entry.grab_focus ();
             entry.set_position (new_position);
         }
@@ -321,7 +321,7 @@ namespace PantheonCalculator {
                 string function_call = label + "(" + selected_text + ")";
                 entry.delete_text (selection_start, selection_end);
                 entry.insert_text (function_call, -1, ref selection_start);
-                new_position += function_call.char_count();
+                new_position += function_call.char_count ();
                 entry.grab_focus ();
                 entry.set_position (new_position);
             } else {
