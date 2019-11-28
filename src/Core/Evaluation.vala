@@ -333,5 +333,84 @@ namespace PantheonCalculator.Core {
             }
             return builder.str;
         }
+
+        public bool real_to_fraction (string real, out string whole, out string numerator, out string denominator, out bool approx) {
+            approx = false;
+            whole = "";
+            numerator = "";
+            denominator = "";
+            string fraction = "";
+            int leading_zeroes = 0;
+
+            if (!real.contains (".")) {
+                whole = real;
+                return true;
+
+            }
+
+            string[]? parts = (" " + real + " ").split (".");
+
+            if (parts == null || parts.length < 1) {
+                whole = real;
+                return true;
+            }
+
+            whole = parts[0].strip ();
+            fraction = parts[1].strip ();
+            var utf = fraction.to_utf8 ();
+            while (utf[leading_zeroes] == '0') {
+                leading_zeroes++;
+            }
+
+            if (leading_zeroes > 0) {
+                fraction = fraction.slice (leading_zeroes, fraction.length);
+            }
+
+            int places = fraction.length;
+
+            if (places == 0) {
+                return true;
+            }
+
+            int den = int.parse ("1"+ string.nfill (places, '0'));
+            int factor = int.parse ("1"+ string.nfill (leading_zeroes, '0'));
+            int num = int.parse (fraction);
+            int limit = int.parse ("1"+ string.nfill ((places - 3).clamp (0, places), '0'));
+
+            int gcd = find_gcd (num, den, 0, limit, out approx);
+
+            numerator = ((int)(num / gcd)).to_string ();
+            denominator = (((int)(den / gcd)) * factor).to_string ();
+
+            return true;
+        }
+
+        private int find_gcd (int a, int b, int level, int limit, out bool approx) {
+            approx = false;
+            /* Insure against infinite loop */
+            if (level > 100) {
+                approx = true;
+                return 1;
+            }
+
+            if (a == 0 || b == 1) {
+               return b;
+            }
+
+            if (b == 0 || a == 1) {
+               return a;
+            }
+
+            if ((a - b).abs () <= limit) {
+                approx = (a - b).abs () > 2;
+                return a > b ? b : a;
+            }
+
+            if (a > b) {
+                return find_gcd (a - b, b, level + 1, limit, out approx);
+            }
+
+            return find_gcd (a, b - a, level + 1, limit, out approx);
+        }
     }
 }

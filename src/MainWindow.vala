@@ -347,6 +347,20 @@ namespace PantheonCalculator {
                         position = output.length;
                         remove_error ();
                     }
+
+            string whole, numerator, denominator;
+            bool approx = false;
+
+            if (eval.real_to_fraction (output, out whole, out numerator, out denominator, out approx)) {
+                //TODO Use proper markup
+                var tooltip = (approx ? "Approx " : "") +
+                              (whole != "0" ?  whole + "+" : "") +
+                              (numerator != "" ? numerator + "/" + denominator : "");
+
+                entry.set_tooltip_text (tooltip);
+            } else {
+                warning ("cONVERSION FAILED");
+            }
                 } catch (Core.OUT_ERROR e) {
                     infobar_label.label = e.message;
                     infobar.revealed = true;
