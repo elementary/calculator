@@ -360,6 +360,7 @@ namespace PantheonCalculator.Core {
             whole = parts[0].strip ();
             fraction = parts[1].strip ();
             var utf = fraction.to_utf8 ();
+
             while (utf[leading_zeroes] == '0') {
                 leading_zeroes++;
             }
@@ -379,19 +380,33 @@ namespace PantheonCalculator.Core {
             int num = int.parse (fraction);
             int limit = int.parse ("1" + string.nfill ((places - 3).clamp (0, places), '0'));
 
-            int gcd = find_gcd (num, den, 0, limit, out approx);
+            int gcd = find_gcd (num, den, 0, limit);
 
-            numerator = ((int)(num / gcd)).to_string ();
-            denominator = (((int)(den / gcd)) * factor).to_string ();
+            int inum = ((int)(num / gcd));
+            int iden = ((int)(den / gcd));
 
-            return true;
+            double ratio = (double)inum / (double)iden;
+            double original = double.parse ("." + parts[1]);
+            double residual = original - ratio;
+            double percent = (residual / original * 100).abs ();
+
+            if (percent < 10 ) {
+                numerator = inum.to_string ();
+                denominator = (iden * factor).to_string ();
+                approx = percent > 0.01; /* How close considered not approximate? */
+            } else {
+                numerator = num.to_string ();
+                denominator = (den * factor).to_string ();
+                approx = false;
+            }
+
+
+            return percent < 10;
         }
 
-        private int find_gcd (int a, int b, int level, int limit, out bool approx) {
-            approx = false;
+        private int find_gcd (int a, int b, int level, int limit) {
             /* Insure against infinite loop */
             if (level > 100) {
-                approx = true;
                 return 1;
             }
 
@@ -404,15 +419,14 @@ namespace PantheonCalculator.Core {
             }
 
             if ((a - b).abs () <= limit) {
-                approx = (a - b).abs () > 2;
                 return a > b ? b : a;
             }
 
             if (a > b) {
-                return find_gcd (a - b, b, level + 1, limit, out approx);
+                return find_gcd (a - b, b, level + 1, limit);
             }
 
-            return find_gcd (a, b - a, level + 1, limit, out approx);
+            return find_gcd (a, b - a, level + 1, limit);
         }
     }
 }

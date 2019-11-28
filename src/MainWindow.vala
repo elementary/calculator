@@ -348,33 +348,32 @@ namespace PantheonCalculator {
                         remove_error ();
                     }
 
-            string whole, numerator, denominator;
-            bool approx = false;
+                    string whole, numerator, denominator;
+                    bool approx = false;
 
-            if (eval.real_to_fraction (output, out whole, out numerator, out denominator, out approx)) {
-                //TODO Use proper markup
-                bool whole_zero = (int.parse (whole) == 0);
-                bool negative = (double.parse (output) < 0);
-                bool no_fraction = (numerator == "");
+                    eval.real_to_fraction (output, out whole, out numerator, out denominator, out approx);
 
-                string approx_s = """<i>approx  </i> """;
-                string sign_s = """<span size="xx-large"> - """ + "</span>";
-                string whole_s = """<span size="xx-large">""" + whole + " </span>";
-                string numerator_s = """<span font_weight="500" size="small" rise="6144">""" + numerator + " </span>";
-                string divide_s = """<span size = "x-large" rise="1024">/""" + "</span>";
-                string denominator_s = """<span font_weight="500" size="small"> """ + denominator + " </span>";
+                    /* Should we show unreduced fraction ? */
+                    bool whole_zero = (int.parse (whole) == 0);
+                    bool negative = (double.parse (output) < 0);
+                    bool no_fraction = (numerator == "");
 
-                var markup = (approx ? approx_s : "") +
-                             ((whole_zero && negative) ? sign_s : "") +
-                             (whole_zero ? "" : whole_s) +
-                             (no_fraction ? "" : numerator_s) +
-                             (no_fraction ? "" : divide_s) +
-                             (no_fraction ? "" : denominator_s);
+                    var approx_s = """<i>approx  </i> """;
+                    var sign_s = """<span size="xx-large"> - """ + "</span>";
+                    var whole_s = """<span size="xx-large">""" + whole + " </span>";
+                    var numerator_s = """<span font_weight="500" size="small" rise="6144">""" + numerator + " </span>";
+                    var divide_s = """<span size = "x-large" rise="1024">/""" + "</span>";
+                    var denominator_s = """<span font_weight="500" size="small"> """ + denominator + " </span>";
 
-                entry.set_tooltip_markup (markup);
-            } else {
-                warning ("cONVERSION FAILED");
-            }
+                    var markup = (approx ? approx_s : "") +
+                                 ((whole_zero && negative) ? sign_s : "") +
+                                 (whole_zero ? "" : whole_s) +
+                                 (no_fraction ? "" : numerator_s) +
+                                 (no_fraction ? "" : divide_s) +
+                                 (no_fraction ? "" : denominator_s);
+
+                    entry.set_tooltip_markup (markup);
+
                 } catch (Core.OUT_ERROR e) {
                     infobar_label.label = e.message;
                     infobar.revealed = true;
