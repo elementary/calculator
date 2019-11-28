@@ -357,13 +357,14 @@ namespace PantheonCalculator {
                 string approx_s = """<i>approx</i> """;
                 string whole_s = """<span size="xx-large">""" + whole + end_span;
                 string numerator_s = """<span font_weight="500" size="small" rise="6144">""" + numerator + end_span;
+                string divide_s = """<span size = "x-large" rise="1024">/""" + end_span;
                 string denominator_s = """<span font_weight="500" size="small">""" + denominator + end_span;
 
-                var markup =  (approx ? approx_s : "") +
-                              (whole != "0" ? whole_s : "") +
-                              (numerator != "" ? numerator_s : "") +
-                              """<span size = "x-large" rise="1024">/""" + end_span +
-                              (numerator != "" ? denominator_s : "");
+                var markup = (approx ? approx_s : "") +
+                             (whole != "0" ? whole_s : "") +
+                             (numerator != "" ? numerator_s : "") +
+                             (numerator != "" ? divide_s : "" ) +
+                             (numerator != "" ? denominator_s : "");
 
                 entry.set_tooltip_markup (markup);
             } else {
