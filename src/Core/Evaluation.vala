@@ -334,7 +334,9 @@ namespace PantheonCalculator.Core {
             return builder.str;
         }
 
-        public bool real_to_fraction (string real, out string whole, out string numerator, out string denominator, out bool approx) {
+        public bool real_to_fraction (string real, out string whole, out string numerator,
+                                      out string denominator, out bool approx) {
+
             approx = false;
             whole = "";
             numerator = "";
@@ -372,10 +374,10 @@ namespace PantheonCalculator.Core {
                 return true;
             }
 
-            int den = int.parse ("1"+ string.nfill (places, '0'));
-            int factor = int.parse ("1"+ string.nfill (leading_zeroes, '0'));
+            int den = int.parse ("1" + string.nfill (places, '0'));
+            int factor = int.parse ("1" + string.nfill (leading_zeroes, '0'));
             int num = int.parse (fraction);
-            int limit = int.parse ("1"+ string.nfill ((places - 3).clamp (0, places), '0'));
+            int limit = int.parse ("1" + string.nfill ((places - 3).clamp (0, places), '0'));
 
             int gcd = find_gcd (num, den, 0, limit, out approx);
 

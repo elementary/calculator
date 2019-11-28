@@ -354,7 +354,7 @@ namespace PantheonCalculator {
             if (eval.real_to_fraction (output, out whole, out numerator, out denominator, out approx)) {
                 //TODO Use proper markup
                 var tooltip = (approx ? "Approx " : "") +
-                              (whole != "0" ?  whole + "+" : "") +
+                              (whole != "0" ? whole + "+" : "") +
                               (numerator != "" ? numerator + "/" + denominator : "");
 
                 entry.set_tooltip_text (tooltip);
