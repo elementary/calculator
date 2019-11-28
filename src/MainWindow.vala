@@ -353,15 +353,19 @@ namespace PantheonCalculator {
 
             if (eval.real_to_fraction (output, out whole, out numerator, out denominator, out approx)) {
                 //TODO Use proper markup
+                bool whole_zero = (int.parse (whole) == 0);
+                bool negative = (double.parse (output) < 0);
                 var end_span = """</span>""";
-                string approx_s = """<i>approx</i> """;
+                string approx_s = """<i>approx  </i> """;
+                string sign_s = """<span size="xx-large"> - """ + end_span;
                 string whole_s = """<span size="xx-large">""" + whole + end_span;
                 string numerator_s = """<span font_weight="500" size="small" rise="6144">""" + numerator + end_span;
                 string divide_s = """<span size = "x-large" rise="1024">/""" + end_span;
                 string denominator_s = """<span font_weight="500" size="small">""" + denominator + end_span;
 
                 var markup = (approx ? approx_s : "") +
-                             (whole != "0" ? whole_s : "") +
+                             ((whole_zero && negative) ? sign_s : "") +
+                             (!whole_zero ? whole_s : "") +
                              (numerator != "" ? numerator_s : "") +
                              (numerator != "" ? divide_s : "" ) +
                              (numerator != "" ? denominator_s : "");
