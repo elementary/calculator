@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-24 19:21+0000\n"
-"PO-Revision-Date: 2019-11-09 11:24+0000\n"
+"PO-Revision-Date: 2019-11-29 02:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/calculator/extra/"
 "mr/>\n"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgstr "युक्रेनियनसाठी हरवलेला आयकॉन निश्चित करा"
 
 #: data/io.elementary.calculator.appdata.xml.in:18
 #: data/io.elementary.calculator.appdata.xml.in:28
