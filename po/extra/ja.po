@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-24 19:21+0000\n"
+"POT-Creation-Date: 2019-12-10 14:33+0000\n"
 "PO-Revision-Date: 2019-11-09 11:24+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
@@ -39,27 +39,31 @@ msgstr ""
 "ジェントといった三角関数を含むいくつかの科学的な計算をサポートします。"
 
 #: data/io.elementary.calculator.appdata.xml.in:17
+msgid "Fix inserting multi-byte characters"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:24
 msgid "Fix missing icon for Ukrainian"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:18
-#: data/io.elementary.calculator.appdata.xml.in:28
+#: data/io.elementary.calculator.appdata.xml.in:25
+#: data/io.elementary.calculator.appdata.xml.in:35
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/io.elementary.calculator.appdata.xml.in:25
+#: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Animate Infobar when hiding and showing"
 msgstr "情報バーの表示／非表示の際にアニメーションを追加"
 
-#: data/io.elementary.calculator.appdata.xml.in:26
+#: data/io.elementary.calculator.appdata.xml.in:33
 msgid "Fix selection replace"
 msgstr "選択範囲の置き換えの際の問題を修正"
 
-#: data/io.elementary.calculator.appdata.xml.in:27
+#: data/io.elementary.calculator.appdata.xml.in:34
 msgid "Improved decimal separator localization"
 msgstr "小数点のローカライゼーションの改善"
 
-#: data/io.elementary.calculator.appdata.xml.in:65
+#: data/io.elementary.calculator.appdata.xml.in:72
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
