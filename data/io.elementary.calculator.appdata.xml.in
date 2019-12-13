@@ -11,7 +11,7 @@
     <p>A simple calculator for everyday use. It supports basic and some scientific calculations including trigonometry functions, sin, cos, and tan.</p>
   </description>
   <releases>
-    <release version="Unreleased" date="Future" urgency="medium">
+    <release version="1.5.5" date="2019-12-13" urgency="medium">
       <description>
         <ul>
           <li>Fix inserting multi-byte characters</li>
