@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-10 14:33+0000\n"
-"PO-Revision-Date: 2019-11-09 11:24+0000\n"
+"PO-Revision-Date: 2019-12-16 21:07+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/calculator/"
 "extra/eo/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
 #: data/io.elementary.calculator.desktop.in:3
@@ -40,11 +40,11 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "Fix inserting multi-byte characters"
-msgstr ""
+msgstr "Ripari eraron pri enigo de plurbajta litero"
 
 #: data/io.elementary.calculator.appdata.xml.in:24
 msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgstr "Ripari mankantan bildeton de ukrainia"
 
 #: data/io.elementary.calculator.appdata.xml.in:25
 #: data/io.elementary.calculator.appdata.xml.in:35
