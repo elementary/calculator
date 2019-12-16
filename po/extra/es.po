@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-10 14:33+0000\n"
-"PO-Revision-Date: 2019-11-29 02:25+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"PO-Revision-Date: 2019-12-16 21:07+0000\n"
+"Last-Translator: Rafael Bautista Martínez <iuninefrendor@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/calculator/extra/"
 "es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-10 05:38+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -41,7 +41,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "Fix inserting multi-byte characters"
-msgstr ""
+msgstr "Se corrigió la inserción de caracteres de varios bytes"
 
 #: data/io.elementary.calculator.appdata.xml.in:24
 msgid "Fix missing icon for Ukrainian"
