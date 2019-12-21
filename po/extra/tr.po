@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-10 14:33+0000\n"
-"PO-Revision-Date: 2019-12-19 15:07+0000\n"
+"PO-Revision-Date: 2019-12-22 07:13+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/calculator/extra/"
 "tr/>\n"
@@ -40,11 +40,11 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "Fix inserting multi-byte characters"
-msgstr ""
+msgstr "Çok baytlı karakterler ekleme düzeltildi"
 
 #: data/io.elementary.calculator.appdata.xml.in:24
 msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgstr "Ukraynaca dilinde eksik olan simge düzeltildi"
 
 #: data/io.elementary.calculator.appdata.xml.in:25
 #: data/io.elementary.calculator.appdata.xml.in:35
@@ -53,15 +53,15 @@ msgstr "Çeviriler güncellendi"
 
 #: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Animate Infobar when hiding and showing"
-msgstr ""
+msgstr "Gizlenirken ve gösterilirken bilgi çubuğuna animasyon eklendi"
 
 #: data/io.elementary.calculator.appdata.xml.in:33
 msgid "Fix selection replace"
-msgstr ""
+msgstr "Seçimin değiştirilmesi düzeltildi"
 
 #: data/io.elementary.calculator.appdata.xml.in:34
 msgid "Improved decimal separator localization"
-msgstr ""
+msgstr "Ondalık ayırıcı yerelleştirmesi iyileştirildi"
 
 #: data/io.elementary.calculator.appdata.xml.in:72
 msgid "elementary, Inc."
