@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-10 14:33+0000\n"
-"PO-Revision-Date: 2019-12-25 18:22+0000\n"
+"PO-Revision-Date: 2019-12-26 18:04+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/calculator/extra/"
 "de/>\n"
@@ -41,28 +41,28 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "Fix inserting multi-byte characters"
-msgstr ""
+msgstr "Korrektur beim Einfügen von Multi-Byte-Zeichen"
 
 #: data/io.elementary.calculator.appdata.xml.in:24
 msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgstr "Fehlendes Icon für Ukrainisch korrigiert"
 
 #: data/io.elementary.calculator.appdata.xml.in:25
 #: data/io.elementary.calculator.appdata.xml.in:35
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualisierte Übersetzungen"
 
 #: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Animate Infobar when hiding and showing"
-msgstr ""
+msgstr "Animierte Informationsleiste beim Verstecken und Wiederherstellen"
 
 #: data/io.elementary.calculator.appdata.xml.in:33
 msgid "Fix selection replace"
-msgstr ""
+msgstr "Korrektur von Markierung ersetzen"
 
 #: data/io.elementary.calculator.appdata.xml.in:34
 msgid "Improved decimal separator localization"
-msgstr ""
+msgstr "verbesserte Lokalisierung für Dezimaltrenner"
 
 #: data/io.elementary.calculator.appdata.xml.in:72
 msgid "elementary, Inc."
@@ -71,7 +71,7 @@ msgstr "elementary, Inc."
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr "Berechnung;Mathematik;Rechnen;Arithmetik;Wissenschaftlich;"
+msgstr "Rechner;Taschenrechner;Mathematik;Arithmetik;Wissenschaftlich;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
