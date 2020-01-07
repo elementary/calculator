@@ -149,7 +149,8 @@ namespace PantheonCalculator {
             button_mem_clr = new Button ("MC", _("Memory clear"));
             button_mem_clr.sensitive = false;
             button_mem_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_TOOLBAR);
-            memory = settings.get_string ("memory-content");
+            var saved_memory = settings.get_string ("memory-content");
+            memory = saved_memory == "" ? null : saved_memory;
 
             var button_add = new Button (" + ", _("Add"));
             button_add.function = "+";
@@ -306,10 +307,10 @@ namespace PantheonCalculator {
             button_9.clicked.connect (() => {regular_button_clicked (button_9.function);});
             button_point.clicked.connect (() => {regular_button_clicked (button_point.function);});
             button_percent.clicked.connect (() => {regular_button_clicked (button_percent.function);});
-            button_mem_clr.clicked.connect (() => {button_mem_clr_clicked ();});
-            button_mem_recall.clicked.connect (() => {button_mem_recall_clicked ();});
-            button_mem_add.clicked.connect (() => {button_mem_add_clicked ();});
-            button_mem_sub.clicked.connect (() => {button_mem_sub_clicked ();});
+            button_mem_clr.clicked.connect (button_mem_clr_clicked);
+            button_mem_recall.clicked.connect (button_mem_recall_clicked);
+            button_mem_add.clicked.connect (button_mem_add_clicked);
+            button_mem_sub.clicked.connect (button_mem_sub_clicked);
 
             button_pi.clicked.connect (() => {regular_button_clicked (button_pi.function);});
             button_e.clicked.connect (() => {regular_button_clicked (button_e.function);});
@@ -438,9 +439,6 @@ namespace PantheonCalculator {
 
         private void button_mem_clr_clicked () {
             memory = null;
-
-            button_mem_recall.sensitive = false;
-            button_mem_clr.sensitive = false;
         }
 
         private void button_mem_recall_clicked () {
@@ -452,6 +450,7 @@ namespace PantheonCalculator {
             if (memory == null) {
                 stored_mem = "0";
             }
+
             var result = stored_mem + functionality + entry.get_text ();
             var eval = new Core.Evaluation ();
             try {
@@ -469,18 +468,12 @@ namespace PantheonCalculator {
         private void button_mem_add_clicked () {
             if (entry.get_text () != "") {
                 memory_function ("+");
-
-                button_mem_recall.sensitive = true;
-                button_mem_clr.sensitive = true;
             }
         }
 
         private void button_mem_sub_clicked () {
             if (entry.get_text () != "") {
                 memory_function ("-");
-
-                button_mem_recall.sensitive = true;
-                button_mem_clr.sensitive = true;
             }
         }
 
@@ -574,7 +567,7 @@ namespace PantheonCalculator {
 
             settings.set_boolean ("extended-shown", button_extended.active);
             settings.set_string ("entry-content", entry.text);
-            settings.set_string ("memory-content", memory);
+            settings.set_string ("memory-content", memory ?? "");
         }
     }
 }
