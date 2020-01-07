@@ -11,10 +11,19 @@
     <p>A simple calculator for everyday use. It supports basic and some scientific calculations including trigonometry functions, sin, cos, and tan.</p>
   </description>
   <releases>
-    <release version="1.5.5" date="2019-12-13" urgency="medium">
+    <release version="1.6.0" date="2020-01-07" urgency="medium">
       <description>
+        <p>New features:</p>
+        <ul>
+          <li>Memory function added</li>
+        </ul>
+        <p>Other updates:</p>
         <ul>
           <li>Fix inserting multi-byte characters</li>
+          <li>Translation updates</li>
+        </ul>
+        <ul>
+          <li></li>
         </ul>
       </description>
     </release>
