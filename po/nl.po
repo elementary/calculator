@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-10 14:33+0000\n"
-"PO-Revision-Date: 2019-12-25 08:00+0000\n"
+"PO-Revision-Date: 2020-01-18 07:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/"
 "calculator/nl/>\n"
@@ -138,7 +138,7 @@ msgstr "'%s' is ongeldig."
 
 #: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
-msgstr "Verkeerd geplaatste haakjes."
+msgstr "niet-overeenkomende haakjes."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:167
