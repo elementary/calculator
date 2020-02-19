@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-10 14:33+0000\n"
-"PO-Revision-Date: 2020-02-19 17:08+0000\n"
+"PO-Revision-Date: 2020-02-20 17:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/calculator/"
 "extra/szl/>\n"
@@ -22,48 +22,50 @@ msgstr "Kalkulatōr"
 #: data/io.elementary.calculator.appdata.xml.in:9
 #: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
-msgstr ""
+msgstr "Rozwiōnzuj proste rōwnania"
 
 #: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
+"Ajnfachowy kalkulatōr do dziynnego używanio. Spiyro podstawowe i pora "
+"naukowych funkcyji społym ze trygōnōmetrycznymi, sin, cos i tan."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "Fix inserting multi-byte characters"
-msgstr ""
+msgstr "Spraw wrażanie znakōw wielobajtowych"
 
 #: data/io.elementary.calculator.appdata.xml.in:24
 msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgstr "Spraw brakujōnco ikōna przi ukrajińskim"
 
 #: data/io.elementary.calculator.appdata.xml.in:25
 #: data/io.elementary.calculator.appdata.xml.in:35
 msgid "Updated translations"
-msgstr ""
+msgstr "Zaktualizowane przekłady"
 
 #: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Animate Infobar when hiding and showing"
-msgstr ""
+msgstr "Animuj posek informacyje przi pokazowaniu i kryciu"
 
 #: data/io.elementary.calculator.appdata.xml.in:33
 msgid "Fix selection replace"
-msgstr ""
+msgstr "Spraw umiana zaznaczynio"
 
 #: data/io.elementary.calculator.appdata.xml.in:34
 msgid "Improved decimal separator localization"
-msgstr ""
+msgstr "Ulepszōno lokalizacyjo separatora decymalnego"
 
 #: data/io.elementary.calculator.appdata.xml.in:72
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "rachowania;rachowanie;arytmetyczne;naukowe;financowe;liczynie;numer;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
-msgstr ""
+msgstr "accessories-calculator"
