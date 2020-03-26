@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-24 19:21+0000\n"
-"PO-Revision-Date: 2019-11-09 11:24+0000\n"
+"POT-Creation-Date: 2019-12-10 14:33+0000\n"
+"PO-Revision-Date: 2019-12-13 14:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
 "extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -39,27 +39,31 @@ msgstr ""
 "ジェントといった三角関数を含むいくつかの科学的な計算をサポートします。"
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgid "Fix inserting multi-byte characters"
+msgstr "マルチバイト文字を挿入する際の不具合を修正"
 
-#: data/io.elementary.calculator.appdata.xml.in:18
-#: data/io.elementary.calculator.appdata.xml.in:28
+#: data/io.elementary.calculator.appdata.xml.in:24
+msgid "Fix missing icon for Ukrainian"
+msgstr "ウクライナ語においてアイコンが表示されない問題を修正"
+
+#: data/io.elementary.calculator.appdata.xml.in:25
+#: data/io.elementary.calculator.appdata.xml.in:35
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/io.elementary.calculator.appdata.xml.in:25
+#: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Animate Infobar when hiding and showing"
 msgstr "情報バーの表示／非表示の際にアニメーションを追加"
 
-#: data/io.elementary.calculator.appdata.xml.in:26
+#: data/io.elementary.calculator.appdata.xml.in:33
 msgid "Fix selection replace"
 msgstr "選択範囲の置き換えの際の問題を修正"
 
-#: data/io.elementary.calculator.appdata.xml.in:27
+#: data/io.elementary.calculator.appdata.xml.in:34
 msgid "Improved decimal separator localization"
 msgstr "小数点のローカライゼーションの改善"
 
-#: data/io.elementary.calculator.appdata.xml.in:65
+#: data/io.elementary.calculator.appdata.xml.in:72
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

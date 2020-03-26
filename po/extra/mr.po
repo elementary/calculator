@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-24 19:21+0000\n"
-"PO-Revision-Date: 2019-11-09 11:24+0000\n"
+"POT-Creation-Date: 2019-12-10 14:33+0000\n"
+"PO-Revision-Date: 2019-12-16 21:07+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/calculator/extra/"
 "mr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
 #: data/io.elementary.calculator.desktop.in:3
@@ -38,27 +38,31 @@ msgstr ""
 "त्रिकोणमिती functions ,sin cos आणि tan वगैरे करण्यासाठी उपयुक्त."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgid "Fix inserting multi-byte characters"
+msgstr "मल्टी-बाइट वर्ण समाविष्ट करणे निश्चित करा"
 
-#: data/io.elementary.calculator.appdata.xml.in:18
-#: data/io.elementary.calculator.appdata.xml.in:28
+#: data/io.elementary.calculator.appdata.xml.in:24
+msgid "Fix missing icon for Ukrainian"
+msgstr "युक्रेनियनसाठी हरवलेला आयकॉन निश्चित करा"
+
+#: data/io.elementary.calculator.appdata.xml.in:25
+#: data/io.elementary.calculator.appdata.xml.in:35
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/io.elementary.calculator.appdata.xml.in:25
+#: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Animate Infobar when hiding and showing"
 msgstr "लपवित असताना आणि दर्शवित असताना इन्फोबार एनिमेट करा"
 
-#: data/io.elementary.calculator.appdata.xml.in:26
+#: data/io.elementary.calculator.appdata.xml.in:33
 msgid "Fix selection replace"
 msgstr "निवड पुनर्स्थित करणे दुरुस्त करा"
 
-#: data/io.elementary.calculator.appdata.xml.in:27
+#: data/io.elementary.calculator.appdata.xml.in:34
 msgid "Improved decimal separator localization"
 msgstr "सुधारित दशांश विभाजक स्थानिकीकरण"
 
-#: data/io.elementary.calculator.appdata.xml.in:65
+#: data/io.elementary.calculator.appdata.xml.in:72
 msgid "elementary, Inc."
 msgstr "एलिमेंटरी, Inc."
 
