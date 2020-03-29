@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-12-10 14:33+0000\n"
-"PO-Revision-Date: 2019-12-19 15:07+0000\n"
+"PO-Revision-Date: 2020-03-30 18:09+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/calculator/"
 "extra/pt/>\n"
@@ -45,7 +45,7 @@ msgstr "Correção da inserção de caracteres multi-byte"
 
 #: data/io.elementary.calculator.appdata.xml.in:24
 msgid "Fix missing icon for Ukrainian"
-msgstr "Corrige a falta do ícone para o ucraniano"
+msgstr "Corrige a falta do ícone para Ucraniano"
 
 #: data/io.elementary.calculator.appdata.xml.in:25
 #: data/io.elementary.calculator.appdata.xml.in:35
