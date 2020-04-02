@@ -13,8 +13,10 @@
   <releases>
     <release version="1.5.5" date="2019-12-13" urgency="medium">
       <description>
+        <p>Minor updates:</p>
         <ul>
           <li>Fix inserting multi-byte characters</li>
+          <li>Updated translations</li>
         </ul>
       </description>
     </release>
