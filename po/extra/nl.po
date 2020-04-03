@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-10 14:33+0000\n"
+"POT-Creation-Date: 2020-04-03 20:46+0000\n"
 "PO-Revision-Date: 2019-12-25 08:00+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/extra/"
@@ -39,32 +39,37 @@ msgstr ""
 "basisberekeningen en sommige wetenschappelijke berekening, waaronder "
 "trigonometrische functies zoals sin, cos en tan."
 
-#: data/io.elementary.calculator.appdata.xml.in:17
+#: data/io.elementary.calculator.appdata.xml.in:16
+msgid "Minor updates:"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:18
 msgid "Fix inserting multi-byte characters"
 msgstr "Oplossing voor het invoegen van multi-byte karakters"
 
-#: data/io.elementary.calculator.appdata.xml.in:24
-msgid "Fix missing icon for Ukrainian"
-msgstr "Oplossing voor het missende teken voor de Oekraïense taal"
-
-#: data/io.elementary.calculator.appdata.xml.in:25
-#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:19
+#: data/io.elementary.calculator.appdata.xml.in:27
+#: data/io.elementary.calculator.appdata.xml.in:37
 msgid "Updated translations"
 msgstr "Bijgewerkte vertalingen"
 
-#: data/io.elementary.calculator.appdata.xml.in:32
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Fix missing icon for Ukrainian"
+msgstr "Oplossing voor het missende teken voor de Oekraïense taal"
+
+#: data/io.elementary.calculator.appdata.xml.in:34
 msgid "Animate Infobar when hiding and showing"
 msgstr "Toon een animatie bij het verbergen en weergeven"
 
-#: data/io.elementary.calculator.appdata.xml.in:33
+#: data/io.elementary.calculator.appdata.xml.in:35
 msgid "Fix selection replace"
 msgstr "Oplossing voor een selectie vervangen"
 
-#: data/io.elementary.calculator.appdata.xml.in:34
+#: data/io.elementary.calculator.appdata.xml.in:36
 msgid "Improved decimal separator localization"
 msgstr "Verbeterde plaatsing van het decimaalteken"
 
-#: data/io.elementary.calculator.appdata.xml.in:72
+#: data/io.elementary.calculator.appdata.xml.in:74
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

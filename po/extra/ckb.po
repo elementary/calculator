@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-10 14:33+0000\n"
+"POT-Creation-Date: 2020-04-03 20:46+0000\n"
 "PO-Revision-Date: 2016-09-12 17:15+0000\n"
 "Last-Translator: rasti <Unknown>\n"
 "Language-Team: Kurdish (Sorani) <ckb@li.org>\n"
@@ -34,32 +34,37 @@ msgid ""
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:17
+#: data/io.elementary.calculator.appdata.xml.in:16
+msgid "Minor updates:"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:18
 msgid "Fix inserting multi-byte characters"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:24
-msgid "Fix missing icon for Ukrainian"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:25
-#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:19
+#: data/io.elementary.calculator.appdata.xml.in:27
+#: data/io.elementary.calculator.appdata.xml.in:37
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:32
-msgid "Animate Infobar when hiding and showing"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:33
-msgid "Fix selection replace"
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Fix missing icon for Ukrainian"
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:34
+msgid "Animate Infobar when hiding and showing"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:35
+msgid "Fix selection replace"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:36
 msgid "Improved decimal separator localization"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:72
+#: data/io.elementary.calculator.appdata.xml.in:74
 msgid "elementary, Inc."
 msgstr ""
 
