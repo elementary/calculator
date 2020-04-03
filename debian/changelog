@@ -1,3 +1,15 @@
+pantheon-calculator (1.5.5) bionic; urgency=medium
+
+  * Release 1.5.5 (#122)
+  * Travis: Specify node 10.17.0
+  * Insert valid version and temporary date for future release (#121)
+  * Update translation template
+  * Move cursor by Unicode character count, not byte count. (#107)
+    (#108)
+  * Update translation template
+
+ -- Cody Garver <cody@elementary.io>  Fri, 03 Apr 2020 20:46:27 +0000
+
 pantheon-calculator (1.5.4) bionic; urgency=medium
 
   * Release 1.5.4 (#119)
