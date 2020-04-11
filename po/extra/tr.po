@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:46+0000\n"
-"PO-Revision-Date: 2019-12-22 07:13+0000\n"
+"PO-Revision-Date: 2020-04-12 13:10+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/calculator/extra/"
 "tr/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:16
 msgid "Minor updates:"
-msgstr ""
+msgstr "Küçük düzeltmeler:"
 
 #: data/io.elementary.calculator.appdata.xml.in:18
 msgid "Fix inserting multi-byte characters"
