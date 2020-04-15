@@ -10,6 +10,7 @@
   <description>
     <p>A simple calculator for everyday use. It supports basic and some scientific calculations including trigonometry functions, sin, cos, and tan.</p>
   </description>
+  <translation type="gettext">io.elementary.calculator</translation>
   <releases>
     <release version="1.5.5" date="2020-04-01" urgency="medium">
       <description>
