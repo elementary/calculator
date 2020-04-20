@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-03 20:46+0000\n"
-"PO-Revision-Date: 2020-04-14 07:10+0000\n"
+"PO-Revision-Date: 2020-04-21 19:10+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/extra/"
 "nl/>\n"
@@ -80,7 +80,7 @@ msgstr "Berekeningen;Wiskunde;Rekenkunde;Wetenschap;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
-msgstr "accessoires-rekenmachine"
+msgstr "accessories-calculator"
 
 #~ msgid "About Calculator"
 #~ msgstr "Over Rekenmachine"
