@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-12 13:08+0200\n"
-"PO-Revision-Date: 2019-08-21 23:22+0000\n"
+"POT-Creation-Date: 2020-04-03 20:46+0000\n"
+"PO-Revision-Date: 2020-04-12 13:10+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/calculator/extra/"
 "tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -38,9 +38,39 @@ msgstr ""
 "Günlük kullanım için basit bir hesap makinesi. Basit hesaplamaları ve sin, "
 "cos, ve tan gibi bazı trigonometrik fonksiyonları destekler."
 
-#: data/io.elementary.calculator.appdata.xml.in:48
-msgid "elementary LLC."
-msgstr "elementary LLC."
+#: data/io.elementary.calculator.appdata.xml.in:16
+msgid "Minor updates:"
+msgstr "Küçük düzeltmeler:"
+
+#: data/io.elementary.calculator.appdata.xml.in:18
+msgid "Fix inserting multi-byte characters"
+msgstr "Çok baytlı karakterler ekleme düzeltildi"
+
+#: data/io.elementary.calculator.appdata.xml.in:19
+#: data/io.elementary.calculator.appdata.xml.in:27
+#: data/io.elementary.calculator.appdata.xml.in:37
+msgid "Updated translations"
+msgstr "Çeviriler güncellendi"
+
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Fix missing icon for Ukrainian"
+msgstr "Ukraynaca dilinde eksik olan simge düzeltildi"
+
+#: data/io.elementary.calculator.appdata.xml.in:34
+msgid "Animate Infobar when hiding and showing"
+msgstr "Gizlenirken ve gösterilirken bilgi çubuğuna animasyon eklendi"
+
+#: data/io.elementary.calculator.appdata.xml.in:35
+msgid "Fix selection replace"
+msgstr "Seçimin değiştirilmesi düzeltildi"
+
+#: data/io.elementary.calculator.appdata.xml.in:36
+msgid "Improved decimal separator localization"
+msgstr "Ondalık ayırıcı yerelleştirmesi iyileştirildi"
+
+#: data/io.elementary.calculator.appdata.xml.in:74
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6

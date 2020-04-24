@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
+"POT-Creation-Date: 2019-12-10 14:33+0000\n"
 "PO-Revision-Date: 2019-01-16 00:03+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
@@ -15,103 +15,103 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:94
-msgid "Calculator"
-msgstr "计算器"
-
-#: src/MainWindow.vala:102 src/MainWindow.vala:406
+#: src/MainWindow.vala:81 src/MainWindow.vala:415
 msgid "Show extended functionality"
 msgstr "高级"
 
-#: src/MainWindow.vala:107 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:86 src/HistoryDialog.vala:37
 msgid "History"
 msgstr "历史"
 
-#: src/MainWindow.vala:147
+#: src/MainWindow.vala:93
+msgid "Calculator"
+msgstr "计算器"
+
+#: src/MainWindow.vala:106
 msgid "Calculate Result"
 msgstr "等于"
 
-#: src/MainWindow.vala:150
+#: src/MainWindow.vala:110
 msgid "Add last result"
 msgstr "添加上一次结果"
 
-#: src/MainWindow.vala:152
+#: src/MainWindow.vala:113
 msgid "Backspace"
 msgstr "回删"
 
-#: src/MainWindow.vala:153
+#: src/MainWindow.vala:119
 msgid "Clear entry"
 msgstr "清除"
 
-#: src/MainWindow.vala:156 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:123 src/HistoryDialog.vala:107
 msgid "Add"
 msgstr "加"
 
-#: src/MainWindow.vala:159
+#: src/MainWindow.vala:127
 msgid "Subtract"
 msgstr "减"
 
-#: src/MainWindow.vala:162
+#: src/MainWindow.vala:131
 msgid "Multiply"
 msgstr "乘"
 
-#: src/MainWindow.vala:165
+#: src/MainWindow.vala:135
 msgid "Divide"
 msgstr "除"
 
-#: src/MainWindow.vala:171
+#: src/MainWindow.vala:141
 msgid "Percentage"
 msgstr "百分数"
 
-#: src/MainWindow.vala:244
+#: src/MainWindow.vala:186
 msgid "Start Group"
 msgstr "左括弧"
 
-#: src/MainWindow.vala:245
+#: src/MainWindow.vala:187
 msgid "End Group"
 msgstr "右括弧"
 
-#: src/MainWindow.vala:246
+#: src/MainWindow.vala:188
 msgid "Exponent"
 msgstr "指数"
 
-#: src/MainWindow.vala:248
+#: src/MainWindow.vala:190
 msgid "Root"
 msgstr "根"
 
-#: src/MainWindow.vala:249
+#: src/MainWindow.vala:191
 msgid "Sine"
 msgstr "正弦"
 
-#: src/MainWindow.vala:250
+#: src/MainWindow.vala:192
 msgid "Hyperbolic Sine"
 msgstr "双曲正弦"
 
-#: src/MainWindow.vala:251
+#: src/MainWindow.vala:193
 msgid "Cosine"
 msgstr "余弦"
 
-#: src/MainWindow.vala:252
+#: src/MainWindow.vala:194
 msgid "Hyperbolic Cosine"
 msgstr "双曲余弦"
 
-#: src/MainWindow.vala:253
+#: src/MainWindow.vala:195
 msgid "Tangent"
 msgstr "正切"
 
-#: src/MainWindow.vala:254
+#: src/MainWindow.vala:196
 msgid "Hyperbolic Tangent"
 msgstr "双曲正切"
 
-#: src/MainWindow.vala:255
+#: src/MainWindow.vala:197
 msgid "Pi"
 msgstr "π"
 
-#: src/MainWindow.vala:256
+#: src/MainWindow.vala:198
 msgid "Euler's Number"
 msgstr "欧拉数"
 
-#: src/MainWindow.vala:401
+#: src/MainWindow.vala:410
 msgid "Hide extended functionality"
 msgstr "简单"
 

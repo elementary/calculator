@@ -19,7 +19,7 @@
  */
 
 namespace PantheonCalculator {
-    public class MainWindow : Gtk.Window {
+    public class MainWindow : Gtk.ApplicationWindow {
         private Settings settings;
 
         private Gtk.Revealer extended_revealer;
@@ -30,7 +30,6 @@ namespace PantheonCalculator {
         private Gtk.Button button_history;
         private Gtk.Button button_ans;
         private Gtk.Button button_del;
-        private Gtk.Button button_clr;
         private Gtk.ToggleButton button_extended;
         private HistoryDialog history_dialog;
 
@@ -45,7 +44,19 @@ namespace PantheonCalculator {
 
         public struct History { string exp; string output; }
 
-        public MainWindow () {
+        public const string ACTION_PREFIX = "win.";
+        public const string ACTION_CLEAR = "action-clear";
+
+        private const ActionEntry[] ACTION_ENTRIES = {
+            { ACTION_CLEAR, action_clear }
+        };
+
+        construct {
+            add_action_entries (ACTION_ENTRIES, this);
+
+            var application_instance = (Gtk.Application) GLib.Application.get_default ();
+            application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_CLEAR, {"Escape"});
+
             get_style_context ().add_class ("rounded");
             set_resizable (false);
             window_position = Gtk.WindowPosition.CENTER;
@@ -88,12 +99,12 @@ namespace PantheonCalculator {
             entry = new Gtk.Entry ();
             entry.set_alignment (1);
             entry.set_text (settings.get_string ("entry-content"));
-            entry.get_style_context ().add_class ("h2");
+            entry.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
             entry.vexpand = true;
             entry.valign = Gtk.Align.CENTER;
 
             button_calc = new Button ("=", _("Calculate Result"));
-            button_calc.get_style_context ().add_class ("h2");
+            button_calc.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
             button_calc.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
             button_ans = new Button ("ANS", _("Add last result"));
@@ -101,24 +112,29 @@ namespace PantheonCalculator {
 
             button_del = new Button ("Del", _("Backspace"));
 
-            button_clr = new Button ("C", _("Clear entry"));
+            var button_clr = new Button ("C");
+            button_clr.action_name = ACTION_PREFIX + ACTION_CLEAR;
+            button_clr.tooltip_markup = Granite.markup_accel_tooltip (
+                application_instance.get_accels_for_action (button_clr.action_name),
+                _("Clear entry")
+            );
             button_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
             var button_add = new Button (" + ", _("Add"));
             button_add.function = "+";
-            button_add.get_style_context ().add_class ("h3");
+            button_add.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_sub = new Button (" − ", _("Subtract"));
             button_sub.function = "−";
-            button_sub.get_style_context ().add_class ("h3");
+            button_sub.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_mult = new Button (" × ", _("Multiply"));
             button_mult.function = "×";
-            button_mult.get_style_context ().add_class ("h3");
+            button_mult.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_div = new Button (" ÷ ", _("Divide"));
             button_div.function = "÷";
-            button_div.get_style_context ().add_class ("h3");
+            button_div.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_0 = new Button ("0");
             var button_point = new Button (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR));
@@ -209,12 +225,13 @@ namespace PantheonCalculator {
             main_grid.add (basic_grid);
             main_grid.add (extended_revealer);
 
-            infobar = new Gtk.InfoBar ();
             infobar_label = new Gtk.Label ("");
-            infobar.get_content_area ().add (infobar_label);
-            infobar.show_close_button = false;
+
+            infobar = new Gtk.InfoBar ();
             infobar.message_type = Gtk.MessageType.WARNING;
-            infobar.no_show_all = true;
+            infobar.revealed = false;
+            infobar.show_close_button = false;
+            infobar.get_content_area ().add (infobar_label);
 
             var global_grid = new Gtk.Grid ();
             global_grid.orientation = Gtk.Orientation.VERTICAL;
@@ -234,7 +251,6 @@ namespace PantheonCalculator {
 
             button_calc.clicked.connect (() => {button_calc_clicked ();});
             button_del.clicked.connect (() => {button_del_clicked ();});
-            button_clr.clicked.connect (() => {button_clr_clicked ();});
             button_ans.clicked.connect (() => {button_ans_clicked ();});
             button_add.clicked.connect (() => {regular_button_clicked (button_add.function);});
             button_sub.clicked.connect (() => {regular_button_clicked (button_sub.function);});
@@ -282,8 +298,16 @@ namespace PantheonCalculator {
 
         private void regular_button_clicked (string label) {
             int new_position = entry.get_position ();
+            int selection_start, selection_end, selection_length;
+            bool is_text_selected = entry.get_selection_bounds (out selection_start, out selection_end);
+            if (is_text_selected) {
+                new_position = selection_end;
+                entry.delete_selection ();
+                selection_length = selection_end - selection_start;
+                new_position -= selection_length;
+            }
             entry.insert_at_cursor (label);
-            new_position += label.length;
+            new_position += label.char_count ();
             entry.grab_focus ();
             entry.set_position (new_position);
         }
@@ -291,13 +315,13 @@ namespace PantheonCalculator {
         private void function_button_clicked (string label) {
             int selection_start = -1;
             int selection_end = -1;
-            int new_position = entry.get_position ();
             if (entry.get_selection_bounds (out selection_start, out selection_end)) {
+                int new_position = selection_start;
                 string selected_text = entry.get_chars (selection_start, selection_end);
                 string function_call = label + "(" + selected_text + ")";
                 entry.delete_text (selection_start, selection_end);
                 entry.insert_text (function_call, -1, ref selection_start);
-                new_position += function_call.length;
+                new_position += function_call.char_count ();
                 entry.grab_focus ();
                 entry.set_position (new_position);
             } else {
@@ -325,9 +349,7 @@ namespace PantheonCalculator {
                     }
                 } catch (Core.OUT_ERROR e) {
                     infobar_label.label = e.message;
-                    infobar.no_show_all = false;
-                    infobar.show_all ();
-                    infobar.no_show_all = true;
+                    infobar.revealed = true;
                 }
             } else {
                 remove_error ();
@@ -362,7 +384,7 @@ namespace PantheonCalculator {
             entry.set_position (position - 1);
         }
 
-        private void button_clr_clicked () {
+        private void action_clear () {
             position = 0;
             entry.set_text ("");
             set_focus (entry);
@@ -421,15 +443,12 @@ namespace PantheonCalculator {
         }
 
         private void remove_error () {
-            infobar.hide ();
+            infobar.revealed = false;
         }
 
         private bool key_pressed (Gdk.EventKey key) {
             bool retval = false;
             switch (key.keyval) {
-                case Gdk.Key.Escape:
-                    button_clr_clicked ();
-                    break;
                 case Gdk.Key.KP_Decimal:
                 case Gdk.Key.KP_Separator:
                 case Gdk.Key.decimalpoint:

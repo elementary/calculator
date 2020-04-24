@@ -1,144 +1,146 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
-"PO-Revision-Date: 2019-06-26 18:53+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2019-12-10 14:33+0000\n"
+"PO-Revision-Date: 2020-02-20 17:08+0000\n"
+"Last-Translator: gkkulik <g.kulik@o2.pl>\n"
+"Language-Team: Silesian <https://l10n.elementary.io/projects/calculator/"
+"calculator/szl/>\n"
 "Language: szl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 
-#: src/MainWindow.vala:94
-msgid "Calculator"
-msgstr ""
-
-#: src/MainWindow.vala:102 src/MainWindow.vala:406
+#: src/MainWindow.vala:81 src/MainWindow.vala:415
 msgid "Show extended functionality"
-msgstr ""
+msgstr "Pokoż rozszyrzōne funkcyje"
 
-#: src/MainWindow.vala:107 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:86 src/HistoryDialog.vala:37
 msgid "History"
-msgstr ""
+msgstr "Historyjo"
 
-#: src/MainWindow.vala:147
+#: src/MainWindow.vala:93
+msgid "Calculator"
+msgstr "Kalkulatōr"
+
+#: src/MainWindow.vala:106
 msgid "Calculate Result"
-msgstr ""
+msgstr "Porachuj wynik"
 
-#: src/MainWindow.vala:150
+#: src/MainWindow.vala:110
 msgid "Add last result"
-msgstr ""
+msgstr "Przidej ôstatni wynik"
 
-#: src/MainWindow.vala:152
+#: src/MainWindow.vala:113
 msgid "Backspace"
-msgstr ""
+msgstr "Backspace"
 
-#: src/MainWindow.vala:153
+#: src/MainWindow.vala:119
 msgid "Clear entry"
-msgstr ""
+msgstr "Wysnoż wpis"
 
-#: src/MainWindow.vala:156 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:123 src/HistoryDialog.vala:107
 msgid "Add"
-msgstr ""
+msgstr "Przidej"
 
-#: src/MainWindow.vala:159
+#: src/MainWindow.vala:127
 msgid "Subtract"
-msgstr ""
+msgstr "Ôdyjmij"
 
-#: src/MainWindow.vala:162
+#: src/MainWindow.vala:131
 msgid "Multiply"
-msgstr ""
+msgstr "Pōmnōż"
 
-#: src/MainWindow.vala:165
+#: src/MainWindow.vala:135
 msgid "Divide"
-msgstr ""
+msgstr "Podziel"
 
-#: src/MainWindow.vala:171
+#: src/MainWindow.vala:141
 msgid "Percentage"
-msgstr ""
+msgstr "Procynt"
 
-#: src/MainWindow.vala:244
+#: src/MainWindow.vala:186
 msgid "Start Group"
-msgstr ""
+msgstr "Poczōntkowo grupa"
 
-#: src/MainWindow.vala:245
+#: src/MainWindow.vala:187
 msgid "End Group"
-msgstr ""
+msgstr "Kōńcowo grupa"
 
-#: src/MainWindow.vala:246
+#: src/MainWindow.vala:188
 msgid "Exponent"
-msgstr ""
+msgstr "Wykłodnik"
 
-#: src/MainWindow.vala:248
+#: src/MainWindow.vala:190
 msgid "Root"
-msgstr ""
+msgstr "Pierwiastek"
 
-#: src/MainWindow.vala:249
+#: src/MainWindow.vala:191
 msgid "Sine"
-msgstr ""
+msgstr "Sinus"
 
-#: src/MainWindow.vala:250
+#: src/MainWindow.vala:192
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Sinus hiperboliczny"
 
-#: src/MainWindow.vala:251
+#: src/MainWindow.vala:193
 msgid "Cosine"
-msgstr ""
+msgstr "Cosinus"
 
-#: src/MainWindow.vala:252
+#: src/MainWindow.vala:194
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Cosinus hiperboliczny"
 
-#: src/MainWindow.vala:253
+#: src/MainWindow.vala:195
 msgid "Tangent"
-msgstr ""
+msgstr "Tangyns"
 
-#: src/MainWindow.vala:254
+#: src/MainWindow.vala:196
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Tangyns hiperboliczny"
 
-#: src/MainWindow.vala:255
+#: src/MainWindow.vala:197
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
-#: src/MainWindow.vala:256
+#: src/MainWindow.vala:198
 msgid "Euler's Number"
-msgstr ""
+msgstr "Liczba Eulera"
 
-#: src/MainWindow.vala:401
+#: src/MainWindow.vala:410
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "Skryj rozszyrzōne funkcyje"
 
 #: src/HistoryDialog.vala:92
 msgid "Value to add:"
-msgstr ""
+msgstr "Werta do przidanio:"
 
 #: src/HistoryDialog.vala:96
 msgid "Result"
-msgstr ""
+msgstr "Wynik"
 
 #: src/HistoryDialog.vala:100
 msgid "Expression"
-msgstr ""
+msgstr "Wyrażynie"
 
 #: src/HistoryDialog.vala:106
 msgid "Close"
-msgstr ""
+msgstr "Zawrzij"
 
 #: src/Core/Scanner.vala:69
 #, c-format
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' je niynoleżne."
 
 #: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "Nowiasy niy sōm zgodliwe."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:167
 #, c-format
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' je niyznōme."

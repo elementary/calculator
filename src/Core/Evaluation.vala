@@ -50,7 +50,7 @@ namespace PantheonCalculator.Core {
         private delegate double Eval (double a = 0, double b = 0);
 
         private struct Operator { string symbol; int inputs; int prec; string fixity; Eval eval;}
-        static Operator[] OPERATORS = {
+        static Operator[] operators = {
             Operator () { symbol = "+", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => a + b },
             Operator () { symbol = "-", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => a - b },
             Operator () { symbol = "−", inputs = 2, prec = 1, fixity = "LEFT", eval = (a, b) => a - b },
@@ -58,14 +58,14 @@ namespace PantheonCalculator.Core {
             Operator () { symbol = "×", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a * b },
             Operator () { symbol = "/", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a / b },
             Operator () { symbol = "÷", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a / b },
-            Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) =>  a % b },
+            Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a % b },
             Operator () { symbol = "^", inputs = 2, prec = 3, fixity = "RIGHT", eval = (a, b) => Math.pow (a, b) },
-            Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => a*Math.pow (10, b) },
+            Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => a * Math.pow (10, b) },
             Operator () { symbol = "%", inputs = 1, prec = 5, fixity = "LEFT", eval = (a, b) => b / 100.0 }
         };
 
         private struct Function { string symbol; int inputs; Eval eval;}
-        static Function[] FUNCTIONS = {
+        static Function[] functions = {
             Function () { symbol = "sin", inputs = 1, eval = (a) => Math.sin (a) },
             Function () { symbol = "cos", inputs = 1, eval = (a) => Math.cos (a) },
             Function () { symbol = "tan", inputs = 1, eval = (a) => Math.tan (a) },
@@ -79,7 +79,7 @@ namespace PantheonCalculator.Core {
         };
 
         private struct Constant { string symbol; Eval eval; }
-        static Constant[] CONSTANTS = {
+        static Constant[] constants = {
             Constant () { symbol = "pi", eval = () => Math.PI },
             Constant () { symbol = "π", eval = () => Math.PI },
             Constant () { symbol = "e", eval = () => Math.E }
@@ -186,7 +186,9 @@ namespace PantheonCalculator.Core {
             }
 
             while (!op_stack.is_empty ()) {
-                if (op_stack.peek_tail ().token_type == TokenType.P_LEFT || op_stack.peek_tail ().token_type == TokenType.P_RIGHT) {
+                if (op_stack.peek_tail ().token_type == TokenType.P_LEFT ||
+                    op_stack.peek_tail ().token_type == TokenType.P_RIGHT
+                ) {
                     throw new SHUNTING_ERROR.MISMATCHED_P ("Mismatched parenthesis.");
                 } else {
                     output.append (op_stack.pop_tail ());
@@ -242,7 +244,7 @@ namespace PantheonCalculator.Core {
 
         /* Checks for real TokenType (which are TokenType.ALPHA at the moment) */
         public static bool is_operator (Token t) {
-            foreach (Operator o in OPERATORS) {
+            foreach (Operator o in operators) {
                 if (t.content == o.symbol) {
                     return true;
                 }
@@ -251,7 +253,7 @@ namespace PantheonCalculator.Core {
         }
 
         public static bool is_function (Token t) {
-            foreach (Function f in FUNCTIONS) {
+            foreach (Function f in functions) {
                 if (t.content == f.symbol) {
                     return true;
                 }
@@ -260,7 +262,7 @@ namespace PantheonCalculator.Core {
         }
 
         public static bool is_constant (Token t) {
-            foreach (Constant c in CONSTANTS) {
+            foreach (Constant c in constants) {
                 if (t.content == c.symbol) {
                     return true;
                 }
@@ -269,7 +271,7 @@ namespace PantheonCalculator.Core {
         }
 
         private Operator get_operator (Token t) throws SHUNTING_ERROR {
-            foreach (Operator o in OPERATORS) {
+            foreach (Operator o in operators) {
                 if (t.content == o.symbol) {
                     return o;
                 }
@@ -278,7 +280,7 @@ namespace PantheonCalculator.Core {
         }
 
         private Function get_function (Token t) throws SHUNTING_ERROR {
-            foreach (Function f in FUNCTIONS) {
+            foreach (Function f in functions) {
                 if (t.content == f.symbol) {
                     return f;
                 }
@@ -287,7 +289,7 @@ namespace PantheonCalculator.Core {
         }
 
         private Constant get_constant (Token t) throws SHUNTING_ERROR {
-            foreach (Constant c in CONSTANTS) {
+            foreach (Constant c in constants) {
                 if (t.content == c.symbol) {
                     return c;
                 }
@@ -317,16 +319,16 @@ namespace PantheonCalculator.Core {
 
             /* Insert separator symbol in large numbers */
             var builder = new StringBuilder (s_localized);
-            var decimalPos = s_localized.last_index_of (scanner.decimal_symbol);
-            if (decimalPos == -1) {
-                decimalPos = s_localized.length;
+            var decimal_pos = s_localized.last_index_of (scanner.decimal_symbol);
+            if (decimal_pos == -1) {
+                decimal_pos = s_localized.length;
             }
 
             int end_position = 0;
             if (s_localized.has_prefix ("-")) {
                 end_position = 1;
             }
-            for (int i = decimalPos - 3; i > end_position; i -= 3) {
+            for (int i = decimal_pos - 3; i > end_position; i -= 3) {
                 builder.insert (i, scanner.separator_symbol);
             }
             return builder.str;
