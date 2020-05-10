@@ -42,6 +42,8 @@ namespace PantheonCalculator {
         /* Define the decimal places */
         private int decimal_places;
 
+        private Settings privacy_settings;
+
         public struct History { string exp; string output; }
 
         public const string ACTION_PREFIX = "win.";
@@ -96,9 +98,11 @@ namespace PantheonCalculator {
 
             set_titlebar (headerbar);
 
+            privacy_settings = new Settings ("org.gnome.desktop.privacy");
             entry = new Gtk.Entry ();
             entry.set_alignment (1);
-            entry.set_text (settings.get_string ("entry-content"));
+            if (privacy_settings.get_boolean ("remember-app-usage"))
+                entry.set_text (settings.get_string ("entry-content"));
             entry.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
             entry.vexpand = true;
             entry.valign = Gtk.Align.CENTER;
@@ -483,7 +487,8 @@ namespace PantheonCalculator {
             settings.set_int ("window-y", y_pos);
 
             settings.set_boolean ("extended-shown", button_extended.active);
-            settings.set_string ("entry-content", entry.text);
+            if (privacy_settings.get_boolean ("remember-app-usage"))
+                settings.set_string ("entry-content", entry.text);
         }
     }
 }
