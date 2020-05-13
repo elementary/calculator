@@ -26,7 +26,7 @@ public class PantheonCalculator.Button : Gtk.Button {
         function = label;
         var lbl = new Gtk.Label (label);
         lbl.use_markup = true;
-        image = lbl;
+        add (lbl);
         tooltip_text = description;
     }
 
