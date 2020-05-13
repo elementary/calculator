@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-12 13:08+0200\n"
-"PO-Revision-Date: 2018-08-08 00:01+0000\n"
-"Last-Translator: Kuba Kowalczyk <kuba.bruno.kowalczyk@gmail.com>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/calculator/"
-"extra/pl/>\n"
+"POT-Creation-Date: 2020-04-03 20:46+0000\n"
+"PO-Revision-Date: 2019-11-15 21:24+0000\n"
+"Last-Translator: Cholewka <mdcholewka@gmail.com>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/calculator/extra/"
+"pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -39,14 +39,44 @@ msgstr ""
 "Prosty kalkulator do codziennego użytku. Zawiera podstawowe obliczenia oraz "
 "kilka funkcji naukowych, w tym trygonometryczne: sinus, cosinus oraz tangens."
 
-#: data/io.elementary.calculator.appdata.xml.in:48
-msgid "elementary LLC."
-msgstr "elementary LLC."
+#: data/io.elementary.calculator.appdata.xml.in:16
+msgid "Minor updates:"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:18
+msgid "Fix inserting multi-byte characters"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:19
+#: data/io.elementary.calculator.appdata.xml.in:27
+#: data/io.elementary.calculator.appdata.xml.in:37
+msgid "Updated translations"
+msgstr "Zaktualizowano tłumaczenia"
+
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Fix missing icon for Ukrainian"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:34
+msgid "Animate Infobar when hiding and showing"
+msgstr "Animuj pasek informacyjny podczas chowania lub wyświetlania"
+
+#: data/io.elementary.calculator.appdata.xml.in:35
+msgid "Fix selection replace"
+msgstr "Napraw zamianę zaznaczenia"
+
+#: data/io.elementary.calculator.appdata.xml.in:36
+msgid "Improved decimal separator localization"
+msgstr "Zmieniono lokalizację separatora liczb dziesiętnych"
+
+#: data/io.elementary.calculator.appdata.xml.in:74
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "Kalkulator;Matematyka;Arytmetyka;Naukowy;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"

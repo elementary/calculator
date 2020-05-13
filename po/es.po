@@ -2,116 +2,116 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:42+0200\n"
-"PO-Revision-Date: 2018-09-30 20:40+0000\n"
-"Last-Translator: Pablo Solís La Beira <pabsol1977@gmail.com>\n"
-"Language-Team: Spanish <https://weblate.elementary.io/projects/calculator/"
+"POT-Creation-Date: 2019-12-10 14:33+0000\n"
+"PO-Revision-Date: 2019-10-21 14:23+0000\n"
+"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"Language-Team: Spanish <https://l10n.elementary.io/projects/calculator/"
 "calculator/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-01-06 06:03+0000\n"
 
-#: src/MainWindow.vala:94
-msgid "Calculator"
-msgstr "Calculadora"
-
-#: src/MainWindow.vala:102 src/MainWindow.vala:406
+#: src/MainWindow.vala:81 src/MainWindow.vala:415
 msgid "Show extended functionality"
 msgstr "Mostrar funciones avanzadas"
 
-#: src/MainWindow.vala:107 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:86 src/HistoryDialog.vala:37
 msgid "History"
 msgstr "Historial"
 
-#: src/MainWindow.vala:147
+#: src/MainWindow.vala:93
+msgid "Calculator"
+msgstr "Calculadora"
+
+#: src/MainWindow.vala:106
 msgid "Calculate Result"
 msgstr "Calcular resultado"
 
-#: src/MainWindow.vala:150
+#: src/MainWindow.vala:110
 msgid "Add last result"
 msgstr "Sumar el último resultado"
 
-#: src/MainWindow.vala:152
+#: src/MainWindow.vala:113
 msgid "Backspace"
 msgstr "Retroceso"
 
-#: src/MainWindow.vala:153
+#: src/MainWindow.vala:119
 msgid "Clear entry"
 msgstr "Borrar entrada"
 
-#: src/MainWindow.vala:156 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:123 src/HistoryDialog.vala:107
 msgid "Add"
 msgstr "Sumar"
 
-#: src/MainWindow.vala:159
+#: src/MainWindow.vala:127
 msgid "Subtract"
 msgstr "Restar"
 
-#: src/MainWindow.vala:162
+#: src/MainWindow.vala:131
 msgid "Multiply"
 msgstr "Multiplicar"
 
-#: src/MainWindow.vala:165
+#: src/MainWindow.vala:135
 msgid "Divide"
 msgstr "Dividir"
 
-#: src/MainWindow.vala:171
+#: src/MainWindow.vala:141
 msgid "Percentage"
 msgstr "Porcentaje"
 
-#: src/MainWindow.vala:244
+#: src/MainWindow.vala:186
 msgid "Start Group"
 msgstr "Abrir grupo"
 
-#: src/MainWindow.vala:245
+#: src/MainWindow.vala:187
 msgid "End Group"
 msgstr "Cerrar grupo"
 
-#: src/MainWindow.vala:246
+#: src/MainWindow.vala:188
 msgid "Exponent"
 msgstr "Exponencial"
 
-#: src/MainWindow.vala:248
+#: src/MainWindow.vala:190
 msgid "Root"
 msgstr "Raíz cuadrada"
 
-#: src/MainWindow.vala:249
+#: src/MainWindow.vala:191
 msgid "Sine"
 msgstr "Seno"
 
-#: src/MainWindow.vala:250
+#: src/MainWindow.vala:192
 msgid "Hyperbolic Sine"
 msgstr "Seno hiperbólico"
 
-#: src/MainWindow.vala:251
+#: src/MainWindow.vala:193
 msgid "Cosine"
 msgstr "Coseno"
 
-#: src/MainWindow.vala:252
+#: src/MainWindow.vala:194
 msgid "Hyperbolic Cosine"
 msgstr "Coseno hiperbólico"
 
-#: src/MainWindow.vala:253
+#: src/MainWindow.vala:195
 msgid "Tangent"
 msgstr "Tangente"
 
-#: src/MainWindow.vala:254
+#: src/MainWindow.vala:196
 msgid "Hyperbolic Tangent"
 msgstr "Tangente hiperbólica"
 
-#: src/MainWindow.vala:255
+#: src/MainWindow.vala:197
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:256
+#: src/MainWindow.vala:198
 msgid "Euler's Number"
 msgstr "Número de Euler"
 
-#: src/MainWindow.vala:401
+#: src/MainWindow.vala:410
 msgid "Hide extended functionality"
 msgstr "Ocultar funciones adicionales"
 
@@ -138,7 +138,7 @@ msgstr "«%s» no es válido."
 
 #: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
-msgstr "Paréntesis no coincidentes"
+msgstr "Paréntesis no coincidentes."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:167
