@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:46+0000\n"
+"POT-Creation-Date: 2020-05-18 19:20+0000\n"
 "PO-Revision-Date: 2020-05-15 12:10+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -36,37 +36,43 @@ msgid ""
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr "一款能满足日常计算需求的计算器。支持基础计算和部分科学计算。"
 
-#: data/io.elementary.calculator.appdata.xml.in:16
+#: data/io.elementary.calculator.appdata.xml.in:17
+#: data/io.elementary.calculator.appdata.xml.in:26
 msgid "Minor updates:"
 msgstr "次要更新："
 
-#: data/io.elementary.calculator.appdata.xml.in:18
-msgid "Fix inserting multi-byte characters"
-msgstr "修复插入多字节字符"
-
 #: data/io.elementary.calculator.appdata.xml.in:19
-#: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Use slim titlebar"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:20
+#: data/io.elementary.calculator.appdata.xml.in:29
 #: data/io.elementary.calculator.appdata.xml.in:37
+#: data/io.elementary.calculator.appdata.xml.in:47
 msgid "Updated translations"
 msgstr "更新翻译"
 
-#: data/io.elementary.calculator.appdata.xml.in:26
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Fix inserting multi-byte characters"
+msgstr "修复插入多字节字符"
+
+#: data/io.elementary.calculator.appdata.xml.in:36
 msgid "Fix missing icon for Ukrainian"
 msgstr "修复乌克兰语下丢失的图标"
 
-#: data/io.elementary.calculator.appdata.xml.in:34
+#: data/io.elementary.calculator.appdata.xml.in:44
 msgid "Animate Infobar when hiding and showing"
 msgstr "隐藏和显示时设置信息栏动画"
 
-#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:45
 msgid "Fix selection replace"
 msgstr "修复选定内容替换"
 
-#: data/io.elementary.calculator.appdata.xml.in:36
+#: data/io.elementary.calculator.appdata.xml.in:46
 msgid "Improved decimal separator localization"
 msgstr "改进的小数分隔符位置"
 
-#: data/io.elementary.calculator.appdata.xml.in:74
+#: data/io.elementary.calculator.appdata.xml.in:84
 msgid "elementary, Inc."
 msgstr "elementary LLC."
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-03 20:46+0000\n"
+"POT-Creation-Date: 2020-05-18 19:20+0000\n"
 "PO-Revision-Date: 2019-12-26 18:04+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/calculator/extra/"
@@ -39,37 +39,43 @@ msgstr ""
 "grundlegenden und einige wissenschaftliche Rechenoperationen, einschließlich "
 "trigonometrischer Funktionen wie Sinus, Kosinus und Tangens."
 
-#: data/io.elementary.calculator.appdata.xml.in:16
+#: data/io.elementary.calculator.appdata.xml.in:17
+#: data/io.elementary.calculator.appdata.xml.in:26
 msgid "Minor updates:"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:18
-msgid "Fix inserting multi-byte characters"
-msgstr "Korrektur beim Einfügen von Multi-Byte-Zeichen"
-
 #: data/io.elementary.calculator.appdata.xml.in:19
-#: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Use slim titlebar"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:20
+#: data/io.elementary.calculator.appdata.xml.in:29
 #: data/io.elementary.calculator.appdata.xml.in:37
+#: data/io.elementary.calculator.appdata.xml.in:47
 msgid "Updated translations"
 msgstr "Aktualisierte Übersetzungen"
 
-#: data/io.elementary.calculator.appdata.xml.in:26
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Fix inserting multi-byte characters"
+msgstr "Korrektur beim Einfügen von Multi-Byte-Zeichen"
+
+#: data/io.elementary.calculator.appdata.xml.in:36
 msgid "Fix missing icon for Ukrainian"
 msgstr "Fehlendes Icon für Ukrainisch korrigiert"
 
-#: data/io.elementary.calculator.appdata.xml.in:34
+#: data/io.elementary.calculator.appdata.xml.in:44
 msgid "Animate Infobar when hiding and showing"
 msgstr "Animierte Informationsleiste beim Verstecken und Wiederherstellen"
 
-#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:45
 msgid "Fix selection replace"
 msgstr "Korrektur von Markierung ersetzen"
 
-#: data/io.elementary.calculator.appdata.xml.in:36
+#: data/io.elementary.calculator.appdata.xml.in:46
 msgid "Improved decimal separator localization"
 msgstr "verbesserte Lokalisierung für Dezimaltrenner"
 
-#: data/io.elementary.calculator.appdata.xml.in:74
+#: data/io.elementary.calculator.appdata.xml.in:84
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
