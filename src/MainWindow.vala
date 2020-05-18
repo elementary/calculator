@@ -93,6 +93,7 @@ namespace PantheonCalculator {
             headerbar.set_title (_("Calculator"));
             headerbar.pack_end (button_extended);
             headerbar.pack_end (button_history);
+            headerbar.get_style_context ().add_class ("default-decoration");
 
             set_titlebar (headerbar);
 
