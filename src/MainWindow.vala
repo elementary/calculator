@@ -20,7 +20,8 @@
 
 namespace PantheonCalculator {
     public class MainWindow : Gtk.ApplicationWindow {
-        private Settings settings;
+        private uint configure_id;
+        private static GLib.Settings settings;
 
         private Gtk.Revealer extended_revealer;
         private Gtk.Entry entry;
@@ -51,6 +52,10 @@ namespace PantheonCalculator {
             { ACTION_CLEAR, action_clear }
         };
 
+        static construct {
+            settings = new Settings ("io.elementary.calculator.saved-state");
+        }
+
         construct {
             add_action_entries (ACTION_ENTRIES, this);
 
@@ -61,16 +66,16 @@ namespace PantheonCalculator {
             set_resizable (false);
             window_position = Gtk.WindowPosition.CENTER;
 
-            settings = new Settings ("io.elementary.calculator.saved-state");
             decimal_places = settings.get_int ("decimal-places");
 
             history = new List<History?> ();
             position = 0;
 
-            int x = settings.get_int ("window-x");
-            int y = settings.get_int ("window-y");
-            if (x != -100 && y != -100) {
-                move (x, y);
+            int window_x, window_y;
+            settings.get ("window-position", "(ii)", out window_x, out window_y);
+
+            if (window_x != -1 || window_y != -1) {
+                move (window_x, window_y);
             }
 
             extended_img_1 = new Gtk.Image.from_icon_name ("pane-hide-symbolic", Gtk.IconSize.MENU);
@@ -99,7 +104,6 @@ namespace PantheonCalculator {
 
             entry = new Gtk.Entry ();
             entry.set_alignment (1);
-            entry.set_text (settings.get_string ("entry-content"));
             entry.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
             entry.vexpand = true;
             entry.valign = Gtk.Align.CENTER;
@@ -241,8 +245,6 @@ namespace PantheonCalculator {
 
             add (global_grid);
 
-            button_extended.active = settings.get_boolean ("extended-shown");
-
             show_all ();
 
             this.key_press_event.connect (key_pressed);
@@ -283,10 +285,12 @@ namespace PantheonCalculator {
             button_tan.clicked.connect (() => {function_button_clicked (button_tan.function);});
             button_tanh.clicked.connect (() => {function_button_clicked (button_tanh.function);});
 
-            delete_event.connect ((event) => {
-                save_state ();
-                return false;
-            });
+            settings.bind ("extended-shown", button_extended, "active", GLib.SettingsBindFlags.DEFAULT);
+
+            var privacy_settings = new Settings ("org.gnome.desktop.privacy");
+            if (privacy_settings.get_boolean ("remember-recent-files")) {
+                settings.bind ("entry-content", entry, "text", GLib.SettingsBindFlags.DEFAULT);
+            }
         }
 
         public void undo () {
@@ -477,14 +481,22 @@ namespace PantheonCalculator {
             return retval;
         }
 
-        public void save_state () {
-            int x_pos, y_pos;
-            get_position (out x_pos, out y_pos);
-            settings.set_int ("window-x", x_pos);
-            settings.set_int ("window-y", y_pos);
+        public override bool configure_event (Gdk.EventConfigure event) {
+            if (configure_id != 0) {
+                GLib.Source.remove (configure_id);
+            }
 
-            settings.set_boolean ("extended-shown", button_extended.active);
-            settings.set_string ("entry-content", entry.text);
+            configure_id = Timeout.add (100, () => {
+                configure_id = 0;
+
+                int x_pos, y_pos;
+                get_position (out x_pos, out y_pos);
+                settings.set ("window-position", "(ii)", x_pos, y_pos);
+
+                return false;
+            });
+
+            return base.configure_event (event);
         }
     }
 }
