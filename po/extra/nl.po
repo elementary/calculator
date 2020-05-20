@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-10 14:33+0000\n"
-"PO-Revision-Date: 2019-12-25 08:00+0000\n"
+"POT-Creation-Date: 2020-05-18 19:20+0000\n"
+"PO-Revision-Date: 2020-04-21 19:10+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/extra/"
 "nl/>\n"
@@ -40,31 +40,42 @@ msgstr ""
 "trigonometrische functies zoals sin, cos en tan."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-msgid "Fix inserting multi-byte characters"
-msgstr "Oplossing voor het invoegen van multi-byte karakters"
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Minor updates:"
+msgstr "Kleine updates:"
 
-#: data/io.elementary.calculator.appdata.xml.in:24
-msgid "Fix missing icon for Ukrainian"
-msgstr "Oplossing voor het missende teken voor de Oekraïense taal"
+#: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Use slim titlebar"
+msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:25
-#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:20
+#: data/io.elementary.calculator.appdata.xml.in:29
+#: data/io.elementary.calculator.appdata.xml.in:37
+#: data/io.elementary.calculator.appdata.xml.in:47
 msgid "Updated translations"
 msgstr "Bijgewerkte vertalingen"
 
-#: data/io.elementary.calculator.appdata.xml.in:32
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Fix inserting multi-byte characters"
+msgstr "Oplossing voor het invoegen van multi-byte karakters"
+
+#: data/io.elementary.calculator.appdata.xml.in:36
+msgid "Fix missing icon for Ukrainian"
+msgstr "Oplossing voor het missende teken voor de Oekraïense taal"
+
+#: data/io.elementary.calculator.appdata.xml.in:44
 msgid "Animate Infobar when hiding and showing"
 msgstr "Toon een animatie bij het verbergen en weergeven"
 
-#: data/io.elementary.calculator.appdata.xml.in:33
+#: data/io.elementary.calculator.appdata.xml.in:45
 msgid "Fix selection replace"
 msgstr "Oplossing voor een selectie vervangen"
 
-#: data/io.elementary.calculator.appdata.xml.in:34
+#: data/io.elementary.calculator.appdata.xml.in:46
 msgid "Improved decimal separator localization"
 msgstr "Verbeterde plaatsing van het decimaalteken"
 
-#: data/io.elementary.calculator.appdata.xml.in:72
+#: data/io.elementary.calculator.appdata.xml.in:84
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
@@ -75,7 +86,7 @@ msgstr "Berekeningen;Wiskunde;Rekenkunde;Wetenschap;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
-msgstr "accessoires-rekenmachine"
+msgstr "accessories-calculator"
 
 #~ msgid "About Calculator"
 #~ msgstr "Over Rekenmachine"
