@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-10 14:33+0000\n"
+"POT-Creation-Date: 2020-05-18 19:20+0000\n"
 "PO-Revision-Date: 2020-02-20 17:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/calculator/"
@@ -33,31 +33,42 @@ msgstr ""
 "naukowych funkcyji społym ze trygōnōmetrycznymi, sin, cos i tan."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-msgid "Fix inserting multi-byte characters"
-msgstr "Spraw wrażanie znakōw wielobajtowych"
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Minor updates:"
+msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:24
-msgid "Fix missing icon for Ukrainian"
-msgstr "Spraw brakujōnco ikōna przi ukrajińskim"
+#: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Use slim titlebar"
+msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:25
-#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:20
+#: data/io.elementary.calculator.appdata.xml.in:29
+#: data/io.elementary.calculator.appdata.xml.in:37
+#: data/io.elementary.calculator.appdata.xml.in:47
 msgid "Updated translations"
 msgstr "Zaktualizowane przekłady"
 
-#: data/io.elementary.calculator.appdata.xml.in:32
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Fix inserting multi-byte characters"
+msgstr "Spraw wrażanie znakōw wielobajtowych"
+
+#: data/io.elementary.calculator.appdata.xml.in:36
+msgid "Fix missing icon for Ukrainian"
+msgstr "Spraw brakujōnco ikōna przi ukrajińskim"
+
+#: data/io.elementary.calculator.appdata.xml.in:44
 msgid "Animate Infobar when hiding and showing"
 msgstr "Animuj posek informacyje przi pokazowaniu i kryciu"
 
-#: data/io.elementary.calculator.appdata.xml.in:33
+#: data/io.elementary.calculator.appdata.xml.in:45
 msgid "Fix selection replace"
 msgstr "Spraw umiana zaznaczynio"
 
-#: data/io.elementary.calculator.appdata.xml.in:34
+#: data/io.elementary.calculator.appdata.xml.in:46
 msgid "Improved decimal separator localization"
 msgstr "Ulepszōno lokalizacyjo separatora decymalnego"
 
-#: data/io.elementary.calculator.appdata.xml.in:72
+#: data/io.elementary.calculator.appdata.xml.in:84
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

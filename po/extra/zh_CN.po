@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-10 14:33+0000\n"
-"PO-Revision-Date: 2019-01-09 11:46+0000\n"
-"Last-Translator: Cody Garver <cody@elementary.io>\n"
-"Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
+"POT-Creation-Date: 2020-05-18 19:20+0000\n"
+"PO-Revision-Date: 2020-05-15 12:10+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "calculator/extra/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -37,39 +37,49 @@ msgid ""
 msgstr "一款能满足日常计算需求的计算器。支持基础计算和部分科学计算。"
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-msgid "Fix inserting multi-byte characters"
+#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "Minor updates:"
+msgstr "次要更新："
+
+#: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Use slim titlebar"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:24
-msgid "Fix missing icon for Ukrainian"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:25
-#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:20
+#: data/io.elementary.calculator.appdata.xml.in:29
+#: data/io.elementary.calculator.appdata.xml.in:37
+#: data/io.elementary.calculator.appdata.xml.in:47
 msgid "Updated translations"
-msgstr ""
+msgstr "更新翻译"
 
-#: data/io.elementary.calculator.appdata.xml.in:32
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Fix inserting multi-byte characters"
+msgstr "修复插入多字节字符"
+
+#: data/io.elementary.calculator.appdata.xml.in:36
+msgid "Fix missing icon for Ukrainian"
+msgstr "修复乌克兰语下丢失的图标"
+
+#: data/io.elementary.calculator.appdata.xml.in:44
 msgid "Animate Infobar when hiding and showing"
-msgstr ""
+msgstr "隐藏和显示时设置信息栏动画"
 
-#: data/io.elementary.calculator.appdata.xml.in:33
+#: data/io.elementary.calculator.appdata.xml.in:45
 msgid "Fix selection replace"
-msgstr ""
+msgstr "修复选定内容替换"
 
-#: data/io.elementary.calculator.appdata.xml.in:34
+#: data/io.elementary.calculator.appdata.xml.in:46
 msgid "Improved decimal separator localization"
-msgstr ""
+msgstr "改进的小数分隔符位置"
 
-#: data/io.elementary.calculator.appdata.xml.in:72
-#, fuzzy
+#: data/io.elementary.calculator.appdata.xml.in:84
 msgid "elementary, Inc."
 msgstr "elementary LLC."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "计算器;数学;算数;科学;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
