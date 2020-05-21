@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-18 19:20+0000\n"
-"PO-Revision-Date: 2020-05-03 21:10+0000\n"
+"PO-Revision-Date: 2020-05-22 13:11+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/calculator/extra/"
 "tr/>\n"
@@ -45,7 +45,7 @@ msgstr "Küçük düzeltmeler:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Use slim titlebar"
-msgstr ""
+msgstr "İnce başlık çubuğu kullan"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 #: data/io.elementary.calculator.appdata.xml.in:29
