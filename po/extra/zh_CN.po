@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-18 19:20+0000\n"
-"PO-Revision-Date: 2020-05-15 12:10+0000\n"
+"PO-Revision-Date: 2020-05-30 10:11+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "calculator/extra/zh_Hans/>\n"
@@ -43,7 +43,7 @@ msgstr "次要更新："
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Use slim titlebar"
-msgstr ""
+msgstr "使用细标题栏"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 #: data/io.elementary.calculator.appdata.xml.in:29
@@ -62,7 +62,7 @@ msgstr "修复乌克兰语下丢失的图标"
 
 #: data/io.elementary.calculator.appdata.xml.in:44
 msgid "Animate Infobar when hiding and showing"
-msgstr "隐藏和显示时设置信息栏动画"
+msgstr "信息栏增隐藏或显示时展示动画"
 
 #: data/io.elementary.calculator.appdata.xml.in:45
 msgid "Fix selection replace"
