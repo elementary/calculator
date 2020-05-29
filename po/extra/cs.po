@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-18 19:20+0000\n"
-"PO-Revision-Date: 2020-05-11 19:11+0000\n"
+"PO-Revision-Date: 2020-05-30 10:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/calculator/extra/"
 "cs/>\n"
@@ -45,7 +45,7 @@ msgstr "Drobné aktualizace:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Use slim titlebar"
-msgstr ""
+msgstr "Použita tenčí lišta titulku"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 #: data/io.elementary.calculator.appdata.xml.in:29
@@ -56,11 +56,11 @@ msgstr "Aktualizovány překlady"
 
 #: data/io.elementary.calculator.appdata.xml.in:28
 msgid "Fix inserting multi-byte characters"
-msgstr "Opravit vkládání vícebajtových znaků"
+msgstr "Opraveno vkládání vícebajtových znaků"
 
 #: data/io.elementary.calculator.appdata.xml.in:36
 msgid "Fix missing icon for Ukrainian"
-msgstr "Opravena chybějící ikona pro Ukrajinštinu"
+msgstr "Opravena chybějící ikona pro ukrajinštinu"
 
 #: data/io.elementary.calculator.appdata.xml.in:44
 msgid "Animate Infobar when hiding and showing"
@@ -68,7 +68,7 @@ msgstr "Animace pro zobrazení a schování panelu informací"
 
 #: data/io.elementary.calculator.appdata.xml.in:45
 msgid "Fix selection replace"
-msgstr "Opravit nahrazení výběru"
+msgstr "Opraveno nahrazení výběru"
 
 #: data/io.elementary.calculator.appdata.xml.in:46
 msgid "Improved decimal separator localization"
@@ -81,7 +81,7 @@ msgstr "elementary, Inc."
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr "Kalkulace;Matematika;Aritmetika;Vědecký;"
+msgstr "Výpočty;Matematika;Aritmetika;Vědecká;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
