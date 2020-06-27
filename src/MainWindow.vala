@@ -251,6 +251,7 @@ namespace PantheonCalculator {
 
             entry.changed.connect (remove_error);
             entry.activate.connect (button_calc_clicked);
+            entry.insert_text.connect (filter_input);
 
             button_calc.clicked.connect (() => {button_calc_clicked ();});
             button_del.clicked.connect (() => {button_del_clicked ();});
@@ -497,6 +498,12 @@ namespace PantheonCalculator {
             });
 
             return base.configure_event (event);
+        }
+
+        private void filter_input (string new_text, int new_text_length, ref int position) {
+            if ("%" in new_text) {
+                GLib.Signal.stop_emission_by_name (entry, "insert-text");
+            }
         }
     }
 }
