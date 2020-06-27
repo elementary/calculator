@@ -452,6 +452,8 @@ namespace PantheonCalculator {
         }
 
         private bool key_pressed (Gdk.EventKey key) {
+            print ("%u : %u\n", key.keyval, Gdk.Key.percent);
+
             bool retval = false;
             switch (key.keyval) {
                 case Gdk.Key.KP_Decimal:
@@ -479,7 +481,7 @@ namespace PantheonCalculator {
                 case Gdk.Key.percent:
                     infobar_label.label = "'%' is ambiguous";
                     infobar.revealed = true;
-                    retval = false;
+                    retval = true;
                     break;
             }
 
