@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-18 19:20+0000\n"
-"PO-Revision-Date: 2019-01-03 18:17+0000\n"
-"Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
-"Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
+"PO-Revision-Date: 2020-07-04 18:12+0000\n"
+"Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
+"Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
 "calculator/extra/nn/>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
 #: data/io.elementary.calculator.desktop.in:3
@@ -41,26 +41,26 @@ msgstr ""
 #: data/io.elementary.calculator.appdata.xml.in:17
 #: data/io.elementary.calculator.appdata.xml.in:26
 msgid "Minor updates:"
-msgstr ""
+msgstr "Mindre oppdateringar:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Use slim titlebar"
-msgstr ""
+msgstr "Bruk tynn toppmeny"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 #: data/io.elementary.calculator.appdata.xml.in:29
 #: data/io.elementary.calculator.appdata.xml.in:37
 #: data/io.elementary.calculator.appdata.xml.in:47
 msgid "Updated translations"
-msgstr ""
+msgstr "Oppdaterte oversettelsar"
 
 #: data/io.elementary.calculator.appdata.xml.in:28
 msgid "Fix inserting multi-byte characters"
-msgstr ""
+msgstr "Fiks å setta inn multi-byte bokstavar"
 
 #: data/io.elementary.calculator.appdata.xml.in:36
 msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgstr "Fiksa manglande ikon for ukrainsk"
 
 #: data/io.elementary.calculator.appdata.xml.in:44
 msgid "Animate Infobar when hiding and showing"
@@ -72,17 +72,16 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:46
 msgid "Improved decimal separator localization"
-msgstr ""
+msgstr "Betre plassering av skilleteikn for desimalar"
 
 #: data/io.elementary.calculator.appdata.xml.in:84
-#, fuzzy
 msgid "elementary, Inc."
 msgstr "elementary LLC."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "Calculation;Mathematics;Arithmetic;Scientific;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
