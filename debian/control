@@ -1,7 +1,7 @@
-Source: pantheon-calculator
+Source: io.elementary.calculator
 Section: x11
 Priority: extra
-Maintainer: Cody Garver <cody@elementary.io>
+Maintainer: elementary, Inc. <builds@elementary.io>
 Build-Depends: debhelper (>= 10.5.1),
                gettext,
                libgranite-dev (>= 0.3.0),
@@ -11,7 +11,17 @@ Build-Depends: debhelper (>= 10.5.1),
 Standards-Version: 4.1.1
 Homepage: https://github.com/elementary/calculator
 
-Package: pantheon-calculator
+Package: io.elementary.calculator
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: pantheon-calculator
+Replaces: pantheon-calculator
 Description: Calculate in an elementary way.
+
+Package: pantheon-calculator
+Architecture: any
+Depends: io.elementary.calculator, ${misc:Depends}
+Section: oldlibs
+Priority: optional
+Description: transitional dummy package
+    This is a transitional dummy package. It can safely be removed.
