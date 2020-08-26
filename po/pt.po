@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-18 19:20+0000\n"
-"PO-Revision-Date: 2018-07-20 11:03+0000\n"
-"Last-Translator: Christophe Silva <Christophesilva80@gmail.com>\n"
-"Language-Team: Portuguese <https://weblate.elementary.io/projects/calculator/"
+"PO-Revision-Date: 2020-08-27 17:13+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: Portuguese <https://l10n.elementary.io/projects/calculator/"
 "calculator/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:81 src/MainWindow.vala:416
@@ -45,7 +45,7 @@ msgstr "Limpar entrada"
 
 #: src/MainWindow.vala:124 src/HistoryDialog.vala:107
 msgid "Add"
-msgstr "Adicionar"
+msgstr "Somar"
 
 #: src/MainWindow.vala:128
 msgid "Subtract"
