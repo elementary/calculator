@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-18 19:20+0000\n"
-"PO-Revision-Date: 2019-10-21 14:23+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"PO-Revision-Date: 2020-08-14 08:13+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/calculator/"
 "calculator/es/>\n"
 "Language: es\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-01-06 06:03+0000\n"
 
 #: src/MainWindow.vala:81 src/MainWindow.vala:416
@@ -33,7 +33,7 @@ msgstr "Calcular resultado"
 
 #: src/MainWindow.vala:111
 msgid "Add last result"
-msgstr "Sumar el último resultado"
+msgstr "Sumar último resultado"
 
 #: src/MainWindow.vala:114
 msgid "Backspace"
@@ -138,13 +138,13 @@ msgstr "«%s» no es válido."
 
 #: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
-msgstr "Paréntesis no coincidentes."
+msgstr "Paréntesis desparejados."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:167
 #, c-format
 msgid "'%s' is unknown."
-msgstr "«%s» es desconocido."
+msgstr "Se desconoce «%s»."
 
 #~ msgid "translator-credits"
 #~ msgstr ""
