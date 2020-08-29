@@ -452,8 +452,6 @@ namespace PantheonCalculator {
         }
 
         private bool key_pressed (Gdk.EventKey key) {
-            print ("%u : %u\n", key.keyval, Gdk.Key.percent);
-
             bool retval = false;
             switch (key.keyval) {
                 case Gdk.Key.KP_Decimal:
