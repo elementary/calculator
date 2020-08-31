@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2018 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2020 elementary LLC. (https://elementary.io)
  *               2014 Marvin Beckers <beckersmarvin@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -56,7 +56,6 @@ namespace PantheonCalculator.Core {
             int parentheses_balance_counter = 0;
             while (pos < uc.length) {
                 Token t = next_token ();
-
                 /* Identifying multicharacter tokens via Evaluation class. */
                 if (t.token_type == TokenType.ALPHA) {
                     if (Evaluation.is_operator (t)) {
@@ -79,7 +78,6 @@ namespace PantheonCalculator.Core {
                         next_number_negative = true;
                         continue;
                     }
-
                 } else if (t.token_type == TokenType.NUMBER && next_number_negative) {
                     t.content = (double.parse (t.content) * (-1)).to_string ();
                     next_number_negative = false;
@@ -138,10 +136,15 @@ namespace PantheonCalculator.Core {
                     pos++;
                 }
                 type = TokenType.NUMBER;
-            } else if (uc[pos] == '+' || uc[pos] == '-' || uc[pos] == '*' ||
-                        uc[pos] == '/' || uc[pos] == '^' || uc[pos] == '%' ||
-                        uc[pos] == '÷' || uc[pos] == '×' || uc[pos] == '−') {
+            } else if (is_plus_minus_times (uc[pos]) ||
+                        uc[pos] == '/' ||
+                        uc[pos] == '^' || uc[pos] == '%') {
                 pos++;
+                if (pos < uc.length) {
+                    if (uc[pos] == '%' && is_plus_minus_times (uc[pos - 1])) {
+                        pos++;
+                    }
+                }
                 type = TokenType.OPERATOR;
             } else if (uc[pos] == '√') {
                 pos++;
@@ -174,6 +177,15 @@ namespace PantheonCalculator.Core {
             substr = substr.replace (decimal_symbol, ".");
 
             return new Token (substr, type);
+        }
+
+        /* Operators than can combine with % */
+        private bool is_plus_minus_times (unichar uc) {
+            return uc == '+' ||
+                   uc == '-' ||
+                   uc == '*' ||
+                   uc == '×' ||
+                   uc == '−';
         }
     }
 }

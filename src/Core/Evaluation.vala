@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2018 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2020 elementary LLC. (https://elementary.io)
  *               2014 Marvin Beckers <beckersmarvin@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
@@ -59,6 +59,10 @@ namespace PantheonCalculator.Core {
             Operator () { symbol = "/", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a / b },
             Operator () { symbol = "÷", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a / b },
             Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a % b },
+            Operator () { symbol = "+%", inputs = 2, prec = 4, fixity = "LEFT", eval = (a, b) => a + (a * b)/100 }, //vala-lint=no-space
+            Operator () { symbol = "-%", inputs = 2, prec = 4, fixity = "LEFT", eval = (a, b) => a - (a * b)/100 },//vala-lint=no-space
+            Operator () { symbol = "*%", inputs = 2, prec = 4, fixity = "LEFT", eval = (a, b) => (a * b)/100 },//vala-lint=no-space
+            Operator () { symbol = "×%", inputs = 2, prec = 4, fixity = "LEFT", eval = (a, b) => (a * b)/100 },//vala-lint=no-space
             Operator () { symbol = "^", inputs = 2, prec = 3, fixity = "RIGHT", eval = (a, b) => Math.pow (a, b) },
             Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => a * Math.pow (10, b) },
             Operator () { symbol = "%", inputs = 1, prec = 5, fixity = "LEFT", eval = (a, b) => b / 100.0 }
@@ -209,7 +213,7 @@ namespace PantheonCalculator.Core {
                         Constant c = get_constant (t);
                         stack.push_tail (new Token (c.eval ().to_string (), TokenType.NUMBER));
                     } catch (SHUNTING_ERROR e) {
-                        throw new EVAL_ERROR.NO_CONSTANT ("");
+                        throw new EVAL_ERROR.NO_CONSTANT ("Constant '%s' not recognised", t.content);
                     }
                 } else if (t.token_type == TokenType.OPERATOR) {
                     try {
@@ -222,7 +226,7 @@ namespace PantheonCalculator.Core {
                         }
                         stack.push_tail (compute (o.eval, t2, t1));
                     } catch (SHUNTING_ERROR e) {
-                        throw new EVAL_ERROR.NO_OPERATOR ("");
+                        throw new EVAL_ERROR.NO_OPERATOR ("Operator '%s' not recognised", t.content);
                     }
                 } else if (t.token_type == TokenType.FUNCTION) {
                     try {
@@ -235,7 +239,7 @@ namespace PantheonCalculator.Core {
                         }
                         stack.push_tail (compute (f.eval, t1, t2));
                     } catch (SHUNTING_ERROR e) {
-                        throw new EVAL_ERROR.NO_FUNCTION ("");
+                        throw new EVAL_ERROR.NO_FUNCTION ("Function '%s' not recognised", t.content);
                     }
                 }
             }
