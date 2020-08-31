@@ -14,6 +14,12 @@
   <releases>
     <release version="1.5.6" date="2020-05-17" urgency="medium">
       <description>
+        <p>New features:</p>
+          <ul>
+            <li>Recognise infix operator '+%'for increasing by a percentage</li>
+            <li>Recognise infix operator '-%'for decreasing by a percentage</li>
+            <li>Recognise infix operator '×%'for taking a percentage</li>
+          </ul>
         <p>Minor updates:</p>
         <ul>
           <li>Use slim titlebar</li>
