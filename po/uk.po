@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-10 14:33+0000\n"
+"POT-Creation-Date: 2020-05-18 19:20+0000\n"
 "PO-Revision-Date: 2019-09-19 14:22+0000\n"
 "Last-Translator: Andrii Priadko <mendeleev.ua@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:81 src/MainWindow.vala:415
+#: src/MainWindow.vala:81 src/MainWindow.vala:416
 msgid "Show extended functionality"
 msgstr "Показати додаткові функції"
 
@@ -28,91 +28,91 @@ msgstr "Історія"
 msgid "Calculator"
 msgstr "Калькулятор"
 
-#: src/MainWindow.vala:106
+#: src/MainWindow.vala:107
 msgid "Calculate Result"
 msgstr "Обчислити результат"
 
-#: src/MainWindow.vala:110
+#: src/MainWindow.vala:111
 msgid "Add last result"
 msgstr "Додати останній результат"
 
-#: src/MainWindow.vala:113
+#: src/MainWindow.vala:114
 msgid "Backspace"
 msgstr "Видалити попередній символ"
 
-#: src/MainWindow.vala:119
+#: src/MainWindow.vala:120
 msgid "Clear entry"
 msgstr "Очистити запис"
 
-#: src/MainWindow.vala:123 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:124 src/HistoryDialog.vala:107
 msgid "Add"
 msgstr "Додати"
 
-#: src/MainWindow.vala:127
+#: src/MainWindow.vala:128
 msgid "Subtract"
 msgstr "Відняти"
 
-#: src/MainWindow.vala:131
+#: src/MainWindow.vala:132
 msgid "Multiply"
 msgstr "Перемножити"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:136
 msgid "Divide"
 msgstr "Розділити"
 
-#: src/MainWindow.vala:141
+#: src/MainWindow.vala:142
 msgid "Percentage"
 msgstr "Відсоток"
 
-#: src/MainWindow.vala:186
+#: src/MainWindow.vala:187
 msgid "Start Group"
 msgstr "Початкова група"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:188
 msgid "End Group"
 msgstr "Кінцева група"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:189
 msgid "Exponent"
 msgstr "Експонента"
 
-#: src/MainWindow.vala:190
+#: src/MainWindow.vala:191
 msgid "Root"
 msgstr "Корінь"
 
-#: src/MainWindow.vala:191
+#: src/MainWindow.vala:192
 msgid "Sine"
 msgstr "Синус"
 
-#: src/MainWindow.vala:192
+#: src/MainWindow.vala:193
 msgid "Hyperbolic Sine"
 msgstr "Гіперболічний синус"
 
-#: src/MainWindow.vala:193
+#: src/MainWindow.vala:194
 msgid "Cosine"
 msgstr "Косинус"
 
-#: src/MainWindow.vala:194
+#: src/MainWindow.vala:195
 msgid "Hyperbolic Cosine"
 msgstr "Гіперболічний косинус"
 
-#: src/MainWindow.vala:195
+#: src/MainWindow.vala:196
 msgid "Tangent"
 msgstr "Тангенс"
 
-#: src/MainWindow.vala:196
+#: src/MainWindow.vala:197
 msgid "Hyperbolic Tangent"
 msgstr "Гіперболічний тангенс"
 
-#: src/MainWindow.vala:197
+#: src/MainWindow.vala:198
 msgid "Pi"
 msgstr "Число Пі"
 
-#: src/MainWindow.vala:198
+#: src/MainWindow.vala:199
 msgid "Euler's Number"
 msgstr "Число Ейлера"
 
-#: src/MainWindow.vala:410
+#: src/MainWindow.vala:411
 msgid "Hide extended functionality"
 msgstr "Сховати додаткові функції"
 

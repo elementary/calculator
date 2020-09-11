@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-10 14:33+0000\n"
-"PO-Revision-Date: 2019-10-21 14:23+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"POT-Creation-Date: 2020-05-18 19:20+0000\n"
+"PO-Revision-Date: 2020-08-14 08:13+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/calculator/"
 "calculator/es/>\n"
 "Language: es\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-01-06 06:03+0000\n"
 
-#: src/MainWindow.vala:81 src/MainWindow.vala:415
+#: src/MainWindow.vala:81 src/MainWindow.vala:416
 msgid "Show extended functionality"
 msgstr "Mostrar funciones avanzadas"
 
@@ -27,91 +27,91 @@ msgstr "Historial"
 msgid "Calculator"
 msgstr "Calculadora"
 
-#: src/MainWindow.vala:106
+#: src/MainWindow.vala:107
 msgid "Calculate Result"
 msgstr "Calcular resultado"
 
-#: src/MainWindow.vala:110
+#: src/MainWindow.vala:111
 msgid "Add last result"
-msgstr "Sumar el último resultado"
+msgstr "Sumar último resultado"
 
-#: src/MainWindow.vala:113
+#: src/MainWindow.vala:114
 msgid "Backspace"
 msgstr "Retroceso"
 
-#: src/MainWindow.vala:119
+#: src/MainWindow.vala:120
 msgid "Clear entry"
 msgstr "Borrar entrada"
 
-#: src/MainWindow.vala:123 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:124 src/HistoryDialog.vala:107
 msgid "Add"
 msgstr "Sumar"
 
-#: src/MainWindow.vala:127
+#: src/MainWindow.vala:128
 msgid "Subtract"
 msgstr "Restar"
 
-#: src/MainWindow.vala:131
+#: src/MainWindow.vala:132
 msgid "Multiply"
 msgstr "Multiplicar"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:136
 msgid "Divide"
 msgstr "Dividir"
 
-#: src/MainWindow.vala:141
+#: src/MainWindow.vala:142
 msgid "Percentage"
 msgstr "Porcentaje"
 
-#: src/MainWindow.vala:186
+#: src/MainWindow.vala:187
 msgid "Start Group"
 msgstr "Abrir grupo"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:188
 msgid "End Group"
 msgstr "Cerrar grupo"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:189
 msgid "Exponent"
 msgstr "Exponencial"
 
-#: src/MainWindow.vala:190
+#: src/MainWindow.vala:191
 msgid "Root"
 msgstr "Raíz cuadrada"
 
-#: src/MainWindow.vala:191
+#: src/MainWindow.vala:192
 msgid "Sine"
 msgstr "Seno"
 
-#: src/MainWindow.vala:192
+#: src/MainWindow.vala:193
 msgid "Hyperbolic Sine"
 msgstr "Seno hiperbólico"
 
-#: src/MainWindow.vala:193
+#: src/MainWindow.vala:194
 msgid "Cosine"
 msgstr "Coseno"
 
-#: src/MainWindow.vala:194
+#: src/MainWindow.vala:195
 msgid "Hyperbolic Cosine"
 msgstr "Coseno hiperbólico"
 
-#: src/MainWindow.vala:195
+#: src/MainWindow.vala:196
 msgid "Tangent"
 msgstr "Tangente"
 
-#: src/MainWindow.vala:196
+#: src/MainWindow.vala:197
 msgid "Hyperbolic Tangent"
 msgstr "Tangente hiperbólica"
 
-#: src/MainWindow.vala:197
+#: src/MainWindow.vala:198
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:198
+#: src/MainWindow.vala:199
 msgid "Euler's Number"
 msgstr "Número de Euler"
 
-#: src/MainWindow.vala:410
+#: src/MainWindow.vala:411
 msgid "Hide extended functionality"
 msgstr "Ocultar funciones adicionales"
 
@@ -138,13 +138,13 @@ msgstr "«%s» no es válido."
 
 #: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
-msgstr "Paréntesis no coincidentes."
+msgstr "Paréntesis desparejados."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:167
 #, c-format
 msgid "'%s' is unknown."
-msgstr "«%s» es desconocido."
+msgstr "Se desconoce «%s»."
 
 #~ msgid "translator-credits"
 #~ msgstr ""

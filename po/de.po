@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-10 14:33+0000\n"
+"POT-Creation-Date: 2020-05-18 19:20+0000\n"
 "PO-Revision-Date: 2019-12-25 18:22+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/calculator/"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:81 src/MainWindow.vala:415
+#: src/MainWindow.vala:81 src/MainWindow.vala:416
 msgid "Show extended functionality"
 msgstr "Erweiterte Funktionen anzeigen"
 
@@ -32,91 +32,91 @@ msgstr "Chronik"
 msgid "Calculator"
 msgstr "Rechner"
 
-#: src/MainWindow.vala:106
+#: src/MainWindow.vala:107
 msgid "Calculate Result"
 msgstr "Ergebnis berechnen"
 
-#: src/MainWindow.vala:110
+#: src/MainWindow.vala:111
 msgid "Add last result"
 msgstr "Letztes Ergebnis anfügen"
 
-#: src/MainWindow.vala:113
+#: src/MainWindow.vala:114
 msgid "Backspace"
 msgstr "Letztes Zeichen löschen"
 
-#: src/MainWindow.vala:119
+#: src/MainWindow.vala:120
 msgid "Clear entry"
 msgstr "Eingabe löschen"
 
-#: src/MainWindow.vala:123 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:124 src/HistoryDialog.vala:107
 msgid "Add"
 msgstr "Addieren"
 
-#: src/MainWindow.vala:127
+#: src/MainWindow.vala:128
 msgid "Subtract"
 msgstr "Subtrahieren"
 
-#: src/MainWindow.vala:131
+#: src/MainWindow.vala:132
 msgid "Multiply"
 msgstr "Multiplizieren"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:136
 msgid "Divide"
 msgstr "Dividieren"
 
-#: src/MainWindow.vala:141
+#: src/MainWindow.vala:142
 msgid "Percentage"
 msgstr "Prozent"
 
-#: src/MainWindow.vala:186
+#: src/MainWindow.vala:187
 msgid "Start Group"
 msgstr "Gruppierung beginnen"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:188
 msgid "End Group"
 msgstr "Gruppierung schließen"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:189
 msgid "Exponent"
 msgstr "Exponent"
 
-#: src/MainWindow.vala:190
+#: src/MainWindow.vala:191
 msgid "Root"
 msgstr "Wurzel"
 
-#: src/MainWindow.vala:191
+#: src/MainWindow.vala:192
 msgid "Sine"
 msgstr "Sinus"
 
-#: src/MainWindow.vala:192
+#: src/MainWindow.vala:193
 msgid "Hyperbolic Sine"
 msgstr "Hyperbolischer Sinus"
 
-#: src/MainWindow.vala:193
+#: src/MainWindow.vala:194
 msgid "Cosine"
 msgstr "Kosinus"
 
-#: src/MainWindow.vala:194
+#: src/MainWindow.vala:195
 msgid "Hyperbolic Cosine"
 msgstr "Hyperbolischer Kosinus"
 
-#: src/MainWindow.vala:195
+#: src/MainWindow.vala:196
 msgid "Tangent"
 msgstr "Tangens"
 
-#: src/MainWindow.vala:196
+#: src/MainWindow.vala:197
 msgid "Hyperbolic Tangent"
 msgstr "Hyperbolischer Tangens"
 
-#: src/MainWindow.vala:197
+#: src/MainWindow.vala:198
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:198
+#: src/MainWindow.vala:199
 msgid "Euler's Number"
 msgstr "Eulersche Zahl"
 
-#: src/MainWindow.vala:410
+#: src/MainWindow.vala:411
 msgid "Hide extended functionality"
 msgstr "Erweiterte Funktionen ausblenden"
 

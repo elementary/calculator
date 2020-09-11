@@ -2,22 +2,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-10 14:33+0000\n"
-"PO-Revision-Date: 2018-06-30 00:02+0000\n"
-"Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://weblate.elementary.io/projects/calculator/"
+"POT-Creation-Date: 2020-05-18 19:20+0000\n"
+"PO-Revision-Date: 2020-05-30 10:11+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/calculator/"
 "calculator/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-28 04:59+0000\n"
 
-#: src/MainWindow.vala:81 src/MainWindow.vala:415
+#: src/MainWindow.vala:81 src/MainWindow.vala:416
 msgid "Show extended functionality"
-msgstr "Zobrazit rozšířené možnosti"
+msgstr "Zobrazit rozšířené funkce"
 
 #: src/MainWindow.vala:86 src/HistoryDialog.vala:37
 msgid "History"
@@ -27,97 +27,97 @@ msgstr "Historie"
 msgid "Calculator"
 msgstr "Kalkulačka"
 
-#: src/MainWindow.vala:106
+#: src/MainWindow.vala:107
 msgid "Calculate Result"
 msgstr "Spočítat výsledek"
 
-#: src/MainWindow.vala:110
+#: src/MainWindow.vala:111
 msgid "Add last result"
 msgstr "Vložit poslední výsledek"
 
-#: src/MainWindow.vala:113
+#: src/MainWindow.vala:114
 msgid "Backspace"
-msgstr "Zpět"
+msgstr "Backspace"
 
-#: src/MainWindow.vala:119
+#: src/MainWindow.vala:120
 msgid "Clear entry"
-msgstr "Vymazat pole"
+msgstr "Vymazat zadání"
 
-#: src/MainWindow.vala:123 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:124 src/HistoryDialog.vala:107
 msgid "Add"
 msgstr "Přičíst"
 
-#: src/MainWindow.vala:127
+#: src/MainWindow.vala:128
 msgid "Subtract"
 msgstr "Odečíst"
 
-#: src/MainWindow.vala:131
+#: src/MainWindow.vala:132
 msgid "Multiply"
 msgstr "Násobit"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:136
 msgid "Divide"
 msgstr "Dělit"
 
-#: src/MainWindow.vala:141
+#: src/MainWindow.vala:142
 msgid "Percentage"
 msgstr "Procenta"
 
-#: src/MainWindow.vala:186
+#: src/MainWindow.vala:187
 msgid "Start Group"
 msgstr "Začátek skupiny"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:188
 msgid "End Group"
 msgstr "Konec skupiny"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:189
 msgid "Exponent"
 msgstr "Mocnina"
 
-#: src/MainWindow.vala:190
+#: src/MainWindow.vala:191
 msgid "Root"
 msgstr "Odmocnina"
 
-#: src/MainWindow.vala:191
+#: src/MainWindow.vala:192
 msgid "Sine"
 msgstr "Sinus"
 
-#: src/MainWindow.vala:192
+#: src/MainWindow.vala:193
 msgid "Hyperbolic Sine"
 msgstr "Hyperbolický sinus"
 
-#: src/MainWindow.vala:193
+#: src/MainWindow.vala:194
 msgid "Cosine"
 msgstr "Kosinus"
 
-#: src/MainWindow.vala:194
+#: src/MainWindow.vala:195
 msgid "Hyperbolic Cosine"
 msgstr "Hyperbolický kosinus"
 
-#: src/MainWindow.vala:195
+#: src/MainWindow.vala:196
 msgid "Tangent"
 msgstr "Tangens"
 
-#: src/MainWindow.vala:196
+#: src/MainWindow.vala:197
 msgid "Hyperbolic Tangent"
 msgstr "Hyperbolický tangens"
 
-#: src/MainWindow.vala:197
+#: src/MainWindow.vala:198
 msgid "Pi"
 msgstr "Pí"
 
-#: src/MainWindow.vala:198
+#: src/MainWindow.vala:199
 msgid "Euler's Number"
 msgstr "Eulerovo číslo"
 
-#: src/MainWindow.vala:410
+#: src/MainWindow.vala:411
 msgid "Hide extended functionality"
 msgstr "Skrýt rozšířené možnosti"
 
 #: src/HistoryDialog.vala:92
 msgid "Value to add:"
-msgstr "Vložit hodnotu:"
+msgstr "Hodnota, kterou přidat:"
 
 #: src/HistoryDialog.vala:96
 msgid "Result"
@@ -134,7 +134,7 @@ msgstr "Zavřít"
 #: src/Core/Scanner.vala:69
 #, c-format
 msgid "'%s' is invalid."
-msgstr "'%s' je neplatný."
+msgstr "„%s“ není platný."
 
 #: src/Core/Scanner.vala:114
 msgid "Mismatched parenthesis."
@@ -144,7 +144,7 @@ msgstr "Nespárovatelné závorky."
 #: src/Core/Scanner.vala:167
 #, c-format
 msgid "'%s' is unknown."
-msgstr "'%s' je neznámý."
+msgstr "„%s“ je neznámý."
 
 #~ msgid "translator-credits"
 #~ msgstr ""

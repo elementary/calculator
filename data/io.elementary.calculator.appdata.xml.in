@@ -12,6 +12,15 @@
   </description>
   <translation type="gettext">io.elementary.calculator</translation>
   <releases>
+    <release version="1.5.6" date="2020-05-17" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Use slim titlebar</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.5.5" date="2020-04-01" urgency="medium">
       <description>
         <p>Minor updates:</p>
@@ -81,7 +90,10 @@
   <update_contact>contact_at_elementary.io</update_contact>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/calculator/master/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/calculator/master/data/screenshot@2x.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/calculator/master/data/screenshot-extended@2x.png</image>
     </screenshot>
   </screenshots>
 </component>

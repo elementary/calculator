@@ -39,7 +39,6 @@ namespace PantheonCalculator {
 
             quit_action.activate.connect (() => {
                 if (window != null) {
-                    window.save_state ();
                     window.destroy ();
                 }
             });
