@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-18 19:20+0000\n"
-"PO-Revision-Date: 2020-09-11 23:19+0000\n"
+"PO-Revision-Date: 2020-09-14 12:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
 "extra/uk/>\n"
@@ -29,16 +29,16 @@ msgstr "Калькулятор"
 #: data/io.elementary.calculator.appdata.xml.in:9
 #: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
-msgstr "Вирішити прості рівняння"
+msgstr "Розв'язуйте прості рівняння"
 
 #: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
-"Простий калькулятор для повсякденного використання. Він підтримує базові і "
-"деякі наукові розрахунки, включаючи тригонометричні функції, синус, косинус "
-"і тангенс."
+"Простий калькулятор для повсякденного вжитку. Він підтримує базові і деякі "
+"наукові розрахунки, включаючи тригонометричні функції, синус, косинус і "
+"тангенс."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 #: data/io.elementary.calculator.appdata.xml.in:26
