@@ -211,7 +211,6 @@ namespace PantheonCalculator {
             button_atan.function = "atan";
             var button_inverse = new Button ("X<sup>-1</sup>");
             
-
             var extended_grid = new Gtk.Grid ();
             extended_grid.margin_start = 6;
             extended_grid.column_spacing = 6;
@@ -235,7 +234,6 @@ namespace PantheonCalculator {
             extended_grid.attach (button_acos, 2, 3, 1, 1);
             extended_grid.attach (button_atan, 2, 4, 1, 1);
             extended_grid.attach (button_inverse, 2, 5, 1, 1);
-
 
             extended_revealer = new Gtk.Revealer ();
             extended_revealer.set_transition_type (Gtk.RevealerTransitionType.SLIDE_LEFT);
@@ -315,7 +313,7 @@ namespace PantheonCalculator {
             button_asin.clicked.connect (() => {function_button_clicked (button_asin.function);});
             button_acos.clicked.connect (() => {function_button_clicked (button_acos.function);});
             button_atan.clicked.connect (() => {function_button_clicked (button_atan.function);});
-            button_inverse.clicked.connect (()=> {button_inverse_clicked();});
+            button_inverse.clicked.connect (() => {button_inverse_clicked ();});
 
 
             settings.bind ("extended-shown", button_extended, "active", GLib.SettingsBindFlags.DEFAULT);
@@ -397,7 +395,7 @@ namespace PantheonCalculator {
             entry.set_position (position);
         }
         
-         private void button_inverse_clicked () {
+        private void button_inverse_clicked () {
             entry.set_text("1/(" +entry.get_text() +")");
             button_calc_clicked();
         }
