@@ -65,6 +65,9 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("(2 + 2) * 2.2", "8.8");
         assert_equal ("sin(0.123)^2 + cos(0.123)^2", "1");
         assert_equal ("tan(0.245) - sin(0.245) / cos(0.245)", "0");
+        assert_equal ("asin(0.532) + acos(0.532)", "1.570796327");
+        assert_equal ("exp(ln(2.2))", "2.2");
+        assert_equal ("atan(1)", "0.785398163");
         assert_equal ("sqrt(5^2 - 4^2)", "3");
         assert_equal ("sqrt(423) + (3.23 * 8.56) - 1E2", "-51.784236199");
         assert_equal ("sqrt(-1 + 423 + 1) + (3.23 * 8.56) - sin(90 + 0.2)", "47.428606036");
