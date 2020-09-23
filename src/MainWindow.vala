@@ -396,7 +396,7 @@ namespace PantheonCalculator {
         }
         
         private void button_inverse_clicked () {
-            entry.set_text("1/(" +entry.get_text() +")");
+            entry.set_text ("1/(" + entry.get_text() + ")");
             button_calc_clicked();
         }
 
