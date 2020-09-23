@@ -72,11 +72,11 @@ namespace PantheonCalculator.Core {
             Function () { symbol = "sinh", inputs = 1, eval = (a) => Math.sinh (a) },
             Function () { symbol = "cosh", inputs = 1, eval = (a) => Math.cosh (a) },
             Function () { symbol = "tanh", inputs = 1, eval = (a) => Math.tanh (a) },
-            Function () { symbol = "log", inputs = 1, eval = (a) => Math.log10 (a)},
+            Function () { symbol = "log", inputs = 1, eval = (a) => Math.log10 (a) },
             Function () { symbol = "ln", inputs = 1, eval = (a) => Math.log (a) },
             Function () { symbol = "exp", inputs = 1, eval = (a) => Math.exp (a) },
             Function () { symbol = "sqrt", inputs = 1, eval = (a) => Math.sqrt (a) },
-            Function () { symbol = "√", inputs = 1, eval = (a) => Math.sqrt (a) ,
+            Function () { symbol = "√", inputs = 1, eval = (a) => Math.sqrt (a) },
             Function () { symbol = "asin", inputs = 1, eval = (a) => Math.asin (a) },
             Function () { symbol = "acos", inputs = 1, eval = (a) => Math.acos (a) },
             Function () { symbol = "atan", inputs = 1, eval = (a) => Math.atan (a) }
