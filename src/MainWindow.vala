@@ -210,7 +210,7 @@ namespace PantheonCalculator {
             var button_atan = new Button ("tan<sup>-1</sup>", _("arc tangent"));
             button_atan.function = "atan";
             var button_inverse = new Button ("X<sup>-1</sup>");
-            
+
             var extended_grid = new Gtk.Grid ();
             extended_grid.margin_start = 6;
             extended_grid.column_spacing = 6;
@@ -394,10 +394,10 @@ namespace PantheonCalculator {
             entry.grab_focus ();
             entry.set_position (position);
         }
-        
+
         private void button_inverse_clicked () {
-            entry.set_text ("1/(" + entry.get_text() + ")");
-            button_calc_clicked();
+            entry.set_text ("1/(" + entry.get_text () + ")");
+            button_calc_clicked ();
         }
 
         private void button_del_clicked () {
