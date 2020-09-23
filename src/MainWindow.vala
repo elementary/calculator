@@ -201,6 +201,16 @@ namespace PantheonCalculator {
             var button_tanh = new Button ("tanh", _("Hyperbolic Tangent"));
             var button_pi = new Button ("π", _("Pi"));
             var button_e = new Button ("e", _("Euler's Number"));
+            var button_log = new Button ("log", _("log 2 base 10"));
+            var button_ln = new Button ("ln", _("log base e"));
+            var button_asin = new Button ("sin<sup>-1</sup>", _("arc sine"));
+            button_asin.function = "asin";
+            var button_acos = new Button ("cos<sup>-1</sup>", _("arc cosine"));
+            button_acos.function = "acos";
+            var button_atan = new Button ("tan<sup>-1</sup>", _("arc tangent"));
+            button_atan.function = "atan";
+            var button_inverse = new Button ("X<sup>-1</sup>");
+            
 
             var extended_grid = new Gtk.Grid ();
             extended_grid.margin_start = 6;
@@ -219,6 +229,13 @@ namespace PantheonCalculator {
             extended_grid.attach (button_tanh, 1, 4, 1, 1);
             extended_grid.attach (button_pi, 0, 5, 1, 1);
             extended_grid.attach (button_e, 1, 5, 1, 1);
+            extended_grid.attach (button_log, 2, 0, 1, 1);
+            extended_grid.attach (button_ln, 2, 1, 1, 1);
+            extended_grid.attach (button_asin, 2, 2, 1, 1);
+            extended_grid.attach (button_acos, 2, 3, 1, 1);
+            extended_grid.attach (button_atan, 2, 4, 1, 1);
+            extended_grid.attach (button_inverse, 2, 5, 1, 1);
+
 
             extended_revealer = new Gtk.Revealer ();
             extended_revealer.set_transition_type (Gtk.RevealerTransitionType.SLIDE_LEFT);
@@ -293,6 +310,13 @@ namespace PantheonCalculator {
             button_cosh.clicked.connect (() => {function_button_clicked (button_cosh.function);});
             button_tan.clicked.connect (() => {function_button_clicked (button_tan.function);});
             button_tanh.clicked.connect (() => {function_button_clicked (button_tanh.function);});
+            button_log.clicked.connect (() => {function_button_clicked (button_log.function);});
+            button_ln.clicked.connect (() => {function_button_clicked (button_ln.function);});
+            button_asin.clicked.connect (() => {function_button_clicked (button_asin.function);});
+            button_acos.clicked.connect (() => {function_button_clicked (button_acos.function);});
+            button_atan.clicked.connect (() => {function_button_clicked (button_atan.function);});
+            button_inverse.clicked.connect (()=> {button_inverse_clicked();});
+
 
             settings.bind ("extended-shown", button_extended, "active", GLib.SettingsBindFlags.DEFAULT);
 
@@ -371,6 +395,11 @@ namespace PantheonCalculator {
 
             entry.grab_focus ();
             entry.set_position (position);
+        }
+        
+         private void button_inverse_clicked () {
+            entry.set_text("1/(" +entry.get_text() +")");
+            button_calc_clicked();
         }
 
         private void button_del_clicked () {
