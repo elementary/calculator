@@ -26,7 +26,6 @@ namespace PantheonCalculator {
 
         private Gtk.Revealer extended_revealer;
         private Gtk.Entry entry;
-
         private Gtk.Image extended_img_1;
         private Gtk.Image extended_img_2;
         private Gtk.Button button_calc;
@@ -53,8 +52,6 @@ namespace PantheonCalculator {
                 if (remember_recent_files) {
                     settings.set_string ("memory-content", memory ?? "");
                 }
-
-
             }
         }
 
@@ -348,7 +345,6 @@ namespace PantheonCalculator {
 
             if (remember_recent_files) {
                 settings.bind ("entry-content", entry, "text", GLib.SettingsBindFlags.DEFAULT);
-
                 var saved_memory = settings.get_string ("memory-content");
                 if (saved_memory != "") {
                     memory = saved_memory;
@@ -374,6 +370,7 @@ namespace PantheonCalculator {
                 selection_length = selection_end - selection_start;
                 new_position -= selection_length;
             }
+
             entry.insert_at_cursor (label);
             new_position += label.char_count ();
             entry.grab_focus ();
