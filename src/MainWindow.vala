@@ -25,17 +25,37 @@ namespace PantheonCalculator {
 
         private Gtk.Revealer extended_revealer;
         private Gtk.Entry entry;
+
         private Gtk.Image extended_img_1;
         private Gtk.Image extended_img_2;
         private Gtk.Button button_calc;
         private Gtk.Button button_history;
         private Gtk.Button button_ans;
         private Gtk.Button button_del;
+
+        private Gtk.Button button_mem_add;
+        private Gtk.Button button_mem_sub;
+        private Gtk.Button button_mem_recall;
+        private Gtk.Button button_mem_clr;
+        private string? _memory = null;
+        private string? memory {
+            get {
+                return _memory;
+            }
+
+            set {
+                _memory = value;
+                button_mem_clr.sensitive = _memory != null;
+                button_mem_recall.sensitive = _memory != null;
+            }
+        }
+
         private Gtk.ToggleButton button_extended;
         private HistoryDialog history_dialog;
 
         private Gtk.InfoBar infobar;
         private Gtk.Label infobar_label;
+        private Gtk.Grid basic_grid;
 
         private List<History?> history;
         private int position;
@@ -125,6 +145,17 @@ namespace PantheonCalculator {
             );
             button_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
+            button_mem_add = new Button ("M+", _("Add value to memory"));
+            button_mem_sub = new Button ("M-", _("Substract value from memory"));
+            button_mem_recall = new Button ("MR", _("Memory Recall"));
+            button_mem_recall.sensitive = false;
+            button_mem_recall.get_style_context ().add_class (Gtk.STYLE_CLASS_TOOLBAR);
+            button_mem_clr = new Button ("MC", _("Memory clear"));
+            button_mem_clr.sensitive = false;
+            button_mem_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_TOOLBAR);
+            var saved_memory = settings.get_string ("memory-content");
+            memory = saved_memory == "" ? null : saved_memory;
+
             var button_add = new Button (" + ", _("Add"));
             button_add.function = "+";
             button_add.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
@@ -156,37 +187,41 @@ namespace PantheonCalculator {
             var button_8 = new Button ("8");
             var button_9 = new Button ("9");
 
-            var basic_grid = new Gtk.Grid ();
+            basic_grid = new Gtk.Grid ();
             basic_grid.column_spacing = 6;
             basic_grid.row_spacing = 6;
             basic_grid.valign = Gtk.Align.FILL;
             basic_grid.set_row_homogeneous (true);
 
-            basic_grid.attach (entry, 0, 0, 4, 1);
-            basic_grid.attach (button_clr, 0, 1, 1, 1);
-            basic_grid.attach (button_del, 1, 1, 1, 1);
-            basic_grid.attach (button_percent, 2, 1, 1, 1);
-            basic_grid.attach (button_div, 3, 1, 1, 1);
+            basic_grid.attach (button_mem_clr, 0, 1, 1, 1);
+            basic_grid.attach (button_mem_recall, 1, 1, 1, 1);
+            basic_grid.attach (button_mem_add, 2, 1, 1, 1);
+            basic_grid.attach (button_mem_sub, 3, 1, 1, 1);
 
-            basic_grid.attach (button_7, 0, 2, 1, 1);
-            basic_grid.attach (button_8, 1, 2, 1, 1);
-            basic_grid.attach (button_9, 2, 2, 1, 1);
-            basic_grid.attach (button_mult, 3, 2, 1, 1);
+            basic_grid.attach (button_clr, 0, 2, 1, 1);
+            basic_grid.attach (button_del, 1, 2, 1, 1);
+            basic_grid.attach (button_percent, 2, 2, 1, 1);
+            basic_grid.attach (button_div, 3, 2, 1, 1);
 
-            basic_grid.attach (button_4, 0, 3, 1, 1);
-            basic_grid.attach (button_5, 1, 3, 1, 1);
-            basic_grid.attach (button_6, 2, 3, 1, 1);
-            basic_grid.attach (button_sub, 3, 3, 1, 1);
+            basic_grid.attach (button_7, 0, 3, 1, 1);
+            basic_grid.attach (button_8, 1, 3, 1, 1);
+            basic_grid.attach (button_9, 2, 3, 1, 1);
+            basic_grid.attach (button_mult, 3, 3, 1, 1);
 
-            basic_grid.attach (button_1, 0, 4, 1, 1);
-            basic_grid.attach (button_2, 1, 4, 1, 1);
-            basic_grid.attach (button_3, 2, 4, 1, 1);
-            basic_grid.attach (button_add, 3, 4, 1, 1);
+            basic_grid.attach (button_4, 0, 4, 1, 1);
+            basic_grid.attach (button_5, 1, 4, 1, 1);
+            basic_grid.attach (button_6, 2, 4, 1, 1);
+            basic_grid.attach (button_sub, 3, 4, 1, 1);
 
-            basic_grid.attach (button_0, 0, 5, 1, 1);
-            basic_grid.attach (button_point, 1, 5, 1, 1);
-            basic_grid.attach (button_ans, 2, 5, 1, 1);
-            basic_grid.attach (button_calc, 3, 5, 1, 1);
+            basic_grid.attach (button_1, 0, 5, 1, 1);
+            basic_grid.attach (button_2, 1, 5, 1, 1);
+            basic_grid.attach (button_3, 2, 5, 1, 1);
+            basic_grid.attach (button_add, 3, 5, 1, 1);
+
+            basic_grid.attach (button_0, 0, 6, 1, 1);
+            basic_grid.attach (button_point, 1, 6, 1, 1);
+            basic_grid.attach (button_ans, 2, 6, 1, 1);
+            basic_grid.attach (button_calc, 3, 6, 1, 1);
 
             var button_par_left = new Button ("(", _("Start Group"));
             var button_par_right = new Button (")", _("End Group"));
@@ -205,7 +240,7 @@ namespace PantheonCalculator {
             var extended_grid = new Gtk.Grid ();
             extended_grid.margin_start = 6;
             extended_grid.column_spacing = 6;
-            extended_grid.row_spacing = 6;
+            extended_grid.row_spacing = 7;
             extended_grid.valign = Gtk.Align.END;
             extended_grid.attach (button_par_left, 0, 0, 1, 1);
             extended_grid.attach (button_par_right, 1, 0, 1, 1);
@@ -227,8 +262,11 @@ namespace PantheonCalculator {
 
             var main_grid = new Gtk.Grid ();
             main_grid.margin = 6;
-            main_grid.add (basic_grid);
-            main_grid.add (extended_revealer);
+            main_grid.row_spacing = 6;
+            main_grid.orientation = Gtk.Orientation.HORIZONTAL;
+            main_grid.attach (entry, 0, 0, 2, 1);
+            main_grid.attach (basic_grid, 0, 1, 1, 1);
+            main_grid.attach (extended_revealer, 1, 1, 1, 1);
 
             infobar_label = new Gtk.Label ("");
 
@@ -280,6 +318,10 @@ namespace PantheonCalculator {
             button_9.clicked.connect (() => {regular_button_clicked (button_9.function);});
             button_point.clicked.connect (() => {regular_button_clicked (button_point.function);});
             button_percent.clicked.connect (() => {regular_button_clicked (button_percent.function);});
+            button_mem_clr.clicked.connect (button_mem_clr_clicked);
+            button_mem_recall.clicked.connect (button_mem_recall_clicked);
+            button_mem_add.clicked.connect (button_mem_add_clicked);
+            button_mem_sub.clicked.connect (button_mem_sub_clicked);
 
             button_pi.clicked.connect (() => {regular_button_clicked (button_pi.function);});
             button_e.clicked.connect (() => {regular_button_clicked (button_e.function);});
@@ -406,6 +448,46 @@ namespace PantheonCalculator {
 
             entry.grab_focus ();
             entry.set_position (position);
+        }
+
+        private void button_mem_clr_clicked () {
+            memory = null;
+        }
+
+        private void button_mem_recall_clicked () {
+            entry.set_text (memory);
+        }
+
+        private void memory_function (string functionality) {
+            var stored_mem = memory;
+            if (memory == null) {
+                stored_mem = "0";
+            }
+
+            var result = stored_mem + functionality + entry.get_text ();
+            var eval = new Core.Evaluation ();
+            try {
+                result = eval.evaluate (result, decimal_places);
+            } catch (Core.OUT_ERROR e) {
+                infobar_label.label = e.message;
+                infobar.no_show_all = false;
+                infobar.show_all ();
+                infobar.no_show_all = true;
+            }
+
+            memory = result;
+        }
+
+        private void button_mem_add_clicked () {
+            if (entry.get_text () != "") {
+                memory_function ("+");
+            }
+        }
+
+        private void button_mem_sub_clicked () {
+            if (entry.get_text () != "") {
+                memory_function ("-");
+            }
         }
 
         private void button_ans_clicked () {
