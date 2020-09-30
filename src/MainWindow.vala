@@ -22,6 +22,7 @@ namespace PantheonCalculator {
     public class MainWindow : Gtk.ApplicationWindow {
         private uint configure_id;
         private static GLib.Settings settings;
+        private static GLib.Settings privacy_settings;
 
         private Gtk.Revealer extended_revealer;
         private Gtk.Entry entry;
@@ -38,6 +39,8 @@ namespace PantheonCalculator {
         private Gtk.Button button_mem_recall;
         private Gtk.Button button_mem_clr;
         private string? _memory = null;
+        public bool remember_recent_files { get; set; }
+
         private string? memory {
             get {
                 return _memory;
@@ -47,6 +50,11 @@ namespace PantheonCalculator {
                 _memory = value;
                 button_mem_clr.sensitive = _memory != null;
                 button_mem_recall.sensitive = _memory != null;
+                if (remember_recent_files) {
+                    settings.set_string ("memory-content", memory ?? "");
+                }
+
+
             }
         }
 
@@ -74,6 +82,7 @@ namespace PantheonCalculator {
 
         static construct {
             settings = new Settings ("io.elementary.calculator.saved-state");
+            privacy_settings = new Settings ("org.gnome.desktop.privacy");
         }
 
         construct {
@@ -153,8 +162,6 @@ namespace PantheonCalculator {
             button_mem_clr = new Button ("MC", _("Memory clear"));
             button_mem_clr.sensitive = false;
             button_mem_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_TOOLBAR);
-            var saved_memory = settings.get_string ("memory-content");
-            memory = saved_memory == "" ? null : saved_memory;
 
             var button_add = new Button (" + ", _("Add"));
             button_add.function = "+";
@@ -337,10 +344,15 @@ namespace PantheonCalculator {
             button_tanh.clicked.connect (() => {function_button_clicked (button_tanh.function);});
 
             settings.bind ("extended-shown", button_extended, "active", GLib.SettingsBindFlags.DEFAULT);
+            privacy_settings.bind ("remember-recent-files", this, "remember-recent-files", GLib.SettingsBindFlags.DEFAULT);
 
-            var privacy_settings = new Settings ("org.gnome.desktop.privacy");
-            if (privacy_settings.get_boolean ("remember-recent-files")) {
+            if (remember_recent_files) {
                 settings.bind ("entry-content", entry, "text", GLib.SettingsBindFlags.DEFAULT);
+
+                var saved_memory = settings.get_string ("memory-content");
+                if (saved_memory != "") {
+                    memory = saved_memory;
+                }
             }
         }
 
