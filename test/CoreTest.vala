@@ -72,7 +72,7 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("sqrt(423) + (3.23 * 8.56) - 1E2", "-51.784236199");
         assert_equal ("sqrt(-1 + 423 + 1) + (3.23 * 8.56) - sin(90 + 0.2)", "47.428606036");
         assert_equal ("e^5.25 / exp(5.25)", "1");
-        assert_equal ("exp(log(2.2))", "2.2");
+        assert_equal ("10^(log(2.2))", "2.2");
         assert_equal ("3.141592654*3.141592654", "9.869604404"); // https://github.com/elementary/calculator/issues/7
         assert_equal ("10 + 5 - 10%", "14.9"); // https://github.com/elementary/calculator/issues/44
         assert_equal ("10 - 10% + 5", "14.9"); // https://github.com/elementary/calculator/issues/44
