@@ -202,6 +202,7 @@ namespace PantheonCalculator {
             var button_pi = new Button ("π", _("Pi"));
             var button_e = new Button ("e", _("Euler's Number"));
             var button_log = new Button ("log<sub>10</sub>", _("Logarithm Base 10"));
+            button_log.function = "log";
             var button_ln = new Button ("ln", _("Natural Logarithm"));
             var button_asin = new Button ("sin<sup>-1</sup>", _("Inverse Sine"));
             button_asin.function = "asin";
