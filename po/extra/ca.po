@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2020-05-20 18:00+0000\n"
+"PO-Revision-Date: 2020-10-04 12:01+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/calculator/extra/"
 "ca/>\n"
@@ -41,11 +41,11 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "New features:"
-msgstr ""
+msgstr "Funcions noves:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Add log and inverse trigonometric functions"
-msgstr ""
+msgstr "Addició de funcions trigonomètriques de registre i inverses"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:30
