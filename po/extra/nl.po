@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-18 19:20+0000\n"
+"POT-Creation-Date: 2020-10-02 16:05+0000\n"
 "PO-Revision-Date: 2020-05-20 18:00+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/extra/"
@@ -40,42 +40,50 @@ msgstr ""
 "trigonometrische functies zoals sin, cos en tan."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:26
+msgid "New features:"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Add log and inverse trigonometric functions"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:21
+#: data/io.elementary.calculator.appdata.xml.in:30
 msgid "Minor updates:"
 msgstr "Kleine updates:"
 
-#: data/io.elementary.calculator.appdata.xml.in:19
+#: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Use slim titlebar"
 msgstr "Gebruik een smalle titelbalk"
 
-#: data/io.elementary.calculator.appdata.xml.in:20
-#: data/io.elementary.calculator.appdata.xml.in:29
-#: data/io.elementary.calculator.appdata.xml.in:37
-#: data/io.elementary.calculator.appdata.xml.in:47
+#: data/io.elementary.calculator.appdata.xml.in:24
+#: data/io.elementary.calculator.appdata.xml.in:33
+#: data/io.elementary.calculator.appdata.xml.in:41
+#: data/io.elementary.calculator.appdata.xml.in:51
 msgid "Updated translations"
 msgstr "Bijgewerkte vertalingen"
 
-#: data/io.elementary.calculator.appdata.xml.in:28
+#: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Fix inserting multi-byte characters"
 msgstr "Oplossing voor het invoegen van multi-byte karakters"
 
-#: data/io.elementary.calculator.appdata.xml.in:36
+#: data/io.elementary.calculator.appdata.xml.in:40
 msgid "Fix missing icon for Ukrainian"
 msgstr "Oplossing voor het missende teken voor de Oekraïense taal"
 
-#: data/io.elementary.calculator.appdata.xml.in:44
+#: data/io.elementary.calculator.appdata.xml.in:48
 msgid "Animate Infobar when hiding and showing"
 msgstr "Toon een animatie bij het verbergen en weergeven"
 
-#: data/io.elementary.calculator.appdata.xml.in:45
+#: data/io.elementary.calculator.appdata.xml.in:49
 msgid "Fix selection replace"
 msgstr "Oplossing voor een selectie vervangen"
 
-#: data/io.elementary.calculator.appdata.xml.in:46
+#: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Improved decimal separator localization"
 msgstr "Verbeterde plaatsing van het decimaalteken"
 
-#: data/io.elementary.calculator.appdata.xml.in:84
+#: data/io.elementary.calculator.appdata.xml.in:88
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

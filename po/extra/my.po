@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-18 19:20+0000\n"
+"POT-Creation-Date: 2020-10-02 16:05+0000\n"
 "PO-Revision-Date: 2016-06-24 03:08+0000\n"
 "Last-Translator: Bone Pyae Sone <bone.burma@gmail.com>\n"
 "Language-Team: Burmese <my@li.org>\n"
@@ -35,42 +35,50 @@ msgid ""
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:26
-msgid "Minor updates:"
+msgid "New features:"
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Add log and inverse trigonometric functions"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:21
+#: data/io.elementary.calculator.appdata.xml.in:30
+msgid "Minor updates:"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Use slim titlebar"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:20
-#: data/io.elementary.calculator.appdata.xml.in:29
-#: data/io.elementary.calculator.appdata.xml.in:37
-#: data/io.elementary.calculator.appdata.xml.in:47
+#: data/io.elementary.calculator.appdata.xml.in:24
+#: data/io.elementary.calculator.appdata.xml.in:33
+#: data/io.elementary.calculator.appdata.xml.in:41
+#: data/io.elementary.calculator.appdata.xml.in:51
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:28
+#: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Fix inserting multi-byte characters"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:36
+#: data/io.elementary.calculator.appdata.xml.in:40
 msgid "Fix missing icon for Ukrainian"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:44
+#: data/io.elementary.calculator.appdata.xml.in:48
 msgid "Animate Infobar when hiding and showing"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:45
+#: data/io.elementary.calculator.appdata.xml.in:49
 msgid "Fix selection replace"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:46
+#: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Improved decimal separator localization"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:84
+#: data/io.elementary.calculator.appdata.xml.in:88
 msgid "elementary, Inc."
 msgstr ""
 
