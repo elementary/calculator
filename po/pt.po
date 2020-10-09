@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2020-10-05 15:14+0000\n"
+"PO-Revision-Date: 2020-10-10 10:50+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/calculator/"
 "calculator/pt/>\n"
@@ -93,7 +93,7 @@ msgstr "Cosseno"
 
 #: src/MainWindow.vala:199
 msgid "Hyperbolic Cosine"
-msgstr "Coseno Hiperbólico"
+msgstr "Cosseno Hiperbólico"
 
 #: src/MainWindow.vala:200
 msgid "Tangent"
