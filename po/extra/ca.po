@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2020-10-08 13:14+0000\n"
+"PO-Revision-Date: 2020-10-11 21:38+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/calculator/extra/"
 "ca/>\n"
@@ -45,7 +45,7 @@ msgstr "Funcions noves:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Add log and inverse trigonometric functions"
-msgstr "Addició de funcions trigonomètriques inverses i logaritme"
+msgstr "Addició de funcions trigonomètriques inverses i logarítmiques"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:30
@@ -90,7 +90,7 @@ msgstr "elementary, Inc."
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr "Càlcul;Matemàtiques;Artimètica;Científic;"
+msgstr "Càlcul;Matemàtiques;Aritmètica;Científic;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
