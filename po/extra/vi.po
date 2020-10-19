@@ -8,34 +8,38 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2018-07-12 14:31-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-10-20 05:15+0000\n"
+"Last-Translator: Trkien618 <hacngoctrungkien@gmail.com>\n"
+"Language-Team: Vietnamese <https://l10n.elementary.io/projects/calculator/"
+"extra/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
 #: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
-msgstr ""
+msgstr "Máy tính"
 
 #: data/io.elementary.calculator.appdata.xml.in:9
 #: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
-msgstr ""
+msgstr "Giải các phương trình đơn giản"
 
 #: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
+"Một máy tính đơn giản để sử dụng hàng ngày. Nó hỗ trợ một số phép tính khoa "
+"học và cơ bản bao gồm các hàm lượng giác, sin, cos và tan."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "New features:"
-msgstr ""
+msgstr "Tính năng mới:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Add log and inverse trigonometric functions"
