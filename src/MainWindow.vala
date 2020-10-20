@@ -106,7 +106,7 @@ namespace PantheonCalculator {
             entry.set_alignment (1);
             entry.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
             entry.vexpand = true;
-            entry.valign = Gtk.Align.CENTER;
+            entry.valign = Gtk.Align.FILL;
 
             button_calc = new Button ("=", _("Calculate Result"));
             button_calc.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
@@ -216,7 +216,8 @@ namespace PantheonCalculator {
             extended_grid.margin_start = 6;
             extended_grid.column_spacing = 6;
             extended_grid.row_spacing = 6;
-            extended_grid.valign = Gtk.Align.END;
+            extended_grid.valign = Gtk.Align.FILL;
+            extended_grid.set_row_homogeneous (true);
             extended_grid.attach (button_par_left, 0, 0, 1, 1);
             extended_grid.attach (button_par_right, 1, 0, 1, 1);
             extended_grid.attach (button_pow, 0, 1, 1, 1);
