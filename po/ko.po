@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-18 19:20+0000\n"
+"POT-Creation-Date: 2020-10-02 16:05+0000\n"
 "PO-Revision-Date: 2018-06-27 22:05+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/calculator/"
@@ -15,103 +15,131 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:81 src/MainWindow.vala:416
+#: src/MainWindow.vala:86 src/MainWindow.vala:457
 msgid "Show extended functionality"
 msgstr "확장 기능 보이기"
 
-#: src/MainWindow.vala:86 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
 msgid "History"
 msgstr "사용 기록"
 
-#: src/MainWindow.vala:93
+#: src/MainWindow.vala:98
 msgid "Calculator"
 msgstr "계산기"
 
-#: src/MainWindow.vala:107
+#: src/MainWindow.vala:111
 msgid "Calculate Result"
 msgstr "계산 결과"
 
-#: src/MainWindow.vala:111
+#: src/MainWindow.vala:115
 msgid "Add last result"
 msgstr "최종 결괏값 더하기"
 
-#: src/MainWindow.vala:114
+#: src/MainWindow.vala:118
 msgid "Backspace"
 msgstr "뒤로"
 
-#: src/MainWindow.vala:120
+#: src/MainWindow.vala:124
 msgid "Clear entry"
 msgstr "입력값 지우기"
 
-#: src/MainWindow.vala:124 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
 msgid "Add"
 msgstr "추가하기"
 
-#: src/MainWindow.vala:128
+#: src/MainWindow.vala:132
 msgid "Subtract"
 msgstr "뺄셈"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:136
 msgid "Multiply"
 msgstr "곱셈"
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:140
 msgid "Divide"
 msgstr "나눗셈"
 
-#: src/MainWindow.vala:142
+#: src/MainWindow.vala:146
 msgid "Percentage"
 msgstr "백분율"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:191
 msgid "Start Group"
 msgstr "시작 그룹"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:192
 msgid "End Group"
 msgstr "종료 그룹"
 
-#: src/MainWindow.vala:189
+#: src/MainWindow.vala:193
 msgid "Exponent"
 msgstr "지수"
 
-#: src/MainWindow.vala:191
+#: src/MainWindow.vala:195
 msgid "Root"
 msgstr "제곱근"
 
-#: src/MainWindow.vala:192
+#: src/MainWindow.vala:196
 msgid "Sine"
 msgstr "사인"
 
-#: src/MainWindow.vala:193
+#: src/MainWindow.vala:197
 msgid "Hyperbolic Sine"
 msgstr "쌍곡사인"
 
-#: src/MainWindow.vala:194
+#: src/MainWindow.vala:198
 msgid "Cosine"
 msgstr "코사인"
 
-#: src/MainWindow.vala:195
+#: src/MainWindow.vala:199
 msgid "Hyperbolic Cosine"
 msgstr "쌍곡코사인"
 
-#: src/MainWindow.vala:196
+#: src/MainWindow.vala:200
 msgid "Tangent"
 msgstr "탄젠트"
 
-#: src/MainWindow.vala:197
+#: src/MainWindow.vala:201
 msgid "Hyperbolic Tangent"
 msgstr "쌍곡탄젠트"
 
-#: src/MainWindow.vala:198
+#: src/MainWindow.vala:202
 msgid "Pi"
 msgstr "원주율"
 
-#: src/MainWindow.vala:199
+#: src/MainWindow.vala:203
 msgid "Euler's Number"
 msgstr "오일러의 수"
 
-#: src/MainWindow.vala:411
+#: src/MainWindow.vala:204
+msgid "Logarithm Base 10"
+msgstr ""
+
+#: src/MainWindow.vala:206
+msgid "Natural Logarithm"
+msgstr ""
+
+#: src/MainWindow.vala:207
+msgid "Inverse Sine"
+msgstr ""
+
+#: src/MainWindow.vala:209
+#, fuzzy
+#| msgid "Cosine"
+msgid "Inverse Cosine"
+msgstr "코사인"
+
+#: src/MainWindow.vala:211
+#, fuzzy
+#| msgid "Tangent"
+msgid "Inverse Tangent"
+msgstr "탄젠트"
+
+#: src/MainWindow.vala:213
+msgid "Reciprocal"
+msgstr ""
+
+#: src/MainWindow.vala:452
 msgid "Hide extended functionality"
 msgstr "확장 기능 감추기"
 

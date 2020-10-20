@@ -106,7 +106,7 @@ namespace PantheonCalculator {
             entry.set_alignment (1);
             entry.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
             entry.vexpand = true;
-            entry.valign = Gtk.Align.CENTER;
+            entry.valign = Gtk.Align.FILL;
 
             button_calc = new Button ("=", _("Calculate Result"));
             button_calc.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
@@ -201,12 +201,23 @@ namespace PantheonCalculator {
             var button_tanh = new Button ("tanh", _("Hyperbolic Tangent"));
             var button_pi = new Button ("π", _("Pi"));
             var button_e = new Button ("e", _("Euler's Number"));
+            var button_log = new Button ("log<sub>10</sub>", _("Logarithm Base 10"));
+            button_log.function = "log";
+            var button_ln = new Button ("ln", _("Natural Logarithm"));
+            var button_asin = new Button ("sin<sup>-1</sup>", _("Inverse Sine"));
+            button_asin.function = "asin";
+            var button_acos = new Button ("cos<sup>-1</sup>", _("Inverse Cosine"));
+            button_acos.function = "acos";
+            var button_atan = new Button ("tan<sup>-1</sup>", _("Inverse Tangent"));
+            button_atan.function = "atan";
+            var button_reciprocal = new Button ("x<sup>-1</sup>", _("Reciprocal"));
 
             var extended_grid = new Gtk.Grid ();
             extended_grid.margin_start = 6;
             extended_grid.column_spacing = 6;
             extended_grid.row_spacing = 6;
-            extended_grid.valign = Gtk.Align.END;
+            extended_grid.valign = Gtk.Align.FILL;
+            extended_grid.set_row_homogeneous (true);
             extended_grid.attach (button_par_left, 0, 0, 1, 1);
             extended_grid.attach (button_par_right, 1, 0, 1, 1);
             extended_grid.attach (button_pow, 0, 1, 1, 1);
@@ -219,6 +230,12 @@ namespace PantheonCalculator {
             extended_grid.attach (button_tanh, 1, 4, 1, 1);
             extended_grid.attach (button_pi, 0, 5, 1, 1);
             extended_grid.attach (button_e, 1, 5, 1, 1);
+            extended_grid.attach (button_log, 2, 0, 1, 1);
+            extended_grid.attach (button_ln, 2, 1, 1, 1);
+            extended_grid.attach (button_asin, 2, 2, 1, 1);
+            extended_grid.attach (button_acos, 2, 3, 1, 1);
+            extended_grid.attach (button_atan, 2, 4, 1, 1);
+            extended_grid.attach (button_reciprocal, 2, 5, 1, 1);
 
             extended_revealer = new Gtk.Revealer ();
             extended_revealer.set_transition_type (Gtk.RevealerTransitionType.SLIDE_LEFT);
@@ -244,6 +261,15 @@ namespace PantheonCalculator {
             global_grid.add (main_grid);
 
             add (global_grid);
+
+            var granite_settings = Granite.Settings.get_default ();
+            var gtk_settings = Gtk.Settings.get_default ();
+
+            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+
+            granite_settings.notify["prefers-color-scheme"].connect (() => {
+                gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+            });
 
             show_all ();
 
@@ -284,6 +310,13 @@ namespace PantheonCalculator {
             button_cosh.clicked.connect (() => {function_button_clicked (button_cosh.function);});
             button_tan.clicked.connect (() => {function_button_clicked (button_tan.function);});
             button_tanh.clicked.connect (() => {function_button_clicked (button_tanh.function);});
+            button_log.clicked.connect (() => {function_button_clicked (button_log.function);});
+            button_ln.clicked.connect (() => {function_button_clicked (button_ln.function);});
+            button_asin.clicked.connect (() => {function_button_clicked (button_asin.function);});
+            button_acos.clicked.connect (() => {function_button_clicked (button_acos.function);});
+            button_atan.clicked.connect (() => {function_button_clicked (button_atan.function);});
+            button_reciprocal.clicked.connect (() => {button_reciprocal_clicked ();});
+
 
             settings.bind ("extended-shown", button_extended, "active", GLib.SettingsBindFlags.DEFAULT);
 
@@ -362,6 +395,11 @@ namespace PantheonCalculator {
 
             entry.grab_focus ();
             entry.set_position (position);
+        }
+
+        private void button_reciprocal_clicked () {
+            entry.set_text ("1/(" + entry.get_text () + ")");
+            button_calc_clicked ();
         }
 
         private void button_del_clicked () {

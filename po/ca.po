@@ -2,116 +2,140 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-18 19:20+0000\n"
-"PO-Revision-Date: 2018-07-01 13:54+0000\n"
+"POT-Creation-Date: 2020-10-02 16:05+0000\n"
+"PO-Revision-Date: 2020-10-04 12:01+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/calculator/"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/calculator/"
 "calculator/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:81 src/MainWindow.vala:416
+#: src/MainWindow.vala:86 src/MainWindow.vala:457
 msgid "Show extended functionality"
 msgstr "Mostra més funcions"
 
-#: src/MainWindow.vala:86 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
 msgid "History"
 msgstr "Historial"
 
-#: src/MainWindow.vala:93
+#: src/MainWindow.vala:98
 msgid "Calculator"
 msgstr "Calculadora"
 
-#: src/MainWindow.vala:107
+#: src/MainWindow.vala:111
 msgid "Calculate Result"
 msgstr "Calcula el resultat"
 
-#: src/MainWindow.vala:111
+#: src/MainWindow.vala:115
 msgid "Add last result"
 msgstr "Suma l’últim resultat"
 
-#: src/MainWindow.vala:114
+#: src/MainWindow.vala:118
 msgid "Backspace"
 msgstr "Retrocés"
 
-#: src/MainWindow.vala:120
+#: src/MainWindow.vala:124
 msgid "Clear entry"
 msgstr "Neteja l'entrada"
 
-#: src/MainWindow.vala:124 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
 msgid "Add"
 msgstr "Suma"
 
-#: src/MainWindow.vala:128
+#: src/MainWindow.vala:132
 msgid "Subtract"
 msgstr "Resta"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:136
 msgid "Multiply"
 msgstr "Multiplica"
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:140
 msgid "Divide"
 msgstr "Divideix"
 
-#: src/MainWindow.vala:142
+#: src/MainWindow.vala:146
 msgid "Percentage"
 msgstr "Percentatge"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:191
 msgid "Start Group"
 msgstr "Inicia el grup"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:192
 msgid "End Group"
 msgstr "Acaba el grup"
 
-#: src/MainWindow.vala:189
+#: src/MainWindow.vala:193
 msgid "Exponent"
 msgstr "Exponencial"
 
-#: src/MainWindow.vala:191
+#: src/MainWindow.vala:195
 msgid "Root"
 msgstr "Arrel"
 
-#: src/MainWindow.vala:192
+#: src/MainWindow.vala:196
 msgid "Sine"
 msgstr "Sinus"
 
-#: src/MainWindow.vala:193
+#: src/MainWindow.vala:197
 msgid "Hyperbolic Sine"
 msgstr "Sinus hiperbòlic"
 
-#: src/MainWindow.vala:194
+#: src/MainWindow.vala:198
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: src/MainWindow.vala:195
+#: src/MainWindow.vala:199
 msgid "Hyperbolic Cosine"
 msgstr "Cosinus hiperbòlic"
 
-#: src/MainWindow.vala:196
+#: src/MainWindow.vala:200
 msgid "Tangent"
 msgstr "Tangent"
 
-#: src/MainWindow.vala:197
+#: src/MainWindow.vala:201
 msgid "Hyperbolic Tangent"
 msgstr "Tangent hiperbòlica"
 
-#: src/MainWindow.vala:198
+#: src/MainWindow.vala:202
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:199
+#: src/MainWindow.vala:203
 msgid "Euler's Number"
 msgstr "Número d'Euler"
 
-#: src/MainWindow.vala:411
+#: src/MainWindow.vala:204
+msgid "Logarithm Base 10"
+msgstr "Logaritme de base 10"
+
+#: src/MainWindow.vala:206
+msgid "Natural Logarithm"
+msgstr "Logaritme natural"
+
+#: src/MainWindow.vala:207
+msgid "Inverse Sine"
+msgstr "Sinus invers"
+
+#: src/MainWindow.vala:209
+msgid "Inverse Cosine"
+msgstr "Cosinus invers"
+
+#: src/MainWindow.vala:211
+msgid "Inverse Tangent"
+msgstr "Tangent inversa"
+
+#: src/MainWindow.vala:213
+msgid "Reciprocal"
+msgstr "Recíproc"
+
+#: src/MainWindow.vala:452
 msgid "Hide extended functionality"
 msgstr "Mostra menys funcions"
 
