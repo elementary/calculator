@@ -468,6 +468,7 @@ namespace PantheonCalculator {
             button_history.sensitive = false;
 
             history_dialog = new HistoryDialog (history);
+            history_dialog.set_transient_for (this);
             history_dialog.added.connect (history_added);
             history_dialog.hide.connect (() => button_history.set_sensitive (true));
         }
