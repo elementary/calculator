@@ -137,7 +137,7 @@ namespace PantheonCalculator.Core {
                 }
                 type = TokenType.NUMBER;
             } else if (is_plus_minus_times (uc[pos]) ||
-                        uc[pos] == '/' ||
+                        uc[pos] == '/' || uc[pos] == '÷' ||
                         uc[pos] == '^' || uc[pos] == '%') {
                 pos++;
                 if (pos < uc.length) {
