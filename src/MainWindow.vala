@@ -33,6 +33,7 @@ namespace PantheonCalculator {
         private Gtk.Button button_del;
         private Gtk.Button button_mr;
         private Gtk.Button button_mc;
+        private Gtk.Button button_gt;
         private Gtk.ToggleButton button_extended;
         private HistoryDialog history_dialog;
 
@@ -202,8 +203,8 @@ namespace PantheonCalculator {
             var button_m_sub = new Button ("M−", _("Subtract from stored value and replace it"));
             button_mc = new Button ("MC", _("Clear memory"));
             button_mc.set_sensitive (false);
-            var button_factorial = new Button ("n!", _("Calculate factorial"));
-            button_factorial.function = "!";
+            button_gt = new Button ("GT", _("Grand Total"));
+            button_gt.set_sensitive (false);
             var button_par_left = new Button ("(", _("Start Group"));
             var button_par_right = new Button (")", _("End Group"));
             var button_pow = new Button ("x<sup>y</sup>", _("Exponent"));
@@ -260,7 +261,7 @@ namespace PantheonCalculator {
             extended_grid.attach (button_tanh, 2, 4, 1, 1);
             extended_grid.attach (button_atan, 3, 4, 1, 1);
             // Sixth row
-            extended_grid.attach (button_factorial, 0, 5, 1, 1);
+            extended_grid.attach (button_gt, 0, 5, 1, 1);
             extended_grid.attach (button_pi, 1, 5, 1, 1);
             extended_grid.attach (button_e, 2, 5, 1, 1);
             extended_grid.attach (button_reciprocal, 3, 5, 1, 1);
@@ -346,7 +347,7 @@ namespace PantheonCalculator {
             button_tan.clicked.connect (() => {function_button_clicked (button_tan.function);});
             button_tanh.clicked.connect (() => {function_button_clicked (button_tanh.function);});
             button_atan.clicked.connect (() => {function_button_clicked (button_atan.function);});
-            button_factorial.clicked.connect (() => {function_button_clicked (button_factorial.function);});
+            button_gt.clicked.connect (() => {button_gt_clicked ();});
             button_pi.clicked.connect (() => {regular_button_clicked (button_pi.function);});
             button_e.clicked.connect (() => {regular_button_clicked (button_e.function);});
             button_reciprocal.clicked.connect (() => {button_reciprocal_clicked ();});
@@ -413,6 +414,7 @@ namespace PantheonCalculator {
                         entry.set_text (output);
                         button_history.set_sensitive (true);
                         button_ans.set_sensitive (true);
+                        button_gt.set_sensitive (true);
 
                         position = output.length;
                         remove_error ();
@@ -469,7 +471,7 @@ namespace PantheonCalculator {
                      */
                     var output = eval.evaluate (entry.get_text (), decimal_places);
                     memory_value = double.parse (output);
-                    debug ("'%f' added to memory", memory_value);
+
                     button_mr.set_sensitive (true);
                     button_mc.set_sensitive (true);
                 } catch (Core.OUT_ERROR e) {
@@ -486,7 +488,6 @@ namespace PantheonCalculator {
                 try {
                     var output = eval.evaluate (entry.get_text (), decimal_places);
                     memory_value += double.parse (output);
-                    debug ("'%s' added to memory, new value is: %f'", entry.get_text (), memory_value);
                 } catch (Core.OUT_ERROR e) {
                     infobar_label.label = e.message;
                     infobar.revealed = true;
@@ -499,7 +500,6 @@ namespace PantheonCalculator {
                 try {
                     var output = eval.evaluate (entry.get_text (), decimal_places);
                     memory_value -= double.parse (output);
-                    debug ("'%s' subtracted from memory, new value is: %f'", entry.get_text (), memory_value);
                 } catch (Core.OUT_ERROR e) {
                     infobar_label.label = e.message;
                     infobar.revealed = true;
@@ -509,9 +509,12 @@ namespace PantheonCalculator {
 
         private void button_memory_clear_clicked () {
             memory_value = 0;
-            debug ("Setting memory value to 0 -> check: '%f'", memory_value);
             button_mr.sensitive = false;
             button_mc.sensitive = false;
+        }
+
+        private void button_gt_clicked () {
+            
         }
 
         private void action_clear () {
