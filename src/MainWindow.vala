@@ -514,7 +514,14 @@ namespace PantheonCalculator {
         }
 
         private void button_gt_clicked () {
-            
+            action_clear ();
+
+            double grand_total = 0;
+            history.foreach ((list_entry) => {
+                grand_total += double.parse (list_entry.output);
+	        });
+
+	        entry.set_text (grand_total.to_string ());
         }
 
         private void action_clear () {
