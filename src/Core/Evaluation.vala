@@ -303,8 +303,8 @@ namespace PantheonCalculator.Core {
 
         private Token compute (Eval eval, Token t1, Token t2) throws EVAL_ERROR {
             double d = eval (double.parse (t1.content), double.parse (t2.content));
-            if (fabs (d) - 0.0 < double.EPSILON) {
-                d = 0.0;
+            if (fabs (d - Math.round (d)) < double.EPSILON) {
+                d = Math.round (d);
             }
             return new Token (d.to_string (), TokenType.NUMBER);
         }
