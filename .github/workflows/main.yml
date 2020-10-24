@@ -14,6 +14,7 @@ jobs:
       with:
         bundle: "calculator.flatpak"
         manifest-path: "io.elementary.calculator.yml"
+        run-tests: "true"
 
   lint:
 
