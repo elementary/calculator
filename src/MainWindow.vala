@@ -196,11 +196,11 @@ namespace PantheonCalculator {
             basic_grid.attach (button_ans, 2, 5, 1, 1);
             basic_grid.attach (button_calc, 3, 5, 1, 1);
 
-            var button_ms = new Button ("MS", _("Store value in memory"));
-            button_mr = new Button ("MR", _("Use value from memory"));
+            var button_ms = new Button ("MS", _("Set memory value"));
+            button_mr = new Button ("MR", _("Recall value from memory"));
             button_mr.set_sensitive (false);
-            var button_m_add = new Button ("M+", _("Add to stored value and replace it"));
-            var button_m_sub = new Button ("M−", _("Subtract from stored value and replace it"));
+            var button_m_add = new Button ("M+", _("Add to stored value"));
+            var button_m_sub = new Button ("M−", _("Subtract from stored value"));
             button_mc = new Button ("MC", _("Clear memory"));
             button_mc.set_sensitive (false);
             button_gt = new Button ("GT", _("Grand Total"));
@@ -522,6 +522,7 @@ namespace PantheonCalculator {
             });
 
             entry.set_text (grand_total.to_string ());
+            entry.set_position (grand_total.to_string ().length);
         }
 
         private void action_clear () {
