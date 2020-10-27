@@ -9,8 +9,8 @@ jobs:
       image: docker.io/bilelmoussaoui/flatpak-github-actions
       options: --privileged
     steps:
-    - uses: actions/checkout@master
-    - uses: bilelmoussaoui/flatpak-github-actions@v1
+    - uses: actions/checkout@v2
+    - uses: bilelmoussaoui/flatpak-github-actions@v2
       with:
         bundle: "calculator.flatpak"
         manifest-path: "io.elementary.calculator.yml"
