@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2020-05-28 10:11+0000\n"
+"PO-Revision-Date: 2020-10-30 00:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/calculator/extra/"
 "mr/>\n"
@@ -39,11 +39,11 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "New features:"
-msgstr ""
+msgstr "नवीन वैशिष्ट्ये:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Add log and inverse trigonometric functions"
-msgstr ""
+msgstr "लॉग आणि व्यस्त त्रिकोणमितीय कार्ये जोडा"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:30
