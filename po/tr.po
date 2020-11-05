@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2018-08-30 15:23+0000\n"
-"Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
-"Language-Team: Turkish <https://weblate.elementary.io/projects/calculator/"
+"PO-Revision-Date: 2020-10-30 00:15+0000\n"
+"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/calculator/"
 "calculator/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:86 src/MainWindow.vala:457
@@ -37,7 +37,7 @@ msgstr "Son sonucu ekle"
 
 #: src/MainWindow.vala:118
 msgid "Backspace"
-msgstr "Geri al tuşu"
+msgstr "Geri Al"
 
 #: src/MainWindow.vala:124
 msgid "Clear entry"
@@ -113,31 +113,27 @@ msgstr "Euler Sayısı"
 
 #: src/MainWindow.vala:204
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "10 Tabanlı Logaritma"
 
 #: src/MainWindow.vala:206
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Doğal Logaritma"
 
 #: src/MainWindow.vala:207
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Ters Sinüs"
 
 #: src/MainWindow.vala:209
-#, fuzzy
-#| msgid "Cosine"
 msgid "Inverse Cosine"
-msgstr "Kosinüs"
+msgstr "Ters Kosinüs"
 
 #: src/MainWindow.vala:211
-#, fuzzy
-#| msgid "Tangent"
 msgid "Inverse Tangent"
-msgstr "Tanjant"
+msgstr "Ters Tanjant"
 
 #: src/MainWindow.vala:213
 msgid "Reciprocal"
-msgstr ""
+msgstr "Ters Değer"
 
 #: src/MainWindow.vala:452
 msgid "Hide extended functionality"
