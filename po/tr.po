@@ -2,116 +2,140 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-18 19:20+0000\n"
-"PO-Revision-Date: 2018-08-30 15:23+0000\n"
-"Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
-"Language-Team: Turkish <https://weblate.elementary.io/projects/calculator/"
+"POT-Creation-Date: 2020-10-02 16:05+0000\n"
+"PO-Revision-Date: 2020-10-30 00:15+0000\n"
+"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/calculator/"
 "calculator/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:81 src/MainWindow.vala:416
+#: src/MainWindow.vala:86 src/MainWindow.vala:457
 msgid "Show extended functionality"
 msgstr "Gelişmiş özellikleri göster"
 
-#: src/MainWindow.vala:86 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
 msgid "History"
 msgstr "Geçmiş"
 
-#: src/MainWindow.vala:93
+#: src/MainWindow.vala:98
 msgid "Calculator"
 msgstr "Hesap Makinesi"
 
-#: src/MainWindow.vala:107
+#: src/MainWindow.vala:111
 msgid "Calculate Result"
 msgstr "Sonucu Hesapla"
 
-#: src/MainWindow.vala:111
+#: src/MainWindow.vala:115
 msgid "Add last result"
 msgstr "Son sonucu ekle"
 
-#: src/MainWindow.vala:114
+#: src/MainWindow.vala:118
 msgid "Backspace"
-msgstr "Geri al tuşu"
+msgstr "Geri Al"
 
-#: src/MainWindow.vala:120
+#: src/MainWindow.vala:124
 msgid "Clear entry"
 msgstr "Girdiyi sil"
 
-#: src/MainWindow.vala:124 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
 msgid "Add"
 msgstr "Ekle"
 
-#: src/MainWindow.vala:128
+#: src/MainWindow.vala:132
 msgid "Subtract"
 msgstr "Çıkart"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:136
 msgid "Multiply"
 msgstr "Çarp"
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:140
 msgid "Divide"
 msgstr "Böl"
 
-#: src/MainWindow.vala:142
+#: src/MainWindow.vala:146
 msgid "Percentage"
 msgstr "Yüzde"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:191
 msgid "Start Group"
 msgstr "Grubu Başlat"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:192
 msgid "End Group"
 msgstr "Grubu Bitir"
 
-#: src/MainWindow.vala:189
+#: src/MainWindow.vala:193
 msgid "Exponent"
 msgstr "Üst"
 
-#: src/MainWindow.vala:191
+#: src/MainWindow.vala:195
 msgid "Root"
 msgstr "Kök"
 
-#: src/MainWindow.vala:192
+#: src/MainWindow.vala:196
 msgid "Sine"
 msgstr "Sinüs"
 
-#: src/MainWindow.vala:193
+#: src/MainWindow.vala:197
 msgid "Hyperbolic Sine"
 msgstr "Hiperbolik Sinüs"
 
-#: src/MainWindow.vala:194
+#: src/MainWindow.vala:198
 msgid "Cosine"
 msgstr "Kosinüs"
 
-#: src/MainWindow.vala:195
+#: src/MainWindow.vala:199
 msgid "Hyperbolic Cosine"
 msgstr "Hiperbolik Kosinüs"
 
-#: src/MainWindow.vala:196
+#: src/MainWindow.vala:200
 msgid "Tangent"
 msgstr "Tanjant"
 
-#: src/MainWindow.vala:197
+#: src/MainWindow.vala:201
 msgid "Hyperbolic Tangent"
 msgstr "Hiperbolik Tanjant"
 
-#: src/MainWindow.vala:198
+#: src/MainWindow.vala:202
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:199
+#: src/MainWindow.vala:203
 msgid "Euler's Number"
 msgstr "Euler Sayısı"
 
-#: src/MainWindow.vala:411
+#: src/MainWindow.vala:204
+msgid "Logarithm Base 10"
+msgstr "10 Tabanlı Logaritma"
+
+#: src/MainWindow.vala:206
+msgid "Natural Logarithm"
+msgstr "Doğal Logaritma"
+
+#: src/MainWindow.vala:207
+msgid "Inverse Sine"
+msgstr "Ters Sinüs"
+
+#: src/MainWindow.vala:209
+msgid "Inverse Cosine"
+msgstr "Ters Kosinüs"
+
+#: src/MainWindow.vala:211
+msgid "Inverse Tangent"
+msgstr "Ters Tanjant"
+
+#: src/MainWindow.vala:213
+msgid "Reciprocal"
+msgstr "Ters Değer"
+
+#: src/MainWindow.vala:452
 msgid "Hide extended functionality"
 msgstr "Gelişmiş özellikleri gizle"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-18 19:20+0000\n"
+"POT-Creation-Date: 2020-10-02 16:05+0000\n"
 "PO-Revision-Date: 2020-05-30 10:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/calculator/"
@@ -15,103 +15,131 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-28 04:59+0000\n"
 
-#: src/MainWindow.vala:81 src/MainWindow.vala:416
+#: src/MainWindow.vala:86 src/MainWindow.vala:457
 msgid "Show extended functionality"
 msgstr "Zobrazit rozšířené funkce"
 
-#: src/MainWindow.vala:86 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
 msgid "History"
 msgstr "Historie"
 
-#: src/MainWindow.vala:93
+#: src/MainWindow.vala:98
 msgid "Calculator"
 msgstr "Kalkulačka"
 
-#: src/MainWindow.vala:107
+#: src/MainWindow.vala:111
 msgid "Calculate Result"
 msgstr "Spočítat výsledek"
 
-#: src/MainWindow.vala:111
+#: src/MainWindow.vala:115
 msgid "Add last result"
 msgstr "Vložit poslední výsledek"
 
-#: src/MainWindow.vala:114
+#: src/MainWindow.vala:118
 msgid "Backspace"
 msgstr "Backspace"
 
-#: src/MainWindow.vala:120
+#: src/MainWindow.vala:124
 msgid "Clear entry"
 msgstr "Vymazat zadání"
 
-#: src/MainWindow.vala:124 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
 msgid "Add"
 msgstr "Přičíst"
 
-#: src/MainWindow.vala:128
+#: src/MainWindow.vala:132
 msgid "Subtract"
 msgstr "Odečíst"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:136
 msgid "Multiply"
 msgstr "Násobit"
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:140
 msgid "Divide"
 msgstr "Dělit"
 
-#: src/MainWindow.vala:142
+#: src/MainWindow.vala:146
 msgid "Percentage"
 msgstr "Procenta"
 
-#: src/MainWindow.vala:187
+#: src/MainWindow.vala:191
 msgid "Start Group"
 msgstr "Začátek skupiny"
 
-#: src/MainWindow.vala:188
+#: src/MainWindow.vala:192
 msgid "End Group"
 msgstr "Konec skupiny"
 
-#: src/MainWindow.vala:189
+#: src/MainWindow.vala:193
 msgid "Exponent"
 msgstr "Mocnina"
 
-#: src/MainWindow.vala:191
+#: src/MainWindow.vala:195
 msgid "Root"
 msgstr "Odmocnina"
 
-#: src/MainWindow.vala:192
+#: src/MainWindow.vala:196
 msgid "Sine"
 msgstr "Sinus"
 
-#: src/MainWindow.vala:193
+#: src/MainWindow.vala:197
 msgid "Hyperbolic Sine"
 msgstr "Hyperbolický sinus"
 
-#: src/MainWindow.vala:194
+#: src/MainWindow.vala:198
 msgid "Cosine"
 msgstr "Kosinus"
 
-#: src/MainWindow.vala:195
+#: src/MainWindow.vala:199
 msgid "Hyperbolic Cosine"
 msgstr "Hyperbolický kosinus"
 
-#: src/MainWindow.vala:196
+#: src/MainWindow.vala:200
 msgid "Tangent"
 msgstr "Tangens"
 
-#: src/MainWindow.vala:197
+#: src/MainWindow.vala:201
 msgid "Hyperbolic Tangent"
 msgstr "Hyperbolický tangens"
 
-#: src/MainWindow.vala:198
+#: src/MainWindow.vala:202
 msgid "Pi"
 msgstr "Pí"
 
-#: src/MainWindow.vala:199
+#: src/MainWindow.vala:203
 msgid "Euler's Number"
 msgstr "Eulerovo číslo"
 
-#: src/MainWindow.vala:411
+#: src/MainWindow.vala:204
+msgid "Logarithm Base 10"
+msgstr ""
+
+#: src/MainWindow.vala:206
+msgid "Natural Logarithm"
+msgstr ""
+
+#: src/MainWindow.vala:207
+msgid "Inverse Sine"
+msgstr ""
+
+#: src/MainWindow.vala:209
+#, fuzzy
+#| msgid "Cosine"
+msgid "Inverse Cosine"
+msgstr "Kosinus"
+
+#: src/MainWindow.vala:211
+#, fuzzy
+#| msgid "Tangent"
+msgid "Inverse Tangent"
+msgstr "Tangens"
+
+#: src/MainWindow.vala:213
+msgid "Reciprocal"
+msgstr ""
+
+#: src/MainWindow.vala:452
 msgid "Hide extended functionality"
 msgstr "Skrýt rozšířené možnosti"
 
