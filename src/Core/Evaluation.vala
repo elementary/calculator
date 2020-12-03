@@ -98,7 +98,6 @@ namespace PantheonCalculator.Core {
             try {
                 var tokenlist = scanner.scan (str);
                 var d = 0.0;
-
                 try {
                     tokenlist = shunting_yard (tokenlist);
                     try {
@@ -132,11 +131,11 @@ namespace PantheonCalculator.Core {
                         op_stack.push_tail (t);
                         break;
                     case TokenType.SEPARATOR:
-                        while (!op_stack.is_empty () && op_stack.peek_tail ().token_type != TokenType.P_LEFT) {
+                        while (!(op_stack.is_empty () || op_stack.peek_tail ().is_left_paren ())) {
                             output.append (op_stack.pop_tail ());
                         }
 
-                        if (op_stack.peek_tail ().token_type != TokenType.P_LEFT) {
+                        if (!op_stack.peek_tail ().is_left_paren ()) {
                             throw new SHUNTING_ERROR.MISMATCHED_P ("Content of parentheses is mismatched.");
                         }
                         break;
@@ -149,9 +148,11 @@ namespace PantheonCalculator.Core {
                                 op2 = get_operator (op_stack.peek_tail ());
                             } catch (SHUNTING_ERROR e) { }
 
-                            while (!op_stack.is_empty () && op_stack.peek_tail ().token_type == TokenType.OPERATOR &&
-                            ((op2.fixity == "LEFT" && op1.prec <= op2.prec) ||
-                            (op2.fixity == "RIGHT" && op1.prec < op2.prec))) {
+                            while (!op_stack.is_empty () &&
+                                   op_stack.peek_tail ().is_operator () &&
+                                   ((op2.fixity == "LEFT" && op1.prec <= op2.prec) ||
+                                    (op2.fixity == "RIGHT" && op1.prec < op2.prec))) {
+
                                 output.append (op_stack.pop_tail ());
 
                                 if (!op_stack.is_empty ()) {
@@ -168,18 +169,18 @@ namespace PantheonCalculator.Core {
                         break;
                     case TokenType.P_RIGHT:
                         while (!op_stack.is_empty ()) {
-                            if (op_stack.peek_tail ().token_type != TokenType.P_LEFT) {
+                            if (!op_stack.peek_tail ().is_left_paren ()) {
                                 output.append (op_stack.pop_tail ());
                             } else {
                                 break;
                             }
                         }
 
-                        if (!op_stack.is_empty () && op_stack.peek_tail ().token_type == TokenType.P_LEFT) {
+                        if (!op_stack.is_empty () && op_stack.peek_tail ().is_left_paren ()) {
                             op_stack.pop_tail ();
                         }
 
-                        if (!op_stack.is_empty () && op_stack.peek_tail ().token_type == TokenType.FUNCTION) {
+                        if (!op_stack.is_empty () && op_stack.peek_tail ().is_function ()) {
                             output.append (op_stack.pop_tail ());
                         }
 
@@ -190,8 +191,8 @@ namespace PantheonCalculator.Core {
             }
 
             while (!op_stack.is_empty ()) {
-                if (op_stack.peek_tail ().token_type == TokenType.P_LEFT ||
-                    op_stack.peek_tail ().token_type == TokenType.P_RIGHT
+                if (op_stack.peek_tail ().is_left_paren () ||
+                    op_stack.peek_tail ().is_right_paren ()
                 ) {
                     throw new SHUNTING_ERROR.MISMATCHED_P ("Mismatched parenthesis.");
                 } else {
@@ -206,16 +207,16 @@ namespace PantheonCalculator.Core {
             Queue<Token> stack = new Queue<Token> ();
 
             foreach (Token t in token_list) {
-                if (t.token_type == TokenType.NUMBER) {
+                if (t.is_number ()) {
                     stack.push_tail (t);
-                } else if (t.token_type == TokenType.CONSTANT) {
+                } else if (t.is_constant ()) {
                     try {
                         Constant c = get_constant (t);
                         stack.push_tail (new Token (c.eval ().to_string (), TokenType.NUMBER));
                     } catch (SHUNTING_ERROR e) {
                         throw new EVAL_ERROR.NO_CONSTANT ("");
                     }
-                } else if (t.token_type == TokenType.OPERATOR) {
+                } else if (t.is_operator ()) {
                     try {
                         Operator o = get_operator (t);
                         Token t1 = stack.pop_tail ();
@@ -228,7 +229,7 @@ namespace PantheonCalculator.Core {
                     } catch (SHUNTING_ERROR e) {
                         throw new EVAL_ERROR.NO_OPERATOR ("");
                     }
-                } else if (t.token_type == TokenType.FUNCTION) {
+                } else if (t.is_function ()) {
                     try {
                         Function f = get_function (t);
                         Token t1 = stack.pop_tail ();

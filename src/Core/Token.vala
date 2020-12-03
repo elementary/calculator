@@ -20,7 +20,7 @@
 
 namespace PantheonCalculator.Core {
     public enum TokenType {
-        NULL_NUMBER,
+        NULL_NUMBER, //A number with a decimal point but no leading digits e.g. .5
         NUMBER,
         OPERATOR,
         FUNCTION,
@@ -33,12 +33,45 @@ namespace PantheonCalculator.Core {
     }
 
     public class Token : Object {
-        public string content { get; set; }
-        public TokenType token_type { get; set; }
+        public string content { get; set construct; }
+        public TokenType token_type { get; set construct; }
 
         public Token (string in_content, TokenType in_token_type) {
-            content = in_content;
-            token_type = in_token_type;
+            Object (
+                content: in_content,
+                token_type: in_token_type
+            );
+        }
+
+        public bool is_null_number () {
+            return token_type == TokenType.NULL_NUMBER;
+        }
+        public bool is_number () {
+            return token_type == TokenType.NUMBER;
+        }
+        public bool is_operator () {
+            return token_type == TokenType.OPERATOR;
+        }
+        public bool is_function () {
+            return token_type == TokenType.FUNCTION;
+        }
+        public bool is_separator () {
+            return token_type == TokenType.SEPARATOR;
+        }
+        public bool is_constant () {
+            return token_type == TokenType.CONSTANT;
+        }
+        public bool is_left_paren () {
+            return token_type == TokenType.P_LEFT;
+        }
+        public bool is_right_paren () {
+            return token_type == TokenType.P_RIGHT;
+        }
+        public bool is_alpha () {
+            return token_type == TokenType.ALPHA;
+        }
+        public bool is_minus_sign () {
+            return token_type == TokenType.OPERATOR && (content in "-−");
         }
     }
 }
