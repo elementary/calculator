@@ -131,7 +131,7 @@ namespace PantheonCalculator.Core {
                         op_stack.push_tail (t);
                         break;
                     case TokenType.SEPARATOR:
-                        while (!(op_stack.is_empty () || op_stack.peek_tail ().token_type == TokenType.P_LEFT)) {
+                        while (!op_stack.is_empty () && op_stack.peek_tail ().token_type != TokenType.P_LEFT) {
                             output.append (op_stack.pop_tail ());
                         }
 
@@ -148,10 +148,9 @@ namespace PantheonCalculator.Core {
                                 op2 = get_operator (op_stack.peek_tail ());
                             } catch (SHUNTING_ERROR e) { }
 
-                            while (!op_stack.is_empty () &&
-                                   op_stack.peek_tail ().token_type == TokenType.OPERATOR &&
-                                   ((op2.fixity == "LEFT" && op1.prec <= op2.prec) ||
-                                    (op2.fixity == "RIGHT" && op1.prec < op2.prec))) {
+                            while (!op_stack.is_empty () && op_stack.peek_tail ().token_type == TokenType.OPERATOR &&
+                            ((op2.fixity == "LEFT" && op1.prec <= op2.prec) ||
+                            (op2.fixity == "RIGHT" && op1.prec < op2.prec))) {
 
                                 output.append (op_stack.pop_tail ());
 

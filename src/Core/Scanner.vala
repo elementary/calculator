@@ -69,11 +69,11 @@ namespace PantheonCalculator.Core {
                     }
                 } else if (t.token_type == TokenType.OPERATOR && (t.content in "-−")) {
                     /* Define last_tokens, where a next minus is a number, not an operator */
-                    if (last_token == null ||
+                    if (last_token == null || (
                         (last_token.token_type == TokenType.OPERATOR && last_token.content != "%") ||
-                        last_token.token_type == TokenType.FUNCTION ||
-                        last_token.token_type == TokenType.P_LEFT) {
-
+                        (last_token.token_type == TokenType.FUNCTION) ||
+                        (last_token.token_type == TokenType.P_LEFT)
+                    )) {
                         // A minus sign not following a number can be merged with a following number;
                         next_number_negative = true;
                         continue;
