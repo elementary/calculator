@@ -42,36 +42,5 @@ namespace PantheonCalculator.Core {
                 token_type: in_token_type
             );
         }
-
-        public bool is_null_number () {
-            return token_type == TokenType.NULL_NUMBER;
-        }
-        public bool is_number () {
-            return token_type == TokenType.NUMBER;
-        }
-        public bool is_operator () {
-            return token_type == TokenType.OPERATOR;
-        }
-        public bool is_function () {
-            return token_type == TokenType.FUNCTION;
-        }
-        public bool is_separator () {
-            return token_type == TokenType.SEPARATOR;
-        }
-        public bool is_constant () {
-            return token_type == TokenType.CONSTANT;
-        }
-        public bool is_left_paren () {
-            return token_type == TokenType.P_LEFT;
-        }
-        public bool is_right_paren () {
-            return token_type == TokenType.P_RIGHT;
-        }
-        public bool is_alpha () {
-            return token_type == TokenType.ALPHA;
-        }
-        public bool is_minus_sign () {
-            return token_type == TokenType.OPERATOR && (content in "-−");
-        }
     }
 }

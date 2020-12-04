@@ -57,7 +57,7 @@ namespace PantheonCalculator.Core {
             while (pos < uc.length) {
                 Token t = next_token ();
                 /* Identifying multicharacter tokens via Evaluation class. */
-                if (t.is_alpha ()) {
+                if (t.token_type == TokenType.ALPHA) {
                     if (Evaluation.is_operator (t)) {
                         t.token_type = TokenType.OPERATOR;
                     } else if (Evaluation.is_function (t)) {
@@ -67,24 +67,24 @@ namespace PantheonCalculator.Core {
                     } else {
                         throw new SCANNER_ERROR.ALPHA_INVALID (_("'%s' is invalid."), t.content);
                     }
-                } else if (t.is_minus_sign ()) {
+                } else if (t.token_type == TokenType.OPERATOR && (t.content in "-−")) {
                     /* Define last_tokens, where a next minus is a number, not an operator */
                     if (last_token == null ||
-                        (last_token.is_operator () && last_token.content != "%") ||
-                        last_token.is_function () ||
-                        last_token.is_left_paren ()) {
+                        (last_token.token_type == TokenType.OPERATOR && last_token.content != "%") ||
+                        last_token.token_type == TokenType.FUNCTION ||
+                        last_token.token_type == TokenType.P_LEFT) {
 
                         // A minus sign not following a number can be merged with a following number;
                         next_number_negative = true;
                         continue;
                     }
-                } else if (t.is_null_number ()) {
+                } else if (t.token_type == TokenType.NULL_NUMBER) {
                     //Insert a leading zero to make complete number e.g. .5 -> 0.5
                     t.content = "0" + t.content;
                     t.token_type = TokenType.NUMBER;
                 }
 
-                if (next_number_negative && t.is_number ()) {
+                if (next_number_negative && t.token_type == TokenType.NUMBER) {
                     // Merge minus sign into the number itself
                     t.content = (double.parse (t.content) * (-1)).to_string ();
                     next_number_negative = false;
@@ -95,16 +95,16 @@ namespace PantheonCalculator.Core {
                 * and token now is a function, constant or parenthesis (left)
                 */
                 if (last_token != null &&
-                   (last_token.is_number () || last_token.is_right_paren ()) &&
-                   (t.is_function () || t.is_constant () ||
-                    t.is_left_paren () || t.is_number ())
+                   (last_token.token_type == TokenType.NUMBER || last_token.token_type == TokenType.P_RIGHT) &&
+                   (t.token_type == TokenType.FUNCTION || t.token_type == TokenType.CONSTANT ||
+                    t.token_type == TokenType.P_LEFT || t.token_type == TokenType.NUMBER)
                 ) {
                     token_list.append (new Token ("*", TokenType.OPERATOR));
                 }
 
-                if (t.is_left_paren ()) {
+                if (t.token_type == TokenType.P_LEFT) {
                     parentheses_balance_counter -= 1;
-                } else if (t.is_right_paren ()) {
+                } else if (t.token_type == TokenType.P_RIGHT) {
                     parentheses_balance_counter += 1;
                 }
 
