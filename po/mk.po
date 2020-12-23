@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
+"POT-Creation-Date: 2020-12-23 20:17+0000\n"
 "PO-Revision-Date: 2016-05-27 15:28+0000\n"
 "Last-Translator: Maxwell Barvian <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:457
+#: src/MainWindow.vala:86 src/MainWindow.vala:462
 msgid "Show extended functionality"
 msgstr "Прикажи проширена функционалност"
 
@@ -133,7 +133,7 @@ msgstr ""
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:452
+#: src/MainWindow.vala:457
 msgid "Hide extended functionality"
 msgstr "Прикажи основна функционалност"
 
@@ -153,17 +153,17 @@ msgstr "Израз"
 msgid "Close"
 msgstr "Затвори"
 
-#: src/Core/Scanner.vala:69
+#: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
 msgstr "'%s' е невалиден"
 
-#: src/Core/Scanner.vala:114
+#: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
 msgstr ""
 
 #. If no rule matches the character at pos, throw an error.
-#: src/Core/Scanner.vala:167
+#: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
 msgstr "'%s'  е непознат"
