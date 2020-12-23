@@ -20,7 +20,7 @@
         </ul>
         <p>Other updates:</p>
         <ul>
-          <li>Fix an issue with negative decimals without leading digits/li>
+          <li>Fix an issue with negative decimals without leading digits</li>
           <li>More efficient state saving</li>
           <li>Use slim titlebar</li>
           <li>Updated translations</li>
