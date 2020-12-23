@@ -1,3 +1,29 @@
+io.elementary.calculator (1.6.0) bionic; urgency=medium
+
+  * Release 1.6.0 (#158)
+  * Fix handling of negative decimal numbers with no leading digits
+    (#154)
+  * CI: bump flatpak action (#152)
+  * CI: enable running tests with flatpak action (#151)
+  * CI: use a stable release of flatpak action (#150)
+  * CI: use flatpak github action (#147)
+  * CI: simplify flatpak dep install (#146)
+  * Delete .travis.yml
+  * Update Flatpak manifest (#138)
+  * CI: Add Flatpak (#144)
+  * Fix for layout misplacement (#142)
+  * Update translation files
+  * Update translation template
+  * Added log button and Trignometric Inverse Functions (#140)
+  * Respect an OS-wide dark preference (#93)
+  * Updated flatpak file (#116)
+  * MainWindow: Rewrite saved state (#130)
+  * Use slimmer default decoration (#129)
+  * Use add () for normal button without image-button class (#128)
+  * Specify gettext domain in AppData (#124)
+
+ -- elementary, Inc. <builds@elementary.io>  Wed, 23 Dec 2020 20:17:34 +0000
+
 io.elementary.calculator (1.5.5) bionic; urgency=medium
 
   * Release 1.5.5 (#122)
