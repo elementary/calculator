@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2020-10-04 12:01+0000\n"
+"PO-Revision-Date: 2020-12-29 15:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/calculator/extra/"
 "he/>\n"
@@ -47,18 +47,16 @@ msgid "Add log and inverse trigonometric functions"
 msgstr "נוספו לוג ופונקציות טריגונומטריות הפוכות"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
-#, fuzzy
-#| msgid "Minor updates:"
 msgid "Other updates:"
-msgstr "עדכונים משניים:"
+msgstr "עדכונים אחרים:"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Fix an issue with negative decimals without leading digits"
-msgstr ""
+msgstr "תוקנה תקלה עם עשרוניים שליליים ללא אפס מקדים"
 
 #: data/io.elementary.calculator.appdata.xml.in:24
 msgid "More efficient state saving"
-msgstr ""
+msgstr "שמירת מצב יעילה יותר"
 
 #: data/io.elementary.calculator.appdata.xml.in:25
 msgid "Use slim titlebar"
