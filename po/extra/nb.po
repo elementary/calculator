@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2020-08-23 18:13+0000\n"
-"Last-Translator: Nils K <slx@nilsk.net>\n"
+"PO-Revision-Date: 2021-01-19 14:18+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "calculator/extra/nb/>\n"
 "Language: nb\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 06:59+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -48,10 +48,8 @@ msgid "Add log and inverse trigonometric functions"
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:21
-#, fuzzy
-#| msgid "Minor updates:"
 msgid "Other updates:"
-msgstr "Mindre oppdateringer:"
+msgstr "Andre oppdateringer:"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Fix an issue with negative decimals without leading digits"
