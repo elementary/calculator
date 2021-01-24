@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2020-12-29 15:16+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"PO-Revision-Date: 2021-01-24 12:13+0000\n"
+"Last-Translator: liorlobel <lior@llobel.online>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/calculator/extra/"
 "he/>\n"
 "Language: he\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -60,7 +60,7 @@ msgstr "שמירת מצב יעילה יותר"
 
 #: data/io.elementary.calculator.appdata.xml.in:25
 msgid "Use slim titlebar"
-msgstr "להשתמש בשורת כותרת צרה"
+msgstr "השתמש בשורת כותרת דקה"
 
 #: data/io.elementary.calculator.appdata.xml.in:26
 #: data/io.elementary.calculator.appdata.xml.in:35
