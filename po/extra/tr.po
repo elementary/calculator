@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2021-01-28 19:53+0000\n"
+"PO-Revision-Date: 2021-01-29 22:25+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/calculator/extra/"
 "tr/>\n"
@@ -53,6 +53,8 @@ msgstr "Diğer güncellemeler:"
 #: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Fix an issue with negative decimals without leading digits"
 msgstr ""
+"Başında basamaklar olmadan negatif ondalık sayılarla ilgili bir sorun "
+"düzeltildi"
 
 #: data/io.elementary.calculator.appdata.xml.in:24
 msgid "More efficient state saving"
