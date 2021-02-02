@@ -19,7 +19,7 @@
  */
 
 namespace PantheonCalculator {
-    public class HistoryDialog : Gtk.Dialog {
+    public class HistoryDialog : Granite.Dialog {
         private unowned List<MainWindow.History?> history;
         private Gtk.TreeView view;
         private Gtk.Grid main_grid;
