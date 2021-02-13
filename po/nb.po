@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2018-07-19 21:38+0000\n"
-"Last-Translator: Nils K <slx@nilsk.net>\n"
-"Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
+"PO-Revision-Date: 2021-02-13 12:04+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "calculator/calculator/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:86 src/MainWindow.vala:462
@@ -113,15 +113,16 @@ msgstr "Eulers konstant"
 
 #: src/MainWindow.vala:204
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Titallslogaritme"
 
 #: src/MainWindow.vala:206
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Naturlig logaritme"
 
 #: src/MainWindow.vala:207
+#, fuzzy
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Cosinus"
 
 #: src/MainWindow.vala:209
 #, fuzzy
@@ -136,8 +137,9 @@ msgid "Inverse Tangent"
 msgstr "Tangens"
 
 #: src/MainWindow.vala:213
+#, fuzzy
 msgid "Reciprocal"
-msgstr ""
+msgstr "Resiprok"
 
 #: src/MainWindow.vala:457
 msgid "Hide extended functionality"
