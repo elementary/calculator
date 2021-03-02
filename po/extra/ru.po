@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2021-03-02 18:09+0000\n"
+"PO-Revision-Date: 2021-03-03 10:40+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/calculator/extra/"
 "ru/>\n"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Add log and inverse trigonometric functions"
-msgstr ""
+msgstr "Добавлен журнал и обратные тригонометрические функции"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 msgid "Other updates:"
@@ -59,11 +59,11 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:24
 msgid "More efficient state saving"
-msgstr ""
+msgstr "Более эффективное сохранение исходного состояния"
 
 #: data/io.elementary.calculator.appdata.xml.in:25
 msgid "Use slim titlebar"
-msgstr ""
+msgstr "Использовать тонкий заголовок"
 
 #: data/io.elementary.calculator.appdata.xml.in:26
 #: data/io.elementary.calculator.appdata.xml.in:35
@@ -78,7 +78,7 @@ msgstr "Мелкие обновления:"
 
 #: data/io.elementary.calculator.appdata.xml.in:34
 msgid "Fix inserting multi-byte characters"
-msgstr ""
+msgstr "Исправлена вставка многобайтовых символов"
 
 #: data/io.elementary.calculator.appdata.xml.in:42
 msgid "Fix missing icon for Ukrainian"
@@ -97,9 +97,8 @@ msgid "Improved decimal separator localization"
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:90
-#, fuzzy
 msgid "elementary, Inc."
-msgstr "elementary LLC."
+msgstr "elementary, Inc."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
