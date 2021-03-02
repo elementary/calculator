@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2021-03-02 18:09+0000\n"
+"PO-Revision-Date: 2021-03-03 10:40+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/calculator/"
 "calculator/ru/>\n"
@@ -114,21 +114,19 @@ msgstr "Число Эйлера"
 
 #: src/MainWindow.vala:204
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Десятичный логарифм"
 
 #: src/MainWindow.vala:206
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Натуральный логарифм"
 
 #: src/MainWindow.vala:207
 msgid "Inverse Sine"
 msgstr ""
 
 #: src/MainWindow.vala:209
-#, fuzzy
-#| msgid "Cosine"
 msgid "Inverse Cosine"
-msgstr "Косинус"
+msgstr "Арккосинус"
 
 #: src/MainWindow.vala:211
 msgid "Inverse Tangent"
