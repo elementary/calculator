@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2020-05-26 14:11+0000\n"
-"Last-Translator: Navalnyan <mk9seven@gmail.com>\n"
+"PO-Revision-Date: 2021-03-02 18:09+0000\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/calculator/extra/"
 "ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -49,14 +49,13 @@ msgid "Add log and inverse trigonometric functions"
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:21
-#, fuzzy
-#| msgid "Minor updates:"
 msgid "Other updates:"
-msgstr "Мелкие обновления:"
+msgstr "Остальные обновления:"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Fix an issue with negative decimals without leading digits"
 msgstr ""
+"Исправлена проблема с отрицательными десятичными дробями без начальных цифр"
 
 #: data/io.elementary.calculator.appdata.xml.in:24
 msgid "More efficient state saving"
@@ -83,11 +82,11 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:42
 msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgstr "Исправлена отсутствующая иконка для украинской локализации"
 
 #: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Animate Infobar when hiding and showing"
-msgstr ""
+msgstr "Анимированно скрытие и появление панели сведений"
 
 #: data/io.elementary.calculator.appdata.xml.in:51
 msgid "Fix selection replace"
@@ -105,7 +104,7 @@ msgstr "elementary LLC."
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "Вычисления;Математика;Арифметика;Научный;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
