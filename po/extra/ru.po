@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2020-05-26 14:11+0000\n"
-"Last-Translator: Navalnyan <mk9seven@gmail.com>\n"
+"POT-Creation-Date: 2020-12-23 20:17+0000\n"
+"PO-Revision-Date: 2021-03-03 13:07+0000\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/calculator/extra/"
 "ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -42,57 +42,68 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "New features:"
-msgstr ""
+msgstr "Новые возможности:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Add log and inverse trigonometric functions"
-msgstr ""
+msgstr "Добавлен журнал и обратные тригонометрические функции"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
-#: data/io.elementary.calculator.appdata.xml.in:30
-msgid "Minor updates:"
-msgstr "Мелкие обновления:"
+msgid "Other updates:"
+msgstr "Остальные обновления:"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
-msgid "Use slim titlebar"
+msgid "Fix an issue with negative decimals without leading digits"
 msgstr ""
+"Исправлена проблема с отрицательными десятичными дробями без начальных цифр"
 
 #: data/io.elementary.calculator.appdata.xml.in:24
-#: data/io.elementary.calculator.appdata.xml.in:33
-#: data/io.elementary.calculator.appdata.xml.in:41
-#: data/io.elementary.calculator.appdata.xml.in:51
+msgid "More efficient state saving"
+msgstr "Более эффективное сохранение исходного состояния"
+
+#: data/io.elementary.calculator.appdata.xml.in:25
+msgid "Use slim titlebar"
+msgstr "Использовать тонкий заголовок"
+
+#: data/io.elementary.calculator.appdata.xml.in:26
+#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:43
+#: data/io.elementary.calculator.appdata.xml.in:53
 msgid "Updated translations"
-msgstr ""
+msgstr "Обновлены переводы"
 
 #: data/io.elementary.calculator.appdata.xml.in:32
+msgid "Minor updates:"
+msgstr "Незначительные обновления:"
+
+#: data/io.elementary.calculator.appdata.xml.in:34
 msgid "Fix inserting multi-byte characters"
-msgstr ""
+msgstr "Исправлена вставка многобайтовых символов"
 
-#: data/io.elementary.calculator.appdata.xml.in:40
+#: data/io.elementary.calculator.appdata.xml.in:42
 msgid "Fix missing icon for Ukrainian"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:48
-msgid "Animate Infobar when hiding and showing"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:49
-msgid "Fix selection replace"
-msgstr ""
+msgstr "Исправлена отсутствующая иконка для украинской локализации"
 
 #: data/io.elementary.calculator.appdata.xml.in:50
-msgid "Improved decimal separator localization"
-msgstr ""
+msgid "Animate Infobar when hiding and showing"
+msgstr "Анимированно скрытие и появление панели сведений"
 
-#: data/io.elementary.calculator.appdata.xml.in:88
-#, fuzzy
+#: data/io.elementary.calculator.appdata.xml.in:51
+msgid "Fix selection replace"
+msgstr "Исправлена замена выбранного текста"
+
+#: data/io.elementary.calculator.appdata.xml.in:52
+msgid "Improved decimal separator localization"
+msgstr "Улучшена локализация разделителя десятичных дробей"
+
+#: data/io.elementary.calculator.appdata.xml.in:90
 msgid "elementary, Inc."
-msgstr "elementary LLC."
+msgstr "elementary, Inc."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "Вычисления;Математика;Арифметика;Научный;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"

@@ -2,20 +2,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2018-07-19 21:38+0000\n"
-"Last-Translator: Nils K <slx@nilsk.net>\n"
-"Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
+"POT-Creation-Date: 2020-12-23 20:17+0000\n"
+"PO-Revision-Date: 2021-02-13 12:04+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "calculator/calculator/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:457
+#: src/MainWindow.vala:86 src/MainWindow.vala:462
 msgid "Show extended functionality"
 msgstr "Vis utvidet funksjonalitet"
 
@@ -113,15 +113,16 @@ msgstr "Eulers konstant"
 
 #: src/MainWindow.vala:204
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Titallslogaritme"
 
 #: src/MainWindow.vala:206
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Naturlig logaritme"
 
 #: src/MainWindow.vala:207
+#, fuzzy
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Cosinus"
 
 #: src/MainWindow.vala:209
 #, fuzzy
@@ -136,10 +137,11 @@ msgid "Inverse Tangent"
 msgstr "Tangens"
 
 #: src/MainWindow.vala:213
+#, fuzzy
 msgid "Reciprocal"
-msgstr ""
+msgstr "Resiprok"
 
-#: src/MainWindow.vala:452
+#: src/MainWindow.vala:457
 msgid "Hide extended functionality"
 msgstr "Ikke vis utvidet funksjonalitet"
 
@@ -159,17 +161,17 @@ msgstr "Uttrykk"
 msgid "Close"
 msgstr "Lukk"
 
-#: src/Core/Scanner.vala:69
+#: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
 msgstr "'%s' er ugyldig."
 
-#: src/Core/Scanner.vala:114
+#: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
 msgstr "Ulike parenteser."
 
 #. If no rule matches the character at pos, throw an error.
-#: src/Core/Scanner.vala:167
+#: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
 msgstr "'%s' er ukjent."

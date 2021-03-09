@@ -12,7 +12,7 @@
   </description>
   <translation type="gettext">io.elementary.calculator</translation>
   <releases>
-    <release version="1.6.0" date="2020-10-01" urgency="medium">
+    <release version="1.6.0" date="2020-12-23" urgency="medium">
       <description>
         <p>New features:</p>
         <ul>
@@ -21,8 +21,10 @@
           <li>Recognise infix operator '×%'for taking a percentage</li>
           <li>Add log and inverse trigonometric functions</li>
         </ul>
-        <p>Minor updates:</p>
+        <p>Other updates:</p>
         <ul>
+          <li>Fix an issue with negative decimals without leading digits</li>
+          <li>More efficient state saving</li>
           <li>Use slim titlebar</li>
           <li>Updated translations</li>
         </ul>

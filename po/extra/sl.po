@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
+"POT-Creation-Date: 2020-12-23 20:17+0000\n"
 "PO-Revision-Date: 2019-12-20 20:07+0000\n"
 "Last-Translator: Marko <marko.dolar@gmail.com>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/calculator/"
@@ -49,42 +49,53 @@ msgid "Add log and inverse trigonometric functions"
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:21
-#: data/io.elementary.calculator.appdata.xml.in:30
-msgid "Minor updates:"
+msgid "Other updates:"
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:23
-msgid "Use slim titlebar"
+msgid "Fix an issue with negative decimals without leading digits"
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:24
-#: data/io.elementary.calculator.appdata.xml.in:33
-#: data/io.elementary.calculator.appdata.xml.in:41
-#: data/io.elementary.calculator.appdata.xml.in:51
+msgid "More efficient state saving"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:25
+msgid "Use slim titlebar"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:26
+#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:43
+#: data/io.elementary.calculator.appdata.xml.in:53
 msgid "Updated translations"
 msgstr "Posodobljeni prevodi"
 
 #: data/io.elementary.calculator.appdata.xml.in:32
+msgid "Minor updates:"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:34
 msgid "Fix inserting multi-byte characters"
 msgstr "Popravljen vnos večbajtnih znakov"
 
-#: data/io.elementary.calculator.appdata.xml.in:40
+#: data/io.elementary.calculator.appdata.xml.in:42
 msgid "Fix missing icon for Ukrainian"
 msgstr "Popravljena manjkajoča ikona pri ukrajinščini"
 
-#: data/io.elementary.calculator.appdata.xml.in:48
+#: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Animate Infobar when hiding and showing"
 msgstr "Animiraj vrstico z informacijami ko se prikaže in skrije"
 
-#: data/io.elementary.calculator.appdata.xml.in:49
+#: data/io.elementary.calculator.appdata.xml.in:51
 msgid "Fix selection replace"
 msgstr "Popravljena zamenjava izbora"
 
-#: data/io.elementary.calculator.appdata.xml.in:50
+#: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Improved decimal separator localization"
 msgstr "Izboljšana lokalizacija za decimalno vejico"
 
-#: data/io.elementary.calculator.appdata.xml.in:88
+#: data/io.elementary.calculator.appdata.xml.in:90
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

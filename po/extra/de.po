@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
+"POT-Creation-Date: 2020-12-23 20:17+0000\n"
 "PO-Revision-Date: 2020-07-10 12:12+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/calculator/extra/"
@@ -48,42 +48,55 @@ msgid "Add log and inverse trigonometric functions"
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:21
-#: data/io.elementary.calculator.appdata.xml.in:30
-msgid "Minor updates:"
+#, fuzzy
+#| msgid "Minor updates:"
+msgid "Other updates:"
 msgstr "Weitere Aktualisierungen:"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
+msgid "Fix an issue with negative decimals without leading digits"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:24
+msgid "More efficient state saving"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:25
 msgid "Use slim titlebar"
 msgstr "Verwendung einer schmalen Titelleiste"
 
-#: data/io.elementary.calculator.appdata.xml.in:24
-#: data/io.elementary.calculator.appdata.xml.in:33
-#: data/io.elementary.calculator.appdata.xml.in:41
-#: data/io.elementary.calculator.appdata.xml.in:51
+#: data/io.elementary.calculator.appdata.xml.in:26
+#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:43
+#: data/io.elementary.calculator.appdata.xml.in:53
 msgid "Updated translations"
 msgstr "Aktualisierte Übersetzungen"
 
 #: data/io.elementary.calculator.appdata.xml.in:32
+msgid "Minor updates:"
+msgstr "Weitere Aktualisierungen:"
+
+#: data/io.elementary.calculator.appdata.xml.in:34
 msgid "Fix inserting multi-byte characters"
 msgstr "Korrektur beim Einfügen von Multi-Byte-Zeichen"
 
-#: data/io.elementary.calculator.appdata.xml.in:40
+#: data/io.elementary.calculator.appdata.xml.in:42
 msgid "Fix missing icon for Ukrainian"
 msgstr "Fehlendes Icon für Ukrainisch korrigiert"
 
-#: data/io.elementary.calculator.appdata.xml.in:48
+#: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Animate Infobar when hiding and showing"
 msgstr "Animierte Informationsleiste beim Verstecken und Wiederherstellen"
 
-#: data/io.elementary.calculator.appdata.xml.in:49
+#: data/io.elementary.calculator.appdata.xml.in:51
 msgid "Fix selection replace"
 msgstr "Korrektur von Markierung ersetzen"
 
-#: data/io.elementary.calculator.appdata.xml.in:50
+#: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Improved decimal separator localization"
 msgstr "verbesserte Lokalisierung für Dezimaltrenner"
 
-#: data/io.elementary.calculator.appdata.xml.in:88
+#: data/io.elementary.calculator.appdata.xml.in:90
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

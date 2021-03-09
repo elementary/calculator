@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
+"POT-Creation-Date: 2020-12-23 20:17+0000\n"
 "PO-Revision-Date: 2020-02-20 17:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/calculator/"
@@ -14,7 +14,7 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:457
+#: src/MainWindow.vala:86 src/MainWindow.vala:462
 msgid "Show extended functionality"
 msgstr "Pokoż rozszyrzōne funkcyje"
 
@@ -138,7 +138,7 @@ msgstr "Tangyns"
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:452
+#: src/MainWindow.vala:457
 msgid "Hide extended functionality"
 msgstr "Skryj rozszyrzōne funkcyje"
 
@@ -158,17 +158,17 @@ msgstr "Wyrażynie"
 msgid "Close"
 msgstr "Zawrzij"
 
-#: src/Core/Scanner.vala:69
+#: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
 msgstr "'%s' je niynoleżne."
 
-#: src/Core/Scanner.vala:114
+#: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
 msgstr "Nowiasy niy sōm zgodliwe."
 
 #. If no rule matches the character at pos, throw an error.
-#: src/Core/Scanner.vala:167
+#: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
 msgstr "'%s' je niyznōme."

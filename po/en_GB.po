@@ -2,20 +2,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2018-10-25 07:05+0000\n"
-"Last-Translator: Ciaran Ainsworth <ciaranainsworth@outlook.com>\n"
-"Language-Team: English (United Kingdom) <https://weblate.elementary.io/"
-"projects/calculator/calculator/en_GB/>\n"
+"POT-Creation-Date: 2020-12-23 20:17+0000\n"
+"PO-Revision-Date: 2021-02-14 14:10+0000\n"
+"Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
+"Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
+"calculator/calculator/en_GB/>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:457
+#: src/MainWindow.vala:86 src/MainWindow.vala:462
 msgid "Show extended functionality"
 msgstr "Show extended functionality"
 
@@ -113,33 +113,29 @@ msgstr "Euler's Number"
 
 #: src/MainWindow.vala:204
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Logarithm Base 10"
 
 #: src/MainWindow.vala:206
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Natural Logarithm"
 
 #: src/MainWindow.vala:207
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Inverse Sine"
 
 #: src/MainWindow.vala:209
-#, fuzzy
-#| msgid "Cosine"
 msgid "Inverse Cosine"
-msgstr "Cosine"
+msgstr "Inverse Cosine"
 
 #: src/MainWindow.vala:211
-#, fuzzy
-#| msgid "Tangent"
 msgid "Inverse Tangent"
-msgstr "Tangent"
+msgstr "Inverse Tangent"
 
 #: src/MainWindow.vala:213
 msgid "Reciprocal"
-msgstr ""
+msgstr "Reciprocal"
 
-#: src/MainWindow.vala:452
+#: src/MainWindow.vala:457
 msgid "Hide extended functionality"
 msgstr "Hide extended functionality"
 
@@ -159,17 +155,17 @@ msgstr "Expression"
 msgid "Close"
 msgstr "Close"
 
-#: src/Core/Scanner.vala:69
+#: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
 msgstr "'%s' is invalid."
 
-#: src/Core/Scanner.vala:114
+#: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
 msgstr "Mismatched parenthesis."
 
 #. If no rule matches the character at pos, throw an error.
-#: src/Core/Scanner.vala:167
+#: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
 msgstr "'%s' is unknown."

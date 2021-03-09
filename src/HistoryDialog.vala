@@ -1,6 +1,6 @@
 /*-
- * Copyright (c) 2018 elementary LLC. (https://elementary.io)
- *               2014 Marvin Beckers <beckersmarvin@gmail.com>
+ * Copyright 2018-2021 elementary, Inc. (https://elementary.io)
+ *           2014 Marvin Beckers <beckersmarvin@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,12 +19,10 @@
  */
 
 namespace PantheonCalculator {
-    public class HistoryDialog : Gtk.Dialog {
-        private unowned List<MainWindow.History?> history;
+    public class HistoryDialog : Granite.Dialog {
+        public unowned List<MainWindow.History?> history { get; construct; }
+
         private Gtk.TreeView view;
-        private Gtk.Grid main_grid;
-        private Gtk.Widget button_add;
-        private Gtk.Widget button_close;
         private Gtk.ListStore list_store;
 
         private Gtk.RadioButton expression_radio;
@@ -33,80 +31,76 @@ namespace PantheonCalculator {
         public signal void added (string text);
 
         public HistoryDialog (List<MainWindow.History?> _history) {
-            history = _history;
-            title = _("History");
-            set_size_request (450, 0);
-            set_resizable (false);
-            set_deletable (false);
+            Object (history: _history);
+        }
 
-            build_ui ();
-            build_buttons ();
+        construct {
+            deletable = false;
+            title = _("History");
+
+            list_store = new Gtk.ListStore (2, typeof (string), typeof (string));
+            Gtk.TreeIter iter;
+
+            foreach (MainWindow.History h in history) {
+                list_store.insert (out iter, 0);
+                list_store.set (iter, 0, h.exp, 1, h.output);
+            }
+
+            var cell = new Gtk.CellRendererText ();
+
+            view = new Gtk.TreeView.with_model (list_store) {
+                expand = true,
+                headers_visible = false
+            };
+            view.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            view.insert_column_with_attributes (-1, null, cell, "text", 0);
+            view.insert_column_with_attributes (-1, null, cell, "text", 1);
+            view.get_column (1).min_width = 75;
+            view.get_column (0).min_width = 200;
+
+            var scrolled = new Gtk.ScrolledWindow (null, null) {
+                min_content_height = 125,
+                shadow_type = Gtk.ShadowType.IN
+            };
+            scrolled.add (view);
+
+            var add_label = new Gtk.Label (_("Value to add:")) {
+                halign = Gtk.Align.END,
+                hexpand = true
+            };
+
+            result_radio = new Gtk.RadioButton.with_label (null, _("Result"));
+
+            expression_radio = new Gtk.RadioButton.with_label_from_widget (result_radio, _("Expression"));
+
+            var main_grid = new Gtk.Grid () {
+               column_spacing = 12,
+               expand = true,
+               margin = 12,
+               margin_top = 0,
+               row_spacing = 12
+            };
+            main_grid.attach (scrolled, 0, 0, 3, 1);
+            main_grid.attach (add_label, 0, 1);
+            main_grid.attach (result_radio, 2, 1);
+            main_grid.attach (expression_radio, 1, 1);
+
+            get_content_area ().add (main_grid);
+
+            add_button (_("Close"), Gtk.ResponseType.CLOSE);
+
+            var button_add = add_button (_("Add"), Gtk.ResponseType.OK);
+            button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+
             show_all ();
+
+            response.connect (on_response);
         }
 
         public void append (MainWindow.History entry) {
             Gtk.TreeIter iter;
             list_store.insert (out iter, 0);
             list_store.set (iter, 0, entry.exp, 1, entry.output);
-        }
-
-        private void build_ui () {
-            var content = get_content_area () as Gtk.Box;
-            get_action_area ().margin = 6;
-            main_grid = new Gtk.Grid ();
-            main_grid.expand = true;
-            main_grid.margin = 12;
-            main_grid.margin_top = 0;
-            main_grid.row_spacing = 10;
-            main_grid.column_spacing = 20;
-            content.add (main_grid);
-
-            if (history.length () > 0) {
-                list_store = new Gtk.ListStore (2, typeof (string), typeof (string));
-                Gtk.TreeIter iter;
-
-                foreach (MainWindow.History h in history) {
-                    list_store.insert (out iter, 0);
-                    list_store.set (iter, 0, h.exp, 1, h.output);
-                }
-
-                view = new Gtk.TreeView.with_model (list_store);
-                view.expand = true;
-                view.set_headers_visible (false);
-                view.get_style_context ().add_class ("h3");
-
-                Gtk.CellRendererText cell = new Gtk.CellRendererText ();
-                view.insert_column_with_attributes (-1, null, cell, "text", 0);
-                view.insert_column_with_attributes (-1, null, cell, "text", 1);
-
-                view.get_column (1).min_width = 75;
-                view.get_column (0).min_width = 200;
-
-                Gtk.ScrolledWindow scrolled = new Gtk.ScrolledWindow (null, null);
-                scrolled.min_content_height = 125;
-                scrolled.shadow_type = Gtk.ShadowType.IN;
-                scrolled.add (view);
-                main_grid.attach (scrolled, 0, 0, 3, 1);
-            }
-
-            var add_label = new Gtk.Label (_("Value to add:"));
-            add_label.halign = Gtk.Align.END;
-            main_grid.attach (add_label, 0, 1, 1, 1);
-
-            result_radio = new Gtk.RadioButton.with_label (null, _("Result"));
-            result_radio.halign = Gtk.Align.END;
-            main_grid.attach (result_radio, 2, 1, 1, 1);
-
-            expression_radio = new Gtk.RadioButton.with_label_from_widget (result_radio, _("Expression"));
-            expression_radio.halign = Gtk.Align.END;
-            main_grid.attach (expression_radio, 1, 1, 1, 1);
-        }
-
-        private void build_buttons () {
-            button_close = add_button (_("Close"), Gtk.ResponseType.CLOSE);
-            button_add = add_button (_("Add"), Gtk.ResponseType.OK);
-            button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-            response.connect (on_response);
         }
 
         private void on_response (Gtk.Dialog source, int response_id) {

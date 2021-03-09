@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2020-10-13 21:14+0000\n"
+"POT-Creation-Date: 2020-12-23 20:17+0000\n"
+"PO-Revision-Date: 2021-01-21 13:51+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/calculator/extra/"
 "fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -48,42 +48,55 @@ msgid "Add log and inverse trigonometric functions"
 msgstr "Ajout des fonctions logarithmiques et trigonométriques inverses"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
-#: data/io.elementary.calculator.appdata.xml.in:30
-msgid "Minor updates:"
-msgstr "Mises à jour mineures :"
+msgid "Other updates:"
+msgstr "Autres mises à jour :"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
+msgid "Fix an issue with negative decimals without leading digits"
+msgstr ""
+"Correction d'un problème avec les décimales négatives, sans chiffres avant "
+"la virgule"
+
+#: data/io.elementary.calculator.appdata.xml.in:24
+msgid "More efficient state saving"
+msgstr "Sauvegarde de l'état de l'application plus efficace"
+
+#: data/io.elementary.calculator.appdata.xml.in:25
 msgid "Use slim titlebar"
 msgstr "Utilisation d'une barre de titre plus fine"
 
-#: data/io.elementary.calculator.appdata.xml.in:24
-#: data/io.elementary.calculator.appdata.xml.in:33
-#: data/io.elementary.calculator.appdata.xml.in:41
-#: data/io.elementary.calculator.appdata.xml.in:51
+#: data/io.elementary.calculator.appdata.xml.in:26
+#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:43
+#: data/io.elementary.calculator.appdata.xml.in:53
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
 #: data/io.elementary.calculator.appdata.xml.in:32
+msgid "Minor updates:"
+msgstr "Mises à jour mineures :"
+
+#: data/io.elementary.calculator.appdata.xml.in:34
 msgid "Fix inserting multi-byte characters"
 msgstr "Correction de l'insertion de caractères pluri-octets"
 
-#: data/io.elementary.calculator.appdata.xml.in:40
+#: data/io.elementary.calculator.appdata.xml.in:42
 msgid "Fix missing icon for Ukrainian"
 msgstr "Correction de l'icône manquante en ukrainien"
 
-#: data/io.elementary.calculator.appdata.xml.in:48
+#: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Animate Infobar when hiding and showing"
 msgstr "Animation de la barre d'information lors de son affichage"
 
-#: data/io.elementary.calculator.appdata.xml.in:49
+#: data/io.elementary.calculator.appdata.xml.in:51
 msgid "Fix selection replace"
 msgstr "Correction du remplacement du texte sélectionné"
 
-#: data/io.elementary.calculator.appdata.xml.in:50
+#: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Improved decimal separator localization"
 msgstr "Amélioration du support de la traduction du séparateur des nombres"
 
-#: data/io.elementary.calculator.appdata.xml.in:88
+#: data/io.elementary.calculator.appdata.xml.in:90
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 

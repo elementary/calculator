@@ -102,7 +102,6 @@ namespace PantheonCalculator.Core {
             try {
                 var tokenlist = scanner.scan (str);
                 var d = 0.0;
-
                 try {
                     tokenlist = shunting_yard (tokenlist);
                     try {
@@ -156,6 +155,7 @@ namespace PantheonCalculator.Core {
                             while (!op_stack.is_empty () && op_stack.peek_tail ().token_type == TokenType.OPERATOR &&
                             ((op2.fixity == "LEFT" && op1.prec <= op2.prec) ||
                             (op2.fixity == "RIGHT" && op1.prec < op2.prec))) {
+
                                 output.append (op_stack.pop_tail ());
 
                                 if (!op_stack.is_empty ()) {
