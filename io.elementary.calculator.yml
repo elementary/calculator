@@ -1,9 +1,7 @@
 app-id: io.elementary.calculator
-runtime: org.gnome.Platform
+runtime: io.elementary.Platform
 runtime-version: '3.38'
-base: io.elementary.BaseApp
-base-version: juno-20.08
-sdk: org.gnome.Sdk
+sdk: io.elementary.Sdk
 command: io.elementary.calculator
 finish-args:
   - '--share=ipc'
@@ -15,12 +13,6 @@ finish-args:
 
   - '--metadata=X-DConf=migrate-path=/io/elementary/calculator/'
 modules:
-  - name: granite
-    buildsystem: meson
-    sources:
-      - type: git
-        url: https://github.com/elementary/granite.git
-
   - name: calculator
     buildsystem: meson
     sources:
