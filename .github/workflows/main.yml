@@ -15,7 +15,7 @@ jobs:
         bundle: "calculator.flatpak"
         manifest-path: "io.elementary.calculator.yml"
         run-tests: "true"
-        runtime-repo: https://flatpak.elementary.io/elementary.flatpakrepo
+        runtime-repo: "https://flatpak.elementary.io/elementary.flatpakrepo"
 
   lint:
 
