@@ -1,6 +1,6 @@
 app-id: io.elementary.calculator
 runtime: io.elementary.Platform
-runtime-version: '3.38'
+runtime-version: '0.1.0'
 sdk: io.elementary.Sdk
 command: io.elementary.calculator
 finish-args:
