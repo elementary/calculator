@@ -6,15 +6,18 @@ jobs:
   flatpak:
     runs-on: ubuntu-latest
     container:
-      image: docker.io/bilelmoussaoui/flatpak-github-actions
+      image: docker.io/bilelmoussaoui/flatpak-github-actions:elementary-juno
       options: --privileged
     steps:
     - uses: actions/checkout@v2
-    - uses: bilelmoussaoui/flatpak-github-actions@v2
+    - uses: bilelmoussaoui/flatpak-github-actions@master
       with:
         bundle: "calculator.flatpak"
         manifest-path: "io.elementary.calculator.yml"
         run-tests: "true"
+        repository-name: "elementary"
+        repository-url: "https://flatpak.elementary.io/elementary.flatpakrepo"
+        cache-key: "flatpak-builder-${{ github.sha }}"
 
   lint:
 
