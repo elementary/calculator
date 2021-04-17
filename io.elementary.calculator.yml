@@ -1,17 +1,19 @@
+---
+
 app-id: io.elementary.calculator
 runtime: io.elementary.Platform
-runtime-version: '0.1.0'
+runtime-version: daily
 sdk: io.elementary.Sdk
 command: io.elementary.calculator
+
 finish-args:
   - '--share=ipc'
   - '--socket=fallback-x11'
   - '--socket=wayland'
-
   # needed for perfers-color-scheme
   - '--system-talk-name=org.freedesktop.Accounts'
-
   - '--metadata=X-DConf=migrate-path=/io/elementary/calculator/'
+
 modules:
   - name: calculator
     buildsystem: meson
