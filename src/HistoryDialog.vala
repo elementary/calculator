@@ -64,7 +64,7 @@ namespace PantheonCalculator {
             };
             scrolled.add (view);
 
-            var add_label = new Gtk.Label (_("Value to add:")) {
+            var add_label = new Gtk.Label (_("Value to append:")) {
                 halign = Gtk.Align.END,
                 hexpand = true
             };
@@ -89,7 +89,7 @@ namespace PantheonCalculator {
 
             add_button (_("Close"), Gtk.ResponseType.CLOSE);
 
-            var button_add = add_button (_("Add"), Gtk.ResponseType.OK);
+            var button_add = add_button (_("Append"), Gtk.ResponseType.OK);
             button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
             show_all ();
