@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: bilelmoussaoui/flatpak-github-actions:elementary-juno
+      image: docker.io/bilelmoussaoui/flatpak-github-actions
       options: --privileged
 
     steps:
@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build
-        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@master
+        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@flat-manager
         with:
           bundle: calculator.flatpak
           manifest-path: io.elementary.calculator.yml
@@ -31,7 +31,7 @@ jobs:
           cache-key: flatpak
 
       - name: Deploy
-        uses: bilelmoussaoui/flatpak-github-actions/flat-manager@master
+        uses: bilelmoussaoui/flatpak-github-actions/flat-manager@flat-manager
         with:
           repository: elementary
           flat-manager-url: https://flatpak-api.elementary.io
