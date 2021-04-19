@@ -1,0 +1,53 @@
+---
+
+name: Merge
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy_flatpak:
+    name: Deploy Flatpak
+    runs-on: ubuntu-latest
+
+    container:
+      image: docker.io/bilelmoussaoui/flatpak-github-actions
+      options: --privileged
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@flat-manager
+        with:
+          bundle: calculator.flatpak
+          manifest-path: io.elementary.calculator.yml
+          run-tests: true
+          repository-name: elementary
+          repository-url: https://flatpak.elementary.io/elementary.flatpakrepo
+          cache-key: "flatpak-builder-${{ github.sha }}"
+
+      - name: Deploy
+        uses: bilelmoussaoui/flatpak-github-actions/flat-manager@flat-manager
+        with:
+          repository: elementary
+          flat-manager-url: https://flatpak-api.elementary.io
+          token: ${{ secrets.FLAT_MANAGER_TOKEN }}
+
+  gettext:
+    name: Gettext
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Gettext
+        uses: elementary/actions/gettext-template@master
+        env:
+          GIT_USER_TOKEN: "${{ secrets.GIT_USER_TOKEN }}"
+          GIT_USER_NAME: "elementaryBot"
+          GIT_USER_EMAIL: "builds@elementary.io"
