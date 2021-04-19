@@ -1,12 +1,11 @@
 ---
 
-name: Daily
+name: Merge
 
 on:
   push:
     branches:
       - master
-      - flatpak-elementary-sdk
 
 jobs:
   deploy_flatpak:
@@ -37,3 +36,18 @@ jobs:
           repository: elementary
           flat-manager-url: https://flatpak-api.elementary.io
           token: ${{ secrets.FLAT_MANAGER_TOKEN }}
+
+  gettext:
+    name: Gettext
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Gettext
+        uses: elementary/actions/gettext-template@master
+        env:
+          GIT_USER_TOKEN: "${{ secrets.GIT_USER_TOKEN }}"
+          GIT_USER_NAME: "elementaryBot"
+          GIT_USER_EMAIL: "builds@elementary.io"
