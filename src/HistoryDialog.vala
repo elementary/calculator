@@ -37,6 +37,15 @@ namespace PantheonCalculator {
         construct {
             deletable = false;
             title = _("History");
+            default_width = 250;
+
+            var description_label = new Gtk.Label (_("Insert a previous expression or result into the current calculation.")) {
+                xalign = 0,
+                halign = Gtk.Align.START,
+                hexpand = true,
+                justify = Gtk.Justification.LEFT,
+                wrap = true
+            };
 
             list_store = new Gtk.ListStore (2, typeof (string), typeof (string));
             Gtk.TreeIter iter;
@@ -80,10 +89,11 @@ namespace PantheonCalculator {
                margin_top = 0,
                row_spacing = 12
             };
-            main_grid.attach (scrolled, 0, 0, 3, 1);
-            main_grid.attach (add_label, 0, 1);
-            main_grid.attach (result_radio, 2, 1);
-            main_grid.attach (expression_radio, 1, 1);
+            main_grid.attach (description_label, 0, 0, 3, 1);
+            main_grid.attach (scrolled, 0, 1, 3, 1);
+            main_grid.attach (add_label, 0, 2);
+            main_grid.attach (result_radio, 2, 2);
+            main_grid.attach (expression_radio, 1, 2);
 
             get_content_area ().add (main_grid);
 
