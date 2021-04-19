@@ -28,7 +28,7 @@ jobs:
           run-tests: true
           repository-name: elementary
           repository-url: https://flatpak.elementary.io/elementary.flatpakrepo
-          cache-key: flatpak
+          cache-key: "flatpak-builder-${{ github.sha }}"
 
       - name: Deploy
         uses: bilelmoussaoui/flatpak-github-actions/flat-manager@flat-manager
