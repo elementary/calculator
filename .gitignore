@@ -1,3 +1,5 @@
-build
-~*
+.flatpak-builder
 *~
+~*
+build
+builddir
