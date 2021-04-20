@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-23 20:17+0000\n"
+"POT-Creation-Date: 2021-04-20 00:33+0000\n"
 "PO-Revision-Date: 2021-01-19 22:18+0000\n"
 "Last-Translator: Camiropan <daniel.vhasenmayer@googlemail.com>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/calculator/"
@@ -20,11 +20,11 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:462
+#: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
 msgstr "Erweiterte Funktionen anzeigen"
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "Chronik"
 
@@ -48,7 +48,7 @@ msgstr "Letztes Zeichen löschen"
 msgid "Clear entry"
 msgstr "Eingabe löschen"
 
-#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128
 msgid "Add"
 msgstr "Addieren"
 
@@ -140,25 +140,35 @@ msgstr "Arkustangens"
 msgid "Reciprocal"
 msgstr "Kehrwert"
 
-#: src/MainWindow.vala:457
+#: src/MainWindow.vala:462
 msgid "Hide extended functionality"
 msgstr "Erweiterte Funktionen ausblenden"
 
-#: src/HistoryDialog.vala:92
-msgid "Value to add:"
+#: src/HistoryDialog.vala:42
+msgid "Insert a previous expression or result into the current calculation."
+msgstr ""
+
+#: src/HistoryDialog.vala:76
+#, fuzzy
+#| msgid "Value to add:"
+msgid "Value to insert:"
 msgstr "Zu addierender Wert:"
 
-#: src/HistoryDialog.vala:96
+#: src/HistoryDialog.vala:81
 msgid "Result"
 msgstr "Ergebnis"
 
-#: src/HistoryDialog.vala:100
+#: src/HistoryDialog.vala:83
 msgid "Expression"
 msgstr "Ausdruck"
 
-#: src/HistoryDialog.vala:106
+#: src/HistoryDialog.vala:100
 msgid "Close"
 msgstr "Schließen"
+
+#: src/HistoryDialog.vala:102
+msgid "Insert"
+msgstr ""
 
 #: src/Core/Scanner.vala:68
 #, c-format
