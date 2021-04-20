@@ -48,8 +48,6 @@ namespace PantheonCalculator {
         public const string ACTION_PREFIX = "win.";
         public const string ACTION_CLEAR = "action-clear";
 
-        private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
-
         private const ActionEntry[] ACTION_ENTRIES = {
             { ACTION_CLEAR, action_clear }
         };
@@ -267,10 +265,7 @@ namespace PantheonCalculator {
             var granite_settings = Granite.Settings.get_default ();
             var gtk_settings = Gtk.Settings.get_default ();
 
-            gtk_settings.gtk_icon_theme_name = "elementary";
-            if (!gtk_settings.gtk_theme_name.has_prefix (STYLESHEET_PREFIX)) {
-                gtk_settings.gtk_theme_name = STYLESHEET_PREFIX + "blueberry";
-            }
+            Granite.force_elementary_style ();
 
             gtk_settings.gtk_application_prefer_dark_theme = (
                 granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
