@@ -1,4 +1,5 @@
 # Calculator
+
 [![Translation status](https://l10n.elementary.io/widgets/calculator/-/svg-badge.svg)](https://l10n.elementary.io/projects/calculator/?utm_source=widget)
 
 ![Screenshot](data/screenshot@2x.png?raw=true)
@@ -7,7 +8,7 @@
 
 You'll need the following dependencies:
 
-* granite >= 0.5
+* granite >= 6.1.0
 * meson >= 0.43.0
 * valac
 
