@@ -1,5 +1,5 @@
 /*-
- * Copyright 2018-2019 elementary, Inc. (https://elementary.io)
+ * Copyright 2018–2021 elementary, Inc. (https://elementary.io)
  *           2014 Marvin Beckers <beckersmarvin@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
