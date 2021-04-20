@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 00:33+0000\n"
-"PO-Revision-Date: 2020-10-08 13:14+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"PO-Revision-Date: 2021-04-20 10:10+0000\n"
+"Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/calculator/"
 "calculator/es/>\n"
 "Language: es\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-01-06 06:03+0000\n"
 
 #: src/MainWindow.vala:86 src/MainWindow.vala:467
@@ -141,13 +141,11 @@ msgstr "Ocultar funciones adicionales"
 
 #: src/HistoryDialog.vala:42
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Inserta una expresión o resultado anterior en el cálculo actual."
 
 #: src/HistoryDialog.vala:76
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Valor que sumar:"
+msgstr "Valor para insertar:"
 
 #: src/HistoryDialog.vala:81
 msgid "Result"
@@ -163,7 +161,7 @@ msgstr "Cerrar"
 
 #: src/HistoryDialog.vala:102
 msgid "Insert"
-msgstr ""
+msgstr "Insertar"
 
 #: src/Core/Scanner.vala:68
 #, c-format
