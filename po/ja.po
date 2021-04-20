@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2020-10-04 12:01+0000\n"
+"POT-Creation-Date: 2021-04-20 00:33+0000\n"
+"PO-Revision-Date: 2021-04-20 00:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
 "calculator/ja/>\n"
@@ -12,14 +12,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:462
+#: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
 msgstr "追加機能を表示"
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "履歴"
 
@@ -43,7 +43,7 @@ msgstr "左の一文字文字を削除"
 msgid "Clear entry"
 msgstr "エントリーを消去"
 
-#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128
 msgid "Add"
 msgstr "足し算"
 
@@ -135,25 +135,33 @@ msgstr "アークタンジェント"
 msgid "Reciprocal"
 msgstr "逆数"
 
-#: src/MainWindow.vala:457
+#: src/MainWindow.vala:462
 msgid "Hide extended functionality"
 msgstr "追加機能を表示しない"
 
-#: src/HistoryDialog.vala:92
-msgid "Value to add:"
-msgstr "追加する値:"
+#: src/HistoryDialog.vala:42
+msgid "Insert a previous expression or result into the current calculation."
+msgstr "以前使用した式や結果を現在の計算に挿入します。"
 
-#: src/HistoryDialog.vala:96
+#: src/HistoryDialog.vala:76
+msgid "Value to insert:"
+msgstr "挿入する値:"
+
+#: src/HistoryDialog.vala:81
 msgid "Result"
 msgstr "結果"
 
-#: src/HistoryDialog.vala:100
+#: src/HistoryDialog.vala:83
 msgid "Expression"
 msgstr "式"
 
-#: src/HistoryDialog.vala:106
+#: src/HistoryDialog.vala:100
 msgid "Close"
 msgstr "閉じる"
+
+#: src/HistoryDialog.vala:102
+msgid "Insert"
+msgstr "挿入"
 
 #: src/Core/Scanner.vala:68
 #, c-format
