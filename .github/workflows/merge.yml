@@ -49,4 +49,4 @@ jobs:
           token: ${{ secrets.GIT_USER_TOKEN }}
 
       - name: Gettext
-        uses: elementary/actions/gettext-template@master
+        uses: elementary/actions/gettext-template@update-gettext
