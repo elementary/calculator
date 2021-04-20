@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 00:33+0000\n"
-"PO-Revision-Date: 2021-04-20 13:26+0000\n"
+"PO-Revision-Date: 2021-04-20 13:29+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/calculator/"
 "calculator/de/>\n"
@@ -118,7 +118,7 @@ msgstr "Eulersche Zahl"
 
 #: src/MainWindow.vala:204
 msgid "Logarithm Base 10"
-msgstr "Logarithmus zur Basis 10"
+msgstr "Zehnerlogarithmus"
 
 #: src/MainWindow.vala:206
 msgid "Natural Logarithm"
