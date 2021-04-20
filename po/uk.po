@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 00:33+0000\n"
-"PO-Revision-Date: 2021-01-31 01:06+0000\n"
-"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
+"PO-Revision-Date: 2021-04-20 02:31+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
 "calculator/uk/>\n"
 "Language: uk\n"
@@ -142,13 +142,11 @@ msgstr "Сховати додаткові функції"
 
 #: src/HistoryDialog.vala:42
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Вставте попередній вираз або результат у поточне обчислення."
 
 #: src/HistoryDialog.vala:76
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Додати значення:"
+msgstr "Значення для вставлення:"
 
 #: src/HistoryDialog.vala:81
 msgid "Result"
@@ -164,7 +162,7 @@ msgstr "Закрити"
 
 #: src/HistoryDialog.vala:102
 msgid "Insert"
-msgstr ""
+msgstr "Вставити"
 
 #: src/Core/Scanner.vala:68
 #, c-format
