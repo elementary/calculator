@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2021-01-04 16:16+0000\n"
+"POT-Creation-Date: 2021-04-20 00:33+0000\n"
+"PO-Revision-Date: 2021-03-21 16:47+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/calculator/extra/"
 "mr/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
 #: data/io.elementary.calculator.desktop.in:3
@@ -51,11 +51,11 @@ msgstr "इतर अद्यतने:"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Fix an issue with negative decimals without leading digits"
-msgstr ""
+msgstr "अग्रगण्य अंकांशिवाय ऋण दशांश असलेल्या समस्येचे निराकरण करा"
 
 #: data/io.elementary.calculator.appdata.xml.in:24
 msgid "More efficient state saving"
-msgstr ""
+msgstr "अधिक कार्यक्षम स्टेट सेव्हिंग"
 
 #: data/io.elementary.calculator.appdata.xml.in:25
 msgid "Use slim titlebar"

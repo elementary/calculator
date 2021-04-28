@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-23 20:17+0000\n"
+"POT-Creation-Date: 2021-04-20 00:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:462
+#: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
 msgstr ""
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
 msgstr ""
 
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Clear entry"
 msgstr ""
 
-#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128
 msgid "Add"
 msgstr ""
 
@@ -125,24 +125,32 @@ msgstr ""
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:457
+#: src/MainWindow.vala:462
 msgid "Hide extended functionality"
 msgstr ""
 
-#: src/HistoryDialog.vala:92
-msgid "Value to add:"
+#: src/HistoryDialog.vala:42
+msgid "Insert a previous expression or result into the current calculation."
 msgstr ""
 
-#: src/HistoryDialog.vala:96
+#: src/HistoryDialog.vala:76
+msgid "Value to insert:"
+msgstr ""
+
+#: src/HistoryDialog.vala:81
 msgid "Result"
 msgstr ""
 
-#: src/HistoryDialog.vala:100
+#: src/HistoryDialog.vala:83
 msgid "Expression"
 msgstr ""
 
-#: src/HistoryDialog.vala:106
+#: src/HistoryDialog.vala:100
 msgid "Close"
+msgstr ""
+
+#: src/HistoryDialog.vala:102
+msgid "Insert"
 msgstr ""
 
 #: src/Core/Scanner.vala:68

@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2021-01-31 01:06+0000\n"
-"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
+"POT-Creation-Date: 2021-04-20 00:33+0000\n"
+"PO-Revision-Date: 2021-04-20 02:31+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
 "calculator/uk/>\n"
 "Language: uk\n"
@@ -16,11 +16,11 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:462
+#: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
 msgstr "Показати додаткові функції"
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "Історія"
 
@@ -44,7 +44,7 @@ msgstr "Видалити попередній символ"
 msgid "Clear entry"
 msgstr "Очистити запис"
 
-#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128
 msgid "Add"
 msgstr "Додати"
 
@@ -136,25 +136,33 @@ msgstr "Арктангенс"
 msgid "Reciprocal"
 msgstr "Обернені"
 
-#: src/MainWindow.vala:457
+#: src/MainWindow.vala:462
 msgid "Hide extended functionality"
 msgstr "Сховати додаткові функції"
 
-#: src/HistoryDialog.vala:92
-msgid "Value to add:"
-msgstr "Додати значення:"
+#: src/HistoryDialog.vala:42
+msgid "Insert a previous expression or result into the current calculation."
+msgstr "Вставте попередній вираз або результат у поточне обчислення."
 
-#: src/HistoryDialog.vala:96
+#: src/HistoryDialog.vala:76
+msgid "Value to insert:"
+msgstr "Значення для вставлення:"
+
+#: src/HistoryDialog.vala:81
 msgid "Result"
 msgstr "Результат"
 
-#: src/HistoryDialog.vala:100
+#: src/HistoryDialog.vala:83
 msgid "Expression"
 msgstr "Вираз"
 
-#: src/HistoryDialog.vala:106
+#: src/HistoryDialog.vala:100
 msgid "Close"
 msgstr "Закрити"
+
+#: src/HistoryDialog.vala:102
+msgid "Insert"
+msgstr "Вставити"
 
 #: src/Core/Scanner.vala:68
 #, c-format

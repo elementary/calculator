@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-23 20:17+0000\n"
+"POT-Creation-Date: 2021-04-20 00:33+0000\n"
 "PO-Revision-Date: 2016-05-27 15:29+0000\n"
 "Last-Translator: Maxwell Barvian <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,11 +13,11 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:462
+#: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
 msgstr "Lisafunktsioonide näitamine"
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "Ajalugu"
 
@@ -41,7 +41,7 @@ msgstr "Kustuta"
 msgid "Clear entry"
 msgstr "Puhasta väärtus"
 
-#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128
 msgid "Add"
 msgstr "Lisa"
 
@@ -137,25 +137,35 @@ msgstr "Tangens"
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:457
+#: src/MainWindow.vala:462
 msgid "Hide extended functionality"
 msgstr "Lisafunktsioonide peitmine"
 
-#: src/HistoryDialog.vala:92
-msgid "Value to add:"
+#: src/HistoryDialog.vala:42
+msgid "Insert a previous expression or result into the current calculation."
+msgstr ""
+
+#: src/HistoryDialog.vala:76
+#, fuzzy
+#| msgid "Value to add:"
+msgid "Value to insert:"
 msgstr "Lisatav väärtus:"
 
-#: src/HistoryDialog.vala:96
+#: src/HistoryDialog.vala:81
 msgid "Result"
 msgstr "Tulemus"
 
-#: src/HistoryDialog.vala:100
+#: src/HistoryDialog.vala:83
 msgid "Expression"
 msgstr "Avaldis"
 
-#: src/HistoryDialog.vala:106
+#: src/HistoryDialog.vala:100
 msgid "Close"
 msgstr "Sulge"
+
+#: src/HistoryDialog.vala:102
+msgid "Insert"
+msgstr ""
 
 #: src/Core/Scanner.vala:68
 #, c-format

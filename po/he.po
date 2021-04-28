@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2020-10-04 12:01+0000\n"
+"POT-Creation-Date: 2021-04-20 00:33+0000\n"
+"PO-Revision-Date: 2021-04-20 06:45+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/calculator/"
 "calculator/he/>\n"
@@ -12,14 +12,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:462
+#: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
 msgstr "הצגת תפקוד מורחב"
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "היסטוריה"
 
@@ -43,7 +43,7 @@ msgstr "Backspace"
 msgid "Clear entry"
 msgstr "ניקוי רשומה"
 
-#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128
 msgid "Add"
 msgstr "הוספה"
 
@@ -135,25 +135,33 @@ msgstr "טנגנס הפוך"
 msgid "Reciprocal"
 msgstr "הופכי"
 
-#: src/MainWindow.vala:457
+#: src/MainWindow.vala:462
 msgid "Hide extended functionality"
 msgstr "הסתרת תפקוד מורחב"
 
-#: src/HistoryDialog.vala:92
-msgid "Value to add:"
-msgstr "ערך להוספה:"
+#: src/HistoryDialog.vala:42
+msgid "Insert a previous expression or result into the current calculation."
+msgstr "הצבת ביטוי קודם או תוצאה בחישוב הנוכחי."
 
-#: src/HistoryDialog.vala:96
+#: src/HistoryDialog.vala:76
+msgid "Value to insert:"
+msgstr "ערך להצבה:"
+
+#: src/HistoryDialog.vala:81
 msgid "Result"
 msgstr "תוצאה"
 
-#: src/HistoryDialog.vala:100
+#: src/HistoryDialog.vala:83
 msgid "Expression"
 msgstr "ביטוי"
 
-#: src/HistoryDialog.vala:106
+#: src/HistoryDialog.vala:100
 msgid "Close"
 msgstr "סגירה"
+
+#: src/HistoryDialog.vala:102
+msgid "Insert"
+msgstr "הצבה"
 
 #: src/Core/Scanner.vala:68
 #, c-format

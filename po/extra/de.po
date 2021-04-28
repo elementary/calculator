@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-23 20:17+0000\n"
-"PO-Revision-Date: 2020-07-10 12:12+0000\n"
-"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
+"POT-Creation-Date: 2021-04-20 00:33+0000\n"
+"PO-Revision-Date: 2021-03-14 16:11+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/calculator/extra/"
 "de/>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -41,25 +41,23 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 msgid "New features:"
-msgstr ""
+msgstr "Neue Funktionen:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Add log and inverse trigonometric functions"
-msgstr ""
+msgstr "Logarithmische Funktionen und Arkusfunktionen hinzufügt"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
-#, fuzzy
-#| msgid "Minor updates:"
 msgid "Other updates:"
 msgstr "Weitere Aktualisierungen:"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Fix an issue with negative decimals without leading digits"
-msgstr ""
+msgstr "Fehlerbehebung: negative Dezimalzahl ohne führende Ziffer"
 
 #: data/io.elementary.calculator.appdata.xml.in:24
 msgid "More efficient state saving"
-msgstr ""
+msgstr "Effizientere Statussicherung"
 
 #: data/io.elementary.calculator.appdata.xml.in:25
 msgid "Use slim titlebar"

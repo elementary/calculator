@@ -324,9 +324,14 @@ namespace PantheonCalculator {
 
             settings.bind ("extended-shown", button_extended, "active", GLib.SettingsBindFlags.DEFAULT);
 
-            var privacy_settings = new Settings ("org.gnome.desktop.privacy");
-            if (privacy_settings.get_boolean ("remember-recent-files")) {
-                settings.bind ("entry-content", entry, "text", GLib.SettingsBindFlags.DEFAULT);
+            // The window is constructed before adding to the application.
+            // So for the first window, the application will have 0 windows
+            if (application_instance.get_windows ().length () == 0) {
+                //Only remember the contents of the entry in the first window (subject to privacy settings)
+                var privacy_settings = new Settings ("org.gnome.desktop.privacy");
+                if (privacy_settings.get_boolean ("remember-recent-files")) {
+                    settings.bind ("entry-content", entry, "text", GLib.SettingsBindFlags.DEFAULT);
+                }
             }
         }
 
