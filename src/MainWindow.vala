@@ -262,16 +262,16 @@ namespace PantheonCalculator {
 
             add (global_grid);
 
-            var granite_settings = Granite.Settings.get_default ();
+            var freedesktop_settings = new GLib.Settings ("org.freedesktop");
             var gtk_settings = Gtk.Settings.get_default ();
 
             gtk_settings.gtk_application_prefer_dark_theme = (
-                granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
+                freedesktop_settings.get_enum ("prefers-color-scheme") == Granite.Settings.ColorScheme.DARK
             );
 
-            granite_settings.notify["prefers-color-scheme"].connect (() => {
+            freedesktop_settings.changed["prefers-color-scheme"].connect (() => {
                 gtk_settings.gtk_application_prefer_dark_theme = (
-                    granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
+                    freedesktop_settings.get_enum ("prefers-color-scheme") == Granite.Settings.ColorScheme.DARK
                 );
             });
 
