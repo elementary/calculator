@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 00:33+0000\n"
-"PO-Revision-Date: 2021-05-04 10:30+0000\n"
+"PO-Revision-Date: 2021-05-09 21:06+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/calculator/"
 "calculator/fi/>\n"
@@ -113,31 +113,27 @@ msgstr "Neperin luku"
 
 #: src/MainWindow.vala:204
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "10-kantainen logaritmi"
 
 #: src/MainWindow.vala:206
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Luonnollinen logaritmi"
 
 #: src/MainWindow.vala:207
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Käänteinen sini"
 
 #: src/MainWindow.vala:209
-#, fuzzy
-#| msgid "Cosine"
 msgid "Inverse Cosine"
-msgstr "Kosini"
+msgstr "Käänteinen kosini"
 
 #: src/MainWindow.vala:211
-#, fuzzy
-#| msgid "Tangent"
 msgid "Inverse Tangent"
-msgstr "Tangentti"
+msgstr "Käänteinen tangentti"
 
 #: src/MainWindow.vala:213
 msgid "Reciprocal"
-msgstr ""
+msgstr "Käänteisluku"
 
 #: src/MainWindow.vala:462
 msgid "Hide extended functionality"
@@ -145,7 +141,7 @@ msgstr "Piilota laajennettu toiminnallisuus"
 
 #: src/HistoryDialog.vala:42
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Syötä edellinen lauseke tai tulos nykyiseen laskuun."
 
 #: src/HistoryDialog.vala:76
 msgid "Value to insert:"
