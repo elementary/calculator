@@ -16,6 +16,7 @@
       <description>
         <p>Minor updates:</p>
         <ul>
+          <li>Fixed an issue with multiple windows</li>
           <li>More informative copy in history dialog</li>
           <li>Updated translations</li>
         </ul>
