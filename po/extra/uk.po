@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-14 22:19+0000\n"
-"PO-Revision-Date: 2021-03-05 03:33+0000\n"
+"PO-Revision-Date: 2021-05-15 03:58+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
 "extra/uk/>\n"
@@ -47,11 +47,11 @@ msgstr "Незначні оновлення:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Fixed an issue with multiple windows"
-msgstr ""
+msgstr "Виправлено проблему з кількома вікнами"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "More informative copy in history dialog"
-msgstr ""
+msgstr "Інформативніша копія в діалоговому вікні історії"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:36
