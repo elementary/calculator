@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 00:33+0000\n"
+"POT-Creation-Date: 2021-05-14 22:19+0000\n"
 "PO-Revision-Date: 2021-01-28 05:28+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -37,61 +37,71 @@ msgid ""
 msgstr "一款能满足日常计算需求的计算器。支持基础计算和部分科学计算。"
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-msgid "New features:"
-msgstr "新特性："
-
-#: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Add log and inverse trigonometric functions"
-msgstr "新增日志功能及反三角函数"
-
-#: data/io.elementary.calculator.appdata.xml.in:21
-msgid "Other updates:"
-msgstr "其他更新："
-
-#: data/io.elementary.calculator.appdata.xml.in:23
-msgid "Fix an issue with negative decimals without leading digits"
-msgstr "修复负小数在整数位省缺时出现的问题"
-
-#: data/io.elementary.calculator.appdata.xml.in:24
-msgid "More efficient state saving"
-msgstr "优化状态保存"
-
-#: data/io.elementary.calculator.appdata.xml.in:25
-msgid "Use slim titlebar"
-msgstr "使用细标题栏"
-
-#: data/io.elementary.calculator.appdata.xml.in:26
-#: data/io.elementary.calculator.appdata.xml.in:35
-#: data/io.elementary.calculator.appdata.xml.in:43
-#: data/io.elementary.calculator.appdata.xml.in:53
-msgid "Updated translations"
-msgstr "更新翻译"
-
-#: data/io.elementary.calculator.appdata.xml.in:32
+#: data/io.elementary.calculator.appdata.xml.in:42
 msgid "Minor updates:"
 msgstr "次要更新："
 
+#: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Fixed an issue with multiple windows"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:20
+msgid "More informative copy in history dialog"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:21
+#: data/io.elementary.calculator.appdata.xml.in:36
+#: data/io.elementary.calculator.appdata.xml.in:45
+#: data/io.elementary.calculator.appdata.xml.in:53
+#: data/io.elementary.calculator.appdata.xml.in:63
+msgid "Updated translations"
+msgstr "更新翻译"
+
+#: data/io.elementary.calculator.appdata.xml.in:27
+msgid "New features:"
+msgstr "新特性："
+
+#: data/io.elementary.calculator.appdata.xml.in:29
+msgid "Add log and inverse trigonometric functions"
+msgstr "新增日志功能及反三角函数"
+
+#: data/io.elementary.calculator.appdata.xml.in:31
+msgid "Other updates:"
+msgstr "其他更新："
+
+#: data/io.elementary.calculator.appdata.xml.in:33
+msgid "Fix an issue with negative decimals without leading digits"
+msgstr "修复负小数在整数位省缺时出现的问题"
+
 #: data/io.elementary.calculator.appdata.xml.in:34
+msgid "More efficient state saving"
+msgstr "优化状态保存"
+
+#: data/io.elementary.calculator.appdata.xml.in:35
+msgid "Use slim titlebar"
+msgstr "使用细标题栏"
+
+#: data/io.elementary.calculator.appdata.xml.in:44
 msgid "Fix inserting multi-byte characters"
 msgstr "修复插入多字节字符"
 
-#: data/io.elementary.calculator.appdata.xml.in:42
+#: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Fix missing icon for Ukrainian"
 msgstr "修复乌克兰语下丢失的图标"
 
-#: data/io.elementary.calculator.appdata.xml.in:50
+#: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Animate Infobar when hiding and showing"
 msgstr "信息栏增隐藏或显示时展示动画"
 
-#: data/io.elementary.calculator.appdata.xml.in:51
+#: data/io.elementary.calculator.appdata.xml.in:61
 msgid "Fix selection replace"
 msgstr "修复选定内容替换"
 
-#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/io.elementary.calculator.appdata.xml.in:62
 msgid "Improved decimal separator localization"
 msgstr "改进的小数分隔符位置"
 
-#: data/io.elementary.calculator.appdata.xml.in:90
+#: data/io.elementary.calculator.appdata.xml.in:100
 msgid "elementary, Inc."
 msgstr "elementary LLC."
 

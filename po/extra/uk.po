@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 00:33+0000\n"
+"POT-Creation-Date: 2021-05-14 22:19+0000\n"
 "PO-Revision-Date: 2021-03-05 03:33+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
@@ -41,62 +41,72 @@ msgstr ""
 "тангенс."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
+#: data/io.elementary.calculator.appdata.xml.in:42
+msgid "Minor updates:"
+msgstr "Незначні оновлення:"
+
+#: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Fixed an issue with multiple windows"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:20
+msgid "More informative copy in history dialog"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:21
+#: data/io.elementary.calculator.appdata.xml.in:36
+#: data/io.elementary.calculator.appdata.xml.in:45
+#: data/io.elementary.calculator.appdata.xml.in:53
+#: data/io.elementary.calculator.appdata.xml.in:63
+msgid "Updated translations"
+msgstr "Оновлено переклади"
+
+#: data/io.elementary.calculator.appdata.xml.in:27
 msgid "New features:"
 msgstr "Нові функції:"
 
-#: data/io.elementary.calculator.appdata.xml.in:19
+#: data/io.elementary.calculator.appdata.xml.in:29
 msgid "Add log and inverse trigonometric functions"
 msgstr "Додано журнал та обернені тригонометричні функції"
 
-#: data/io.elementary.calculator.appdata.xml.in:21
+#: data/io.elementary.calculator.appdata.xml.in:31
 msgid "Other updates:"
 msgstr "Інші оновлення:"
 
-#: data/io.elementary.calculator.appdata.xml.in:23
+#: data/io.elementary.calculator.appdata.xml.in:33
 msgid "Fix an issue with negative decimals without leading digits"
 msgstr ""
 "Виправлено проблему з від’ємними десятковими цифрами без початкових цифр"
 
-#: data/io.elementary.calculator.appdata.xml.in:24
+#: data/io.elementary.calculator.appdata.xml.in:34
 msgid "More efficient state saving"
 msgstr "Ефективніше стан збереження"
 
-#: data/io.elementary.calculator.appdata.xml.in:25
+#: data/io.elementary.calculator.appdata.xml.in:35
 msgid "Use slim titlebar"
 msgstr "Потоншено панель заголовка"
 
-#: data/io.elementary.calculator.appdata.xml.in:26
-#: data/io.elementary.calculator.appdata.xml.in:35
-#: data/io.elementary.calculator.appdata.xml.in:43
-#: data/io.elementary.calculator.appdata.xml.in:53
-msgid "Updated translations"
-msgstr "Оновлено переклади"
-
-#: data/io.elementary.calculator.appdata.xml.in:32
-msgid "Minor updates:"
-msgstr "Незначні оновлення:"
-
-#: data/io.elementary.calculator.appdata.xml.in:34
+#: data/io.elementary.calculator.appdata.xml.in:44
 msgid "Fix inserting multi-byte characters"
 msgstr "Виправлено вставлення багаторозрядних символів"
 
-#: data/io.elementary.calculator.appdata.xml.in:42
+#: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Fix missing icon for Ukrainian"
 msgstr "Виправлено проблему відсутності піктограми для української локалізації"
 
-#: data/io.elementary.calculator.appdata.xml.in:50
+#: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Animate Infobar when hiding and showing"
 msgstr "Анімація приховування й показу панелі відомостей"
 
-#: data/io.elementary.calculator.appdata.xml.in:51
+#: data/io.elementary.calculator.appdata.xml.in:61
 msgid "Fix selection replace"
 msgstr "Виправлено дію заміни виділеного"
 
-#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/io.elementary.calculator.appdata.xml.in:62
 msgid "Improved decimal separator localization"
 msgstr "Поліпшено локалізацію десяткового розділювача"
 
-#: data/io.elementary.calculator.appdata.xml.in:90
+#: data/io.elementary.calculator.appdata.xml.in:100
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
