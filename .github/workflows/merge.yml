@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: bilelmoussaoui/flatpak-github-actions:elementary-juno
+      image: ghcr.io/elementary/flatpak-platform/runtime:daily
       options: --privileged
 
     steps:
@@ -26,14 +26,14 @@ jobs:
           bundle: calculator.flatpak
           manifest-path: io.elementary.calculator.yml
           run-tests: true
-          repository-name: elementary
-          repository-url: https://flatpak.elementary.io/elementary.flatpakrepo
+          repository-name: appcenter
+          repository-url: https://flatpak.elementary.io/repo.flatpakrepo
           cache-key: "flatpak-builder-${{ github.sha }}"
 
       - name: Deploy
         uses: bilelmoussaoui/flatpak-github-actions/flat-manager@v3
         with:
-          repository: elementary
+          repository: appcenter
           flat-manager-url: https://flatpak-api.elementary.io
           token: ${{ secrets.FLAT_MANAGER_TOKEN }}
 

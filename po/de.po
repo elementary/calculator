@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 00:33+0000\n"
-"PO-Revision-Date: 2021-01-19 22:18+0000\n"
-"Last-Translator: Camiropan <daniel.vhasenmayer@googlemail.com>\n"
+"PO-Revision-Date: 2021-04-20 13:29+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/calculator/"
 "calculator/de/>\n"
 "Language: de\n"
@@ -118,7 +118,7 @@ msgstr "Eulersche Zahl"
 
 #: src/MainWindow.vala:204
 msgid "Logarithm Base 10"
-msgstr "Logarithmus zur Basis 10"
+msgstr "Zehnerlogarithmus"
 
 #: src/MainWindow.vala:206
 msgid "Natural Logarithm"
@@ -147,12 +147,12 @@ msgstr "Erweiterte Funktionen ausblenden"
 #: src/HistoryDialog.vala:42
 msgid "Insert a previous expression or result into the current calculation."
 msgstr ""
+"Zuvor verwendeten Ausdruck oder errechnetes Ergebnis in die aktuelle "
+"Berechnung einfügen."
 
 #: src/HistoryDialog.vala:76
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Zu addierender Wert:"
+msgstr "Einzufügender Wert:"
 
 #: src/HistoryDialog.vala:81
 msgid "Result"
@@ -168,7 +168,7 @@ msgstr "Schließen"
 
 #: src/HistoryDialog.vala:102
 msgid "Insert"
-msgstr ""
+msgstr "Einfügen"
 
 #: src/Core/Scanner.vala:68
 #, c-format

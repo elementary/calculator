@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 00:33+0000\n"
-"PO-Revision-Date: 2020-10-30 00:15+0000\n"
+"PO-Revision-Date: 2021-04-21 01:17+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/calculator/"
 "calculator/tr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:86 src/MainWindow.vala:467
@@ -141,11 +141,9 @@ msgstr "Gelişmiş özellikleri gizle"
 
 #: src/HistoryDialog.vala:42
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Geçerli hesaplamaya önceki bir ifade veya sonuç ekleyin."
 
 #: src/HistoryDialog.vala:76
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
 msgstr "Eklenecek değer:"
 
@@ -163,7 +161,7 @@ msgstr "Kapat"
 
 #: src/HistoryDialog.vala:102
 msgid "Insert"
-msgstr ""
+msgstr "Ekle"
 
 #: src/Core/Scanner.vala:68
 #, c-format

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-20 00:33+0000\n"
-"PO-Revision-Date: 2021-02-14 14:10+0000\n"
+"PO-Revision-Date: 2021-04-23 13:30+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "calculator/calculator/en_GB/>\n"
@@ -141,13 +141,11 @@ msgstr "Hide extended functionality"
 
 #: src/HistoryDialog.vala:42
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Insert a previous expression or result into the current calculation."
 
 #: src/HistoryDialog.vala:76
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Value to add:"
+msgstr "Value to insert:"
 
 #: src/HistoryDialog.vala:81
 msgid "Result"
@@ -163,7 +161,7 @@ msgstr "Close"
 
 #: src/HistoryDialog.vala:102
 msgid "Insert"
-msgstr ""
+msgstr "Insert"
 
 #: src/Core/Scanner.vala:68
 #, c-format
