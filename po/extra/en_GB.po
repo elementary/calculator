@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-14 22:19+0000\n"
-"PO-Revision-Date: 2021-02-14 14:10+0000\n"
+"PO-Revision-Date: 2021-05-15 03:58+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "calculator/extra/en_GB/>\n"
@@ -44,11 +44,11 @@ msgstr "Minor updates:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Fixed an issue with multiple windows"
-msgstr ""
+msgstr "Fixed an issue with multiple windows"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "More informative copy in history dialog"
-msgstr ""
+msgstr "More informative copy in history dialog"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:36
