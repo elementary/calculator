@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-14 22:19+0000\n"
-"PO-Revision-Date: 2021-01-24 16:56+0000\n"
+"PO-Revision-Date: 2021-05-15 05:19+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/calculator/extra/"
 "he/>\n"
@@ -45,11 +45,11 @@ msgstr "עדכונים משניים:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Fixed an issue with multiple windows"
-msgstr ""
+msgstr "תוקנה תקלה עם ריבוי חלונות"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "More informative copy in history dialog"
-msgstr ""
+msgstr "העתקה מפורטת יותר בחלונית ההיסטוריה"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:36
