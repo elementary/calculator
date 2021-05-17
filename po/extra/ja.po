@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-14 22:19+0000\n"
-"PO-Revision-Date: 2020-12-25 09:16+0000\n"
+"PO-Revision-Date: 2021-05-17 03:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
 "extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -45,11 +45,11 @@ msgstr "軽微なアップデート:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Fixed an issue with multiple windows"
-msgstr ""
+msgstr "ウィンドウが複数存在する場合に発生していた不具合を修正"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "More informative copy in history dialog"
-msgstr ""
+msgstr "履歴ダイアログにわかりやすい説明文を追加"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:36
