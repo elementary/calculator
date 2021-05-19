@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-14 22:19+0000\n"
-"PO-Revision-Date: 2021-05-19 23:38+0000\n"
+"PO-Revision-Date: 2021-05-19 23:39+0000\n"
 "Last-Translator: Taras <oster.ok@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
 "extra/uk/>\n"
@@ -92,7 +92,7 @@ msgstr "Виправити вставлення багатобайтових с�
 
 #: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Fix missing icon for Ukrainian"
-msgstr "Виправлено проблему відсутності піктограми для української локалізації"
+msgstr "Виправити відсутню піктограму для української мови"
 
 #: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Animate Infobar when hiding and showing"
