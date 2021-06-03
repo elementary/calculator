@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-14 22:19+0000\n"
-"PO-Revision-Date: 2021-02-13 12:04+0000\n"
+"PO-Revision-Date: 2021-06-03 10:01+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "calculator/calculator/nb/>\n"
@@ -128,13 +128,13 @@ msgstr "Cosinus"
 #, fuzzy
 #| msgid "Cosine"
 msgid "Inverse Cosine"
-msgstr "Cosinus"
+msgstr "Invers cosinus"
 
 #: src/MainWindow.vala:211
 #, fuzzy
 #| msgid "Tangent"
 msgid "Inverse Tangent"
-msgstr "Tangens"
+msgstr "Cotangens"
 
 #: src/MainWindow.vala:213
 #, fuzzy
@@ -147,13 +147,11 @@ msgstr "Ikke vis utvidet funksjonalitet"
 
 #: src/HistoryDialog.vala:42
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Sett inn et tidligere uttrykk eller resultat i nåværende utregning."
 
 #: src/HistoryDialog.vala:76
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Legg til verdi:"
+msgstr "Verdi å sette inn:"
 
 #: src/HistoryDialog.vala:81
 msgid "Result"
@@ -169,7 +167,7 @@ msgstr "Lukk"
 
 #: src/HistoryDialog.vala:102
 msgid "Insert"
-msgstr ""
+msgstr "Sett inn"
 
 #: src/Core/Scanner.vala:68
 #, c-format
