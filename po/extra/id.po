@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-14 22:19+0000\n"
+"POT-Creation-Date: 2021-07-20 23:42+0000\n"
 "PO-Revision-Date: 2020-12-23 20:16+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/calculator/"
@@ -39,73 +39,75 @@ msgstr ""
 "cos, dan tan."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:42
+#: data/io.elementary.calculator.appdata.xml.in:25
+#: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Minor updates:"
 msgstr "Pembaruan kecil:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Fixed an issue with multiple windows"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:20
-msgid "More informative copy in history dialog"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:21
-#: data/io.elementary.calculator.appdata.xml.in:36
-#: data/io.elementary.calculator.appdata.xml.in:45
+#: data/io.elementary.calculator.appdata.xml.in:29
+#: data/io.elementary.calculator.appdata.xml.in:44
 #: data/io.elementary.calculator.appdata.xml.in:53
-#: data/io.elementary.calculator.appdata.xml.in:63
+#: data/io.elementary.calculator.appdata.xml.in:61
+#: data/io.elementary.calculator.appdata.xml.in:71
 msgid "Updated translations"
 msgstr "Terjemahan terbaru"
 
 #: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Fixed an issue with multiple windows"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "More informative copy in history dialog"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:35
 msgid "New features:"
 msgstr "Fitur baru:"
 
-#: data/io.elementary.calculator.appdata.xml.in:29
+#: data/io.elementary.calculator.appdata.xml.in:37
 msgid "Add log and inverse trigonometric functions"
 msgstr "Penambahan log dan fungsi trigonometri terbalik"
 
-#: data/io.elementary.calculator.appdata.xml.in:31
+#: data/io.elementary.calculator.appdata.xml.in:39
 #, fuzzy
 #| msgid "Minor updates:"
 msgid "Other updates:"
 msgstr "Pembaruan kecil:"
 
-#: data/io.elementary.calculator.appdata.xml.in:33
+#: data/io.elementary.calculator.appdata.xml.in:41
 msgid "Fix an issue with negative decimals without leading digits"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:34
+#: data/io.elementary.calculator.appdata.xml.in:42
 msgid "More efficient state saving"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:43
 msgid "Use slim titlebar"
 msgstr "Gunakan bilah judul ramping"
 
-#: data/io.elementary.calculator.appdata.xml.in:44
+#: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Fix inserting multi-byte characters"
 msgstr "Perbaikan penyisipan karakter multi-bit"
 
-#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Fix missing icon for Ukrainian"
 msgstr "Perbaikan ikon hilang untuk bahasa Ukraina"
 
-#: data/io.elementary.calculator.appdata.xml.in:60
+#: data/io.elementary.calculator.appdata.xml.in:68
 msgid "Animate Infobar when hiding and showing"
 msgstr "Animasikan papan info saat sembunyi dan muncul"
 
-#: data/io.elementary.calculator.appdata.xml.in:61
+#: data/io.elementary.calculator.appdata.xml.in:69
 msgid "Fix selection replace"
 msgstr "Perbaikan pergantian terpilih"
 
-#: data/io.elementary.calculator.appdata.xml.in:62
+#: data/io.elementary.calculator.appdata.xml.in:70
 msgid "Improved decimal separator localization"
 msgstr "Lokalisasi pemisah desimal ditingkatkan"
 
-#: data/io.elementary.calculator.appdata.xml.in:100
+#: data/io.elementary.calculator.appdata.xml.in:108
 msgid "elementary, Inc."
 msgstr "elementary, PT."
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-14 22:19+0000\n"
+"POT-Creation-Date: 2021-07-20 23:42+0000\n"
 "PO-Revision-Date: 2020-12-29 15:16+0000\n"
 "Last-Translator: Silviu Popescu <teodorspopescu@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/calculator/"
@@ -41,73 +41,75 @@ msgstr ""
 "tan."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:42
+#: data/io.elementary.calculator.appdata.xml.in:25
+#: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Minor updates:"
 msgstr "Mici actualizări:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Fixed an issue with multiple windows"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:20
-msgid "More informative copy in history dialog"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:21
-#: data/io.elementary.calculator.appdata.xml.in:36
-#: data/io.elementary.calculator.appdata.xml.in:45
+#: data/io.elementary.calculator.appdata.xml.in:29
+#: data/io.elementary.calculator.appdata.xml.in:44
 #: data/io.elementary.calculator.appdata.xml.in:53
-#: data/io.elementary.calculator.appdata.xml.in:63
+#: data/io.elementary.calculator.appdata.xml.in:61
+#: data/io.elementary.calculator.appdata.xml.in:71
 msgid "Updated translations"
 msgstr "Traduceri actualizate"
 
 #: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Fixed an issue with multiple windows"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "More informative copy in history dialog"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:35
 msgid "New features:"
 msgstr "Noi funcționalități:"
 
-#: data/io.elementary.calculator.appdata.xml.in:29
+#: data/io.elementary.calculator.appdata.xml.in:37
 msgid "Add log and inverse trigonometric functions"
 msgstr "Adaugă funcții logaritmice și trigonometrice inverse"
 
-#: data/io.elementary.calculator.appdata.xml.in:31
+#: data/io.elementary.calculator.appdata.xml.in:39
 msgid "Other updates:"
 msgstr "Alte actualizări:"
 
-#: data/io.elementary.calculator.appdata.xml.in:33
+#: data/io.elementary.calculator.appdata.xml.in:41
 msgid "Fix an issue with negative decimals without leading digits"
 msgstr "Reparat probleme cu zecimale negative fără cifre de început"
 
-#: data/io.elementary.calculator.appdata.xml.in:34
+#: data/io.elementary.calculator.appdata.xml.in:42
 msgid "More efficient state saving"
 msgstr "Salvare a stării mai eficientă"
 
-#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:43
 msgid "Use slim titlebar"
 msgstr "Folosește bara subțire pentru titlu"
 
-#: data/io.elementary.calculator.appdata.xml.in:44
+#: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Fix inserting multi-byte characters"
 msgstr "Repară inserarea de caractere multi-byte (multi-octet)"
 
-#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Fix missing icon for Ukrainian"
 msgstr "Repară iconița lipsă pentru limba ucraineană"
 
-#: data/io.elementary.calculator.appdata.xml.in:60
+#: data/io.elementary.calculator.appdata.xml.in:68
 msgid "Animate Infobar when hiding and showing"
 msgstr "Animează bara de informații când se ascunde și când se dezvăluie"
 
-#: data/io.elementary.calculator.appdata.xml.in:61
+#: data/io.elementary.calculator.appdata.xml.in:69
 msgid "Fix selection replace"
 msgstr "Repară înlocuirea textului selectat"
 
-#: data/io.elementary.calculator.appdata.xml.in:62
+#: data/io.elementary.calculator.appdata.xml.in:70
 msgid "Improved decimal separator localization"
 msgstr ""
 "Imbunătățit conversia pentru separatorul zecimal în funcție de locația "
 "geografică"
 
-#: data/io.elementary.calculator.appdata.xml.in:100
+#: data/io.elementary.calculator.appdata.xml.in:108
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
