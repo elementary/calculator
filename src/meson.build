@@ -1,5 +1,6 @@
 executable(
     meson.project_name(),
+    config_file,
     'PantheonCalculator.vala',
     'Button.vala',
     'MainWindow.vala',
