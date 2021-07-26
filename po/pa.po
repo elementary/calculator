@@ -8,173 +8,176 @@ msgstr ""
 "Project-Id-Version: io.elementary.calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-20 23:42+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-07-26 08:35+0000\n"
+"Last-Translator: elSolus <tumbleweed@tuta.io>\n"
+"Language-Team: Punjabi <https://l10n.elementary.io/projects/calculator/"
+"calculator/pa/>\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
-msgstr ""
+msgstr "ਵੱਧ ਫੰਕਸ਼ਨੈਲੀਟੀ ਵਿਖਾਓ"
 
 #: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
-msgstr ""
+msgstr "ਇਤਿਹਾਸ"
 
 #: src/MainWindow.vala:98
 msgid "Calculator"
-msgstr ""
+msgstr "ਕੈਲਕੂਲੇਟਰ"
 
 #: src/MainWindow.vala:111
 msgid "Calculate Result"
-msgstr ""
+msgstr "ਨਤੀਜੇ ਕੈਲਕੂਲੇਟ ਕਰੋ"
 
 #: src/MainWindow.vala:115
 msgid "Add last result"
-msgstr ""
+msgstr "ਆਖ਼ਰੀ ਨਤੀਜਾ ਜੋੜੋ"
 
 #: src/MainWindow.vala:118
 msgid "Backspace"
-msgstr ""
+msgstr "ਬੈਕਸਪੇਸ"
 
 #: src/MainWindow.vala:124
 msgid "Clear entry"
-msgstr ""
+msgstr "ਇੰਦਰਾਜ ਮਿਟਾਓ"
 
 #: src/MainWindow.vala:128
 msgid "Add"
-msgstr ""
+msgstr "ਜੋੜ"
 
 #: src/MainWindow.vala:132
 msgid "Subtract"
-msgstr ""
+msgstr "ਘਟਾਓ"
 
 #: src/MainWindow.vala:136
 msgid "Multiply"
-msgstr ""
+msgstr "ਗੁਣਾ"
 
 #: src/MainWindow.vala:140
 msgid "Divide"
-msgstr ""
+msgstr "ਤਕਸੀਮ"
 
 #: src/MainWindow.vala:146
 msgid "Percentage"
-msgstr ""
+msgstr "ਫ਼ੀਸਦ"
 
 #: src/MainWindow.vala:191
 msgid "Start Group"
-msgstr ""
+msgstr "ਗਰੁੱਪ ਸ਼ੁਰੂ ਕਰੋ"
 
 #: src/MainWindow.vala:192
 msgid "End Group"
-msgstr ""
+msgstr "ਗਰੁੱਪ ਖ਼ਤਮ ਕਰੋ"
 
 #: src/MainWindow.vala:193
 msgid "Exponent"
-msgstr ""
+msgstr "ਘਾਤ ਅੰਕ"
 
 #: src/MainWindow.vala:195
 msgid "Root"
-msgstr ""
+msgstr "ਵਰਗਮੂਲ"
 
 #: src/MainWindow.vala:196
 msgid "Sine"
-msgstr ""
+msgstr "ਸਾਈਨ"
 
 #: src/MainWindow.vala:197
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "ਹਾਇਪਰਬੌਲਿਕ ਸਾਈਨ"
 
 #: src/MainWindow.vala:198
 msgid "Cosine"
-msgstr ""
+msgstr "ਕੋਸਾਈਨ"
 
 #: src/MainWindow.vala:199
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "ਹਾਇਪਰਬੌਲਿਕ ਕੋਸਾਈਨ"
 
 #: src/MainWindow.vala:200
 msgid "Tangent"
-msgstr ""
+msgstr "ਟੈਂਜੈਂਟ"
 
 #: src/MainWindow.vala:201
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "ਹਾਇਪਰਬੌਲਿਕ ਟੈਂਜੈਂਟ"
 
 #: src/MainWindow.vala:202
 msgid "Pi"
-msgstr ""
+msgstr "ਪਾਈ"
 
 #: src/MainWindow.vala:203
 msgid "Euler's Number"
-msgstr ""
+msgstr "ਯੂਲਰ ਦਾ ਨੰਬਰ"
 
 #: src/MainWindow.vala:204
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "ਲੌਗਰਿਦਮ ਬੇਸ 10"
 
 #: src/MainWindow.vala:206
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "ਨੈਚੂਰਲ ਲੌਗਰਿਦਮ"
 
 #: src/MainWindow.vala:207
 msgid "Inverse Sine"
-msgstr ""
+msgstr "ਸਾਈਨ ਨੂੰ ਉਲਟਾਓ"
 
 #: src/MainWindow.vala:209
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "ਕੋਸਾਈਨ ਨੂੰ ਉਲਟਾਓ"
 
 #: src/MainWindow.vala:211
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "ਟੈਂਜੈਂਟ ਨੂੰ ਉਲਟਾਓ"
 
 #: src/MainWindow.vala:213
 msgid "Reciprocal"
-msgstr ""
+msgstr "ਬਟਿਆਂ ਨੂੰ ਉਲਟਾਓ"
 
 #: src/MainWindow.vala:462
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "ਵੱਧ ਫੰਕਸ਼ਨੈਲਿਟੀ ਲੁਕਾਓ"
 
 #: src/HistoryDialog.vala:42
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "ਪਿਛਲੀ ਰਕਮ ਜਾਂ ਨਤੀਜਾ ਹਾਲੀਆ ਕੈਲਕੂਲੇਸ਼ਨ ਵਿੱਚ ਦਾਖ਼ਲ ਕਰੋ।"
 
 #: src/HistoryDialog.vala:76
 msgid "Value to insert:"
-msgstr ""
+msgstr "ਦਾਖ਼ਲ ਕਰਨ ਲਈ ਵੈਲਿਊ:"
 
 #: src/HistoryDialog.vala:81
 msgid "Result"
-msgstr ""
+msgstr "ਨਤੀਜਾ"
 
 #: src/HistoryDialog.vala:83
 msgid "Expression"
-msgstr ""
+msgstr "ਐਕਸਪ੍ਰੈਸ਼ਨ"
 
 #: src/HistoryDialog.vala:100
 msgid "Close"
-msgstr ""
+msgstr "ਬੰਦ ਕਰੋ"
 
 #: src/HistoryDialog.vala:102
 msgid "Insert"
-msgstr ""
+msgstr "ਦਾਖ਼ਲ ਕਰੋ"
 
 #: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "'%s' ਜਾਇਜ਼ ਨਹੀਂ ਹੈ।"
 
 #: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "ਪਰੈਂਥਸਿਸ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ।"
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "'%s' ਅਣਪਛਾਤਾ ਹੈ।"
