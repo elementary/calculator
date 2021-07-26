@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-20 23:42+0000\n"
-"PO-Revision-Date: 2021-07-26 08:35+0000\n"
+"PO-Revision-Date: 2021-07-26 17:09+0000\n"
 "Last-Translator: elSolus <tumbleweed@tuta.io>\n"
 "Language-Team: Punjabi <https://l10n.elementary.io/projects/calculator/extra/"
 "pa/>\n"
@@ -27,19 +27,21 @@ msgstr "ਕੈਲਕੂਲੇਟਰ"
 #: data/io.elementary.calculator.appdata.xml.in:9
 #: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
-msgstr ""
+msgstr "ਸਾਦੇ ਸਮੀਕਰਨ ਹੱਲ ਕਰੋ"
 
 #: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
+"ਰੋਜ਼ਮੱਰਾ ਦੀ ਵਰਤੋਂ ਲਈ ਇੱਕ ਸਾਦਾ ਕੈਲਕੂਲੇਟਰ। ਇਹ ਮੁੱਢਲੇ ਅਤੇ ਕੁਝ ਸਾਇੰਸੀ ਹਿਸਾਬ ਕਿਵੇਂ"
+" ਤ੍ਰਿਕੋਨਮਿਤੀ ਦੇ ਫੰਕਸ਼ਨ ਜਿਵੇਂ ਸਾਈਨ, ਕੌਸ, ਅਤੇ ਟੈਨ ਨੂੰ ਵੀ ਹੱਲ ਕਰਨ ਦੇ ਕਾਬਲ ਹੈ।"
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 #: data/io.elementary.calculator.appdata.xml.in:25
 #: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Minor updates:"
-msgstr ""
+msgstr "ਮਾਮੂਲੀ ਅਪਡੇਟਾਂ:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 #: data/io.elementary.calculator.appdata.xml.in:29
@@ -48,19 +50,19 @@ msgstr ""
 #: data/io.elementary.calculator.appdata.xml.in:61
 #: data/io.elementary.calculator.appdata.xml.in:71
 msgid "Updated translations"
-msgstr ""
+msgstr "ਅਪਡੇਟਡ ਤਰਜਮੇ"
 
 #: data/io.elementary.calculator.appdata.xml.in:27
 msgid "Fixed an issue with multiple windows"
-msgstr ""
+msgstr "ਇੱਕ ਤੋਂ ਜ਼ਿਆਦਾ ਵਿੰਡੋਜ਼ ਵਾਲ਼ਾ ਮਸਲਾ ਹੱਲ ਕੀਤਾ"
 
 #: data/io.elementary.calculator.appdata.xml.in:28
 msgid "More informative copy in history dialog"
-msgstr ""
+msgstr "ਇਤਿਹਾਸ ਡਾਇਲਾਗ ਵਿੱਚ ਪਹਿਲਾਂ ਨਾਲ਼ੋਂ ਜ਼ਿਆਦਾ ਜਾਣਕਾਰੀ"
 
 #: data/io.elementary.calculator.appdata.xml.in:35
 msgid "New features:"
-msgstr ""
+msgstr "ਨਵੇਂ ਫ਼ੀਚਰ:"
 
 #: data/io.elementary.calculator.appdata.xml.in:37
 msgid "Add log and inverse trigonometric functions"
@@ -68,7 +70,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:39
 msgid "Other updates:"
-msgstr ""
+msgstr "ਹੋਰ ਅਪਡੇਟਾਂ:"
 
 #: data/io.elementary.calculator.appdata.xml.in:41
 msgid "Fix an issue with negative decimals without leading digits"
@@ -80,7 +82,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:43
 msgid "Use slim titlebar"
-msgstr ""
+msgstr "ਤੰਗ ਟਾਈਟਲ-ਬਾਰ ਵਰਤੋ"
 
 #: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Fix inserting multi-byte characters"
@@ -104,7 +106,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:108
 msgid "elementary, Inc."
-msgstr ""
+msgstr "ਐਲੀਮੈਂਟਰੀ, ਇਨਕਾਰਪੋਰੇਟਿਡ"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
