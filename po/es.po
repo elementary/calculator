@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2020-10-08 13:14+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"POT-Creation-Date: 2021-07-20 23:42+0000\n"
+"PO-Revision-Date: 2021-04-20 10:10+0000\n"
+"Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/calculator/"
 "calculator/es/>\n"
 "Language: es\n"
@@ -12,14 +12,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-01-06 06:03+0000\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:457
+#: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
 msgstr "Mostrar funciones avanzadas"
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "Historial"
 
@@ -43,7 +43,7 @@ msgstr "Retroceso"
 msgid "Clear entry"
 msgstr "Borrar entrada"
 
-#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128
 msgid "Add"
 msgstr "Sumar"
 
@@ -135,37 +135,45 @@ msgstr "Arcotangente"
 msgid "Reciprocal"
 msgstr "Recíproca"
 
-#: src/MainWindow.vala:452
+#: src/MainWindow.vala:462
 msgid "Hide extended functionality"
 msgstr "Ocultar funciones adicionales"
 
-#: src/HistoryDialog.vala:92
-msgid "Value to add:"
-msgstr "Valor que sumar:"
+#: src/HistoryDialog.vala:42
+msgid "Insert a previous expression or result into the current calculation."
+msgstr "Inserta una expresión o resultado anterior en el cálculo actual."
 
-#: src/HistoryDialog.vala:96
+#: src/HistoryDialog.vala:76
+msgid "Value to insert:"
+msgstr "Valor para insertar:"
+
+#: src/HistoryDialog.vala:81
 msgid "Result"
 msgstr "Resultado"
 
-#: src/HistoryDialog.vala:100
+#: src/HistoryDialog.vala:83
 msgid "Expression"
 msgstr "Expresión"
 
-#: src/HistoryDialog.vala:106
+#: src/HistoryDialog.vala:100
 msgid "Close"
 msgstr "Cerrar"
 
-#: src/Core/Scanner.vala:69
+#: src/HistoryDialog.vala:102
+msgid "Insert"
+msgstr "Insertar"
+
+#: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
 msgstr "«%s» no es válido."
 
-#: src/Core/Scanner.vala:114
+#: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
 msgstr "Paréntesis desparejados."
 
 #. If no rule matches the character at pos, throw an error.
-#: src/Core/Scanner.vala:167
+#: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
 msgstr "Se desconoce «%s»."

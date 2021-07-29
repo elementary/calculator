@@ -7,21 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2017-01-06 07:48+0000\n"
+"POT-Creation-Date: 2021-07-20 23:42+0000\n"
+"PO-Revision-Date: 2021-02-16 08:09+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
-"Language-Team: Serbian <sr@li.org>\n"
+"Language-Team: Serbian <https://l10n.elementary.io/projects/calculator/extra/"
+"sr/>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-01-07 06:15+0000\n"
-"X-Generator: Launchpad (build 18302)\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
 #: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
-msgstr "Калкулатор"
+msgstr "Дигитрон"
 
 #: data/io.elementary.calculator.appdata.xml.in:9
 #: data/io.elementary.calculator.desktop.in:4
@@ -33,66 +36,88 @@ msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
-"Једноставан калкулатор за свакодневну употребу. Подржава основне и неке "
-"научне прорачуне укључујући тригонометријске функције синуса, косинуса и "
-"тангеса."
+"Једноставан дигитрон за свакодневну употребу. Подржава основне и неке научне "
+"прорачуне укључујући тригонометријске функције синуса, косинуса и тангеса."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-msgid "New features:"
-msgstr ""
+#: data/io.elementary.calculator.appdata.xml.in:25
+#: data/io.elementary.calculator.appdata.xml.in:50
+msgid "Minor updates:"
+msgstr "Мања освежења:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Add log and inverse trigonometric functions"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:21
-#: data/io.elementary.calculator.appdata.xml.in:30
-msgid "Minor updates:"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:23
-msgid "Use slim titlebar"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:24
-#: data/io.elementary.calculator.appdata.xml.in:33
-#: data/io.elementary.calculator.appdata.xml.in:41
-#: data/io.elementary.calculator.appdata.xml.in:51
+#: data/io.elementary.calculator.appdata.xml.in:29
+#: data/io.elementary.calculator.appdata.xml.in:44
+#: data/io.elementary.calculator.appdata.xml.in:53
+#: data/io.elementary.calculator.appdata.xml.in:61
+#: data/io.elementary.calculator.appdata.xml.in:71
 msgid "Updated translations"
+msgstr "Освежени преводи"
+
+#: data/io.elementary.calculator.appdata.xml.in:27
+msgid "Fixed an issue with multiple windows"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:32
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "More informative copy in history dialog"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:35
+msgid "New features:"
+msgstr "Нове функције:"
+
+#: data/io.elementary.calculator.appdata.xml.in:37
+msgid "Add log and inverse trigonometric functions"
+msgstr "Додаје логаритамске и инверзне тригонометријске функције"
+
+#: data/io.elementary.calculator.appdata.xml.in:39
+msgid "Other updates:"
+msgstr "Друга освежења:"
+
+#: data/io.elementary.calculator.appdata.xml.in:41
+msgid "Fix an issue with negative decimals without leading digits"
+msgstr "Иправља проблем са негативним децималама без водеће цифре"
+
+#: data/io.elementary.calculator.appdata.xml.in:42
+msgid "More efficient state saving"
+msgstr "Делотворније чување стања"
+
+#: data/io.elementary.calculator.appdata.xml.in:43
+msgid "Use slim titlebar"
+msgstr "Користи танку траку наслова"
+
+#: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Fix inserting multi-byte characters"
-msgstr ""
+msgstr "Поправља уметање вишебајтних знака"
 
-#: data/io.elementary.calculator.appdata.xml.in:40
+#: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgstr "Поправља недостајућу иконицу за украјински"
 
-#: data/io.elementary.calculator.appdata.xml.in:48
+#: data/io.elementary.calculator.appdata.xml.in:68
 msgid "Animate Infobar when hiding and showing"
-msgstr ""
+msgstr "Анимира инфо траку приликом скривања и приказивања"
 
-#: data/io.elementary.calculator.appdata.xml.in:49
+#: data/io.elementary.calculator.appdata.xml.in:69
 msgid "Fix selection replace"
-msgstr ""
+msgstr "Поправља замену избора"
 
-#: data/io.elementary.calculator.appdata.xml.in:50
+#: data/io.elementary.calculator.appdata.xml.in:70
 msgid "Improved decimal separator localization"
-msgstr ""
+msgstr "Побољшана локализација децималног зареза"
 
-#: data/io.elementary.calculator.appdata.xml.in:88
+#: data/io.elementary.calculator.appdata.xml.in:108
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "рачунање;математика;аритметика;научни;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
-msgstr ""
+msgstr "accessories-calculator"
 
 #~ msgid "About Calculator"
 #~ msgstr "О Калкулатору"

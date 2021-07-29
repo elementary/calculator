@@ -294,10 +294,14 @@ namespace PantheonCalculator {
             var granite_settings = Granite.Settings.get_default ();
             var gtk_settings = Gtk.Settings.get_default ();
 
-            gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+            gtk_settings.gtk_application_prefer_dark_theme = (
+                granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
+            );
 
             granite_settings.notify["prefers-color-scheme"].connect (() => {
-                gtk_settings.gtk_application_prefer_dark_theme = granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
+                gtk_settings.gtk_application_prefer_dark_theme = (
+                    granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
+                );
             });
 
             show_all ();
@@ -331,7 +335,9 @@ namespace PantheonCalculator {
             button_par_left.clicked.connect (() => {regular_button_clicked (button_par_left.function);});
             button_par_right.clicked.connect (() => {regular_button_clicked (button_par_right.function);});
             button_log.clicked.connect (() => {function_button_clicked (button_log.function);});
-            button_mr.clicked.connect (() => {regular_button_clicked (memory_value.to_string ());});
+            button_mr.clicked.connect (() => {
+                regular_button_clicked (memory_value.to_string ().replace (".", eval.scanner.decimal_symbol));
+            });
             button_pow.clicked.connect (() => {regular_button_clicked (button_pow.function);});
             button_sr.clicked.connect (() => {function_button_clicked (button_sr.function);});
             button_ln.clicked.connect (() => {function_button_clicked (button_ln.function);});
@@ -355,9 +361,14 @@ namespace PantheonCalculator {
 
             settings.bind ("extended-shown", button_extended, "active", GLib.SettingsBindFlags.DEFAULT);
 
-            var privacy_settings = new Settings ("org.gnome.desktop.privacy");
-            if (privacy_settings.get_boolean ("remember-recent-files")) {
-                settings.bind ("entry-content", entry, "text", GLib.SettingsBindFlags.DEFAULT);
+            // The window is constructed before adding to the application.
+            // So for the first window, the application will have 0 windows
+            if (application_instance.get_windows ().length () == 0) {
+                //Only remember the contents of the entry in the first window (subject to privacy settings)
+                var privacy_settings = new Settings ("org.gnome.desktop.privacy");
+                if (privacy_settings.get_boolean ("remember-recent-files")) {
+                    settings.bind ("entry-content", entry, "text", GLib.SettingsBindFlags.DEFAULT);
+                }
             }
         }
 
@@ -468,9 +479,13 @@ namespace PantheonCalculator {
                      * Moreover, it allows the saving in memory of the result of complex mathematical
                      * functions by calculating the result separately and allowing the user to recall
                      * it using the MR button (e.g. "√4" will store the value "2,0" in the variable).
+                     *
+                     * Since "double.parse" method works only by using "." as decimal symbol we need
+                     * to make sure to replace the localized one with it before storing the value and
+                     * adding, subtracting or recalling it from memory.
                      */
                     var output = eval.evaluate (entry.get_text (), decimal_places);
-                    memory_value = double.parse (output);
+                    memory_value = double.parse (output.replace (eval.scanner.decimal_symbol, "."));
 
                     button_mr.set_sensitive (true);
                     button_mc.set_sensitive (true);
@@ -487,7 +502,7 @@ namespace PantheonCalculator {
             if (entry.get_text () != "") {
                 try {
                     var output = eval.evaluate (entry.get_text (), decimal_places);
-                    memory_value += double.parse (output);
+                    memory_value += double.parse (output.replace (eval.scanner.decimal_symbol, "."));
                 } catch (Core.OUT_ERROR e) {
                     infobar_label.label = e.message;
                     infobar.revealed = true;
@@ -499,7 +514,7 @@ namespace PantheonCalculator {
             if (entry.get_text () != "") {
                 try {
                     var output = eval.evaluate (entry.get_text (), decimal_places);
-                    memory_value -= double.parse (output);
+                    memory_value -= double.parse (output.replace (eval.scanner.decimal_symbol, "."));
                 } catch (Core.OUT_ERROR e) {
                     infobar_label.label = e.message;
                     infobar.revealed = true;
@@ -518,10 +533,10 @@ namespace PantheonCalculator {
 
             double grand_total = 0;
             history.foreach ((list_entry) => {
-                grand_total += double.parse (list_entry.output);
+                grand_total += double.parse (list_entry.output.replace (eval.scanner.decimal_symbol, "."));
             });
 
-            entry.set_text (grand_total.to_string ());
+            entry.set_text (grand_total.to_string ().replace (".", eval.scanner.decimal_symbol));
             entry.set_position (grand_total.to_string ().length);
         }
 

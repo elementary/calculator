@@ -1,191 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.elementary.calculator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: io.elementary.calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-20 23:42+0000\n"
-"PO-Revision-Date: 2021-04-22 22:27+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/calculator/"
-"calculator/fr/>\n"
-"Language: fr\n"
+"PO-Revision-Date: 2021-07-26 08:35+0000\n"
+"Last-Translator: elSolus <tumbleweed@tuta.io>\n"
+"Language-Team: Punjabi <https://l10n.elementary.io/projects/calculator/"
+"calculator/pa/>\n"
+"Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.4.2\n"
-"X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
-msgstr "Afficher les fonctionnalités avancées"
+msgstr "ਵੱਧ ਫੰਕਸ਼ਨੈਲੀਟੀ ਵਿਖਾਓ"
 
 #: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
-msgstr "Historique"
+msgstr "ਇਤਿਹਾਸ"
 
 #: src/MainWindow.vala:98
 msgid "Calculator"
-msgstr "Calculatrice"
+msgstr "ਕੈਲਕੂਲੇਟਰ"
 
 #: src/MainWindow.vala:111
 msgid "Calculate Result"
-msgstr "Calculer le résultat"
+msgstr "ਨਤੀਜੇ ਕੈਲਕੂਲੇਟ ਕਰੋ"
 
 #: src/MainWindow.vala:115
 msgid "Add last result"
-msgstr "Ajouter le dernier résultat"
+msgstr "ਆਖ਼ਰੀ ਨਤੀਜਾ ਜੋੜੋ"
 
 #: src/MainWindow.vala:118
 msgid "Backspace"
-msgstr "Retour arrière"
+msgstr "ਬੈਕਸਪੇਸ"
 
 #: src/MainWindow.vala:124
 msgid "Clear entry"
-msgstr "Effacer l'entrée"
+msgstr "ਇੰਦਰਾਜ ਮਿਟਾਓ"
 
 #: src/MainWindow.vala:128
 msgid "Add"
-msgstr "Ajouter"
+msgstr "ਜੋੜ"
 
 #: src/MainWindow.vala:132
 msgid "Subtract"
-msgstr "Soustraire"
+msgstr "ਘਟਾਓ"
 
 #: src/MainWindow.vala:136
 msgid "Multiply"
-msgstr "Multiplier"
+msgstr "ਗੁਣਾ"
 
 #: src/MainWindow.vala:140
 msgid "Divide"
-msgstr "Diviser"
+msgstr "ਤਕਸੀਮ"
 
 #: src/MainWindow.vala:146
 msgid "Percentage"
-msgstr "Pourcentage"
+msgstr "ਫ਼ੀਸਦ"
 
 #: src/MainWindow.vala:191
 msgid "Start Group"
-msgstr "Groupe de début"
+msgstr "ਗਰੁੱਪ ਸ਼ੁਰੂ ਕਰੋ"
 
 #: src/MainWindow.vala:192
 msgid "End Group"
-msgstr "Groupe de fin"
+msgstr "ਗਰੁੱਪ ਖ਼ਤਮ ਕਰੋ"
 
 #: src/MainWindow.vala:193
 msgid "Exponent"
-msgstr "Exposant"
+msgstr "ਘਾਤ ਅੰਕ"
 
 #: src/MainWindow.vala:195
 msgid "Root"
-msgstr "Racine"
+msgstr "ਵਰਗਮੂਲ"
 
 #: src/MainWindow.vala:196
 msgid "Sine"
-msgstr "Sinus"
+msgstr "ਸਾਈਨ"
 
 #: src/MainWindow.vala:197
 msgid "Hyperbolic Sine"
-msgstr "Sinus hyperbolique"
+msgstr "ਹਾਇਪਰਬੌਲਿਕ ਸਾਈਨ"
 
 #: src/MainWindow.vala:198
 msgid "Cosine"
-msgstr "Cosinus"
+msgstr "ਕੋਸਾਈਨ"
 
 #: src/MainWindow.vala:199
 msgid "Hyperbolic Cosine"
-msgstr "Cosinus hyperbolique"
+msgstr "ਹਾਇਪਰਬੌਲਿਕ ਕੋਸਾਈਨ"
 
 #: src/MainWindow.vala:200
 msgid "Tangent"
-msgstr "Tangente"
+msgstr "ਟੈਂਜੈਂਟ"
 
 #: src/MainWindow.vala:201
 msgid "Hyperbolic Tangent"
-msgstr "Tangente hyperbolique"
+msgstr "ਹਾਇਪਰਬੌਲਿਕ ਟੈਂਜੈਂਟ"
 
 #: src/MainWindow.vala:202
 msgid "Pi"
-msgstr "Pi"
+msgstr "ਪਾਈ"
 
 #: src/MainWindow.vala:203
 msgid "Euler's Number"
-msgstr "Nombre d'Euler"
+msgstr "ਯੂਲਰ ਦਾ ਨੰਬਰ"
 
 #: src/MainWindow.vala:204
 msgid "Logarithm Base 10"
-msgstr "Logarithme Base 10"
+msgstr "ਲੌਗਰਿਦਮ ਬੇਸ 10"
 
 #: src/MainWindow.vala:206
 msgid "Natural Logarithm"
-msgstr "Logarithme naturel"
+msgstr "ਨੈਚੂਰਲ ਲੌਗਰਿਦਮ"
 
 #: src/MainWindow.vala:207
 msgid "Inverse Sine"
-msgstr "Sinus inverse"
+msgstr "ਸਾਈਨ ਨੂੰ ਉਲਟਾਓ"
 
 #: src/MainWindow.vala:209
 msgid "Inverse Cosine"
-msgstr "Cosinus inverse"
+msgstr "ਕੋਸਾਈਨ ਨੂੰ ਉਲਟਾਓ"
 
 #: src/MainWindow.vala:211
 msgid "Inverse Tangent"
-msgstr "Tangente inverse"
+msgstr "ਟੈਂਜੈਂਟ ਨੂੰ ਉਲਟਾਓ"
 
 #: src/MainWindow.vala:213
 msgid "Reciprocal"
-msgstr "Réciproque"
+msgstr "ਬਟਿਆਂ ਨੂੰ ਉਲਟਾਓ"
 
 #: src/MainWindow.vala:462
 msgid "Hide extended functionality"
-msgstr "Cacher les fonctionnalités avancées"
+msgstr "ਵੱਧ ਫੰਕਸ਼ਨੈਲਿਟੀ ਲੁਕਾਓ"
 
 #: src/HistoryDialog.vala:42
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
-"Insérer une expression ou un résultat précédent dans le calcul en cours."
+msgstr "ਪਿਛਲੀ ਰਕਮ ਜਾਂ ਨਤੀਜਾ ਹਾਲੀਆ ਕੈਲਕੂਲੇਸ਼ਨ ਵਿੱਚ ਦਾਖ਼ਲ ਕਰੋ।"
 
 #: src/HistoryDialog.vala:76
 msgid "Value to insert:"
-msgstr "Valeur à insérer :"
+msgstr "ਦਾਖ਼ਲ ਕਰਨ ਲਈ ਵੈਲਿਊ:"
 
 #: src/HistoryDialog.vala:81
 msgid "Result"
-msgstr "Résultat"
+msgstr "ਨਤੀਜਾ"
 
 #: src/HistoryDialog.vala:83
 msgid "Expression"
-msgstr "Expression"
+msgstr "ਐਕਸਪ੍ਰੈਸ਼ਨ"
 
 #: src/HistoryDialog.vala:100
 msgid "Close"
-msgstr "Fermer"
+msgstr "ਬੰਦ ਕਰੋ"
 
 #: src/HistoryDialog.vala:102
 msgid "Insert"
-msgstr "Insérer"
+msgstr "ਦਾਖ਼ਲ ਕਰੋ"
 
 #: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
-msgstr "'%s' est invalide."
+msgstr "'%s' ਜਾਇਜ਼ ਨਹੀਂ ਹੈ।"
 
 #: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
-msgstr "Parenthèses mal assorties."
+msgstr "ਪਰੈਂਥਸਿਸ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ।"
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
-msgstr "'%s' est inconnu."
-
-#~ msgid "translator-credits"
-#~ msgstr ""
-#~ "Launchpad Contributions:\n"
-#~ "  Corentin Noël https://launchpad.net/~tintou\n"
-#~ "  Johan https://launchpad.net/~o-spam-n\n"
-#~ "  Julien F/ https://launchpad.net/~julien-fersing\n"
-#~ "  Maxwell Barvian https://launchpad.net/~mbarvian-deactivatedaccount\n"
-#~ "  Samuel Cardoso https://launchpad.net/~samu-cadoso\n"
-#~ "  mbodj https://launchpad.net/~toundembodj24\n"
-#~ "  Éfrit https://launchpad.net/~efrit"
+msgstr "'%s' ਅਣਪਛਾਤਾ ਹੈ।"

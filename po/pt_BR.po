@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
+"POT-Creation-Date: 2021-07-20 23:42+0000\n"
 "PO-Revision-Date: 2018-10-27 00:02+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
@@ -15,11 +15,11 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:457
+#: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
 msgstr "Mostrar outras funcionalidades"
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "Histórico"
 
@@ -43,7 +43,7 @@ msgstr "Apagar"
 msgid "Clear entry"
 msgstr "Limpar entrada"
 
-#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128
 msgid "Add"
 msgstr "Adicionar"
 
@@ -139,37 +139,47 @@ msgstr "Tangente"
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:452
+#: src/MainWindow.vala:462
 msgid "Hide extended functionality"
 msgstr "Ocultar outras funcionalidades"
 
-#: src/HistoryDialog.vala:92
-msgid "Value to add:"
+#: src/HistoryDialog.vala:42
+msgid "Insert a previous expression or result into the current calculation."
+msgstr ""
+
+#: src/HistoryDialog.vala:76
+#, fuzzy
+#| msgid "Value to add:"
+msgid "Value to insert:"
 msgstr "Valor a acrescentar:"
 
-#: src/HistoryDialog.vala:96
+#: src/HistoryDialog.vala:81
 msgid "Result"
 msgstr "Resultado"
 
-#: src/HistoryDialog.vala:100
+#: src/HistoryDialog.vala:83
 msgid "Expression"
 msgstr "Expressão"
 
-#: src/HistoryDialog.vala:106
+#: src/HistoryDialog.vala:100
 msgid "Close"
 msgstr "Fechar"
 
-#: src/Core/Scanner.vala:69
+#: src/HistoryDialog.vala:102
+msgid "Insert"
+msgstr ""
+
+#: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
 msgstr "'%s' é inválido."
 
-#: src/Core/Scanner.vala:114
+#: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
 msgstr "Parênteses incompatíveis."
 
 #. If no rule matches the character at pos, throw an error.
-#: src/Core/Scanner.vala:167
+#: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
 msgstr "'%s' é desconhecido."

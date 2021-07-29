@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
+"POT-Creation-Date: 2021-07-20 23:42+0000\n"
 "PO-Revision-Date: 2019-07-14 08:46+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/calculator/"
@@ -15,11 +15,11 @@ msgstr ""
 "X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:457
+#: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
 msgstr "Montri etendita funkciojn"
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "Historio"
 
@@ -43,7 +43,7 @@ msgstr "Retroklavo"
 msgid "Clear entry"
 msgstr "Klara eniro"
 
-#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128
 msgid "Add"
 msgstr "Aldoni"
 
@@ -139,37 +139,47 @@ msgstr "Tangento"
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:452
+#: src/MainWindow.vala:462
 msgid "Hide extended functionality"
 msgstr "Ocultar funcionalidade estendida"
 
-#: src/HistoryDialog.vala:92
-msgid "Value to add:"
+#: src/HistoryDialog.vala:42
+msgid "Insert a previous expression or result into the current calculation."
+msgstr ""
+
+#: src/HistoryDialog.vala:76
+#, fuzzy
+#| msgid "Value to add:"
+msgid "Value to insert:"
 msgstr "Valoro aldoni:"
 
-#: src/HistoryDialog.vala:96
+#: src/HistoryDialog.vala:81
 msgid "Result"
 msgstr "Rezulto"
 
-#: src/HistoryDialog.vala:100
+#: src/HistoryDialog.vala:83
 msgid "Expression"
 msgstr "Esprimo"
 
-#: src/HistoryDialog.vala:106
+#: src/HistoryDialog.vala:100
 msgid "Close"
 msgstr "Malfermi"
 
-#: src/Core/Scanner.vala:69
+#: src/HistoryDialog.vala:102
+msgid "Insert"
+msgstr ""
+
+#: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
 msgstr "„%s“ estas nevalida."
 
-#: src/Core/Scanner.vala:114
+#: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
 msgstr "Miskongrua parentezo."
 
 #. If no rule matches the character at pos, throw an error.
-#: src/Core/Scanner.vala:167
+#: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
 msgstr "„%s“ estas nekonata."

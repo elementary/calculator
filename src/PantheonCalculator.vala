@@ -27,6 +27,9 @@ namespace PantheonCalculator {
             flags = ApplicationFlags.FLAGS_NONE;
 
             Intl.setlocale (LocaleCategory.ALL, "");
+            GLib.Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
+            GLib.Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+            GLib.Intl.textdomain (GETTEXT_PACKAGE);
 
             var quit_action = new SimpleAction ("quit", null);
             var undo_action = new SimpleAction ("undo", null);

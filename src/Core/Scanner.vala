@@ -56,7 +56,6 @@ namespace PantheonCalculator.Core {
             int parentheses_balance_counter = 0;
             while (pos < uc.length) {
                 Token t = next_token ();
-
                 /* Identifying multicharacter tokens via Evaluation class. */
                 if (t.token_type == TokenType.ALPHA) {
                     if (Evaluation.is_operator (t)) {
@@ -68,24 +67,27 @@ namespace PantheonCalculator.Core {
                     } else {
                         throw new SCANNER_ERROR.ALPHA_INVALID (_("'%s' is invalid."), t.content);
                     }
-
-                } else if (t.token_type == TokenType.OPERATOR && (t.content == "-" || t.content == "−")) {
+                } else if (t.token_type == TokenType.OPERATOR && (t.content in "-−")) {
                     /* Define last_tokens, where a next minus is a number, not an operator */
                     if (last_token == null || (
                         (last_token.token_type == TokenType.OPERATOR && last_token.content != "%") ||
                         (last_token.token_type == TokenType.FUNCTION) ||
                         (last_token.token_type == TokenType.P_LEFT)
                     )) {
+                        // A minus sign not following a number can be merged with a following number;
                         next_number_negative = true;
                         continue;
                     }
-
-                } else if (t.token_type == TokenType.NUMBER && next_number_negative) {
-                    t.content = (double.parse (t.content) * (-1)).to_string ();
-                    next_number_negative = false;
                 } else if (t.token_type == TokenType.NULL_NUMBER) {
+                    //Insert a leading zero to make complete number e.g. .5 -> 0.5
                     t.content = "0" + t.content;
                     t.token_type = TokenType.NUMBER;
+                }
+
+                if (next_number_negative && t.token_type == TokenType.NUMBER) {
+                    // Merge minus sign into the number itself
+                    t.content = (double.parse (t.content) * (-1)).to_string ();
+                    next_number_negative = false;
                 }
 
                 /*

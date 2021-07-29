@@ -1,5 +1,6 @@
 executable(
     meson.project_name(),
+    config_file,
     'PantheonCalculator.vala',
     'Button.vala',
     'MainWindow.vala',
@@ -10,7 +11,7 @@ executable(
     dependencies: [
         core_deps,
         dependency('gtk+-3.0'),
-        dependency('granite', version: '>=0.5')
+        dependency('granite', version: '>=6.0.0')
     ],
     install : true
 )

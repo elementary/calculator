@@ -2,28 +2,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2016-05-27 15:28+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2021-07-20 23:42+0000\n"
+"PO-Revision-Date: 2021-03-04 12:46+0000\n"
+"Last-Translator: HelaBasa <R45XvezA@pm.me>\n"
+"Language-Team: Sinhala <https://l10n.elementary.io/projects/calculator/"
+"calculator/si/>\n"
+"Language: si\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:457
+#: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
 msgstr ""
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
-msgstr "අතීතය"
+msgstr "ඉතිහාසය"
 
 #: src/MainWindow.vala:98
 msgid "Calculator"
-msgstr "ගණක යන්ත්‍රය"
+msgstr "ගණකය"
 
 #: src/MainWindow.vala:111
 msgid "Calculate Result"
@@ -31,7 +33,7 @@ msgstr ""
 
 #: src/MainWindow.vala:115
 msgid "Add last result"
-msgstr ""
+msgstr "අවසන් ප්‍රතිඵලය එකතු කරන්න"
 
 #: src/MainWindow.vala:118
 msgid "Backspace"
@@ -41,25 +43,25 @@ msgstr ""
 msgid "Clear entry"
 msgstr ""
 
-#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128
 msgid "Add"
 msgstr "එකතු කරන්න"
 
 #: src/MainWindow.vala:132
 msgid "Subtract"
-msgstr ""
+msgstr "අඩුකරන්න"
 
 #: src/MainWindow.vala:136
 msgid "Multiply"
-msgstr ""
+msgstr "ගුණ කරන්න"
 
 #: src/MainWindow.vala:140
 msgid "Divide"
-msgstr ""
+msgstr "බෙදන්න"
 
 #: src/MainWindow.vala:146
 msgid "Percentage"
-msgstr ""
+msgstr "ප්‍රතිශතය"
 
 #: src/MainWindow.vala:191
 msgid "Start Group"
@@ -75,11 +77,11 @@ msgstr ""
 
 #: src/MainWindow.vala:195
 msgid "Root"
-msgstr ""
+msgstr "මූලය"
 
 #: src/MainWindow.vala:196
 msgid "Sine"
-msgstr ""
+msgstr "සයින"
 
 #: src/MainWindow.vala:197
 msgid "Hyperbolic Sine"
@@ -87,7 +89,7 @@ msgstr ""
 
 #: src/MainWindow.vala:198
 msgid "Cosine"
-msgstr ""
+msgstr "කෝසයින"
 
 #: src/MainWindow.vala:199
 msgid "Hyperbolic Cosine"
@@ -95,7 +97,7 @@ msgstr ""
 
 #: src/MainWindow.vala:200
 msgid "Tangent"
-msgstr ""
+msgstr "ටැන්ජන"
 
 #: src/MainWindow.vala:201
 msgid "Hyperbolic Tangent"
@@ -103,7 +105,7 @@ msgstr ""
 
 #: src/MainWindow.vala:202
 msgid "Pi"
-msgstr ""
+msgstr "පයි"
 
 #: src/MainWindow.vala:203
 msgid "Euler's Number"
@@ -133,37 +135,45 @@ msgstr ""
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:452
+#: src/MainWindow.vala:462
 msgid "Hide extended functionality"
 msgstr ""
 
-#: src/HistoryDialog.vala:92
-msgid "Value to add:"
+#: src/HistoryDialog.vala:42
+msgid "Insert a previous expression or result into the current calculation."
 msgstr ""
 
-#: src/HistoryDialog.vala:96
+#: src/HistoryDialog.vala:76
+msgid "Value to insert:"
+msgstr ""
+
+#: src/HistoryDialog.vala:81
 msgid "Result"
 msgstr "ප්‍රතිඑලය"
 
-#: src/HistoryDialog.vala:100
+#: src/HistoryDialog.vala:83
 msgid "Expression"
 msgstr ""
 
-#: src/HistoryDialog.vala:106
+#: src/HistoryDialog.vala:100
 msgid "Close"
-msgstr "වසා දමන්න"
+msgstr "වසන්න"
 
-#: src/Core/Scanner.vala:69
+#: src/HistoryDialog.vala:102
+msgid "Insert"
+msgstr ""
+
+#: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
 msgstr ""
 
-#: src/Core/Scanner.vala:114
+#: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
 msgstr ""
 
 #. If no rule matches the character at pos, throw an error.
-#: src/Core/Scanner.vala:167
+#: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
 msgstr ""

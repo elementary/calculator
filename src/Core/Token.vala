@@ -20,7 +20,7 @@
 
 namespace PantheonCalculator.Core {
     public enum TokenType {
-        NULL_NUMBER,
+        NULL_NUMBER, //A number with a decimal point but no leading digits e.g. .5
         NUMBER,
         OPERATOR,
         FUNCTION,
@@ -33,12 +33,14 @@ namespace PantheonCalculator.Core {
     }
 
     public class Token : Object {
-        public string content { get; set; }
-        public TokenType token_type { get; set; }
+        public string content { get; set construct; }
+        public TokenType token_type { get; set construct; }
 
         public Token (string in_content, TokenType in_token_type) {
-            content = in_content;
-            token_type = in_token_type;
+            Object (
+                content: in_content,
+                token_type: in_token_type
+            );
         }
     }
 }

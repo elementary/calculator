@@ -1,12 +1,21 @@
 project(
     'io.elementary.calculator', 'vala', 'c',
-    meson_version : '>= 0.43',
-    version: '1.5.5'
+    meson_version : '>= 0.49',
+    version: '1.6.2'
 )
 
 i18n = import('i18n')
 
-add_global_arguments('-DGETTEXT_PACKAGE="io.elementary.calculator"', language:'c')
+add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
+
+config_data = configuration_data()
+config_data.set_quoted('LOCALEDIR', get_option('prefix') / get_option('localedir'))
+config_data.set_quoted('GETTEXT_PACKAGE', meson.project_name())
+config_file = configure_file(
+    input: 'src/Config.vala.in',
+    output: '@BASENAME@',
+    configuration: config_data
+)
 
 core_deps = [
     dependency('glib-2.0'),

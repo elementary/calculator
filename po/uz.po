@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:05+0000\n"
-"PO-Revision-Date: 2020-09-22 06:14+0000\n"
-"Last-Translator: Shukrullo <shukrullo@umail.uz>\n"
+"POT-Creation-Date: 2021-07-20 23:42+0000\n"
+"PO-Revision-Date: 2021-03-21 16:47+0000\n"
+"Last-Translator: Shukrullo Turgunov <shookrullo@gmail.com>\n"
 "Language-Team: Uzbek <https://l10n.elementary.io/projects/calculator/"
 "calculator/uz/>\n"
 "Language: uz\n"
@@ -12,14 +12,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:457
+#: src/MainWindow.vala:86 src/MainWindow.vala:467
 msgid "Show extended functionality"
-msgstr "Qo'shimcha imkoniyatlarni ko'rsatish"
+msgstr "Qoʻshimcha imkoniyatlarni koʻrsatish"
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:37
+#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "Hisoblashlar tarixi"
 
@@ -29,7 +29,7 @@ msgstr "Kalkulyator"
 
 #: src/MainWindow.vala:111
 msgid "Calculate Result"
-msgstr "Natijani ko'rsatish"
+msgstr "Natijani koʻrsatish"
 
 #: src/MainWindow.vala:115
 msgid "Add last result"
@@ -43,9 +43,9 @@ msgstr "Orqaga (Tozalash)"
 msgid "Clear entry"
 msgstr "Kiritish maydonini tozalash"
 
-#: src/MainWindow.vala:128 src/HistoryDialog.vala:107
+#: src/MainWindow.vala:128
 msgid "Add"
-msgstr "Qo'shish"
+msgstr "Qoʻshish"
 
 #: src/MainWindow.vala:132
 msgid "Subtract"
@@ -53,11 +53,11 @@ msgstr "Ayirish"
 
 #: src/MainWindow.vala:136
 msgid "Multiply"
-msgstr "Ko'paytirish"
+msgstr "Koʻpaytirish"
 
 #: src/MainWindow.vala:140
 msgid "Divide"
-msgstr "Bo'lish"
+msgstr "Boʻlish"
 
 #: src/MainWindow.vala:146
 msgid "Percentage"
@@ -113,63 +113,69 @@ msgstr "Eyler soni"
 
 #: src/MainWindow.vala:204
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Oʻnlik logarifm"
 
 #: src/MainWindow.vala:206
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Natural logarifm"
 
 #: src/MainWindow.vala:207
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Arksinus"
 
 #: src/MainWindow.vala:209
-#, fuzzy
-#| msgid "Cosine"
 msgid "Inverse Cosine"
-msgstr "Kosinus"
+msgstr "Arkkosinus"
 
 #: src/MainWindow.vala:211
-#, fuzzy
-#| msgid "Tangent"
 msgid "Inverse Tangent"
-msgstr "Tangens"
+msgstr "Arktangens"
 
 #: src/MainWindow.vala:213
 msgid "Reciprocal"
-msgstr ""
+msgstr "Teskari raqam"
 
-#: src/MainWindow.vala:452
+#: src/MainWindow.vala:462
 msgid "Hide extended functionality"
 msgstr "Qo'shimcha funksiyalarni yopish"
 
-#: src/HistoryDialog.vala:92
-msgid "Value to add:"
+#: src/HistoryDialog.vala:42
+msgid "Insert a previous expression or result into the current calculation."
+msgstr ""
+
+#: src/HistoryDialog.vala:76
+#, fuzzy
+#| msgid "Value to add:"
+msgid "Value to insert:"
 msgstr "Qiymat qo'shish:"
 
-#: src/HistoryDialog.vala:96
+#: src/HistoryDialog.vala:81
 msgid "Result"
 msgstr "Natija"
 
-#: src/HistoryDialog.vala:100
+#: src/HistoryDialog.vala:83
 msgid "Expression"
 msgstr "Ifoda"
 
-#: src/HistoryDialog.vala:106
+#: src/HistoryDialog.vala:100
 msgid "Close"
 msgstr "Yopish"
 
-#: src/Core/Scanner.vala:69
+#: src/HistoryDialog.vala:102
+msgid "Insert"
+msgstr ""
+
+#: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
 msgstr "'%s' noto'g'ri."
 
-#: src/Core/Scanner.vala:114
+#: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
 msgstr "Qavslar to'g'ri kelmayapti."
 
 #. If no rule matches the character at pos, throw an error.
-#: src/Core/Scanner.vala:167
+#: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
 msgstr "'%s' noaniq."
