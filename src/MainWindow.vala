@@ -482,7 +482,8 @@ namespace PantheonCalculator {
                      *
                      * Since "double.parse" method works only by using "." as decimal symbol we need
                      * to make sure to replace the localized one with it before storing the value and
-                     * adding, subtracting or recalling it from memory.
+                     * adding, subtracting to and from it. We must also replace "." with the corrected
+                     * decimal symbol for locale when recalling stored value from the memory.
                      */
                     var output = eval.evaluate (entry.get_text (), decimal_places);
                     memory_value = double.parse (output.replace (eval.scanner.decimal_symbol, "."));
