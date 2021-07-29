@@ -335,9 +335,7 @@ namespace PantheonCalculator {
             button_par_left.clicked.connect (() => {regular_button_clicked (button_par_left.function);});
             button_par_right.clicked.connect (() => {regular_button_clicked (button_par_right.function);});
             button_log.clicked.connect (() => {function_button_clicked (button_log.function);});
-            button_mr.clicked.connect (() => {
-                regular_button_clicked (memory_value.to_string ().replace (".", eval.scanner.decimal_symbol));
-            });
+            button_mr.clicked.connect (() => {regular_button_clicked (number_to_string (memory_value));});
             button_pow.clicked.connect (() => {regular_button_clicked (button_pow.function);});
             button_sr.clicked.connect (() => {function_button_clicked (button_sr.function);});
             button_ln.clicked.connect (() => {function_button_clicked (button_ln.function);});
@@ -482,7 +480,7 @@ namespace PantheonCalculator {
                      *
                      * Since "double.parse" method works only by using "." as decimal symbol we need
                      * to make sure to replace the localized one with it before storing the value and
-                     * adding, subtracting to and from it. We must also replace "." with the corrected
+                     * adding/subtracting to and from it. We must also replace "." with the correct
                      * decimal symbol for locale when recalling stored value from the memory.
                      */
                     var output = eval.evaluate (entry.get_text (), decimal_places);
@@ -537,8 +535,44 @@ namespace PantheonCalculator {
                 grand_total += double.parse (list_entry.output.replace (eval.scanner.decimal_symbol, "."));
             });
 
-            entry.set_text (grand_total.to_string ().replace (".", eval.scanner.decimal_symbol));
+            entry.set_text (number_to_string (grand_total));
             entry.set_position (grand_total.to_string ().length);
+        }
+
+        /* Method taken from "Evaluation.vala" to limit the number of digits to be shown
+         * and to strip all trailing zeroes because the last decimals may be innacurate.
+         *
+         * Since the application has a precision of nine decimal numbers it makes
+         * sense to apply the same criterion for the value stored in memory as well.
+         */
+        private string number_to_string (double number) {
+            string shortened_number = ("%.9f".printf (number));
+            string number_localized = shortened_number.replace (".", eval.scanner.decimal_symbol);
+
+            /* Remove trailing 0s or decimal symbol */
+            while (number_localized.has_suffix ("0")) {
+                number_localized = number_localized.slice (0, -1);
+            }
+            if (number_localized.has_suffix (eval.scanner.decimal_symbol)) {
+                number_localized = number_localized.slice (0, -1);
+            }
+
+            /* Insert separator symbol in large numbers */
+            var builder = new StringBuilder (number_localized);
+            var decimal_pos = number_localized.last_index_of (eval.scanner.decimal_symbol);
+            if (decimal_pos == -1) {
+                decimal_pos = number_localized.length;
+            }
+
+            int end_position = 0;
+            if (number_localized.has_prefix ("-")) {
+                end_position = 1;
+            }
+            for (int i = decimal_pos - 3; i > end_position; i -= 3) {
+                builder.insert (i, eval.scanner.separator_symbol);
+            }
+
+            return builder.str;
         }
 
         private void action_clear () {
