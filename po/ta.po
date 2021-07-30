@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-20 23:42+0000\n"
+"POT-Creation-Date: 2021-07-30 13:15+0000\n"
 "PO-Revision-Date: 2017-06-16 17:33+0000\n"
 "Last-Translator: Rajeev Kumar <irajeevankumar@gmail.com>\n"
 "Language-Team: Tamil <https://l10n.elementary.io/projects/calculator/"
@@ -15,131 +15,157 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:467
+#: src/MainWindow.vala:94 src/MainWindow.vala:606
 msgid "Show extended functionality"
 msgstr "நீட்டிக்கப்பட்ட செயல்பாடுகள் காட்ட"
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
+#: src/MainWindow.vala:99 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "வரலாறு"
 
-#: src/MainWindow.vala:98
+#: src/MainWindow.vala:106
 msgid "Calculator"
 msgstr "கால்குலேட்டர்"
 
-#: src/MainWindow.vala:111
+#: src/MainWindow.vala:119
 msgid "Calculate Result"
 msgstr "முடிவை கணக்கிடு"
 
-#: src/MainWindow.vala:115
+#: src/MainWindow.vala:123
 msgid "Add last result"
 msgstr "கடைசி பதிலை கூட்டு"
 
-#: src/MainWindow.vala:118
+#: src/MainWindow.vala:126
 msgid "Backspace"
 msgstr "பின்நகர்வு"
 
-#: src/MainWindow.vala:124
+#: src/MainWindow.vala:132
 msgid "Clear entry"
 msgstr "பதிவை அழி"
 
-#: src/MainWindow.vala:128
+#: src/MainWindow.vala:136
 msgid "Add"
 msgstr "கூட்டு"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:140
 msgid "Subtract"
 msgstr "கழித்தல்"
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:144
 msgid "Multiply"
 msgstr "பெருக்கல்"
 
-#: src/MainWindow.vala:140
+#: src/MainWindow.vala:148
 msgid "Divide"
 msgstr "வகுத்தல்"
 
-#: src/MainWindow.vala:146
+#: src/MainWindow.vala:154
 msgid "Percentage"
 msgstr "சதவிகிதம்"
 
-#: src/MainWindow.vala:191
+#: src/MainWindow.vala:199
+msgid "Set memory value"
+msgstr ""
+
+#: src/MainWindow.vala:200
+msgid "Recall value from memory"
+msgstr ""
+
+#: src/MainWindow.vala:202
+msgid "Add to stored value"
+msgstr ""
+
+#: src/MainWindow.vala:203
+msgid "Subtract from stored value"
+msgstr ""
+
+#: src/MainWindow.vala:204
+#, fuzzy
+#| msgid "Clear entry"
+msgid "Clear memory"
+msgstr "பதிவை அழி"
+
+#: src/MainWindow.vala:206
+msgid "Grand Total"
+msgstr ""
+
+#: src/MainWindow.vala:208
 msgid "Start Group"
 msgstr "குழுவை ஆரம்பி"
 
-#: src/MainWindow.vala:192
+#: src/MainWindow.vala:209
 msgid "End Group"
 msgstr "குழுவை முடி"
 
-#: src/MainWindow.vala:193
+#: src/MainWindow.vala:210
 msgid "Exponent"
 msgstr "அடுக்குக்குறி"
 
-#: src/MainWindow.vala:195
+#: src/MainWindow.vala:212
 msgid "Root"
 msgstr "வர்க்க மூலம்"
 
-#: src/MainWindow.vala:196
+#: src/MainWindow.vala:213
 msgid "Sine"
 msgstr "சைன்"
 
-#: src/MainWindow.vala:197
+#: src/MainWindow.vala:214
 msgid "Hyperbolic Sine"
 msgstr "குவிபிறை சைன்"
 
-#: src/MainWindow.vala:198
+#: src/MainWindow.vala:215
 msgid "Cosine"
 msgstr "கோசைன்"
 
-#: src/MainWindow.vala:199
+#: src/MainWindow.vala:216
 msgid "Hyperbolic Cosine"
 msgstr "குவிபிறை கோசைன்"
 
-#: src/MainWindow.vala:200
+#: src/MainWindow.vala:217
 msgid "Tangent"
 msgstr "தொடுகோடு"
 
-#: src/MainWindow.vala:201
+#: src/MainWindow.vala:218
 msgid "Hyperbolic Tangent"
 msgstr "குவிபிறை தொடுகோடு"
 
-#: src/MainWindow.vala:202
+#: src/MainWindow.vala:219
 msgid "Pi"
 msgstr "பை"
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:220
 msgid "Euler's Number"
 msgstr "ஆய்லர் எண்"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:221
 msgid "Logarithm Base 10"
 msgstr ""
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:223
 msgid "Natural Logarithm"
 msgstr ""
 
-#: src/MainWindow.vala:207
+#: src/MainWindow.vala:224
 msgid "Inverse Sine"
 msgstr ""
 
-#: src/MainWindow.vala:209
+#: src/MainWindow.vala:226
 #, fuzzy
 #| msgid "Cosine"
 msgid "Inverse Cosine"
 msgstr "கோசைன்"
 
-#: src/MainWindow.vala:211
+#: src/MainWindow.vala:228
 #, fuzzy
 #| msgid "Tangent"
 msgid "Inverse Tangent"
 msgstr "தொடுகோடு"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:230
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:462
+#: src/MainWindow.vala:601
 msgid "Hide extended functionality"
 msgstr "நீட்டிக்கப்பட்ட செயல்பாடு மறை"
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-20 23:42+0000\n"
+"POT-Creation-Date: 2021-07-30 13:15+0000\n"
 "PO-Revision-Date: 2020-02-20 17:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/calculator/"
@@ -14,131 +14,157 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:467
+#: src/MainWindow.vala:94 src/MainWindow.vala:606
 msgid "Show extended functionality"
 msgstr "Pokoż rozszyrzōne funkcyje"
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
+#: src/MainWindow.vala:99 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "Historyjo"
 
-#: src/MainWindow.vala:98
+#: src/MainWindow.vala:106
 msgid "Calculator"
 msgstr "Kalkulatōr"
 
-#: src/MainWindow.vala:111
+#: src/MainWindow.vala:119
 msgid "Calculate Result"
 msgstr "Porachuj wynik"
 
-#: src/MainWindow.vala:115
+#: src/MainWindow.vala:123
 msgid "Add last result"
 msgstr "Przidej ôstatni wynik"
 
-#: src/MainWindow.vala:118
+#: src/MainWindow.vala:126
 msgid "Backspace"
 msgstr "Backspace"
 
-#: src/MainWindow.vala:124
+#: src/MainWindow.vala:132
 msgid "Clear entry"
 msgstr "Wysnoż wpis"
 
-#: src/MainWindow.vala:128
+#: src/MainWindow.vala:136
 msgid "Add"
 msgstr "Przidej"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:140
 msgid "Subtract"
 msgstr "Ôdyjmij"
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:144
 msgid "Multiply"
 msgstr "Pōmnōż"
 
-#: src/MainWindow.vala:140
+#: src/MainWindow.vala:148
 msgid "Divide"
 msgstr "Podziel"
 
-#: src/MainWindow.vala:146
+#: src/MainWindow.vala:154
 msgid "Percentage"
 msgstr "Procynt"
 
-#: src/MainWindow.vala:191
+#: src/MainWindow.vala:199
+msgid "Set memory value"
+msgstr ""
+
+#: src/MainWindow.vala:200
+msgid "Recall value from memory"
+msgstr ""
+
+#: src/MainWindow.vala:202
+msgid "Add to stored value"
+msgstr ""
+
+#: src/MainWindow.vala:203
+msgid "Subtract from stored value"
+msgstr ""
+
+#: src/MainWindow.vala:204
+#, fuzzy
+#| msgid "Clear entry"
+msgid "Clear memory"
+msgstr "Wysnoż wpis"
+
+#: src/MainWindow.vala:206
+msgid "Grand Total"
+msgstr ""
+
+#: src/MainWindow.vala:208
 msgid "Start Group"
 msgstr "Poczōntkowo grupa"
 
-#: src/MainWindow.vala:192
+#: src/MainWindow.vala:209
 msgid "End Group"
 msgstr "Kōńcowo grupa"
 
-#: src/MainWindow.vala:193
+#: src/MainWindow.vala:210
 msgid "Exponent"
 msgstr "Wykłodnik"
 
-#: src/MainWindow.vala:195
+#: src/MainWindow.vala:212
 msgid "Root"
 msgstr "Pierwiastek"
 
-#: src/MainWindow.vala:196
+#: src/MainWindow.vala:213
 msgid "Sine"
 msgstr "Sinus"
 
-#: src/MainWindow.vala:197
+#: src/MainWindow.vala:214
 msgid "Hyperbolic Sine"
 msgstr "Sinus hiperboliczny"
 
-#: src/MainWindow.vala:198
+#: src/MainWindow.vala:215
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: src/MainWindow.vala:199
+#: src/MainWindow.vala:216
 msgid "Hyperbolic Cosine"
 msgstr "Cosinus hiperboliczny"
 
-#: src/MainWindow.vala:200
+#: src/MainWindow.vala:217
 msgid "Tangent"
 msgstr "Tangyns"
 
-#: src/MainWindow.vala:201
+#: src/MainWindow.vala:218
 msgid "Hyperbolic Tangent"
 msgstr "Tangyns hiperboliczny"
 
-#: src/MainWindow.vala:202
+#: src/MainWindow.vala:219
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:220
 msgid "Euler's Number"
 msgstr "Liczba Eulera"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:221
 msgid "Logarithm Base 10"
 msgstr ""
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:223
 msgid "Natural Logarithm"
 msgstr ""
 
-#: src/MainWindow.vala:207
+#: src/MainWindow.vala:224
 msgid "Inverse Sine"
 msgstr ""
 
-#: src/MainWindow.vala:209
+#: src/MainWindow.vala:226
 #, fuzzy
 #| msgid "Cosine"
 msgid "Inverse Cosine"
 msgstr "Cosinus"
 
-#: src/MainWindow.vala:211
+#: src/MainWindow.vala:228
 #, fuzzy
 #| msgid "Tangent"
 msgid "Inverse Tangent"
 msgstr "Tangyns"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:230
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:462
+#: src/MainWindow.vala:601
 msgid "Hide extended functionality"
 msgstr "Skryj rozszyrzōne funkcyje"
 

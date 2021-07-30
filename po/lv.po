@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-20 23:42+0000\n"
+"POT-Creation-Date: 2021-07-30 13:15+0000\n"
 "PO-Revision-Date: 2016-05-27 15:29+0000\n"
 "Last-Translator: Maxwell Barvian <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,127 +13,153 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:467
+#: src/MainWindow.vala:94 src/MainWindow.vala:606
 msgid "Show extended functionality"
 msgstr "Rādīt papildus funkcionalitāti"
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
+#: src/MainWindow.vala:99 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "Vēsture"
 
-#: src/MainWindow.vala:98
+#: src/MainWindow.vala:106
 msgid "Calculator"
 msgstr "Kalkulators"
 
-#: src/MainWindow.vala:111
+#: src/MainWindow.vala:119
 msgid "Calculate Result"
 msgstr ""
 
-#: src/MainWindow.vala:115
+#: src/MainWindow.vala:123
 msgid "Add last result"
 msgstr "Pievienot iepriekšējo rezūltātu"
 
-#: src/MainWindow.vala:118
+#: src/MainWindow.vala:126
 msgid "Backspace"
 msgstr "Dzēst iepriekšējo simbolu"
 
-#: src/MainWindow.vala:124
+#: src/MainWindow.vala:132
 msgid "Clear entry"
 msgstr "Dzēst ierakstu"
 
-#: src/MainWindow.vala:128
+#: src/MainWindow.vala:136
 msgid "Add"
 msgstr "Pievienot"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:140
 msgid "Subtract"
 msgstr ""
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:144
 msgid "Multiply"
 msgstr ""
 
-#: src/MainWindow.vala:140
+#: src/MainWindow.vala:148
 msgid "Divide"
 msgstr ""
 
-#: src/MainWindow.vala:146
+#: src/MainWindow.vala:154
 msgid "Percentage"
 msgstr "Procenti"
 
-#: src/MainWindow.vala:191
-msgid "Start Group"
-msgstr "Sākuma Grupa"
-
-#: src/MainWindow.vala:192
-msgid "End Group"
-msgstr "Beigu Grupa"
-
-#: src/MainWindow.vala:193
-msgid "Exponent"
-msgstr ""
-
-#: src/MainWindow.vala:195
-msgid "Root"
-msgstr "Sakne"
-
-#: src/MainWindow.vala:196
-msgid "Sine"
-msgstr ""
-
-#: src/MainWindow.vala:197
-msgid "Hyperbolic Sine"
-msgstr ""
-
-#: src/MainWindow.vala:198
-msgid "Cosine"
-msgstr ""
-
 #: src/MainWindow.vala:199
-msgid "Hyperbolic Cosine"
+msgid "Set memory value"
 msgstr ""
 
 #: src/MainWindow.vala:200
-msgid "Tangent"
-msgstr ""
-
-#: src/MainWindow.vala:201
-msgid "Hyperbolic Tangent"
+msgid "Recall value from memory"
 msgstr ""
 
 #: src/MainWindow.vala:202
-msgid "Pi"
+msgid "Add to stored value"
 msgstr ""
 
 #: src/MainWindow.vala:203
+msgid "Subtract from stored value"
+msgstr ""
+
+#: src/MainWindow.vala:204
+#, fuzzy
+#| msgid "Clear entry"
+msgid "Clear memory"
+msgstr "Dzēst ierakstu"
+
+#: src/MainWindow.vala:206
+msgid "Grand Total"
+msgstr ""
+
+#: src/MainWindow.vala:208
+msgid "Start Group"
+msgstr "Sākuma Grupa"
+
+#: src/MainWindow.vala:209
+msgid "End Group"
+msgstr "Beigu Grupa"
+
+#: src/MainWindow.vala:210
+msgid "Exponent"
+msgstr ""
+
+#: src/MainWindow.vala:212
+msgid "Root"
+msgstr "Sakne"
+
+#: src/MainWindow.vala:213
+msgid "Sine"
+msgstr ""
+
+#: src/MainWindow.vala:214
+msgid "Hyperbolic Sine"
+msgstr ""
+
+#: src/MainWindow.vala:215
+msgid "Cosine"
+msgstr ""
+
+#: src/MainWindow.vala:216
+msgid "Hyperbolic Cosine"
+msgstr ""
+
+#: src/MainWindow.vala:217
+msgid "Tangent"
+msgstr ""
+
+#: src/MainWindow.vala:218
+msgid "Hyperbolic Tangent"
+msgstr ""
+
+#: src/MainWindow.vala:219
+msgid "Pi"
+msgstr ""
+
+#: src/MainWindow.vala:220
 msgid "Euler's Number"
 msgstr "Eilera Skaitlis"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:221
 msgid "Logarithm Base 10"
 msgstr ""
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:223
 msgid "Natural Logarithm"
 msgstr ""
 
-#: src/MainWindow.vala:207
+#: src/MainWindow.vala:224
 msgid "Inverse Sine"
 msgstr ""
 
-#: src/MainWindow.vala:209
+#: src/MainWindow.vala:226
 msgid "Inverse Cosine"
 msgstr ""
 
-#: src/MainWindow.vala:211
+#: src/MainWindow.vala:228
 msgid "Inverse Tangent"
 msgstr ""
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:230
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:462
+#: src/MainWindow.vala:601
 msgid "Hide extended functionality"
 msgstr "Slēpt papildus funkcionalitāti"
 

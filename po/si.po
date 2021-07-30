@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-20 23:42+0000\n"
+"POT-Creation-Date: 2021-07-30 13:15+0000\n"
 "PO-Revision-Date: 2021-03-04 12:46+0000\n"
 "Last-Translator: HelaBasa <R45XvezA@pm.me>\n"
 "Language-Team: Sinhala <https://l10n.elementary.io/projects/calculator/"
@@ -15,127 +15,151 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:86 src/MainWindow.vala:467
+#: src/MainWindow.vala:94 src/MainWindow.vala:606
 msgid "Show extended functionality"
 msgstr ""
 
-#: src/MainWindow.vala:91 src/HistoryDialog.vala:39
+#: src/MainWindow.vala:99 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "ඉතිහාසය"
 
-#: src/MainWindow.vala:98
+#: src/MainWindow.vala:106
 msgid "Calculator"
 msgstr "ගණකය"
 
-#: src/MainWindow.vala:111
+#: src/MainWindow.vala:119
 msgid "Calculate Result"
 msgstr ""
 
-#: src/MainWindow.vala:115
+#: src/MainWindow.vala:123
 msgid "Add last result"
 msgstr "අවසන් ප්‍රතිඵලය එකතු කරන්න"
 
-#: src/MainWindow.vala:118
+#: src/MainWindow.vala:126
 msgid "Backspace"
 msgstr ""
 
-#: src/MainWindow.vala:124
+#: src/MainWindow.vala:132
 msgid "Clear entry"
 msgstr ""
 
-#: src/MainWindow.vala:128
+#: src/MainWindow.vala:136
 msgid "Add"
 msgstr "එකතු කරන්න"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:140
 msgid "Subtract"
 msgstr "අඩුකරන්න"
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:144
 msgid "Multiply"
 msgstr "ගුණ කරන්න"
 
-#: src/MainWindow.vala:140
+#: src/MainWindow.vala:148
 msgid "Divide"
 msgstr "බෙදන්න"
 
-#: src/MainWindow.vala:146
+#: src/MainWindow.vala:154
 msgid "Percentage"
 msgstr "ප්‍රතිශතය"
 
-#: src/MainWindow.vala:191
-msgid "Start Group"
-msgstr ""
-
-#: src/MainWindow.vala:192
-msgid "End Group"
-msgstr ""
-
-#: src/MainWindow.vala:193
-msgid "Exponent"
-msgstr ""
-
-#: src/MainWindow.vala:195
-msgid "Root"
-msgstr "මූලය"
-
-#: src/MainWindow.vala:196
-msgid "Sine"
-msgstr "සයින"
-
-#: src/MainWindow.vala:197
-msgid "Hyperbolic Sine"
-msgstr ""
-
-#: src/MainWindow.vala:198
-msgid "Cosine"
-msgstr "කෝසයින"
-
 #: src/MainWindow.vala:199
-msgid "Hyperbolic Cosine"
+msgid "Set memory value"
 msgstr ""
 
 #: src/MainWindow.vala:200
-msgid "Tangent"
-msgstr "ටැන්ජන"
-
-#: src/MainWindow.vala:201
-msgid "Hyperbolic Tangent"
+msgid "Recall value from memory"
 msgstr ""
 
 #: src/MainWindow.vala:202
-msgid "Pi"
-msgstr "පයි"
+msgid "Add to stored value"
+msgstr ""
 
 #: src/MainWindow.vala:203
-msgid "Euler's Number"
+msgid "Subtract from stored value"
 msgstr ""
 
 #: src/MainWindow.vala:204
-msgid "Logarithm Base 10"
+msgid "Clear memory"
 msgstr ""
 
 #: src/MainWindow.vala:206
-msgid "Natural Logarithm"
+msgid "Grand Total"
 msgstr ""
 
-#: src/MainWindow.vala:207
-msgid "Inverse Sine"
+#: src/MainWindow.vala:208
+msgid "Start Group"
 msgstr ""
 
 #: src/MainWindow.vala:209
+msgid "End Group"
+msgstr ""
+
+#: src/MainWindow.vala:210
+msgid "Exponent"
+msgstr ""
+
+#: src/MainWindow.vala:212
+msgid "Root"
+msgstr "මූලය"
+
+#: src/MainWindow.vala:213
+msgid "Sine"
+msgstr "සයින"
+
+#: src/MainWindow.vala:214
+msgid "Hyperbolic Sine"
+msgstr ""
+
+#: src/MainWindow.vala:215
+msgid "Cosine"
+msgstr "කෝසයින"
+
+#: src/MainWindow.vala:216
+msgid "Hyperbolic Cosine"
+msgstr ""
+
+#: src/MainWindow.vala:217
+msgid "Tangent"
+msgstr "ටැන්ජන"
+
+#: src/MainWindow.vala:218
+msgid "Hyperbolic Tangent"
+msgstr ""
+
+#: src/MainWindow.vala:219
+msgid "Pi"
+msgstr "පයි"
+
+#: src/MainWindow.vala:220
+msgid "Euler's Number"
+msgstr ""
+
+#: src/MainWindow.vala:221
+msgid "Logarithm Base 10"
+msgstr ""
+
+#: src/MainWindow.vala:223
+msgid "Natural Logarithm"
+msgstr ""
+
+#: src/MainWindow.vala:224
+msgid "Inverse Sine"
+msgstr ""
+
+#: src/MainWindow.vala:226
 msgid "Inverse Cosine"
 msgstr ""
 
-#: src/MainWindow.vala:211
+#: src/MainWindow.vala:228
 msgid "Inverse Tangent"
 msgstr ""
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:230
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:462
+#: src/MainWindow.vala:601
 msgid "Hide extended functionality"
 msgstr ""
 
