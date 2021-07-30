@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-30 13:15+0000\n"
-"PO-Revision-Date: 2021-07-06 20:27+0000\n"
+"PO-Revision-Date: 2021-07-30 17:07+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
 "calculator/uk/>\n"
@@ -66,29 +66,27 @@ msgstr "Відсоток"
 
 #: src/MainWindow.vala:199
 msgid "Set memory value"
-msgstr ""
+msgstr "Запам'ятати значення"
 
 #: src/MainWindow.vala:200
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Викликати значення з пам'яті"
 
 #: src/MainWindow.vala:202
 msgid "Add to stored value"
-msgstr ""
+msgstr "Додати збережене значення"
 
 #: src/MainWindow.vala:203
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Відняти від збереженого значення"
 
 #: src/MainWindow.vala:204
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "Очистити запис"
+msgstr "Очистити пам'ять"
 
 #: src/MainWindow.vala:206
 msgid "Grand Total"
-msgstr ""
+msgstr "Загальний результат"
 
 #: src/MainWindow.vala:208
 msgid "Start Group"
