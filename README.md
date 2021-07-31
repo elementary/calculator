@@ -7,7 +7,8 @@
 
 You'll need the following dependencies:
 
-* granite >= 0.5
+* libgranite-dev >= 0.5
+* libhandy-1-dev >= 0.91.0
 * meson >= 0.43.0
 * valac
 
