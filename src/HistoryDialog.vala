@@ -119,6 +119,7 @@ namespace PantheonCalculator {
 
         private void on_response (Gtk.Dialog source, int response_id) {
             if (response_id == Gtk.ResponseType.ACCEPT) {
+                list_store.clear ();
                 clear_history ();
             }
 
