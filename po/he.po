@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-30 13:15+0000\n"
-"PO-Revision-Date: 2021-04-20 06:45+0000\n"
+"PO-Revision-Date: 2021-07-31 13:53+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/calculator/"
 "calculator/he/>\n"
@@ -65,29 +65,27 @@ msgstr "אחוזים"
 
 #: src/MainWindow.vala:199
 msgid "Set memory value"
-msgstr ""
+msgstr "הגדרת ערך זיכרון"
 
 #: src/MainWindow.vala:200
 msgid "Recall value from memory"
-msgstr ""
+msgstr "שחזור ערך מזיכרון"
 
 #: src/MainWindow.vala:202
 msgid "Add to stored value"
-msgstr ""
+msgstr "הוספה לערך מאוחסן"
 
 #: src/MainWindow.vala:203
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "חיסור מערך מאוחסן"
 
 #: src/MainWindow.vala:204
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "ניקוי רשומה"
+msgstr "ניקוי זיכרון"
 
 #: src/MainWindow.vala:206
 msgid "Grand Total"
-msgstr ""
+msgstr "סך כולל"
 
 #: src/MainWindow.vala:208
 msgid "Start Group"
