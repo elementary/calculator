@@ -105,8 +105,7 @@ namespace PantheonCalculator {
             var headerbar = new Hdy.HeaderBar () {
                 has_subtitle = false,
                 show_close_button = true,
-                title = _("Calculator"),
-                
+                title = _("Calculator")
             };
             headerbar.pack_end (button_extended);
             headerbar.pack_end (button_history);
