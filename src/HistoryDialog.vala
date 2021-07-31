@@ -21,6 +21,7 @@
 namespace PantheonCalculator {
     public class HistoryDialog : Granite.Dialog {
         public unowned List<MainWindow.History?> history { get; construct; }
+        public signal void clear_history ();
 
         private Gtk.TreeView view;
         private Gtk.ListStore list_store;
@@ -97,6 +98,9 @@ namespace PantheonCalculator {
 
             get_content_area ().add (main_grid);
 
+            var button_clear = add_button (_("Clear History"), Gtk.ResponseType.ACCEPT);
+            button_clear.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+
             add_button (_("Close"), Gtk.ResponseType.CLOSE);
 
             var button_add = add_button (_("Insert"), Gtk.ResponseType.OK);
@@ -114,6 +118,10 @@ namespace PantheonCalculator {
         }
 
         private void on_response (Gtk.Dialog source, int response_id) {
+            if (response_id == Gtk.ResponseType.ACCEPT) {
+                clear_history ();
+            }
+
             if (response_id == Gtk.ResponseType.OK) {
                 var selection = view.get_selection ();
                 Gtk.TreeIter iter;
@@ -129,6 +137,7 @@ namespace PantheonCalculator {
                     added (val.get_string ());
                 }
             }
+
             hide ();
             destroy ();
         }

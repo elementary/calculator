@@ -613,12 +613,21 @@ namespace PantheonCalculator {
 
         private void show_history (Gtk.Button button) {
             position = entry.get_position ();
-            button_history.sensitive = false;
 
             history_dialog = new HistoryDialog (history);
             history_dialog.set_transient_for (this);
             history_dialog.added.connect (history_added);
-            history_dialog.hide.connect (() => button_history.set_sensitive (true));
+            history_dialog.clear_history.connect (() => {
+                history.foreach ((entry) => {
+                    history.remove_link (history.find (entry));
+                });
+                button_ans.sensitive = false;
+            });
+            history_dialog.hide.connect (() => {
+                unowned List<History?> last_entry = history.last ();
+
+                button_history.sensitive = last_entry != null;
+            });
         }
 
         private void update_history_dialog (History entry) {
