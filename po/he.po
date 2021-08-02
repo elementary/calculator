@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-30 13:15+0000\n"
+"POT-Creation-Date: 2021-08-02 16:07+0000\n"
 "PO-Revision-Date: 2021-07-31 13:53+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/calculator/"
@@ -15,151 +15,153 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:94 src/MainWindow.vala:606
+#: src/MainWindow.vala:94 src/MainWindow.vala:613
 msgid "Show extended functionality"
 msgstr "הצגת תפקוד מורחב"
 
-#: src/MainWindow.vala:99 src/HistoryDialog.vala:39
+#: src/MainWindow.vala:100 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "היסטוריה"
 
-#: src/MainWindow.vala:106
+#: src/MainWindow.vala:108
 msgid "Calculator"
 msgstr "מחשבון"
 
-#: src/MainWindow.vala:119
+#: src/MainWindow.vala:121
 msgid "Calculate Result"
 msgstr "חישוב תוצאה"
 
-#: src/MainWindow.vala:123
-msgid "Add last result"
+#: src/MainWindow.vala:125
+#, fuzzy
+#| msgid "Add last result"
+msgid "Insert last result"
 msgstr "הוספת התוצאה האחרונה"
 
-#: src/MainWindow.vala:126
+#: src/MainWindow.vala:128
 msgid "Backspace"
 msgstr "Backspace"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:134
 msgid "Clear entry"
 msgstr "ניקוי רשומה"
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:138
 msgid "Add"
 msgstr "הוספה"
 
-#: src/MainWindow.vala:140
+#: src/MainWindow.vala:142
 msgid "Subtract"
 msgstr "חיסור"
 
-#: src/MainWindow.vala:144
+#: src/MainWindow.vala:146
 msgid "Multiply"
 msgstr "כפל"
 
-#: src/MainWindow.vala:148
+#: src/MainWindow.vala:150
 msgid "Divide"
 msgstr "חילוק"
 
-#: src/MainWindow.vala:154
+#: src/MainWindow.vala:156
 msgid "Percentage"
 msgstr "אחוזים"
 
-#: src/MainWindow.vala:199
+#: src/MainWindow.vala:202
 msgid "Set memory value"
 msgstr "הגדרת ערך זיכרון"
 
-#: src/MainWindow.vala:200
+#: src/MainWindow.vala:203
 msgid "Recall value from memory"
 msgstr "שחזור ערך מזיכרון"
 
-#: src/MainWindow.vala:202
+#: src/MainWindow.vala:205
 msgid "Add to stored value"
 msgstr "הוספה לערך מאוחסן"
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:206
 msgid "Subtract from stored value"
 msgstr "חיסור מערך מאוחסן"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:207
 msgid "Clear memory"
 msgstr "ניקוי זיכרון"
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:209
 msgid "Grand Total"
 msgstr "סך כולל"
 
-#: src/MainWindow.vala:208
+#: src/MainWindow.vala:211
 msgid "Start Group"
 msgstr "קבוצת התחלה"
 
-#: src/MainWindow.vala:209
+#: src/MainWindow.vala:212
 msgid "End Group"
 msgstr "קבוצת סיום"
 
-#: src/MainWindow.vala:210
+#: src/MainWindow.vala:213
 msgid "Exponent"
 msgstr "מעריך"
 
-#: src/MainWindow.vala:212
+#: src/MainWindow.vala:215
 msgid "Root"
 msgstr "שורש"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:216
 msgid "Sine"
 msgstr "סינוס"
 
-#: src/MainWindow.vala:214
+#: src/MainWindow.vala:217
 msgid "Hyperbolic Sine"
 msgstr "סינוס היפרבולי"
 
-#: src/MainWindow.vala:215
+#: src/MainWindow.vala:218
 msgid "Cosine"
 msgstr "קוסינוס"
 
-#: src/MainWindow.vala:216
+#: src/MainWindow.vala:219
 msgid "Hyperbolic Cosine"
 msgstr "קוסינוס היפרבולי"
 
-#: src/MainWindow.vala:217
+#: src/MainWindow.vala:220
 msgid "Tangent"
 msgstr "טנגנס"
 
-#: src/MainWindow.vala:218
+#: src/MainWindow.vala:221
 msgid "Hyperbolic Tangent"
 msgstr "טנגנס היפרבולי"
 
-#: src/MainWindow.vala:219
+#: src/MainWindow.vala:222
 msgid "Pi"
 msgstr "פאי"
 
-#: src/MainWindow.vala:220
+#: src/MainWindow.vala:223
 msgid "Euler's Number"
 msgstr "קבוע אוילר"
 
-#: src/MainWindow.vala:221
+#: src/MainWindow.vala:224
 msgid "Logarithm Base 10"
 msgstr "לוגריתם בבסיס 10"
 
-#: src/MainWindow.vala:223
+#: src/MainWindow.vala:226
 msgid "Natural Logarithm"
 msgstr "לוגריתם טבעי"
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:227
 msgid "Inverse Sine"
 msgstr "סינוס הפוך"
 
-#: src/MainWindow.vala:226
+#: src/MainWindow.vala:229
 msgid "Inverse Cosine"
 msgstr "קוסינוס הפוך"
 
-#: src/MainWindow.vala:228
+#: src/MainWindow.vala:231
 msgid "Inverse Tangent"
 msgstr "טנגנס הפוך"
 
-#: src/MainWindow.vala:230
+#: src/MainWindow.vala:233
 msgid "Reciprocal"
 msgstr "הופכי"
 
-#: src/MainWindow.vala:601
+#: src/MainWindow.vala:608
 msgid "Hide extended functionality"
 msgstr "הסתרת תפקוד מורחב"
 
