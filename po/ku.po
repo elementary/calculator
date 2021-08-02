@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-30 13:15+0000\n"
+"POT-Creation-Date: 2021-08-02 16:07+0000\n"
 "PO-Revision-Date: 2017-01-28 15:24+0000\n"
 "Last-Translator: Rokar <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,153 +13,155 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-01-29 04:52+0000\n"
 "X-Generator: Launchpad (build 18315)\n"
 
-#: src/MainWindow.vala:94 src/MainWindow.vala:606
+#: src/MainWindow.vala:94 src/MainWindow.vala:613
 msgid "Show extended functionality"
 msgstr "Taybete pêşketî şanîbıde"
 
-#: src/MainWindow.vala:99 src/HistoryDialog.vala:39
+#: src/MainWindow.vala:100 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "Dîrok"
 
-#: src/MainWindow.vala:106
+#: src/MainWindow.vala:108
 msgid "Calculator"
 msgstr "Makîneya Hesaban"
 
-#: src/MainWindow.vala:119
+#: src/MainWindow.vala:121
 msgid "Calculate Result"
 msgstr "encame hesabê"
 
-#: src/MainWindow.vala:123
-msgid "Add last result"
+#: src/MainWindow.vala:125
+#, fuzzy
+#| msgid "Add last result"
+msgid "Insert last result"
 msgstr "te pê xistine encame"
 
-#: src/MainWindow.vala:126
+#: src/MainWindow.vala:128
 msgid "Backspace"
 msgstr "Bi Paşve"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:134
 msgid "Clear entry"
 msgstr "têxistin pûç kirin"
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:138
 msgid "Add"
 msgstr "Zêde bike"
 
-#: src/MainWindow.vala:140
+#: src/MainWindow.vala:142
 msgid "Subtract"
 msgstr "Derxistin"
 
-#: src/MainWindow.vala:144
+#: src/MainWindow.vala:146
 msgid "Multiply"
 msgstr "piralî"
 
-#: src/MainWindow.vala:148
+#: src/MainWindow.vala:150
 msgid "Divide"
 msgstr "Perçekirin"
 
-#: src/MainWindow.vala:154
+#: src/MainWindow.vala:156
 msgid "Percentage"
 msgstr "Rêje"
 
-#: src/MainWindow.vala:199
+#: src/MainWindow.vala:202
 msgid "Set memory value"
 msgstr ""
 
-#: src/MainWindow.vala:200
+#: src/MainWindow.vala:203
 msgid "Recall value from memory"
 msgstr ""
 
-#: src/MainWindow.vala:202
+#: src/MainWindow.vala:205
 msgid "Add to stored value"
 msgstr ""
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:206
 msgid "Subtract from stored value"
 msgstr ""
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:207
 #, fuzzy
 #| msgid "Clear entry"
 msgid "Clear memory"
 msgstr "têxistin pûç kirin"
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:209
 msgid "Grand Total"
 msgstr ""
 
-#: src/MainWindow.vala:208
+#: src/MainWindow.vala:211
 msgid "Start Group"
 msgstr "koma destpêk"
 
-#: src/MainWindow.vala:209
+#: src/MainWindow.vala:212
 msgid "End Group"
 msgstr "koma xilasî"
 
-#: src/MainWindow.vala:210
+#: src/MainWindow.vala:213
 msgid "Exponent"
 msgstr ""
 
-#: src/MainWindow.vala:212
+#: src/MainWindow.vala:215
 msgid "Root"
 msgstr "Root"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:216
 msgid "Sine"
 msgstr ""
 
-#: src/MainWindow.vala:214
+#: src/MainWindow.vala:217
 msgid "Hyperbolic Sine"
 msgstr ""
 
-#: src/MainWindow.vala:215
+#: src/MainWindow.vala:218
 msgid "Cosine"
 msgstr ""
 
-#: src/MainWindow.vala:216
+#: src/MainWindow.vala:219
 msgid "Hyperbolic Cosine"
 msgstr ""
 
-#: src/MainWindow.vala:217
+#: src/MainWindow.vala:220
 msgid "Tangent"
 msgstr ""
 
-#: src/MainWindow.vala:218
+#: src/MainWindow.vala:221
 msgid "Hyperbolic Tangent"
 msgstr ""
 
-#: src/MainWindow.vala:219
+#: src/MainWindow.vala:222
 msgid "Pi"
 msgstr ""
 
-#: src/MainWindow.vala:220
+#: src/MainWindow.vala:223
 msgid "Euler's Number"
 msgstr ""
 
-#: src/MainWindow.vala:221
+#: src/MainWindow.vala:224
 msgid "Logarithm Base 10"
 msgstr ""
 
-#: src/MainWindow.vala:223
+#: src/MainWindow.vala:226
 msgid "Natural Logarithm"
 msgstr ""
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:227
 msgid "Inverse Sine"
 msgstr ""
 
-#: src/MainWindow.vala:226
+#: src/MainWindow.vala:229
 msgid "Inverse Cosine"
 msgstr ""
 
-#: src/MainWindow.vala:228
+#: src/MainWindow.vala:231
 msgid "Inverse Tangent"
 msgstr ""
 
-#: src/MainWindow.vala:230
+#: src/MainWindow.vala:233
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:601
+#: src/MainWindow.vala:608
 msgid "Hide extended functionality"
 msgstr ""
 

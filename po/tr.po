@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-30 13:15+0000\n"
+"POT-Creation-Date: 2021-08-02 16:07+0000\n"
 "PO-Revision-Date: 2021-07-30 15:15+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/calculator/"
@@ -15,151 +15,153 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:94 src/MainWindow.vala:606
+#: src/MainWindow.vala:94 src/MainWindow.vala:613
 msgid "Show extended functionality"
 msgstr "Gelişmiş özellikleri göster"
 
-#: src/MainWindow.vala:99 src/HistoryDialog.vala:39
+#: src/MainWindow.vala:100 src/HistoryDialog.vala:39
 msgid "History"
 msgstr "Geçmiş"
 
-#: src/MainWindow.vala:106
+#: src/MainWindow.vala:108
 msgid "Calculator"
 msgstr "Hesap Makinesi"
 
-#: src/MainWindow.vala:119
+#: src/MainWindow.vala:121
 msgid "Calculate Result"
 msgstr "Sonucu Hesapla"
 
-#: src/MainWindow.vala:123
-msgid "Add last result"
+#: src/MainWindow.vala:125
+#, fuzzy
+#| msgid "Add last result"
+msgid "Insert last result"
 msgstr "Son sonucu ekle"
 
-#: src/MainWindow.vala:126
+#: src/MainWindow.vala:128
 msgid "Backspace"
 msgstr "Geri Al"
 
-#: src/MainWindow.vala:132
+#: src/MainWindow.vala:134
 msgid "Clear entry"
 msgstr "Girdiyi sil"
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:138
 msgid "Add"
 msgstr "Ekle"
 
-#: src/MainWindow.vala:140
+#: src/MainWindow.vala:142
 msgid "Subtract"
 msgstr "Çıkart"
 
-#: src/MainWindow.vala:144
+#: src/MainWindow.vala:146
 msgid "Multiply"
 msgstr "Çarp"
 
-#: src/MainWindow.vala:148
+#: src/MainWindow.vala:150
 msgid "Divide"
 msgstr "Böl"
 
-#: src/MainWindow.vala:154
+#: src/MainWindow.vala:156
 msgid "Percentage"
 msgstr "Yüzde"
 
-#: src/MainWindow.vala:199
+#: src/MainWindow.vala:202
 msgid "Set memory value"
 msgstr "Hafıza değerini ayarla"
 
-#: src/MainWindow.vala:200
+#: src/MainWindow.vala:203
 msgid "Recall value from memory"
 msgstr "Değeri hafızadan geri çağır"
 
-#: src/MainWindow.vala:202
+#: src/MainWindow.vala:205
 msgid "Add to stored value"
 msgstr "Depolanan değere ekle"
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:206
 msgid "Subtract from stored value"
 msgstr "Depolanan değerden çıkar"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:207
 msgid "Clear memory"
 msgstr "Hafızayı temizle"
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:209
 msgid "Grand Total"
 msgstr "Genel Toplam"
 
-#: src/MainWindow.vala:208
+#: src/MainWindow.vala:211
 msgid "Start Group"
 msgstr "Grubu Başlat"
 
-#: src/MainWindow.vala:209
+#: src/MainWindow.vala:212
 msgid "End Group"
 msgstr "Grubu Bitir"
 
-#: src/MainWindow.vala:210
+#: src/MainWindow.vala:213
 msgid "Exponent"
 msgstr "Üst"
 
-#: src/MainWindow.vala:212
+#: src/MainWindow.vala:215
 msgid "Root"
 msgstr "Kök"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:216
 msgid "Sine"
 msgstr "Sinüs"
 
-#: src/MainWindow.vala:214
+#: src/MainWindow.vala:217
 msgid "Hyperbolic Sine"
 msgstr "Hiperbolik Sinüs"
 
-#: src/MainWindow.vala:215
+#: src/MainWindow.vala:218
 msgid "Cosine"
 msgstr "Kosinüs"
 
-#: src/MainWindow.vala:216
+#: src/MainWindow.vala:219
 msgid "Hyperbolic Cosine"
 msgstr "Hiperbolik Kosinüs"
 
-#: src/MainWindow.vala:217
+#: src/MainWindow.vala:220
 msgid "Tangent"
 msgstr "Tanjant"
 
-#: src/MainWindow.vala:218
+#: src/MainWindow.vala:221
 msgid "Hyperbolic Tangent"
 msgstr "Hiperbolik Tanjant"
 
-#: src/MainWindow.vala:219
+#: src/MainWindow.vala:222
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:220
+#: src/MainWindow.vala:223
 msgid "Euler's Number"
 msgstr "Euler Sayısı"
 
-#: src/MainWindow.vala:221
+#: src/MainWindow.vala:224
 msgid "Logarithm Base 10"
 msgstr "10 Tabanlı Logaritma"
 
-#: src/MainWindow.vala:223
+#: src/MainWindow.vala:226
 msgid "Natural Logarithm"
 msgstr "Doğal Logaritma"
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:227
 msgid "Inverse Sine"
 msgstr "Ters Sinüs"
 
-#: src/MainWindow.vala:226
+#: src/MainWindow.vala:229
 msgid "Inverse Cosine"
 msgstr "Ters Kosinüs"
 
-#: src/MainWindow.vala:228
+#: src/MainWindow.vala:231
 msgid "Inverse Tangent"
 msgstr "Ters Tanjant"
 
-#: src/MainWindow.vala:230
+#: src/MainWindow.vala:233
 msgid "Reciprocal"
 msgstr "Ters Değer"
 
-#: src/MainWindow.vala:601
+#: src/MainWindow.vala:608
 msgid "Hide extended functionality"
 msgstr "Gelişmiş özellikleri gizle"
 
