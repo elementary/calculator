@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-30 13:15+0000\n"
-"PO-Revision-Date: 2021-04-20 10:39+0000\n"
+"PO-Revision-Date: 2021-08-02 15:28+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/calculator/"
 "calculator/pt/>\n"
@@ -65,29 +65,27 @@ msgstr "Percentagem"
 
 #: src/MainWindow.vala:199
 msgid "Set memory value"
-msgstr ""
+msgstr "Definir valor de memória"
 
 #: src/MainWindow.vala:200
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Recordar valor da memória"
 
 #: src/MainWindow.vala:202
 msgid "Add to stored value"
-msgstr ""
+msgstr "Adicionar ao valor armazenado"
 
 #: src/MainWindow.vala:203
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Subtrair do valor armazenado"
 
 #: src/MainWindow.vala:204
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "Limpar entrada"
+msgstr "Limpar memória"
 
 #: src/MainWindow.vala:206
 msgid "Grand Total"
-msgstr ""
+msgstr "Total geral"
 
 #: src/MainWindow.vala:208
 msgid "Start Group"
