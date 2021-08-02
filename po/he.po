@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-02 16:07+0000\n"
-"PO-Revision-Date: 2021-07-31 13:53+0000\n"
+"PO-Revision-Date: 2021-08-02 17:55+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/calculator/"
 "calculator/he/>\n"
@@ -32,10 +32,8 @@ msgid "Calculate Result"
 msgstr "חישוב תוצאה"
 
 #: src/MainWindow.vala:125
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
-msgstr "הוספת התוצאה האחרונה"
+msgstr "מילוי התוצאה האחרונה"
 
 #: src/MainWindow.vala:128
 msgid "Backspace"
