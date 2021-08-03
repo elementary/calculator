@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-02 16:07+0000\n"
-"PO-Revision-Date: 2021-07-30 21:43+0000\n"
+"PO-Revision-Date: 2021-08-03 00:22+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/calculator/"
 "calculator/de/>\n"
@@ -37,10 +37,8 @@ msgid "Calculate Result"
 msgstr "Ergebnis berechnen"
 
 #: src/MainWindow.vala:125
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
-msgstr "Letztes Ergebnis anfügen"
+msgstr "Letztes Ergebnis einfügen"
 
 #: src/MainWindow.vala:128
 msgid "Backspace"
