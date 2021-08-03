@@ -122,9 +122,7 @@ namespace PantheonCalculator {
             if (response_id == -1) {
                 list_store.clear ();
                 clear_history ();
-            }
-
-            if (response_id == 1) {
+            } else if (response_id == 1) {
                 var selection = view.get_selection ();
                 Gtk.TreeIter iter;
                 if (selection.get_selected (null, out iter)) {

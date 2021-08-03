@@ -626,14 +626,12 @@ namespace PantheonCalculator {
             history_dialog.added.connect (history_added);
             history_dialog.clear_history.connect (() => {
                 history.foreach ((entry) => {
-                    history.remove_link (history.find (entry));
+                    history.delete_link (history.find (entry));
                 });
                 button_ans.sensitive = false;
             });
             history_dialog.hide.connect (() => {
-                unowned List<History?> last_entry = history.last ();
-
-                button_history.sensitive = last_entry != null;
+                button_history.sensitive = history != null;
             });
         }
 
