@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-02 16:07+0000\n"
-"PO-Revision-Date: 2021-07-31 05:38+0000\n"
+"PO-Revision-Date: 2021-08-03 10:30+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
 "calculator/ja/>\n"
@@ -32,10 +32,8 @@ msgid "Calculate Result"
 msgstr "計算結果"
 
 #: src/MainWindow.vala:125
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
-msgstr "最後の結果を追加"
+msgstr "最後の結果を挿入"
 
 #: src/MainWindow.vala:128
 msgid "Backspace"
