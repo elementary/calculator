@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-02 16:07+0000\n"
-"PO-Revision-Date: 2021-05-09 21:06+0000\n"
+"PO-Revision-Date: 2021-08-04 09:39+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/calculator/"
 "calculator/fi/>\n"
@@ -32,8 +32,6 @@ msgid "Calculate Result"
 msgstr "Laske tulos"
 
 #: src/MainWindow.vala:125
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
 msgstr "Lisää viimeisin tulos"
 
@@ -67,29 +65,27 @@ msgstr "Prosenttiosuus"
 
 #: src/MainWindow.vala:202
 msgid "Set memory value"
-msgstr ""
+msgstr "Aseta muistiarvo"
 
 #: src/MainWindow.vala:203
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Palauta arvo muistista"
 
 #: src/MainWindow.vala:205
 msgid "Add to stored value"
-msgstr ""
+msgstr "Lisää talletettuun arvoon"
 
 #: src/MainWindow.vala:206
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Vähennä talletetusta arvosta"
 
 #: src/MainWindow.vala:207
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "Tyhjennä tietue"
+msgstr "Tyhjennä muisti"
 
 #: src/MainWindow.vala:209
 msgid "Grand Total"
-msgstr ""
+msgstr "Yhteensä"
 
 #: src/MainWindow.vala:211
 msgid "Start Group"
