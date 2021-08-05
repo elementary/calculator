@@ -98,13 +98,13 @@ namespace PantheonCalculator {
 
             get_content_area ().add (main_grid);
 
-            // Use progressive custom response code with 0 as the default close action
-            var button_clear = add_button (_("Clear History"), -1);
+            // Use a custom response code for "Clear History" action
+            var button_clear = add_button (_("Clear History"), 0);
             button_clear.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
-            add_button (_("Close"), 0);
+            add_button (_("Close"), Gtk.ResponseType.CLOSE);
 
-            var button_add = add_button (_("Insert"), 1);
+            var button_add = add_button (_("Insert"), Gtk.ResponseType.APPLY);
             button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
             show_all ();
@@ -119,10 +119,10 @@ namespace PantheonCalculator {
         }
 
         private void on_response (Gtk.Dialog source, int response_id) {
-            if (response_id == -1) {
+            if (response_id == 0) {
                 list_store.clear ();
                 clear_history ();
-            } else if (response_id == 1) {
+            } else if (response_id == Gtk.ResponseType.APPLY) {
                 var selection = view.get_selection ();
                 Gtk.TreeIter iter;
                 if (selection.get_selected (null, out iter)) {
