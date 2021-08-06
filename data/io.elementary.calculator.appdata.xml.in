@@ -12,6 +12,18 @@
   </description>
   <translation type="gettext">io.elementary.calculator</translation>
   <releases>
+    <release version="1.7.0" date="2021-08-6" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Add a "Clear History" button to the history dialog</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.6.2" date="2021-07-19" urgency="medium">
       <description>
         <p>Minor updates:</p>
