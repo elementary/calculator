@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 16:07+0000\n"
+"POT-Creation-Date: 2021-08-06 16:40+0000\n"
 "PO-Revision-Date: 2021-08-02 17:55+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/calculator/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Show extended functionality"
 msgstr "הצגת תפקוד מורחב"
 
-#: src/MainWindow.vala:100 src/HistoryDialog.vala:39
+#: src/MainWindow.vala:100 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "היסטוריה"
 
@@ -163,27 +163,34 @@ msgstr "הופכי"
 msgid "Hide extended functionality"
 msgstr "הסתרת תפקוד מורחב"
 
-#: src/HistoryDialog.vala:42
+#: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
 msgstr "הצבת ביטוי קודם או תוצאה בחישוב הנוכחי."
 
-#: src/HistoryDialog.vala:76
+#: src/HistoryDialog.vala:77
 msgid "Value to insert:"
 msgstr "ערך להצבה:"
 
-#: src/HistoryDialog.vala:81
+#: src/HistoryDialog.vala:82
 msgid "Result"
 msgstr "תוצאה"
 
-#: src/HistoryDialog.vala:83
+#: src/HistoryDialog.vala:84
 msgid "Expression"
 msgstr "ביטוי"
 
-#: src/HistoryDialog.vala:100
+#. Use a custom response code for "Clear History" action
+#: src/HistoryDialog.vala:102
+#, fuzzy
+#| msgid "Clear entry"
+msgid "Clear History"
+msgstr "ניקוי רשומה"
+
+#: src/HistoryDialog.vala:105
 msgid "Close"
 msgstr "סגירה"
 
-#: src/HistoryDialog.vala:102
+#: src/HistoryDialog.vala:107
 msgid "Insert"
 msgstr "הצבה"
 

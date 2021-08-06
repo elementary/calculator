@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 16:07+0000\n"
+"POT-Creation-Date: 2021-08-06 16:40+0000\n"
 "PO-Revision-Date: 2021-08-03 00:22+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/calculator/"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Show extended functionality"
 msgstr "Erweiterte Funktionen anzeigen"
 
-#: src/MainWindow.vala:100 src/HistoryDialog.vala:39
+#: src/MainWindow.vala:100 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "Chronik"
 
@@ -168,29 +168,36 @@ msgstr "Kehrwert"
 msgid "Hide extended functionality"
 msgstr "Erweiterte Funktionen ausblenden"
 
-#: src/HistoryDialog.vala:42
+#: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
 msgstr ""
 "Zuvor verwendeten Ausdruck oder errechnetes Ergebnis in die aktuelle "
 "Berechnung einfügen."
 
-#: src/HistoryDialog.vala:76
+#: src/HistoryDialog.vala:77
 msgid "Value to insert:"
 msgstr "Einzufügender Wert:"
 
-#: src/HistoryDialog.vala:81
+#: src/HistoryDialog.vala:82
 msgid "Result"
 msgstr "Ergebnis"
 
-#: src/HistoryDialog.vala:83
+#: src/HistoryDialog.vala:84
 msgid "Expression"
 msgstr "Ausdruck"
 
-#: src/HistoryDialog.vala:100
+#. Use a custom response code for "Clear History" action
+#: src/HistoryDialog.vala:102
+#, fuzzy
+#| msgid "Clear entry"
+msgid "Clear History"
+msgstr "Eingabe löschen"
+
+#: src/HistoryDialog.vala:105
 msgid "Close"
 msgstr "Schließen"
 
-#: src/HistoryDialog.vala:102
+#: src/HistoryDialog.vala:107
 msgid "Insert"
 msgstr "Einfügen"
 

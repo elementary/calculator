@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 16:07+0000\n"
+"POT-Creation-Date: 2021-08-06 16:40+0000\n"
 "PO-Revision-Date: 2021-08-03 10:30+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Show extended functionality"
 msgstr "追加機能を表示"
 
-#: src/MainWindow.vala:100 src/HistoryDialog.vala:39
+#: src/MainWindow.vala:100 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "履歴"
 
@@ -163,27 +163,34 @@ msgstr "逆数"
 msgid "Hide extended functionality"
 msgstr "追加機能を表示しない"
 
-#: src/HistoryDialog.vala:42
+#: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
 msgstr "以前使用した式や結果を現在の計算に挿入します。"
 
-#: src/HistoryDialog.vala:76
+#: src/HistoryDialog.vala:77
 msgid "Value to insert:"
 msgstr "挿入する値:"
 
-#: src/HistoryDialog.vala:81
+#: src/HistoryDialog.vala:82
 msgid "Result"
 msgstr "結果"
 
-#: src/HistoryDialog.vala:83
+#: src/HistoryDialog.vala:84
 msgid "Expression"
 msgstr "式"
 
-#: src/HistoryDialog.vala:100
+#. Use a custom response code for "Clear History" action
+#: src/HistoryDialog.vala:102
+#, fuzzy
+#| msgid "Clear entry"
+msgid "Clear History"
+msgstr "エントリーを消去"
+
+#: src/HistoryDialog.vala:105
 msgid "Close"
 msgstr "閉じる"
 
-#: src/HistoryDialog.vala:102
+#: src/HistoryDialog.vala:107
 msgid "Insert"
 msgstr "挿入"
 

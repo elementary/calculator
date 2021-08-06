@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 16:07+0000\n"
+"POT-Creation-Date: 2021-08-06 16:40+0000\n"
 "PO-Revision-Date: 2018-09-24 00:04+0000\n"
 "Last-Translator: Axel Philip Advento <badwolf.bloodseeker.rev@gmail.com>\n"
 "Language-Team: Tagalog <https://weblate.elementary.io/projects/calculator/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Show extended functionality"
 msgstr "Ipakita ang mga pinalawak na kakayahan"
 
-#: src/MainWindow.vala:100 src/HistoryDialog.vala:39
+#: src/MainWindow.vala:100 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "Kasaysayan"
 
@@ -171,29 +171,36 @@ msgstr ""
 msgid "Hide extended functionality"
 msgstr "Itago ang mga pinalawak na kakayahan"
 
-#: src/HistoryDialog.vala:42
+#: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
 msgstr ""
 
-#: src/HistoryDialog.vala:76
+#: src/HistoryDialog.vala:77
 #, fuzzy
 #| msgid "Value to add:"
 msgid "Value to insert:"
 msgstr "Halaga na idadagdag:"
 
-#: src/HistoryDialog.vala:81
+#: src/HistoryDialog.vala:82
 msgid "Result"
 msgstr "Resulta"
 
-#: src/HistoryDialog.vala:83
+#: src/HistoryDialog.vala:84
 msgid "Expression"
 msgstr "Ekspresyon"
 
-#: src/HistoryDialog.vala:100
+#. Use a custom response code for "Clear History" action
+#: src/HistoryDialog.vala:102
+#, fuzzy
+#| msgid "Clear entry"
+msgid "Clear History"
+msgstr "Burahin ang laman"
+
+#: src/HistoryDialog.vala:105
 msgid "Close"
 msgstr "Isara"
 
-#: src/HistoryDialog.vala:102
+#: src/HistoryDialog.vala:107
 msgid "Insert"
 msgstr ""
 

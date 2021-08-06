@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-02 16:07+0000\n"
+"POT-Creation-Date: 2021-08-06 16:40+0000\n"
 "PO-Revision-Date: 2020-12-23 20:16+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/calculator/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Show extended functionality"
 msgstr "Tampilkan fungsi lainnya"
 
-#: src/MainWindow.vala:100 src/HistoryDialog.vala:39
+#: src/MainWindow.vala:100 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "Riwayat"
 
@@ -167,29 +167,36 @@ msgstr "Timbalik-balik"
 msgid "Hide extended functionality"
 msgstr "Sembunyikan fungsi lainnya"
 
-#: src/HistoryDialog.vala:42
+#: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
 msgstr ""
 
-#: src/HistoryDialog.vala:76
+#: src/HistoryDialog.vala:77
 #, fuzzy
 #| msgid "Value to add:"
 msgid "Value to insert:"
 msgstr "Nilai yang akan ditambah:"
 
-#: src/HistoryDialog.vala:81
+#: src/HistoryDialog.vala:82
 msgid "Result"
 msgstr "Hasil"
 
-#: src/HistoryDialog.vala:83
+#: src/HistoryDialog.vala:84
 msgid "Expression"
 msgstr "Lambang"
 
-#: src/HistoryDialog.vala:100
+#. Use a custom response code for "Clear History" action
+#: src/HistoryDialog.vala:102
+#, fuzzy
+#| msgid "Clear entry"
+msgid "Clear History"
+msgstr "Bersihkan isian"
+
+#: src/HistoryDialog.vala:105
 msgid "Close"
 msgstr "Tutup"
 
-#: src/HistoryDialog.vala:102
+#: src/HistoryDialog.vala:107
 msgid "Insert"
 msgstr ""
 
