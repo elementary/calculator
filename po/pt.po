@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 16:40+0000\n"
-"PO-Revision-Date: 2021-08-02 15:28+0000\n"
+"PO-Revision-Date: 2021-08-08 15:40+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/calculator/"
 "calculator/pt/>\n"
@@ -32,10 +32,8 @@ msgid "Calculate Result"
 msgstr "Calcular o resultado"
 
 #: src/MainWindow.vala:125
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
-msgstr "Adicionar o último resultado"
+msgstr "Inserir o último resultado"
 
 #: src/MainWindow.vala:128
 msgid "Backspace"
@@ -183,10 +181,8 @@ msgstr "Expressão"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "Limpar entrada"
+msgstr "Limpar histórico"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
