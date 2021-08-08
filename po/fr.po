@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 16:40+0000\n"
-"PO-Revision-Date: 2021-08-03 17:02+0000\n"
+"PO-Revision-Date: 2021-08-08 13:34+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/calculator/"
 "calculator/fr/>\n"
@@ -182,10 +182,8 @@ msgstr "Expression"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "Effacer l'entrée"
+msgstr "Effacer l'historique"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
