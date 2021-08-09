@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 16:40+0000\n"
-"PO-Revision-Date: 2021-08-06 21:15+0000\n"
+"PO-Revision-Date: 2021-08-09 15:52+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
 "extra/ja/>\n"
@@ -45,7 +45,7 @@ msgstr "新機能:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Add a \"Clear History\" button to the history dialog"
-msgstr "履歴ダイアログに \"履歴を消去\" ボタンを追加"
+msgstr "履歴ダイアログに\"履歴を消去\"ボタンを追加"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:29
