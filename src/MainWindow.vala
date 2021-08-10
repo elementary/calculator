@@ -364,7 +364,7 @@ namespace PantheonCalculator {
             button_reciprocal.clicked.connect (() => {button_reciprocal_clicked ();});
 
 
-            settings.bind ("extended-shown", button_extended, "active", GLib.SettingsBindFlags.DEFAULT);
+            button_extended.set_active (settings.get_boolean ("extended-shown"));
 
             // The window is constructed before adding to the application.
             // So for the first window, the application will have 0 windows
@@ -607,11 +607,13 @@ namespace PantheonCalculator {
                 button.image = extended_img_2;
                 button.tooltip_text = _("Hide extended functionality");
                 extended_revealer.set_reveal_child (true);
+                settings.set_boolean ("extended-shown", true);
             } else {
                 /* Hide extended functionality */
                 button.image = extended_img_1;
                 button.tooltip_text = _("Show extended functionality");
                 extended_revealer.set_reveal_child (false);
+                settings.set_boolean ("extended-shown", false);
             }
             /* Focusing button_calc because without a new focus it will cause weird window drawing problems. */
             entry.grab_focus ();
