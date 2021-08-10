@@ -363,7 +363,7 @@ namespace PantheonCalculator {
             button_e.clicked.connect (() => {regular_button_clicked (button_e.function);});
             button_reciprocal.clicked.connect (() => {button_reciprocal_clicked ();});
 
-            settings.bind ("extended-shown", button_extended, "active", GLib.SettingsBindFlags.DEFAULT | SettingsBindFlags.GET_NO_CHANGES);
+            settings.bind ("extended-shown", button_extended, "active", GLib.SettingsBindFlags.DEFAULT | GLib.SettingsBindFlags.GET_NO_CHANGES);
 
             // The window is constructed before adding to the application.
             // So for the first window, the application will have 0 windows
