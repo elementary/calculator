@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 16:40+0000\n"
-"PO-Revision-Date: 2021-05-15 03:58+0000\n"
+"PO-Revision-Date: 2021-08-10 10:58+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "calculator/extra/en_GB/>\n"
@@ -44,7 +44,7 @@ msgstr "New features:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Add a \"Clear History\" button to the history dialog"
-msgstr ""
+msgstr "Add a \"Clear History\" button to the history dialog"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:29
