@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 16:40+0000\n"
-"PO-Revision-Date: 2021-07-30 15:15+0000\n"
+"PO-Revision-Date: 2021-08-13 18:43+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/calculator/"
 "calculator/tr/>\n"
@@ -32,8 +32,6 @@ msgid "Calculate Result"
 msgstr "Sonucu Hesapla"
 
 #: src/MainWindow.vala:125
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
 msgstr "Son sonucu ekle"
 
@@ -183,10 +181,8 @@ msgstr "İfade"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "Girdiyi sil"
+msgstr "Geçmişi Temizle"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
