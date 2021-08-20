@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 16:40+0000\n"
-"PO-Revision-Date: 2021-08-18 18:38+0000\n"
+"PO-Revision-Date: 2021-08-20 13:01+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/calculator/"
 "calculator/sk/>\n"
@@ -65,29 +65,27 @@ msgstr "Percentá"
 
 #: src/MainWindow.vala:202
 msgid "Set memory value"
-msgstr ""
+msgstr "Nastaviť hodnotu pamäte"
 
 #: src/MainWindow.vala:203
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Vyvolať hodnotu z pamäte"
 
 #: src/MainWindow.vala:205
 msgid "Add to stored value"
-msgstr ""
+msgstr "Pričítať k uloženej hodnote"
 
 #: src/MainWindow.vala:206
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Odčítať od uloženej hodnoty"
 
 #: src/MainWindow.vala:207
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "Vymazať položku"
+msgstr "Vymazať pamäť"
 
 #: src/MainWindow.vala:209
 msgid "Grand Total"
-msgstr ""
+msgstr "Celkový výsledok"
 
 #: src/MainWindow.vala:211
 msgid "Start Group"
@@ -139,31 +137,27 @@ msgstr "Eulerovo číslo"
 
 #: src/MainWindow.vala:224
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Logaritmus pri základe 10"
 
 #: src/MainWindow.vala:226
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Prirodzený logaritmus"
 
 #: src/MainWindow.vala:227
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Inverzný sínus"
 
 #: src/MainWindow.vala:229
-#, fuzzy
-#| msgid "Cosine"
 msgid "Inverse Cosine"
-msgstr "Kosínus"
+msgstr "Inverzný kosínus"
 
 #: src/MainWindow.vala:231
-#, fuzzy
-#| msgid "Tangent"
 msgid "Inverse Tangent"
-msgstr "Tangens"
+msgstr "Inverzný tangens"
 
 #: src/MainWindow.vala:233
 msgid "Reciprocal"
-msgstr ""
+msgstr "Prevrátená hodnota"
 
 #: src/MainWindow.vala:608
 msgid "Hide extended functionality"
@@ -171,13 +165,11 @@ msgstr "Skryť rozšírené funkcie"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Vložte predchádzajúci výraz alebo výsledok do aktuálneho výpočtu."
 
 #: src/HistoryDialog.vala:77
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Vložte hodnotu:"
+msgstr "Hodnota na vloženie:"
 
 #: src/HistoryDialog.vala:82
 msgid "Result"
@@ -189,10 +181,8 @@ msgstr "Výraz"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "Vymazať položku"
+msgstr "Vymazať históriu"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
@@ -200,12 +190,12 @@ msgstr "Zatvoriť"
 
 #: src/HistoryDialog.vala:107
 msgid "Insert"
-msgstr ""
+msgstr "Vložiť"
 
 #: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
-msgstr "'%s' je neplatný."
+msgstr "„%s“ je neplatné."
 
 #: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
