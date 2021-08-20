@@ -321,6 +321,8 @@ namespace PantheonCalculator {
                 );
             });
 
+            entry.grab_focus ();
+
             show_all ();
 
             this.key_press_event.connect (key_pressed);
