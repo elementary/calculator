@@ -27,6 +27,7 @@ namespace PantheonCalculator {
         private Gtk.Entry entry;
         private Gtk.Image extended_img_1;
         private Gtk.Image extended_img_2;
+        private Gtk.Button button_new_window;
         private Gtk.Button button_calc;
         private Gtk.Button button_history;
         private Gtk.Button button_ans;
@@ -86,6 +87,14 @@ namespace PantheonCalculator {
                 move (window_x, window_y);
             }
 
+            button_new_window = new Gtk.Button () {
+                image = new Gtk.Image.from_icon_name ("window-new-symbolic", Gtk.IconSize.MENU),
+                tooltip_text = _("Open another window")
+            };
+            button_new_window.clicked.connect (() => {
+                ((PantheonCalculator.PantheonCalculatorApp) GLib.Application.get_default ()).activate ();
+            });
+
             extended_img_1 = new Gtk.Image.from_icon_name ("pane-hide-symbolic", Gtk.IconSize.MENU);
             extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic", Gtk.IconSize.MENU);
 
@@ -107,6 +116,7 @@ namespace PantheonCalculator {
                 show_close_button = true,
                 title = _("Calculator")
             };
+            headerbar.pack_start (button_new_window);
             headerbar.pack_end (button_extended);
             headerbar.pack_end (button_history);
             headerbar.get_style_context ().add_class ("default-decoration");
