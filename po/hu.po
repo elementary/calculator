@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 16:40+0000\n"
-"PO-Revision-Date: 2021-08-23 23:12+0000\n"
+"PO-Revision-Date: 2021-08-24 01:30+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/calculator/"
 "calculator/hu/>\n"
@@ -65,19 +65,19 @@ msgstr "Százalék"
 
 #: src/MainWindow.vala:202
 msgid "Set memory value"
-msgstr ""
+msgstr "Memória beállítása"
 
 #: src/MainWindow.vala:203
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Érték olvasása a memóriából"
 
 #: src/MainWindow.vala:205
 msgid "Add to stored value"
-msgstr ""
+msgstr "Hozzáadás a tárolt értékhez"
 
 #: src/MainWindow.vala:206
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Kivonás a tárolt értékből"
 
 #: src/MainWindow.vala:207
 msgid "Clear memory"
@@ -85,7 +85,7 @@ msgstr "Memória törlése"
 
 #: src/MainWindow.vala:209
 msgid "Grand Total"
-msgstr ""
+msgstr "Végeredmény"
 
 #: src/MainWindow.vala:211
 msgid "Start Group"
@@ -129,7 +129,7 @@ msgstr "Hiperbolikus tangens"
 
 #: src/MainWindow.vala:222
 msgid "Pi"
-msgstr "Pi"
+msgstr "Pí"
 
 #: src/MainWindow.vala:223
 msgid "Euler's Number"
@@ -145,19 +145,15 @@ msgstr "Természetes logaritmus"
 
 #: src/MainWindow.vala:227
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Arkusz szinusz"
 
 #: src/MainWindow.vala:229
-#, fuzzy
-#| msgid "Cosine"
 msgid "Inverse Cosine"
-msgstr "Koszinusz"
+msgstr "Arkusz koszinusz"
 
 #: src/MainWindow.vala:231
-#, fuzzy
-#| msgid "Tangent"
 msgid "Inverse Tangent"
-msgstr "Tangens"
+msgstr "Arkusz tangens"
 
 #: src/MainWindow.vala:233
 msgid "Reciprocal"
@@ -169,7 +165,7 @@ msgstr "Bővített funkciók elrejtése"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Egy előző kifejezés vagy eredmény beillesztése a jelenlegi számolásba."
 
 #: src/HistoryDialog.vala:77
 msgid "Value to insert:"
@@ -194,7 +190,7 @@ msgstr "Bezárás"
 
 #: src/HistoryDialog.vala:107
 msgid "Insert"
-msgstr ""
+msgstr "Beillesztés"
 
 #: src/Core/Scanner.vala:68
 #, c-format
