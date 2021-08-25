@@ -11,7 +11,7 @@ on:
 
 jobs:
   flatpak:
-    name: Flatpak (${{ matrix.configuration.name }})
+    name: Flatpak (${{ matrix.arch }})
     runs-on: ubuntu-latest
 
     container:
