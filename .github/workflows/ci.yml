@@ -37,8 +37,7 @@ jobs:
       - name: Install Docker
         if: ${{ matrix.configuration.platform }}
         run: |
-         apt update
-         apt install -y docker
+         dnf install -y docker
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
