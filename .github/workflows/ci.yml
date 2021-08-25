@@ -34,6 +34,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install Docker
+        if: ${{ matrix.configuration.platform }}
+        run: |
+         apt update
+         apt install -y docker
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
         if: ${{ matrix.configuration.platform }}
