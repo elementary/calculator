@@ -11,7 +11,7 @@ on:
 
 jobs:
   flatpak:
-    name: Flatpak (${{ matrix.arch }})
+    name: Flatpak (${{ matrix.configuration.name }})
     runs-on: ubuntu-latest
 
     container:
@@ -19,20 +19,26 @@ jobs:
       options: --privileged
 
     strategy:
-      matrix:
-        arch: [x86_64, aarch64]
       fail-fast: false
+      matrix:
+        configuration:
+          - name: x86
+            platform: false
+            architecture: x86_64
+
+          - name: ARM
+            platform: arm64
+            architecture: aarch64
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
       - name: Set up QEMU
-        id: qemu
         uses: docker/setup-qemu-action@v1
-        if: ${{ matrix.arch }}
+        if: ${{ matrix.configuration.platform }}
         with:
-          platforms: ${{ matrix.arch }}
+          platforms: ${{ matrix.configuration.platform }}
 
       - name: Build
         uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
@@ -43,7 +49,7 @@ jobs:
           repository-name: appcenter
           repository-url: https://flatpak.elementary.io/repo.flatpakrepo
           cache-key: "flatpak-builder-${{ github.sha }}"
-          arch: ${{ matrix.arch }}
+          arch: ${{ matrix.configuration.architecture }}
 
   lint:
     name: Lint
