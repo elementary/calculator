@@ -11,19 +11,31 @@ on:
 
 jobs:
   flatpak:
-    name: Flatpak
+    name: Flatpak (${{ matrix.configuration.name }})
     runs-on: ubuntu-latest
 
     container:
-      image: ghcr.io/elementary/flatpak-platform/runtime:daily
+      image: ghcr.io/elementary/flatpak-platform/runtime:6
       options: --privileged
+
+    strategy:
+      matrix:
+        arch: [x86_64, aarch64]
+      fail-fast: false
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Set up QEMU
+        id: qemu
+        uses: docker/setup-qemu-action@v1
+        if: ${{ matrix.configuration.platform }}
+        with:
+          platforms: ${{ matrix.configuration.platform }}
+
       - name: Build
-        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v3
+        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
         with:
           bundle: calculator.flatpak
           manifest-path: io.elementary.calculator.yml
@@ -31,6 +43,7 @@ jobs:
           repository-name: appcenter
           repository-url: https://flatpak.elementary.io/repo.flatpakrepo
           cache-key: "flatpak-builder-${{ github.sha }}"
+          arch: ${{ matrix.arch }}
 
   lint:
     name: Lint
