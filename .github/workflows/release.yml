@@ -28,7 +28,7 @@ jobs:
            release_branch: 'odin'
 
   deploy_flatpak:
-    name: Deploy Flatpak
+    name: Deploy Flatpak (${{ matrix.configuration.name }})
     runs-on: ubuntu-latest
     
     if: github.event.pull_request.merged == true && true == contains(join(github.event.pull_request.labels.*.name), 'Release')
@@ -37,12 +37,35 @@ jobs:
       image: ghcr.io/elementary/flatpak-platform/runtime:6
       options: --privileged
 
+    strategy:
+      fail-fast: false
+      matrix:
+        configuration:
+          - name: x86
+            platform: false
+            architecture: x86_64
+
+          - name: ARM
+            platform: arm64
+            architecture: aarch64
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install Docker
+        if: ${{ matrix.configuration.platform }}
+        run: |
+         dnf install -y docker
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+        if: ${{ matrix.configuration.platform }}
+        with:
+          platforms: ${{ matrix.configuration.platform }}
+
       - name: Build
-        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@master
+        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
         with:
           bundle: calculator.flatpak
           manifest-path: io.elementary.calculator.yml
@@ -51,7 +74,9 @@ jobs:
           repository-url: https://flatpak.elementary.io/repo.flatpakrepo
           cache-key: "flatpak-builder-${{ github.sha }}"
           branch: stable
-      
+          arch: ${{ matrix.configuration.architecture }}
+
+  
       - name: Deploy
         uses: bilelmoussaoui/flatpak-github-actions/flat-manager@v3
         with:
