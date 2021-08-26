@@ -75,7 +75,6 @@ jobs:
           cache-key: "flatpak-builder-${{ github.sha }}"
           branch: stable
           arch: ${{ matrix.configuration.architecture }}
-
   
       - name: Deploy
         uses: bilelmoussaoui/flatpak-github-actions/flat-manager@v3
