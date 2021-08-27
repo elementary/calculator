@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 16:40+0000\n"
 "PO-Revision-Date: 2021-08-27 01:10+0000\n"
-"Last-Translator: mateszabo2001 <mateszabo2001@gmail.com>\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/calculator/"
 "extra/hu/>\n"
 "Language: hu\n"
@@ -94,7 +94,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:64
 msgid "Fix inserting multi-byte characters"
-msgstr "Multi-byte karakterek beillesztésének javítása"
+msgstr "Többájtos karakterek beillesztésének javítása"
 
 #: data/io.elementary.calculator.appdata.xml.in:72
 msgid "Fix missing icon for Ukrainian"
