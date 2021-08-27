@@ -62,7 +62,7 @@ msgstr "Apróbb frissítések"
 #: data/io.elementary.calculator.appdata.xml.in:73
 #: data/io.elementary.calculator.appdata.xml.in:83
 msgid "Updated translations"
-msgstr ""
+msgstr "Új fordítások"
 
 #: data/io.elementary.calculator.appdata.xml.in:39
 msgid "Fixed an issue with multiple windows"
@@ -94,7 +94,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:64
 msgid "Fix inserting multi-byte characters"
-msgstr ""
+msgstr "Multi-byte karakterek beillesztésének javítása"
 
 #: data/io.elementary.calculator.appdata.xml.in:72
 msgid "Fix missing icon for Ukrainian"
