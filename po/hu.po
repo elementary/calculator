@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 16:40+0000\n"
 "PO-Revision-Date: 2021-09-02 21:10+0000\n"
-"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Last-Translator: mateszabo2001 <mateszabo2001@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/calculator/"
 "calculator/hu/>\n"
 "Language: hu\n"
@@ -199,7 +199,7 @@ msgstr "'%s' érvénytelen."
 
 #: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
-msgstr "Nem egyező zárójel."
+msgstr "Félreismert zárójelek"
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:169
