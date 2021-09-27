@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-06 16:40+0000\n"
-"PO-Revision-Date: 2018-06-28 01:12+0000\n"
-"Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/calculator/"
+"PO-Revision-Date: 2021-09-27 11:10+0000\n"
+"Last-Translator: DarkKnightComes <darkknightcomes@gmail.com>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/calculator/"
 "calculator/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:94 src/MainWindow.vala:613
@@ -68,29 +68,27 @@ msgstr "Procentowo"
 
 #: src/MainWindow.vala:202
 msgid "Set memory value"
-msgstr ""
+msgstr "Ustaw wartość pamięci"
 
 #: src/MainWindow.vala:203
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Wczytaj wartość z pamięci"
 
 #: src/MainWindow.vala:205
 msgid "Add to stored value"
-msgstr ""
+msgstr "Dodaj do zachowanej wartości"
 
 #: src/MainWindow.vala:206
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Odejmij od zachowanej wartości"
 
 #: src/MainWindow.vala:207
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "Wyczyść"
+msgstr "Wyczyść pamięć"
 
 #: src/MainWindow.vala:209
 msgid "Grand Total"
-msgstr ""
+msgstr "Łączna suma"
 
 #: src/MainWindow.vala:211
 msgid "Start Group"
@@ -174,13 +172,11 @@ msgstr "Ukryj opcje zaawansowane"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Wstaw poprzednie wyrażenie lub wynik do obecnego działania."
 
 #: src/HistoryDialog.vala:77
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Wartość do dodania:"
+msgstr "Wartość do wstawienia:"
 
 #: src/HistoryDialog.vala:82
 msgid "Result"
@@ -192,10 +188,8 @@ msgstr "Wyrażenie"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "Wyczyść"
+msgstr "Wyczyść historię"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
@@ -203,7 +197,7 @@ msgstr "Zamknij"
 
 #: src/HistoryDialog.vala:107
 msgid "Insert"
-msgstr ""
+msgstr "Wstaw"
 
 #: src/Core/Scanner.vala:68
 #, c-format
