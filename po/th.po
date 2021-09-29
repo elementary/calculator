@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-06 16:40+0000\n"
+"POT-Creation-Date: 2021-09-29 08:35+0000\n"
 "PO-Revision-Date: 2016-05-27 15:29+0000\n"
 "Last-Translator: Maxwell Barvian <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,155 +13,155 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: src/MainWindow.vala:94 src/MainWindow.vala:613
-msgid "Show extended functionality"
-msgstr "แสดงฟังก์ชั่นเพิ่มเติม"
-
-#: src/MainWindow.vala:100 src/HistoryDialog.vala:40
-msgid "History"
-msgstr "ประวัติการคำนวณ"
-
-#: src/MainWindow.vala:108
+#: src/MainWindow.vala:74 src/MainWindow.vala:109
 msgid "Calculator"
 msgstr "เครื่องคิดเลข"
 
-#: src/MainWindow.vala:121
+#: src/MainWindow.vala:95 src/MainWindow.vala:615
+msgid "Show extended functionality"
+msgstr "แสดงฟังก์ชั่นเพิ่มเติม"
+
+#: src/MainWindow.vala:101 src/HistoryDialog.vala:40
+msgid "History"
+msgstr "ประวัติการคำนวณ"
+
+#: src/MainWindow.vala:122
 msgid "Calculate Result"
 msgstr "คำนวณผลลัพธ์"
 
-#: src/MainWindow.vala:125
+#: src/MainWindow.vala:126
 #, fuzzy
 #| msgid "Add last result"
 msgid "Insert last result"
 msgstr "เพิ่มผลลัพธ์ล่าสุด"
 
-#: src/MainWindow.vala:128
+#: src/MainWindow.vala:129
 msgid "Backspace"
 msgstr "ลบ"
 
-#: src/MainWindow.vala:134
+#: src/MainWindow.vala:135
 msgid "Clear entry"
 msgstr "ลบค่าที่แสดง"
 
-#: src/MainWindow.vala:138
+#: src/MainWindow.vala:139
 msgid "Add"
 msgstr "เพิ่ม"
 
-#: src/MainWindow.vala:142
+#: src/MainWindow.vala:143
 msgid "Subtract"
 msgstr ""
 
-#: src/MainWindow.vala:146
+#: src/MainWindow.vala:147
 msgid "Multiply"
 msgstr "คูณ"
 
-#: src/MainWindow.vala:150
+#: src/MainWindow.vala:151
 msgid "Divide"
 msgstr "หาร"
 
-#: src/MainWindow.vala:156
+#: src/MainWindow.vala:157
 msgid "Percentage"
 msgstr "หาเปอร์เซ็นต์"
 
-#: src/MainWindow.vala:202
+#: src/MainWindow.vala:203
 msgid "Set memory value"
 msgstr ""
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:204
 msgid "Recall value from memory"
 msgstr ""
 
-#: src/MainWindow.vala:205
+#: src/MainWindow.vala:206
 msgid "Add to stored value"
 msgstr ""
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:207
 msgid "Subtract from stored value"
 msgstr ""
 
-#: src/MainWindow.vala:207
+#: src/MainWindow.vala:208
 #, fuzzy
 #| msgid "Clear entry"
 msgid "Clear memory"
 msgstr "ลบค่าที่แสดง"
 
-#: src/MainWindow.vala:209
+#: src/MainWindow.vala:210
 msgid "Grand Total"
 msgstr ""
 
-#: src/MainWindow.vala:211
+#: src/MainWindow.vala:212
 msgid "Start Group"
 msgstr "เริ่มกลุ่ม"
 
-#: src/MainWindow.vala:212
+#: src/MainWindow.vala:213
 msgid "End Group"
 msgstr "จบกลุ่ม"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:214
 msgid "Exponent"
 msgstr ""
 
-#: src/MainWindow.vala:215
+#: src/MainWindow.vala:216
 msgid "Root"
 msgstr "ราก"
 
-#: src/MainWindow.vala:216
+#: src/MainWindow.vala:217
 msgid "Sine"
 msgstr ""
 
-#: src/MainWindow.vala:217
+#: src/MainWindow.vala:218
 msgid "Hyperbolic Sine"
 msgstr ""
 
-#: src/MainWindow.vala:218
+#: src/MainWindow.vala:219
 msgid "Cosine"
 msgstr ""
 
-#: src/MainWindow.vala:219
+#: src/MainWindow.vala:220
 msgid "Hyperbolic Cosine"
 msgstr ""
 
-#: src/MainWindow.vala:220
+#: src/MainWindow.vala:221
 msgid "Tangent"
 msgstr ""
 
-#: src/MainWindow.vala:221
+#: src/MainWindow.vala:222
 msgid "Hyperbolic Tangent"
 msgstr ""
 
-#: src/MainWindow.vala:222
+#: src/MainWindow.vala:223
 msgid "Pi"
 msgstr "ไพ"
 
-#: src/MainWindow.vala:223
+#: src/MainWindow.vala:224
 msgid "Euler's Number"
 msgstr ""
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:225
 msgid "Logarithm Base 10"
 msgstr ""
 
-#: src/MainWindow.vala:226
+#: src/MainWindow.vala:227
 msgid "Natural Logarithm"
 msgstr ""
 
-#: src/MainWindow.vala:227
+#: src/MainWindow.vala:228
 msgid "Inverse Sine"
 msgstr ""
 
-#: src/MainWindow.vala:229
+#: src/MainWindow.vala:230
 msgid "Inverse Cosine"
 msgstr ""
 
-#: src/MainWindow.vala:231
+#: src/MainWindow.vala:232
 msgid "Inverse Tangent"
 msgstr ""
 
-#: src/MainWindow.vala:233
+#: src/MainWindow.vala:234
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:608
+#: src/MainWindow.vala:610
 msgid "Hide extended functionality"
 msgstr "ซ่อนฟังก์ชั่นเพิ่มเติม"
 

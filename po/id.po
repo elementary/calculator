@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-06 16:40+0000\n"
+"POT-Creation-Date: 2021-09-29 08:35+0000\n"
 "PO-Revision-Date: 2020-12-23 20:16+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/calculator/"
@@ -15,155 +15,155 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:94 src/MainWindow.vala:613
-msgid "Show extended functionality"
-msgstr "Tampilkan fungsi lainnya"
-
-#: src/MainWindow.vala:100 src/HistoryDialog.vala:40
-msgid "History"
-msgstr "Riwayat"
-
-#: src/MainWindow.vala:108
+#: src/MainWindow.vala:74 src/MainWindow.vala:109
 msgid "Calculator"
 msgstr "Kalkulator"
 
-#: src/MainWindow.vala:121
+#: src/MainWindow.vala:95 src/MainWindow.vala:615
+msgid "Show extended functionality"
+msgstr "Tampilkan fungsi lainnya"
+
+#: src/MainWindow.vala:101 src/HistoryDialog.vala:40
+msgid "History"
+msgstr "Riwayat"
+
+#: src/MainWindow.vala:122
 msgid "Calculate Result"
 msgstr "Hitung hasilnya"
 
-#: src/MainWindow.vala:125
+#: src/MainWindow.vala:126
 #, fuzzy
 #| msgid "Add last result"
 msgid "Insert last result"
 msgstr "Tambahkan hasil perhitungan terakhir"
 
-#: src/MainWindow.vala:128
+#: src/MainWindow.vala:129
 msgid "Backspace"
 msgstr "Hapus"
 
-#: src/MainWindow.vala:134
+#: src/MainWindow.vala:135
 msgid "Clear entry"
 msgstr "Bersihkan isian"
 
-#: src/MainWindow.vala:138
+#: src/MainWindow.vala:139
 msgid "Add"
 msgstr "Tambah"
 
-#: src/MainWindow.vala:142
+#: src/MainWindow.vala:143
 msgid "Subtract"
 msgstr "Pengurangan"
 
-#: src/MainWindow.vala:146
+#: src/MainWindow.vala:147
 msgid "Multiply"
 msgstr "Perkalian"
 
-#: src/MainWindow.vala:150
+#: src/MainWindow.vala:151
 msgid "Divide"
 msgstr "Pembagian"
 
-#: src/MainWindow.vala:156
+#: src/MainWindow.vala:157
 msgid "Percentage"
 msgstr "Persentase"
 
-#: src/MainWindow.vala:202
+#: src/MainWindow.vala:203
 msgid "Set memory value"
 msgstr ""
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:204
 msgid "Recall value from memory"
 msgstr ""
 
-#: src/MainWindow.vala:205
+#: src/MainWindow.vala:206
 msgid "Add to stored value"
 msgstr ""
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:207
 msgid "Subtract from stored value"
 msgstr ""
 
-#: src/MainWindow.vala:207
+#: src/MainWindow.vala:208
 #, fuzzy
 #| msgid "Clear entry"
 msgid "Clear memory"
 msgstr "Bersihkan isian"
 
-#: src/MainWindow.vala:209
+#: src/MainWindow.vala:210
 msgid "Grand Total"
 msgstr ""
 
-#: src/MainWindow.vala:211
+#: src/MainWindow.vala:212
 msgid "Start Group"
 msgstr "Memulai grup"
 
-#: src/MainWindow.vala:212
+#: src/MainWindow.vala:213
 msgid "End Group"
 msgstr "Akhiri grup"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:214
 msgid "Exponent"
 msgstr "Eksponen"
 
-#: src/MainWindow.vala:215
+#: src/MainWindow.vala:216
 msgid "Root"
 msgstr "Akar pangkat"
 
-#: src/MainWindow.vala:216
+#: src/MainWindow.vala:217
 msgid "Sine"
 msgstr "Sinus"
 
-#: src/MainWindow.vala:217
+#: src/MainWindow.vala:218
 msgid "Hyperbolic Sine"
 msgstr "Sinus hiperbolik"
 
-#: src/MainWindow.vala:218
+#: src/MainWindow.vala:219
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: src/MainWindow.vala:219
+#: src/MainWindow.vala:220
 msgid "Hyperbolic Cosine"
 msgstr "Cosinus hiperbolik"
 
-#: src/MainWindow.vala:220
+#: src/MainWindow.vala:221
 msgid "Tangent"
 msgstr "Tangen"
 
-#: src/MainWindow.vala:221
+#: src/MainWindow.vala:222
 msgid "Hyperbolic Tangent"
 msgstr "Tangen hiperbolik"
 
-#: src/MainWindow.vala:222
+#: src/MainWindow.vala:223
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:223
+#: src/MainWindow.vala:224
 msgid "Euler's Number"
 msgstr "Angka Euler"
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:225
 msgid "Logarithm Base 10"
 msgstr "Basis Logaritma 10"
 
-#: src/MainWindow.vala:226
+#: src/MainWindow.vala:227
 msgid "Natural Logarithm"
 msgstr "Logaritma Natural"
 
-#: src/MainWindow.vala:227
+#: src/MainWindow.vala:228
 msgid "Inverse Sine"
 msgstr "Sinus Terbalik"
 
-#: src/MainWindow.vala:229
+#: src/MainWindow.vala:230
 msgid "Inverse Cosine"
 msgstr "Kosinus Terbalik"
 
-#: src/MainWindow.vala:231
+#: src/MainWindow.vala:232
 msgid "Inverse Tangent"
 msgstr "Tangen Terbalik"
 
-#: src/MainWindow.vala:233
+#: src/MainWindow.vala:234
 msgid "Reciprocal"
 msgstr "Timbalik-balik"
 
-#: src/MainWindow.vala:608
+#: src/MainWindow.vala:610
 msgid "Hide extended functionality"
 msgstr "Sembunyikan fungsi lainnya"
 
