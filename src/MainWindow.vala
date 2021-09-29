@@ -71,6 +71,7 @@ namespace PantheonCalculator {
 
             set_resizable (false);
             window_position = Gtk.WindowPosition.CENTER;
+            title = _("Calculator");
 
             decimal_places = settings.get_int ("decimal-places");
 
