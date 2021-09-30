@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-29 08:35+0000\n"
 "PO-Revision-Date: 2021-09-30 13:57+0000\n"
-"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
+"Last-Translator: BarPos <ketsopb@gmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/calculator/extra/"
 "pl/>\n"
 "Language: pl\n"
@@ -75,7 +75,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:49
 msgid "Add log and inverse trigonometric functions"
-msgstr ""
+msgstr "Dodaj funkcje logarytmiczne i odwrotne funkcje trygonometryczne"
 
 #: data/io.elementary.calculator.appdata.xml.in:51
 msgid "Other updates:"
