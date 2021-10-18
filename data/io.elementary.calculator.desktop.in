@@ -9,3 +9,8 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=GNOME;GTK;Utility;Calculator;
+Actions=NewWindow;
+
+[Desktop Action NewWindow]
+Name=New Window
+Exec=io.elementary.calculator %U
