@@ -12,6 +12,17 @@
   </description>
   <translation type="gettext">io.elementary.calculator</translation>
   <releases>
+    <release version="1.7.1" date="2021-10-20" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Showing advanced controls only affects the focused window</li>
+          <li>Focus the main text entry on startup</li>
+          <li>Show the correct window title in Multitasking View</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.7.0" date="2021-08-09" urgency="medium">
       <description>
         <p>New features:</p>

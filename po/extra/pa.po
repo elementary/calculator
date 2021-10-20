@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-29 08:35+0000\n"
+"POT-Creation-Date: 2021-10-20 18:02+0000\n"
 "PO-Revision-Date: 2021-07-26 17:09+0000\n"
 "Last-Translator: elSolus <tumbleweed@tuta.io>\n"
 "Language-Team: Punjabi <https://l10n.elementary.io/projects/calculator/extra/"
@@ -38,80 +38,94 @@ msgstr ""
 "ਫੰਕਸ਼ਨ ਜਿਵੇਂ ਸਾਈਨ, ਕੌਸ, ਅਤੇ ਟੈਨ ਨੂੰ ਵੀ ਹੱਲ ਕਰਨ ਦੇ ਕਾਬਲ ਹੈ।"
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:47
-msgid "New features:"
-msgstr "ਨਵੇਂ ਫ਼ੀਚਰ:"
-
-#: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Add a \"Clear History\" button to the history dialog"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:21
-#: data/io.elementary.calculator.appdata.xml.in:29
-#: data/io.elementary.calculator.appdata.xml.in:37
-#: data/io.elementary.calculator.appdata.xml.in:62
+#: data/io.elementary.calculator.appdata.xml.in:32
+#: data/io.elementary.calculator.appdata.xml.in:40
+#: data/io.elementary.calculator.appdata.xml.in:48
+#: data/io.elementary.calculator.appdata.xml.in:73
 msgid "Minor updates:"
 msgstr "ਮਾਮੂਲੀ ਅਪਡੇਟਾਂ:"
 
-#: data/io.elementary.calculator.appdata.xml.in:23
-#: data/io.elementary.calculator.appdata.xml.in:31
-#: data/io.elementary.calculator.appdata.xml.in:41
-#: data/io.elementary.calculator.appdata.xml.in:56
-#: data/io.elementary.calculator.appdata.xml.in:65
-#: data/io.elementary.calculator.appdata.xml.in:73
-#: data/io.elementary.calculator.appdata.xml.in:83
+#: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Showing advanced controls only affects the focused window"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:20
+msgid "Focus the main text entry on startup"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:21
+msgid "Show the correct window title in Multitasking View"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:22
+#: data/io.elementary.calculator.appdata.xml.in:34
+#: data/io.elementary.calculator.appdata.xml.in:42
+#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/io.elementary.calculator.appdata.xml.in:67
+#: data/io.elementary.calculator.appdata.xml.in:76
+#: data/io.elementary.calculator.appdata.xml.in:84
+#: data/io.elementary.calculator.appdata.xml.in:94
 msgid "Updated translations"
 msgstr "ਅਪਡੇਟਡ ਤਰਜਮੇ"
 
-#: data/io.elementary.calculator.appdata.xml.in:39
+#: data/io.elementary.calculator.appdata.xml.in:28
+#: data/io.elementary.calculator.appdata.xml.in:58
+msgid "New features:"
+msgstr "ਨਵੇਂ ਫ਼ੀਚਰ:"
+
+#: data/io.elementary.calculator.appdata.xml.in:30
+msgid "Add a \"Clear History\" button to the history dialog"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Fixed an issue with multiple windows"
 msgstr "ਇੱਕ ਤੋਂ ਜ਼ਿਆਦਾ ਵਿੰਡੋਜ਼ ਵਾਲ਼ਾ ਮਸਲਾ ਹੱਲ ਕੀਤਾ"
 
-#: data/io.elementary.calculator.appdata.xml.in:40
+#: data/io.elementary.calculator.appdata.xml.in:51
 msgid "More informative copy in history dialog"
 msgstr "ਇਤਿਹਾਸ ਡਾਇਲਾਗ ਵਿੱਚ ਪਹਿਲਾਂ ਨਾਲ਼ੋਂ ਜ਼ਿਆਦਾ ਜਾਣਕਾਰੀ"
 
-#: data/io.elementary.calculator.appdata.xml.in:49
+#: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Add log and inverse trigonometric functions"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:51
+#: data/io.elementary.calculator.appdata.xml.in:62
 msgid "Other updates:"
 msgstr "ਹੋਰ ਅਪਡੇਟਾਂ:"
 
-#: data/io.elementary.calculator.appdata.xml.in:53
+#: data/io.elementary.calculator.appdata.xml.in:64
 msgid "Fix an issue with negative decimals without leading digits"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:54
+#: data/io.elementary.calculator.appdata.xml.in:65
 msgid "More efficient state saving"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:55
+#: data/io.elementary.calculator.appdata.xml.in:66
 msgid "Use slim titlebar"
 msgstr "ਤੰਗ ਟਾਈਟਲ-ਬਾਰ ਵਰਤੋ"
 
-#: data/io.elementary.calculator.appdata.xml.in:64
+#: data/io.elementary.calculator.appdata.xml.in:75
 msgid "Fix inserting multi-byte characters"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:72
+#: data/io.elementary.calculator.appdata.xml.in:83
 msgid "Fix missing icon for Ukrainian"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:80
+#: data/io.elementary.calculator.appdata.xml.in:91
 msgid "Animate Infobar when hiding and showing"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:81
+#: data/io.elementary.calculator.appdata.xml.in:92
 msgid "Fix selection replace"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:82
+#: data/io.elementary.calculator.appdata.xml.in:93
 msgid "Improved decimal separator localization"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:120
+#: data/io.elementary.calculator.appdata.xml.in:131
 msgid "elementary, Inc."
 msgstr "ਐਲੀਮੈਂਟਰੀ, ਇਨਕਾਰਪੋਰੇਟਿਡ"
 
