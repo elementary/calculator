@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-29 08:35+0000\n"
+"POT-Creation-Date: 2021-10-20 18:02+0000\n"
 "PO-Revision-Date: 2021-08-09 15:52+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
@@ -39,80 +39,94 @@ msgstr ""
 "ジェントといった三角関数を含むいくつかの科学的な計算をサポートします。"
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:47
-msgid "New features:"
-msgstr "新機能:"
-
-#: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Add a \"Clear History\" button to the history dialog"
-msgstr "履歴ダイアログに\"履歴を消去\"ボタンを追加"
-
-#: data/io.elementary.calculator.appdata.xml.in:21
-#: data/io.elementary.calculator.appdata.xml.in:29
-#: data/io.elementary.calculator.appdata.xml.in:37
-#: data/io.elementary.calculator.appdata.xml.in:62
+#: data/io.elementary.calculator.appdata.xml.in:32
+#: data/io.elementary.calculator.appdata.xml.in:40
+#: data/io.elementary.calculator.appdata.xml.in:48
+#: data/io.elementary.calculator.appdata.xml.in:73
 msgid "Minor updates:"
 msgstr "軽微なアップデート:"
 
-#: data/io.elementary.calculator.appdata.xml.in:23
-#: data/io.elementary.calculator.appdata.xml.in:31
-#: data/io.elementary.calculator.appdata.xml.in:41
-#: data/io.elementary.calculator.appdata.xml.in:56
-#: data/io.elementary.calculator.appdata.xml.in:65
-#: data/io.elementary.calculator.appdata.xml.in:73
-#: data/io.elementary.calculator.appdata.xml.in:83
+#: data/io.elementary.calculator.appdata.xml.in:19
+msgid "Showing advanced controls only affects the focused window"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:20
+msgid "Focus the main text entry on startup"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:21
+msgid "Show the correct window title in Multitasking View"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:22
+#: data/io.elementary.calculator.appdata.xml.in:34
+#: data/io.elementary.calculator.appdata.xml.in:42
+#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/io.elementary.calculator.appdata.xml.in:67
+#: data/io.elementary.calculator.appdata.xml.in:76
+#: data/io.elementary.calculator.appdata.xml.in:84
+#: data/io.elementary.calculator.appdata.xml.in:94
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/io.elementary.calculator.appdata.xml.in:39
+#: data/io.elementary.calculator.appdata.xml.in:28
+#: data/io.elementary.calculator.appdata.xml.in:58
+msgid "New features:"
+msgstr "新機能:"
+
+#: data/io.elementary.calculator.appdata.xml.in:30
+msgid "Add a \"Clear History\" button to the history dialog"
+msgstr "履歴ダイアログに\"履歴を消去\"ボタンを追加"
+
+#: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Fixed an issue with multiple windows"
 msgstr "ウィンドウが複数存在する場合に発生していた不具合を修正"
 
-#: data/io.elementary.calculator.appdata.xml.in:40
+#: data/io.elementary.calculator.appdata.xml.in:51
 msgid "More informative copy in history dialog"
 msgstr "履歴ダイアログにわかりやすい説明文を追加"
 
-#: data/io.elementary.calculator.appdata.xml.in:49
+#: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Add log and inverse trigonometric functions"
 msgstr "対数と逆三角関数を追加"
 
-#: data/io.elementary.calculator.appdata.xml.in:51
+#: data/io.elementary.calculator.appdata.xml.in:62
 msgid "Other updates:"
 msgstr "そのほかのアップデート:"
 
-#: data/io.elementary.calculator.appdata.xml.in:53
+#: data/io.elementary.calculator.appdata.xml.in:64
 msgid "Fix an issue with negative decimals without leading digits"
 msgstr "整数部のない負の小数を使用すると発生する不具合を修正"
 
-#: data/io.elementary.calculator.appdata.xml.in:54
+#: data/io.elementary.calculator.appdata.xml.in:65
 msgid "More efficient state saving"
 msgstr "アプリの状態を効率的に保存するように変更"
 
-#: data/io.elementary.calculator.appdata.xml.in:55
+#: data/io.elementary.calculator.appdata.xml.in:66
 msgid "Use slim titlebar"
 msgstr "タイトルバーが細くなるように修正"
 
-#: data/io.elementary.calculator.appdata.xml.in:64
+#: data/io.elementary.calculator.appdata.xml.in:75
 msgid "Fix inserting multi-byte characters"
 msgstr "マルチバイト文字を挿入する際の不具合を修正"
 
-#: data/io.elementary.calculator.appdata.xml.in:72
+#: data/io.elementary.calculator.appdata.xml.in:83
 msgid "Fix missing icon for Ukrainian"
 msgstr "ウクライナ語においてアイコンが表示されない不具合を修正"
 
-#: data/io.elementary.calculator.appdata.xml.in:80
+#: data/io.elementary.calculator.appdata.xml.in:91
 msgid "Animate Infobar when hiding and showing"
 msgstr "情報バーの表示／非表示の際にアニメーションを追加"
 
-#: data/io.elementary.calculator.appdata.xml.in:81
+#: data/io.elementary.calculator.appdata.xml.in:92
 msgid "Fix selection replace"
 msgstr "選択範囲の置き換えの際の不具合を修正"
 
-#: data/io.elementary.calculator.appdata.xml.in:82
+#: data/io.elementary.calculator.appdata.xml.in:93
 msgid "Improved decimal separator localization"
 msgstr "小数点のローカライゼーションの改善"
 
-#: data/io.elementary.calculator.appdata.xml.in:120
+#: data/io.elementary.calculator.appdata.xml.in:131
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
