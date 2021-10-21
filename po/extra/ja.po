@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-20 18:02+0000\n"
-"PO-Revision-Date: 2021-08-09 15:52+0000\n"
+"PO-Revision-Date: 2021-10-21 12:22+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
 "extra/ja/>\n"
@@ -48,15 +48,15 @@ msgstr "軽微なアップデート:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Showing advanced controls only affects the focused window"
-msgstr ""
+msgstr "高度なオプションを表示する場合、現在フォーカスされているウィンドウにのみ適用されるように修正"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "起動時にテキストエントリーにフォーカスするように修正"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "マルチタスク画面で適切なウィンドウタイトルを表示するように修正"
 
 #: data/io.elementary.calculator.appdata.xml.in:22
 #: data/io.elementary.calculator.appdata.xml.in:34
