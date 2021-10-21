@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-20 18:02+0000\n"
-"PO-Revision-Date: 2021-08-06 22:03+0000\n"
+"PO-Revision-Date: 2021-10-20 22:35+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
 "extra/uk/>\n"
@@ -50,15 +50,15 @@ msgstr "Незначні оновлення:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Showing advanced controls only affects the focused window"
-msgstr ""
+msgstr "Додаткові елементи керування відкриваються лише у сфокусованому вікні"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "Фокусування на основному текстовому полі під час запуску"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "Показ правильного заголовка вікна у багатозадачному режимі"
 
 #: data/io.elementary.calculator.appdata.xml.in:22
 #: data/io.elementary.calculator.appdata.xml.in:34
