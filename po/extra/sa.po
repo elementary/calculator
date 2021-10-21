@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-20 18:02+0000\n"
+"POT-Creation-Date: 2021-10-21 12:21+0000\n"
 "PO-Revision-Date: 2019-01-07 00:02+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Sanskrit <https://weblate.elementary.io/projects/calculator/"
@@ -36,10 +36,10 @@ msgid ""
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:32
-#: data/io.elementary.calculator.appdata.xml.in:40
-#: data/io.elementary.calculator.appdata.xml.in:48
-#: data/io.elementary.calculator.appdata.xml.in:73
+#: data/io.elementary.calculator.appdata.xml.in:33
+#: data/io.elementary.calculator.appdata.xml.in:41
+#: data/io.elementary.calculator.appdata.xml.in:49
+#: data/io.elementary.calculator.appdata.xml.in:74
 msgid "Minor updates:"
 msgstr ""
 
@@ -56,74 +56,78 @@ msgid "Show the correct window title in Multitasking View"
 msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:22
-#: data/io.elementary.calculator.appdata.xml.in:34
-#: data/io.elementary.calculator.appdata.xml.in:42
-#: data/io.elementary.calculator.appdata.xml.in:52
-#: data/io.elementary.calculator.appdata.xml.in:67
-#: data/io.elementary.calculator.appdata.xml.in:76
-#: data/io.elementary.calculator.appdata.xml.in:84
-#: data/io.elementary.calculator.appdata.xml.in:94
+#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:43
+#: data/io.elementary.calculator.appdata.xml.in:53
+#: data/io.elementary.calculator.appdata.xml.in:68
+#: data/io.elementary.calculator.appdata.xml.in:77
+#: data/io.elementary.calculator.appdata.xml.in:85
+#: data/io.elementary.calculator.appdata.xml.in:95
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:28
-#: data/io.elementary.calculator.appdata.xml.in:58
+#: data/io.elementary.calculator.appdata.xml.in:23
+msgid "Added 'New Window' Desktop Action"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:29
+#: data/io.elementary.calculator.appdata.xml.in:59
 msgid "New features:"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:30
+#: data/io.elementary.calculator.appdata.xml.in:31
 msgid "Add a \"Clear History\" button to the history dialog"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:50
+#: data/io.elementary.calculator.appdata.xml.in:51
 msgid "Fixed an issue with multiple windows"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:51
+#: data/io.elementary.calculator.appdata.xml.in:52
 msgid "More informative copy in history dialog"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:60
+#: data/io.elementary.calculator.appdata.xml.in:61
 msgid "Add log and inverse trigonometric functions"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:62
+#: data/io.elementary.calculator.appdata.xml.in:63
 msgid "Other updates:"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:64
+#: data/io.elementary.calculator.appdata.xml.in:65
 msgid "Fix an issue with negative decimals without leading digits"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:65
+#: data/io.elementary.calculator.appdata.xml.in:66
 msgid "More efficient state saving"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:66
+#: data/io.elementary.calculator.appdata.xml.in:67
 msgid "Use slim titlebar"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:75
+#: data/io.elementary.calculator.appdata.xml.in:76
 msgid "Fix inserting multi-byte characters"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:83
+#: data/io.elementary.calculator.appdata.xml.in:84
 msgid "Fix missing icon for Ukrainian"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:91
+#: data/io.elementary.calculator.appdata.xml.in:92
 msgid "Animate Infobar when hiding and showing"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:92
+#: data/io.elementary.calculator.appdata.xml.in:93
 msgid "Fix selection replace"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:93
+#: data/io.elementary.calculator.appdata.xml.in:94
 msgid "Improved decimal separator localization"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:131
+#: data/io.elementary.calculator.appdata.xml.in:132
 msgid "elementary, Inc."
 msgstr ""
 
@@ -134,4 +138,8 @@ msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
+msgstr ""
+
+#: data/io.elementary.calculator.desktop.in:16
+msgid "New Window"
 msgstr ""
