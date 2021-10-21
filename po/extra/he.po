@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-21 12:21+0000\n"
-"PO-Revision-Date: 2021-10-20 21:24+0000\n"
+"PO-Revision-Date: 2021-10-21 16:43+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/calculator/extra/"
 "he/>\n"
@@ -71,7 +71,7 @@ msgstr "עודכנו תרגומים"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "נוספה פעולת ‚חלון חדש’ לשולחן העבודה"
 
 #: data/io.elementary.calculator.appdata.xml.in:29
 #: data/io.elementary.calculator.appdata.xml.in:59
@@ -145,7 +145,7 @@ msgstr "accessories-calculator"
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "חלון חדש"
 
 #~ msgid "About Calculator"
 #~ msgstr "על אודות המחשבון"
