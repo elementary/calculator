@@ -20,6 +20,7 @@
           <li>Focus the main text entry on startup</li>
           <li>Show the correct window title in Multitasking View</li>
           <li>Updated translations</li>
+          <li>Added 'New Window' Desktop Action</li>
         </ul>
       </description>
     </release>
