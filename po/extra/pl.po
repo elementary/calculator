@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-20 18:02+0000\n"
-"PO-Revision-Date: 2021-09-30 13:57+0000\n"
-"Last-Translator: DarkKnightComes <darkknightcomes@gmail.com>\n"
+"PO-Revision-Date: 2021-10-21 07:33+0000\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/calculator/extra/"
 "pl/>\n"
 "Language: pl\n"
@@ -50,14 +50,17 @@ msgstr "Drobne poprawki:"
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Showing advanced controls only affects the focused window"
 msgstr ""
+"Pokazywanie zaawansowanych kontrolek wpływa teraz tylko na skupione okno"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "Focus the main text entry on startup"
 msgstr ""
+"Przy starcie skupienie ustawione jest teraz na głównym wejściu tekstowym"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 msgid "Show the correct window title in Multitasking View"
 msgstr ""
+"Naprawiono pokazywanie poprawnego tytułu okienko w widoku wielozadaniowym"
 
 #: data/io.elementary.calculator.appdata.xml.in:22
 #: data/io.elementary.calculator.appdata.xml.in:34
