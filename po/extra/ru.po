@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-21 12:21+0000\n"
-"PO-Revision-Date: 2021-10-20 23:58+0000\n"
+"PO-Revision-Date: 2021-10-21 16:43+0000\n"
 "Last-Translator: asdffdsdaf <asdffdsdaf@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/calculator/extra/"
 "ru/>\n"
@@ -73,7 +73,7 @@ msgstr "Обновлены переводы"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "Добавлена возможность открытия нового окна из меню в доке"
 
 #: data/io.elementary.calculator.appdata.xml.in:29
 #: data/io.elementary.calculator.appdata.xml.in:59
@@ -148,7 +148,7 @@ msgstr "accessories-calculator"
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "Новое окно"
 
 #~ msgid "About Calculator"
 #~ msgstr "О программе"
