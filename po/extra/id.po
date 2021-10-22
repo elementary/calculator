@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-21 12:21+0000\n"
+"POT-Creation-Date: 2021-10-22 19:03+0000\n"
 "PO-Revision-Date: 2020-12-23 20:16+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/calculator/"
@@ -142,12 +142,15 @@ msgid "Calculation;Mathematics;Arithmetic;Scientific;"
 msgstr "Perhitungan;Matematika;Aritmatika;Ilmiah;"
 
 #: data/io.elementary.calculator.desktop.in:8
-msgid "accessories-calculator"
-msgstr "accessories-calculator"
+msgid "io.elementary.calculator"
+msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
 msgstr ""
+
+#~ msgid "accessories-calculator"
+#~ msgstr "accessories-calculator"
 
 #~ msgid "About Calculator"
 #~ msgstr "Tentang Kalkulator"

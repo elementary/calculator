@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-21 12:21+0000\n"
+"POT-Creation-Date: 2021-10-22 19:03+0000\n"
 "PO-Revision-Date: 2019-12-16 21:07+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/calculator/"
@@ -140,9 +140,12 @@ msgid "Calculation;Mathematics;Arithmetic;Scientific;"
 msgstr "Kalkulo;Matematiko;Aritmetiko;Scienco;"
 
 #: data/io.elementary.calculator.desktop.in:8
-msgid "accessories-calculator"
-msgstr "accessories-calculator"
+msgid "io.elementary.calculator"
+msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
 msgstr ""
+
+#~ msgid "accessories-calculator"
+#~ msgstr "accessories-calculator"

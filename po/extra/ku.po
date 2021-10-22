@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-21 12:21+0000\n"
+"POT-Creation-Date: 2021-10-22 19:03+0000\n"
 "PO-Revision-Date: 2017-01-19 19:50+0000\n"
 "Last-Translator: Rokar <Unknown>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
@@ -138,7 +138,7 @@ msgid "Calculation;Mathematics;Arithmetic;Scientific;"
 msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:8
-msgid "accessories-calculator"
+msgid "io.elementary.calculator"
 msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:16
