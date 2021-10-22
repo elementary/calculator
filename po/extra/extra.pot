@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-21 12:21+0000\n"
+"POT-Creation-Date: 2021-10-22 19:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,7 +135,7 @@ msgid "Calculation;Mathematics;Arithmetic;Scientific;"
 msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:8
-msgid "accessories-calculator"
+msgid "io.elementary.calculator"
 msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:16
