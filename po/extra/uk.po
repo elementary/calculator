@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-22 19:03+0000\n"
-"PO-Revision-Date: 2021-10-21 16:43+0000\n"
+"PO-Revision-Date: 2021-10-23 04:20+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
 "extra/uk/>\n"
@@ -144,7 +144,7 @@ msgstr "Обчислення;Математика;Арифметика;Наук�
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "io.elementary.calculator"
-msgstr ""
+msgstr "io.elementary.calculator"
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
