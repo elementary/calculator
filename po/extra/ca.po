@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-20 18:02+0000\n"
-"PO-Revision-Date: 2021-08-07 11:53+0000\n"
+"POT-Creation-Date: 2021-10-21 12:21+0000\n"
+"PO-Revision-Date: 2021-10-22 01:11+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/calculator/extra/"
 "ca/>\n"
@@ -40,94 +40,98 @@ msgstr ""
 "cosinus, i tangents."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:32
-#: data/io.elementary.calculator.appdata.xml.in:40
-#: data/io.elementary.calculator.appdata.xml.in:48
-#: data/io.elementary.calculator.appdata.xml.in:73
+#: data/io.elementary.calculator.appdata.xml.in:33
+#: data/io.elementary.calculator.appdata.xml.in:41
+#: data/io.elementary.calculator.appdata.xml.in:49
+#: data/io.elementary.calculator.appdata.xml.in:74
 msgid "Minor updates:"
 msgstr "Actualitzacions menors:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Showing advanced controls only affects the focused window"
-msgstr ""
+msgstr "Mostrar controls avançats només afecta la finestra focalitzada."
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "Focus a l'entrada principal de text a l'inici"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "Es mostra el títol correcte de la finestra a la vista de multitasca."
 
 #: data/io.elementary.calculator.appdata.xml.in:22
-#: data/io.elementary.calculator.appdata.xml.in:34
-#: data/io.elementary.calculator.appdata.xml.in:42
-#: data/io.elementary.calculator.appdata.xml.in:52
-#: data/io.elementary.calculator.appdata.xml.in:67
-#: data/io.elementary.calculator.appdata.xml.in:76
-#: data/io.elementary.calculator.appdata.xml.in:84
-#: data/io.elementary.calculator.appdata.xml.in:94
+#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:43
+#: data/io.elementary.calculator.appdata.xml.in:53
+#: data/io.elementary.calculator.appdata.xml.in:68
+#: data/io.elementary.calculator.appdata.xml.in:77
+#: data/io.elementary.calculator.appdata.xml.in:85
+#: data/io.elementary.calculator.appdata.xml.in:95
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/io.elementary.calculator.appdata.xml.in:28
-#: data/io.elementary.calculator.appdata.xml.in:58
+#: data/io.elementary.calculator.appdata.xml.in:23
+msgid "Added 'New Window' Desktop Action"
+msgstr "S'ha afegit l'acció d'escriptori Finestra nova."
+
+#: data/io.elementary.calculator.appdata.xml.in:29
+#: data/io.elementary.calculator.appdata.xml.in:59
 msgid "New features:"
 msgstr "Funcions noves:"
 
-#: data/io.elementary.calculator.appdata.xml.in:30
+#: data/io.elementary.calculator.appdata.xml.in:31
 msgid "Add a \"Clear History\" button to the history dialog"
 msgstr "Addicció del botó de netejar l'historial al diàleg de l'històric"
 
-#: data/io.elementary.calculator.appdata.xml.in:50
+#: data/io.elementary.calculator.appdata.xml.in:51
 msgid "Fixed an issue with multiple windows"
 msgstr "Correcció d'un problema amb finestres múltiples"
 
-#: data/io.elementary.calculator.appdata.xml.in:51
+#: data/io.elementary.calculator.appdata.xml.in:52
 msgid "More informative copy in history dialog"
 msgstr "Còpia més informativa al diàleg de l'historial"
 
-#: data/io.elementary.calculator.appdata.xml.in:60
+#: data/io.elementary.calculator.appdata.xml.in:61
 msgid "Add log and inverse trigonometric functions"
 msgstr "Addició de funcions trigonomètriques inverses i logarítmiques"
 
-#: data/io.elementary.calculator.appdata.xml.in:62
+#: data/io.elementary.calculator.appdata.xml.in:63
 msgid "Other updates:"
 msgstr "Altres actualitzacions:"
 
-#: data/io.elementary.calculator.appdata.xml.in:64
+#: data/io.elementary.calculator.appdata.xml.in:65
 msgid "Fix an issue with negative decimals without leading digits"
 msgstr "Solució d'un problema amb decimals negatius sense dígits davant"
 
-#: data/io.elementary.calculator.appdata.xml.in:65
+#: data/io.elementary.calculator.appdata.xml.in:66
 msgid "More efficient state saving"
 msgstr "Estat de desament més eficient"
 
-#: data/io.elementary.calculator.appdata.xml.in:66
+#: data/io.elementary.calculator.appdata.xml.in:67
 msgid "Use slim titlebar"
 msgstr "S'usa una barra de títol prima."
 
-#: data/io.elementary.calculator.appdata.xml.in:75
+#: data/io.elementary.calculator.appdata.xml.in:76
 msgid "Fix inserting multi-byte characters"
 msgstr "Correcció de la inserció de caràcters de diversos bytes"
 
-#: data/io.elementary.calculator.appdata.xml.in:83
+#: data/io.elementary.calculator.appdata.xml.in:84
 msgid "Fix missing icon for Ukrainian"
 msgstr "Correcció de la icona que falta a l'ucraïnès"
 
-#: data/io.elementary.calculator.appdata.xml.in:91
+#: data/io.elementary.calculator.appdata.xml.in:92
 msgid "Animate Infobar when hiding and showing"
 msgstr "Animació de la barra d'informació quan s'amaga i quan es mostra"
 
-#: data/io.elementary.calculator.appdata.xml.in:92
+#: data/io.elementary.calculator.appdata.xml.in:93
 msgid "Fix selection replace"
 msgstr "Correcció de la selecció del reemplaçament"
 
-#: data/io.elementary.calculator.appdata.xml.in:93
+#: data/io.elementary.calculator.appdata.xml.in:94
 msgid "Improved decimal separator localization"
 msgstr "Localització del separador decimal millorada"
 
-#: data/io.elementary.calculator.appdata.xml.in:131
+#: data/io.elementary.calculator.appdata.xml.in:132
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
@@ -139,6 +143,10 @@ msgstr "Càlcul;Matemàtiques;Aritmètica;Científic;"
 #: data/io.elementary.calculator.desktop.in:8
 msgid "accessories-calculator"
 msgstr "accessories-calculator"
+
+#: data/io.elementary.calculator.desktop.in:16
+msgid "New Window"
+msgstr "Finestra nova"
 
 #~ msgid "About Calculator"
 #~ msgstr "Quant a la Calculadora"
