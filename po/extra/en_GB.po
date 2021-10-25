@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-22 19:03+0000\n"
-"PO-Revision-Date: 2021-08-10 10:58+0000\n"
+"PO-Revision-Date: 2021-10-25 21:17+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "calculator/extra/en_GB/>\n"
@@ -47,15 +47,15 @@ msgstr "Minor updates:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Showing advanced controls only affects the focused window"
-msgstr ""
+msgstr "Showing advanced controls only affects the focused window"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "Focus the main text entry on startup"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "Show the correct window title in Multitasking View"
 
 #: data/io.elementary.calculator.appdata.xml.in:22
 #: data/io.elementary.calculator.appdata.xml.in:35
@@ -70,7 +70,7 @@ msgstr "Updated translations"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "Added 'New Window' Desktop Action"
 
 #: data/io.elementary.calculator.appdata.xml.in:29
 #: data/io.elementary.calculator.appdata.xml.in:59
@@ -140,11 +140,11 @@ msgstr "Calculation;Mathematics;Arithmetic;Scientific;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "io.elementary.calculator"
-msgstr ""
+msgstr "io.elementary.calculator"
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "New Window"
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"
