@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-22 19:03+0000\n"
-"PO-Revision-Date: 2021-10-21 12:22+0000\n"
+"PO-Revision-Date: 2021-10-26 00:18+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
 "extra/ja/>\n"
@@ -73,7 +73,7 @@ msgstr "翻訳の更新"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "“新しいウィンドウ”デスクトップアクションを追加"
 
 #: data/io.elementary.calculator.appdata.xml.in:29
 #: data/io.elementary.calculator.appdata.xml.in:59
@@ -143,11 +143,11 @@ msgstr "Calculation;Mathematics;Arithmetic;Scientific;計算;数学;算数;科�
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "io.elementary.calculator"
-msgstr ""
+msgstr "io.elementary.calculator"
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "新しいウィンドウ"
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"
