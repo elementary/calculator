@@ -10,8 +10,6 @@ finish-args:
   - '--share=ipc'
   - '--socket=fallback-x11'
   - '--socket=wayland'
-  # needed for perfers-color-scheme
-  - '--system-talk-name=org.freedesktop.Accounts'
   - '--metadata=X-DConf=migrate-path=/io/elementary/calculator/'
 
 modules:
