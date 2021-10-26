@@ -1,3 +1,17 @@
+io.elementary.calculator (1.7.1) bionic; urgency=medium
+
+  * Release 1.7.1 (#208)
+  * Update translation files
+  * Update translation template
+  * Fixed Icons (#211)
+  * Added New Window Prompt (#207)
+  * MainWindow: Set title for Multitasking View (#205)
+  * Add aarch64 architecture support to flatpak builds (#202)
+  * MainWindow: Focus the entry by default (#197)
+  * extended-shown unbound from button_extended.active (#192)
+
+ -- elementary, Inc. <builds@elementary.io>  Tue, 26 Oct 2021 16:31:07 +0000
+
 io.elementary.calculator (1.6.0) bionic; urgency=medium
 
   * Release 1.6.0 (#158)
