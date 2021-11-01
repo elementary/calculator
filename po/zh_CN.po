@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-22 19:03+0000\n"
 "PO-Revision-Date: 2021-11-01 02:55+0000\n"
-"Last-Translator: SuperMario SuperFans <supermariosf@outlook.com>\n"
+"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "calculator/calculator/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -65,11 +65,11 @@ msgstr "百分数"
 
 #: src/MainWindow.vala:203
 msgid "Set memory value"
-msgstr ""
+msgstr "设定记忆值"
 
 #: src/MainWindow.vala:204
 msgid "Recall value from memory"
-msgstr ""
+msgstr "从内存中取出"
 
 #: src/MainWindow.vala:206
 msgid "Add to stored value"
@@ -85,7 +85,7 @@ msgstr "清除记忆"
 
 #: src/MainWindow.vala:210
 msgid "Grand Total"
-msgstr ""
+msgstr "累计"
 
 #: src/MainWindow.vala:212
 msgid "Start Group"
