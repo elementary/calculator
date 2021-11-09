@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-22 19:03+0000\n"
-"PO-Revision-Date: 2021-08-08 13:34+0000\n"
+"PO-Revision-Date: 2021-11-05 10:39+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/calculator/extra/"
 "de/>\n"
@@ -50,14 +50,16 @@ msgstr "Weitere Aktualisierungen:"
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Showing advanced controls only affects the focused window"
 msgstr ""
+"Das Anzeigen erweiterter Schaltflächen betrifft nun nur noch das ausgewählte "
+"Fenster"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "Den Haupt-Texteintrag beim Start auswählen"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "Zeigt den korrekten Fenstertitel in der Multitasking-Ansicht an"
 
 #: data/io.elementary.calculator.appdata.xml.in:22
 #: data/io.elementary.calculator.appdata.xml.in:35
@@ -72,7 +74,7 @@ msgstr "Aktualisierte Übersetzungen"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "\"Neues Fenster\" als Schreibtischaktion hinzugefügt"
 
 #: data/io.elementary.calculator.appdata.xml.in:29
 #: data/io.elementary.calculator.appdata.xml.in:59
@@ -146,7 +148,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "Neues Fenster"
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"
