@@ -111,7 +111,7 @@ namespace PantheonCalculator {
             headerbar.pack_end (button_extended);
             headerbar.pack_end (button_history);
             headerbar.get_style_context ().add_class ("default-decoration");
-            headerbar.get_style_context ().add_class(Gtk.STYLE_CLASS_FLAT);
+            headerbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
             entry = new Gtk.Entry () {
                 xalign = 1,
