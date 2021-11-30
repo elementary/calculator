@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-22 19:03+0000\n"
-"PO-Revision-Date: 2021-08-20 13:01+0000\n"
+"PO-Revision-Date: 2021-11-30 17:42+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/calculator/extra/"
 "sk/>\n"
@@ -48,15 +48,15 @@ msgstr "Drobné aktualizácie:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Showing advanced controls only affects the focused window"
-msgstr ""
+msgstr "Zobrazenie pokročilých ovládacích prvkov ovplyvní iba aktívne okno"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "Pri štarte označiť hlavné textové pole"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "Zobrazovať správny názov okna v Zobrazení okien"
 
 #: data/io.elementary.calculator.appdata.xml.in:22
 #: data/io.elementary.calculator.appdata.xml.in:35
@@ -71,7 +71,7 @@ msgstr "Aktualizované preklady"
 
 #: data/io.elementary.calculator.appdata.xml.in:23
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "Pridaná nová akcia pracovnej plochy ‚Nové okno‘"
 
 #: data/io.elementary.calculator.appdata.xml.in:29
 #: data/io.elementary.calculator.appdata.xml.in:59
@@ -116,7 +116,7 @@ msgstr "Opravené vkladanie viacbajtových znakov"
 
 #: data/io.elementary.calculator.appdata.xml.in:84
 msgid "Fix missing icon for Ukrainian"
-msgstr "Opravená chýbajúca ikona pre ukrajinčinu"
+msgstr "Opravená chýbajúca ikonka pre ukrajinčinu"
 
 #: data/io.elementary.calculator.appdata.xml.in:92
 msgid "Animate Infobar when hiding and showing"
@@ -145,7 +145,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "Nové okno"
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"
