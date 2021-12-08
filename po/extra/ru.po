@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-22 19:03+0000\n"
+"POT-Creation-Date: 2021-12-08 20:38+0000\n"
 "PO-Revision-Date: 2021-10-24 13:48+0000\n"
 "Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/calculator/extra/"
@@ -41,99 +41,105 @@ msgstr ""
 "косинус и тангенс."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:33
-#: data/io.elementary.calculator.appdata.xml.in:41
-#: data/io.elementary.calculator.appdata.xml.in:49
-#: data/io.elementary.calculator.appdata.xml.in:74
+#: data/io.elementary.calculator.appdata.xml.in:26
+#: data/io.elementary.calculator.appdata.xml.in:42
+#: data/io.elementary.calculator.appdata.xml.in:50
+#: data/io.elementary.calculator.appdata.xml.in:58
+#: data/io.elementary.calculator.appdata.xml.in:83
 msgid "Minor updates:"
 msgstr "Незначительные обновления:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Showing advanced controls only affects the focused window"
-msgstr "Показ дополнительных функций затрагивает только окно в фокусе"
+msgid "Update to elementary 6.1 runtime"
+msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:20
-msgid "Focus the main text entry on startup"
-msgstr "Переключение фокуса на поле ввода текста при запуске"
-
-#: data/io.elementary.calculator.appdata.xml.in:21
-msgid "Show the correct window title in Multitasking View"
-msgstr "Отображение правильного заголовка окна в режиме многозадачности"
-
-#: data/io.elementary.calculator.appdata.xml.in:22
-#: data/io.elementary.calculator.appdata.xml.in:35
-#: data/io.elementary.calculator.appdata.xml.in:43
-#: data/io.elementary.calculator.appdata.xml.in:53
-#: data/io.elementary.calculator.appdata.xml.in:68
+#: data/io.elementary.calculator.appdata.xml.in:31
+#: data/io.elementary.calculator.appdata.xml.in:44
+#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/io.elementary.calculator.appdata.xml.in:62
 #: data/io.elementary.calculator.appdata.xml.in:77
-#: data/io.elementary.calculator.appdata.xml.in:85
-#: data/io.elementary.calculator.appdata.xml.in:95
+#: data/io.elementary.calculator.appdata.xml.in:86
+#: data/io.elementary.calculator.appdata.xml.in:94
+#: data/io.elementary.calculator.appdata.xml.in:104
 msgid "Updated translations"
 msgstr "Обновлены переводы"
 
-#: data/io.elementary.calculator.appdata.xml.in:23
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Showing advanced controls only affects the focused window"
+msgstr "Показ дополнительных функций затрагивает только окно в фокусе"
+
+#: data/io.elementary.calculator.appdata.xml.in:29
+msgid "Focus the main text entry on startup"
+msgstr "Переключение фокуса на поле ввода текста при запуске"
+
+#: data/io.elementary.calculator.appdata.xml.in:30
+msgid "Show the correct window title in Multitasking View"
+msgstr "Отображение правильного заголовка окна в режиме многозадачности"
+
+#: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Added 'New Window' Desktop Action"
 msgstr "Добавлена возможность открытия нового окна из меню в доке"
 
-#: data/io.elementary.calculator.appdata.xml.in:29
-#: data/io.elementary.calculator.appdata.xml.in:59
+#: data/io.elementary.calculator.appdata.xml.in:38
+#: data/io.elementary.calculator.appdata.xml.in:68
 msgid "New features:"
 msgstr "Новые возможности:"
 
-#: data/io.elementary.calculator.appdata.xml.in:31
+#: data/io.elementary.calculator.appdata.xml.in:40
 msgid "Add a \"Clear History\" button to the history dialog"
 msgstr "Добавлена кнопка «Очистить историю» в диалог истории"
 
-#: data/io.elementary.calculator.appdata.xml.in:51
+#: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Fixed an issue with multiple windows"
 msgstr "Исправлена проблема с несколькими окнами"
 
-#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/io.elementary.calculator.appdata.xml.in:61
 msgid "More informative copy in history dialog"
 msgstr "Более информативная копия в диалоговом окне истории"
 
-#: data/io.elementary.calculator.appdata.xml.in:61
+#: data/io.elementary.calculator.appdata.xml.in:70
 msgid "Add log and inverse trigonometric functions"
 msgstr "Добавлен журнал и обратные тригонометрические функции"
 
-#: data/io.elementary.calculator.appdata.xml.in:63
+#: data/io.elementary.calculator.appdata.xml.in:72
 msgid "Other updates:"
 msgstr "Остальные обновления:"
 
-#: data/io.elementary.calculator.appdata.xml.in:65
+#: data/io.elementary.calculator.appdata.xml.in:74
 msgid "Fix an issue with negative decimals without leading digits"
 msgstr ""
 "Исправлена проблема с отрицательными десятичными дробями без начальных цифр"
 
-#: data/io.elementary.calculator.appdata.xml.in:66
+#: data/io.elementary.calculator.appdata.xml.in:75
 msgid "More efficient state saving"
 msgstr "Более эффективное сохранение исходного состояния"
 
-#: data/io.elementary.calculator.appdata.xml.in:67
+#: data/io.elementary.calculator.appdata.xml.in:76
 msgid "Use slim titlebar"
 msgstr "Использовать тонкий заголовок"
 
-#: data/io.elementary.calculator.appdata.xml.in:76
+#: data/io.elementary.calculator.appdata.xml.in:85
 msgid "Fix inserting multi-byte characters"
 msgstr "Исправлена вставка многобайтовых символов"
 
-#: data/io.elementary.calculator.appdata.xml.in:84
+#: data/io.elementary.calculator.appdata.xml.in:93
 msgid "Fix missing icon for Ukrainian"
 msgstr "Исправлена отсутствующая иконка для украинской локализации"
 
-#: data/io.elementary.calculator.appdata.xml.in:92
+#: data/io.elementary.calculator.appdata.xml.in:101
 msgid "Animate Infobar when hiding and showing"
 msgstr "Анимированно скрытие и появление панели сведений"
 
-#: data/io.elementary.calculator.appdata.xml.in:93
+#: data/io.elementary.calculator.appdata.xml.in:102
 msgid "Fix selection replace"
 msgstr "Исправлена замена выбранного текста"
 
-#: data/io.elementary.calculator.appdata.xml.in:94
+#: data/io.elementary.calculator.appdata.xml.in:103
 msgid "Improved decimal separator localization"
 msgstr "Улучшена локализация разделителя десятичных дробей"
 
-#: data/io.elementary.calculator.appdata.xml.in:132
+#: data/io.elementary.calculator.appdata.xml.in:141
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
