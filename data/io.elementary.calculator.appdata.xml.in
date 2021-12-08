@@ -12,6 +12,15 @@
   </description>
   <translation type="gettext">io.elementary.calculator</translation>
   <releases>
+    <release version="1.7.2" date="2021-12-08" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Update to elementary 6.1 runtime</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.7.1" date="2021-10-26" urgency="medium">
       <description>
         <p>Minor updates:</p>
