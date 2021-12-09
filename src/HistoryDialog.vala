@@ -19,15 +19,18 @@
  */
 
 namespace PantheonCalculator {
-    public class HistoryDialog : Granite.Dialog {
+    // public class HistoryDialog : Granite.Dialog {
+    public class HistoryDialog : Gtk.Dialog {
         public unowned List<MainWindow.History?> history { get; construct; }
         public signal void clear_history ();
 
         private Gtk.TreeView view;
         private Gtk.ListStore list_store;
 
-        private Gtk.RadioButton expression_radio;
-        private Gtk.RadioButton result_radio;
+        private Gtk.CheckButton expression_radio;
+        private Gtk.CheckButton result_radio;
+        // private Gtk.RadioButton expression_radio;
+        // private Gtk.RadioButton result_radio;
 
         public signal void added (string text);
 
@@ -59,34 +62,45 @@ namespace PantheonCalculator {
             var cell = new Gtk.CellRendererText ();
 
             view = new Gtk.TreeView.with_model (list_store) {
-                expand = true,
-                headers_visible = false
+                hexpand = true,
+                vexpand = true,
+                headers_visible = false,
+                css_classes = {"h3"}
             };
-            view.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            // view.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
             view.insert_column_with_attributes (-1, null, cell, "text", 0);
             view.insert_column_with_attributes (-1, null, cell, "text", 1);
             view.get_column (1).min_width = 75;
             view.get_column (0).min_width = 200;
 
-            var scrolled = new Gtk.ScrolledWindow (null, null) {
+            // var scrolled = new Gtk.ScrolledWindow (null, null) {
+            var scrolled = new Gtk.ScrolledWindow () {
                 min_content_height = 125,
-                shadow_type = Gtk.ShadowType.IN
+                // shadow_type = Gtk.ShadowType.IN
             };
-            scrolled.add (view);
+            // scrolled.add (view);
+            scrolled.set_child (view);
 
             var add_label = new Gtk.Label (_("Value to insert:")) {
                 halign = Gtk.Align.END,
                 hexpand = true
             };
 
-            result_radio = new Gtk.RadioButton.with_label (null, _("Result"));
+            // result_radio = new Gtk.RadioButton.with_label (null, _("Result"));
 
-            expression_radio = new Gtk.RadioButton.with_label_from_widget (result_radio, _("Expression"));
+            // expression_radio = new Gtk.RadioButton.with_label_from_widget (result_radio, _("Expression"));
+
+            result_radio = new Gtk.CheckButton.with_label (_("Result"));
+
+            expression_radio = new Gtk.CheckButton.with_label (_("Expression"));
 
             var main_grid = new Gtk.Grid () {
                column_spacing = 12,
-               expand = true,
-               margin = 12,
+               hexpand = true,
+               vexpand = true,
+               margin_start = 12,
+               margin_end = 12,
+               margin_bottom = 12,
                margin_top = 0,
                row_spacing = 12
             };
@@ -96,18 +110,20 @@ namespace PantheonCalculator {
             main_grid.attach (result_radio, 2, 2);
             main_grid.attach (expression_radio, 1, 2);
 
-            get_content_area ().add (main_grid);
+            get_content_area ().append (main_grid);
 
             // Use a custom response code for "Clear History" action
             var button_clear = add_button (_("Clear History"), 0);
-            button_clear.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            button_clear.css_classes = {"destructive-action"};
+            // button_clear.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
             add_button (_("Close"), Gtk.ResponseType.CLOSE);
 
             var button_add = add_button (_("Insert"), Gtk.ResponseType.APPLY);
-            button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            button_add.css_classes = {"suggested-action"};
+            // button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-            show_all ();
+            present ();
 
             response.connect (on_response);
         }

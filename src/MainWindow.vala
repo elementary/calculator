@@ -19,7 +19,7 @@
  */
 
 namespace PantheonCalculator {
-    public class MainWindow : Hdy.ApplicationWindow {
+    public class MainWindow : Adw.ApplicationWindow {
         private uint configure_id;
         private static GLib.Settings settings;
 
@@ -63,14 +63,14 @@ namespace PantheonCalculator {
         }
 
         construct {
-            Hdy.init ();
+            Adw.init ();
             add_action_entries (ACTION_ENTRIES, this);
 
             var application_instance = (Gtk.Application) GLib.Application.get_default ();
             application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_CLEAR, {"Escape"});
 
-            set_resizable (false);
-            window_position = Gtk.WindowPosition.CENTER;
+            resizable = false;
+            // window_position = Gtk.WindowPosition.CENTER;
             title = _("Calculator");
 
             decimal_places = settings.get_int ("decimal-places");
@@ -83,30 +83,41 @@ namespace PantheonCalculator {
             int window_x, window_y;
             settings.get ("window-position", "(ii)", out window_x, out window_y);
 
-            if (window_x != -1 || window_y != -1) {
-                move (window_x, window_y);
-            }
+            // if (window_x != -1 || window_y != -1) {
+            //     move (window_x, window_y);
+            // }
 
-            extended_img_1 = new Gtk.Image.from_icon_name ("pane-hide-symbolic", Gtk.IconSize.MENU);
-            extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic", Gtk.IconSize.MENU);
+            // extended_img_1 = new Gtk.Image.from_icon_name ("pane-hide-symbolic", Gtk.IconSize.MENU);
+            // extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic", Gtk.IconSize.MENU);
+            extended_img_1 = new Gtk.Image.from_icon_name ("pane-hide-symbolic") {
+                pixel_size = 16
+            };
+            extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic") {
+                pixel_size = 16
+            };
 
             button_extended = new Gtk.ToggleButton () {
-                image = extended_img_1,
+                // image = extended_img_1,
+                child = extended_img_1,
                 tooltip_text = _("Show extended functionality")
             };
             button_extended.toggled.connect (toggle_grid);
 
             button_history = new Gtk.Button () {
-                image = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.MENU),
+                // image = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.MENU),
+                child = new Gtk.Image.from_icon_name ("document-open-recent-symbolic") {
+                    pixel_size = 16
+                },
                 tooltip_text = _("History"),
                 sensitive = false
             };
             button_history.clicked.connect (show_history);
 
-            var headerbar = new Hdy.HeaderBar () {
-                has_subtitle = false,
-                show_close_button = true,
-                title = _("Calculator")
+            var headerbar = new Adw.HeaderBar () {
+                // has_subtitle = false,
+                // show_close_button = true,
+                show_start_title_buttons = true,
+                title_widget = new Gtk.Label (_("Calculator"))
             };
             headerbar.pack_end (button_extended);
             headerbar.pack_end (button_history);
@@ -115,42 +126,57 @@ namespace PantheonCalculator {
             entry = new Gtk.Entry () {
                 xalign = 1,
                 vexpand = true,
-                valign = Gtk.Align.FILL
+                valign = Gtk.Align.FILL,
+                css_classes = {"h2"}
             };
-            entry.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
+            // entry.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
 
-            button_calc = new Button ("=", _("Calculate Result"));
-            button_calc.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
-            button_calc.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            button_calc = new Button ("=", _("Calculate Result")) {
+                css_classes = { "h2", "suggested-action" }
+            };
+            // button_calc.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
+            // button_calc.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
             button_ans = new Button ("ANS", _("Insert last result"));
             button_ans.sensitive = false;
 
             button_del = new Button ("Del", _("Backspace"));
 
-            var button_clr = new Button ("C");
-            button_clr.action_name = ACTION_PREFIX + ACTION_CLEAR;
-            button_clr.tooltip_markup = Granite.markup_accel_tooltip (
-                application_instance.get_accels_for_action (button_clr.action_name),
-                _("Clear entry")
-            );
-            button_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            var button_clr = new Button ("C") {
+                action_name = ACTION_PREFIX + ACTION_CLEAR,
+                tooltip_text = _("Clear entry"),
+                css_classes = { "destructive-action" }
+            };
+            // button_clr.action_name = ACTION_PREFIX + ACTION_CLEAR;
+            // button_clr.tooltip_markup = Granite.markup_accel_tooltip (
+            //     application_instance.get_accels_for_action (button_clr.action_name),
+            //     _("Clear entry")
+            // );
+            // button_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
-            var button_add = new Button (" + ", _("Add"));
+            var button_add = new Button (" + ", _("Add")) {
+                css_classes = { "h3" }
+            };
             button_add.function = "+";
-            button_add.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            // button_add.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var button_sub = new Button (" − ", _("Subtract"));
+            var button_sub = new Button (" − ", _("Subtract")) {
+                css_classes = { "h3" }
+            };
             button_sub.function = "−";
-            button_sub.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            // button_sub.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var button_mult = new Button (" × ", _("Multiply"));
+            var button_mult = new Button (" × ", _("Multiply")) {
+                css_classes = { "h3" }
+            };
             button_mult.function = "×";
-            button_mult.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            // button_mult.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var button_div = new Button (" ÷ ", _("Divide"));
+            var button_div = new Button (" ÷ ", _("Divide")) {
+                css_classes = { "h3" }
+            };
             button_div.function = "÷";
-            button_div.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            // button_div.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_0 = new Button ("0");
             var button_point = new Button (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR));
@@ -274,13 +300,21 @@ namespace PantheonCalculator {
 
             extended_revealer = new Gtk.Revealer ();
             extended_revealer.set_transition_type (Gtk.RevealerTransitionType.SLIDE_LEFT);
-            extended_revealer.show_all ();
-            extended_revealer.add (extended_grid);
+            // extended_revealer.show_all ();
+            extended_revealer.show ();
+            extended_revealer.set_child (extended_grid);
 
-            var main_grid = new Gtk.Grid ();
-            main_grid.margin = 6;
-            main_grid.add (basic_grid);
-            main_grid.add (extended_revealer);
+            var main_grid = new Gtk.Grid () {
+                margin_start = 6,
+                margin_end = 6,
+                margin_bottom = 6,
+                margin_top = 6
+            };
+            // main_grid.margin = 6;
+            // main_grid.add (basic_grid);
+            // main_grid.add (extended_revealer);
+            main_grid.attach (basic_grid, 0, 0);
+            main_grid.attach (extended_revealer, 1, 0);
 
             infobar_label = new Gtk.Label ("");
 
@@ -289,34 +323,40 @@ namespace PantheonCalculator {
                 revealed = false,
                 show_close_button = false
             };
-            infobar.get_content_area ().add (infobar_label);
+            // infobar.get_content_area ().add (infobar_label);
+            infobar.add_child (infobar_label);
 
             var global_grid = new Gtk.Grid ();
             global_grid.orientation = Gtk.Orientation.VERTICAL;
-            global_grid.add (headerbar);
-            global_grid.add (infobar);
-            global_grid.add (main_grid);
+            // global_grid.add (headerbar);
+            // global_grid.add (infobar);
+            // global_grid.add (main_grid);
+            global_grid.attach (headerbar, 0, 0);
+            global_grid.attach (infobar, 0, 1);
+            global_grid.attach (main_grid, 0, 2);
 
-            add (global_grid);
+            // add (global_grid);
+            child = global_grid;
 
-            var granite_settings = Granite.Settings.get_default ();
-            var gtk_settings = Gtk.Settings.get_default ();
+            // var granite_settings = Granite.Settings.get_default ();
+            // var gtk_settings = Gtk.Settings.get_default ();
 
-            gtk_settings.gtk_application_prefer_dark_theme = (
-                granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
-            );
+            // gtk_settings.gtk_application_prefer_dark_theme = (
+            //     granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
+            // );
 
-            granite_settings.notify["prefers-color-scheme"].connect (() => {
-                gtk_settings.gtk_application_prefer_dark_theme = (
-                    granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
-                );
-            });
+            // granite_settings.notify["prefers-color-scheme"].connect (() => {
+            //     gtk_settings.gtk_application_prefer_dark_theme = (
+            //         granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
+            //     );
+            // });
 
             entry.grab_focus ();
 
-            show_all ();
+            // show_all ();
+            present ();
 
-            this.key_press_event.connect (key_pressed);
+            // this.key_press_event.connect (key_pressed);
 
             entry.changed.connect (remove_error);
             entry.activate.connect (button_calc_clicked);
@@ -397,7 +437,9 @@ namespace PantheonCalculator {
                 selection_length = selection_end - selection_start;
                 new_position -= selection_length;
             }
-            entry.insert_at_cursor (label);
+            // entry.insert_at_cursor (label);
+            var cursor_position = entry.cursor_position;
+            entry.do_insert_text (label, -1, ref cursor_position);
             new_position += label.char_count ();
             entry.grab_focus ();
             entry.set_position (new_position);
@@ -606,12 +648,14 @@ namespace PantheonCalculator {
             position = entry.get_position ();
             if (button.get_active ()) {
                 /* Show extended functionality */
-                button.image = extended_img_2;
+                // button.image = extended_img_2;
+                button.child = extended_img_2;
                 button.tooltip_text = _("Hide extended functionality");
                 extended_revealer.set_reveal_child (true);
             } else {
                 /* Hide extended functionality */
-                button.image = extended_img_1;
+                // button.image = extended_img_1;
+                button.child = extended_img_1;
                 button.tooltip_text = _("Show extended functionality");
                 extended_revealer.set_reveal_child (false);
             }
@@ -644,7 +688,9 @@ namespace PantheonCalculator {
         }
 
         private void history_added (string input) {
-            entry.insert_at_cursor (input);
+            // entry.insert_at_cursor (input);
+            var cursor_position = entry.cursor_position;
+            entry.do_insert_text (input, -1, ref cursor_position);
             position += input.length;
             entry.grab_focus ();
             entry.set_position (position);
@@ -654,52 +700,52 @@ namespace PantheonCalculator {
             infobar.revealed = false;
         }
 
-        private bool key_pressed (Gdk.EventKey key) {
-            bool retval = false;
-            switch (key.keyval) {
-                case Gdk.Key.KP_Decimal:
-                case Gdk.Key.KP_Separator:
-                case Gdk.Key.decimalpoint:
-                case Gdk.Key.period:
-                case Gdk.Key.comma:
-                    unowned string new_decimal = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR);
-                    entry.insert_at_cursor (new_decimal);
-                    key.keyval = Gdk.Key.Right;
-                    break;
-                case Gdk.Key.KP_Divide:
-                case Gdk.Key.slash:
-                    key.keyval = Gdk.Key.division;
-                    break;
-                case Gdk.Key.KP_Multiply:
-                case Gdk.Key.asterisk:
-                    key.keyval = Gdk.Key.multiply;
-                    break;
-                case Gdk.Key.KP_Subtract:
-                case Gdk.Key.minus:
-                    regular_button_clicked ("−");
-                    retval = true;
-                    break;
-            }
+        // private bool key_pressed (Gdk.EventKey key) {
+        //     bool retval = false;
+        //     switch (key.keyval) {
+        //         case Gdk.Key.KP_Decimal:
+        //         case Gdk.Key.KP_Separator:
+        //         case Gdk.Key.decimalpoint:
+        //         case Gdk.Key.period:
+        //         case Gdk.Key.comma:
+        //             unowned string new_decimal = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR);
+        //             entry.insert_at_cursor (new_decimal);
+        //             key.keyval = Gdk.Key.Right;
+        //             break;
+        //         case Gdk.Key.KP_Divide:
+        //         case Gdk.Key.slash:
+        //             key.keyval = Gdk.Key.division;
+        //             break;
+        //         case Gdk.Key.KP_Multiply:
+        //         case Gdk.Key.asterisk:
+        //             key.keyval = Gdk.Key.multiply;
+        //             break;
+        //         case Gdk.Key.KP_Subtract:
+        //         case Gdk.Key.minus:
+        //             regular_button_clicked ("−");
+        //             retval = true;
+        //             break;
+        //     }
 
-            return retval;
-        }
+        //     return retval;
+        // }
 
-        public override bool configure_event (Gdk.EventConfigure event) {
-            if (configure_id != 0) {
-                GLib.Source.remove (configure_id);
-            }
+        // public override bool configure_event (Gdk.EventConfigure event) {
+        //     if (configure_id != 0) {
+        //         GLib.Source.remove (configure_id);
+        //     }
 
-            configure_id = Timeout.add (100, () => {
-                configure_id = 0;
+        //     configure_id = Timeout.add (100, () => {
+        //         configure_id = 0;
 
-                int x_pos, y_pos;
-                get_position (out x_pos, out y_pos);
-                settings.set ("window-position", "(ii)", x_pos, y_pos);
+        //         int x_pos, y_pos;
+        //         get_position (out x_pos, out y_pos);
+        //         settings.set ("window-position", "(ii)", x_pos, y_pos);
 
-                return false;
-            });
+        //         return false;
+        //     });
 
-            return base.configure_event (event);
-        }
+        //     return base.configure_event (event);
+        // }
     }
 }

@@ -26,17 +26,20 @@ public class PantheonCalculator.Button : Gtk.Button {
         function = label;
         var lbl = new Gtk.Label (label);
         lbl.use_markup = true;
-        add (lbl);
+        // add (lbl);
+        child = lbl;
         tooltip_text = description;
+        width_request = WIDTH;
+        height_request = HEIGHT;
     }
 
-    public override void get_preferred_width (out int minimum_width, out int natural_width) {
-        minimum_width = WIDTH;
-        natural_width = WIDTH;
-    }
+    // public override void get_preferred_width (out int minimum_width, out int natural_width) {
+    //     minimum_width = WIDTH;
+    //     natural_width = WIDTH;
+    // }
 
-    public override void get_preferred_height (out int minimum_height, out int natural_height) {
-        minimum_height = HEIGHT;
-        natural_height = HEIGHT;
-    }
+    // public override void get_preferred_height (out int minimum_height, out int natural_height) {
+    //     minimum_height = HEIGHT;
+    //     natural_height = HEIGHT;
+    // }
 }
