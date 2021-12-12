@@ -97,7 +97,9 @@ namespace PantheonCalculator {
 
             result_radio = new Gtk.CheckButton.with_label (_("Result"));
 
-            expression_radio = new Gtk.CheckButton.with_label (_("Expression"));
+            expression_radio = new Gtk.CheckButton.with_label (_("Expression")) {
+                group = result_radio
+            };
 
             var main_grid = new Gtk.Grid () {
                column_spacing = 12,

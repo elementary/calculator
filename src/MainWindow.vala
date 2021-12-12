@@ -20,7 +20,7 @@
 
 namespace PantheonCalculator {
     public class MainWindow : Adw.ApplicationWindow {
-        private uint configure_id;
+        // private uint configure_id;
         private static GLib.Settings settings;
 
         private Gtk.Revealer extended_revealer;
