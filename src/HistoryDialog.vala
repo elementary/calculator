@@ -40,7 +40,12 @@ namespace PantheonCalculator {
 
         construct {
             deletable = false;
-            title = _("History");
+            // title = _("History");
+            use_header_bar = (int) false;
+            // titlebar = new Gtk.HeaderBar () {
+            //     title_widget = new Gtk.Label (null),
+            //     css_classes = {"flat","default-decoration"}
+            // };
             default_width = 250;
 
             var description_label = new Gtk.Label (_("Insert a previous expression or result into the current calculation.")) {

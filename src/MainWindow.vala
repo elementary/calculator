@@ -113,15 +113,16 @@ namespace PantheonCalculator {
             };
             button_history.clicked.connect (show_history);
 
-            var headerbar = new Adw.HeaderBar () {
+            var headerbar = new Gtk.HeaderBar () {
                 // has_subtitle = false,
                 // show_close_button = true,
-                show_start_title_buttons = true,
-                title_widget = new Gtk.Label (_("Calculator"))
+                show_title_buttons = true,
+                title_widget = new Gtk.Label (_("Calculator")),
+                css_classes = {"default-decoration", "flat"}
             };
             headerbar.pack_end (button_extended);
             headerbar.pack_end (button_history);
-            headerbar.get_style_context ().add_class ("default-decoration");
+            // headerbar.get_style_context ().add_class ("default-decoration");
 
             entry = new Gtk.Entry () {
                 xalign = 1,
@@ -327,7 +328,7 @@ namespace PantheonCalculator {
             infobar.add_child (infobar_label);
 
             var global_grid = new Gtk.Grid ();
-            global_grid.orientation = Gtk.Orientation.VERTICAL;
+            // global_grid.orientation = Gtk.Orientation.VERTICAL;
             // global_grid.add (headerbar);
             // global_grid.add (infobar);
             // global_grid.add (main_grid);
@@ -336,7 +337,8 @@ namespace PantheonCalculator {
             global_grid.attach (main_grid, 0, 2);
 
             // add (global_grid);
-            child = global_grid;
+            set_child (global_grid);
+            // set_default_widget (global_grid);
 
             // var granite_settings = Granite.Settings.get_default ();
             // var gtk_settings = Gtk.Settings.get_default ();
