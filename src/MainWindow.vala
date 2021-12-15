@@ -95,6 +95,10 @@ namespace PantheonCalculator {
             extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic") {
                 pixel_size = 16
             };
+            var button_history_image = new Gtk.Image.from_icon_name (
+                "document-open-recent-symbolic") {
+                pixel_size = 16
+            };
 
             button_extended = new Gtk.ToggleButton () {
                 // image = extended_img_1,
@@ -105,9 +109,7 @@ namespace PantheonCalculator {
 
             button_history = new Gtk.Button () {
                 // image = new Gtk.Image.from_icon_name ("document-open-recent-symbolic", Gtk.IconSize.MENU),
-                child = new Gtk.Image.from_icon_name ("document-open-recent-symbolic") {
-                    pixel_size = 16
-                },
+                child = button_history_image,
                 tooltip_text = _("History"),
                 sensitive = false
             };
@@ -118,7 +120,7 @@ namespace PantheonCalculator {
                 // show_close_button = true,
                 show_title_buttons = true,
                 title_widget = new Gtk.Label (_("Calculator")),
-                css_classes = {"default-decoration", "flat"}
+                css_classes = {"default-decoration"}
             };
             headerbar.pack_end (button_extended);
             headerbar.pack_end (button_history);
@@ -145,7 +147,6 @@ namespace PantheonCalculator {
 
             var button_clr = new Button ("C") {
                 action_name = ACTION_PREFIX + ACTION_CLEAR,
-                tooltip_text = _("Clear entry"),
                 css_classes = { "destructive-action" }
             };
             // button_clr.action_name = ACTION_PREFIX + ACTION_CLEAR;
