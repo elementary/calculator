@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-22 19:03+0000\n"
-"PO-Revision-Date: 2021-10-22 19:37+0000\n"
+"POT-Creation-Date: 2021-12-08 20:38+0000\n"
+"PO-Revision-Date: 2021-12-10 08:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/calculator/extra/"
 "he/>\n"
@@ -39,98 +39,104 @@ msgstr ""
 "פונקציות טריגונומטריות – סינוס, קוסינוס וטנגנס."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:33
-#: data/io.elementary.calculator.appdata.xml.in:41
-#: data/io.elementary.calculator.appdata.xml.in:49
-#: data/io.elementary.calculator.appdata.xml.in:74
+#: data/io.elementary.calculator.appdata.xml.in:26
+#: data/io.elementary.calculator.appdata.xml.in:42
+#: data/io.elementary.calculator.appdata.xml.in:50
+#: data/io.elementary.calculator.appdata.xml.in:58
+#: data/io.elementary.calculator.appdata.xml.in:83
 msgid "Minor updates:"
 msgstr "עדכונים משניים:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Showing advanced controls only affects the focused window"
-msgstr "הצגת פקדים מתקדמים משפיעה רק על החלונות הממוקדים"
+msgid "Update to elementary 6.1 runtime"
+msgstr "עודכן לסביבת הריצה 6.1 של elementary"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
-msgid "Focus the main text entry on startup"
-msgstr "התמקדות על מילוי הטקסט העיקרי עם הפתיחה"
-
-#: data/io.elementary.calculator.appdata.xml.in:21
-msgid "Show the correct window title in Multitasking View"
-msgstr "הצגת כותרת החלון הנכונה בתצוגת ריבוי משימות"
-
-#: data/io.elementary.calculator.appdata.xml.in:22
-#: data/io.elementary.calculator.appdata.xml.in:35
-#: data/io.elementary.calculator.appdata.xml.in:43
-#: data/io.elementary.calculator.appdata.xml.in:53
-#: data/io.elementary.calculator.appdata.xml.in:68
+#: data/io.elementary.calculator.appdata.xml.in:31
+#: data/io.elementary.calculator.appdata.xml.in:44
+#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/io.elementary.calculator.appdata.xml.in:62
 #: data/io.elementary.calculator.appdata.xml.in:77
-#: data/io.elementary.calculator.appdata.xml.in:85
-#: data/io.elementary.calculator.appdata.xml.in:95
+#: data/io.elementary.calculator.appdata.xml.in:86
+#: data/io.elementary.calculator.appdata.xml.in:94
+#: data/io.elementary.calculator.appdata.xml.in:104
 msgid "Updated translations"
 msgstr "עודכנו תרגומים"
 
-#: data/io.elementary.calculator.appdata.xml.in:23
+#: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Showing advanced controls only affects the focused window"
+msgstr "הצגת פקדים מתקדמים משפיעה רק על החלונות הממוקדים"
+
+#: data/io.elementary.calculator.appdata.xml.in:29
+msgid "Focus the main text entry on startup"
+msgstr "התמקדות על מילוי הטקסט העיקרי עם הפתיחה"
+
+#: data/io.elementary.calculator.appdata.xml.in:30
+msgid "Show the correct window title in Multitasking View"
+msgstr "הצגת כותרת החלון הנכונה בתצוגת ריבוי משימות"
+
+#: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Added 'New Window' Desktop Action"
 msgstr "נוספה פעולת ‚חלון חדש’ לשולחן העבודה"
 
-#: data/io.elementary.calculator.appdata.xml.in:29
-#: data/io.elementary.calculator.appdata.xml.in:59
+#: data/io.elementary.calculator.appdata.xml.in:38
+#: data/io.elementary.calculator.appdata.xml.in:68
 msgid "New features:"
 msgstr "תכונות חדשות:"
 
-#: data/io.elementary.calculator.appdata.xml.in:31
+#: data/io.elementary.calculator.appdata.xml.in:40
 msgid "Add a \"Clear History\" button to the history dialog"
 msgstr "נוסף כפתור „פינוי היסטוריה” לחלונית ההיסטוריה"
 
-#: data/io.elementary.calculator.appdata.xml.in:51
+#: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Fixed an issue with multiple windows"
 msgstr "תוקנה תקלה עם ריבוי חלונות"
 
-#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/io.elementary.calculator.appdata.xml.in:61
 msgid "More informative copy in history dialog"
 msgstr "העתקה מפורטת יותר בחלונית ההיסטוריה"
 
-#: data/io.elementary.calculator.appdata.xml.in:61
+#: data/io.elementary.calculator.appdata.xml.in:70
 msgid "Add log and inverse trigonometric functions"
 msgstr "נוספו לוג ופונקציות טריגונומטריות הפוכות"
 
-#: data/io.elementary.calculator.appdata.xml.in:63
+#: data/io.elementary.calculator.appdata.xml.in:72
 msgid "Other updates:"
 msgstr "עדכונים אחרים:"
 
-#: data/io.elementary.calculator.appdata.xml.in:65
+#: data/io.elementary.calculator.appdata.xml.in:74
 msgid "Fix an issue with negative decimals without leading digits"
 msgstr "תוקנה תקלה עם עשרוניים שליליים ללא אפס מקדים"
 
-#: data/io.elementary.calculator.appdata.xml.in:66
+#: data/io.elementary.calculator.appdata.xml.in:75
 msgid "More efficient state saving"
 msgstr "שמירת מצב יעילה יותר"
 
-#: data/io.elementary.calculator.appdata.xml.in:67
+#: data/io.elementary.calculator.appdata.xml.in:76
 msgid "Use slim titlebar"
 msgstr "להשתמש בשורת כותרת צרה"
 
-#: data/io.elementary.calculator.appdata.xml.in:76
+#: data/io.elementary.calculator.appdata.xml.in:85
 msgid "Fix inserting multi-byte characters"
 msgstr "תיקון הוספת תווים מרובי בתים"
 
-#: data/io.elementary.calculator.appdata.xml.in:84
+#: data/io.elementary.calculator.appdata.xml.in:93
 msgid "Fix missing icon for Ukrainian"
 msgstr "תיקון סמל חסר לאוקראינית"
 
-#: data/io.elementary.calculator.appdata.xml.in:92
+#: data/io.elementary.calculator.appdata.xml.in:101
 msgid "Animate Infobar when hiding and showing"
 msgstr "הנפשת פס המידע בעת הסתרה או הצגה"
 
-#: data/io.elementary.calculator.appdata.xml.in:93
+#: data/io.elementary.calculator.appdata.xml.in:102
 msgid "Fix selection replace"
 msgstr "תיקון החלפת בחירה"
 
-#: data/io.elementary.calculator.appdata.xml.in:94
+#: data/io.elementary.calculator.appdata.xml.in:103
 msgid "Improved decimal separator localization"
 msgstr "התאמת מפריד אלפים השתפרה"
 
-#: data/io.elementary.calculator.appdata.xml.in:132
+#: data/io.elementary.calculator.appdata.xml.in:141
 msgid "elementary, Inc."
 msgstr "elementary בע״מ."
 
