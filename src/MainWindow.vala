@@ -149,7 +149,7 @@ namespace PantheonCalculator {
                 action_name = ACTION_PREFIX + ACTION_CLEAR,
                 css_classes = { "destructive-action" }
             };
-            // button_clr.action_name = ACTION_PREFIX + ACTION_CLEAR;
+            button_clr.action_name = ACTION_PREFIX + ACTION_CLEAR;
             // button_clr.tooltip_markup = Granite.markup_accel_tooltip (
             //     application_instance.get_accels_for_action (button_clr.action_name),
             //     _("Clear entry")
@@ -306,7 +306,7 @@ namespace PantheonCalculator {
             extended_revealer.show ();
             extended_revealer.set_child (extended_grid);
 
-            var main_grid = new Gtk.Grid () {
+            var main_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
                 margin_start = 6,
                 margin_end = 6,
                 margin_bottom = 6,
@@ -315,8 +315,8 @@ namespace PantheonCalculator {
             // main_grid.margin = 6;
             // main_grid.add (basic_grid);
             // main_grid.add (extended_revealer);
-            main_grid.attach (basic_grid, 0, 0);
-            main_grid.attach (extended_revealer, 1, 0);
+            main_grid.append (basic_grid);
+            main_grid.append (extended_revealer);
 
             infobar_label = new Gtk.Label ("");
 
@@ -328,18 +328,17 @@ namespace PantheonCalculator {
             // infobar.get_content_area ().add (infobar_label);
             infobar.add_child (infobar_label);
 
-            var global_grid = new Gtk.Grid ();
+            var global_grid = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
             // global_grid.orientation = Gtk.Orientation.VERTICAL;
             // global_grid.add (headerbar);
             // global_grid.add (infobar);
             // global_grid.add (main_grid);
-            global_grid.attach (headerbar, 0, 0);
-            global_grid.attach (infobar, 0, 1);
-            global_grid.attach (main_grid, 0, 2);
+            global_grid.append (headerbar);
+            global_grid.append (infobar);
+            global_grid.append (main_grid);
 
             // add (global_grid);
             set_child (global_grid);
-            // set_default_widget (global_grid);
 
             // var granite_settings = Granite.Settings.get_default ();
             // var gtk_settings = Gtk.Settings.get_default ();
