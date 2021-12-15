@@ -27,8 +27,8 @@ namespace PantheonCalculator {
         private Gtk.TreeView view;
         private Gtk.ListStore list_store;
 
-        private Gtk.CheckButton expression_radio;
-        private Gtk.CheckButton result_radio;
+        private Gtk.CheckButton expression_check_button;
+        private Gtk.CheckButton result_check_button;
         // private Gtk.RadioButton expression_radio;
         // private Gtk.RadioButton result_radio;
 
@@ -95,10 +95,10 @@ namespace PantheonCalculator {
 
             // expression_radio = new Gtk.RadioButton.with_label_from_widget (result_radio, _("Expression"));
 
-            result_radio = new Gtk.CheckButton.with_label (_("Result"));
+            result_check_button = new Gtk.CheckButton.with_label (_("Result"));
 
-            expression_radio = new Gtk.CheckButton.with_label (_("Expression")) {
-                group = result_radio
+            expression_check_button = new Gtk.CheckButton.with_label (_("Expression")) {
+                group = result_check_button
             };
 
             var main_grid = new Gtk.Grid () {
@@ -114,8 +114,8 @@ namespace PantheonCalculator {
             main_grid.attach (description_label, 0, 0, 3, 1);
             main_grid.attach (scrolled, 0, 1, 3, 1);
             main_grid.attach (add_label, 0, 2);
-            main_grid.attach (result_radio, 2, 2);
-            main_grid.attach (expression_radio, 1, 2);
+            main_grid.attach (result_check_button, 2, 2);
+            main_grid.attach (expression_check_button, 1, 2);
 
             get_content_area ().append (main_grid);
 
@@ -151,9 +151,9 @@ namespace PantheonCalculator {
                 if (selection.get_selected (null, out iter)) {
                     Value val = Value (typeof (string));
 
-                    if (result_radio.get_active ()) {
+                    if (result_check_button.get_active ()) {
                         list_store.get_value (iter, 1, out val);
-                    } else if (expression_radio.get_active ()) {
+                    } else if (expression_check_button.get_active ()) {
                         list_store.get_value (iter, 0, out val);
                     }
 
