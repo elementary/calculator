@@ -12,7 +12,7 @@
   </description>
   <translation type="gettext">io.elementary.calculator</translation>
   <releases>
-    <release version="1.7.2" date="2021-12-08" urgency="medium">
+    <release version="1.7.2" date="2021-12-13" urgency="medium">
       <description>
         <p>Minor updates:</p>
         <ul>
