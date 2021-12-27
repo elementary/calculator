@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2021-12-09 07:11+0000\n"
+"PO-Revision-Date: 2021-12-27 16:53+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
 "extra/ja/>\n"
@@ -75,7 +75,7 @@ msgstr "起動時にテキストエントリーにフォーカスするように
 
 #: data/io.elementary.calculator.appdata.xml.in:30
 msgid "Show the correct window title in Multitasking View"
-msgstr "マルチタスク画面で適切なウィンドウタイトルを表示するように修正"
+msgstr "“マルチタスク画面”で適切なウィンドウタイトルを表示するように修正"
 
 #: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Added 'New Window' Desktop Action"
