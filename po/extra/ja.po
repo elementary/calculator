@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2021-12-27 16:53+0000\n"
+"PO-Revision-Date: 2021-12-30 15:18+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
 "extra/ja/>\n"
@@ -35,8 +35,7 @@ msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
-"日常で利用するのにシンプルな電卓です。基本的な計算やサイン、コサイン、タン"
-"ジェントといった三角関数を含むいくつかの科学的な計算をサポートします。"
+"日常用途を想定した、シンプルな電卓です。基本的な計算と科学的な計算が可能で、サイン・コサイン・タンジェントといった三角関数などにも対応しています。"
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 #: data/io.elementary.calculator.appdata.xml.in:26
