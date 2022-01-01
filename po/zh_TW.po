@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-01-01 15:14+0000\n"
+"PO-Revision-Date: 2022-01-01 16:20+0000\n"
 "Last-Translator: Vincent Yu <coolplayyhj@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "calculator/calculator/zh_Hant/>\n"
@@ -181,10 +181,8 @@ msgstr "表述式"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "清除輸入"
+msgstr "清除歷史記錄"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
@@ -192,7 +190,7 @@ msgstr "關閉"
 
 #: src/HistoryDialog.vala:107
 msgid "Insert"
-msgstr ""
+msgstr "插入"
 
 #: src/Core/Scanner.vala:68
 #, c-format
