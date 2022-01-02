@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2019-03-12 14:26+0000\n"
-"Last-Translator: hanix <lrdhanix@gmail.com>\n"
+"PO-Revision-Date: 2022-01-01 17:28+0000\n"
+"Last-Translator: aalhaif <aalhaif@hotmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/calculator/"
 "calculator/ar/>\n"
 "Language: ar\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:43+0000\n"
 
 #: src/MainWindow.vala:74 src/MainWindow.vala:109
@@ -33,10 +33,8 @@ msgid "Calculate Result"
 msgstr "حساب النتيجة"
 
 #: src/MainWindow.vala:126
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
-msgstr "أضف النتيجة الأخيرة"
+msgstr "إدراج النتيجة الأخيرة"
 
 #: src/MainWindow.vala:129
 msgid "Backspace"
@@ -68,29 +66,27 @@ msgstr "النسبة المئوية"
 
 #: src/MainWindow.vala:203
 msgid "Set memory value"
-msgstr ""
+msgstr "حفظ القيمة"
 
 #: src/MainWindow.vala:204
 msgid "Recall value from memory"
-msgstr ""
+msgstr "استرجاع القيمة من الذاكرة"
 
 #: src/MainWindow.vala:206
 msgid "Add to stored value"
-msgstr ""
+msgstr "إضافة إلى القيمة المحفوظة"
 
 #: src/MainWindow.vala:207
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "طرح من القيمة المحفوظة"
 
 #: src/MainWindow.vala:208
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "مسح منطقة الإدخال"
+msgstr "مسح الذاكرة"
 
 #: src/MainWindow.vala:210
 msgid "Grand Total"
-msgstr ""
+msgstr "المجموع النهائي"
 
 #: src/MainWindow.vala:212
 msgid "Start Group"
