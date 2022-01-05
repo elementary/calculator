@@ -104,8 +104,7 @@ namespace PantheonCalculator {
             button_history.clicked.connect (show_history);
 
             var headerbar = new Gtk.HeaderBar () {
-                show_title_buttons = true,
-                title_widget = new Gtk.Label (_("Calculator"))
+                show_title_buttons = true
             };
             headerbar.pack_end (button_extended);
             headerbar.pack_end (button_history);
