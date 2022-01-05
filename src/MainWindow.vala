@@ -25,8 +25,6 @@ namespace PantheonCalculator {
 
         private Gtk.Revealer extended_revealer;
         private Gtk.Entry entry;
-        private Gtk.Image extended_img_1;
-        private Gtk.Image extended_img_2;
         private Gtk.Button button_calc;
         private Gtk.Button button_history;
         private Gtk.Button button_ans;
@@ -77,27 +75,14 @@ namespace PantheonCalculator {
 
             history = new List<History?> ();
             position = 0;
-
-            extended_img_1 = new Gtk.Image.from_icon_name ("pane-hide-symbolic") {
-                pixel_size = 16
-            };
-
-            extended_img_2 = new Gtk.Image.from_icon_name ("pane-show-symbolic") {
-                pixel_size = 16
-            };
-
-            var button_history_image = new Gtk.Image.from_icon_name ("document-open-recent-symbolic") {
-                pixel_size = 16
-            };
-
             button_extended = new Gtk.ToggleButton () {
-                child = extended_img_1,
+                icon_name = "pane-hide-symbolic",
                 tooltip_text = _("Show extended functionality")
             };
             button_extended.toggled.connect (toggle_grid);
 
             button_history = new Gtk.Button () {
-                child = button_history_image,
+                icon_name = "document-open-recent-symbolic",
                 tooltip_text = _("History"),
                 sensitive = false
             };
@@ -288,11 +273,11 @@ namespace PantheonCalculator {
             infobar_label = new Gtk.Label ("");
 
             infobar = new Gtk.InfoBar () {
-                child = infobar_label
                 message_type = Gtk.MessageType.WARNING,
                 revealed = false,
                 show_close_button = false
             };
+            infobar.add_child (infobar_label);
 
             var global_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
             global_box.append (infobar);
@@ -318,7 +303,7 @@ namespace PantheonCalculator {
 
             present ();
 
-            // this.key_press_event.connect (key_pressed);
+            // key_press_event.connect (key_pressed);
 
             entry.changed.connect (remove_error);
             entry.activate.connect (button_calc_clicked);
@@ -610,16 +595,14 @@ namespace PantheonCalculator {
             position = entry.get_position ();
             if (button.get_active ()) {
                 /* Show extended functionality */
-                // button.image = extended_img_2;
-                button.child = extended_img_2;
+                button.icon_name = "pane-show-symbolic";
                 button.tooltip_text = _("Hide extended functionality");
-                extended_revealer.set_reveal_child (true);
+                extended_revealer.reveal_child = true;
             } else {
                 /* Hide extended functionality */
-                // button.image = extended_img_1;
-                button.child = extended_img_1;
+                button.icon_name = "pane-hide-symbolic";
                 button.tooltip_text = _("Show extended functionality");
-                extended_revealer.set_reveal_child (false);
+                extended_revealer.reveal_child = false;
             }
             /* Focusing button_calc because without a new focus it will cause weird window drawing problems. */
             entry.grab_focus ();
@@ -650,7 +633,6 @@ namespace PantheonCalculator {
         }
 
         private void history_added (string input) {
-            // entry.insert_at_cursor (input);
             var cursor_position = entry.cursor_position;
             entry.do_insert_text (input, -1, ref cursor_position);
             position += input.length;
@@ -690,24 +672,6 @@ namespace PantheonCalculator {
         //     }
 
         //     return retval;
-        // }
-
-        // public override bool configure_event (Gdk.EventConfigure event) {
-        //     if (configure_id != 0) {
-        //         GLib.Source.remove (configure_id);
-        //     }
-
-        //     configure_id = Timeout.add (100, () => {
-        //         configure_id = 0;
-
-        //         int x_pos, y_pos;
-        //         get_position (out x_pos, out y_pos);
-        //         settings.set ("window-position", "(ii)", x_pos, y_pos);
-
-        //         return false;
-        //     });
-
-        //     return base.configure_event (event);
         // }
     }
 }
