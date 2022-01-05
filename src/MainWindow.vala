@@ -271,11 +271,10 @@ namespace PantheonCalculator {
             extended_grid.attach (button_e, 2, 5, 1, 1);
             extended_grid.attach (button_reciprocal, 3, 5, 1, 1);
 
-            extended_revealer = new Gtk.Revealer ();
-            extended_revealer.set_transition_type (Gtk.RevealerTransitionType.SLIDE_LEFT);
-            // extended_revealer.show_all ();
-            extended_revealer.show ();
-            extended_revealer.set_child (extended_grid);
+            extended_revealer = new Gtk.Revealer () {
+                transition_type = Gtk.RevealerTransitionType.SLIDE_LEFT,
+                child = extended_grid
+            };
 
             var main_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
                 margin_start = 6,
@@ -289,12 +288,11 @@ namespace PantheonCalculator {
             infobar_label = new Gtk.Label ("");
 
             infobar = new Gtk.InfoBar () {
+                child = infobar_label
                 message_type = Gtk.MessageType.WARNING,
                 revealed = false,
                 show_close_button = false
             };
-            // infobar.get_content_area ().add (infobar_label);
-            infobar.add_child (infobar_label);
 
             var global_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
             global_box.append (infobar);
