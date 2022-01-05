@@ -19,8 +19,7 @@
  */
 
 namespace PantheonCalculator {
-    // public class HistoryDialog : Granite.Dialog {
-    public class HistoryDialog : Gtk.Dialog {
+    public class HistoryDialog : Granite.Dialog {
         public unowned List<MainWindow.History?> history { get; construct; }
         public signal void clear_history ();
 
@@ -40,12 +39,7 @@ namespace PantheonCalculator {
 
         construct {
             deletable = false;
-            // title = _("History");
-            use_header_bar = (int) false;
-            // titlebar = new Gtk.HeaderBar () {
-            //     title_widget = new Gtk.Label (null),
-            //     css_classes = {"flat","default-decoration"}
-            // };
+            title = _("History");
             default_width = 250;
 
             var description_label = new Gtk.Label (_("Insert a previous expression or result into the current calculation.")) {
@@ -69,31 +63,27 @@ namespace PantheonCalculator {
             view = new Gtk.TreeView.with_model (list_store) {
                 hexpand = true,
                 vexpand = true,
-                headers_visible = false,
-                css_classes = {"h3"}
+                headers_visible = false
             };
-            // view.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            view.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
             view.insert_column_with_attributes (-1, null, cell, "text", 0);
             view.insert_column_with_attributes (-1, null, cell, "text", 1);
             view.get_column (1).min_width = 75;
             view.get_column (0).min_width = 200;
 
-            // var scrolled = new Gtk.ScrolledWindow (null, null) {
             var scrolled = new Gtk.ScrolledWindow () {
                 min_content_height = 125,
-                // shadow_type = Gtk.ShadowType.IN
+                child = view
             };
-            // scrolled.add (view);
-            scrolled.set_child (view);
+
+            var frame = new Gtk.Frame (null) {
+                child = scrolled
+            };
 
             var add_label = new Gtk.Label (_("Value to insert:")) {
                 halign = Gtk.Align.END,
                 hexpand = true
             };
-
-            // result_radio = new Gtk.RadioButton.with_label (null, _("Result"));
-
-            // expression_radio = new Gtk.RadioButton.with_label_from_widget (result_radio, _("Expression"));
 
             result_check_button = new Gtk.CheckButton.with_label (_("Result"));
 
@@ -112,7 +102,7 @@ namespace PantheonCalculator {
                row_spacing = 12
             };
             main_grid.attach (description_label, 0, 0, 3, 1);
-            main_grid.attach (scrolled, 0, 1, 3, 1);
+            main_grid.attach (frame, 0, 1, 3, 1);
             main_grid.attach (add_label, 0, 2);
             main_grid.attach (result_check_button, 2, 2);
             main_grid.attach (expression_check_button, 1, 2);
@@ -121,14 +111,12 @@ namespace PantheonCalculator {
 
             // Use a custom response code for "Clear History" action
             var button_clear = add_button (_("Clear History"), 0);
-            button_clear.css_classes = {"destructive-action"};
-            // button_clear.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            button_clear.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
             add_button (_("Close"), Gtk.ResponseType.CLOSE);
 
             var button_add = add_button (_("Insert"), Gtk.ResponseType.APPLY);
-            button_add.css_classes = {"suggested-action"};
-            // button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            button_add.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
             present ();
 
