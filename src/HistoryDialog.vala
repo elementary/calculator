@@ -28,8 +28,6 @@ namespace PantheonCalculator {
 
         private Gtk.CheckButton expression_check_button;
         private Gtk.CheckButton result_check_button;
-        // private Gtk.RadioButton expression_radio;
-        // private Gtk.RadioButton result_radio;
 
         public signal void added (string text);
 
@@ -85,7 +83,9 @@ namespace PantheonCalculator {
                 hexpand = true
             };
 
-            result_check_button = new Gtk.CheckButton.with_label (_("Result"));
+            result_check_button = new Gtk.CheckButton.with_label (_("Result")) {
+                active = true
+            };
 
             expression_check_button = new Gtk.CheckButton.with_label (_("Expression")) {
                 group = result_check_button
