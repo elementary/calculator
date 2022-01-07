@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
 "PO-Revision-Date: 2022-01-07 22:25+0000\n"
-"Last-Translator: satrya <satrya99@gmail.com>\n"
+"Last-Translator: Gusti Ahmad Fanshuri Alfarisy <gusti.alfarisy@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/calculator/"
 "calculator/id/>\n"
 "Language: id\n"
@@ -165,7 +165,7 @@ msgstr "Sembunyikan fungsi lainnya"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Masukkan hasil atau ekspresi sebelumnya ke dalam kalkulasi."
 
 #: src/HistoryDialog.vala:77
 msgid "Value to insert:"
