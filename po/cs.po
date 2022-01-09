@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-01-09 20:59+0000\n"
+"PO-Revision-Date: 2022-01-09 21:00+0000\n"
 "Last-Translator: VojtechTM <vojtechvengrin@email.cz>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/calculator/"
 "calculator/cs/>\n"
@@ -147,7 +147,7 @@ msgstr "Přirozená Logaristika"
 
 #: src/MainWindow.vala:228
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Inverzní sinus"
 
 #: src/MainWindow.vala:230
 #, fuzzy
