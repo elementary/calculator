@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-01-09 21:00+0000\n"
-"Last-Translator: Martin Šťastný <martin@stastni.cz>\n"
+"PO-Revision-Date: 2022-01-09 21:31+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/calculator/"
 "calculator/cs/>\n"
 "Language: cs\n"
@@ -80,10 +80,8 @@ msgid "Subtract from stored value"
 msgstr "Odečíst z uložené hodnoty v paměti"
 
 #: src/MainWindow.vala:208
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "Vymazat zadání"
+msgstr "Vymazat paměť"
 
 #: src/MainWindow.vala:210
 msgid "Grand Total"
@@ -147,7 +145,7 @@ msgstr "Přirozený logaritmus"
 
 #: src/MainWindow.vala:228
 msgid "Inverse Sine"
-msgstr "Arkussinus"
+msgstr "Inverzní sinus"
 
 #: src/MainWindow.vala:230
 #, fuzzy
