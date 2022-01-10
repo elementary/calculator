@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-01-10 22:57+0000\n"
-"Last-Translator: VojtechTM <vojtechvengrin@email.cz>\n"
+"PO-Revision-Date: 2022-01-11 01:06+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/calculator/"
 "calculator/cs/>\n"
 "Language: cs\n"
@@ -157,7 +157,7 @@ msgstr "Inverzní tangens"
 
 #: src/MainWindow.vala:234
 msgid "Reciprocal"
-msgstr "Reciproční"
+msgstr "Převrácená hodnota čísla"
 
 #: src/MainWindow.vala:610
 msgid "Hide extended functionality"
