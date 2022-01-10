@@ -152,10 +152,8 @@ msgid "Inverse Cosine"
 msgstr "Arkuskosinus"
 
 #: src/MainWindow.vala:232
-#, fuzzy
-#| msgid "Tangent"
 msgid "Inverse Tangent"
-msgstr "Tangens"
+msgstr "Arkustangens"
 
 #: src/MainWindow.vala:234
 msgid "Reciprocal"
