@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-01-10 22:55+0000\n"
+"PO-Revision-Date: 2022-01-10 22:56+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/calculator/"
 "calculator/cs/>\n"
@@ -148,10 +148,8 @@ msgid "Inverse Sine"
 msgstr "Inverzní sinus"
 
 #: src/MainWindow.vala:230
-#, fuzzy
-#| msgid "Cosine"
 msgid "Inverse Cosine"
-msgstr "Kosinus"
+msgstr "Arkus kosinus"
 
 #: src/MainWindow.vala:232
 #, fuzzy
