@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-01-09 21:31+0000\n"
-"Last-Translator: Martin Šťastný <martin@stastni.cz>\n"
+"PO-Revision-Date: 2022-01-10 14:31+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/calculator/"
 "calculator/cs/>\n"
 "Language: cs\n"
@@ -169,13 +169,11 @@ msgstr "Skrýt rozšířené možnosti"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Vložit předchozí výraz nebo výsledek do stávajícího výpočtu."
 
 #: src/HistoryDialog.vala:77
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Hodnota, kterou přidat:"
+msgstr "Hodnota, kterou vložit:"
 
 #: src/HistoryDialog.vala:82
 msgid "Result"
@@ -187,10 +185,8 @@ msgstr "Výraz"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "Vymazat zadání"
+msgstr "Vymazat historii"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
@@ -198,7 +194,7 @@ msgstr "Zavřít"
 
 #: src/HistoryDialog.vala:107
 msgid "Insert"
-msgstr ""
+msgstr "Vložit"
 
 #: src/Core/Scanner.vala:68
 #, c-format
