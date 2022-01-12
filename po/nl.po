@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-01-12 07:55+0000\n"
-"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
+"PO-Revision-Date: 2022-01-12 07:57+0000\n"
+"Last-Translator: Mathias Vervaeke <mathias.vervaeke@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/"
 "calculator/nl/>\n"
 "Language: nl\n"
@@ -159,7 +159,7 @@ msgstr "Tangens"
 
 #: src/MainWindow.vala:234
 msgid "Reciprocal"
-msgstr ""
+msgstr "Wederzijds"
 
 #: src/MainWindow.vala:610
 msgid "Hide extended functionality"
@@ -167,7 +167,7 @@ msgstr "Verberg uitgebreide functionaliteit"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Voeg een eerdere uitdrukking of resultaat in de huidige berekening in."
 
 #: src/HistoryDialog.vala:77
 #, fuzzy
@@ -185,10 +185,8 @@ msgstr "Uitdrukking"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "Invoer wissen"
+msgstr "Geschiedenis wissen"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
