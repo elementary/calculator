@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
 "PO-Revision-Date: 2022-01-12 07:57+0000\n"
-"Last-Translator: Mathias Vervaeke <mathias.vervaeke@gmail.com>\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/"
 "calculator/nl/>\n"
 "Language: nl\n"
@@ -149,7 +149,7 @@ msgstr "Inverse Sinus"
 
 #: src/MainWindow.vala:230
 msgid "Inverse Cosine"
-msgstr "Inverse cosinus"
+msgstr "Inverse Cosinus"
 
 #: src/MainWindow.vala:232
 #, fuzzy
@@ -170,10 +170,8 @@ msgid "Insert a previous expression or result into the current calculation."
 msgstr "Voeg een eerdere uitdrukking of resultaat in de huidige berekening in."
 
 #: src/HistoryDialog.vala:77
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Waarde om toe te voegen:"
+msgstr "Waarde om in te voegen:"
 
 #: src/HistoryDialog.vala:82
 msgid "Result"
