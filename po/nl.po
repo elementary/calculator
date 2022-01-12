@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
 "PO-Revision-Date: 2022-01-12 07:55+0000\n"
-"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
+"Last-Translator: Mathias Vervaeke <mathias.vervaeke@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/"
 "calculator/nl/>\n"
 "Language: nl\n"
@@ -67,29 +67,27 @@ msgstr "Percentage"
 
 #: src/MainWindow.vala:203
 msgid "Set memory value"
-msgstr ""
+msgstr "Stel de geheugenwaarde in"
 
 #: src/MainWindow.vala:204
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Waarde uit het geheugen oproepen"
 
 #: src/MainWindow.vala:206
 msgid "Add to stored value"
-msgstr ""
+msgstr "Toevoegen aan opgeslagen waarde"
 
 #: src/MainWindow.vala:207
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Aftrekken van opgeslagen waarde"
 
 #: src/MainWindow.vala:208
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "Invoer wissen"
+msgstr "Geheugen wissen"
 
 #: src/MainWindow.vala:210
 msgid "Grand Total"
-msgstr ""
+msgstr "Eindtotaal"
 
 #: src/MainWindow.vala:212
 msgid "Start Group"
@@ -141,7 +139,7 @@ msgstr "Getal van Euler"
 
 #: src/MainWindow.vala:225
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Logaritme met grondtal 10"
 
 #: src/MainWindow.vala:227
 msgid "Natural Logarithm"
