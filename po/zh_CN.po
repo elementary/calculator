@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-01-28 09:08+0000\n"
+"PO-Revision-Date: 2022-01-28 10:17+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "calculator/calculator/zh_Hans/>\n"
@@ -69,7 +69,7 @@ msgstr "设定记忆值"
 
 #: src/MainWindow.vala:204
 msgid "Recall value from memory"
-msgstr "内存取出"
+msgstr "读取记忆值"
 
 #: src/MainWindow.vala:206
 msgid "Add to stored value"
