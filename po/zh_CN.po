@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2021-11-01 02:55+0000\n"
+"PO-Revision-Date: 2022-01-28 09:07+0000\n"
 "Last-Translator: TeF <tefiszx@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "calculator/calculator/zh_Hans/>\n"
@@ -65,7 +65,7 @@ msgstr "百分数"
 
 #: src/MainWindow.vala:203
 msgid "Set memory value"
-msgstr "设定记忆值"
+msgstr "设定内存值"
 
 #: src/MainWindow.vala:204
 msgid "Recall value from memory"
