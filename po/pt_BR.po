@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
 "PO-Revision-Date: 2022-02-02 21:26+0000\n"
-"Last-Translator: Vitor Satyro Vitturi <vitorsv1@al.insper.edu.br>\n"
+"Last-Translator: Leomar Marcelo Marschalk <business@leomarmm.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "calculator/calculator/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -29,7 +29,7 @@ msgstr "Histórico"
 
 #: src/MainWindow.vala:122
 msgid "Calculate Result"
-msgstr "Calcular resultado"
+msgstr "Calcular Resultado"
 
 #: src/MainWindow.vala:126
 msgid "Insert last result"
@@ -73,11 +73,11 @@ msgstr "Recuperar valor da memória"
 
 #: src/MainWindow.vala:206
 msgid "Add to stored value"
-msgstr ""
+msgstr "Adicionar ao valor armazenado"
 
 #: src/MainWindow.vala:207
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Subtrair do valor armazenado"
 
 #: src/MainWindow.vala:208
 #, fuzzy
@@ -91,11 +91,11 @@ msgstr ""
 
 #: src/MainWindow.vala:212
 msgid "Start Group"
-msgstr "Início de grupo"
+msgstr "Início de Grupo"
 
 #: src/MainWindow.vala:213
 msgid "End Group"
-msgstr "Término de grupo"
+msgstr "Término de Grupo"
 
 #: src/MainWindow.vala:214
 msgid "Exponent"
@@ -111,7 +111,7 @@ msgstr "Seno"
 
 #: src/MainWindow.vala:218
 msgid "Hyperbolic Sine"
-msgstr "Seno hiperbólico"
+msgstr "Seno Hiperbólico"
 
 #: src/MainWindow.vala:219
 msgid "Cosine"
@@ -119,7 +119,7 @@ msgstr "Cosseno"
 
 #: src/MainWindow.vala:220
 msgid "Hyperbolic Cosine"
-msgstr "Cosseno hiperbólico"
+msgstr "Cosseno Hiperbólico"
 
 #: src/MainWindow.vala:221
 msgid "Tangent"
@@ -127,7 +127,7 @@ msgstr "Tangente"
 
 #: src/MainWindow.vala:222
 msgid "Hyperbolic Tangent"
-msgstr "Tangente hiperbólica"
+msgstr "Tangente Hiperbólica"
 
 #: src/MainWindow.vala:223
 msgid "Pi"
@@ -139,27 +139,23 @@ msgstr "Número de Euler"
 
 #: src/MainWindow.vala:225
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Logaritmo na Base 10"
 
 #: src/MainWindow.vala:227
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Logaritmo Natural"
 
 #: src/MainWindow.vala:228
 msgid "Inverse Sine"
 msgstr ""
 
 #: src/MainWindow.vala:230
-#, fuzzy
-#| msgid "Cosine"
 msgid "Inverse Cosine"
-msgstr "Cosseno"
+msgstr "Arco Cosseno"
 
 #: src/MainWindow.vala:232
-#, fuzzy
-#| msgid "Tangent"
 msgid "Inverse Tangent"
-msgstr "Tangente"
+msgstr "Arco Tangente"
 
 #: src/MainWindow.vala:234
 msgid "Reciprocal"
