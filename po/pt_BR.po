@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-02-02 21:26+0000\n"
-"Last-Translator: fdiang <fdiang@gmail.com>\n"
+"PO-Revision-Date: 2022-02-03 00:12+0000\n"
+"Last-Translator: Leomar Marcelo Marschalk <business@leomarmm.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "calculator/calculator/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -65,7 +65,7 @@ msgstr "Porcentagem"
 
 #: src/MainWindow.vala:203
 msgid "Set memory value"
-msgstr ""
+msgstr "Armazenar valor na memória"
 
 #: src/MainWindow.vala:204
 msgid "Recall value from memory"
@@ -145,7 +145,7 @@ msgstr "Logaritmo Natural"
 
 #: src/MainWindow.vala:228
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Arco Seno"
 
 #: src/MainWindow.vala:230
 msgid "Inverse Cosine"
@@ -157,7 +157,7 @@ msgstr "Arco Tangente"
 
 #: src/MainWindow.vala:234
 msgid "Reciprocal"
-msgstr ""
+msgstr "Inverso Multiplicativo"
 
 #: src/MainWindow.vala:610
 msgid "Hide extended functionality"
@@ -165,13 +165,11 @@ msgstr "Ocultar outras funcionalidades"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Inserir uma expressão ou resultado anterior no cálculo atual."
 
 #: src/HistoryDialog.vala:77
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Valor a acrescentar:"
+msgstr "Valor a inserir:"
 
 #: src/HistoryDialog.vala:82
 msgid "Result"
@@ -184,7 +182,7 @@ msgstr "Expressão"
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
 msgid "Clear History"
-msgstr "Limpar histórico"
+msgstr "Limpar Histórico"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
@@ -192,7 +190,7 @@ msgstr "Fechar"
 
 #: src/HistoryDialog.vala:107
 msgid "Insert"
-msgstr ""
+msgstr "Inserir"
 
 #: src/Core/Scanner.vala:68
 #, c-format
