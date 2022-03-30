@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-03-30 15:45+0000\n"
+"PO-Revision-Date: 2022-03-30 18:38+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Sorani <https://l10n.elementary.io/projects/calculator/"
 "calculator/ckb/>\n"
@@ -21,7 +21,7 @@ msgstr "بژمێر"
 
 #: src/MainWindow.vala:95 src/MainWindow.vala:615
 msgid "Show extended functionality"
-msgstr "پیشاندانی کردارە گەورەکراوەکان"
+msgstr "پیشاندانی کردارەکانی تر"
 
 #: src/MainWindow.vala:101 src/HistoryDialog.vala:40
 msgid "History"
@@ -33,15 +33,15 @@ msgstr "ئەنجام بژمێرە"
 
 #: src/MainWindow.vala:126
 msgid "Insert last result"
-msgstr "کۆتا ئەنجام"
+msgstr "کۆتا ئەنجام بهێنە"
 
 #: src/MainWindow.vala:129
 msgid "Backspace"
-msgstr "كلیلی دوابه‌ر"
+msgstr "سڕینەوە"
 
 #: src/MainWindow.vala:135
 msgid "Clear entry"
-msgstr ""
+msgstr "سڕینەوەی شاشە"
 
 #: src/MainWindow.vala:139
 msgid "Add"
