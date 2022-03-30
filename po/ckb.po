@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-03-30 18:38+0000\n"
+"PO-Revision-Date: 2022-03-30 21:37+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Sorani <https://l10n.elementary.io/projects/calculator/"
 "calculator/ckb/>\n"
@@ -21,7 +21,7 @@ msgstr "بژمێر"
 
 #: src/MainWindow.vala:95 src/MainWindow.vala:615
 msgid "Show extended functionality"
-msgstr "پیشاندانی کردارەکانی تر"
+msgstr "پیشاندانی بژمێری پێشکەوتوو"
 
 #: src/MainWindow.vala:101 src/HistoryDialog.vala:40
 msgid "History"
@@ -45,19 +45,19 @@ msgstr "سڕینەوەی شاشە"
 
 #: src/MainWindow.vala:139
 msgid "Add"
-msgstr "زۆركردن"
+msgstr "کۆکردنەوە"
 
 #: src/MainWindow.vala:143
 msgid "Subtract"
-msgstr ""
+msgstr "کەمکردنەوە"
 
 #: src/MainWindow.vala:147
 msgid "Multiply"
-msgstr ""
+msgstr "جاران"
 
 #: src/MainWindow.vala:151
 msgid "Divide"
-msgstr ""
+msgstr "دابەش"
 
 #: src/MainWindow.vala:157
 msgid "Percentage"
@@ -65,43 +65,43 @@ msgstr "ڕێژەی سەدی"
 
 #: src/MainWindow.vala:203
 msgid "Set memory value"
-msgstr ""
+msgstr "دانانی بەهای بیرگە"
 
 #: src/MainWindow.vala:204
 msgid "Recall value from memory"
-msgstr ""
+msgstr "بانگکردنەوەی بەها لە بیرگە"
 
 #: src/MainWindow.vala:206
 msgid "Add to stored value"
-msgstr ""
+msgstr "زیادکردن بۆ بەهای پاشەکەوت کراو لە بیرگەدا"
 
 #: src/MainWindow.vala:207
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "کەمکردنەوە لە بەهای پاشەکەوت کراو لە بیرگەدا"
 
 #: src/MainWindow.vala:208
 msgid "Clear memory"
-msgstr ""
+msgstr "پاککردنەوەی بیرگە"
 
 #: src/MainWindow.vala:210
 msgid "Grand Total"
-msgstr ""
+msgstr "کۆی گشتی"
 
 #: src/MainWindow.vala:212
 msgid "Start Group"
-msgstr ""
+msgstr "کەوانە (کردنەوە)"
 
 #: src/MainWindow.vala:213
 msgid "End Group"
-msgstr ""
+msgstr "کەوانە (داخستن)"
 
 #: src/MainWindow.vala:214
 msgid "Exponent"
-msgstr ""
+msgstr "توان"
 
 #: src/MainWindow.vala:216
 msgid "Root"
-msgstr ""
+msgstr "ڕەگ"
 
 #: src/MainWindow.vala:217
 msgid "Sine"
@@ -109,7 +109,7 @@ msgstr "ساین"
 
 #: src/MainWindow.vala:218
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "نەخشەی تەژێ زیاد"
 
 #: src/MainWindow.vala:219
 msgid "Cosine"
@@ -117,7 +117,7 @@ msgstr "کۆساین"
 
 #: src/MainWindow.vala:220
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "نەخشەی تەژێ تەواوی زیاد"
 
 #: src/MainWindow.vala:221
 msgid "Tangent"
@@ -125,7 +125,7 @@ msgstr "لێکەوت"
 
 #: src/MainWindow.vala:222
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "بڕگە زیادی لێکەوت"
 
 #: src/MainWindow.vala:223
 msgid "Pi"
@@ -133,49 +133,43 @@ msgstr "پای"
 
 #: src/MainWindow.vala:224
 msgid "Euler's Number"
-msgstr ""
+msgstr "ژمارەی ئویلەر"
 
 #: src/MainWindow.vala:225
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "بنچینەی لۆگاریتمی ١٠"
 
 #: src/MainWindow.vala:227
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "لۆگاریتمی سروشتی"
 
 #: src/MainWindow.vala:228
 msgid "Inverse Sine"
-msgstr ""
+msgstr "تەژێ پێچەوانە"
 
 #: src/MainWindow.vala:230
-#, fuzzy
-#| msgid "Cosine"
 msgid "Inverse Cosine"
-msgstr "کۆساین"
+msgstr "کۆساینی پێچەوانە"
 
 #: src/MainWindow.vala:232
-#, fuzzy
-#| msgid "Tangent"
 msgid "Inverse Tangent"
-msgstr "لێکەوت"
+msgstr "لێکەوتی پێچەوانە"
 
 #: src/MainWindow.vala:234
 msgid "Reciprocal"
-msgstr ""
+msgstr "ئاڵوگۆڕ"
 
 #: src/MainWindow.vala:610
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "گەڕانەوە بۆ بژمێری سادە"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "هێنانی دەستەواژە یان ئەنجامی پێشوو بۆ ناو خانەی بژمێر."
 
 #: src/HistoryDialog.vala:77
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "نرخ بۆ زیادکردن:"
+msgstr "ئەو بەهایەی کە دەهێندرێتەوە:"
 
 #: src/HistoryDialog.vala:82
 msgid "Result"
@@ -187,10 +181,8 @@ msgstr "دەستەواژە"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "History"
 msgid "Clear History"
-msgstr "مێژوو"
+msgstr "سڕینەوەی مێژوو"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
@@ -198,7 +190,7 @@ msgstr "داخستن"
 
 #: src/HistoryDialog.vala:107
 msgid "Insert"
-msgstr ""
+msgstr "هێنان"
 
 #: src/Core/Scanner.vala:68
 #, c-format
@@ -207,7 +199,7 @@ msgstr "'%s' نادروستە."
 
 #: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "هەڵە لە کەوانەکاندا هەیە."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:169
