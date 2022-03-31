@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-03-30 15:45+0000\n"
+"PO-Revision-Date: 2022-03-31 22:10+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
-"Language-Team: Sorani <https://l10n.elementary.io/projects/calculator/extra/"
-"ckb/>\n"
+"Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
+"calculator/extra/ckb/>\n"
 "Language: ckb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,13 +28,15 @@ msgstr "بژمێر"
 #: data/io.elementary.calculator.appdata.xml.in:9
 #: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
-msgstr ""
+msgstr "شیکاکردنی هاوکێشە سادەکان"
 
 #: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
+"بژمێرێکی سادە بۆ کاوروباری هەمووان. ئەم بژمێرە شیکاری هاوکێشە سادەکان و "
+"هەندێک هاوکێشەی زانستی وەکو ساین، کۆساین، و تان لەخۆ دەگرێت."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 #: data/io.elementary.calculator.appdata.xml.in:26
@@ -43,11 +45,11 @@ msgstr ""
 #: data/io.elementary.calculator.appdata.xml.in:58
 #: data/io.elementary.calculator.appdata.xml.in:83
 msgid "Minor updates:"
-msgstr ""
+msgstr "وردە نوێکاری:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Update to elementary 6.1 runtime"
-msgstr ""
+msgstr "نوێکردنەوە بۆ ڕەنتایمی ئێلێمەنتەری ٦.١"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 #: data/io.elementary.calculator.appdata.xml.in:31
@@ -59,89 +61,89 @@ msgstr ""
 #: data/io.elementary.calculator.appdata.xml.in:94
 #: data/io.elementary.calculator.appdata.xml.in:104
 msgid "Updated translations"
-msgstr ""
+msgstr "وەرگێڕدراوە نوێکان"
 
 #: data/io.elementary.calculator.appdata.xml.in:28
 msgid "Showing advanced controls only affects the focused window"
-msgstr ""
+msgstr "پشاندنی کۆنتڕۆڵی پێشکەوتوو تەنها کاریگەری لەسەر پەنجەری کارا دەبێت"
 
 #: data/io.elementary.calculator.appdata.xml.in:29
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "سەرنج بخە سەر دەقی سەرەکی هاتنەناو لە کاتی دەست پێ کردن"
 
 #: data/io.elementary.calculator.appdata.xml.in:30
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "پیشاندانی تایتڵی دروستی پەنجەرەکان لە مەڵتی-تاسکیندا"
 
 #: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "کرداری ڕوومێزی 'پەنجەری تازە' زیاد کرا"
 
 #: data/io.elementary.calculator.appdata.xml.in:38
 #: data/io.elementary.calculator.appdata.xml.in:68
 msgid "New features:"
-msgstr ""
+msgstr "تایبەتمەندییە تازەکان:"
 
 #: data/io.elementary.calculator.appdata.xml.in:40
 msgid "Add a \"Clear History\" button to the history dialog"
-msgstr ""
+msgstr "زیادکردنی دوگمەیەکی \"سڕینەوەی مێژوو\" بۆ دایەلۆگی مێژوو"
 
 #: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Fixed an issue with multiple windows"
-msgstr ""
+msgstr "کێشەیەک لەگەڵ چەند پەنجەرەیەک چارەسەر کراوە"
 
 #: data/io.elementary.calculator.appdata.xml.in:61
 msgid "More informative copy in history dialog"
-msgstr ""
+msgstr "وێنەیەکی زانیاری زیاتر لە دایەلۆگی مێژوودا"
 
 #: data/io.elementary.calculator.appdata.xml.in:70
 msgid "Add log and inverse trigonometric functions"
-msgstr ""
+msgstr "زیادکردنی لۆگ و کردارە سێگۆشەییە پێچەوانەکان"
 
 #: data/io.elementary.calculator.appdata.xml.in:72
 msgid "Other updates:"
-msgstr ""
+msgstr "نوێکارییەکانی تر:"
 
 #: data/io.elementary.calculator.appdata.xml.in:74
 msgid "Fix an issue with negative decimals without leading digits"
-msgstr ""
+msgstr "چارەسەرکردنی کێشەیەک لە دەییە سالبەکان بەبێ ژمارەی پێشەنگ"
 
 #: data/io.elementary.calculator.appdata.xml.in:75
 msgid "More efficient state saving"
-msgstr ""
+msgstr "پاشەکەوتکردنی دۆخی کاراتر"
 
 #: data/io.elementary.calculator.appdata.xml.in:76
 msgid "Use slim titlebar"
-msgstr ""
+msgstr "بەکارهێنانی تایتڵباڕێکی باریک"
 
 #: data/io.elementary.calculator.appdata.xml.in:85
 msgid "Fix inserting multi-byte characters"
-msgstr ""
+msgstr "چارەسەری نووسینی کارێکتەری مەڵتی بایت"
 
 #: data/io.elementary.calculator.appdata.xml.in:93
 msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgstr "چارەسەرکردنی ئایکۆنی ونبوو بۆ ئۆکراینا"
 
 #: data/io.elementary.calculator.appdata.xml.in:101
 msgid "Animate Infobar when hiding and showing"
-msgstr ""
+msgstr "زیادکردنی ئەنیمەیشن بۆ ئینفۆباڕ لە کاتی پیشاندان و شاردنەوە"
 
 #: data/io.elementary.calculator.appdata.xml.in:102
 msgid "Fix selection replace"
-msgstr ""
+msgstr "چارەسەری جێگری دیاریکردن"
 
 #: data/io.elementary.calculator.appdata.xml.in:103
 msgid "Improved decimal separator localization"
-msgstr ""
+msgstr "گەشە بە لۆکاڵیزەیشنی جیاکەرەوەی دەیی دراوە"
 
 #: data/io.elementary.calculator.appdata.xml.in:141
 msgid "elementary, Inc."
-msgstr ""
+msgstr "کۆمپانیای هاوپشکی ئێلێمەنتەری."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "ژماردن; بیرکاری; ژمێرکاری; زانستی;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "io.elementary.calculator"
@@ -149,7 +151,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "پەنجەرەی تازە"
 
 #~ msgid "About Calculator"
 #~ msgstr "دەربارەی ژمێرەر"
