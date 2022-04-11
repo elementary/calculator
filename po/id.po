@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2020-12-23 20:16+0000\n"
-"Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
+"PO-Revision-Date: 2022-01-07 22:25+0000\n"
+"Last-Translator: Gusti Ahmad Fanshuri Alfarisy <gusti.alfarisy@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/calculator/"
 "calculator/id/>\n"
 "Language: id\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:74 src/MainWindow.vala:109
@@ -32,10 +32,8 @@ msgid "Calculate Result"
 msgstr "Hitung hasilnya"
 
 #: src/MainWindow.vala:126
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
-msgstr "Tambahkan hasil perhitungan terakhir"
+msgstr "Sisipkan hasil perhitungan terakhir"
 
 #: src/MainWindow.vala:129
 msgid "Backspace"
@@ -67,29 +65,27 @@ msgstr "Persentase"
 
 #: src/MainWindow.vala:203
 msgid "Set memory value"
-msgstr ""
+msgstr "Atur nilai penyimpanan"
 
 #: src/MainWindow.vala:204
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Panggil kembali nilai dari penyimpanan"
 
 #: src/MainWindow.vala:206
 msgid "Add to stored value"
-msgstr ""
+msgstr "Tambahkan ke nilai tersimpan"
 
 #: src/MainWindow.vala:207
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Kurangi dari nilai yang disimpan"
 
 #: src/MainWindow.vala:208
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "Bersihkan isian"
+msgstr "Bersihkan penyimpanan"
 
 #: src/MainWindow.vala:210
 msgid "Grand Total"
-msgstr ""
+msgstr "Hasil Akhir"
 
 #: src/MainWindow.vala:212
 msgid "Start Group"
@@ -169,13 +165,11 @@ msgstr "Sembunyikan fungsi lainnya"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Masukkan hasil atau ekspresi sebelumnya ke dalam kalkulasi."
 
 #: src/HistoryDialog.vala:77
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Nilai yang akan ditambah:"
+msgstr "Nilai yang disisipkan:"
 
 #: src/HistoryDialog.vala:82
 msgid "Result"
@@ -187,10 +181,8 @@ msgstr "Lambang"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "Bersihkan isian"
+msgstr "Bersihkan Riwayat"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
@@ -198,7 +190,7 @@ msgstr "Tutup"
 
 #: src/HistoryDialog.vala:107
 msgid "Insert"
-msgstr ""
+msgstr "Sisipkan"
 
 #: src/Core/Scanner.vala:68
 #, c-format

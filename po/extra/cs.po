@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2020-05-30 10:11+0000\n"
-"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
+"PO-Revision-Date: 2022-01-09 21:31+0000\n"
+"Last-Translator: Martin Šťastný <martin@stastni.cz>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/calculator/extra/"
 "cs/>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-27 05:40+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -49,7 +49,7 @@ msgstr "Drobné aktualizace:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Update to elementary 6.1 runtime"
-msgstr ""
+msgstr "Běhové prostředí elementary aktualizováno na verzi 6.1"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 #: data/io.elementary.calculator.appdata.xml.in:31
@@ -65,54 +65,52 @@ msgstr "Aktualizovány překlady"
 
 #: data/io.elementary.calculator.appdata.xml.in:28
 msgid "Showing advanced controls only affects the focused window"
-msgstr ""
+msgstr "Zobrazování pokročilých ovládacích prvků se týká pouze zaměřeného okna"
 
 #: data/io.elementary.calculator.appdata.xml.in:29
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "Po spuštění zaměřit hlavní textový vstup"
 
 #: data/io.elementary.calculator.appdata.xml.in:30
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "Zobrazení správného titulku okna ve víceúlohovém zobrazení"
 
 #: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "Přidána akce plochy „Nové okno“"
 
 #: data/io.elementary.calculator.appdata.xml.in:38
 #: data/io.elementary.calculator.appdata.xml.in:68
 msgid "New features:"
-msgstr ""
+msgstr "Nové funkce:"
 
 #: data/io.elementary.calculator.appdata.xml.in:40
 msgid "Add a \"Clear History\" button to the history dialog"
-msgstr ""
+msgstr "Přidáno tlačítko „Smazat historii“ do dialogu historie"
 
 #: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Fixed an issue with multiple windows"
-msgstr ""
+msgstr "Opraven problém s vícero okny"
 
 #: data/io.elementary.calculator.appdata.xml.in:61
 msgid "More informative copy in history dialog"
-msgstr ""
+msgstr "Informativnější kopie v dialogu historie"
 
 #: data/io.elementary.calculator.appdata.xml.in:70
 msgid "Add log and inverse trigonometric functions"
-msgstr ""
+msgstr "Přidány logaritmické a inverzí trigonometrické funkce"
 
 #: data/io.elementary.calculator.appdata.xml.in:72
-#, fuzzy
-#| msgid "Minor updates:"
 msgid "Other updates:"
-msgstr "Drobné aktualizace:"
+msgstr "Ostatní aktualizace:"
 
 #: data/io.elementary.calculator.appdata.xml.in:74
 msgid "Fix an issue with negative decimals without leading digits"
-msgstr ""
+msgstr "Opraven problém se zápornými desetinami bez úvodních číslic"
 
 #: data/io.elementary.calculator.appdata.xml.in:75
 msgid "More efficient state saving"
-msgstr ""
+msgstr "Efektivnější ukládání stavu"
 
 #: data/io.elementary.calculator.appdata.xml.in:76
 msgid "Use slim titlebar"
@@ -153,7 +151,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "Nové okno"
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2020-10-30 00:15+0000\n"
+"PO-Revision-Date: 2022-02-15 23:55+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/calculator/"
 "calculator/mr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:74 src/MainWindow.vala:109
@@ -32,10 +32,8 @@ msgid "Calculate Result"
 msgstr "उत्तर काढा"
 
 #: src/MainWindow.vala:126
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
-msgstr "गेला निकाल जोडा"
+msgstr "मागील निकाल जोडा"
 
 #: src/MainWindow.vala:129
 msgid "Backspace"
@@ -67,29 +65,27 @@ msgstr "टक्केवारी"
 
 #: src/MainWindow.vala:203
 msgid "Set memory value"
-msgstr ""
+msgstr "मेमरी मूल्य सेट करा"
 
 #: src/MainWindow.vala:204
 msgid "Recall value from memory"
-msgstr ""
+msgstr "स्मृती मधून मूल्य परत बोलवा"
 
 #: src/MainWindow.vala:206
 msgid "Add to stored value"
-msgstr ""
+msgstr "संचयित मूल्यामध्ये जोडा"
 
 #: src/MainWindow.vala:207
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "संचयित मूल्यातून वजा करा"
 
 #: src/MainWindow.vala:208
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "नोंद खोडा"
+msgstr "मेमरी साफ करा"
 
 #: src/MainWindow.vala:210
 msgid "Grand Total"
-msgstr ""
+msgstr "ग्रँड टोटल"
 
 #: src/MainWindow.vala:212
 msgid "Start Group"
@@ -172,10 +168,8 @@ msgid "Insert a previous expression or result into the current calculation."
 msgstr ""
 
 #: src/HistoryDialog.vala:77
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "मूल्य जोडा :"
+msgstr "घालण्यासाठी मूल्य:"
 
 #: src/HistoryDialog.vala:82
 msgid "Result"

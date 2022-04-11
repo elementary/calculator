@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2018-10-27 00:02+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
+"PO-Revision-Date: 2022-02-03 00:12+0000\n"
+"Last-Translator: Vitor Grando Eller <vitorge@al.insper.edu.br>\n"
+"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "calculator/calculator/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:74 src/MainWindow.vala:109
@@ -29,13 +29,11 @@ msgstr "Histórico"
 
 #: src/MainWindow.vala:122
 msgid "Calculate Result"
-msgstr "Calcular resultado"
+msgstr "Calcular Resultado"
 
 #: src/MainWindow.vala:126
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
-msgstr "Acrescentar último resultado"
+msgstr "Inserir último resultado"
 
 #: src/MainWindow.vala:129
 msgid "Backspace"
@@ -67,37 +65,35 @@ msgstr "Porcentagem"
 
 #: src/MainWindow.vala:203
 msgid "Set memory value"
-msgstr ""
+msgstr "Armazenar valor na memória"
 
 #: src/MainWindow.vala:204
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Recuperar valor da memória"
 
 #: src/MainWindow.vala:206
 msgid "Add to stored value"
-msgstr ""
+msgstr "Adicionar ao valor armazenado"
 
 #: src/MainWindow.vala:207
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Subtrair do valor armazenado"
 
 #: src/MainWindow.vala:208
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "Limpar entrada"
+msgstr "Limpar memória"
 
 #: src/MainWindow.vala:210
 msgid "Grand Total"
-msgstr ""
+msgstr "Total"
 
 #: src/MainWindow.vala:212
 msgid "Start Group"
-msgstr "Início de grupo"
+msgstr "Início de Grupo"
 
 #: src/MainWindow.vala:213
 msgid "End Group"
-msgstr "Término de grupo"
+msgstr "Término de Grupo"
 
 #: src/MainWindow.vala:214
 msgid "Exponent"
@@ -113,7 +109,7 @@ msgstr "Seno"
 
 #: src/MainWindow.vala:218
 msgid "Hyperbolic Sine"
-msgstr "Seno hiperbólico"
+msgstr "Seno Hiperbólico"
 
 #: src/MainWindow.vala:219
 msgid "Cosine"
@@ -121,7 +117,7 @@ msgstr "Cosseno"
 
 #: src/MainWindow.vala:220
 msgid "Hyperbolic Cosine"
-msgstr "Cosseno hiperbólico"
+msgstr "Cosseno Hiperbólico"
 
 #: src/MainWindow.vala:221
 msgid "Tangent"
@@ -129,7 +125,7 @@ msgstr "Tangente"
 
 #: src/MainWindow.vala:222
 msgid "Hyperbolic Tangent"
-msgstr "Tangente hiperbólica"
+msgstr "Tangente Hiperbólica"
 
 #: src/MainWindow.vala:223
 msgid "Pi"
@@ -141,31 +137,27 @@ msgstr "Número de Euler"
 
 #: src/MainWindow.vala:225
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Logaritmo na Base 10"
 
 #: src/MainWindow.vala:227
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Logaritmo Natural"
 
 #: src/MainWindow.vala:228
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Arco Seno"
 
 #: src/MainWindow.vala:230
-#, fuzzy
-#| msgid "Cosine"
 msgid "Inverse Cosine"
-msgstr "Cosseno"
+msgstr "Arco Cosseno"
 
 #: src/MainWindow.vala:232
-#, fuzzy
-#| msgid "Tangent"
 msgid "Inverse Tangent"
-msgstr "Tangente"
+msgstr "Arco Tangente"
 
 #: src/MainWindow.vala:234
 msgid "Reciprocal"
-msgstr ""
+msgstr "Inverso Multiplicativo"
 
 #: src/MainWindow.vala:610
 msgid "Hide extended functionality"
@@ -173,13 +165,11 @@ msgstr "Ocultar outras funcionalidades"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Inserir uma expressão ou resultado anterior no cálculo atual."
 
 #: src/HistoryDialog.vala:77
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Valor a acrescentar:"
+msgstr "Valor a inserir:"
 
 #: src/HistoryDialog.vala:82
 msgid "Result"
@@ -191,10 +181,8 @@ msgstr "Expressão"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "Limpar entrada"
+msgstr "Limpar Histórico"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
@@ -202,7 +190,7 @@ msgstr "Fechar"
 
 #: src/HistoryDialog.vala:107
 msgid "Insert"
-msgstr ""
+msgstr "Inserir"
 
 #: src/Core/Scanner.vala:68
 #, c-format
