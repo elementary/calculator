@@ -53,8 +53,12 @@ namespace PantheonCalculator {
 
         public const string ACTION_PREFIX = "win.";
         public const string ACTION_CLEAR = "action-clear";
+        public const string ACTION_BUTTON = "action-button";
+        public const string ACTION_FUNCTION = "action-function";
 
         private const ActionEntry[] ACTION_ENTRIES = {
+            { ACTION_BUTTON, action_button, "s"},
+            { ACTION_FUNCTION, action_function, "s"},
             { ACTION_CLEAR, action_clear }
         };
 
@@ -119,53 +123,118 @@ namespace PantheonCalculator {
             };
             entry.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
 
-            button_calc = new Button ("=", _("Calculate Result"));
+            button_calc = new Button ("=") {
+                tooltip_text = _("Calculate Result")
+            };
             button_calc.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
             button_calc.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-            button_ans = new Button ("ANS", _("Insert last result"));
-            button_ans.sensitive = false;
+            button_ans = new Button ("ANS") {
+                sensitive = false,
+                tooltip_text = _("Insert last result")
+            };
 
-            button_del = new Button ("Del", _("Backspace"));
+            button_del = new Button ("Del") {
+                tooltip_text = _("Backspace")
+            };
 
-            var button_clr = new Button ("C");
-            button_clr.action_name = ACTION_PREFIX + ACTION_CLEAR;
+            var button_clr = new Button ("C") {
+                action_name = ACTION_PREFIX + ACTION_CLEAR
+            };
             button_clr.tooltip_markup = Granite.markup_accel_tooltip (
                 application_instance.get_accels_for_action (button_clr.action_name),
                 _("Clear entry")
             );
             button_clr.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
-            var button_add = new Button (" + ", _("Add"));
-            button_add.function = "+";
+            var button_add = new Button (" + ") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "+"),
+                tooltip_text = _("Add")
+            };
             button_add.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var button_sub = new Button (" − ", _("Subtract"));
-            button_sub.function = "−";
+            var button_sub = new Button (" − ") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "-"),
+                tooltip_text = _("Subtract")
+            };
             button_sub.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var button_mult = new Button (" × ", _("Multiply"));
-            button_mult.function = "×";
+            var button_mult = new Button (" × ") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "×"),
+                tooltip_text = _("Multiply")
+            };
             button_mult.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var button_div = new Button (" ÷ ", _("Divide"));
-            button_div.function = "÷";
+            var button_div = new Button (" ÷ ") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "÷"),
+                tooltip_text = _("Divide")
+            };
             button_div.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var button_0 = new Button ("0");
-            var button_point = new Button (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR));
-            var button_percent = new Button ("%", _("Percentage"));
-            var button_1 = new Button ("1");
-            var button_2 = new Button ("2");
-            var button_3 = new Button ("3");
+            var button_0 = new Button ("0") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "0")
+            };
 
-            var button_4 = new Button ("4");
-            var button_5 = new Button ("5");
-            var button_6 = new Button ("6");
+            var button_point = new Button (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR)) {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", Posix.nl_langinfo (Posix.NLItem.RADIXCHAR))
+            };
 
-            var button_7 = new Button ("7");
-            var button_8 = new Button ("8");
-            var button_9 = new Button ("9");
+            var button_percent = new Button ("%") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "%"),
+                tooltip_text = _("Percentage")
+            };
+
+            var button_1 = new Button ("1") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "1")
+            };
+
+            var button_2 = new Button ("2") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "2")
+            };
+
+            var button_3 = new Button ("3") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "3")
+            };
+
+            var button_4 = new Button ("4") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "4")
+            };
+
+            var button_5 = new Button ("5") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "5")
+            };
+
+            var button_6 = new Button ("6") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "6")
+            };
+
+            var button_7 = new Button ("7") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "7")
+            };
+
+            var button_8 = new Button ("8") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "8")
+            };
+
+            var button_9 = new Button ("9") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "9")
+            };
 
             var basic_grid = new Gtk.Grid () {
                 column_spacing = 6,
@@ -200,38 +269,140 @@ namespace PantheonCalculator {
             basic_grid.attach (button_ans, 2, 5, 1, 1);
             basic_grid.attach (button_calc, 3, 5, 1, 1);
 
-            var button_ms = new Button ("MS", _("Set memory value"));
-            button_mr = new Button ("MR", _("Recall value from memory"));
-            button_mr.set_sensitive (false);
-            var button_m_add = new Button ("M+", _("Add to stored value"));
-            var button_m_sub = new Button ("M−", _("Subtract from stored value"));
-            button_mc = new Button ("MC", _("Clear memory"));
-            button_mc.set_sensitive (false);
-            button_gt = new Button ("GT", _("Grand Total"));
-            button_gt.set_sensitive (false);
-            var button_par_left = new Button ("(", _("Start Group"));
-            var button_par_right = new Button (")", _("End Group"));
-            var button_pow = new Button ("x<sup>y</sup>", _("Exponent"));
-            button_pow.function = "^";
-            var button_sr = new Button ("√", _("Root"));
-            var button_sin = new Button ("sin", _("Sine"));
-            var button_sinh = new Button ("sinh", _("Hyperbolic Sine"));
-            var button_cos = new Button ("cos", _("Cosine"));
-            var button_cosh = new Button ("cosh", _("Hyperbolic Cosine"));
-            var button_tan = new Button ("tan", _("Tangent"));
-            var button_tanh = new Button ("tanh", _("Hyperbolic Tangent"));
-            var button_pi = new Button ("π", _("Pi"));
-            var button_e = new Button ("e", _("Euler's Number"));
-            var button_log = new Button ("log<sub>10</sub>", _("Logarithm Base 10"));
-            button_log.function = "log";
-            var button_ln = new Button ("ln", _("Natural Logarithm"));
-            var button_asin = new Button ("sin<sup>-1</sup>", _("Inverse Sine"));
-            button_asin.function = "asin";
-            var button_acos = new Button ("cos<sup>-1</sup>", _("Inverse Cosine"));
-            button_acos.function = "acos";
-            var button_atan = new Button ("tan<sup>-1</sup>", _("Inverse Tangent"));
-            button_atan.function = "atan";
-            var button_reciprocal = new Button ("x<sup>-1</sup>", _("Reciprocal"));
+            var button_ms = new Button ("MS") {
+                tooltip_text = _("Set memory value")
+            };
+
+            button_mr = new Button ("MR") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", number_to_string (memory_value)),
+                sensitive = false,
+                tooltip_text = _("Recall value from memory")
+            };
+
+            var button_m_add = new Button ("M+") {
+                tooltip_text = _("Add to stored value")
+            };
+
+            var button_m_sub = new Button ("M−") {
+                tooltip_text = _("Subtract from stored value")
+            };
+
+            button_mc = new Button ("MC") {
+                sensitive = false,
+                tooltip_text = _("Clear memory")
+            };
+
+            button_gt = new Button ("GT") {
+                sensitive = false,
+                tooltip_text = _("Grand Total")
+            };
+
+            var button_par_left = new Button ("(") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "("),
+                tooltip_text = _("Start Group")
+            };
+
+            var button_par_right = new Button (")") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", ")"),
+                tooltip_text = _("End Group")
+            };
+
+            var button_pow = new Button ("x<sup>y</sup>") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "^"),
+                tooltip_text = _("Exponent")
+            };
+
+            var button_sr = new Button ("√") {
+                action_name = ACTION_PREFIX + ACTION_FUNCTION,
+                action_target = new Variant ("s", "√"),
+                tooltip_text = _("Root")
+            };
+
+            var button_sin = new Button ("sin") {
+                action_name = ACTION_PREFIX + ACTION_FUNCTION,
+                action_target = new Variant ("s", "sin"),
+                tooltip_text = _("Sine")
+            };
+
+            var button_sinh = new Button ("sinh") {
+                action_name = ACTION_PREFIX + ACTION_FUNCTION,
+                action_target = new Variant ("s", "sinh"),
+                tooltip_text = _("Hyperbolic Sine")
+            };
+
+            var button_cos = new Button ("cos") {
+                action_name = ACTION_PREFIX + ACTION_FUNCTION,
+                action_target = new Variant ("s", "cos"),
+                tooltip_text = _("Cosine")
+            };
+
+            var button_cosh = new Button ("cosh") {
+                action_name = ACTION_PREFIX + ACTION_FUNCTION,
+                action_target = new Variant ("s", "cosh"),
+                tooltip_text = _("Hyperbolic Cosine")
+            };
+
+            var button_tan = new Button ("tan") {
+                action_name = ACTION_PREFIX + ACTION_FUNCTION,
+                action_target = new Variant ("s", "tan"),
+                tooltip_text = _("Tangent")
+            };
+
+            var button_tanh = new Button ("tanh") {
+                action_name = ACTION_PREFIX + ACTION_FUNCTION,
+                action_target = new Variant ("s", "tanh"),
+                tooltip_text = _("Hyperbolic Tangent")
+            };
+
+            var button_pi = new Button ("π") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "π"),
+                tooltip_text = _("Pi")
+            };
+
+            var button_e = new Button ("e") {
+                action_name = ACTION_PREFIX + ACTION_BUTTON,
+                action_target = new Variant ("s", "e"),
+                tooltip_text = _("Euler's Number")
+            };
+
+            var button_log = new Button ("log<sub>10</sub>") {
+                action_name = ACTION_PREFIX + ACTION_FUNCTION,
+                action_target = new Variant ("s", "log"),
+                tooltip_text = _("Logarithm Base 10")
+            };
+
+            var button_ln = new Button ("ln") {
+                action_name = ACTION_PREFIX + ACTION_FUNCTION,
+                action_target = new Variant ("s", "ln"),
+                tooltip_text = _("Natural Logarithm")
+            };
+
+            var button_asin = new Button ("sin<sup>-1</sup>") {
+                action_name = ACTION_PREFIX + ACTION_FUNCTION,
+                action_target = new Variant ("s", "asin"),
+                tooltip_text = _("Inverse Sine")
+            };
+
+            var button_acos = new Button ("cos<sup>-1</sup>") {
+                action_name = ACTION_PREFIX + ACTION_FUNCTION,
+                action_target = new Variant ("s", "acos"),
+                tooltip_text = _("Inverse Cosine")
+            };
+
+            var button_atan = new Button ("tan<sup>-1</sup>") {
+                action_name = ACTION_PREFIX + ACTION_FUNCTION,
+                action_target = new Variant ("s", "atan"),
+                tooltip_text = _("Inverse Tangent")
+            };
+
+            var button_reciprocal = new Button ("x<sup>-1</sup>") {
+                tooltip_text = _("Reciprocal")
+            };
 
             var extended_grid = new Gtk.Grid () {
                 margin_start = 6,
@@ -324,46 +495,12 @@ namespace PantheonCalculator {
             button_calc.clicked.connect (() => {button_calc_clicked ();});
             button_del.clicked.connect (() => {button_del_clicked ();});
             button_ans.clicked.connect (() => {button_ans_clicked ();});
-            button_add.clicked.connect (() => {regular_button_clicked (button_add.function);});
-            button_sub.clicked.connect (() => {regular_button_clicked (button_sub.function);});
-            button_mult.clicked.connect (() => {regular_button_clicked (button_mult.function);});
-            button_div.clicked.connect (() => {regular_button_clicked (button_div.function);});
-            button_0.clicked.connect (() => {regular_button_clicked (button_0.function);});
-            button_1.clicked.connect (() => {regular_button_clicked (button_1.function);});
-            button_2.clicked.connect (() => {regular_button_clicked (button_2.function);});
-            button_3.clicked.connect (() => {regular_button_clicked (button_3.function);});
-            button_4.clicked.connect (() => {regular_button_clicked (button_4.function);});
-            button_5.clicked.connect (() => {regular_button_clicked (button_5.function);});
-            button_6.clicked.connect (() => {regular_button_clicked (button_6.function);});
-            button_7.clicked.connect (() => {regular_button_clicked (button_7.function);});
-            button_8.clicked.connect (() => {regular_button_clicked (button_8.function);});
-            button_9.clicked.connect (() => {regular_button_clicked (button_9.function);});
-            button_point.clicked.connect (() => {regular_button_clicked (button_point.function);});
-            button_percent.clicked.connect (() => {regular_button_clicked (button_percent.function);});
 
             button_ms.clicked.connect (() => {button_memory_store_clicked ();});
-            button_par_left.clicked.connect (() => {regular_button_clicked (button_par_left.function);});
-            button_par_right.clicked.connect (() => {regular_button_clicked (button_par_right.function);});
-            button_log.clicked.connect (() => {function_button_clicked (button_log.function);});
-            button_mr.clicked.connect (() => {regular_button_clicked (number_to_string (memory_value));});
-            button_pow.clicked.connect (() => {regular_button_clicked (button_pow.function);});
-            button_sr.clicked.connect (() => {function_button_clicked (button_sr.function);});
-            button_ln.clicked.connect (() => {function_button_clicked (button_ln.function);});
             button_m_add.clicked.connect (() => {button_memory_add_clicked ();});
-            button_sin.clicked.connect (() => {function_button_clicked (button_sin.function);});
-            button_sinh.clicked.connect (() => {function_button_clicked (button_sinh.function);});
-            button_asin.clicked.connect (() => {function_button_clicked (button_asin.function);});
             button_m_sub.clicked.connect (() => {button_memory_subtract_clicked ();});
-            button_cos.clicked.connect (() => {function_button_clicked (button_cos.function);});
-            button_cosh.clicked.connect (() => {function_button_clicked (button_cosh.function);});
-            button_acos.clicked.connect (() => {function_button_clicked (button_acos.function);});
             button_mc.clicked.connect (() => {button_memory_clear_clicked ();});
-            button_tan.clicked.connect (() => {function_button_clicked (button_tan.function);});
-            button_tanh.clicked.connect (() => {function_button_clicked (button_tanh.function);});
-            button_atan.clicked.connect (() => {function_button_clicked (button_atan.function);});
             button_gt.clicked.connect (() => {button_gt_clicked ();});
-            button_pi.clicked.connect (() => {regular_button_clicked (button_pi.function);});
-            button_e.clicked.connect (() => {regular_button_clicked (button_e.function);});
             button_reciprocal.clicked.connect (() => {button_reciprocal_clicked ();});
 
             settings.bind ("extended-shown", button_extended, "active", GLib.SettingsBindFlags.DEFAULT | GLib.SettingsBindFlags.GET_NO_CHANGES);
@@ -387,7 +524,8 @@ namespace PantheonCalculator {
             }
         }
 
-        private void regular_button_clicked (string label) {
+        private void action_button (SimpleAction action, Variant? parameter) {
+            var label = parameter.get_string ();
             int new_position = entry.get_position ();
             int selection_start, selection_end, selection_length;
             bool is_text_selected = entry.get_selection_bounds (out selection_start, out selection_end);
@@ -403,7 +541,8 @@ namespace PantheonCalculator {
             entry.set_position (new_position);
         }
 
-        private void function_button_clicked (string label) {
+        private void action_function (SimpleAction action, Variant? parameter) {
+            var label = parameter.get_string ();
             int selection_start = -1;
             int selection_end = -1;
             if (entry.get_selection_bounds (out selection_start, out selection_end)) {
@@ -416,7 +555,7 @@ namespace PantheonCalculator {
                 entry.grab_focus ();
                 entry.set_position (new_position);
             } else {
-                regular_button_clicked (label);
+                activate_action (ACTION_BUTTON, parameter);
             }
         }
 
@@ -676,7 +815,7 @@ namespace PantheonCalculator {
                     break;
                 case Gdk.Key.KP_Subtract:
                 case Gdk.Key.minus:
-                    regular_button_clicked ("−");
+                    activate_action (ACTION_BUTTON, new Variant ("s", "−"));
                     retval = true;
                     break;
             }

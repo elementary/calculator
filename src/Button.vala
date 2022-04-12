@@ -20,14 +20,11 @@
 public class PantheonCalculator.Button : Gtk.Button {
     private const int WIDTH = 65;
     private const int HEIGHT = 43;
-    public string function = null;
 
-    public Button (string label, string? description = null) {
-        function = label;
+    public Button (string label) {
         var lbl = new Gtk.Label (label);
         lbl.use_markup = true;
         add (lbl);
-        tooltip_text = description;
     }
 
     public override void get_preferred_width (out int minimum_width, out int natural_width) {
