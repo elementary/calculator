@@ -524,8 +524,8 @@ namespace PantheonCalculator {
             }
         }
 
-        private void action_insert (SimpleAction action, Variant? parameter) {
-            var label = parameter.get_string ();
+        private void action_insert (SimpleAction action, Variant? variant) {
+            var token = variant.get_string ();
             int new_position = entry.get_position ();
             int selection_start, selection_end, selection_length;
             bool is_text_selected = entry.get_selection_bounds (out selection_start, out selection_end);
@@ -535,27 +535,27 @@ namespace PantheonCalculator {
                 selection_length = selection_end - selection_start;
                 new_position -= selection_length;
             }
-            entry.insert_at_cursor (label);
-            new_position += label.char_count ();
+            entry.insert_at_cursor (token);
+            new_position += token.char_count ();
             entry.grab_focus ();
             entry.set_position (new_position);
         }
 
-        private void action_function (SimpleAction action, Variant? parameter) {
-            var label = parameter.get_string ();
+        private void action_function (SimpleAction action, Variant? variant) {
+            var token = variant.get_string ();
             int selection_start = -1;
             int selection_end = -1;
             if (entry.get_selection_bounds (out selection_start, out selection_end)) {
                 int new_position = selection_start;
                 string selected_text = entry.get_chars (selection_start, selection_end);
-                string function_call = label + "(" + selected_text + ")";
+                string function_call = token + "(" + selected_text + ")";
                 entry.delete_text (selection_start, selection_end);
                 entry.insert_text (function_call, -1, ref selection_start);
                 new_position += function_call.char_count ();
                 entry.grab_focus ();
                 entry.set_position (new_position);
             } else {
-                activate_action (ACTION_INSERT, parameter);
+                activate_action (ACTION_INSERT, variant);
             }
         }
 
