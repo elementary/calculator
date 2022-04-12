@@ -274,8 +274,6 @@ namespace PantheonCalculator {
             };
 
             button_mr = new Button ("MR") {
-                action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", number_to_string (memory_value)),
                 sensitive = false,
                 tooltip_text = _("Recall value from memory")
             };
@@ -495,6 +493,10 @@ namespace PantheonCalculator {
             button_calc.clicked.connect (() => {button_calc_clicked ();});
             button_del.clicked.connect (() => {button_del_clicked ();});
             button_ans.clicked.connect (() => {button_ans_clicked ();});
+
+            button_mr.clicked.connect (() => {
+                activate_action (ACTION_INSERT, new Variant ("s", number_to_string (memory_value)));
+            });
 
             button_ms.clicked.connect (() => {button_memory_store_clicked ();});
             button_m_add.clicked.connect (() => {button_memory_add_clicked ();});
