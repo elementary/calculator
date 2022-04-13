@@ -149,91 +149,91 @@ namespace PantheonCalculator {
 
             var button_add = new Button (" + ") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "+"),
+                action_target = new Variant.string ("+"),
                 tooltip_text = _("Add")
             };
             button_add.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_sub = new Button (" − ") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "-"),
+                action_target = new Variant.string ("-"),
                 tooltip_text = _("Subtract")
             };
             button_sub.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_mult = new Button (" × ") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "×"),
+                action_target = new Variant.string ("×"),
                 tooltip_text = _("Multiply")
             };
             button_mult.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_div = new Button (" ÷ ") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "÷"),
+                action_target = new Variant.string ("÷"),
                 tooltip_text = _("Divide")
             };
             button_div.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
             var button_0 = new Button ("0") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "0")
+                action_target = new Variant.string ("0")
             };
 
             var button_point = new Button (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR)) {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", Posix.nl_langinfo (Posix.NLItem.RADIXCHAR))
+                action_target = new Variant.string (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR))
             };
 
             var button_percent = new Button ("%") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "%"),
+                action_target = new Variant.string ("%"),
                 tooltip_text = _("Percentage")
             };
 
             var button_1 = new Button ("1") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "1")
+                action_target = new Variant.string ("1")
             };
 
             var button_2 = new Button ("2") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "2")
+                action_target = new Variant.string ("2")
             };
 
             var button_3 = new Button ("3") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "3")
+                action_target = new Variant.string ("3")
             };
 
             var button_4 = new Button ("4") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "4")
+                action_target = new Variant.string ("4")
             };
 
             var button_5 = new Button ("5") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "5")
+                action_target = new Variant.string ("5")
             };
 
             var button_6 = new Button ("6") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "6")
+                action_target = new Variant.string ("6")
             };
 
             var button_7 = new Button ("7") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "7")
+                action_target = new Variant.string ("7")
             };
 
             var button_8 = new Button ("8") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "8")
+                action_target = new Variant.string ("8")
             };
 
             var button_9 = new Button ("9") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "9")
+                action_target = new Variant.string ("9")
             };
 
             var basic_grid = new Gtk.Grid () {
@@ -298,103 +298,103 @@ namespace PantheonCalculator {
 
             var button_par_left = new Button ("(") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "("),
+                action_target = new Variant.string ("("),
                 tooltip_text = _("Start Group")
             };
 
             var button_par_right = new Button (")") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", ")"),
+                action_target = new Variant.string (")"),
                 tooltip_text = _("End Group")
             };
 
             var button_pow = new Button ("x<sup>y</sup>") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "^"),
+                action_target = new Variant.string ("^"),
                 tooltip_text = _("Exponent")
             };
 
             var button_sr = new Button ("√") {
                 action_name = ACTION_PREFIX + ACTION_FUNCTION,
-                action_target = new Variant ("s", "√"),
+                action_target = new Variant.string ("√"),
                 tooltip_text = _("Root")
             };
 
             var button_sin = new Button ("sin") {
                 action_name = ACTION_PREFIX + ACTION_FUNCTION,
-                action_target = new Variant ("s", "sin"),
+                action_target = new Variant.string ("sin"),
                 tooltip_text = _("Sine")
             };
 
             var button_sinh = new Button ("sinh") {
                 action_name = ACTION_PREFIX + ACTION_FUNCTION,
-                action_target = new Variant ("s", "sinh"),
+                action_target = new Variant.string ("sinh"),
                 tooltip_text = _("Hyperbolic Sine")
             };
 
             var button_cos = new Button ("cos") {
                 action_name = ACTION_PREFIX + ACTION_FUNCTION,
-                action_target = new Variant ("s", "cos"),
+                action_target = new Variant.string ("cos"),
                 tooltip_text = _("Cosine")
             };
 
             var button_cosh = new Button ("cosh") {
                 action_name = ACTION_PREFIX + ACTION_FUNCTION,
-                action_target = new Variant ("s", "cosh"),
+                action_target = new Variant.string ("cosh"),
                 tooltip_text = _("Hyperbolic Cosine")
             };
 
             var button_tan = new Button ("tan") {
                 action_name = ACTION_PREFIX + ACTION_FUNCTION,
-                action_target = new Variant ("s", "tan"),
+                action_target = new Variant.string ("tan"),
                 tooltip_text = _("Tangent")
             };
 
             var button_tanh = new Button ("tanh") {
                 action_name = ACTION_PREFIX + ACTION_FUNCTION,
-                action_target = new Variant ("s", "tanh"),
+                action_target = new Variant.string ("tanh"),
                 tooltip_text = _("Hyperbolic Tangent")
             };
 
             var button_pi = new Button ("π") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "π"),
+                action_target = new Variant.string ("π"),
                 tooltip_text = _("Pi")
             };
 
             var button_e = new Button ("e") {
                 action_name = ACTION_PREFIX + ACTION_INSERT,
-                action_target = new Variant ("s", "e"),
+                action_target = new Variant.string ("e"),
                 tooltip_text = _("Euler's Number")
             };
 
             var button_log = new Button ("log<sub>10</sub>") {
                 action_name = ACTION_PREFIX + ACTION_FUNCTION,
-                action_target = new Variant ("s", "log"),
+                action_target = new Variant.string ("log"),
                 tooltip_text = _("Logarithm Base 10")
             };
 
             var button_ln = new Button ("ln") {
                 action_name = ACTION_PREFIX + ACTION_FUNCTION,
-                action_target = new Variant ("s", "ln"),
+                action_target = new Variant.string ("ln"),
                 tooltip_text = _("Natural Logarithm")
             };
 
             var button_asin = new Button ("sin<sup>-1</sup>") {
                 action_name = ACTION_PREFIX + ACTION_FUNCTION,
-                action_target = new Variant ("s", "asin"),
+                action_target = new Variant.string ("asin"),
                 tooltip_text = _("Inverse Sine")
             };
 
             var button_acos = new Button ("cos<sup>-1</sup>") {
                 action_name = ACTION_PREFIX + ACTION_FUNCTION,
-                action_target = new Variant ("s", "acos"),
+                action_target = new Variant.string ("acos"),
                 tooltip_text = _("Inverse Cosine")
             };
 
             var button_atan = new Button ("tan<sup>-1</sup>") {
                 action_name = ACTION_PREFIX + ACTION_FUNCTION,
-                action_target = new Variant ("s", "atan"),
+                action_target = new Variant.string ("atan"),
                 tooltip_text = _("Inverse Tangent")
             };
 
@@ -495,7 +495,7 @@ namespace PantheonCalculator {
             button_ans.clicked.connect (() => {button_ans_clicked ();});
 
             button_mr.clicked.connect (() => {
-                activate_action (ACTION_INSERT, new Variant ("s", number_to_string (memory_value)));
+                activate_action (ACTION_INSERT, new Variant.string (number_to_string (memory_value)));
             });
 
             button_ms.clicked.connect (() => {button_memory_store_clicked ();});
@@ -817,7 +817,7 @@ namespace PantheonCalculator {
                     break;
                 case Gdk.Key.KP_Subtract:
                 case Gdk.Key.minus:
-                    activate_action (ACTION_INSERT, new Variant ("s", "−"));
+                    activate_action (ACTION_INSERT, new Variant.string ("−"));
                     retval = true;
                     break;
             }
