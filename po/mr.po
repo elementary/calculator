@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-02-15 23:55+0000\n"
+"PO-Revision-Date: 2022-04-16 22:40+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/calculator/"
 "calculator/mr/>\n"
@@ -165,7 +165,7 @@ msgstr "विस्तारित कार्यक्षमतेला ल�
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "मागील परिणाम किंवा एक्स्प्रेशन आत्ताच्या गणितात घ्या."
 
 #: src/HistoryDialog.vala:77
 msgid "Value to insert:"
@@ -181,10 +181,8 @@ msgstr "सूत्रीकरण"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "नोंद खोडा"
+msgstr "इतिहास खोडा"
 
 #: src/HistoryDialog.vala:105
 msgid "Close"
@@ -192,7 +190,7 @@ msgstr "बंद करा"
 
 #: src/HistoryDialog.vala:107
 msgid "Insert"
-msgstr ""
+msgstr "घाला"
 
 #: src/Core/Scanner.vala:68
 #, c-format
