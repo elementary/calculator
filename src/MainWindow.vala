@@ -485,8 +485,6 @@ namespace PantheonCalculator {
 
             show_all ();
 
-            // this.key_press_event.connect (key_pressed);
-
             entry.changed.connect (remove_error);
             entry.activate.connect (button_calc_clicked);
             entry.insert_text.connect (replace_text);
