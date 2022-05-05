@@ -485,10 +485,9 @@ namespace PantheonCalculator {
 
             show_all ();
 
-            this.key_press_event.connect (key_pressed);
-
             entry.changed.connect (remove_error);
             entry.activate.connect (button_calc_clicked);
+            entry.insert_text.connect (replace_text);
 
             button_calc.clicked.connect (() => {button_calc_clicked ();});
             button_del.clicked.connect (() => {button_del_clicked ();});
@@ -795,34 +794,26 @@ namespace PantheonCalculator {
             infobar.revealed = false;
         }
 
-        private bool key_pressed (Gdk.EventKey key) {
-            bool retval = false;
-            switch (key.keyval) {
-                case Gdk.Key.KP_Decimal:
-                case Gdk.Key.KP_Separator:
-                case Gdk.Key.decimalpoint:
-                case Gdk.Key.period:
-                case Gdk.Key.comma:
-                    unowned string new_decimal = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR);
-                    entry.insert_at_cursor (new_decimal);
-                    key.keyval = Gdk.Key.Right;
+        private void replace_text (string new_text, int new_text_length, ref int position) {
+            var replacement_text = "";
+
+            switch (new_text) {
+                case ".":
+                case ",":
+                    replacement_text = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR);
                     break;
-                case Gdk.Key.KP_Divide:
-                case Gdk.Key.slash:
-                    key.keyval = Gdk.Key.division;
+                case "/":
+                    replacement_text = "÷";
                     break;
-                case Gdk.Key.KP_Multiply:
-                case Gdk.Key.asterisk:
-                    key.keyval = Gdk.Key.multiply;
-                    break;
-                case Gdk.Key.KP_Subtract:
-                case Gdk.Key.minus:
-                    activate_action (ACTION_INSERT, new Variant.string ("−"));
-                    retval = true;
+                case "*":
+                    replacement_text = "×";
                     break;
             }
 
-            return retval;
+            if (replacement_text != "" && replacement_text != new_text) {
+                entry.do_insert_text (replacement_text, entry.cursor_position + replacement_text.char_count (), ref position);
+                Signal.stop_emission_by_name ((void*) entry, "insert-text");
+            }
         }
 
         public override bool configure_event (Gdk.EventConfigure event) {
