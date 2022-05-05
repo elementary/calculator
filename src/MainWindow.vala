@@ -522,7 +522,9 @@ namespace PantheonCalculator {
                 new_position -= selection_length;
             }
 
-            // entry.insert_at_cursor (token);
+            var cursor_position = entry.cursor_position;
+            entry.do_insert_text (token, -1, ref cursor_position);
+
             new_position += token.char_count ();
             entry.grab_focus ();
             entry.set_position (new_position);
