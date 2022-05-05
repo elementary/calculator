@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2021-03-21 16:47+0000\n"
+"PO-Revision-Date: 2022-04-16 22:40+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/calculator/extra/"
 "mr/>\n"
@@ -48,7 +48,7 @@ msgstr "किरकोळ अद्यतने:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Update to elementary 6.1 runtime"
-msgstr ""
+msgstr "elementary 6.1 रनटाइम वर अपडेट करा"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 #: data/io.elementary.calculator.appdata.xml.in:31
@@ -64,19 +64,19 @@ msgstr "अद्ययावत भाषांतर"
 
 #: data/io.elementary.calculator.appdata.xml.in:28
 msgid "Showing advanced controls only affects the focused window"
-msgstr ""
+msgstr "प्रगत नियंत्रणे दाखवल्याने केवळ फोकस केलेल्या विंडोवर परिणाम होतो"
 
 #: data/io.elementary.calculator.appdata.xml.in:29
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "स्टार्टअपवर मुख्य मजकूर एंट्रीवर लक्ष केंद्रित करा"
 
 #: data/io.elementary.calculator.appdata.xml.in:30
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "मल्टीटास्किंग व्ह्यूमध्ये विंडोचे योग्य शीर्षक दाखवा"
 
 #: data/io.elementary.calculator.appdata.xml.in:32
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "'नवीन विंडो' डेस्कटॉप क्रिया जोडली"
 
 #: data/io.elementary.calculator.appdata.xml.in:38
 #: data/io.elementary.calculator.appdata.xml.in:68
@@ -85,15 +85,15 @@ msgstr "नवीन वैशिष्ट्ये:"
 
 #: data/io.elementary.calculator.appdata.xml.in:40
 msgid "Add a \"Clear History\" button to the history dialog"
-msgstr ""
+msgstr "इतिहास संवादामध्ये \"क्लीअर हिस्ट्री\" बटण जोडा"
 
 #: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Fixed an issue with multiple windows"
-msgstr ""
+msgstr "एकाधिक विंडोशी संबंधित समस्येचे निराकरण केले"
 
 #: data/io.elementary.calculator.appdata.xml.in:61
 msgid "More informative copy in history dialog"
-msgstr ""
+msgstr "इतिहास संवादातील अधिक माहितीपूर्ण प्रत"
 
 #: data/io.elementary.calculator.appdata.xml.in:70
 msgid "Add log and inverse trigonometric functions"
@@ -150,7 +150,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "नवीन विंडो"
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"

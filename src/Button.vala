@@ -20,17 +20,13 @@
 public class PantheonCalculator.Button : Gtk.Button {
     private const int WIDTH = 65;
     private const int HEIGHT = 43;
-    public string function = null;
 
-    public Button (string label, string? description = null) {
-        function = label;
-
+    public Button (string label) {
         var lbl = new Gtk.Label (label) {
             use_markup = true
         };
 
         child = lbl;
-        tooltip_text = description;
     }
 
     construct {
