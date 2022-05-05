@@ -812,7 +812,7 @@ namespace PantheonCalculator {
 
             if (replacement_text != "" && replacement_text != new_text) {
                 entry.do_insert_text (replacement_text, entry.cursor_position + replacement_text.char_count (), ref position);
-                Signal.stop_emission ((void*) entry, Signal.lookup ("insert-text", typeof (Gtk.Entry)), 0);
+                Signal.stop_emission_by_name ((void*) entry, "insert-text");
             }
         }
 
