@@ -472,7 +472,7 @@ namespace PantheonCalculator {
 
             entry.changed.connect (remove_error);
             entry.activate.connect (button_calc_clicked);
-            entry.insert_text.connect (replace_text);
+            entry.get_delegate ().insert_text.connect (replace_text);
 
             button_calc.clicked.connect (() => {button_calc_clicked ();});
             button_del.clicked.connect (() => {button_del_clicked ();});
@@ -801,7 +801,7 @@ namespace PantheonCalculator {
 
             if (replacement_text != "" && replacement_text != new_text) {
                 entry.do_insert_text (replacement_text, entry.cursor_position + replacement_text.char_count (), ref position);
-                Signal.stop_emission_by_name ((void*) entry, "insert-text");
+                Signal.stop_emission_by_name ((void*) entry.get_delegate (), "insert-text");
             }
         }
     }
