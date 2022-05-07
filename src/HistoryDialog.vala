@@ -118,8 +118,6 @@ namespace PantheonCalculator {
             var button_add = add_button (_("Insert"), Gtk.ResponseType.APPLY);
             button_add.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-            present ();
-
             response.connect (on_response);
         }
 

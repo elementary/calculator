@@ -468,8 +468,6 @@ namespace PantheonCalculator {
 
             entry.grab_focus ();
 
-            present ();
-
             entry.changed.connect (remove_error);
             entry.activate.connect (button_calc_clicked);
             entry.get_delegate ().insert_text.connect (replace_text);
@@ -751,8 +749,11 @@ namespace PantheonCalculator {
         private void show_history (Gtk.Button button) {
             position = entry.get_position ();
 
-            history_dialog = new HistoryDialog (history);
-            history_dialog.set_transient_for (this);
+            history_dialog = new HistoryDialog (history) {
+                transient_for = this
+            };
+            history_dialog.present ();
+
             history_dialog.added.connect (history_added);
             history_dialog.clear_history.connect (() => {
                 history.foreach ((entry) => {
