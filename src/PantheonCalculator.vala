@@ -51,6 +51,7 @@ namespace PantheonCalculator {
 
         public override void activate () {
             window = new PantheonCalculator.MainWindow ();
+            window.present ();
             this.add_window (window);
         }
     }

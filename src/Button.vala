@@ -22,18 +22,15 @@ public class PantheonCalculator.Button : Gtk.Button {
     private const int HEIGHT = 43;
 
     public Button (string label) {
-        var lbl = new Gtk.Label (label);
-        lbl.use_markup = true;
-        add (lbl);
+        var lbl = new Gtk.Label (label) {
+            use_markup = true
+        };
+
+        child = lbl;
     }
 
-    public override void get_preferred_width (out int minimum_width, out int natural_width) {
-        minimum_width = WIDTH;
-        natural_width = WIDTH;
-    }
-
-    public override void get_preferred_height (out int minimum_height, out int natural_height) {
-        minimum_height = HEIGHT;
-        natural_height = HEIGHT;
+    construct {
+        width_request = WIDTH;
+        height_request = HEIGHT;
     }
 }
