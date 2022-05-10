@@ -1,3 +1,14 @@
+io.elementary.calculator (2.0.0) bionic; urgency=medium
+
+  * Release 2.0.0 (#229)
+  * Actions: bump release to Horus
+  * MainWindow: inline namespace (#228)
+  * Port to Gtk4 (#221)
+  * MainWindow: connect to insert_text instead of key_press (#227)
+  * Use GLib.Action for buttons (#224)
+
+ -- elementary, Inc. <builds@elementary.io>  Tue, 10 May 2022 20:13:56 +0000
+
 io.elementary.calculator (1.7.2) bionic; urgency=medium
 
   * Release 1.7.2 (#216)
