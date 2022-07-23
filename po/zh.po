@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-07-23 12:59+0000\n"
-"Last-Translator: Vincent Yu <coolplayyhj@gmail.com>\n"
+"PO-Revision-Date: 2022-07-23 13:05+0000\n"
+"Last-Translator: _Mok <ivencom@sina.com>\n"
 "Language-Team: Chinese <https://l10n.elementary.io/projects/calculator/"
 "calculator/zh/>\n"
 "Language: zh\n"
@@ -88,7 +88,7 @@ msgstr ""
 
 #: src/MainWindow.vala:212
 msgid "Start Group"
-msgstr ""
+msgstr "起始群组"
 
 #: src/MainWindow.vala:213
 msgid "End Group"
