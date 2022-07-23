@@ -2,8 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
+"PO-Revision-Date: 2022-07-23 12:59+0000\n"
+"Last-Translator: _Mok <ivencom@sina.com>\n"
+"Language-Team: Chinese <https://l10n.elementary.io/projects/calculator/"
+"calculator/zh/>\n"
+"Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/MainWindow.vala:74 src/MainWindow.vala:109
 msgid "Calculator"
@@ -63,7 +71,7 @@ msgstr ""
 
 #: src/MainWindow.vala:206
 msgid "Add to stored value"
-msgstr ""
+msgstr "新增到已存储的值中"
 
 #: src/MainWindow.vala:207
 msgid "Subtract from stored value"
