@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-07-23 13:05+0000\n"
+"PO-Revision-Date: 2022-07-23 14:31+0000\n"
 "Last-Translator: Vincent Yu <coolplayyhj@gmail.com>\n"
 "Language-Team: Chinese <https://l10n.elementary.io/projects/calculator/"
 "calculator/zh/>\n"
@@ -88,7 +88,7 @@ msgstr "累加"
 
 #: src/MainWindow.vala:212
 msgid "Start Group"
-msgstr "起始群组"
+msgstr ""
 
 #: src/MainWindow.vala:213
 msgid "End Group"
@@ -96,11 +96,11 @@ msgstr ""
 
 #: src/MainWindow.vala:214
 msgid "Exponent"
-msgstr ""
+msgstr "指数"
 
 #: src/MainWindow.vala:216
 msgid "Root"
-msgstr ""
+msgstr "开根"
 
 #: src/MainWindow.vala:217
 msgid "Sine"
