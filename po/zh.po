@@ -3,7 +3,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
 "PO-Revision-Date: 2022-07-23 12:59+0000\n"
-"Last-Translator: _Mok <ivencom@sina.com>\n"
+"Last-Translator: Vincent Yu <coolplayyhj@gmail.com>\n"
 "Language-Team: Chinese <https://l10n.elementary.io/projects/calculator/"
 "calculator/zh/>\n"
 "Language: zh\n"
@@ -15,59 +15,60 @@ msgstr ""
 
 #: src/MainWindow.vala:74 src/MainWindow.vala:109
 msgid "Calculator"
-msgstr ""
+msgstr "计算器"
 
 #: src/MainWindow.vala:95 src/MainWindow.vala:615
 msgid "Show extended functionality"
-msgstr ""
+msgstr "显示扩展功能"
 
 #: src/MainWindow.vala:101 src/HistoryDialog.vala:40
 msgid "History"
-msgstr ""
+msgstr "历史记录"
 
 #: src/MainWindow.vala:122
 msgid "Calculate Result"
-msgstr ""
+msgstr "计算结果"
 
 #: src/MainWindow.vala:126
 msgid "Insert last result"
-msgstr ""
+msgstr "插入上次结果"
 
 #: src/MainWindow.vala:129
+#, fuzzy
 msgid "Backspace"
-msgstr ""
+msgstr "退格"
 
 #: src/MainWindow.vala:135
 msgid "Clear entry"
-msgstr ""
+msgstr "清除键入"
 
 #: src/MainWindow.vala:139
 msgid "Add"
-msgstr ""
+msgstr "加"
 
 #: src/MainWindow.vala:143
 msgid "Subtract"
-msgstr ""
+msgstr "减"
 
 #: src/MainWindow.vala:147
 msgid "Multiply"
-msgstr ""
+msgstr "乘"
 
 #: src/MainWindow.vala:151
 msgid "Divide"
-msgstr ""
+msgstr "除"
 
 #: src/MainWindow.vala:157
 msgid "Percentage"
-msgstr ""
+msgstr "百分比"
 
 #: src/MainWindow.vala:203
 msgid "Set memory value"
-msgstr ""
+msgstr "设置记忆值"
 
 #: src/MainWindow.vala:204
 msgid "Recall value from memory"
-msgstr ""
+msgstr "读取记忆值"
 
 #: src/MainWindow.vala:206
 msgid "Add to stored value"
