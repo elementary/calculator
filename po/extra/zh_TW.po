@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-01-01 16:20+0000\n"
+"PO-Revision-Date: 2022-07-24 12:21+0000\n"
 "Last-Translator: Vincent Yu <coolplayyhj@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "calculator/extra/zh_Hant/>\n"
@@ -72,12 +72,10 @@ msgid "Focus the main text entry on startup"
 msgstr "啟動時聚焦主要文本條目"
 
 #: data/io.elementary.calculator.appdata.xml.in:30
-#, fuzzy
 msgid "Show the correct window title in Multitasking View"
 msgstr "在多任務視圖中顯示具體窗口標題"
 
 #: data/io.elementary.calculator.appdata.xml.in:32
-#, fuzzy
 msgid "Added 'New Window' Desktop Action"
 msgstr "已添加“新窗口”桌面操作"
 
