@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-08-05 17:52+0000\n"
-"Last-Translator: Chokomi <ys790928@gmail.com>\n"
+"PO-Revision-Date: 2022-08-05 22:27+0000\n"
+"Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/calculator/extra/"
 "ko/>\n"
 "Language: ko\n"
@@ -49,7 +49,7 @@ msgstr "마이너 업데이트:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Update to elementary 6.1 runtime"
-msgstr ""
+msgstr "elementary 6.1 runtime으로 업데이트"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 #: data/io.elementary.calculator.appdata.xml.in:31
@@ -65,11 +65,11 @@ msgstr "최신 번역"
 
 #: data/io.elementary.calculator.appdata.xml.in:28
 msgid "Showing advanced controls only affects the focused window"
-msgstr ""
+msgstr "고급 컨트롤을 표시하면 초점이 맞춰진 창에만 영향을 줍니다"
 
 #: data/io.elementary.calculator.appdata.xml.in:29
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "시작 시 기본 텍스트 항목에 초점 맞추기"
 
 #: data/io.elementary.calculator.appdata.xml.in:30
 msgid "Show the correct window title in Multitasking View"
