@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-09-26 15:08+0000\n"
+"PO-Revision-Date: 2022-09-26 18:58+0000\n"
 "Last-Translator: Taras <oster.ok@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
 "extra/uk/>\n"
@@ -129,7 +129,7 @@ msgstr "Виправлено проблему відсутності пікто�
 
 #: data/io.elementary.calculator.appdata.xml.in:101
 msgid "Animate Infobar when hiding and showing"
-msgstr "Анімація приховування й показу панелі відомостей"
+msgstr "Анімований інфобар під час приховання і показування"
 
 #: data/io.elementary.calculator.appdata.xml.in:102
 msgid "Fix selection replace"
