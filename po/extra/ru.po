@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2022-09-30 13:54+0000\n"
+"PO-Revision-Date: 2022-10-09 23:11+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/calculator/extra/"
 "ru/>\n"
@@ -146,7 +146,9 @@ msgstr "elementary, Inc."
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr "Вычисления;Математика;Арифметика;Научный;"
+msgstr ""
+"Calculation;Mathematics;Arithmetic;Scientific;Вычисления;Математика;Арифметик"
+"а;Научный;"
 
 #: data/io.elementary.calculator.desktop.in:8
 msgid "io.elementary.calculator"
