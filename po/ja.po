@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-08 20:38+0000\n"
+"POT-Creation-Date: 2022-10-20 19:05+0000\n"
 "PO-Revision-Date: 2021-08-09 15:52+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
@@ -15,151 +15,151 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:74 src/MainWindow.vala:109
+#: src/MainWindow.vala:72
 msgid "Calculator"
 msgstr "電卓"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:615
+#: src/MainWindow.vala:82 src/MainWindow.vala:740
 msgid "Show extended functionality"
 msgstr "追加機能を表示"
 
-#: src/MainWindow.vala:101 src/HistoryDialog.vala:40
+#: src/MainWindow.vala:88 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "履歴"
 
-#: src/MainWindow.vala:122
+#: src/MainWindow.vala:108
 msgid "Calculate Result"
 msgstr "計算結果"
 
-#: src/MainWindow.vala:126
+#: src/MainWindow.vala:115
 msgid "Insert last result"
 msgstr "最後の結果を挿入"
 
-#: src/MainWindow.vala:129
+#: src/MainWindow.vala:119
 msgid "Backspace"
 msgstr "一桁削除"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:127
 msgid "Clear entry"
 msgstr "エントリーを消去"
 
-#: src/MainWindow.vala:139
+#: src/MainWindow.vala:134
 msgid "Add"
 msgstr "足し算"
 
-#: src/MainWindow.vala:143
+#: src/MainWindow.vala:141
 msgid "Subtract"
 msgstr "引き算"
 
-#: src/MainWindow.vala:147
+#: src/MainWindow.vala:148
 msgid "Multiply"
 msgstr "掛け算"
 
-#: src/MainWindow.vala:151
+#: src/MainWindow.vala:155
 msgid "Divide"
 msgstr "割り算"
 
-#: src/MainWindow.vala:157
+#: src/MainWindow.vala:172
 msgid "Percentage"
 msgstr "パーセント"
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:254
 msgid "Set memory value"
 msgstr "値をメモリーに記録します"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:259
 msgid "Recall value from memory"
 msgstr "メモリーの値を復元します"
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:263
 msgid "Add to stored value"
 msgstr "メモリーに値を加算します"
 
-#: src/MainWindow.vala:207
+#: src/MainWindow.vala:267
 msgid "Subtract from stored value"
 msgstr "メモリーから値を減算します"
 
-#: src/MainWindow.vala:208
+#: src/MainWindow.vala:272
 msgid "Clear memory"
 msgstr "メモリーを消去します"
 
-#: src/MainWindow.vala:210
+#: src/MainWindow.vala:277
 msgid "Grand Total"
 msgstr "グランドトータル"
 
-#: src/MainWindow.vala:212
+#: src/MainWindow.vala:283
 msgid "Start Group"
 msgstr "括弧"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:289
 msgid "End Group"
 msgstr "括弧閉じる"
 
-#: src/MainWindow.vala:214
+#: src/MainWindow.vala:295
 msgid "Exponent"
 msgstr "指数"
 
-#: src/MainWindow.vala:216
+#: src/MainWindow.vala:301
 msgid "Root"
 msgstr "平方根"
 
-#: src/MainWindow.vala:217
+#: src/MainWindow.vala:307
 msgid "Sine"
 msgstr "サイン"
 
-#: src/MainWindow.vala:218
+#: src/MainWindow.vala:313
 msgid "Hyperbolic Sine"
 msgstr "ハイパボリックサイン"
 
-#: src/MainWindow.vala:219
+#: src/MainWindow.vala:319
 msgid "Cosine"
 msgstr "コサイン"
 
-#: src/MainWindow.vala:220
+#: src/MainWindow.vala:325
 msgid "Hyperbolic Cosine"
 msgstr "ハイパボリックコサイン"
 
-#: src/MainWindow.vala:221
+#: src/MainWindow.vala:331
 msgid "Tangent"
 msgstr "タンジェント"
 
-#: src/MainWindow.vala:222
+#: src/MainWindow.vala:337
 msgid "Hyperbolic Tangent"
 msgstr "ハイパボリックタンジェント"
 
-#: src/MainWindow.vala:223
+#: src/MainWindow.vala:343
 msgid "Pi"
 msgstr "円周率"
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:349
 msgid "Euler's Number"
 msgstr "自然対数の底"
 
-#: src/MainWindow.vala:225
+#: src/MainWindow.vala:355
 msgid "Logarithm Base 10"
 msgstr "常用対数"
 
-#: src/MainWindow.vala:227
+#: src/MainWindow.vala:361
 msgid "Natural Logarithm"
 msgstr "自然対数"
 
-#: src/MainWindow.vala:228
+#: src/MainWindow.vala:367
 msgid "Inverse Sine"
 msgstr "アークサイン"
 
-#: src/MainWindow.vala:230
+#: src/MainWindow.vala:373
 msgid "Inverse Cosine"
 msgstr "アークコサイン"
 
-#: src/MainWindow.vala:232
+#: src/MainWindow.vala:379
 msgid "Inverse Tangent"
 msgstr "アークタンジェント"
 
-#: src/MainWindow.vala:234
+#: src/MainWindow.vala:383
 msgid "Reciprocal"
 msgstr "逆数"
 
-#: src/MainWindow.vala:610
+#: src/MainWindow.vala:735
 msgid "Hide extended functionality"
 msgstr "追加機能を表示しない"
 
@@ -167,28 +167,28 @@ msgstr "追加機能を表示しない"
 msgid "Insert a previous expression or result into the current calculation."
 msgstr "以前使用した式や結果を現在の計算に挿入します。"
 
-#: src/HistoryDialog.vala:77
+#: src/HistoryDialog.vala:81
 msgid "Value to insert:"
 msgstr "挿入する値:"
 
-#: src/HistoryDialog.vala:82
+#: src/HistoryDialog.vala:86
 msgid "Result"
 msgstr "結果"
 
-#: src/HistoryDialog.vala:84
+#: src/HistoryDialog.vala:90
 msgid "Expression"
 msgstr "式"
 
 #. Use a custom response code for "Clear History" action
-#: src/HistoryDialog.vala:102
+#: src/HistoryDialog.vala:113
 msgid "Clear History"
 msgstr "履歴を消去"
 
-#: src/HistoryDialog.vala:105
+#: src/HistoryDialog.vala:116
 msgid "Close"
 msgstr "閉じる"
 
-#: src/HistoryDialog.vala:107
+#: src/HistoryDialog.vala:118
 msgid "Insert"
 msgstr "挿入"
 
