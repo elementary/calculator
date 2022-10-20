@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-08 20:38+0000\n"
+"POT-Creation-Date: 2022-10-20 19:05+0000\n"
 "PO-Revision-Date: 2022-02-28 19:52+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/calculator/extra/"
@@ -40,103 +40,111 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 #: data/io.elementary.calculator.appdata.xml.in:26
-#: data/io.elementary.calculator.appdata.xml.in:42
-#: data/io.elementary.calculator.appdata.xml.in:50
-#: data/io.elementary.calculator.appdata.xml.in:58
-#: data/io.elementary.calculator.appdata.xml.in:83
+#: data/io.elementary.calculator.appdata.xml.in:35
+#: data/io.elementary.calculator.appdata.xml.in:44
+#: data/io.elementary.calculator.appdata.xml.in:60
+#: data/io.elementary.calculator.appdata.xml.in:68
+#: data/io.elementary.calculator.appdata.xml.in:76
+#: data/io.elementary.calculator.appdata.xml.in:101
 msgid "Minor updates:"
 msgstr "Drobné aktualizácie:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Update to elementary 6.1 runtime"
-msgstr "Behové prostredie elementary aktualizované na verziu 6.1"
-
-#: data/io.elementary.calculator.appdata.xml.in:20
-#: data/io.elementary.calculator.appdata.xml.in:31
-#: data/io.elementary.calculator.appdata.xml.in:44
-#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/io.elementary.calculator.appdata.xml.in:29
+#: data/io.elementary.calculator.appdata.xml.in:38
+#: data/io.elementary.calculator.appdata.xml.in:49
 #: data/io.elementary.calculator.appdata.xml.in:62
-#: data/io.elementary.calculator.appdata.xml.in:77
-#: data/io.elementary.calculator.appdata.xml.in:86
-#: data/io.elementary.calculator.appdata.xml.in:94
+#: data/io.elementary.calculator.appdata.xml.in:70
+#: data/io.elementary.calculator.appdata.xml.in:80
+#: data/io.elementary.calculator.appdata.xml.in:95
 #: data/io.elementary.calculator.appdata.xml.in:104
+#: data/io.elementary.calculator.appdata.xml.in:112
+#: data/io.elementary.calculator.appdata.xml.in:122
 msgid "Updated translations"
 msgstr "Aktualizované preklady"
 
 #: data/io.elementary.calculator.appdata.xml.in:28
+msgid "Update for OS 7 and Gtk 4"
+msgstr ""
+
+#: data/io.elementary.calculator.appdata.xml.in:37
+msgid "Update to elementary 6.1 runtime"
+msgstr "Behové prostredie elementary aktualizované na verziu 6.1"
+
+#: data/io.elementary.calculator.appdata.xml.in:46
 msgid "Showing advanced controls only affects the focused window"
 msgstr "Zobrazenie pokročilých ovládacích prvkov ovplyvní iba aktívne okno"
 
-#: data/io.elementary.calculator.appdata.xml.in:29
+#: data/io.elementary.calculator.appdata.xml.in:47
 msgid "Focus the main text entry on startup"
 msgstr "Pri štarte označiť hlavné textové pole"
 
-#: data/io.elementary.calculator.appdata.xml.in:30
+#: data/io.elementary.calculator.appdata.xml.in:48
 msgid "Show the correct window title in Multitasking View"
 msgstr "Zobrazovať správny názov okna v Zobrazení okien"
 
-#: data/io.elementary.calculator.appdata.xml.in:32
+#: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Added 'New Window' Desktop Action"
 msgstr "Pridaná nová akcia pracovnej plochy ‚Nové okno‘"
 
-#: data/io.elementary.calculator.appdata.xml.in:38
-#: data/io.elementary.calculator.appdata.xml.in:68
+#: data/io.elementary.calculator.appdata.xml.in:56
+#: data/io.elementary.calculator.appdata.xml.in:86
 msgid "New features:"
 msgstr "Nové funkcie:"
 
-#: data/io.elementary.calculator.appdata.xml.in:40
+#: data/io.elementary.calculator.appdata.xml.in:58
 msgid "Add a \"Clear History\" button to the history dialog"
 msgstr "Pridané tlačidlo „Vymazať históriu“ do dialógu histórie"
 
-#: data/io.elementary.calculator.appdata.xml.in:60
+#: data/io.elementary.calculator.appdata.xml.in:78
 msgid "Fixed an issue with multiple windows"
 msgstr "Opravený problém s viacerými oknami"
 
-#: data/io.elementary.calculator.appdata.xml.in:61
+#: data/io.elementary.calculator.appdata.xml.in:79
 msgid "More informative copy in history dialog"
 msgstr "Viac informatívna kópia v dialógu histórie"
 
-#: data/io.elementary.calculator.appdata.xml.in:70
+#: data/io.elementary.calculator.appdata.xml.in:88
 msgid "Add log and inverse trigonometric functions"
 msgstr "Pridaný logaritmus a inverzné goniometrické funkcie"
 
-#: data/io.elementary.calculator.appdata.xml.in:72
+#: data/io.elementary.calculator.appdata.xml.in:90
 msgid "Other updates:"
 msgstr "Iné aktualizácie:"
 
-#: data/io.elementary.calculator.appdata.xml.in:74
+#: data/io.elementary.calculator.appdata.xml.in:92
 msgid "Fix an issue with negative decimals without leading digits"
 msgstr "Opravený problém s negatívnymi desatinnými číslami bez vedúcich číslic"
 
-#: data/io.elementary.calculator.appdata.xml.in:75
+#: data/io.elementary.calculator.appdata.xml.in:93
 msgid "More efficient state saving"
 msgstr "Efektívnejšie ukladanie stavu"
 
-#: data/io.elementary.calculator.appdata.xml.in:76
+#: data/io.elementary.calculator.appdata.xml.in:94
 msgid "Use slim titlebar"
 msgstr "Použitá tenšia lišta okna"
 
-#: data/io.elementary.calculator.appdata.xml.in:85
+#: data/io.elementary.calculator.appdata.xml.in:103
 msgid "Fix inserting multi-byte characters"
 msgstr "Opravené vkladanie viacbajtových znakov"
 
-#: data/io.elementary.calculator.appdata.xml.in:93
+#: data/io.elementary.calculator.appdata.xml.in:111
 msgid "Fix missing icon for Ukrainian"
 msgstr "Opravená chýbajúca ikonka pre ukrajinčinu"
 
-#: data/io.elementary.calculator.appdata.xml.in:101
+#: data/io.elementary.calculator.appdata.xml.in:119
 msgid "Animate Infobar when hiding and showing"
 msgstr "Animácia pre zobrazenie a skrytie infopanela"
 
-#: data/io.elementary.calculator.appdata.xml.in:102
+#: data/io.elementary.calculator.appdata.xml.in:120
 msgid "Fix selection replace"
 msgstr "Opravené nahradenie výberu"
 
-#: data/io.elementary.calculator.appdata.xml.in:103
+#: data/io.elementary.calculator.appdata.xml.in:121
 msgid "Improved decimal separator localization"
 msgstr "Vylepšená lokalizácia desatinného oddeľovača"
 
-#: data/io.elementary.calculator.appdata.xml.in:141
+#: data/io.elementary.calculator.appdata.xml.in:159
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
@@ -144,10 +152,6 @@ msgstr "elementary, Inc."
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
 msgstr "Výpočty;Matematika;Aritmetika;Vedecká;"
-
-#: data/io.elementary.calculator.desktop.in:8
-msgid "io.elementary.calculator"
-msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
