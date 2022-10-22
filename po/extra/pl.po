@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:05+0000\n"
-"PO-Revision-Date: 2021-12-09 14:23+0000\n"
+"PO-Revision-Date: 2022-10-24 08:04+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/calculator/extra/"
 "pl/>\n"
@@ -66,7 +66,7 @@ msgstr "Zaktualizowano tłumaczenia"
 
 #: data/io.elementary.calculator.appdata.xml.in:28
 msgid "Update for OS 7 and Gtk 4"
-msgstr ""
+msgstr "Aktualizacja do OS 7 i Gtk 4"
 
 #: data/io.elementary.calculator.appdata.xml.in:37
 msgid "Update to elementary 6.1 runtime"
