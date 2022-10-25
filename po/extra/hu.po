@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:05+0000\n"
-"PO-Revision-Date: 2022-10-25 22:26+0000\n"
+"PO-Revision-Date: 2022-10-26 12:31+0000\n"
 "Last-Translator: Alfika07 <tothalfi07@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/calculator/"
 "extra/hu/>\n"
@@ -122,7 +122,7 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:94
 msgid "Use slim titlebar"
-msgstr ""
+msgstr "Vékony címsor használata"
 
 #: data/io.elementary.calculator.appdata.xml.in:103
 msgid "Fix inserting multi-byte characters"
