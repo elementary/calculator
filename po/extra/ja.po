@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:05+0000\n"
-"PO-Revision-Date: 2022-04-09 01:01+0000\n"
+"PO-Revision-Date: 2022-10-28 23:22+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
 "extra/ja/>\n"
@@ -65,7 +65,7 @@ msgstr "翻訳の更新"
 
 #: data/io.elementary.calculator.appdata.xml.in:28
 msgid "Update for OS 7 and Gtk 4"
-msgstr ""
+msgstr "elementary OS 7 と Gtk 4 のためのアップデート"
 
 #: data/io.elementary.calculator.appdata.xml.in:37
 msgid "Update to elementary 6.1 runtime"
