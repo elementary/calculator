@@ -13,7 +13,7 @@ Homepage: https://github.com/elementary/calculator
 
 Package: io.elementary.calculator
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: flatpak, ${misc:Depends}, ${shlibs:Depends}
 Breaks: pantheon-calculator
 Replaces: pantheon-calculator
 Description: Calculate in an elementary way.
