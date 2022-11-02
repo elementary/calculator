@@ -2,12 +2,7 @@ Source: io.elementary.calculator
 Section: x11
 Priority: extra
 Maintainer: elementary, Inc. <builds@elementary.io>
-Build-Depends: debhelper (>= 10.5.1),
-               gettext,
-               libgranite-7-dev,
-               libgtk-4-dev,
-               meson,
-               valac (>= 0.26)
+Build-Depends: debhelper (>= 10.5.1)
 Standards-Version: 4.1.1
 Homepage: https://github.com/elementary/calculator
 
@@ -20,7 +15,7 @@ Description: Calculate in an elementary way.
 
 Package: pantheon-calculator
 Architecture: any
-Depends: io.elementary.calculator, ${misc:Depends}
+Depends: flatpak, ${misc:Depends}
 Section: oldlibs
 Priority: optional
 Description: transitional dummy package
