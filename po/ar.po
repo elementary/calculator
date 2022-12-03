@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2019-03-12 14:26+0000\n"
-"Last-Translator: hanix <lrdhanix@gmail.com>\n"
+"POT-Creation-Date: 2022-10-20 19:05+0000\n"
+"PO-Revision-Date: 2022-01-01 17:28+0000\n"
+"Last-Translator: aalhaif <aalhaif@hotmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/calculator/"
 "calculator/ar/>\n"
 "Language: ar\n"
@@ -13,162 +13,158 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:43+0000\n"
 
-#: src/MainWindow.vala:74 src/MainWindow.vala:109
+#: src/MainWindow.vala:72
 msgid "Calculator"
 msgstr "الحاسبة"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:615
+#: src/MainWindow.vala:82 src/MainWindow.vala:740
 msgid "Show extended functionality"
 msgstr "إظهار الإعدادات المتقدمة"
 
-#: src/MainWindow.vala:101 src/HistoryDialog.vala:40
+#: src/MainWindow.vala:88 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "السجل"
 
-#: src/MainWindow.vala:122
+#: src/MainWindow.vala:108
 msgid "Calculate Result"
 msgstr "حساب النتيجة"
 
-#: src/MainWindow.vala:126
-#, fuzzy
-#| msgid "Add last result"
+#: src/MainWindow.vala:115
 msgid "Insert last result"
-msgstr "أضف النتيجة الأخيرة"
+msgstr "إدراج النتيجة الأخيرة"
 
-#: src/MainWindow.vala:129
+#: src/MainWindow.vala:119
 msgid "Backspace"
 msgstr "العودة إلى الوراء"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:127
 msgid "Clear entry"
 msgstr "مسح منطقة الإدخال"
 
-#: src/MainWindow.vala:139
+#: src/MainWindow.vala:134
 msgid "Add"
 msgstr "إضافة"
 
-#: src/MainWindow.vala:143
+#: src/MainWindow.vala:141
 msgid "Subtract"
 msgstr "طرح"
 
-#: src/MainWindow.vala:147
+#: src/MainWindow.vala:148
 msgid "Multiply"
 msgstr "ضرب"
 
-#: src/MainWindow.vala:151
+#: src/MainWindow.vala:155
 msgid "Divide"
 msgstr "قسمة"
 
-#: src/MainWindow.vala:157
+#: src/MainWindow.vala:172
 msgid "Percentage"
 msgstr "النسبة المئوية"
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:254
 msgid "Set memory value"
-msgstr ""
+msgstr "حفظ القيمة"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:259
 msgid "Recall value from memory"
-msgstr ""
+msgstr "استرجاع القيمة من الذاكرة"
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:263
 msgid "Add to stored value"
-msgstr ""
+msgstr "إضافة إلى القيمة المحفوظة"
 
-#: src/MainWindow.vala:207
+#: src/MainWindow.vala:267
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "طرح من القيمة المحفوظة"
 
-#: src/MainWindow.vala:208
-#, fuzzy
-#| msgid "Clear entry"
+#: src/MainWindow.vala:272
 msgid "Clear memory"
-msgstr "مسح منطقة الإدخال"
+msgstr "مسح الذاكرة"
 
-#: src/MainWindow.vala:210
+#: src/MainWindow.vala:277
 msgid "Grand Total"
-msgstr ""
+msgstr "المجموع النهائي"
 
-#: src/MainWindow.vala:212
+#: src/MainWindow.vala:283
 msgid "Start Group"
 msgstr "بداية مجموعة"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:289
 msgid "End Group"
 msgstr "نهاية مجموعة"
 
-#: src/MainWindow.vala:214
+#: src/MainWindow.vala:295
 msgid "Exponent"
 msgstr "الأُس"
 
-#: src/MainWindow.vala:216
+#: src/MainWindow.vala:301
 msgid "Root"
 msgstr "الجذر"
 
-#: src/MainWindow.vala:217
+#: src/MainWindow.vala:307
 msgid "Sine"
 msgstr "جَيْب"
 
-#: src/MainWindow.vala:218
+#: src/MainWindow.vala:313
 msgid "Hyperbolic Sine"
 msgstr "الجيب الزائدي"
 
-#: src/MainWindow.vala:219
+#: src/MainWindow.vala:319
 msgid "Cosine"
 msgstr "جَيْب التَمامِ"
 
-#: src/MainWindow.vala:220
+#: src/MainWindow.vala:325
 msgid "Hyperbolic Cosine"
 msgstr "تجَيْب"
 
-#: src/MainWindow.vala:221
+#: src/MainWindow.vala:331
 msgid "Tangent"
 msgstr "المُماسّ"
 
-#: src/MainWindow.vala:222
+#: src/MainWindow.vala:337
 msgid "Hyperbolic Tangent"
 msgstr "الظل الزائدي"
 
-#: src/MainWindow.vala:223
+#: src/MainWindow.vala:343
 msgid "Pi"
 msgstr "بــاي"
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:349
 msgid "Euler's Number"
 msgstr "عدد أولر"
 
-#: src/MainWindow.vala:225
+#: src/MainWindow.vala:355
 msgid "Logarithm Base 10"
 msgstr ""
 
-#: src/MainWindow.vala:227
+#: src/MainWindow.vala:361
 msgid "Natural Logarithm"
 msgstr ""
 
-#: src/MainWindow.vala:228
+#: src/MainWindow.vala:367
 msgid "Inverse Sine"
 msgstr ""
 
-#: src/MainWindow.vala:230
+#: src/MainWindow.vala:373
 #, fuzzy
 #| msgid "Cosine"
 msgid "Inverse Cosine"
 msgstr "جَيْب التَمامِ"
 
-#: src/MainWindow.vala:232
+#: src/MainWindow.vala:379
 #, fuzzy
 #| msgid "Tangent"
 msgid "Inverse Tangent"
 msgstr "المُماسّ"
 
-#: src/MainWindow.vala:234
+#: src/MainWindow.vala:383
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:610
+#: src/MainWindow.vala:735
 msgid "Hide extended functionality"
 msgstr "إخفاء الإعدادات المتقدمة"
 
@@ -176,32 +172,32 @@ msgstr "إخفاء الإعدادات المتقدمة"
 msgid "Insert a previous expression or result into the current calculation."
 msgstr ""
 
-#: src/HistoryDialog.vala:77
+#: src/HistoryDialog.vala:81
 #, fuzzy
 #| msgid "Value to add:"
 msgid "Value to insert:"
 msgstr "قــيمــة الإضافـــة:"
 
-#: src/HistoryDialog.vala:82
+#: src/HistoryDialog.vala:86
 msgid "Result"
 msgstr "النَتيـــجـة"
 
-#: src/HistoryDialog.vala:84
+#: src/HistoryDialog.vala:90
 msgid "Expression"
 msgstr "العبارة"
 
 #. Use a custom response code for "Clear History" action
-#: src/HistoryDialog.vala:102
+#: src/HistoryDialog.vala:113
 #, fuzzy
 #| msgid "Clear entry"
 msgid "Clear History"
 msgstr "مسح منطقة الإدخال"
 
-#: src/HistoryDialog.vala:105
+#: src/HistoryDialog.vala:116
 msgid "Close"
 msgstr "إغلاق"
 
-#: src/HistoryDialog.vala:107
+#: src/HistoryDialog.vala:118
 msgid "Insert"
 msgstr ""
 

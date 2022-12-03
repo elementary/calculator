@@ -7,8 +7,8 @@
 
 You'll need the following dependencies:
 
-* libgranite-dev >= 0.5
-* libhandy-1-dev >= 0.91.0
+* libgranite-dev >= 7.0
+* libgtk-4-dev
 * meson >= 0.43.0
 * valac
 

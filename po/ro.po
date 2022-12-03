@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-08 20:38+0000\n"
+"POT-Creation-Date: 2022-10-20 19:05+0000\n"
 "PO-Revision-Date: 2021-08-31 12:40+0000\n"
 "Last-Translator: Silviu Popescu <teodorspopescu@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/calculator/"
@@ -16,151 +16,151 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:74 src/MainWindow.vala:109
+#: src/MainWindow.vala:72
 msgid "Calculator"
 msgstr "Calculator"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:615
+#: src/MainWindow.vala:82 src/MainWindow.vala:740
 msgid "Show extended functionality"
 msgstr "Afișează facilitățile extinse"
 
-#: src/MainWindow.vala:101 src/HistoryDialog.vala:40
+#: src/MainWindow.vala:88 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "Istoric"
 
-#: src/MainWindow.vala:122
+#: src/MainWindow.vala:108
 msgid "Calculate Result"
 msgstr "Calculează rezultatul"
 
-#: src/MainWindow.vala:126
+#: src/MainWindow.vala:115
 msgid "Insert last result"
 msgstr "Inserează ultimul rezultat"
 
-#: src/MainWindow.vala:129
+#: src/MainWindow.vala:119
 msgid "Backspace"
 msgstr "Șterge/Pas înapoi"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:127
 msgid "Clear entry"
 msgstr "Șterge intrarea"
 
-#: src/MainWindow.vala:139
+#: src/MainWindow.vala:134
 msgid "Add"
 msgstr "Adaugă"
 
-#: src/MainWindow.vala:143
+#: src/MainWindow.vala:141
 msgid "Subtract"
 msgstr "Scade"
 
-#: src/MainWindow.vala:147
+#: src/MainWindow.vala:148
 msgid "Multiply"
 msgstr "Înmulțește"
 
-#: src/MainWindow.vala:151
+#: src/MainWindow.vala:155
 msgid "Divide"
 msgstr "Împarte"
 
-#: src/MainWindow.vala:157
+#: src/MainWindow.vala:172
 msgid "Percentage"
 msgstr "Procentaj"
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:254
 msgid "Set memory value"
 msgstr "Stabilește valoarea din memorie"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:259
 msgid "Recall value from memory"
 msgstr "Readu valoarea din memorie"
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:263
 msgid "Add to stored value"
 msgstr "Adaugă la valoarea stocată"
 
-#: src/MainWindow.vala:207
+#: src/MainWindow.vala:267
 msgid "Subtract from stored value"
 msgstr "Scoate din valoarea stocata"
 
-#: src/MainWindow.vala:208
+#: src/MainWindow.vala:272
 msgid "Clear memory"
 msgstr "Șterge memoria"
 
-#: src/MainWindow.vala:210
+#: src/MainWindow.vala:277
 msgid "Grand Total"
 msgstr "Total final"
 
-#: src/MainWindow.vala:212
+#: src/MainWindow.vala:283
 msgid "Start Group"
 msgstr "Start grup"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:289
 msgid "End Group"
 msgstr "Sfârșit grup"
 
-#: src/MainWindow.vala:214
+#: src/MainWindow.vala:295
 msgid "Exponent"
 msgstr "Exponent"
 
-#: src/MainWindow.vala:216
+#: src/MainWindow.vala:301
 msgid "Root"
 msgstr "Rădăcina"
 
-#: src/MainWindow.vala:217
+#: src/MainWindow.vala:307
 msgid "Sine"
 msgstr "Sinus"
 
-#: src/MainWindow.vala:218
+#: src/MainWindow.vala:313
 msgid "Hyperbolic Sine"
 msgstr "Sinus hiperbolic"
 
-#: src/MainWindow.vala:219
+#: src/MainWindow.vala:319
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: src/MainWindow.vala:220
+#: src/MainWindow.vala:325
 msgid "Hyperbolic Cosine"
 msgstr "Cosinus hiperbolic"
 
-#: src/MainWindow.vala:221
+#: src/MainWindow.vala:331
 msgid "Tangent"
 msgstr "Tangentă"
 
-#: src/MainWindow.vala:222
+#: src/MainWindow.vala:337
 msgid "Hyperbolic Tangent"
 msgstr "Tangentă hiperbolică"
 
-#: src/MainWindow.vala:223
+#: src/MainWindow.vala:343
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:349
 msgid "Euler's Number"
 msgstr "Numărul lui Euler"
 
-#: src/MainWindow.vala:225
+#: src/MainWindow.vala:355
 msgid "Logarithm Base 10"
 msgstr "Logaritm în baza 10"
 
-#: src/MainWindow.vala:227
+#: src/MainWindow.vala:361
 msgid "Natural Logarithm"
 msgstr "Logaritm natural"
 
-#: src/MainWindow.vala:228
+#: src/MainWindow.vala:367
 msgid "Inverse Sine"
 msgstr "Sinus invers"
 
-#: src/MainWindow.vala:230
+#: src/MainWindow.vala:373
 msgid "Inverse Cosine"
 msgstr "Cosinus invers"
 
-#: src/MainWindow.vala:232
+#: src/MainWindow.vala:379
 msgid "Inverse Tangent"
 msgstr "Tangentă inversă"
 
-#: src/MainWindow.vala:234
+#: src/MainWindow.vala:383
 msgid "Reciprocal"
 msgstr "Inversa"
 
-#: src/MainWindow.vala:610
+#: src/MainWindow.vala:735
 msgid "Hide extended functionality"
 msgstr "Ascunde funcționalitățile extinse"
 
@@ -170,28 +170,28 @@ msgstr ""
 "Inserează o expresie matematică anterioară sau un rezultat anterior în "
 "calculul prezent."
 
-#: src/HistoryDialog.vala:77
+#: src/HistoryDialog.vala:81
 msgid "Value to insert:"
 msgstr "Valoare de inserare:"
 
-#: src/HistoryDialog.vala:82
+#: src/HistoryDialog.vala:86
 msgid "Result"
 msgstr "Rezultat"
 
-#: src/HistoryDialog.vala:84
+#: src/HistoryDialog.vala:90
 msgid "Expression"
 msgstr "Expresie"
 
 #. Use a custom response code for "Clear History" action
-#: src/HistoryDialog.vala:102
+#: src/HistoryDialog.vala:113
 msgid "Clear History"
 msgstr "Șterge istoricul"
 
-#: src/HistoryDialog.vala:105
+#: src/HistoryDialog.vala:116
 msgid "Close"
 msgstr "Închide"
 
-#: src/HistoryDialog.vala:107
+#: src/HistoryDialog.vala:118
 msgid "Insert"
 msgstr "Inserare"
 

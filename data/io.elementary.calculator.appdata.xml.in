@@ -12,6 +12,24 @@
   </description>
   <translation type="gettext">io.elementary.calculator</translation>
   <releases>
+    <release version="2.0.1" date="2022-10-19" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.0.0" date="2022-05-09" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Update for OS 7 and Gtk 4</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.7.2" date="2021-12-13" urgency="medium">
       <description>
         <p>Minor updates:</p>

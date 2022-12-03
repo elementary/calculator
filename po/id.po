@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2020-12-23 20:16+0000\n"
-"Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
+"POT-Creation-Date: 2022-10-20 19:05+0000\n"
+"PO-Revision-Date: 2022-01-07 22:25+0000\n"
+"Last-Translator: Gusti Ahmad Fanshuri Alfarisy <gusti.alfarisy@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/calculator/"
 "calculator/id/>\n"
 "Language: id\n"
@@ -12,193 +12,185 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:74 src/MainWindow.vala:109
+#: src/MainWindow.vala:72
 msgid "Calculator"
 msgstr "Kalkulator"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:615
+#: src/MainWindow.vala:82 src/MainWindow.vala:740
 msgid "Show extended functionality"
 msgstr "Tampilkan fungsi lainnya"
 
-#: src/MainWindow.vala:101 src/HistoryDialog.vala:40
+#: src/MainWindow.vala:88 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "Riwayat"
 
-#: src/MainWindow.vala:122
+#: src/MainWindow.vala:108
 msgid "Calculate Result"
 msgstr "Hitung hasilnya"
 
-#: src/MainWindow.vala:126
-#, fuzzy
-#| msgid "Add last result"
+#: src/MainWindow.vala:115
 msgid "Insert last result"
-msgstr "Tambahkan hasil perhitungan terakhir"
+msgstr "Sisipkan hasil perhitungan terakhir"
 
-#: src/MainWindow.vala:129
+#: src/MainWindow.vala:119
 msgid "Backspace"
 msgstr "Hapus"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:127
 msgid "Clear entry"
 msgstr "Bersihkan isian"
 
-#: src/MainWindow.vala:139
+#: src/MainWindow.vala:134
 msgid "Add"
 msgstr "Tambah"
 
-#: src/MainWindow.vala:143
+#: src/MainWindow.vala:141
 msgid "Subtract"
 msgstr "Pengurangan"
 
-#: src/MainWindow.vala:147
+#: src/MainWindow.vala:148
 msgid "Multiply"
 msgstr "Perkalian"
 
-#: src/MainWindow.vala:151
+#: src/MainWindow.vala:155
 msgid "Divide"
 msgstr "Pembagian"
 
-#: src/MainWindow.vala:157
+#: src/MainWindow.vala:172
 msgid "Percentage"
 msgstr "Persentase"
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:254
 msgid "Set memory value"
-msgstr ""
+msgstr "Atur nilai penyimpanan"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:259
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Panggil kembali nilai dari penyimpanan"
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:263
 msgid "Add to stored value"
-msgstr ""
+msgstr "Tambahkan ke nilai tersimpan"
 
-#: src/MainWindow.vala:207
+#: src/MainWindow.vala:267
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Kurangi dari nilai yang disimpan"
 
-#: src/MainWindow.vala:208
-#, fuzzy
-#| msgid "Clear entry"
+#: src/MainWindow.vala:272
 msgid "Clear memory"
-msgstr "Bersihkan isian"
+msgstr "Bersihkan penyimpanan"
 
-#: src/MainWindow.vala:210
+#: src/MainWindow.vala:277
 msgid "Grand Total"
-msgstr ""
+msgstr "Hasil Akhir"
 
-#: src/MainWindow.vala:212
+#: src/MainWindow.vala:283
 msgid "Start Group"
 msgstr "Memulai grup"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:289
 msgid "End Group"
 msgstr "Akhiri grup"
 
-#: src/MainWindow.vala:214
+#: src/MainWindow.vala:295
 msgid "Exponent"
 msgstr "Eksponen"
 
-#: src/MainWindow.vala:216
+#: src/MainWindow.vala:301
 msgid "Root"
 msgstr "Akar pangkat"
 
-#: src/MainWindow.vala:217
+#: src/MainWindow.vala:307
 msgid "Sine"
 msgstr "Sinus"
 
-#: src/MainWindow.vala:218
+#: src/MainWindow.vala:313
 msgid "Hyperbolic Sine"
 msgstr "Sinus hiperbolik"
 
-#: src/MainWindow.vala:219
+#: src/MainWindow.vala:319
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: src/MainWindow.vala:220
+#: src/MainWindow.vala:325
 msgid "Hyperbolic Cosine"
 msgstr "Cosinus hiperbolik"
 
-#: src/MainWindow.vala:221
+#: src/MainWindow.vala:331
 msgid "Tangent"
 msgstr "Tangen"
 
-#: src/MainWindow.vala:222
+#: src/MainWindow.vala:337
 msgid "Hyperbolic Tangent"
 msgstr "Tangen hiperbolik"
 
-#: src/MainWindow.vala:223
+#: src/MainWindow.vala:343
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:349
 msgid "Euler's Number"
 msgstr "Angka Euler"
 
-#: src/MainWindow.vala:225
+#: src/MainWindow.vala:355
 msgid "Logarithm Base 10"
 msgstr "Basis Logaritma 10"
 
-#: src/MainWindow.vala:227
+#: src/MainWindow.vala:361
 msgid "Natural Logarithm"
 msgstr "Logaritma Natural"
 
-#: src/MainWindow.vala:228
+#: src/MainWindow.vala:367
 msgid "Inverse Sine"
 msgstr "Sinus Terbalik"
 
-#: src/MainWindow.vala:230
+#: src/MainWindow.vala:373
 msgid "Inverse Cosine"
 msgstr "Kosinus Terbalik"
 
-#: src/MainWindow.vala:232
+#: src/MainWindow.vala:379
 msgid "Inverse Tangent"
 msgstr "Tangen Terbalik"
 
-#: src/MainWindow.vala:234
+#: src/MainWindow.vala:383
 msgid "Reciprocal"
 msgstr "Timbalik-balik"
 
-#: src/MainWindow.vala:610
+#: src/MainWindow.vala:735
 msgid "Hide extended functionality"
 msgstr "Sembunyikan fungsi lainnya"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Masukkan hasil atau ekspresi sebelumnya ke dalam kalkulasi."
 
-#: src/HistoryDialog.vala:77
-#, fuzzy
-#| msgid "Value to add:"
+#: src/HistoryDialog.vala:81
 msgid "Value to insert:"
-msgstr "Nilai yang akan ditambah:"
+msgstr "Nilai yang disisipkan:"
 
-#: src/HistoryDialog.vala:82
+#: src/HistoryDialog.vala:86
 msgid "Result"
 msgstr "Hasil"
 
-#: src/HistoryDialog.vala:84
+#: src/HistoryDialog.vala:90
 msgid "Expression"
 msgstr "Lambang"
 
 #. Use a custom response code for "Clear History" action
-#: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
+#: src/HistoryDialog.vala:113
 msgid "Clear History"
-msgstr "Bersihkan isian"
+msgstr "Bersihkan Riwayat"
 
-#: src/HistoryDialog.vala:105
+#: src/HistoryDialog.vala:116
 msgid "Close"
 msgstr "Tutup"
 
-#: src/HistoryDialog.vala:107
+#: src/HistoryDialog.vala:118
 msgid "Insert"
-msgstr ""
+msgstr "Sisipkan"
 
 #: src/Core/Scanner.vala:68
 #, c-format

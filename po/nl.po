@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-08 20:38+0000\n"
-"PO-Revision-Date: 2020-01-18 07:07+0000\n"
-"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
+"POT-Creation-Date: 2022-10-20 19:05+0000\n"
+"PO-Revision-Date: 2022-01-12 08:08+0000\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/"
 "calculator/nl/>\n"
 "Language: nl\n"
@@ -12,197 +12,185 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:74 src/MainWindow.vala:109
+#: src/MainWindow.vala:72
 msgid "Calculator"
 msgstr "Rekenmachine"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:615
+#: src/MainWindow.vala:82 src/MainWindow.vala:740
 msgid "Show extended functionality"
 msgstr "Toon uitgebreide functionaliteit"
 
-#: src/MainWindow.vala:101 src/HistoryDialog.vala:40
+#: src/MainWindow.vala:88 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "Geschiedenis"
 
-#: src/MainWindow.vala:122
+#: src/MainWindow.vala:108
 msgid "Calculate Result"
 msgstr "Bereken resultaat"
 
-#: src/MainWindow.vala:126
-#, fuzzy
-#| msgid "Add last result"
+#: src/MainWindow.vala:115
 msgid "Insert last result"
-msgstr "Voeg laatste resultaat toe"
+msgstr "Laatste resultaat invoegen"
 
-#: src/MainWindow.vala:129
+#: src/MainWindow.vala:119
 msgid "Backspace"
 msgstr "Backspace"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:127
 msgid "Clear entry"
 msgstr "Invoer wissen"
 
-#: src/MainWindow.vala:139
+#: src/MainWindow.vala:134
 msgid "Add"
 msgstr "Toevoegen"
 
-#: src/MainWindow.vala:143
+#: src/MainWindow.vala:141
 msgid "Subtract"
 msgstr "Aftrekking"
 
-#: src/MainWindow.vala:147
+#: src/MainWindow.vala:148
 msgid "Multiply"
 msgstr "Vermenigvuldig"
 
-#: src/MainWindow.vala:151
+#: src/MainWindow.vala:155
 msgid "Divide"
 msgstr "Deel"
 
-#: src/MainWindow.vala:157
+#: src/MainWindow.vala:172
 msgid "Percentage"
 msgstr "Percentage"
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:254
 msgid "Set memory value"
-msgstr ""
+msgstr "Stel de geheugenwaarde in"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:259
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Waarde uit het geheugen oproepen"
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:263
 msgid "Add to stored value"
-msgstr ""
+msgstr "Toevoegen aan opgeslagen waarde"
 
-#: src/MainWindow.vala:207
+#: src/MainWindow.vala:267
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Aftrekken van opgeslagen waarde"
 
-#: src/MainWindow.vala:208
-#, fuzzy
-#| msgid "Clear entry"
+#: src/MainWindow.vala:272
 msgid "Clear memory"
-msgstr "Invoer wissen"
+msgstr "Geheugen wissen"
 
-#: src/MainWindow.vala:210
+#: src/MainWindow.vala:277
 msgid "Grand Total"
-msgstr ""
+msgstr "Eindtotaal"
 
-#: src/MainWindow.vala:212
+#: src/MainWindow.vala:283
 msgid "Start Group"
 msgstr "Start groep"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:289
 msgid "End Group"
 msgstr "Beëindig groep"
 
-#: src/MainWindow.vala:214
+#: src/MainWindow.vala:295
 msgid "Exponent"
 msgstr "Exponent"
 
-#: src/MainWindow.vala:216
+#: src/MainWindow.vala:301
 msgid "Root"
 msgstr "Wortel"
 
-#: src/MainWindow.vala:217
+#: src/MainWindow.vala:307
 msgid "Sine"
 msgstr "Sinus"
 
-#: src/MainWindow.vala:218
+#: src/MainWindow.vala:313
 msgid "Hyperbolic Sine"
 msgstr "Sinus hyperbolicus"
 
-#: src/MainWindow.vala:219
+#: src/MainWindow.vala:319
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: src/MainWindow.vala:220
+#: src/MainWindow.vala:325
 msgid "Hyperbolic Cosine"
 msgstr "Cosinus hyperbolicus"
 
-#: src/MainWindow.vala:221
+#: src/MainWindow.vala:331
 msgid "Tangent"
 msgstr "Tangens"
 
-#: src/MainWindow.vala:222
+#: src/MainWindow.vala:337
 msgid "Hyperbolic Tangent"
 msgstr "Tangens hyperbolicus"
 
-#: src/MainWindow.vala:223
+#: src/MainWindow.vala:343
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:349
 msgid "Euler's Number"
 msgstr "Getal van Euler"
 
-#: src/MainWindow.vala:225
+#: src/MainWindow.vala:355
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Logaritme met grondtal 10"
 
-#: src/MainWindow.vala:227
+#: src/MainWindow.vala:361
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Natuurlijke logaritme"
 
-#: src/MainWindow.vala:228
+#: src/MainWindow.vala:367
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Inverse Sinus"
 
-#: src/MainWindow.vala:230
-#, fuzzy
-#| msgid "Cosine"
+#: src/MainWindow.vala:373
 msgid "Inverse Cosine"
-msgstr "Cosinus"
+msgstr "Inverse Cosinus"
 
-#: src/MainWindow.vala:232
-#, fuzzy
-#| msgid "Tangent"
+#: src/MainWindow.vala:379
 msgid "Inverse Tangent"
-msgstr "Tangens"
+msgstr "Inverse tangens"
 
-#: src/MainWindow.vala:234
+#: src/MainWindow.vala:383
 msgid "Reciprocal"
-msgstr ""
+msgstr "Wederzijds"
 
-#: src/MainWindow.vala:610
+#: src/MainWindow.vala:735
 msgid "Hide extended functionality"
 msgstr "Verberg uitgebreide functionaliteit"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Voeg een eerdere uitdrukking of resultaat in de huidige berekening in."
 
-#: src/HistoryDialog.vala:77
-#, fuzzy
-#| msgid "Value to add:"
+#: src/HistoryDialog.vala:81
 msgid "Value to insert:"
-msgstr "Waarde om toe te voegen:"
+msgstr "Waarde om in te voegen:"
 
-#: src/HistoryDialog.vala:82
+#: src/HistoryDialog.vala:86
 msgid "Result"
 msgstr "Resultaat"
 
-#: src/HistoryDialog.vala:84
+#: src/HistoryDialog.vala:90
 msgid "Expression"
 msgstr "Uitdrukking"
 
 #. Use a custom response code for "Clear History" action
-#: src/HistoryDialog.vala:102
-#, fuzzy
-#| msgid "Clear entry"
+#: src/HistoryDialog.vala:113
 msgid "Clear History"
-msgstr "Invoer wissen"
+msgstr "Geschiedenis Wissen"
 
-#: src/HistoryDialog.vala:105
+#: src/HistoryDialog.vala:116
 msgid "Close"
 msgstr "Sluiten"
 
-#: src/HistoryDialog.vala:107
+#: src/HistoryDialog.vala:118
 msgid "Insert"
-msgstr ""
+msgstr "Invoegen"
 
 #: src/Core/Scanner.vala:68
 #, c-format

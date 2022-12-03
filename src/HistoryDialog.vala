@@ -26,8 +26,8 @@ namespace PantheonCalculator {
         private Gtk.TreeView view;
         private Gtk.ListStore list_store;
 
-        private Gtk.RadioButton expression_radio;
-        private Gtk.RadioButton result_radio;
+        private Gtk.CheckButton expression_check_button;
+        private Gtk.CheckButton result_check_button;
 
         public signal void added (string text);
 
@@ -59,55 +59,64 @@ namespace PantheonCalculator {
             var cell = new Gtk.CellRendererText ();
 
             view = new Gtk.TreeView.with_model (list_store) {
-                expand = true,
+                hexpand = true,
+                vexpand = true,
                 headers_visible = false
             };
-            view.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+            view.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
             view.insert_column_with_attributes (-1, null, cell, "text", 0);
             view.insert_column_with_attributes (-1, null, cell, "text", 1);
             view.get_column (1).min_width = 75;
             view.get_column (0).min_width = 200;
 
-            var scrolled = new Gtk.ScrolledWindow (null, null) {
+            var scrolled = new Gtk.ScrolledWindow () {
                 min_content_height = 125,
-                shadow_type = Gtk.ShadowType.IN
+                child = view
             };
-            scrolled.add (view);
+
+            var frame = new Gtk.Frame (null) {
+                child = scrolled
+            };
 
             var add_label = new Gtk.Label (_("Value to insert:")) {
                 halign = Gtk.Align.END,
                 hexpand = true
             };
 
-            result_radio = new Gtk.RadioButton.with_label (null, _("Result"));
+            result_check_button = new Gtk.CheckButton.with_label (_("Result")) {
+                active = true
+            };
 
-            expression_radio = new Gtk.RadioButton.with_label_from_widget (result_radio, _("Expression"));
+            expression_check_button = new Gtk.CheckButton.with_label (_("Expression")) {
+                group = result_check_button
+            };
 
             var main_grid = new Gtk.Grid () {
                column_spacing = 12,
-               expand = true,
-               margin = 12,
+               hexpand = true,
+               vexpand = true,
+               margin_start = 12,
+               margin_end = 12,
+               margin_bottom = 12,
                margin_top = 0,
                row_spacing = 12
             };
             main_grid.attach (description_label, 0, 0, 3, 1);
-            main_grid.attach (scrolled, 0, 1, 3, 1);
+            main_grid.attach (frame, 0, 1, 3, 1);
             main_grid.attach (add_label, 0, 2);
-            main_grid.attach (result_radio, 2, 2);
-            main_grid.attach (expression_radio, 1, 2);
+            main_grid.attach (result_check_button, 2, 2);
+            main_grid.attach (expression_check_button, 1, 2);
 
-            get_content_area ().add (main_grid);
+            get_content_area ().append (main_grid);
 
             // Use a custom response code for "Clear History" action
             var button_clear = add_button (_("Clear History"), 0);
-            button_clear.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            button_clear.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
             add_button (_("Close"), Gtk.ResponseType.CLOSE);
 
             var button_add = add_button (_("Insert"), Gtk.ResponseType.APPLY);
-            button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-
-            show_all ();
+            button_add.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
             response.connect (on_response);
         }
@@ -128,9 +137,9 @@ namespace PantheonCalculator {
                 if (selection.get_selected (null, out iter)) {
                     Value val = Value (typeof (string));
 
-                    if (result_radio.get_active ()) {
+                    if (result_check_button.get_active ()) {
                         list_store.get_value (iter, 1, out val);
-                    } else if (expression_radio.get_active ()) {
+                    } else if (expression_check_button.get_active ()) {
                         list_store.get_value (iter, 0, out val);
                     }
 

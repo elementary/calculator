@@ -1,7 +1,7 @@
 project(
     'io.elementary.calculator', 'vala', 'c',
     meson_version : '>= 0.49',
-    version: '1.7.2'
+    version: '2.0.0'
 )
 
 i18n = import('i18n')
@@ -20,7 +20,6 @@ config_file = configure_file(
 core_deps = [
     dependency('glib-2.0'),
     dependency('gobject-2.0'),
-    dependency('libhandy-1', version: '>=0.91.0'),
     meson.get_compiler('vala').find_library('posix'),
     meson.get_compiler('c').find_library('m', required : false)
 ]
