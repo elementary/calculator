@@ -96,7 +96,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         headerbar.pack_end (button_extended);
         headerbar.pack_end (button_history);
         headerbar.add_css_class (Granite.STYLE_CLASS_DEFAULT_DECORATION);
-        headerbar.add_css_class (Gtk.STYLE_CLASS_FLAT);
+        headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
 
         entry = new Gtk.Entry () {
             xalign = 1,
