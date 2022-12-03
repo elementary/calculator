@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-08 20:38+0000\n"
+"POT-Creation-Date: 2022-10-20 19:05+0000\n"
 "PO-Revision-Date: 2016-05-27 15:28+0000\n"
 "Last-Translator: Maxwell Barvian <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,159 +13,159 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:43+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: src/MainWindow.vala:74 src/MainWindow.vala:109
+#: src/MainWindow.vala:72
 msgid "Calculator"
 msgstr "Makinë Llogaritëse"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:615
+#: src/MainWindow.vala:82 src/MainWindow.vala:740
 msgid "Show extended functionality"
 msgstr "Shfaq funksione shtesë"
 
-#: src/MainWindow.vala:101 src/HistoryDialog.vala:40
+#: src/MainWindow.vala:88 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "Historia"
 
-#: src/MainWindow.vala:122
+#: src/MainWindow.vala:108
 msgid "Calculate Result"
 msgstr "Llogarit rezultatin"
 
-#: src/MainWindow.vala:126
+#: src/MainWindow.vala:115
 #, fuzzy
 #| msgid "Add last result"
 msgid "Insert last result"
 msgstr "Shto rezultatin e fundit"
 
-#: src/MainWindow.vala:129
+#: src/MainWindow.vala:119
 msgid "Backspace"
 msgstr "Fshi"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:127
 msgid "Clear entry"
 msgstr "Fshije futjen"
 
-#: src/MainWindow.vala:139
+#: src/MainWindow.vala:134
 msgid "Add"
 msgstr "Shto"
 
-#: src/MainWindow.vala:143
+#: src/MainWindow.vala:141
 msgid "Subtract"
 msgstr "Zbrit"
 
-#: src/MainWindow.vala:147
+#: src/MainWindow.vala:148
 msgid "Multiply"
 msgstr "Shumëfisho"
 
-#: src/MainWindow.vala:151
+#: src/MainWindow.vala:155
 msgid "Divide"
 msgstr "Pjesëto"
 
-#: src/MainWindow.vala:157
+#: src/MainWindow.vala:172
 msgid "Percentage"
 msgstr "Përqindja"
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:254
 msgid "Set memory value"
 msgstr ""
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:259
 msgid "Recall value from memory"
 msgstr ""
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:263
 msgid "Add to stored value"
 msgstr ""
 
-#: src/MainWindow.vala:207
+#: src/MainWindow.vala:267
 msgid "Subtract from stored value"
 msgstr ""
 
-#: src/MainWindow.vala:208
+#: src/MainWindow.vala:272
 #, fuzzy
 #| msgid "Clear entry"
 msgid "Clear memory"
 msgstr "Fshije futjen"
 
-#: src/MainWindow.vala:210
+#: src/MainWindow.vala:277
 msgid "Grand Total"
 msgstr ""
 
-#: src/MainWindow.vala:212
+#: src/MainWindow.vala:283
 msgid "Start Group"
 msgstr "Grupi i fillimit"
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:289
 msgid "End Group"
 msgstr "Grupi i mbarimit"
 
-#: src/MainWindow.vala:214
+#: src/MainWindow.vala:295
 msgid "Exponent"
 msgstr "Eksponenti"
 
-#: src/MainWindow.vala:216
+#: src/MainWindow.vala:301
 msgid "Root"
 msgstr "Rrënja"
 
-#: src/MainWindow.vala:217
+#: src/MainWindow.vala:307
 msgid "Sine"
 msgstr "Sinus"
 
-#: src/MainWindow.vala:218
+#: src/MainWindow.vala:313
 msgid "Hyperbolic Sine"
 msgstr "Sinus Hiperbolik"
 
-#: src/MainWindow.vala:219
+#: src/MainWindow.vala:319
 msgid "Cosine"
 msgstr "Kosinus"
 
-#: src/MainWindow.vala:220
+#: src/MainWindow.vala:325
 msgid "Hyperbolic Cosine"
 msgstr "Kosinus Hiperbolik"
 
-#: src/MainWindow.vala:221
+#: src/MainWindow.vala:331
 msgid "Tangent"
 msgstr "Tangjent"
 
-#: src/MainWindow.vala:222
+#: src/MainWindow.vala:337
 msgid "Hyperbolic Tangent"
 msgstr "Tangjente Hiperbolike"
 
-#: src/MainWindow.vala:223
+#: src/MainWindow.vala:343
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:349
 msgid "Euler's Number"
 msgstr "Numri i Eulerit"
 
-#: src/MainWindow.vala:225
+#: src/MainWindow.vala:355
 msgid "Logarithm Base 10"
 msgstr ""
 
-#: src/MainWindow.vala:227
+#: src/MainWindow.vala:361
 msgid "Natural Logarithm"
 msgstr ""
 
-#: src/MainWindow.vala:228
+#: src/MainWindow.vala:367
 msgid "Inverse Sine"
 msgstr ""
 
-#: src/MainWindow.vala:230
+#: src/MainWindow.vala:373
 #, fuzzy
 #| msgid "Cosine"
 msgid "Inverse Cosine"
 msgstr "Kosinus"
 
-#: src/MainWindow.vala:232
+#: src/MainWindow.vala:379
 #, fuzzy
 #| msgid "Tangent"
 msgid "Inverse Tangent"
 msgstr "Tangjent"
 
-#: src/MainWindow.vala:234
+#: src/MainWindow.vala:383
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:610
+#: src/MainWindow.vala:735
 msgid "Hide extended functionality"
 msgstr "Fsheh funksionet shtesë"
 
@@ -173,32 +173,32 @@ msgstr "Fsheh funksionet shtesë"
 msgid "Insert a previous expression or result into the current calculation."
 msgstr ""
 
-#: src/HistoryDialog.vala:77
+#: src/HistoryDialog.vala:81
 #, fuzzy
 #| msgid "Value to add:"
 msgid "Value to insert:"
 msgstr "Vlera për të shtuar:"
 
-#: src/HistoryDialog.vala:82
+#: src/HistoryDialog.vala:86
 msgid "Result"
 msgstr "Rezultati"
 
-#: src/HistoryDialog.vala:84
+#: src/HistoryDialog.vala:90
 msgid "Expression"
 msgstr "Shprehja"
 
 #. Use a custom response code for "Clear History" action
-#: src/HistoryDialog.vala:102
+#: src/HistoryDialog.vala:113
 #, fuzzy
 #| msgid "Clear entry"
 msgid "Clear History"
 msgstr "Fshije futjen"
 
-#: src/HistoryDialog.vala:105
+#: src/HistoryDialog.vala:116
 msgid "Close"
 msgstr "Mbyll"
 
-#: src/HistoryDialog.vala:107
+#: src/HistoryDialog.vala:118
 msgid "Insert"
 msgstr ""
 

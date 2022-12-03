@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-08 20:38+0000\n"
+"POT-Creation-Date: 2022-10-20 19:05+0000\n"
 "PO-Revision-Date: 2022-07-23 14:31+0000\n"
 "Last-Translator: Vincent Yu <coolplayyhj@gmail.com>\n"
 "Language-Team: Chinese <https://l10n.elementary.io/projects/calculator/"
@@ -13,152 +13,152 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/MainWindow.vala:74 src/MainWindow.vala:109
+#: src/MainWindow.vala:72
 msgid "Calculator"
 msgstr "计算器"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:615
+#: src/MainWindow.vala:82 src/MainWindow.vala:740
 msgid "Show extended functionality"
 msgstr "显示扩展功能"
 
-#: src/MainWindow.vala:101 src/HistoryDialog.vala:40
+#: src/MainWindow.vala:88 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "历史记录"
 
-#: src/MainWindow.vala:122
+#: src/MainWindow.vala:108
 msgid "Calculate Result"
 msgstr "计算结果"
 
-#: src/MainWindow.vala:126
+#: src/MainWindow.vala:115
 msgid "Insert last result"
 msgstr "插入上次结果"
 
-#: src/MainWindow.vala:129
+#: src/MainWindow.vala:119
 #, fuzzy
 msgid "Backspace"
 msgstr "退格"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:127
 msgid "Clear entry"
 msgstr "清除键入"
 
-#: src/MainWindow.vala:139
+#: src/MainWindow.vala:134
 msgid "Add"
 msgstr "加"
 
-#: src/MainWindow.vala:143
+#: src/MainWindow.vala:141
 msgid "Subtract"
 msgstr "减"
 
-#: src/MainWindow.vala:147
+#: src/MainWindow.vala:148
 msgid "Multiply"
 msgstr "乘"
 
-#: src/MainWindow.vala:151
+#: src/MainWindow.vala:155
 msgid "Divide"
 msgstr "除"
 
-#: src/MainWindow.vala:157
+#: src/MainWindow.vala:172
 msgid "Percentage"
 msgstr "百分比"
 
-#: src/MainWindow.vala:203
+#: src/MainWindow.vala:254
 msgid "Set memory value"
 msgstr "设置记忆值"
 
-#: src/MainWindow.vala:204
+#: src/MainWindow.vala:259
 msgid "Recall value from memory"
 msgstr "读取记忆值"
 
-#: src/MainWindow.vala:206
+#: src/MainWindow.vala:263
 msgid "Add to stored value"
 msgstr "新增到已存储值"
 
-#: src/MainWindow.vala:207
+#: src/MainWindow.vala:267
 msgid "Subtract from stored value"
 msgstr "储值减"
 
-#: src/MainWindow.vala:208
+#: src/MainWindow.vala:272
 msgid "Clear memory"
 msgstr "清除记忆"
 
-#: src/MainWindow.vala:210
+#: src/MainWindow.vala:277
 msgid "Grand Total"
 msgstr "累加"
 
-#: src/MainWindow.vala:212
+#: src/MainWindow.vala:283
 msgid "Start Group"
 msgstr ""
 
-#: src/MainWindow.vala:213
+#: src/MainWindow.vala:289
 msgid "End Group"
 msgstr ""
 
-#: src/MainWindow.vala:214
+#: src/MainWindow.vala:295
 msgid "Exponent"
 msgstr "指数"
 
-#: src/MainWindow.vala:216
+#: src/MainWindow.vala:301
 msgid "Root"
 msgstr "开根"
 
-#: src/MainWindow.vala:217
+#: src/MainWindow.vala:307
 msgid "Sine"
 msgstr ""
 
-#: src/MainWindow.vala:218
+#: src/MainWindow.vala:313
 msgid "Hyperbolic Sine"
 msgstr ""
 
-#: src/MainWindow.vala:219
+#: src/MainWindow.vala:319
 msgid "Cosine"
 msgstr ""
 
-#: src/MainWindow.vala:220
+#: src/MainWindow.vala:325
 msgid "Hyperbolic Cosine"
 msgstr ""
 
-#: src/MainWindow.vala:221
+#: src/MainWindow.vala:331
 msgid "Tangent"
 msgstr ""
 
-#: src/MainWindow.vala:222
+#: src/MainWindow.vala:337
 msgid "Hyperbolic Tangent"
 msgstr ""
 
-#: src/MainWindow.vala:223
+#: src/MainWindow.vala:343
 msgid "Pi"
 msgstr ""
 
-#: src/MainWindow.vala:224
+#: src/MainWindow.vala:349
 msgid "Euler's Number"
 msgstr ""
 
-#: src/MainWindow.vala:225
+#: src/MainWindow.vala:355
 msgid "Logarithm Base 10"
 msgstr ""
 
-#: src/MainWindow.vala:227
+#: src/MainWindow.vala:361
 msgid "Natural Logarithm"
 msgstr ""
 
-#: src/MainWindow.vala:228
+#: src/MainWindow.vala:367
 msgid "Inverse Sine"
 msgstr ""
 
-#: src/MainWindow.vala:230
+#: src/MainWindow.vala:373
 msgid "Inverse Cosine"
 msgstr ""
 
-#: src/MainWindow.vala:232
+#: src/MainWindow.vala:379
 msgid "Inverse Tangent"
 msgstr ""
 
-#: src/MainWindow.vala:234
+#: src/MainWindow.vala:383
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:610
+#: src/MainWindow.vala:735
 msgid "Hide extended functionality"
 msgstr ""
 
@@ -166,28 +166,28 @@ msgstr ""
 msgid "Insert a previous expression or result into the current calculation."
 msgstr ""
 
-#: src/HistoryDialog.vala:77
+#: src/HistoryDialog.vala:81
 msgid "Value to insert:"
 msgstr ""
 
-#: src/HistoryDialog.vala:82
+#: src/HistoryDialog.vala:86
 msgid "Result"
 msgstr ""
 
-#: src/HistoryDialog.vala:84
+#: src/HistoryDialog.vala:90
 msgid "Expression"
 msgstr ""
 
 #. Use a custom response code for "Clear History" action
-#: src/HistoryDialog.vala:102
+#: src/HistoryDialog.vala:113
 msgid "Clear History"
 msgstr ""
 
-#: src/HistoryDialog.vala:105
+#: src/HistoryDialog.vala:116
 msgid "Close"
 msgstr ""
 
-#: src/HistoryDialog.vala:107
+#: src/HistoryDialog.vala:118
 msgid "Insert"
 msgstr ""
 

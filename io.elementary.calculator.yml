@@ -2,7 +2,7 @@
 
 app-id: io.elementary.calculator
 runtime: io.elementary.Platform
-runtime-version: '7'
+runtime-version: '7.1'
 sdk: io.elementary.Sdk
 command: io.elementary.calculator
 
