@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 19:05+0000\n"
+"POT-Creation-Date: 2022-12-07 17:55+0000\n"
 "PO-Revision-Date: 2021-08-16 15:15+0000\n"
 "Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/calculator/"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "Calculator"
 msgstr "Калькулятор"
 
-#: src/MainWindow.vala:82 src/MainWindow.vala:740
+#: src/MainWindow.vala:82 src/MainWindow.vala:741
 msgid "Show extended functionality"
 msgstr "Показать дополнительную функциональность"
 
@@ -28,139 +28,139 @@ msgstr "Показать дополнительную функционально
 msgid "History"
 msgstr "История"
 
-#: src/MainWindow.vala:108
+#: src/MainWindow.vala:109
 msgid "Calculate Result"
 msgstr "Показать результат"
 
-#: src/MainWindow.vala:115
+#: src/MainWindow.vala:116
 msgid "Insert last result"
 msgstr "Вставить последний результат"
 
-#: src/MainWindow.vala:119
+#: src/MainWindow.vala:120
 msgid "Backspace"
 msgstr "Назад (Стереть)"
 
-#: src/MainWindow.vala:127
+#: src/MainWindow.vala:128
 msgid "Clear entry"
 msgstr "Очистить поле ввода"
 
-#: src/MainWindow.vala:134
+#: src/MainWindow.vala:135
 msgid "Add"
 msgstr "Сложение"
 
-#: src/MainWindow.vala:141
+#: src/MainWindow.vala:142
 msgid "Subtract"
 msgstr "Вычитание"
 
-#: src/MainWindow.vala:148
+#: src/MainWindow.vala:149
 msgid "Multiply"
 msgstr "Умножение"
 
-#: src/MainWindow.vala:155
+#: src/MainWindow.vala:156
 msgid "Divide"
 msgstr "Деление"
 
-#: src/MainWindow.vala:172
+#: src/MainWindow.vala:173
 msgid "Percentage"
 msgstr "Проценты"
 
-#: src/MainWindow.vala:254
+#: src/MainWindow.vala:255
 msgid "Set memory value"
 msgstr "Запомнить значение"
 
-#: src/MainWindow.vala:259
+#: src/MainWindow.vala:260
 msgid "Recall value from memory"
 msgstr "Вызвать значение из памяти"
 
-#: src/MainWindow.vala:263
+#: src/MainWindow.vala:264
 msgid "Add to stored value"
 msgstr "Добавить к хранимому значению"
 
-#: src/MainWindow.vala:267
+#: src/MainWindow.vala:268
 msgid "Subtract from stored value"
 msgstr "Вычесть из хранимого значения"
 
-#: src/MainWindow.vala:272
+#: src/MainWindow.vala:273
 msgid "Clear memory"
 msgstr "Очистить память"
 
-#: src/MainWindow.vala:277
+#: src/MainWindow.vala:278
 msgid "Grand Total"
 msgstr "Общий итог"
 
-#: src/MainWindow.vala:283
+#: src/MainWindow.vala:284
 msgid "Start Group"
 msgstr "Открыть скобки"
 
-#: src/MainWindow.vala:289
+#: src/MainWindow.vala:290
 msgid "End Group"
 msgstr "Закрыть скобки"
 
-#: src/MainWindow.vala:295
+#: src/MainWindow.vala:296
 msgid "Exponent"
 msgstr "Степень"
 
-#: src/MainWindow.vala:301
+#: src/MainWindow.vala:302
 msgid "Root"
 msgstr "Корень"
 
-#: src/MainWindow.vala:307
+#: src/MainWindow.vala:308
 msgid "Sine"
 msgstr "Синус"
 
-#: src/MainWindow.vala:313
+#: src/MainWindow.vala:314
 msgid "Hyperbolic Sine"
 msgstr "Гиперболический синус"
 
-#: src/MainWindow.vala:319
+#: src/MainWindow.vala:320
 msgid "Cosine"
 msgstr "Косинус"
 
-#: src/MainWindow.vala:325
+#: src/MainWindow.vala:326
 msgid "Hyperbolic Cosine"
 msgstr "Гиперболический косинус"
 
-#: src/MainWindow.vala:331
+#: src/MainWindow.vala:332
 msgid "Tangent"
 msgstr "Тангенс"
 
-#: src/MainWindow.vala:337
+#: src/MainWindow.vala:338
 msgid "Hyperbolic Tangent"
 msgstr "Гиперболический тангенс"
 
-#: src/MainWindow.vala:343
+#: src/MainWindow.vala:344
 msgid "Pi"
 msgstr "Число Пи"
 
-#: src/MainWindow.vala:349
+#: src/MainWindow.vala:350
 msgid "Euler's Number"
 msgstr "Число Эйлера"
 
-#: src/MainWindow.vala:355
+#: src/MainWindow.vala:356
 msgid "Logarithm Base 10"
 msgstr "Десятичный логарифм"
 
-#: src/MainWindow.vala:361
+#: src/MainWindow.vala:362
 msgid "Natural Logarithm"
 msgstr "Натуральный логарифм"
 
-#: src/MainWindow.vala:367
+#: src/MainWindow.vala:368
 msgid "Inverse Sine"
 msgstr "Арксинус"
 
-#: src/MainWindow.vala:373
+#: src/MainWindow.vala:374
 msgid "Inverse Cosine"
 msgstr "Арккосинус"
 
-#: src/MainWindow.vala:379
+#: src/MainWindow.vala:380
 msgid "Inverse Tangent"
 msgstr "Арктангенс"
 
-#: src/MainWindow.vala:383
+#: src/MainWindow.vala:384
 msgid "Reciprocal"
 msgstr "Обратное число"
 
-#: src/MainWindow.vala:735
+#: src/MainWindow.vala:736
 msgid "Hide extended functionality"
 msgstr "Скрыть дополнительную функциональность"
 

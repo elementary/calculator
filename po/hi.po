@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 19:05+0000\n"
+"POT-Creation-Date: 2022-12-07 17:55+0000\n"
 "PO-Revision-Date: 2018-08-19 04:26+0000\n"
 "Last-Translator: Anand Kumar <anand@anandkumar.net>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/calculator/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Calculator"
 msgstr "गणक"
 
-#: src/MainWindow.vala:82 src/MainWindow.vala:740
+#: src/MainWindow.vala:82 src/MainWindow.vala:741
 msgid "Show extended functionality"
 msgstr "विस्तृत कार्यक्षमता दिखाएँ"
 
@@ -27,147 +27,147 @@ msgstr "विस्तृत कार्यक्षमता दिखाए�
 msgid "History"
 msgstr "इतिहास"
 
-#: src/MainWindow.vala:108
+#: src/MainWindow.vala:109
 msgid "Calculate Result"
 msgstr "परिणाम गणणा"
 
-#: src/MainWindow.vala:115
+#: src/MainWindow.vala:116
 #, fuzzy
 #| msgid "Add last result"
 msgid "Insert last result"
 msgstr "अंतिम परिणाम जोड़ें"
 
-#: src/MainWindow.vala:119
+#: src/MainWindow.vala:120
 msgid "Backspace"
 msgstr "बैक-स्पेस"
 
-#: src/MainWindow.vala:127
+#: src/MainWindow.vala:128
 msgid "Clear entry"
 msgstr "प्रविष्टि साफ करें"
 
-#: src/MainWindow.vala:134
+#: src/MainWindow.vala:135
 msgid "Add"
 msgstr "जोड़ें"
 
-#: src/MainWindow.vala:141
+#: src/MainWindow.vala:142
 msgid "Subtract"
 msgstr "घटाएँ"
 
-#: src/MainWindow.vala:148
+#: src/MainWindow.vala:149
 msgid "Multiply"
 msgstr "गुणा"
 
-#: src/MainWindow.vala:155
+#: src/MainWindow.vala:156
 msgid "Divide"
 msgstr "भाग"
 
-#: src/MainWindow.vala:172
+#: src/MainWindow.vala:173
 msgid "Percentage"
 msgstr "प्रतिशत"
 
-#: src/MainWindow.vala:254
+#: src/MainWindow.vala:255
 msgid "Set memory value"
 msgstr ""
 
-#: src/MainWindow.vala:259
+#: src/MainWindow.vala:260
 msgid "Recall value from memory"
 msgstr ""
 
-#: src/MainWindow.vala:263
+#: src/MainWindow.vala:264
 msgid "Add to stored value"
 msgstr ""
 
-#: src/MainWindow.vala:267
+#: src/MainWindow.vala:268
 msgid "Subtract from stored value"
 msgstr ""
 
-#: src/MainWindow.vala:272
+#: src/MainWindow.vala:273
 #, fuzzy
 #| msgid "Clear entry"
 msgid "Clear memory"
 msgstr "प्रविष्टि साफ करें"
 
-#: src/MainWindow.vala:277
+#: src/MainWindow.vala:278
 msgid "Grand Total"
 msgstr ""
 
-#: src/MainWindow.vala:283
+#: src/MainWindow.vala:284
 msgid "Start Group"
 msgstr "समूह शुरू"
 
-#: src/MainWindow.vala:289
+#: src/MainWindow.vala:290
 msgid "End Group"
 msgstr "अंत समूह"
 
-#: src/MainWindow.vala:295
+#: src/MainWindow.vala:296
 msgid "Exponent"
 msgstr "घातांक"
 
-#: src/MainWindow.vala:301
+#: src/MainWindow.vala:302
 msgid "Root"
 msgstr "वर्गमूल"
 
-#: src/MainWindow.vala:307
+#: src/MainWindow.vala:308
 msgid "Sine"
 msgstr "ज्या"
 
-#: src/MainWindow.vala:313
+#: src/MainWindow.vala:314
 msgid "Hyperbolic Sine"
 msgstr "अतिपरवलयिक साइन"
 
-#: src/MainWindow.vala:319
+#: src/MainWindow.vala:320
 msgid "Cosine"
 msgstr "कोटिज्या"
 
-#: src/MainWindow.vala:325
+#: src/MainWindow.vala:326
 msgid "Hyperbolic Cosine"
 msgstr "अतिपरवलयिक कोसाइन"
 
-#: src/MainWindow.vala:331
+#: src/MainWindow.vala:332
 msgid "Tangent"
 msgstr "स्पर्शज्या"
 
-#: src/MainWindow.vala:337
+#: src/MainWindow.vala:338
 msgid "Hyperbolic Tangent"
 msgstr "अतिपरवलयिक टैन्जेन्ट"
 
-#: src/MainWindow.vala:343
+#: src/MainWindow.vala:344
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:349
+#: src/MainWindow.vala:350
 msgid "Euler's Number"
 msgstr "यूलर का क्रमांक"
 
-#: src/MainWindow.vala:355
+#: src/MainWindow.vala:356
 msgid "Logarithm Base 10"
 msgstr ""
 
-#: src/MainWindow.vala:361
+#: src/MainWindow.vala:362
 msgid "Natural Logarithm"
 msgstr ""
 
-#: src/MainWindow.vala:367
+#: src/MainWindow.vala:368
 msgid "Inverse Sine"
 msgstr ""
 
-#: src/MainWindow.vala:373
+#: src/MainWindow.vala:374
 #, fuzzy
 #| msgid "Cosine"
 msgid "Inverse Cosine"
 msgstr "कोटिज्या"
 
-#: src/MainWindow.vala:379
+#: src/MainWindow.vala:380
 #, fuzzy
 #| msgid "Tangent"
 msgid "Inverse Tangent"
 msgstr "स्पर्शज्या"
 
-#: src/MainWindow.vala:383
+#: src/MainWindow.vala:384
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:735
+#: src/MainWindow.vala:736
 msgid "Hide extended functionality"
 msgstr "विस्तृत कार्यक्षमता छिपाएँ"
 

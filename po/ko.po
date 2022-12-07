@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 19:05+0000\n"
+"POT-Creation-Date: 2022-12-07 17:55+0000\n"
 "PO-Revision-Date: 2022-08-07 18:17+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/calculator/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Calculator"
 msgstr "계산기"
 
-#: src/MainWindow.vala:82 src/MainWindow.vala:740
+#: src/MainWindow.vala:82 src/MainWindow.vala:741
 msgid "Show extended functionality"
 msgstr "확장 기능 보이기"
 
@@ -27,139 +27,139 @@ msgstr "확장 기능 보이기"
 msgid "History"
 msgstr "사용 기록"
 
-#: src/MainWindow.vala:108
+#: src/MainWindow.vala:109
 msgid "Calculate Result"
 msgstr "계산 결과"
 
-#: src/MainWindow.vala:115
+#: src/MainWindow.vala:116
 msgid "Insert last result"
 msgstr "마지막 결과 더하기"
 
-#: src/MainWindow.vala:119
+#: src/MainWindow.vala:120
 msgid "Backspace"
 msgstr "뒤로"
 
-#: src/MainWindow.vala:127
+#: src/MainWindow.vala:128
 msgid "Clear entry"
 msgstr "입력값 지우기"
 
-#: src/MainWindow.vala:134
+#: src/MainWindow.vala:135
 msgid "Add"
 msgstr "추가하기"
 
-#: src/MainWindow.vala:141
+#: src/MainWindow.vala:142
 msgid "Subtract"
 msgstr "뺄셈"
 
-#: src/MainWindow.vala:148
+#: src/MainWindow.vala:149
 msgid "Multiply"
 msgstr "곱셈"
 
-#: src/MainWindow.vala:155
+#: src/MainWindow.vala:156
 msgid "Divide"
 msgstr "나눗셈"
 
-#: src/MainWindow.vala:172
+#: src/MainWindow.vala:173
 msgid "Percentage"
 msgstr "백분율"
 
-#: src/MainWindow.vala:254
+#: src/MainWindow.vala:255
 msgid "Set memory value"
 msgstr "메모리 값 설정"
 
-#: src/MainWindow.vala:259
+#: src/MainWindow.vala:260
 msgid "Recall value from memory"
 msgstr "메모리에서 값 불러오기"
 
-#: src/MainWindow.vala:263
+#: src/MainWindow.vala:264
 msgid "Add to stored value"
 msgstr "저장된 값에 추가"
 
-#: src/MainWindow.vala:267
+#: src/MainWindow.vala:268
 msgid "Subtract from stored value"
 msgstr "저장된 값에서 빼기"
 
-#: src/MainWindow.vala:272
+#: src/MainWindow.vala:273
 msgid "Clear memory"
 msgstr "메모리 지우기"
 
-#: src/MainWindow.vala:277
+#: src/MainWindow.vala:278
 msgid "Grand Total"
 msgstr "총계"
 
-#: src/MainWindow.vala:283
+#: src/MainWindow.vala:284
 msgid "Start Group"
 msgstr "시작 그룹"
 
-#: src/MainWindow.vala:289
+#: src/MainWindow.vala:290
 msgid "End Group"
 msgstr "종료 그룹"
 
-#: src/MainWindow.vala:295
+#: src/MainWindow.vala:296
 msgid "Exponent"
 msgstr "지수"
 
-#: src/MainWindow.vala:301
+#: src/MainWindow.vala:302
 msgid "Root"
 msgstr "제곱근"
 
-#: src/MainWindow.vala:307
+#: src/MainWindow.vala:308
 msgid "Sine"
 msgstr "사인"
 
-#: src/MainWindow.vala:313
+#: src/MainWindow.vala:314
 msgid "Hyperbolic Sine"
 msgstr "쌍곡사인"
 
-#: src/MainWindow.vala:319
+#: src/MainWindow.vala:320
 msgid "Cosine"
 msgstr "코사인"
 
-#: src/MainWindow.vala:325
+#: src/MainWindow.vala:326
 msgid "Hyperbolic Cosine"
 msgstr "쌍곡코사인"
 
-#: src/MainWindow.vala:331
+#: src/MainWindow.vala:332
 msgid "Tangent"
 msgstr "탄젠트"
 
-#: src/MainWindow.vala:337
+#: src/MainWindow.vala:338
 msgid "Hyperbolic Tangent"
 msgstr "쌍곡탄젠트"
 
-#: src/MainWindow.vala:343
+#: src/MainWindow.vala:344
 msgid "Pi"
 msgstr "원주율"
 
-#: src/MainWindow.vala:349
+#: src/MainWindow.vala:350
 msgid "Euler's Number"
 msgstr "오일러의 수"
 
-#: src/MainWindow.vala:355
+#: src/MainWindow.vala:356
 msgid "Logarithm Base 10"
 msgstr "로그 밑수 10"
 
-#: src/MainWindow.vala:361
+#: src/MainWindow.vala:362
 msgid "Natural Logarithm"
 msgstr "자연 로그"
 
-#: src/MainWindow.vala:367
+#: src/MainWindow.vala:368
 msgid "Inverse Sine"
 msgstr "역사인"
 
-#: src/MainWindow.vala:373
+#: src/MainWindow.vala:374
 msgid "Inverse Cosine"
 msgstr "역코사인"
 
-#: src/MainWindow.vala:379
+#: src/MainWindow.vala:380
 msgid "Inverse Tangent"
 msgstr "역탄젠트"
 
-#: src/MainWindow.vala:383
+#: src/MainWindow.vala:384
 msgid "Reciprocal"
 msgstr "역수"
 
-#: src/MainWindow.vala:735
+#: src/MainWindow.vala:736
 msgid "Hide extended functionality"
 msgstr "확장 기능 감추기"
 
