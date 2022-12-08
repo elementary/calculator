@@ -1,3 +1,15 @@
+io.elementary.calculator (2.0.1) bionic; urgency=medium
+
+  * Release 2.0.1 (#230)
+  * Update translation files
+  * Update translation template
+  * Changed HeaderBar Style to Granite.STYLE_CLASS_FLAT (#213)
+  * Update Flatpak runtime to 7.1 (#233)
+  * Redesign app icon (#232)
+  * Update Gettext Action
+
+ -- elementary, Inc. <builds@elementary.io>  Thu, 08 Dec 2022 00:16:55 +0000
+
 io.elementary.calculator (2.0.0) bionic; urgency=medium
 
   * Release 2.0.0 (#229)
