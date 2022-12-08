@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 19:05+0000\n"
+"POT-Creation-Date: 2022-12-07 17:55+0000\n"
 "PO-Revision-Date: 2016-05-27 15:29+0000\n"
 "Last-Translator: Maxwell Barvian <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 msgid "Calculator"
 msgstr "Kalkulaator"
 
-#: src/MainWindow.vala:82 src/MainWindow.vala:740
+#: src/MainWindow.vala:82 src/MainWindow.vala:741
 msgid "Show extended functionality"
 msgstr "Lisafunktsioonide näitamine"
 
@@ -25,147 +25,147 @@ msgstr "Lisafunktsioonide näitamine"
 msgid "History"
 msgstr "Ajalugu"
 
-#: src/MainWindow.vala:108
+#: src/MainWindow.vala:109
 msgid "Calculate Result"
 msgstr "Arvuta"
 
-#: src/MainWindow.vala:115
+#: src/MainWindow.vala:116
 #, fuzzy
 #| msgid "Add last result"
 msgid "Insert last result"
 msgstr "Viimase tulemuse lisamine"
 
-#: src/MainWindow.vala:119
+#: src/MainWindow.vala:120
 msgid "Backspace"
 msgstr "Kustuta"
 
-#: src/MainWindow.vala:127
+#: src/MainWindow.vala:128
 msgid "Clear entry"
 msgstr "Puhasta väärtus"
 
-#: src/MainWindow.vala:134
+#: src/MainWindow.vala:135
 msgid "Add"
 msgstr "Lisa"
 
-#: src/MainWindow.vala:141
+#: src/MainWindow.vala:142
 msgid "Subtract"
 msgstr "Lahutamine"
 
-#: src/MainWindow.vala:148
+#: src/MainWindow.vala:149
 msgid "Multiply"
 msgstr "Korrutamine"
 
-#: src/MainWindow.vala:155
+#: src/MainWindow.vala:156
 msgid "Divide"
 msgstr "Jagamine"
 
-#: src/MainWindow.vala:172
+#: src/MainWindow.vala:173
 msgid "Percentage"
 msgstr "Protsent"
 
-#: src/MainWindow.vala:254
+#: src/MainWindow.vala:255
 msgid "Set memory value"
 msgstr ""
 
-#: src/MainWindow.vala:259
+#: src/MainWindow.vala:260
 msgid "Recall value from memory"
 msgstr ""
 
-#: src/MainWindow.vala:263
+#: src/MainWindow.vala:264
 msgid "Add to stored value"
 msgstr ""
 
-#: src/MainWindow.vala:267
+#: src/MainWindow.vala:268
 msgid "Subtract from stored value"
 msgstr ""
 
-#: src/MainWindow.vala:272
+#: src/MainWindow.vala:273
 #, fuzzy
 #| msgid "Clear entry"
 msgid "Clear memory"
 msgstr "Puhasta väärtus"
 
-#: src/MainWindow.vala:277
+#: src/MainWindow.vala:278
 msgid "Grand Total"
 msgstr ""
 
-#: src/MainWindow.vala:283
+#: src/MainWindow.vala:284
 msgid "Start Group"
 msgstr "Grupi algus"
 
-#: src/MainWindow.vala:289
+#: src/MainWindow.vala:290
 msgid "End Group"
 msgstr "Grupi lõpp"
 
-#: src/MainWindow.vala:295
+#: src/MainWindow.vala:296
 msgid "Exponent"
 msgstr "Astendamine"
 
-#: src/MainWindow.vala:301
+#: src/MainWindow.vala:302
 msgid "Root"
 msgstr "Juurimine"
 
-#: src/MainWindow.vala:307
+#: src/MainWindow.vala:308
 msgid "Sine"
 msgstr "Siinus"
 
-#: src/MainWindow.vala:313
+#: src/MainWindow.vala:314
 msgid "Hyperbolic Sine"
 msgstr "Hüperboolne siinus"
 
-#: src/MainWindow.vala:319
+#: src/MainWindow.vala:320
 msgid "Cosine"
 msgstr "Koosinus"
 
-#: src/MainWindow.vala:325
+#: src/MainWindow.vala:326
 msgid "Hyperbolic Cosine"
 msgstr "Hüperboolne koosinus"
 
-#: src/MainWindow.vala:331
+#: src/MainWindow.vala:332
 msgid "Tangent"
 msgstr "Tangens"
 
-#: src/MainWindow.vala:337
+#: src/MainWindow.vala:338
 msgid "Hyperbolic Tangent"
 msgstr "Hüperboolne tangens"
 
-#: src/MainWindow.vala:343
+#: src/MainWindow.vala:344
 msgid "Pi"
 msgstr "Pii"
 
-#: src/MainWindow.vala:349
+#: src/MainWindow.vala:350
 msgid "Euler's Number"
 msgstr "Euler'i arv"
 
-#: src/MainWindow.vala:355
+#: src/MainWindow.vala:356
 msgid "Logarithm Base 10"
 msgstr ""
 
-#: src/MainWindow.vala:361
+#: src/MainWindow.vala:362
 msgid "Natural Logarithm"
 msgstr ""
 
-#: src/MainWindow.vala:367
+#: src/MainWindow.vala:368
 msgid "Inverse Sine"
 msgstr ""
 
-#: src/MainWindow.vala:373
+#: src/MainWindow.vala:374
 #, fuzzy
 #| msgid "Cosine"
 msgid "Inverse Cosine"
 msgstr "Koosinus"
 
-#: src/MainWindow.vala:379
+#: src/MainWindow.vala:380
 #, fuzzy
 #| msgid "Tangent"
 msgid "Inverse Tangent"
 msgstr "Tangens"
 
-#: src/MainWindow.vala:383
+#: src/MainWindow.vala:384
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:735
+#: src/MainWindow.vala:736
 msgid "Hide extended functionality"
 msgstr "Lisafunktsioonide peitmine"
 
