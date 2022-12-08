@@ -1,7 +1,7 @@
 # Calculator
 [![Translation status](https://l10n.elementary.io/widgets/calculator/-/svg-badge.svg)](https://l10n.elementary.io/projects/calculator/?utm_source=widget)
 
-![Screenshot](data/Calculator.png?raw=true)
+![Screenshot](data/screenshot-extended@2x.png?raw=true)
 
 ## Building, Testing, and Installation
 
