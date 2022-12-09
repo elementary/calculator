@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 17:55+0000\n"
-"PO-Revision-Date: 2022-10-24 08:04+0000\n"
+"PO-Revision-Date: 2022-12-11 10:25+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/calculator/extra/"
 "ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -52,13 +52,11 @@ msgstr "Actualitzacions menors:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Redesigned app icon"
-msgstr ""
+msgstr "Icona redissenyada"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
-#, fuzzy
-#| msgid "Use slim titlebar"
 msgid "Flat titlebar"
-msgstr "S'usa una barra de títol prima."
+msgstr "Barra de títol prima"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:31
