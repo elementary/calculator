@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 17:55+0000\n"
-"PO-Revision-Date: 2022-11-09 09:29+0000\n"
+"PO-Revision-Date: 2022-12-21 13:25+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/calculator/extra/"
 "fr/>\n"
@@ -52,13 +52,11 @@ msgstr "Mises à jour mineures :"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Redesigned app icon"
-msgstr ""
+msgstr "Nouvelle icône de l'application"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
-#, fuzzy
-#| msgid "Use slim titlebar"
 msgid "Flat titlebar"
-msgstr "Utilisation d'une barre de titre plus fine"
+msgstr "Barre de titre plate"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:31
