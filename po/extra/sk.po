@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 17:55+0000\n"
-"PO-Revision-Date: 2022-02-28 19:52+0000\n"
+"PO-Revision-Date: 2022-12-26 20:25+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/calculator/extra/"
 "sk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -51,13 +51,11 @@ msgstr "Drobné aktualizácie:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Redesigned app icon"
-msgstr ""
+msgstr "Aktualizovaná ikonka aplikácie"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
-#, fuzzy
-#| msgid "Use slim titlebar"
 msgid "Flat titlebar"
-msgstr "Použitá tenšia lišta okna"
+msgstr "Plochá horná lišta okna"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:31
@@ -75,7 +73,7 @@ msgstr "Aktualizované preklady"
 
 #: data/io.elementary.calculator.appdata.xml.in:30
 msgid "Update for OS 7 and Gtk 4"
-msgstr ""
+msgstr "Aktualizované pre OS 7 a Gtk 4"
 
 #: data/io.elementary.calculator.appdata.xml.in:39
 msgid "Update to elementary 6.1 runtime"
