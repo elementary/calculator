@@ -19,8 +19,6 @@
  */
 
 public class PantheonCalculator.Application : Gtk.Application {
-    private MainWindow window;
-
     construct {
         application_id = "io.elementary.calculator";
         flags = ApplicationFlags.FLAGS_NONE;
@@ -35,23 +33,16 @@ public class PantheonCalculator.Application : Gtk.Application {
         base.startup ();
 
         var quit_action = new SimpleAction ("quit", null);
-        var undo_action = new SimpleAction ("undo", null);
 
         add_action (quit_action);
-        add_action (undo_action);
-
         set_accels_for_action ("app.quit", {"<Control>q"});
-        set_accels_for_action ("app.undo", {"<Control>z"});
 
         quit_action.activate.connect (quit);
-        undo_action.activate.connect (window.undo);
     }
 
     public override void activate () {
-        window = new MainWindow ();
+        var window = new MainWindow (this);
         window.present ();
-
-        add_window (window);
     }
 
     public static int main (string[] args) {
