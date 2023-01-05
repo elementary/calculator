@@ -1,4 +1,4 @@
-src/PantheonCalculator.vala
+src/Application.vala
 src/Button.vala
 src/MainWindow.vala
 src/HistoryDialog.vala

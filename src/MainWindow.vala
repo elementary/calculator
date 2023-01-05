@@ -51,15 +51,21 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
     public const string ACTION_CLEAR = "action-clear";
     public const string ACTION_INSERT = "action-insert";
     public const string ACTION_FUNCTION = "action-function";
+    public const string ACTION_UNDO = "action-undo";
 
     private const ActionEntry[] ACTION_ENTRIES = {
         { ACTION_INSERT, action_insert, "s"},
         { ACTION_FUNCTION, action_function, "s"},
-        { ACTION_CLEAR, action_clear }
+        { ACTION_CLEAR, action_clear },
+        { ACTION_UNDO, undo }
     };
 
     static construct {
         settings = new Settings ("io.elementary.calculator.saved-state");
+    }
+
+    public MainWindow (Gtk.Application application) {
+        Object (application: application);
     }
 
     construct {
@@ -67,6 +73,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
 
         var application_instance = (Gtk.Application) GLib.Application.get_default ();
         application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_CLEAR, {"Escape"});
+        application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_UNDO, {"<Control>z"});
 
         resizable = false;
         title = _("Calculator");
