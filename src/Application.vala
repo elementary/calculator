@@ -40,14 +40,12 @@ public class PantheonCalculator.Application : Gtk.Application {
             gtk_settings.gtk_theme_name = "io.elementary.stylesheet.blueberry";
         }
 
-        gtk_settings.gtk_application_prefer_dark_theme = (
-            granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
-        );
+        gtk_settings.gtk_application_prefer_dark_theme =
+            granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
 
         granite_settings.notify["prefers-color-scheme"].connect (() => {
-            gtk_settings.gtk_application_prefer_dark_theme = (
-                granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
-            );
+            gtk_settings.gtk_application_prefer_dark_theme =
+                granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
         });
 
         var quit_action = new SimpleAction ("quit", null);
