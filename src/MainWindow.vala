@@ -98,7 +98,8 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         button_history.clicked.connect (show_history);
 
         var headerbar = new Gtk.HeaderBar () {
-            show_title_buttons = true
+            show_title_buttons = true,
+            title_widget = new Gtk.Label (null)
         };
         headerbar.pack_end (button_extended);
         headerbar.pack_end (button_history);
@@ -459,19 +460,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
 
         child = global_box;
         set_titlebar (headerbar);
-
-        var granite_settings = Granite.Settings.get_default ();
-        var gtk_settings = Gtk.Settings.get_default ();
-
-        gtk_settings.gtk_application_prefer_dark_theme = (
-            granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
-        );
-
-        granite_settings.notify["prefers-color-scheme"].connect (() => {
-            gtk_settings.gtk_application_prefer_dark_theme = (
-                granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK
-            );
-        });
 
         entry.grab_focus ();
 
