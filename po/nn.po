@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 17:55+0000\n"
-"PO-Revision-Date: 2021-11-02 19:22+0000\n"
+"PO-Revision-Date: 2023-02-03 20:25+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
 "calculator/calculator/nn/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:72
@@ -65,29 +65,27 @@ msgstr "Prosent"
 
 #: src/MainWindow.vala:255
 msgid "Set memory value"
-msgstr ""
+msgstr "Sett minneverdi"
 
 #: src/MainWindow.vala:260
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Hent verdi frå minnet"
 
 #: src/MainWindow.vala:264
 msgid "Add to stored value"
-msgstr ""
+msgstr "Legg til i lagra verdiar"
 
 #: src/MainWindow.vala:268
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Trekk frå lagra verdiar"
 
 #: src/MainWindow.vala:273
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "Slett innlegg"
+msgstr "Slett minne"
 
 #: src/MainWindow.vala:278
 msgid "Grand Total"
-msgstr ""
+msgstr "Totalt"
 
 #: src/MainWindow.vala:284
 msgid "Start Group"
@@ -139,11 +137,11 @@ msgstr "Eulers konstant"
 
 #: src/MainWindow.vala:356
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Logaritme base 10"
 
 #: src/MainWindow.vala:362
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Naturleg logaritme"
 
 #: src/MainWindow.vala:368
 msgid "Inverse Sine"
