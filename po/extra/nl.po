@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 17:55+0000\n"
 "PO-Revision-Date: 2023-02-10 14:25+0000\n"
-"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
+"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/extra/"
 "nl/>\n"
 "Language: nl\n"
@@ -52,13 +52,11 @@ msgstr "Kleine updates:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Redesigned app icon"
-msgstr ""
+msgstr "Herontworpen app-icoon"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
-#, fuzzy
-#| msgid "Use slim titlebar"
 msgid "Flat titlebar"
-msgstr "Gebruik een smalle titelbalk"
+msgstr "Gebruik een platte titelbalk"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:31
@@ -76,7 +74,7 @@ msgstr "Bijgewerkte vertalingen"
 
 #: data/io.elementary.calculator.appdata.xml.in:30
 msgid "Update for OS 7 and Gtk 4"
-msgstr ""
+msgstr "Update voor OS 7 en Gtk 4"
 
 #: data/io.elementary.calculator.appdata.xml.in:39
 msgid "Update to elementary 6.1 runtime"
