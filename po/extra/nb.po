@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 17:55+0000\n"
-"PO-Revision-Date: 2021-01-20 02:41+0000\n"
+"PO-Revision-Date: 2023-03-02 10:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "calculator/extra/nb/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 06:59+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -52,7 +52,7 @@ msgstr "Mindre oppdateringer:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Redesigned app icon"
-msgstr ""
+msgstr "Redesignet programikon"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 #, fuzzy
@@ -76,11 +76,11 @@ msgstr "Oppdaterte oversettelser"
 
 #: data/io.elementary.calculator.appdata.xml.in:30
 msgid "Update for OS 7 and Gtk 4"
-msgstr ""
+msgstr "Oppdatering for OS 7 og GTK 4"
 
 #: data/io.elementary.calculator.appdata.xml.in:39
 msgid "Update to elementary 6.1 runtime"
-msgstr ""
+msgstr "Oppdatering til elementary 6.1-kjøretidsmiljø"
 
 #: data/io.elementary.calculator.appdata.xml.in:48
 msgid "Showing advanced controls only affects the focused window"
@@ -162,11 +162,11 @@ msgstr "elementary, Inc."
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "Utregning;matematikk;aritmetikk;vitenskapelig;"
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "Nytt vindu"
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"
