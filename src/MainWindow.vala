@@ -97,14 +97,16 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         };
         button_history.clicked.connect (show_history);
 
-        var headerbar = new Gtk.HeaderBar () {
+        var headerbar = new Hdy.HeaderBar () {
             show_title_buttons = true,
+            show_close_button = true,
             title_widget = new Gtk.Label (null)
         };
         headerbar.pack_end (button_extended);
         headerbar.pack_end (button_history);
         headerbar.add_css_class (Granite.STYLE_CLASS_DEFAULT_DECORATION);
         headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+        headerbar.show_all ();
 
         entry = new Gtk.Entry () {
             xalign = 1,
