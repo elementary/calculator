@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 17:55+0000\n"
-"PO-Revision-Date: 2023-03-11 11:33+0000\n"
-"Last-Translator: Iuri Jikidze <ijiki16@freeuni.edu.ge>\n"
+"PO-Revision-Date: 2023-03-11 11:37+0000\n"
+"Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/calculator/"
 "calculator/ka/>\n"
 "Language: ka\n"
@@ -65,19 +65,19 @@ msgstr "პროცენტი"
 
 #: src/MainWindow.vala:255
 msgid "Set memory value"
-msgstr "დაიმახსოვრე მნიშვნელობა"
+msgstr "მეხსიერების მნიშვნელობის დაყენება"
 
 #: src/MainWindow.vala:260
 msgid "Recall value from memory"
-msgstr ""
+msgstr "მნიშვნელობის წაკითხვა მეხსიერებიდან"
 
 #: src/MainWindow.vala:264
 msgid "Add to stored value"
-msgstr ""
+msgstr "დამახსოვრებული მნიშვნელობის დამატება"
 
 #: src/MainWindow.vala:268
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "დამახსოვრებული მნიშვნელობიდან გამოკლება"
 
 #: src/MainWindow.vala:273
 msgid "Clear memory"
@@ -85,7 +85,7 @@ msgstr "მეხსიერების გასუფთავება"
 
 #: src/MainWindow.vala:278
 msgid "Grand Total"
-msgstr ""
+msgstr "ჯამი"
 
 #: src/MainWindow.vala:284
 msgid "Start Group"
@@ -137,15 +137,15 @@ msgstr "ეულერის რიცხვი"
 
 #: src/MainWindow.vala:356
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "ათობითი ლოგარითმი"
 
 #: src/MainWindow.vala:362
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "ნატურალური ლოგარითმი"
 
 #: src/MainWindow.vala:368
 msgid "Inverse Sine"
-msgstr ""
+msgstr "არკსინუსი"
 
 #: src/MainWindow.vala:374
 msgid "Inverse Cosine"
@@ -157,7 +157,7 @@ msgstr "არკტანგესი"
 
 #: src/MainWindow.vala:384
 msgid "Reciprocal"
-msgstr ""
+msgstr "შებრუნებული რიცხვი"
 
 #: src/MainWindow.vala:736
 msgid "Hide extended functionality"
@@ -165,7 +165,7 @@ msgstr "მეტი ფუნქციების დამალვა"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "წინა გამოსახულების ან შედეგის მიმდინარე გამოთვლაში ჩასმა."
 
 #: src/HistoryDialog.vala:81
 msgid "Value to insert:"
@@ -190,7 +190,7 @@ msgstr "დახურვა"
 
 #: src/HistoryDialog.vala:118
 msgid "Insert"
-msgstr ""
+msgstr "ჩასმა"
 
 #: src/Core/Scanner.vala:68
 #, c-format
@@ -199,7 +199,7 @@ msgstr "'%s' არასწორია."
 
 #: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "ფრჩხილები არ ემთხვევა."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:169
