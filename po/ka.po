@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 17:55+0000\n"
 "PO-Revision-Date: 2023-03-11 11:33+0000\n"
-"Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
+"Last-Translator: Iuri Jikidze <ijiki16@freeuni.edu.ge>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/calculator/"
 "calculator/ka/>\n"
 "Language: ka\n"
@@ -65,7 +65,7 @@ msgstr "პროცენტი"
 
 #: src/MainWindow.vala:255
 msgid "Set memory value"
-msgstr "მეხსიერების მნიშვნელობის დაყენება"
+msgstr "დაიმახსოვრე მნიშვნელობა"
 
 #: src/MainWindow.vala:260
 msgid "Recall value from memory"
