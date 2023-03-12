@@ -52,12 +52,14 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
     public const string ACTION_INSERT = "action-insert";
     public const string ACTION_FUNCTION = "action-function";
     public const string ACTION_UNDO = "action-undo";
+    public const string ACTION_COPY = "action-copy";
 
     private const ActionEntry[] ACTION_ENTRIES = {
         { ACTION_INSERT, action_insert, "s"},
         { ACTION_FUNCTION, action_function, "s"},
         { ACTION_CLEAR, action_clear },
-        { ACTION_UNDO, undo }
+        { ACTION_UNDO, undo },
+        { ACTION_COPY, copy }
     };
 
     static construct {
@@ -74,6 +76,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         var application_instance = (Gtk.Application) GLib.Application.get_default ();
         application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_CLEAR, {"Escape"});
         application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_UNDO, {"<Control>z"});
+        application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_COPY, {"<Control>c"});
 
         resizable = false;
         title = _("Calculator");
@@ -503,6 +506,17 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         }
     }
 
+    public void copy () {
+        unowned var clipboard = display.get_clipboard ();
+        int start, end;
+        entry.get_selection_bounds (out start, out end);
+        var text_selected = end - start != 0;
+        warning ("%u %d %b", start, end, text_selected);
+        if(!text_selected) {
+            warning ("Copying text");
+            clipboard.set_text (entry.text);
+        }
+    }
     private void action_insert (SimpleAction action, Variant? variant) {
         var token = variant.get_string ();
         int new_position = entry.get_position ();
