@@ -507,16 +507,19 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
     }
 
     public void copy () {
-        unowned var clipboard = display.get_clipboard ();
         int start, end;
         entry.get_selection_bounds (out start, out end);
         var text_selected = end - start != 0;
-        warning ("%u %d %b", start, end, text_selected);
+
+        // we have to copy text in both cases
+        // because seems like application action block entry's action
         if(!text_selected) {
-            warning ("Copying text");
-            clipboard.set_text (entry.text);
+            entry.get_clipboard ().set_text (entry.text);
+        } else {
+            entry.get_clipboard ().set_text (entry.text.slice (start, end));
         }
     }
+
     private void action_insert (SimpleAction action, Variant? variant) {
         var token = variant.get_string ();
         int new_position = entry.get_position ();
