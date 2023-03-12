@@ -512,7 +512,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         var text_selected = end - start != 0;
 
         // we have to copy text in both cases
-        // because seems like application action block entry's action
+        // because seems like application action blocks entry's action
         if(!text_selected) {
             entry.get_clipboard ().set_text (entry.text);
         } else {
