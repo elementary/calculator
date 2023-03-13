@@ -47,19 +47,21 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
     public struct History { string exp; string output; }
     private double memory_value = 0;
 
-    public const string ACTION_PREFIX = "win.";
-    public const string ACTION_CLEAR = "action-clear";
-    public const string ACTION_INSERT = "action-insert";
-    public const string ACTION_FUNCTION = "action-function";
-    public const string ACTION_UNDO = "action-undo";
-    public const string ACTION_COPY = "action-copy";
+    private const string ACTION_PREFIX = "win.";
+    private const string ACTION_CLEAR = "action-clear";
+    private const string ACTION_INSERT = "action-insert";
+    private const string ACTION_FUNCTION = "action-function";
+    private const string ACTION_UNDO = "action-undo";
+    private const string ACTION_COPY = "action-copy";
+    private const string ACTION_PASTE = "action-paste";
 
     private const ActionEntry[] ACTION_ENTRIES = {
         { ACTION_INSERT, action_insert, "s"},
         { ACTION_FUNCTION, action_function, "s"},
         { ACTION_CLEAR, action_clear },
         { ACTION_UNDO, undo },
-        { ACTION_COPY, copy }
+        { ACTION_COPY, copy },
+        { ACTION_PASTE, paste }
     };
 
     static construct {
@@ -77,6 +79,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_CLEAR, {"Escape"});
         application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_UNDO, {"<Control>z"});
         application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_COPY, {"<Control>c"});
+        application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_PASTE, {"<Control>v"});
 
         resizable = false;
         title = _("Calculator");
@@ -498,7 +501,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         }
     }
 
-    public void undo () {
+    private void undo () {
         unowned List<History?> previous_entry = history.last ();
         if (previous_entry != null) {
             entry.set_text (previous_entry.data.exp);
@@ -506,7 +509,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         }
     }
 
-    public void copy () {
+    private void copy () {
         int start, end;
         entry.get_selection_bounds (out start, out end);
         var text_selected = end - start != 0;
@@ -517,6 +520,33 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             entry.get_clipboard ().set_text (entry.text);
         } else {
             entry.get_clipboard ().set_text (entry.text.slice (start, end));
+        }
+    }
+
+    private void paste () {
+        get_clipboard_text.begin ((obj, res) => {
+            var text = get_clipboard_text.end (res);
+            if (text == null) {
+                return;
+            }
+
+            int start, end;
+            entry.get_selection_bounds (out start, out end);
+
+            var before = entry.text.slice (0, start);
+            var after = entry.text.slice (end, entry.text_length);
+            
+            entry.text = before + text + after;
+            entry.set_position (before.length + text.length);
+        });
+    }
+
+    private async string? get_clipboard_text () {
+        try {
+            return yield entry.get_clipboard ().read_text_async (null);
+        } catch (Error e) {
+            warning (e.message);
+            return null;
         }
     }
 
