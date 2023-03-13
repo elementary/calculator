@@ -535,7 +535,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
 
             var before = entry.text.slice (0, start);
             var after = entry.text.slice (end, entry.text_length);
-            
+
             entry.text = before + text + after;
             entry.set_position (before.length + text.length);
         });
