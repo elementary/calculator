@@ -848,28 +848,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         infobar.revealed = false;
     }
 
-    private void replace_text (string new_text, int new_text_length, ref int position) {
-        var replacement_text = "";
-
-        switch (new_text) {
-            case ".":
-            case ",":
-                replacement_text = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR);
-                break;
-            case "/":
-                replacement_text = "÷";
-                break;
-            case "*":
-                replacement_text = "×";
-                break;
-        }
-
-        if (replacement_text != "" && replacement_text != new_text) {
-            entry.do_insert_text (replacement_text, entry.cursor_position + replacement_text.char_count (), ref position);
-            Signal.stop_emission_by_name ((void*) entry.get_delegate (), "insert-text");
-        }
-    }
-
     private bool on_key_press (Gtk.EventControllerKey controller, uint keyval, uint keycode, Gdk.ModifierType mod_state) {
         event_controller.forward (entry.get_delegate ());
         switch (keyval) {
