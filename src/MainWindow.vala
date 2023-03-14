@@ -21,6 +21,46 @@
 public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
     private static GLib.Settings settings;
     private Gdk.Clipboard clipboard;
+    private Gtk.EventControllerKey event_controller;
+
+    private Button button_0;
+    private Button button_1;
+    private Button button_2;
+    private Button button_3;
+    private Button button_4;
+    private Button button_5;
+    private Button button_6;
+    private Button button_7;
+    private Button button_8;
+    private Button button_9;
+    private Button button_add;
+    private Button button_sub;
+    private Button button_mult;
+    private Button button_div;
+    private Button button_point;
+    private Button button_percent;
+    private Button button_clr;
+    private Button button_par_left;
+    private Button button_par_right;
+    private Button button_pow;
+    private Button button_sr;
+    private Button button_sin;
+    private Button button_sinh;
+    private Button button_cos;
+    private Button button_cosh;
+    private Button button_tan;
+    private Button button_tanh;
+    private Button button_pi;
+    private Button button_e;
+    private Button button_log;
+    private Button button_ln;
+    private Button button_asin;
+    private Button button_acos;
+    private Button button_atan;
+    private Button button_reciprocal;
+    private Button button_m_add;
+    private Button button_m_sub;
+    private Button button_ms;
 
     private Gtk.Revealer extended_revealer;
     private Gtk.Entry entry;
@@ -88,6 +128,9 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         var display = Gdk.Display.get_default ();
         clipboard = display.get_clipboard ();
 
+        event_controller = new Gtk.EventControllerKey ();
+        event_controller.key_pressed.connect (on_key_press);
+
         decimal_places = settings.get_int ("decimal-places");
 
         eval = new Core.Evaluation ();
@@ -139,7 +182,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             tooltip_text = _("Backspace")
         };
 
-        var button_clr = new Button ("C") {
+        button_clr = new Button ("C") {
             action_name = ACTION_PREFIX + ACTION_CLEAR
         };
         button_clr.tooltip_markup = Granite.markup_accel_tooltip (
@@ -148,91 +191,91 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         );
         button_clr.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
-        var button_add = new Button (" + ") {
+        button_add = new Button (" + ") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("+"),
             tooltip_text = _("Add")
         };
         button_add.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        var button_sub = new Button (" − ") {
+        button_sub = new Button (" − ") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("-"),
             tooltip_text = _("Subtract")
         };
         button_sub.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        var button_mult = new Button (" × ") {
+        button_mult = new Button (" × ") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("×"),
             tooltip_text = _("Multiply")
         };
         button_mult.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        var button_div = new Button (" ÷ ") {
+        button_div = new Button (" ÷ ") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("÷"),
             tooltip_text = _("Divide")
         };
         button_div.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        var button_0 = new Button ("0") {
+        button_0 = new Button ("0") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("0")
         };
 
-        var button_point = new Button (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR)) {
+        button_point = new Button (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR)) {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string (Posix.nl_langinfo (Posix.NLItem.RADIXCHAR))
         };
 
-        var button_percent = new Button ("%") {
+        button_percent = new Button ("%") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("%"),
             tooltip_text = _("Percentage")
         };
 
-        var button_1 = new Button ("1") {
+        button_1 = new Button ("1") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("1")
         };
 
-        var button_2 = new Button ("2") {
+        button_2 = new Button ("2") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("2")
         };
 
-        var button_3 = new Button ("3") {
+        button_3 = new Button ("3") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("3")
         };
 
-        var button_4 = new Button ("4") {
+        button_4 = new Button ("4") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("4")
         };
 
-        var button_5 = new Button ("5") {
+        button_5 = new Button ("5") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("5")
         };
 
-        var button_6 = new Button ("6") {
+        button_6 = new Button ("6") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("6")
         };
 
-        var button_7 = new Button ("7") {
+        button_7 = new Button ("7") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("7")
         };
 
-        var button_8 = new Button ("8") {
+        button_8 = new Button ("8") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("8")
         };
 
-        var button_9 = new Button ("9") {
+        button_9 = new Button ("9") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("9")
         };
@@ -270,7 +313,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         basic_grid.attach (button_ans, 2, 5, 1, 1);
         basic_grid.attach (button_calc, 3, 5, 1, 1);
 
-        var button_ms = new Button ("MS") {
+        button_ms = new Button ("MS") {
             tooltip_text = _("Set memory value")
         };
 
@@ -279,11 +322,11 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             tooltip_text = _("Recall value from memory")
         };
 
-        var button_m_add = new Button ("M+") {
+        button_m_add = new Button ("M+") {
             tooltip_text = _("Add to stored value")
         };
 
-        var button_m_sub = new Button ("M−") {
+        button_m_sub = new Button ("M−") {
             tooltip_text = _("Subtract from stored value")
         };
 
@@ -297,109 +340,109 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             tooltip_text = _("Grand Total")
         };
 
-        var button_par_left = new Button ("(") {
+        button_par_left = new Button ("(") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("("),
             tooltip_text = _("Start Group")
         };
 
-        var button_par_right = new Button (")") {
+        button_par_right = new Button (")") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string (")"),
             tooltip_text = _("End Group")
         };
 
-        var button_pow = new Button ("x<sup>y</sup>") {
+        button_pow = new Button ("x<sup>y</sup>") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("^"),
             tooltip_text = _("Exponent")
         };
 
-        var button_sr = new Button ("√") {
+        button_sr = new Button ("√") {
             action_name = ACTION_PREFIX + ACTION_FUNCTION,
             action_target = new Variant.string ("√"),
             tooltip_text = _("Root")
         };
 
-        var button_sin = new Button ("sin") {
+        button_sin = new Button ("sin") {
             action_name = ACTION_PREFIX + ACTION_FUNCTION,
             action_target = new Variant.string ("sin"),
             tooltip_text = _("Sine")
         };
 
-        var button_sinh = new Button ("sinh") {
+        button_sinh = new Button ("sinh") {
             action_name = ACTION_PREFIX + ACTION_FUNCTION,
             action_target = new Variant.string ("sinh"),
             tooltip_text = _("Hyperbolic Sine")
         };
 
-        var button_cos = new Button ("cos") {
+        button_cos = new Button ("cos") {
             action_name = ACTION_PREFIX + ACTION_FUNCTION,
             action_target = new Variant.string ("cos"),
             tooltip_text = _("Cosine")
         };
 
-        var button_cosh = new Button ("cosh") {
+        button_cosh = new Button ("cosh") {
             action_name = ACTION_PREFIX + ACTION_FUNCTION,
             action_target = new Variant.string ("cosh"),
             tooltip_text = _("Hyperbolic Cosine")
         };
 
-        var button_tan = new Button ("tan") {
+        button_tan = new Button ("tan") {
             action_name = ACTION_PREFIX + ACTION_FUNCTION,
             action_target = new Variant.string ("tan"),
             tooltip_text = _("Tangent")
         };
 
-        var button_tanh = new Button ("tanh") {
+        button_tanh = new Button ("tanh") {
             action_name = ACTION_PREFIX + ACTION_FUNCTION,
             action_target = new Variant.string ("tanh"),
             tooltip_text = _("Hyperbolic Tangent")
         };
 
-        var button_pi = new Button ("π") {
+        button_pi = new Button ("π") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("π"),
             tooltip_text = _("Pi")
         };
 
-        var button_e = new Button ("e") {
+        button_e = new Button ("e") {
             action_name = ACTION_PREFIX + ACTION_INSERT,
             action_target = new Variant.string ("e"),
             tooltip_text = _("Euler's Number")
         };
 
-        var button_log = new Button ("log<sub>10</sub>") {
+        button_log = new Button ("log<sub>10</sub>") {
             action_name = ACTION_PREFIX + ACTION_FUNCTION,
             action_target = new Variant.string ("log"),
             tooltip_text = _("Logarithm Base 10")
         };
 
-        var button_ln = new Button ("ln") {
+        button_ln = new Button ("ln") {
             action_name = ACTION_PREFIX + ACTION_FUNCTION,
             action_target = new Variant.string ("ln"),
             tooltip_text = _("Natural Logarithm")
         };
 
-        var button_asin = new Button ("sin<sup>-1</sup>") {
+        button_asin = new Button ("sin<sup>-1</sup>") {
             action_name = ACTION_PREFIX + ACTION_FUNCTION,
             action_target = new Variant.string ("asin"),
             tooltip_text = _("Inverse Sine")
         };
 
-        var button_acos = new Button ("cos<sup>-1</sup>") {
+        button_acos = new Button ("cos<sup>-1</sup>") {
             action_name = ACTION_PREFIX + ACTION_FUNCTION,
             action_target = new Variant.string ("acos"),
             tooltip_text = _("Inverse Cosine")
         };
 
-        var button_atan = new Button ("tan<sup>-1</sup>") {
+        button_atan = new Button ("tan<sup>-1</sup>") {
             action_name = ACTION_PREFIX + ACTION_FUNCTION,
             action_target = new Variant.string ("atan"),
             tooltip_text = _("Inverse Tangent")
         };
 
-        var button_reciprocal = new Button ("x<sup>-1</sup>") {
+        button_reciprocal = new Button ("x<sup>-1</sup>") {
             tooltip_text = _("Reciprocal")
         };
 
@@ -455,6 +498,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         };
         main_grid.append (basic_grid);
         main_grid.append (extended_revealer);
+        ((Gtk.Widget) main_grid).add_controller (event_controller);
 
         infobar_label = new Gtk.Label ("");
 
@@ -837,5 +881,97 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             entry.do_insert_text (replacement_text, entry.cursor_position + replacement_text.char_count (), ref position);
             Signal.stop_emission_by_name ((void*) entry.get_delegate (), "insert-text");
         }
+    }
+
+    private bool on_key_press (Gtk.EventControllerKey controller, uint keyval, uint keycode, Gdk.ModifierType mod_state) {
+        event_controller.forward (entry.get_delegate ());
+        switch (keyval) {
+            case Gdk.Key.@0:
+            case Gdk.Key.KP_0:
+                button_0.activate ();
+                return true;
+            case Gdk.Key.@1:
+            case Gdk.Key.KP_1:
+                button_1.activate ();
+                return true;
+            case Gdk.Key.@2:
+            case Gdk.Key.KP_2:
+                button_2.activate ();
+                return true;
+            case Gdk.Key.@3:
+            case Gdk.Key.KP_3:
+                button_3.activate ();
+                return true;
+            case Gdk.Key.@4:
+            case Gdk.Key.KP_4:
+                button_4.activate ();
+                return true;
+            case Gdk.Key.@5:
+            case Gdk.Key.KP_5:
+                button_5.activate ();
+                return true;
+            case Gdk.Key.@6:
+            case Gdk.Key.KP_6:
+                button_6.activate ();
+                return true;
+            case Gdk.Key.@7:
+            case Gdk.Key.KP_7:
+                button_7.activate ();
+                return true;
+            case Gdk.Key.@8:
+            case Gdk.Key.KP_8:
+                button_8.activate ();
+                return true;
+            case Gdk.Key.@9:
+            case Gdk.Key.KP_9:
+                button_9.activate ();
+                return true;
+            case Gdk.Key.plus:
+            case Gdk.Key.KP_Add:
+                button_add.activate ();
+                return true;
+            case Gdk.Key.minus:
+            case Gdk.Key.KP_Subtract:
+                button_sub.activate ();
+                return true;
+            case Gdk.Key.asterisk:
+            case Gdk.Key.KP_Multiply:
+                button_mult.activate ();
+                return true;
+            case Gdk.Key.slash:
+            case Gdk.Key.KP_Divide:
+                button_div.activate ();
+                return true;
+            case Gdk.Key.period:
+            case Gdk.Key.decimalpoint:
+            case Gdk.Key.KP_Decimal:
+                button_point.activate ();
+                return true;
+            case Gdk.Key.BackSpace:
+            case Gdk.Key.KP_Delete:
+                button_del.activate ();
+                return true;
+            case Gdk.Key.Return:
+            case Gdk.Key.KP_Enter:
+            case Gdk.Key.KP_Equal:
+                button_calc.activate ();
+                return true;
+            case Gdk.Key.Escape:
+                button_clr.activate ();
+                return true;
+        }
+
+        switch (keyval) {
+            case Gdk.Key.percent:
+                button_percent.activate ();
+                return true;
+            case Gdk.Key.parenleft:
+                button_par_left.activate ();
+                return true;
+            case Gdk.Key.parenright:
+                button_par_right.activate ();
+                return true;
+        }
+        return false;
     }
 }
