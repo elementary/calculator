@@ -115,6 +115,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         entry = new Gtk.Entry () {
             xalign = 1,
             vexpand = true,
+            sensitive = false,
             valign = Gtk.Align.FILL
         };
         entry.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
