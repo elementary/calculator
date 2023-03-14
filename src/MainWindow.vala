@@ -517,12 +517,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         child = global_box;
         set_titlebar (headerbar);
 
-        entry.grab_focus ();
-
-        entry.changed.connect (remove_error);
-        entry.activate.connect (button_calc_clicked);
-        entry.get_delegate ().insert_text.connect (replace_text);
-
         button_calc.clicked.connect (() => {button_calc_clicked ();});
         button_del.clicked.connect (() => {button_del_clicked ();});
         button_ans.clicked.connect (() => {button_ans_clicked ();});
@@ -602,7 +596,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         entry.do_insert_text (token, -1, ref cursor_position);
 
         new_position += token.char_count ();
-        entry.grab_focus ();
         entry.set_position (new_position);
     }
 
@@ -617,7 +610,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             entry.delete_text (selection_start, selection_end);
             entry.insert_text (function_call, -1, ref selection_start);
             new_position += function_call.char_count ();
-            entry.grab_focus ();
             entry.set_position (new_position);
         } else {
             activate_action (ACTION_INSERT, variant);
@@ -649,7 +641,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             remove_error ();
         }
 
-        entry.grab_focus ();
         entry.set_position (position);
     }
 
@@ -679,7 +670,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             entry.set_text (new_text);
         }
 
-        entry.grab_focus ();
         entry.set_position (position - 1);
     }
 
@@ -791,10 +781,8 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
     private void action_clear () {
         position = 0;
         entry.set_text ("");
-        set_focus (entry);
         remove_error ();
 
-        entry.grab_focus ();
         entry.set_position (position);
     }
 
@@ -820,7 +808,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             extended_revealer.reveal_child = false;
         }
         /* Focusing button_calc because without a new focus it will cause weird window drawing problems. */
-        entry.grab_focus ();
         entry.set_position (position);
     }
 
@@ -854,7 +841,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         var cursor_position = entry.cursor_position;
         entry.do_insert_text (input, -1, ref cursor_position);
         position += input.length;
-        entry.grab_focus ();
         entry.set_position (position);
     }
 
