@@ -20,6 +20,7 @@
 
 public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
     private static GLib.Settings settings;
+    private Gdk.Clipboard clipboard;
 
     private Gtk.Revealer extended_revealer;
     private Gtk.Entry entry;
@@ -83,6 +84,9 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
 
         resizable = false;
         title = _("Calculator");
+
+        var display = Gdk.Display.get_default ();
+        clipboard = display.get_clipboard ();
 
         decimal_places = settings.get_int ("decimal-places");
 
@@ -510,45 +514,31 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         }
     }
 
-    private void copy () {
-        int start, end;
-        entry.get_selection_bounds (out start, out end);
-        var text_selected = end - start != 0;
-
-        // we have to copy text in both cases
-        // because seems like application action blocks entry's action
-        if (!text_selected) {
-            entry.get_clipboard ().set_text (entry.text);
-        } else {
-            entry.get_clipboard ().set_text (entry.text.slice (start, end));
-        }
-    }
-
-    private void paste () {
-        get_clipboard_text.begin ((obj, res) => {
-            var text = get_clipboard_text.end (res);
-            if (text == null) {
-                return;
+        public void copy () {
+        if (entry.get_text () != "") {
+            try {
+                var output = eval.evaluate (entry.get_text (), decimal_places);
+                clipboard.set_text (output);
+            } catch (Core.OUT_ERROR e) {
+                infobar_label.label = e.message;
+                infobar.revealed = true;
             }
-
-            int start, end;
-            entry.get_selection_bounds (out start, out end);
-
-            var before = entry.text.slice (0, start);
-            var after = entry.text.slice (end, entry.text_length);
-
-            entry.text = before + text + after;
-            entry.set_position (before.char_count () + text.char_count ());
-        });
+        }
     }
 
-    private async string? get_clipboard_text () {
-        try {
-            return yield entry.get_clipboard ().read_text_async (null);
-        } catch (Error e) {
-            warning (e.message);
-            return null;
-        }
+    public void paste () {
+        var cancellable = new GLib.Cancellable ();
+        clipboard.read_text_async.begin (cancellable, (source, res) => {
+            try {
+                var output = eval.evaluate (clipboard.read_text_async.end (res), decimal_places);
+                if (entry.get_text () != output) {
+                    entry.set_text (output);
+                }
+            } catch (Error e) {
+                infobar_label.label = e.message;
+                infobar.revealed = true;
+            }
+        });
     }
 
     private void action_insert (SimpleAction action, Variant? variant) {
