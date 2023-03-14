@@ -166,6 +166,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             valign = Gtk.Align.FILL
         };
         entry.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
+        entry.set_placeholder_text ("0");
 
         button_calc = new Button ("=") {
             tooltip_text = _("Calculate Result")
