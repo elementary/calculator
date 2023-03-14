@@ -499,7 +499,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         };
         main_grid.append (basic_grid);
         main_grid.append (extended_revealer);
-        ((Gtk.Widget) main_grid).add_controller (event_controller);
 
         infobar_label = new Gtk.Label ("");
 
@@ -513,6 +512,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         var global_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         global_box.append (infobar);
         global_box.append (main_grid);
+        ((Gtk.Widget) this).add_controller (event_controller);
 
         child = global_box;
         set_titlebar (headerbar);
