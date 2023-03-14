@@ -117,7 +117,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         add_action_entries (ACTION_ENTRIES, this);
 
         var application_instance = (Gtk.Application) GLib.Application.get_default ();
-        application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_CLEAR, {"Escape"});
         application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_UNDO, {"<Control>z"});
         application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_COPY, {"<Control>c"});
         application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_PASTE, {"<Control>v"});
