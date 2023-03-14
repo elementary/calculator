@@ -973,6 +973,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
                 button_par_right.activate ();
                 return true;
         }
-        return false;
+        return Gdk.EVENT_PROPAGATE;
     }
 }
