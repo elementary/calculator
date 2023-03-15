@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 17:55+0000\n"
-"PO-Revision-Date: 2023-03-12 12:25+0000\n"
+"PO-Revision-Date: 2023-03-16 13:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/calculator/"
 "extra/ka/>\n"
@@ -27,13 +27,15 @@ msgstr "კალკულატორი"
 #: data/io.elementary.calculator.appdata.xml.in:9
 #: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
-msgstr ""
+msgstr "მარტივი განტოლებების ამოხსნა"
 
 #: data/io.elementary.calculator.appdata.xml.in:11
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
+"მარტივი კალკულატორი ყოველდღიური გამოყენებისთვის. აქვს მარტივი და ზოგიერთი "
+"სამეცნიერო, ტრიგონომეტრიის ჩათვლით, მათემატიკის მხარდაჭერა."
 
 #: data/io.elementary.calculator.appdata.xml.in:17
 #: data/io.elementary.calculator.appdata.xml.in:28
@@ -48,11 +50,11 @@ msgstr "უმნიშვნელო განახლებები:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Redesigned app icon"
-msgstr ""
+msgstr "აპის ახალი ხატულა"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
 msgid "Flat titlebar"
-msgstr ""
+msgstr "ბრტყელი სათაურის ზოლი"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:31
@@ -70,27 +72,28 @@ msgstr "განახლებული თარგმანები"
 
 #: data/io.elementary.calculator.appdata.xml.in:30
 msgid "Update for OS 7 and Gtk 4"
-msgstr ""
+msgstr "განახლება OS 7-სთვის და Gtk 4-სთვის"
 
 #: data/io.elementary.calculator.appdata.xml.in:39
 msgid "Update to elementary 6.1 runtime"
-msgstr ""
+msgstr "Elementary-ის გაშვების გარემოს განახლება ვერსიამდე 6.1"
 
 #: data/io.elementary.calculator.appdata.xml.in:48
 msgid "Showing advanced controls only affects the focused window"
 msgstr ""
+"დამატებითი კონტროლების ჩვენებას მხოლოდ ფოკუსში მყოფ ფანჯარაზე აქვს გავლენა"
 
 #: data/io.elementary.calculator.appdata.xml.in:49
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "გაშვებისას ფოკუსის მთავარ ტექსტურ ჩანაწერზე დაყენება"
 
 #: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "მრავალამოცანიან ხედში ფანჯრის სწორი სათაურის ჩვენება"
 
 #: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "სამუშაო მაგიდაზე 'ახალი ფანჯრის' ქმედების დამატება"
 
 #: data/io.elementary.calculator.appdata.xml.in:58
 #: data/io.elementary.calculator.appdata.xml.in:88
@@ -99,19 +102,19 @@ msgstr "ახალი ფუნქციები:"
 
 #: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Add a \"Clear History\" button to the history dialog"
-msgstr ""
+msgstr "ისტორიის ფანჯარაში 'ისტორიის გასუფთავების' ღილაკის დამატება"
 
 #: data/io.elementary.calculator.appdata.xml.in:80
 msgid "Fixed an issue with multiple windows"
-msgstr ""
+msgstr "გასწორდა შეცდომა ბევრ ფანჯარასთან"
 
 #: data/io.elementary.calculator.appdata.xml.in:81
 msgid "More informative copy in history dialog"
-msgstr ""
+msgstr "მეტი ინფორმაციის ასლი ისტორიის დიალოგში"
 
 #: data/io.elementary.calculator.appdata.xml.in:90
 msgid "Add log and inverse trigonometric functions"
-msgstr ""
+msgstr "დაემატა ალგორითმისა და ინვერსიული ტრიგონომეტრიული ფუნქციების მხარდაჭერა"
 
 #: data/io.elementary.calculator.appdata.xml.in:92
 msgid "Other updates:"
@@ -119,35 +122,35 @@ msgstr "სხვა განახლებები:"
 
 #: data/io.elementary.calculator.appdata.xml.in:94
 msgid "Fix an issue with negative decimals without leading digits"
-msgstr ""
+msgstr "გასწორდა პრობლემა უარყოფით ათეულებთან წინა რიცხვების გარეშე"
 
 #: data/io.elementary.calculator.appdata.xml.in:95
 msgid "More efficient state saving"
-msgstr ""
+msgstr "მდგომარეობის უფრო ეფექტური შენახვა"
 
 #: data/io.elementary.calculator.appdata.xml.in:96
 msgid "Use slim titlebar"
-msgstr ""
+msgstr "თხელი სათაურის ზოლის გამოყენება"
 
 #: data/io.elementary.calculator.appdata.xml.in:105
 msgid "Fix inserting multi-byte characters"
-msgstr ""
+msgstr "გასწორდა მრავალბაიტიანი სიმბოლოების ჩასმა"
 
 #: data/io.elementary.calculator.appdata.xml.in:113
 msgid "Fix missing icon for Ukrainian"
-msgstr ""
+msgstr "გასწორდა ნაკლული ხატულა უკრაინულისთვის"
 
 #: data/io.elementary.calculator.appdata.xml.in:121
 msgid "Animate Infobar when hiding and showing"
-msgstr ""
+msgstr "ინფორმაციის ზოლის ანიმაცია დამალვისას და ჩვენებისას"
 
 #: data/io.elementary.calculator.appdata.xml.in:122
 msgid "Fix selection replace"
-msgstr ""
+msgstr "გასწორდა მონიშნულის ჩანაცვლება"
 
 #: data/io.elementary.calculator.appdata.xml.in:123
 msgid "Improved decimal separator localization"
-msgstr ""
+msgstr "გაუმჯობესდა წილადის გამყოფის ლოკალიზაცია"
 
 #: data/io.elementary.calculator.appdata.xml.in:161
 msgid "elementary, Inc."
@@ -156,7 +159,7 @@ msgstr "elementary, Inc."
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "გაანგარიშება;მათემატიკა;არითმეტიკა;სამეცნიერო;"
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
