@@ -3,8 +3,8 @@ name: Release
 
 on:
   pull_request:
-    branches: master
-    types: closed
+    branches: [master]
+    types: [closed]
 
 jobs:
   create_release:
@@ -39,7 +39,7 @@ jobs:
       fail-fast: false
 
     container:
-      image: ghcr.io/elementary/flatpak-platform/runtime:7.1-${{ matrix.arch }}
+      image: ghcr.io/elementary/flatpak-platform/runtime:7.2-${{ matrix.arch }}
       options: --privileged
 
     steps:
@@ -48,12 +48,12 @@ jobs:
 
       - name: Set up QEMU for aarch64 emulation
         if: ${{ matrix.arch != 'x86_64' }}
-        uses: docker/setup-qemu-action@v1
+        uses: docker/setup-qemu-action@v2
         with:
           platforms: arm64
 
       - name: Build
-        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
+        uses: flatpak/flatpak-github-actions/flatpak-builder@v6
         with:
           bundle: calculator.flatpak
           manifest-path: io.elementary.calculator.yml
@@ -65,7 +65,7 @@ jobs:
           arch: ${{ matrix.arch }}
 
       - name: Deploy
-        uses: bilelmoussaoui/flatpak-github-actions/flat-manager@v4
+        uses: flatpak/flatpak-github-actions/flat-manager@v6
         with:
           repository: appcenter
           flat-manager-url: https://flatpak-api.elementary.io
