@@ -9,7 +9,7 @@ You'll need the following dependencies:
 
 * libgranite-dev >= 7.0
 * libgtk-4-dev
-* meson >= 0.43.0
+* meson >= 0.56.0
 * valac
 
 Run `meson build` to configure the build environment. Change to the build directory and run `ninja test` to build and run automated tests

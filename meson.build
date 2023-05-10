@@ -1,6 +1,6 @@
 project(
     'io.elementary.calculator', 'vala', 'c',
-    meson_version : '>= 0.49',
+    meson_version : '>= 0.56.0',
     version: '2.0.1'
 )
 
