@@ -8,8 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 17:55+0000\n"
 "PO-Revision-Date: 2023-05-17 20:06+0000\n"
-"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
-"io>\n"
+"Last-Translator: Muhammad Dholifun Nafsi <muhammad_dholifun@protonmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/calculator/"
 "extra/id/>\n"
 "Language: id\n"
@@ -94,7 +93,7 @@ msgstr "Tampilkan judul jendela yang benar di Tampilan Multitasking"
 
 #: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "Menambahkan Tindakan Desktop 'Jendela Baru'"
 
 #: data/io.elementary.calculator.appdata.xml.in:58
 #: data/io.elementary.calculator.appdata.xml.in:88
@@ -103,11 +102,11 @@ msgstr "Fitur baru:"
 
 #: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Add a \"Clear History\" button to the history dialog"
-msgstr ""
+msgstr "Tambahkan tombol \"Hapus Riwayat\" ke dialog riwayat"
 
 #: data/io.elementary.calculator.appdata.xml.in:80
 msgid "Fixed an issue with multiple windows"
-msgstr ""
+msgstr "Memperbaiki masalah dengan banyak jendela"
 
 #: data/io.elementary.calculator.appdata.xml.in:81
 msgid "More informative copy in history dialog"
@@ -164,7 +163,7 @@ msgstr "Perhitungan;Matematika;Aritmatika;Ilmiah;"
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "Jendela baru"
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"
