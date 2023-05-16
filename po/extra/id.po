@@ -8,8 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 17:55+0000\n"
 "PO-Revision-Date: 2023-05-16 19:29+0000\n"
-"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
-"io>\n"
+"Last-Translator: Muhammad Dholifun Nafsi <muhammad_dholifun@protonmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/calculator/"
 "extra/id/>\n"
 "Language: id\n"
@@ -88,11 +87,11 @@ msgstr ""
 
 #: data/io.elementary.calculator.appdata.xml.in:49
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "Fokuskan entri teks utama saat memulai"
 
 #: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "Tampilkan judul jendela yang benar di Tampilan Multitasking"
 
 #: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Added 'New Window' Desktop Action"
