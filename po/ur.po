@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 17:55+0000\n"
+"POT-Creation-Date: 2023-05-30 17:54+0000\n"
 "PO-Revision-Date: 2016-10-16 11:24+0000\n"
 "Last-Translator: Waqar Ahmed <waqar.17a@gmail.com>\n"
 "Language-Team: \n"
@@ -13,159 +13,159 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: src/MainWindow.vala:72
+#: src/MainWindow.vala:85
 msgid "Calculator"
 msgstr "کیلکولیٹر"
 
-#: src/MainWindow.vala:82 src/MainWindow.vala:741
+#: src/MainWindow.vala:95 src/MainWindow.vala:783
 msgid "Show extended functionality"
 msgstr "مزید functionality دکھائیں"
 
-#: src/MainWindow.vala:88 src/HistoryDialog.vala:40
+#: src/MainWindow.vala:101 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "تاریخ"
 
-#: src/MainWindow.vala:109
+#: src/MainWindow.vala:123
 msgid "Calculate Result"
 msgstr "نتیجہ کیلکولیٹ کریں"
 
-#: src/MainWindow.vala:116
+#: src/MainWindow.vala:130
 #, fuzzy
 #| msgid "Add last result"
 msgid "Insert last result"
 msgstr "آخری نتیجہ شامل کریں"
 
-#: src/MainWindow.vala:120
+#: src/MainWindow.vala:134
 msgid "Backspace"
 msgstr "بیک سپیس"
 
-#: src/MainWindow.vala:128
+#: src/MainWindow.vala:142
 msgid "Clear entry"
 msgstr "اندراج صاف کریں"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:149
 msgid "Add"
 msgstr "جمع"
 
-#: src/MainWindow.vala:142
+#: src/MainWindow.vala:156
 msgid "Subtract"
 msgstr "تفریق"
 
-#: src/MainWindow.vala:149
+#: src/MainWindow.vala:163
 msgid "Multiply"
 msgstr "ضرب"
 
-#: src/MainWindow.vala:156
+#: src/MainWindow.vala:170
 msgid "Divide"
 msgstr "تقسیم"
 
-#: src/MainWindow.vala:173
+#: src/MainWindow.vala:187
 msgid "Percentage"
 msgstr "فیصد"
 
-#: src/MainWindow.vala:255
+#: src/MainWindow.vala:269
 msgid "Set memory value"
 msgstr ""
 
-#: src/MainWindow.vala:260
+#: src/MainWindow.vala:274
 msgid "Recall value from memory"
 msgstr ""
 
-#: src/MainWindow.vala:264
+#: src/MainWindow.vala:278
 msgid "Add to stored value"
 msgstr ""
 
-#: src/MainWindow.vala:268
+#: src/MainWindow.vala:282
 msgid "Subtract from stored value"
 msgstr ""
 
-#: src/MainWindow.vala:273
+#: src/MainWindow.vala:287
 #, fuzzy
 #| msgid "Clear entry"
 msgid "Clear memory"
 msgstr "اندراج صاف کریں"
 
-#: src/MainWindow.vala:278
+#: src/MainWindow.vala:292
 msgid "Grand Total"
 msgstr ""
 
-#: src/MainWindow.vala:284
+#: src/MainWindow.vala:298
 msgid "Start Group"
 msgstr ""
 
-#: src/MainWindow.vala:290
+#: src/MainWindow.vala:304
 msgid "End Group"
 msgstr ""
 
-#: src/MainWindow.vala:296
+#: src/MainWindow.vala:310
 msgid "Exponent"
 msgstr ""
 
-#: src/MainWindow.vala:302
+#: src/MainWindow.vala:316
 msgid "Root"
 msgstr "روٹ"
 
-#: src/MainWindow.vala:308
+#: src/MainWindow.vala:322
 msgid "Sine"
 msgstr "سائن"
 
-#: src/MainWindow.vala:314
+#: src/MainWindow.vala:328
 msgid "Hyperbolic Sine"
 msgstr ""
 
-#: src/MainWindow.vala:320
+#: src/MainWindow.vala:334
 msgid "Cosine"
 msgstr "کوسائن"
 
-#: src/MainWindow.vala:326
+#: src/MainWindow.vala:340
 msgid "Hyperbolic Cosine"
 msgstr ""
 
-#: src/MainWindow.vala:332
+#: src/MainWindow.vala:346
 msgid "Tangent"
 msgstr "ٹینجنٹ"
 
-#: src/MainWindow.vala:338
+#: src/MainWindow.vala:352
 msgid "Hyperbolic Tangent"
 msgstr ""
 
-#: src/MainWindow.vala:344
+#: src/MainWindow.vala:358
 msgid "Pi"
 msgstr "پائی"
 
-#: src/MainWindow.vala:350
+#: src/MainWindow.vala:364
 msgid "Euler's Number"
 msgstr ""
 
-#: src/MainWindow.vala:356
+#: src/MainWindow.vala:370
 msgid "Logarithm Base 10"
 msgstr ""
 
-#: src/MainWindow.vala:362
+#: src/MainWindow.vala:376
 msgid "Natural Logarithm"
 msgstr ""
 
-#: src/MainWindow.vala:368
+#: src/MainWindow.vala:382
 msgid "Inverse Sine"
 msgstr ""
 
-#: src/MainWindow.vala:374
+#: src/MainWindow.vala:388
 #, fuzzy
 #| msgid "Cosine"
 msgid "Inverse Cosine"
 msgstr "کوسائن"
 
-#: src/MainWindow.vala:380
+#: src/MainWindow.vala:394
 #, fuzzy
 #| msgid "Tangent"
 msgid "Inverse Tangent"
 msgstr "ٹینجنٹ"
 
-#: src/MainWindow.vala:384
+#: src/MainWindow.vala:398
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:736
+#: src/MainWindow.vala:778
 msgid "Hide extended functionality"
 msgstr "مزید functionality چھپائیں"
 
