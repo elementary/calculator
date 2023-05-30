@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 17:55+0000\n"
+"POT-Creation-Date: 2023-05-30 17:54+0000\n"
 "PO-Revision-Date: 2022-01-09 21:31+0000\n"
 "Last-Translator: Martin Šťastný <martin@stastni.cz>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/calculator/extra/"
@@ -20,17 +20,17 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-27 05:40+0000\n"
 
-#: data/io.elementary.calculator.appdata.xml.in:8
+#: data/calculator.metainfo.xml.in:10
 #: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
 msgstr "Kalkulačka"
 
-#: data/io.elementary.calculator.appdata.xml.in:9
+#: data/calculator.metainfo.xml.in:11
 #: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
 msgstr "Řešte jednoduché výpočty"
 
-#: data/io.elementary.calculator.appdata.xml.in:11
+#: data/calculator.metainfo.xml.in:13
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
@@ -38,125 +38,63 @@ msgstr ""
 "Jednoduchá kalkulačka pro každodenní použití. Podporuje základní a některé "
 "vědecké výpočty, včetně goniometrických funkcí sinus, kosinus a tangens."
 
-#: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:28
-#: data/io.elementary.calculator.appdata.xml.in:37
-#: data/io.elementary.calculator.appdata.xml.in:46
-#: data/io.elementary.calculator.appdata.xml.in:62
-#: data/io.elementary.calculator.appdata.xml.in:70
-#: data/io.elementary.calculator.appdata.xml.in:78
-#: data/io.elementary.calculator.appdata.xml.in:103
+#: data/calculator.metainfo.xml.in:46
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/calculator.metainfo.xml.in:53 data/calculator.metainfo.xml.in:64
+#: data/calculator.metainfo.xml.in:74 data/calculator.metainfo.xml.in:84
+#: data/calculator.metainfo.xml.in:101
 msgid "Minor updates:"
 msgstr "Drobné aktualizace:"
 
-#: data/io.elementary.calculator.appdata.xml.in:19
+#: data/calculator.metainfo.xml.in:55
 msgid "Redesigned app icon"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:20
+#: data/calculator.metainfo.xml.in:56
 #, fuzzy
 #| msgid "Use slim titlebar"
 msgid "Flat titlebar"
 msgstr "Použita tenčí lišta titulku"
 
-#: data/io.elementary.calculator.appdata.xml.in:21
-#: data/io.elementary.calculator.appdata.xml.in:31
-#: data/io.elementary.calculator.appdata.xml.in:40
-#: data/io.elementary.calculator.appdata.xml.in:51
-#: data/io.elementary.calculator.appdata.xml.in:64
-#: data/io.elementary.calculator.appdata.xml.in:72
-#: data/io.elementary.calculator.appdata.xml.in:82
-#: data/io.elementary.calculator.appdata.xml.in:97
-#: data/io.elementary.calculator.appdata.xml.in:106
-#: data/io.elementary.calculator.appdata.xml.in:114
-#: data/io.elementary.calculator.appdata.xml.in:124
+#: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:67
+#: data/calculator.metainfo.xml.in:77 data/calculator.metainfo.xml.in:89
+#: data/calculator.metainfo.xml.in:103
 msgid "Updated translations"
 msgstr "Aktualizovány překlady"
 
-#: data/io.elementary.calculator.appdata.xml.in:30
+#: data/calculator.metainfo.xml.in:66
 msgid "Update for OS 7 and Gtk 4"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:39
+#: data/calculator.metainfo.xml.in:76
 msgid "Update to elementary 6.1 runtime"
 msgstr "Běhové prostředí elementary aktualizováno na verzi 6.1"
 
-#: data/io.elementary.calculator.appdata.xml.in:48
+#: data/calculator.metainfo.xml.in:86
 msgid "Showing advanced controls only affects the focused window"
 msgstr "Zobrazování pokročilých ovládacích prvků se týká pouze zaměřeného okna"
 
-#: data/io.elementary.calculator.appdata.xml.in:49
+#: data/calculator.metainfo.xml.in:87
 msgid "Focus the main text entry on startup"
 msgstr "Po spuštění zaměřit hlavní textový vstup"
 
-#: data/io.elementary.calculator.appdata.xml.in:50
+#: data/calculator.metainfo.xml.in:88
 msgid "Show the correct window title in Multitasking View"
 msgstr "Zobrazení správného titulku okna ve víceúlohovém zobrazení"
 
-#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/calculator.metainfo.xml.in:90
 msgid "Added 'New Window' Desktop Action"
 msgstr "Přidána akce plochy „Nové okno“"
 
-#: data/io.elementary.calculator.appdata.xml.in:58
-#: data/io.elementary.calculator.appdata.xml.in:88
+#: data/calculator.metainfo.xml.in:97
 msgid "New features:"
 msgstr "Nové funkce:"
 
-#: data/io.elementary.calculator.appdata.xml.in:60
+#: data/calculator.metainfo.xml.in:99
 msgid "Add a \"Clear History\" button to the history dialog"
 msgstr "Přidáno tlačítko „Smazat historii“ do dialogu historie"
-
-#: data/io.elementary.calculator.appdata.xml.in:80
-msgid "Fixed an issue with multiple windows"
-msgstr "Opraven problém s vícero okny"
-
-#: data/io.elementary.calculator.appdata.xml.in:81
-msgid "More informative copy in history dialog"
-msgstr "Informativnější kopie v dialogu historie"
-
-#: data/io.elementary.calculator.appdata.xml.in:90
-msgid "Add log and inverse trigonometric functions"
-msgstr "Přidány logaritmické a inverzí trigonometrické funkce"
-
-#: data/io.elementary.calculator.appdata.xml.in:92
-msgid "Other updates:"
-msgstr "Ostatní aktualizace:"
-
-#: data/io.elementary.calculator.appdata.xml.in:94
-msgid "Fix an issue with negative decimals without leading digits"
-msgstr "Opraven problém se zápornými desetinami bez úvodních číslic"
-
-#: data/io.elementary.calculator.appdata.xml.in:95
-msgid "More efficient state saving"
-msgstr "Efektivnější ukládání stavu"
-
-#: data/io.elementary.calculator.appdata.xml.in:96
-msgid "Use slim titlebar"
-msgstr "Použita tenčí lišta titulku"
-
-#: data/io.elementary.calculator.appdata.xml.in:105
-msgid "Fix inserting multi-byte characters"
-msgstr "Opraveno vkládání vícebajtových znaků"
-
-#: data/io.elementary.calculator.appdata.xml.in:113
-msgid "Fix missing icon for Ukrainian"
-msgstr "Opravena chybějící ikona pro ukrajinštinu"
-
-#: data/io.elementary.calculator.appdata.xml.in:121
-msgid "Animate Infobar when hiding and showing"
-msgstr "Animace pro zobrazení a schování panelu informací"
-
-#: data/io.elementary.calculator.appdata.xml.in:122
-msgid "Fix selection replace"
-msgstr "Opraveno nahrazení výběru"
-
-#: data/io.elementary.calculator.appdata.xml.in:123
-msgid "Improved decimal separator localization"
-msgstr "Vylepšena lokalizace desetinného oddělovače"
-
-#: data/io.elementary.calculator.appdata.xml.in:161
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
@@ -166,6 +104,42 @@ msgstr "Výpočty;Matematika;Aritmetika;Vědecká;"
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
 msgstr "Nové okno"
+
+#~ msgid "Fixed an issue with multiple windows"
+#~ msgstr "Opraven problém s vícero okny"
+
+#~ msgid "More informative copy in history dialog"
+#~ msgstr "Informativnější kopie v dialogu historie"
+
+#~ msgid "Add log and inverse trigonometric functions"
+#~ msgstr "Přidány logaritmické a inverzí trigonometrické funkce"
+
+#~ msgid "Other updates:"
+#~ msgstr "Ostatní aktualizace:"
+
+#~ msgid "Fix an issue with negative decimals without leading digits"
+#~ msgstr "Opraven problém se zápornými desetinami bez úvodních číslic"
+
+#~ msgid "More efficient state saving"
+#~ msgstr "Efektivnější ukládání stavu"
+
+#~ msgid "Use slim titlebar"
+#~ msgstr "Použita tenčí lišta titulku"
+
+#~ msgid "Fix inserting multi-byte characters"
+#~ msgstr "Opraveno vkládání vícebajtových znaků"
+
+#~ msgid "Fix missing icon for Ukrainian"
+#~ msgstr "Opravena chybějící ikona pro ukrajinštinu"
+
+#~ msgid "Animate Infobar when hiding and showing"
+#~ msgstr "Animace pro zobrazení a schování panelu informací"
+
+#~ msgid "Fix selection replace"
+#~ msgstr "Opraveno nahrazení výběru"
+
+#~ msgid "Improved decimal separator localization"
+#~ msgstr "Vylepšena lokalizace desetinného oddělovače"
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"
