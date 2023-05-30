@@ -48,6 +48,21 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="2.0.2" date="2023-05-30" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Always use elementary styles and icons, even on other platforms</li>
+          <li>Always paste text with the keyboard shortcut "Ctrl + V"</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/calculator/issues/218">Ctrl+C should copy display contents to clipboard</issue>
+        <issue url="https://github.com/elementary/calculator/issues/236">There is an empty space</issue>
+      </issues>
+    </release>
+
     <release version="2.0.1" date="2022-12-07" urgency="medium">
       <description>
         <p>Minor updates:</p>
@@ -92,19 +107,7 @@
       </description>
     </release>
 
-    <release version="1.7.0" date="2021-08-09" urgency="medium">
-      <description>
-        <p>New features:</p>
-        <ul>
-          <li>Add a "Clear History" button to the history dialog</li>
-        </ul>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-
+    <release version="1.7.0" date="2021-08-09" urgency="medium" />
     <release version="1.6.2" date="2021-07-19" urgency="medium" />
     <release version="1.6.1" date="2021-05-14" urgency="medium" />
     <release version="1.6.0" date="2020-12-23" urgency="medium" />
