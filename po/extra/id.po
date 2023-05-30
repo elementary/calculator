@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-07 17:55+0000\n"
-"PO-Revision-Date: 2020-12-23 20:16+0000\n"
-"Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
+"PO-Revision-Date: 2023-05-17 20:06+0000\n"
+"Last-Translator: Muhammad Dholifun Nafsi <muhammad_dholifun@protonmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/calculator/"
 "extra/id/>\n"
 "Language: id\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/io.elementary.calculator.appdata.xml.in:8
@@ -51,13 +51,11 @@ msgstr "Pembaruan kecil:"
 
 #: data/io.elementary.calculator.appdata.xml.in:19
 msgid "Redesigned app icon"
-msgstr ""
+msgstr "Ikon aplikasi yang didesain ulang"
 
 #: data/io.elementary.calculator.appdata.xml.in:20
-#, fuzzy
-#| msgid "Use slim titlebar"
 msgid "Flat titlebar"
-msgstr "Gunakan bilah judul ramping"
+msgstr "Bilah judul Datar"
 
 #: data/io.elementary.calculator.appdata.xml.in:21
 #: data/io.elementary.calculator.appdata.xml.in:31
@@ -71,31 +69,31 @@ msgstr "Gunakan bilah judul ramping"
 #: data/io.elementary.calculator.appdata.xml.in:114
 #: data/io.elementary.calculator.appdata.xml.in:124
 msgid "Updated translations"
-msgstr "Terjemahan terbaru"
+msgstr "Terjemahan diperbarui"
 
 #: data/io.elementary.calculator.appdata.xml.in:30
 msgid "Update for OS 7 and Gtk 4"
-msgstr ""
+msgstr "Pembaruan untuk OS 7 dan Gtk 4"
 
 #: data/io.elementary.calculator.appdata.xml.in:39
 msgid "Update to elementary 6.1 runtime"
-msgstr ""
+msgstr "Perbarui ke runtime elementary 6.1"
 
 #: data/io.elementary.calculator.appdata.xml.in:48
 msgid "Showing advanced controls only affects the focused window"
-msgstr ""
+msgstr "Menampilkan kontrol lanjutan hanya memengaruhi jendela yang difokuskan"
 
 #: data/io.elementary.calculator.appdata.xml.in:49
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "Fokuskan entri teks utama saat memulai"
 
 #: data/io.elementary.calculator.appdata.xml.in:50
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "Tampilkan judul jendela yang benar di Tampilan Multitasking"
 
 #: data/io.elementary.calculator.appdata.xml.in:52
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "Menambahkan Tindakan Desktop 'Jendela Baru'"
 
 #: data/io.elementary.calculator.appdata.xml.in:58
 #: data/io.elementary.calculator.appdata.xml.in:88
@@ -104,33 +102,31 @@ msgstr "Fitur baru:"
 
 #: data/io.elementary.calculator.appdata.xml.in:60
 msgid "Add a \"Clear History\" button to the history dialog"
-msgstr ""
+msgstr "Tambahkan tombol \"Hapus Riwayat\" ke dialog riwayat"
 
 #: data/io.elementary.calculator.appdata.xml.in:80
 msgid "Fixed an issue with multiple windows"
-msgstr ""
+msgstr "Memperbaiki masalah dengan banyak jendela"
 
 #: data/io.elementary.calculator.appdata.xml.in:81
 msgid "More informative copy in history dialog"
-msgstr ""
+msgstr "Salinan lebih informatif dalam dialog riwayat"
 
 #: data/io.elementary.calculator.appdata.xml.in:90
 msgid "Add log and inverse trigonometric functions"
 msgstr "Penambahan log dan fungsi trigonometri terbalik"
 
 #: data/io.elementary.calculator.appdata.xml.in:92
-#, fuzzy
-#| msgid "Minor updates:"
 msgid "Other updates:"
-msgstr "Pembaruan kecil:"
+msgstr "Pembaruan lainnya:"
 
 #: data/io.elementary.calculator.appdata.xml.in:94
 msgid "Fix an issue with negative decimals without leading digits"
-msgstr ""
+msgstr "Memperbaiki masalah dengan desimal negatif tanpa digit awal"
 
 #: data/io.elementary.calculator.appdata.xml.in:95
 msgid "More efficient state saving"
-msgstr ""
+msgstr "Penghematan keadaan yang lebih efisien"
 
 #: data/io.elementary.calculator.appdata.xml.in:96
 msgid "Use slim titlebar"
@@ -167,7 +163,7 @@ msgstr "Perhitungan;Matematika;Aritmatika;Ilmiah;"
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "Jendela baru"
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"
