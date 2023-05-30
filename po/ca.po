@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 17:55+0000\n"
+"POT-Creation-Date: 2023-05-30 17:54+0000\n"
 "PO-Revision-Date: 2022-11-28 14:25+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/calculator/"
@@ -15,151 +15,151 @@ msgstr ""
 "X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: src/MainWindow.vala:72
+#: src/MainWindow.vala:85
 msgid "Calculator"
 msgstr "Calculadora"
 
-#: src/MainWindow.vala:82 src/MainWindow.vala:741
+#: src/MainWindow.vala:95 src/MainWindow.vala:783
 msgid "Show extended functionality"
 msgstr "Mostra més funcions"
 
-#: src/MainWindow.vala:88 src/HistoryDialog.vala:40
+#: src/MainWindow.vala:101 src/HistoryDialog.vala:40
 msgid "History"
 msgstr "Historial"
 
-#: src/MainWindow.vala:109
+#: src/MainWindow.vala:123
 msgid "Calculate Result"
 msgstr "Calcula el resultat"
 
-#: src/MainWindow.vala:116
+#: src/MainWindow.vala:130
 msgid "Insert last result"
 msgstr "Insereix l’últim resultat"
 
-#: src/MainWindow.vala:120
+#: src/MainWindow.vala:134
 msgid "Backspace"
 msgstr "Retrocés"
 
-#: src/MainWindow.vala:128
+#: src/MainWindow.vala:142
 msgid "Clear entry"
 msgstr "Neteja l'entrada"
 
-#: src/MainWindow.vala:135
+#: src/MainWindow.vala:149
 msgid "Add"
 msgstr "Suma"
 
-#: src/MainWindow.vala:142
+#: src/MainWindow.vala:156
 msgid "Subtract"
 msgstr "Resta"
 
-#: src/MainWindow.vala:149
+#: src/MainWindow.vala:163
 msgid "Multiply"
 msgstr "Multiplica"
 
-#: src/MainWindow.vala:156
+#: src/MainWindow.vala:170
 msgid "Divide"
 msgstr "Divideix"
 
-#: src/MainWindow.vala:173
+#: src/MainWindow.vala:187
 msgid "Percentage"
 msgstr "Percentatge"
 
-#: src/MainWindow.vala:255
+#: src/MainWindow.vala:269
 msgid "Set memory value"
 msgstr "Desa el valor a la memòria"
 
-#: src/MainWindow.vala:260
+#: src/MainWindow.vala:274
 msgid "Recall value from memory"
 msgstr "Recupera el valor de la memòria"
 
-#: src/MainWindow.vala:264
+#: src/MainWindow.vala:278
 msgid "Add to stored value"
 msgstr "Suma al valor de la memòria"
 
-#: src/MainWindow.vala:268
+#: src/MainWindow.vala:282
 msgid "Subtract from stored value"
 msgstr "Resta al valor de la memòria"
 
-#: src/MainWindow.vala:273
+#: src/MainWindow.vala:287
 msgid "Clear memory"
 msgstr "Esborra la memòria"
 
-#: src/MainWindow.vala:278
+#: src/MainWindow.vala:292
 msgid "Grand Total"
 msgstr "Total"
 
-#: src/MainWindow.vala:284
+#: src/MainWindow.vala:298
 msgid "Start Group"
 msgstr "Inicia el grup"
 
-#: src/MainWindow.vala:290
+#: src/MainWindow.vala:304
 msgid "End Group"
 msgstr "Acaba el grup"
 
-#: src/MainWindow.vala:296
+#: src/MainWindow.vala:310
 msgid "Exponent"
 msgstr "Exponencial"
 
-#: src/MainWindow.vala:302
+#: src/MainWindow.vala:316
 msgid "Root"
 msgstr "Arrel"
 
-#: src/MainWindow.vala:308
+#: src/MainWindow.vala:322
 msgid "Sine"
 msgstr "Sinus"
 
-#: src/MainWindow.vala:314
+#: src/MainWindow.vala:328
 msgid "Hyperbolic Sine"
 msgstr "Sinus hiperbòlic"
 
-#: src/MainWindow.vala:320
+#: src/MainWindow.vala:334
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: src/MainWindow.vala:326
+#: src/MainWindow.vala:340
 msgid "Hyperbolic Cosine"
 msgstr "Cosinus hiperbòlic"
 
-#: src/MainWindow.vala:332
+#: src/MainWindow.vala:346
 msgid "Tangent"
 msgstr "Tangent"
 
-#: src/MainWindow.vala:338
+#: src/MainWindow.vala:352
 msgid "Hyperbolic Tangent"
 msgstr "Tangent hiperbòlica"
 
-#: src/MainWindow.vala:344
+#: src/MainWindow.vala:358
 msgid "Pi"
 msgstr "Pi"
 
-#: src/MainWindow.vala:350
+#: src/MainWindow.vala:364
 msgid "Euler's Number"
 msgstr "Número d'Euler"
 
-#: src/MainWindow.vala:356
+#: src/MainWindow.vala:370
 msgid "Logarithm Base 10"
 msgstr "Logaritme de base 10"
 
-#: src/MainWindow.vala:362
+#: src/MainWindow.vala:376
 msgid "Natural Logarithm"
 msgstr "Logaritme natural"
 
-#: src/MainWindow.vala:368
+#: src/MainWindow.vala:382
 msgid "Inverse Sine"
 msgstr "Sinus invers"
 
-#: src/MainWindow.vala:374
+#: src/MainWindow.vala:388
 msgid "Inverse Cosine"
 msgstr "Cosinus invers"
 
-#: src/MainWindow.vala:380
+#: src/MainWindow.vala:394
 msgid "Inverse Tangent"
 msgstr "Tangent inversa"
 
-#: src/MainWindow.vala:384
+#: src/MainWindow.vala:398
 msgid "Reciprocal"
 msgstr "Recíproc"
 
-#: src/MainWindow.vala:736
+#: src/MainWindow.vala:778
 msgid "Hide extended functionality"
 msgstr "Amaga la funcionalitat ampliada"
 
