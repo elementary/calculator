@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 17:55+0000\n"
+"POT-Creation-Date: 2023-05-30 17:54+0000\n"
 "PO-Revision-Date: 2021-11-05 10:39+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/calculator/extra/"
@@ -20,17 +20,17 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: data/io.elementary.calculator.appdata.xml.in:8
+#: data/calculator.metainfo.xml.in:10
 #: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
 msgstr "Rechner"
 
-#: data/io.elementary.calculator.appdata.xml.in:9
+#: data/calculator.metainfo.xml.in:11
 #: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
 msgstr "Einfache Gleichungen lösen"
 
-#: data/io.elementary.calculator.appdata.xml.in:11
+#: data/calculator.metainfo.xml.in:13
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
@@ -39,127 +39,65 @@ msgstr ""
 "grundlegenden und einige wissenschaftliche Rechenoperationen, einschließlich "
 "trigonometrischer Funktionen wie Sinus, Kosinus und Tangens."
 
-#: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:28
-#: data/io.elementary.calculator.appdata.xml.in:37
-#: data/io.elementary.calculator.appdata.xml.in:46
-#: data/io.elementary.calculator.appdata.xml.in:62
-#: data/io.elementary.calculator.appdata.xml.in:70
-#: data/io.elementary.calculator.appdata.xml.in:78
-#: data/io.elementary.calculator.appdata.xml.in:103
+#: data/calculator.metainfo.xml.in:46
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/calculator.metainfo.xml.in:53 data/calculator.metainfo.xml.in:64
+#: data/calculator.metainfo.xml.in:74 data/calculator.metainfo.xml.in:84
+#: data/calculator.metainfo.xml.in:101
 msgid "Minor updates:"
 msgstr "Weitere Aktualisierungen:"
 
-#: data/io.elementary.calculator.appdata.xml.in:19
+#: data/calculator.metainfo.xml.in:55
 msgid "Redesigned app icon"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:20
+#: data/calculator.metainfo.xml.in:56
 #, fuzzy
 #| msgid "Use slim titlebar"
 msgid "Flat titlebar"
 msgstr "Verwendung einer schmalen Titelleiste"
 
-#: data/io.elementary.calculator.appdata.xml.in:21
-#: data/io.elementary.calculator.appdata.xml.in:31
-#: data/io.elementary.calculator.appdata.xml.in:40
-#: data/io.elementary.calculator.appdata.xml.in:51
-#: data/io.elementary.calculator.appdata.xml.in:64
-#: data/io.elementary.calculator.appdata.xml.in:72
-#: data/io.elementary.calculator.appdata.xml.in:82
-#: data/io.elementary.calculator.appdata.xml.in:97
-#: data/io.elementary.calculator.appdata.xml.in:106
-#: data/io.elementary.calculator.appdata.xml.in:114
-#: data/io.elementary.calculator.appdata.xml.in:124
+#: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:67
+#: data/calculator.metainfo.xml.in:77 data/calculator.metainfo.xml.in:89
+#: data/calculator.metainfo.xml.in:103
 msgid "Updated translations"
 msgstr "Aktualisierte Übersetzungen"
 
-#: data/io.elementary.calculator.appdata.xml.in:30
+#: data/calculator.metainfo.xml.in:66
 msgid "Update for OS 7 and Gtk 4"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:39
+#: data/calculator.metainfo.xml.in:76
 msgid "Update to elementary 6.1 runtime"
 msgstr ""
 
-#: data/io.elementary.calculator.appdata.xml.in:48
+#: data/calculator.metainfo.xml.in:86
 msgid "Showing advanced controls only affects the focused window"
 msgstr ""
 "Das Anzeigen erweiterter Schaltflächen betrifft nun nur noch das ausgewählte "
 "Fenster"
 
-#: data/io.elementary.calculator.appdata.xml.in:49
+#: data/calculator.metainfo.xml.in:87
 msgid "Focus the main text entry on startup"
 msgstr "Den Haupt-Texteintrag beim Start auswählen"
 
-#: data/io.elementary.calculator.appdata.xml.in:50
+#: data/calculator.metainfo.xml.in:88
 msgid "Show the correct window title in Multitasking View"
 msgstr "Zeigt den korrekten Fenstertitel in der Multitasking-Ansicht an"
 
-#: data/io.elementary.calculator.appdata.xml.in:52
+#: data/calculator.metainfo.xml.in:90
 msgid "Added 'New Window' Desktop Action"
 msgstr "\"Neues Fenster\" als Schreibtischaktion hinzugefügt"
 
-#: data/io.elementary.calculator.appdata.xml.in:58
-#: data/io.elementary.calculator.appdata.xml.in:88
+#: data/calculator.metainfo.xml.in:97
 msgid "New features:"
 msgstr "Neue Funktionen:"
 
-#: data/io.elementary.calculator.appdata.xml.in:60
+#: data/calculator.metainfo.xml.in:99
 msgid "Add a \"Clear History\" button to the history dialog"
 msgstr "\"Verlauf löschen\"-Button im Verlaufsdialog hinzugefügt"
-
-#: data/io.elementary.calculator.appdata.xml.in:80
-msgid "Fixed an issue with multiple windows"
-msgstr "Ein Fehler mit mehreren geöffneten Fenstern wurde korrigiert"
-
-#: data/io.elementary.calculator.appdata.xml.in:81
-msgid "More informative copy in history dialog"
-msgstr "Weitere Informationen im Verlaufsdialog"
-
-#: data/io.elementary.calculator.appdata.xml.in:90
-msgid "Add log and inverse trigonometric functions"
-msgstr "Logarithmische Funktionen und Arkusfunktionen hinzufügt"
-
-#: data/io.elementary.calculator.appdata.xml.in:92
-msgid "Other updates:"
-msgstr "Weitere Aktualisierungen:"
-
-#: data/io.elementary.calculator.appdata.xml.in:94
-msgid "Fix an issue with negative decimals without leading digits"
-msgstr "Fehlerbehebung: negative Dezimalzahl ohne führende Ziffer"
-
-#: data/io.elementary.calculator.appdata.xml.in:95
-msgid "More efficient state saving"
-msgstr "Effizientere Statussicherung"
-
-#: data/io.elementary.calculator.appdata.xml.in:96
-msgid "Use slim titlebar"
-msgstr "Verwendung einer schmalen Titelleiste"
-
-#: data/io.elementary.calculator.appdata.xml.in:105
-msgid "Fix inserting multi-byte characters"
-msgstr "Korrektur beim Einfügen von Multi-Byte-Zeichen"
-
-#: data/io.elementary.calculator.appdata.xml.in:113
-msgid "Fix missing icon for Ukrainian"
-msgstr "Fehlendes Icon für Ukrainisch korrigiert"
-
-#: data/io.elementary.calculator.appdata.xml.in:121
-msgid "Animate Infobar when hiding and showing"
-msgstr "Animierte Informationsleiste beim Verstecken und Wiederherstellen"
-
-#: data/io.elementary.calculator.appdata.xml.in:122
-msgid "Fix selection replace"
-msgstr "Korrektur von Markierung ersetzen"
-
-#: data/io.elementary.calculator.appdata.xml.in:123
-msgid "Improved decimal separator localization"
-msgstr "verbesserte Lokalisierung für Dezimaltrenner"
-
-#: data/io.elementary.calculator.appdata.xml.in:161
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
@@ -169,6 +107,42 @@ msgstr "Rechner;Taschenrechner;Mathematik;Arithmetik;Wissenschaftlich;"
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
 msgstr "Neues Fenster"
+
+#~ msgid "Fixed an issue with multiple windows"
+#~ msgstr "Ein Fehler mit mehreren geöffneten Fenstern wurde korrigiert"
+
+#~ msgid "More informative copy in history dialog"
+#~ msgstr "Weitere Informationen im Verlaufsdialog"
+
+#~ msgid "Add log and inverse trigonometric functions"
+#~ msgstr "Logarithmische Funktionen und Arkusfunktionen hinzufügt"
+
+#~ msgid "Other updates:"
+#~ msgstr "Weitere Aktualisierungen:"
+
+#~ msgid "Fix an issue with negative decimals without leading digits"
+#~ msgstr "Fehlerbehebung: negative Dezimalzahl ohne führende Ziffer"
+
+#~ msgid "More efficient state saving"
+#~ msgstr "Effizientere Statussicherung"
+
+#~ msgid "Use slim titlebar"
+#~ msgstr "Verwendung einer schmalen Titelleiste"
+
+#~ msgid "Fix inserting multi-byte characters"
+#~ msgstr "Korrektur beim Einfügen von Multi-Byte-Zeichen"
+
+#~ msgid "Fix missing icon for Ukrainian"
+#~ msgstr "Fehlendes Icon für Ukrainisch korrigiert"
+
+#~ msgid "Animate Infobar when hiding and showing"
+#~ msgstr "Animierte Informationsleiste beim Verstecken und Wiederherstellen"
+
+#~ msgid "Fix selection replace"
+#~ msgstr "Korrektur von Markierung ersetzen"
+
+#~ msgid "Improved decimal separator localization"
+#~ msgstr "verbesserte Lokalisierung für Dezimaltrenner"
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"

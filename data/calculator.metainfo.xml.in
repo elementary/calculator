@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2015–2023 elementary, Inc. <contact@elementary.io> -->
+<component type="desktop-application">
+  <id>io.elementary.calculator</id>
+  <launchable type="desktop-id">io.elementary.calculator.desktop</launchable>
+  <translation type="gettext">io.elementary.calculator</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+
+  <name>Calculator</name>
+  <summary>Solve simple equations</summary>
+  <description>
+    <p>A simple calculator for everyday use. It supports basic and some scientific calculations including trigonometry functions, sin, cos, and tan.</p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/calculator/master/data/screenshot@2x.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/calculator/master/data/screenshot-extended@2x.png</image>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1" />
+
+  <provides>
+    <binary>io.elementary.calculator</binary>
+  </provides>
+
+  <recommends>
+    <display_length compare="ge">598</display_length>
+  </recommends>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+
+  <url type="bugtracker">https://github.com/elementary/calculator/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/calculator/discussions</url>
+  <url type="homepage">https://elementary.io/</url>
+  <url type="translate">https://l10n.elementary.io/projects/calculator</url>
+
+  <developer_name>elementary, Inc.</developer_name>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+
+  <releases>
+    <release version="2.0.2" date="2023-05-30" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Always use elementary styles and icons, even on other platforms</li>
+          <li>Always paste text with the keyboard shortcut "Ctrl + V"</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/calculator/issues/218">Ctrl+C should copy display contents to clipboard</issue>
+        <issue url="https://github.com/elementary/calculator/issues/236">There is an empty space</issue>
+      </issues>
+    </release>
+
+    <release version="2.0.1" date="2022-12-07" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Redesigned app icon</li>
+          <li>Flat titlebar</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.0.0" date="2022-05-09" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Update for OS 7 and Gtk 4</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="1.7.2" date="2021-12-13" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Update to elementary 6.1 runtime</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="1.7.1" date="2021-10-26" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Showing advanced controls only affects the focused window</li>
+          <li>Focus the main text entry on startup</li>
+          <li>Show the correct window title in Multitasking View</li>
+          <li>Updated translations</li>
+          <li>Added 'New Window' Desktop Action</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="1.7.0" date="2021-08-09" urgency="medium" />
+    <release version="1.6.2" date="2021-07-19" urgency="medium" />
+    <release version="1.6.1" date="2021-05-14" urgency="medium" />
+    <release version="1.6.0" date="2020-12-23" urgency="medium" />
+    <release version="1.5.5" date="2020-04-01" urgency="medium" />
+    <release version="1.5.4" date="2019-11-24" urgency="medium" />
+    <release version="1.5.3" date="2019-11-15" urgency="medium" />
+  </releases>
+</component>

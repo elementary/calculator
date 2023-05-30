@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 17:55+0000\n"
+"POT-Creation-Date: 2023-05-30 17:54+0000\n"
 "PO-Revision-Date: 2018-10-11 13:16+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/calculator/"
@@ -20,17 +20,17 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
-#: data/io.elementary.calculator.appdata.xml.in:8
+#: data/calculator.metainfo.xml.in:10
 #: data/io.elementary.calculator.desktop.in:3
 msgid "Calculator"
 msgstr "गणक"
 
-#: data/io.elementary.calculator.appdata.xml.in:9
+#: data/calculator.metainfo.xml.in:11
 #: data/io.elementary.calculator.desktop.in:4
 msgid "Solve simple equations"
 msgstr "साधारण समीकरण को हल करें"
 
-#: data/io.elementary.calculator.appdata.xml.in:11
+#: data/calculator.metainfo.xml.in:13
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
@@ -38,124 +38,62 @@ msgstr ""
 "दैनिक इस्तेमाल के लिए एक साधारण कैलकुलेटर। यह बुनियादी और कुछ वैज्ञानिक गणनाओं का समर्थन "
 "करता है जिसमें त्रिकोणमिति फ़ंक्शंस, sin, cos, tan शामिल हैं।"
 
-#: data/io.elementary.calculator.appdata.xml.in:17
-#: data/io.elementary.calculator.appdata.xml.in:28
-#: data/io.elementary.calculator.appdata.xml.in:37
-#: data/io.elementary.calculator.appdata.xml.in:46
-#: data/io.elementary.calculator.appdata.xml.in:62
-#: data/io.elementary.calculator.appdata.xml.in:70
-#: data/io.elementary.calculator.appdata.xml.in:78
-#: data/io.elementary.calculator.appdata.xml.in:103
-msgid "Minor updates:"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:19
-msgid "Redesigned app icon"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:20
-msgid "Flat titlebar"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:21
-#: data/io.elementary.calculator.appdata.xml.in:31
-#: data/io.elementary.calculator.appdata.xml.in:40
-#: data/io.elementary.calculator.appdata.xml.in:51
-#: data/io.elementary.calculator.appdata.xml.in:64
-#: data/io.elementary.calculator.appdata.xml.in:72
-#: data/io.elementary.calculator.appdata.xml.in:82
-#: data/io.elementary.calculator.appdata.xml.in:97
-#: data/io.elementary.calculator.appdata.xml.in:106
-#: data/io.elementary.calculator.appdata.xml.in:114
-#: data/io.elementary.calculator.appdata.xml.in:124
-msgid "Updated translations"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:30
-msgid "Update for OS 7 and Gtk 4"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:39
-msgid "Update to elementary 6.1 runtime"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:48
-msgid "Showing advanced controls only affects the focused window"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:49
-msgid "Focus the main text entry on startup"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:50
-msgid "Show the correct window title in Multitasking View"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:52
-msgid "Added 'New Window' Desktop Action"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:58
-#: data/io.elementary.calculator.appdata.xml.in:88
-msgid "New features:"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:60
-msgid "Add a \"Clear History\" button to the history dialog"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:80
-msgid "Fixed an issue with multiple windows"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:81
-msgid "More informative copy in history dialog"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:90
-msgid "Add log and inverse trigonometric functions"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:92
-msgid "Other updates:"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:94
-msgid "Fix an issue with negative decimals without leading digits"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:95
-msgid "More efficient state saving"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:96
-msgid "Use slim titlebar"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:105
-msgid "Fix inserting multi-byte characters"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:113
-msgid "Fix missing icon for Ukrainian"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:121
-msgid "Animate Infobar when hiding and showing"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:122
-msgid "Fix selection replace"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:123
-msgid "Improved decimal separator localization"
-msgstr ""
-
-#: data/io.elementary.calculator.appdata.xml.in:161
+#: data/calculator.metainfo.xml.in:46
 #, fuzzy
 msgid "elementary, Inc."
 msgstr "एलीमेंट्री एलएलसी."
+
+#: data/calculator.metainfo.xml.in:53 data/calculator.metainfo.xml.in:64
+#: data/calculator.metainfo.xml.in:74 data/calculator.metainfo.xml.in:84
+#: data/calculator.metainfo.xml.in:101
+msgid "Minor updates:"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:55
+msgid "Redesigned app icon"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:56
+msgid "Flat titlebar"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:67
+#: data/calculator.metainfo.xml.in:77 data/calculator.metainfo.xml.in:89
+#: data/calculator.metainfo.xml.in:103
+msgid "Updated translations"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:66
+msgid "Update for OS 7 and Gtk 4"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:76
+msgid "Update to elementary 6.1 runtime"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:86
+msgid "Showing advanced controls only affects the focused window"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:87
+msgid "Focus the main text entry on startup"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:88
+msgid "Show the correct window title in Multitasking View"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:90
+msgid "Added 'New Window' Desktop Action"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:97
+msgid "New features:"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:99
+msgid "Add a \"Clear History\" button to the history dialog"
+msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
