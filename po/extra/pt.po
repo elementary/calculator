@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 17:54+0000\n"
+"POT-Creation-Date: 2023-05-30 18:04+0000\n"
 "PO-Revision-Date: 2022-12-21 13:25+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/calculator/"
@@ -43,57 +43,57 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/calculator.metainfo.xml.in:53 data/calculator.metainfo.xml.in:64
-#: data/calculator.metainfo.xml.in:74 data/calculator.metainfo.xml.in:84
-#: data/calculator.metainfo.xml.in:101
+#: data/calculator.metainfo.xml.in:53 data/calculator.metainfo.xml.in:68
+#: data/calculator.metainfo.xml.in:79 data/calculator.metainfo.xml.in:89
+#: data/calculator.metainfo.xml.in:99
 msgid "Minor updates:"
 msgstr "Pequenas actualizações:"
 
 #: data/calculator.metainfo.xml.in:55
-msgid "Redesigned app icon"
-msgstr "Ícone da aplicação redesenhado"
+msgid "Always use elementary styles and icons, even on other platforms"
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:56
-msgid "Flat titlebar"
-msgstr "Barra de título plana"
+msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
+msgstr ""
 
-#: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:67
-#: data/calculator.metainfo.xml.in:77 data/calculator.metainfo.xml.in:89
-#: data/calculator.metainfo.xml.in:103
+#: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:72
+#: data/calculator.metainfo.xml.in:82 data/calculator.metainfo.xml.in:92
+#: data/calculator.metainfo.xml.in:104
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/calculator.metainfo.xml.in:66
+#: data/calculator.metainfo.xml.in:70
+msgid "Redesigned app icon"
+msgstr "Ícone da aplicação redesenhado"
+
+#: data/calculator.metainfo.xml.in:71
+msgid "Flat titlebar"
+msgstr "Barra de título plana"
+
+#: data/calculator.metainfo.xml.in:81
 msgid "Update for OS 7 and Gtk 4"
 msgstr "Atualização para o OS 7 e Gtk 4"
 
-#: data/calculator.metainfo.xml.in:76
+#: data/calculator.metainfo.xml.in:91
 msgid "Update to elementary 6.1 runtime"
 msgstr "Atualizar para o elementary runtime 6.1"
 
-#: data/calculator.metainfo.xml.in:86
+#: data/calculator.metainfo.xml.in:101
 msgid "Showing advanced controls only affects the focused window"
 msgstr "Mostrar controlos avançados apenas afeta a janela focada"
 
-#: data/calculator.metainfo.xml.in:87
+#: data/calculator.metainfo.xml.in:102
 msgid "Focus the main text entry on startup"
 msgstr "Focar a entrada de texto principal no arranque"
 
-#: data/calculator.metainfo.xml.in:88
+#: data/calculator.metainfo.xml.in:103
 msgid "Show the correct window title in Multitasking View"
 msgstr "Mostra o título correto da janela em Vista de Tarefas"
 
-#: data/calculator.metainfo.xml.in:90
+#: data/calculator.metainfo.xml.in:105
 msgid "Added 'New Window' Desktop Action"
 msgstr "Adicionada a ação de ambiente de trabalho 'Nova janela'"
-
-#: data/calculator.metainfo.xml.in:97
-msgid "New features:"
-msgstr "Novas funcionalidades:"
-
-#: data/calculator.metainfo.xml.in:99
-msgid "Add a \"Clear History\" button to the history dialog"
-msgstr "Adiciona um botão \"Limpar histórico\" à janela do histórico"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
@@ -103,6 +103,12 @@ msgstr "Cálculo;Matemática;Aritmética;Científico;"
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
 msgstr "Nova janela"
+
+#~ msgid "New features:"
+#~ msgstr "Novas funcionalidades:"
+
+#~ msgid "Add a \"Clear History\" button to the history dialog"
+#~ msgstr "Adiciona um botão \"Limpar histórico\" à janela do histórico"
 
 #~ msgid "Fixed an issue with multiple windows"
 #~ msgstr "Corrigido um problema com múltiplas janelas"
