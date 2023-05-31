@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 17:54+0000\n"
+"POT-Creation-Date: 2023-05-30 18:04+0000\n"
 "PO-Revision-Date: 2022-12-26 20:25+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
@@ -42,59 +42,59 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/calculator.metainfo.xml.in:53 data/calculator.metainfo.xml.in:64
-#: data/calculator.metainfo.xml.in:74 data/calculator.metainfo.xml.in:84
-#: data/calculator.metainfo.xml.in:101
+#: data/calculator.metainfo.xml.in:53 data/calculator.metainfo.xml.in:68
+#: data/calculator.metainfo.xml.in:79 data/calculator.metainfo.xml.in:89
+#: data/calculator.metainfo.xml.in:99
 msgid "Minor updates:"
 msgstr "そのほかのアップデート:"
 
 #: data/calculator.metainfo.xml.in:55
-msgid "Redesigned app icon"
-msgstr "アプリアイコンを再デザイン"
+msgid "Always use elementary styles and icons, even on other platforms"
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:56
-msgid "Flat titlebar"
-msgstr "タイトルバーが平らになるように修正"
+msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
+msgstr ""
 
-#: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:67
-#: data/calculator.metainfo.xml.in:77 data/calculator.metainfo.xml.in:89
-#: data/calculator.metainfo.xml.in:103
+#: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:72
+#: data/calculator.metainfo.xml.in:82 data/calculator.metainfo.xml.in:92
+#: data/calculator.metainfo.xml.in:104
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/calculator.metainfo.xml.in:66
+#: data/calculator.metainfo.xml.in:70
+msgid "Redesigned app icon"
+msgstr "アプリアイコンを再デザイン"
+
+#: data/calculator.metainfo.xml.in:71
+msgid "Flat titlebar"
+msgstr "タイトルバーが平らになるように修正"
+
+#: data/calculator.metainfo.xml.in:81
 msgid "Update for OS 7 and Gtk 4"
 msgstr "elementary OS 7 と Gtk 4 のためのアップデート"
 
-#: data/calculator.metainfo.xml.in:76
+#: data/calculator.metainfo.xml.in:91
 msgid "Update to elementary 6.1 runtime"
 msgstr "elementary ランタイムのバージョンを 6.1 にアップデート"
 
-#: data/calculator.metainfo.xml.in:86
+#: data/calculator.metainfo.xml.in:101
 msgid "Showing advanced controls only affects the focused window"
 msgstr ""
 "高度なオプションを表示する場合、現在フォーカスされているウィンドウにのみ適用"
 "されるように修正"
 
-#: data/calculator.metainfo.xml.in:87
+#: data/calculator.metainfo.xml.in:102
 msgid "Focus the main text entry on startup"
 msgstr "起動時にテキストエントリーにフォーカスするように修正"
 
-#: data/calculator.metainfo.xml.in:88
+#: data/calculator.metainfo.xml.in:103
 msgid "Show the correct window title in Multitasking View"
 msgstr "“マルチタスク画面”で適切なウィンドウタイトルを表示するように修正"
 
-#: data/calculator.metainfo.xml.in:90
+#: data/calculator.metainfo.xml.in:105
 msgid "Added 'New Window' Desktop Action"
 msgstr "“新しいウィンドウ”デスクトップアクションを追加"
-
-#: data/calculator.metainfo.xml.in:97
-msgid "New features:"
-msgstr "新機能:"
-
-#: data/calculator.metainfo.xml.in:99
-msgid "Add a \"Clear History\" button to the history dialog"
-msgstr "履歴ダイアログに\"履歴を消去\"ボタンを追加"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
@@ -104,6 +104,12 @@ msgstr "Calculation;Mathematics;Arithmetic;Scientific;計算;数学;算数;科�
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
 msgstr "新しいウィンドウ"
+
+#~ msgid "New features:"
+#~ msgstr "新機能:"
+
+#~ msgid "Add a \"Clear History\" button to the history dialog"
+#~ msgstr "履歴ダイアログに\"履歴を消去\"ボタンを追加"
 
 #~ msgid "Fixed an issue with multiple windows"
 #~ msgstr "ウィンドウが複数存在する場合に発生していた不具合を修正"

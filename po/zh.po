@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 17:54+0000\n"
+"POT-Creation-Date: 2023-05-30 18:04+0000\n"
 "PO-Revision-Date: 2022-07-23 14:31+0000\n"
 "Last-Translator: Vincent Yu <coolplayyhj@gmail.com>\n"
 "Language-Team: Chinese <https://l10n.elementary.io/projects/calculator/"
