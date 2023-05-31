@@ -1,7 +1,7 @@
 project(
     'io.elementary.calculator', 'vala', 'c',
     meson_version : '>= 0.56.0',
-    version: '2.0.1'
+    version: '2.0.2'
 )
 
 i18n = import('i18n')
