@@ -20,6 +20,8 @@
 
 public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
     private static GLib.Settings settings;
+    private Gdk.Clipboard clipboard;
+    private Gtk.EventControllerKey event_controller;
 
     private Gtk.Revealer extended_revealer;
     private Gtk.Entry entry;
@@ -76,13 +78,18 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         add_action_entries (ACTION_ENTRIES, this);
 
         var application_instance = (Gtk.Application) GLib.Application.get_default ();
-        application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_CLEAR, {"Escape"});
         application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_UNDO, {"<Control>z"});
         application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_COPY, {"<Control>c"});
         application_instance.set_accels_for_action (ACTION_PREFIX + ACTION_PASTE, {"<Control>v"});
 
         resizable = false;
         title = _("Calculator");
+
+        var display = Gdk.Display.get_default ();
+        clipboard = display.get_clipboard ();
+
+        event_controller = new Gtk.EventControllerKey ();
+        event_controller.key_pressed.connect (on_key_press);
 
         decimal_places = settings.get_int ("decimal-places");
 
@@ -115,9 +122,11 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         entry = new Gtk.Entry () {
             xalign = 1,
             vexpand = true,
+            sensitive = false,
             valign = Gtk.Align.FILL
         };
         entry.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
+        entry.set_placeholder_text ("0");
 
         button_calc = new Button ("=") {
             tooltip_text = _("Calculate Result")
@@ -125,7 +134,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         button_calc.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
         button_calc.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        button_ans = new Button ("ANS") {
+        var button_ans = new Button ("ANS") {
             sensitive = false,
             tooltip_text = _("Insert last result")
         };
@@ -269,7 +278,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             tooltip_text = _("Set memory value")
         };
 
-        button_mr = new Button ("MR") {
+        var button_mr = new Button ("MR") {
             sensitive = false,
             tooltip_text = _("Recall value from memory")
         };
@@ -282,12 +291,12 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             tooltip_text = _("Subtract from stored value")
         };
 
-        button_mc = new Button ("MC") {
+        var button_mc = new Button ("MC") {
             sensitive = false,
             tooltip_text = _("Clear memory")
         };
 
-        button_gt = new Button ("GT") {
+        var button_gt = new Button ("GT") {
             sensitive = false,
             tooltip_text = _("Grand Total")
         };
@@ -463,15 +472,10 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         var global_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         global_box.append (infobar);
         global_box.append (main_grid);
+        ((Gtk.Widget) this).add_controller (event_controller);
 
         child = global_box;
         set_titlebar (headerbar);
-
-        entry.grab_focus ();
-
-        entry.changed.connect (remove_error);
-        entry.activate.connect (button_calc_clicked);
-        entry.get_delegate ().insert_text.connect (replace_text);
 
         button_calc.clicked.connect (() => {button_calc_clicked ();});
         button_del.clicked.connect (() => {button_del_clicked ();});
@@ -509,45 +513,31 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         }
     }
 
-    private void copy () {
-        int start, end;
-        entry.get_selection_bounds (out start, out end);
-        var text_selected = end - start != 0;
-
-        // we have to copy text in both cases
-        // because seems like application action blocks entry's action
-        if (!text_selected) {
-            entry.get_clipboard ().set_text (entry.text);
-        } else {
-            entry.get_clipboard ().set_text (entry.text.slice (start, end));
-        }
-    }
-
-    private void paste () {
-        get_clipboard_text.begin ((obj, res) => {
-            var text = get_clipboard_text.end (res);
-            if (text == null) {
-                return;
+        public void copy () {
+        if (entry.get_text () != "") {
+            try {
+                var output = eval.evaluate (entry.get_text (), decimal_places);
+                clipboard.set_text (output);
+            } catch (Core.OUT_ERROR e) {
+                infobar_label.label = e.message;
+                infobar.revealed = true;
             }
-
-            int start, end;
-            entry.get_selection_bounds (out start, out end);
-
-            var before = entry.text.slice (0, start);
-            var after = entry.text.slice (end, entry.text_length);
-
-            entry.text = before + text + after;
-            entry.set_position (before.char_count () + text.char_count ());
-        });
+        }
     }
 
-    private async string? get_clipboard_text () {
-        try {
-            return yield entry.get_clipboard ().read_text_async (null);
-        } catch (Error e) {
-            warning (e.message);
-            return null;
-        }
+    public void paste () {
+        var cancellable = new GLib.Cancellable ();
+        clipboard.read_text_async.begin (cancellable, (source, res) => {
+            try {
+                var output = eval.evaluate (clipboard.read_text_async.end (res), decimal_places);
+                if (entry.get_text () != output) {
+                    entry.set_text (output);
+                }
+            } catch (Error e) {
+                infobar_label.label = e.message;
+                infobar.revealed = true;
+            }
+        });
     }
 
     private void action_insert (SimpleAction action, Variant? variant) {
@@ -566,7 +556,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         entry.do_insert_text (token, -1, ref cursor_position);
 
         new_position += token.char_count ();
-        entry.grab_focus ();
         entry.set_position (new_position);
     }
 
@@ -581,7 +570,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             entry.delete_text (selection_start, selection_end);
             entry.insert_text (function_call, -1, ref selection_start);
             new_position += function_call.char_count ();
-            entry.grab_focus ();
             entry.set_position (new_position);
         } else {
             activate_action (ACTION_INSERT, variant);
@@ -613,7 +601,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             remove_error ();
         }
 
-        entry.grab_focus ();
         entry.set_position (position);
     }
 
@@ -643,7 +630,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             entry.set_text (new_text);
         }
 
-        entry.grab_focus ();
         entry.set_position (position - 1);
     }
 
@@ -755,10 +741,8 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
     private void action_clear () {
         position = 0;
         entry.set_text ("");
-        set_focus (entry);
         remove_error ();
 
-        entry.grab_focus ();
         entry.set_position (position);
     }
 
@@ -784,7 +768,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             extended_revealer.reveal_child = false;
         }
         /* Focusing button_calc because without a new focus it will cause weird window drawing problems. */
-        entry.grab_focus ();
         entry.set_position (position);
     }
 
@@ -818,7 +801,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         var cursor_position = entry.cursor_position;
         entry.do_insert_text (input, -1, ref cursor_position);
         position += input.length;
-        entry.grab_focus ();
         entry.set_position (position);
     }
 
@@ -826,25 +808,94 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         infobar.revealed = false;
     }
 
-    private void replace_text (string new_text, int new_text_length, ref int position) {
-        var replacement_text = "";
-
-        switch (new_text) {
-            case ".":
-            case ",":
-                replacement_text = Posix.nl_langinfo (Posix.NLItem.RADIXCHAR);
-                break;
-            case "/":
-                replacement_text = "÷";
-                break;
-            case "*":
-                replacement_text = "×";
-                break;
+    private bool on_key_press (Gtk.EventControllerKey controller, uint keyval, uint keycode, Gdk.ModifierType mod_state) {
+        switch (keyval) {
+            case Gdk.Key.@0:
+            case Gdk.Key.KP_0:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "0"));
+                return true;
+            case Gdk.Key.@1:
+            case Gdk.Key.KP_1:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "1"));
+                return true;
+            case Gdk.Key.@2:
+            case Gdk.Key.KP_2:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "2"));
+                return true;
+            case Gdk.Key.@3:
+            case Gdk.Key.KP_3:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "3"));
+                return true;
+            case Gdk.Key.@4:
+            case Gdk.Key.KP_4:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "4"));
+                return true;
+            case Gdk.Key.@5:
+            case Gdk.Key.KP_5:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "5"));
+                return true;
+            case Gdk.Key.@6:
+            case Gdk.Key.KP_6:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "6"));
+                return true;
+            case Gdk.Key.@7:
+            case Gdk.Key.KP_7:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "7"));
+                return true;
+            case Gdk.Key.@8:
+            case Gdk.Key.KP_8:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "8"));
+                return true;
+            case Gdk.Key.@9:
+            case Gdk.Key.KP_9:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "9"));
+                return true;
+            case Gdk.Key.plus:
+            case Gdk.Key.KP_Add:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "+"));
+                return true;
+            case Gdk.Key.minus:
+            case Gdk.Key.KP_Subtract:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "-"));
+                return true;
+            case Gdk.Key.asterisk:
+            case Gdk.Key.KP_Multiply:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "*"));
+                return true;
+            case Gdk.Key.slash:
+            case Gdk.Key.KP_Divide:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "/"));
+                return true;
+            case Gdk.Key.period:
+            case Gdk.Key.decimalpoint:
+            case Gdk.Key.KP_Decimal:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "."));
+                return true;
+            case Gdk.Key.BackSpace:
+            case Gdk.Key.KP_Delete:
+                button_del_clicked();
+                return true;
+            case Gdk.Key.equal:
+            case Gdk.Key.KP_Enter:
+            case Gdk.Key.KP_Equal:
+                button_calc_clicked ();
+                return true;
+            case Gdk.Key.Escape:
+                activate_action(ACTION_CLEAR, null);
+                return true;
         }
 
-        if (replacement_text != "" && replacement_text != new_text) {
-            entry.do_insert_text (replacement_text, entry.cursor_position + replacement_text.char_count (), ref position);
-            Signal.stop_emission_by_name ((void*) entry.get_delegate (), "insert-text");
+        switch (keyval) {
+            case Gdk.Key.percent:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "%"));
+                return true;
+            case Gdk.Key.parenleft:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", "("));
+                return true;
+            case Gdk.Key.parenright:
+                activate_action(ACTION_INSERT, new GLib.Variant("s", ")"));
+                return true;
         }
+        return Gdk.EVENT_PROPAGATE;
     }
 }
