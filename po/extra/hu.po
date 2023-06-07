@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 18:04+0000\n"
-"PO-Revision-Date: 2022-12-28 22:25+0000\n"
+"PO-Revision-Date: 2023-06-08 00:07+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/calculator/"
 "extra/hu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -50,11 +50,11 @@ msgstr "Apróbb frissítések:"
 
 #: data/calculator.metainfo.xml.in:55
 msgid "Always use elementary styles and icons, even on other platforms"
-msgstr ""
+msgstr "Mindig használja az elementary stílust és ikonokat, más platformokon is"
 
 #: data/calculator.metainfo.xml.in:56
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
+msgstr "A \"Ctrl + V\" mindig illessze be a szöveget"
 
 #: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:72
 #: data/calculator.metainfo.xml.in:82 data/calculator.metainfo.xml.in:92
@@ -84,15 +84,15 @@ msgstr "A speciális vezérlők megjelenítése csak a fókuszált ablakot érin
 
 #: data/calculator.metainfo.xml.in:102
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "A fő szövegbeviteli mező fókuszba helyezése megnyitáskor"
 
 #: data/calculator.metainfo.xml.in:103
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "Helyes ablakcím megjelenítése többfeladatos nézetben"
 
 #: data/calculator.metainfo.xml.in:105
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "\"Új ablak\" opció hozzáadva az ikonhoz"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
