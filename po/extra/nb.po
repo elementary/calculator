@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 18:04+0000\n"
-"PO-Revision-Date: 2023-03-02 10:25+0000\n"
+"PO-Revision-Date: 2023-06-16 10:07+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "calculator/extra/nb/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-04-05 06:59+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -51,11 +51,11 @@ msgstr "Mindre oppdateringer:"
 
 #: data/calculator.metainfo.xml.in:55
 msgid "Always use elementary styles and icons, even on other platforms"
-msgstr ""
+msgstr "Alltid bruk elementary-stiler og ikoner, selv på andre plattformer"
 
 #: data/calculator.metainfo.xml.in:56
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
+msgstr "Alltid lim inn tekst med tastatursnarveien «Ctrl + V»"
 
 #: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:72
 #: data/calculator.metainfo.xml.in:82 data/calculator.metainfo.xml.in:92
@@ -84,18 +84,19 @@ msgstr "Oppdatering til elementary 6.1-kjøretidsmiljø"
 #: data/calculator.metainfo.xml.in:101
 msgid "Showing advanced controls only affects the focused window"
 msgstr ""
+"Visning av avanserte kontroller har kun innvirkning på det fokuserte vinduet"
 
 #: data/calculator.metainfo.xml.in:102
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "Fokus på hovedtekstoppføring ved oppstart"
 
 #: data/calculator.metainfo.xml.in:103
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "Vis riktig vindusnavn i fleroppgaveløsningsvisning"
 
 #: data/calculator.metainfo.xml.in:105
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "Tillagt «Nytt vindu»-skrivebordshandling"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
