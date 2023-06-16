@@ -532,10 +532,9 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
 
             int start, end;
             entry.get_selection_bounds (out start, out end);
-
-            var before = entry.text.slice (0, start);
-            var after = entry.text.slice (end, entry.text_length);
-
+            // start and end are character positions so cannot use string slice
+            var before = entry.get_chars (0, start);
+            var after = entry.get_chars (end, -1);
             entry.text = before + text + after;
             entry.set_position (before.char_count () + text.char_count ());
         });

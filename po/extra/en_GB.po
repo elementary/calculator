@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 18:04+0000\n"
-"PO-Revision-Date: 2023-02-17 15:25+0000\n"
+"PO-Revision-Date: 2023-06-02 09:07+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "calculator/extra/en_GB/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/calculator.metainfo.xml.in:10
 #: data/io.elementary.calculator.desktop.in:3
@@ -49,11 +49,11 @@ msgstr "Minor updates:"
 
 #: data/calculator.metainfo.xml.in:55
 msgid "Always use elementary styles and icons, even on other platforms"
-msgstr ""
+msgstr "Always use elementary styles and icons, even on other platforms"
 
 #: data/calculator.metainfo.xml.in:56
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
+msgstr "Always paste text with the keyboard shortcut \"Ctrl + V\""
 
 #: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:72
 #: data/calculator.metainfo.xml.in:82 data/calculator.metainfo.xml.in:92
