@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 18:04+0000\n"
-"PO-Revision-Date: 2022-02-03 00:12+0000\n"
-"Last-Translator: Cleiton Floss <cleitonfloss@tutanota.de>\n"
+"PO-Revision-Date: 2023-07-08 14:07+0000\n"
+"Last-Translator: Matheus Torres Carvalho <matheustcarvalho@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "calculator/extra/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -52,10 +52,11 @@ msgstr "Pequenas atualizações:"
 #: data/calculator.metainfo.xml.in:55
 msgid "Always use elementary styles and icons, even on other platforms"
 msgstr ""
+"Sempre use os estilos e ícones do elementary, mesmo em outras plataformas"
 
 #: data/calculator.metainfo.xml.in:56
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
+msgstr "Sempre cole texto com o atalho de teclado \"Ctrl +V\""
 
 #: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:72
 #: data/calculator.metainfo.xml.in:82 data/calculator.metainfo.xml.in:92
@@ -79,32 +80,32 @@ msgstr ""
 
 #: data/calculator.metainfo.xml.in:91
 msgid "Update to elementary 6.1 runtime"
-msgstr ""
+msgstr "Atualizar para o elementary runtime 6.1"
 
 #: data/calculator.metainfo.xml.in:101
 msgid "Showing advanced controls only affects the focused window"
-msgstr ""
+msgstr "Exibir os controles avançados apenas afeta a janela em foco"
 
 #: data/calculator.metainfo.xml.in:102
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "Foca a entrada de texto principal ao iniciar"
 
 #: data/calculator.metainfo.xml.in:103
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "Mostra o título correto da janela na Visão de Multitarefa"
 
 #: data/calculator.metainfo.xml.in:105
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "Adicionada a ação da área de trabalho 'Nova janela'"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr "Calculation;Mathematics;Arithmetic;Scientific;"
+msgstr "Cálculo;Matemática;Aritmética;Científico;"
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "Nova Janela"
 
 #~ msgid "New features:"
 #~ msgstr "Novas funcionalidades:"
