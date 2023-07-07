@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 18:04+0000\n"
 "PO-Revision-Date: 2023-07-08 14:07+0000\n"
-"Last-Translator: Matheus Torres Carvalho <matheustcarvalho@hotmail.com>\n"
+"Last-Translator: codehead01 <thefusrotardis05@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "calculator/extra/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -66,13 +66,11 @@ msgstr "Traduções atualizadas"
 
 #: data/calculator.metainfo.xml.in:70
 msgid "Redesigned app icon"
-msgstr ""
+msgstr "Ícone de aplicativo redesenhado"
 
 #: data/calculator.metainfo.xml.in:71
-#, fuzzy
-#| msgid "Use slim titlebar"
 msgid "Flat titlebar"
-msgstr "Use barra de título fina"
+msgstr "Barra de título plana"
 
 #: data/calculator.metainfo.xml.in:81
 msgid "Update for OS 7 and Gtk 4"
