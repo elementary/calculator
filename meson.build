@@ -1,9 +1,10 @@
 project(
     'io.elementary.calculator', 'vala', 'c',
-    meson_version : '>= 0.56.0',
+    meson_version : '>= 0.58.0',
     version: '2.0.2'
 )
 
+gnome = import('gnome')
 i18n = import('i18n')
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
@@ -24,7 +25,7 @@ core_deps = [
     meson.get_compiler('c').find_library('m', required : false)
 ]
 
-meson.add_install_script('meson/post_install.py')
+gnome.post_install(glib_compile_schemas: true)
 
 subdir('data')
 subdir('po')
