@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 18:04+0000\n"
-"PO-Revision-Date: 2022-12-26 20:25+0000\n"
+"PO-Revision-Date: 2023-10-27 10:10+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/calculator/extra/"
 "sk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -50,11 +50,11 @@ msgstr "Drobné aktualizácie:"
 
 #: data/calculator.metainfo.xml.in:55
 msgid "Always use elementary styles and icons, even on other platforms"
-msgstr ""
+msgstr "Vždy použiť štýly a ikonky elementary, aj na iných platformách"
 
 #: data/calculator.metainfo.xml.in:56
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
+msgstr "Vždy prilepiť text klávesovou skratkou „Ctrl + V“"
 
 #: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:72
 #: data/calculator.metainfo.xml.in:82 data/calculator.metainfo.xml.in:92
