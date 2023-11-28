@@ -15,10 +15,10 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/calculator/2.0.2/data/screenshot@2x.png</image>
+      <image>https://raw.githubusercontent.com/elementary/calculator/2.0.3/data/screenshot@2x.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/calculator/2.0.2/data/screenshot-extended@2x.png</image>
+      <image>https://raw.githubusercontent.com/elementary/calculator/2.0.3/data/screenshot-extended@2x.png</image>
     </screenshot>
   </screenshots>
 
@@ -55,6 +55,19 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="2.0.3" date="2023-11-29" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Branding color changed to Mint 500</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/calculator/issues/259">Fix crash when pasting into division or multiplication expression</issue>
+      </issues>
+    </release>
+
     <release version="2.0.2" date="2023-05-30" urgency="medium">
       <description>
         <p>Minor updates:</p>
