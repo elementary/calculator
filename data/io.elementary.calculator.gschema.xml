@@ -16,10 +16,5 @@
             <summary>Saves the decimal places for displayed values.</summary>
             <description>Saves the decimal places for displayed values.</description>
         </key>
-        <key name="window-position" type="(ii)">
-            <default>(-1, -1)</default>
-            <summary>Window position.</summary>
-            <description>Saved position of main calculator window.</description>
-        </key>
     </schema>
 </schemalist>
