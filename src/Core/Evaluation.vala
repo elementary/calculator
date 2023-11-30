@@ -120,7 +120,6 @@ namespace PantheonCalculator.Core {
             Queue<Token> op_stack = new Queue<Token> ();
 
             foreach (Token t in token_list) {
-            warning ("Shunting found '%s', Type %s", t.content, t.token_type.to_string ());
                 switch (t.token_type) {
                     case TokenType.NUMBER:
                         output.append (t);
