@@ -22,7 +22,8 @@ namespace PantheonCalculator.Core {
     public errordomain SCANNER_ERROR {
         UNKNOWN_TOKEN,
         ALPHA_INVALID,
-        MISMATCHED_PARENTHESES
+        MISMATCHED_PARENTHESES,
+        INVALID_PERCENT
     }
 
     public class Scanner : Object {
@@ -70,7 +71,7 @@ namespace PantheonCalculator.Core {
                 } else if (t.token_type == TokenType.OPERATOR && (t.content in "-−")) {
                     /* Define last_tokens, where a next minus is a number, not an operator */
                     if (last_token == null || (
-                        (last_token.token_type == TokenType.OPERATOR && last_token.content != "%") ||
+                        (last_token.token_type == TokenType.OPERATOR) ||
                         (last_token.token_type == TokenType.FUNCTION) ||
                         (last_token.token_type == TokenType.P_LEFT)
                     )) {
@@ -82,6 +83,20 @@ namespace PantheonCalculator.Core {
                     //Insert a leading zero to make complete number e.g. .5 -> 0.5
                     t.content = "0" + t.content;
                     t.token_type = TokenType.NUMBER;
+                } else if (t.token_type == TokenType.PERCENT) {
+                    if (last_token == null || (
+                        (last_token.token_type == TokenType.OPERATOR) ||
+                        (last_token.token_type == TokenType.FUNCTION) ||
+                        (last_token.token_type == TokenType.P_LEFT))) {
+                        throw new SCANNER_ERROR.INVALID_PERCENT (_("'%' must follow a value."));
+                    } else {
+                        token_list.append (new Token ("*", TokenType.OPERATOR));
+                        token_list.append (new Token ("<CLV>", TokenType.CURRENT_LEFT_VALUE));
+                        token_list.append (new Token ("/", TokenType.OPERATOR));
+                        last_token = new Token ("100", TokenType.NUMBER);
+                        token_list.append (last_token);
+                        continue;
+                    }
                 }
 
                 if (next_number_negative && t.token_type == TokenType.NUMBER) {
@@ -122,7 +137,6 @@ namespace PantheonCalculator.Core {
         private Token next_token () throws SCANNER_ERROR {
             ssize_t start = pos;
             TokenType type;
-
             if (uc[pos] == decimal_symbol.get_char (0)) {
                 pos++;
                 while (uc[pos].isdigit () && pos < uc.length) {
@@ -141,10 +155,13 @@ namespace PantheonCalculator.Core {
                 }
                 type = TokenType.NUMBER;
             } else if (uc[pos] == '+' || uc[pos] == '-' || uc[pos] == '*' ||
-                        uc[pos] == '/' || uc[pos] == '^' || uc[pos] == '%' ||
+                        uc[pos] == '/' || uc[pos] == '^' ||
                         uc[pos] == '÷' || uc[pos] == '×' || uc[pos] == '−') {
                 pos++;
                 type = TokenType.OPERATOR;
+            } else if (uc[pos] == '%') {
+                pos++;
+                type = TokenType.PERCENT;
             } else if (uc[pos] == '√') {
                 pos++;
                 type = TokenType.FUNCTION;
