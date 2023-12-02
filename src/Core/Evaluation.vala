@@ -61,7 +61,12 @@ namespace PantheonCalculator.Core {
             Operator () { symbol = "÷", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a / b },
             Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a % b },
             Operator () { symbol = "^", inputs = 2, prec = 3, fixity = "RIGHT", eval = (a, b) => Math.pow (a, b) },
-            Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => a * Math.pow (10, b) }
+            Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => a * Math.pow (10, b) },
+            //Internal use only
+            //Hgh precedence multiply and divide for percentage evaluation
+            //Percentage always evaluates first as if it has parens around it
+            Operator () { symbol = "<*>", inputs = 2, prec = 7, fixity = "LEFT", eval = (a, b) => a * b },
+            Operator () { symbol = "<÷>", inputs = 2, prec = 6, fixity = "LEFT", eval = (a, b) => a / b }
         };
 
         private struct Function { string symbol; int inputs; Eval eval;}

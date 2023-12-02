@@ -90,9 +90,9 @@ namespace PantheonCalculator.Core {
                         (last_token.token_type == TokenType.P_LEFT))) {
                         throw new SCANNER_ERROR.INVALID_PERCENT (_("'%' must follow a value."));
                     } else {
-                        token_list.append (new Token ("*", TokenType.OPERATOR));
+                        token_list.append (new Token ("<*>", TokenType.OPERATOR));
                         token_list.append (new Token ("<CLV>", TokenType.CURRENT_LEFT_VALUE));
-                        token_list.append (new Token ("/", TokenType.OPERATOR));
+                        token_list.append (new Token ("<÷>", TokenType.OPERATOR));
                         last_token = new Token ("100", TokenType.NUMBER);
                         token_list.append (last_token);
                         continue;
