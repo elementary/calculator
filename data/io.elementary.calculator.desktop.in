@@ -1,16 +1,21 @@
 [Desktop Entry]
+Version=1.5
+Type=Application
+
 Name=Calculator
 Comment=Solve simple equations
+Categories=GNOME;GTK;Utility;Calculator;
 #Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 Keywords=Calculation;Mathematics;Arithmetic;Scientific;
-Exec=io.elementary.calculator
-Icon=io.elementary.calculator
-Terminal=false
-Type=Application
-StartupNotify=true
-Categories=GNOME;GTK;Utility;Calculator;
-Actions=NewWindow;
 
-[Desktop Action NewWindow]
+Icon=io.elementary.calculator
+Exec=io.elementary.calculator
+SingleMainWindow=false
+StartupNotify=true
+Terminal=false
+
+Actions=new-window;
+
+[Desktop Action new-window]
 Name=New Window
 Exec=io.elementary.calculator
