@@ -15,10 +15,10 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/calculator/2.0.3/data/screenshot@2x.png</image>
+      <image>https://raw.githubusercontent.com/elementary/calculator/8.0.0/data/screenshot@2x.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/calculator/2.0.3/data/screenshot-extended@2x.png</image>
+      <image>https://raw.githubusercontent.com/elementary/calculator/8.0.0/data/screenshot-extended@2x.png</image>
     </screenshot>
   </screenshots>
 
@@ -57,7 +57,7 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="8.0.0" date="2024-05-14" urgency="medium">
+    <release version="8.0.0" date="2024-05-15" urgency="medium">
       <description>
         <p>Minor updates:</p>
         <ul>

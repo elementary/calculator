@@ -1,7 +1,7 @@
 project(
     'io.elementary.calculator', 'vala', 'c',
     meson_version : '>= 0.58.0',
-    version: '2.0.3'
+    version: '8.0.0'
 )
 
 gnome = import('gnome')
