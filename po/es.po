@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 18:04+0000\n"
-"PO-Revision-Date: 2024-05-29 02:13+0000\n"
+"PO-Revision-Date: 2024-06-03 15:40+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/calculator/"
 "calculator/es/>\n"
@@ -97,7 +97,7 @@ msgstr "Cerrar grupo"
 
 #: src/MainWindow.vala:310
 msgid "Exponent"
-msgstr "Exponencial"
+msgstr "Exponente"
 
 #: src/MainWindow.vala:316
 msgid "Root"
@@ -137,7 +137,7 @@ msgstr "Número de Euler"
 
 #: src/MainWindow.vala:370
 msgid "Logarithm Base 10"
-msgstr "Logaritmo de base 10"
+msgstr "Logaritmo en base 10"
 
 #: src/MainWindow.vala:376
 msgid "Natural Logarithm"
@@ -157,7 +157,7 @@ msgstr "Arcotangente"
 
 #: src/MainWindow.vala:398
 msgid "Reciprocal"
-msgstr "Recíproca"
+msgstr "Recíproco"
 
 #: src/MainWindow.vala:778
 msgid "Hide extended functionality"
@@ -169,7 +169,7 @@ msgstr "Inserta una expresión o resultado anterior en el cálculo actual."
 
 #: src/HistoryDialog.vala:81
 msgid "Value to insert:"
-msgstr "Valor que insertar:"
+msgstr "Valor a insertar:"
 
 #: src/HistoryDialog.vala:86
 msgid "Result"
@@ -182,7 +182,7 @@ msgstr "Expresión"
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:113
 msgid "Clear History"
-msgstr "Vaciar historial"
+msgstr "Limpiar historial"
 
 #: src/HistoryDialog.vala:116
 msgid "Close"
@@ -199,7 +199,7 @@ msgstr "«%s» no es válido."
 
 #: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
-msgstr "Paréntesis desparejados."
+msgstr "Paréntesis sin coincidir."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:169
