@@ -24,6 +24,8 @@ namespace PantheonCalculator.Core {
         NUMBER,
         OPERATOR,
         FUNCTION,
+        PERCENT,
+        CURRENT_LEFT_VALUE,
         SEPARATOR,
         CONSTANT,
         P_LEFT,
@@ -41,6 +43,10 @@ namespace PantheonCalculator.Core {
                 content: in_content,
                 token_type: in_token_type
             );
+        }
+
+        public Token dup () {
+            return new Token (content, token_type);
         }
     }
 }
