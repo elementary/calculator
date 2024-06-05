@@ -3,7 +3,7 @@ name: Release
 
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
     types: [closed]
 
 jobs:
@@ -39,7 +39,7 @@ jobs:
       fail-fast: false
 
     container:
-      image: ghcr.io/elementary/flatpak-platform/runtime:7.2-${{ matrix.arch }}
+      image: ghcr.io/elementary/flatpak-platform/runtime:8-${{ matrix.arch }}
       options: --privileged
 
     steps:

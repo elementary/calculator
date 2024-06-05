@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 18:04+0000\n"
-"PO-Revision-Date: 2023-02-10 14:25+0000\n"
-"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
+"PO-Revision-Date: 2024-05-14 09:13+0000\n"
+"Last-Translator: Sven <622b1a13-49d8-4ace-bca7-48bff17b4780@unbox.at>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/extra/"
 "nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-03-20 06:06+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -52,10 +52,11 @@ msgstr "Kleine updates:"
 #: data/calculator.metainfo.xml.in:55
 msgid "Always use elementary styles and icons, even on other platforms"
 msgstr ""
+"Altijd elementary stijlen en iconen gebruiken, zelfs op andere platformen"
 
 #: data/calculator.metainfo.xml.in:56
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
+msgstr "Altijd tekst plakken met de sneltoets \"Ctrl + V\""
 
 #: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:72
 #: data/calculator.metainfo.xml.in:82 data/calculator.metainfo.xml.in:92
@@ -82,18 +83,20 @@ msgstr "Update naar elementary 6.1 runtime"
 #: data/calculator.metainfo.xml.in:101
 msgid "Showing advanced controls only affects the focused window"
 msgstr ""
+"Het tonen van geavanceerde besturingselementen heeft alleen invloed op het "
+"gefocuste venster"
 
 #: data/calculator.metainfo.xml.in:102
 msgid "Focus the main text entry on startup"
-msgstr ""
+msgstr "Focus de hoofdtekstinvoer bij het opstarten"
 
 #: data/calculator.metainfo.xml.in:103
 msgid "Show the correct window title in Multitasking View"
-msgstr ""
+msgstr "De juiste venstertitel weergeven in de multitasking-weergave"
 
 #: data/calculator.metainfo.xml.in:105
 msgid "Added 'New Window' Desktop Action"
-msgstr ""
+msgstr "Bureaublad-actie 'Nieuw venster' toegevoegd"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
@@ -102,7 +105,7 @@ msgstr "Berekeningen;Wiskunde;Rekenkunde;Wetenschap;"
 
 #: data/io.elementary.calculator.desktop.in:16
 msgid "New Window"
-msgstr ""
+msgstr "Nieuw venster"
 
 #, fuzzy
 #~| msgid "Minor updates:"

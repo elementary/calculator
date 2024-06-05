@@ -15,10 +15,10 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/calculator/2.0.3/data/screenshot@2x.png</image>
+      <image>https://raw.githubusercontent.com/elementary/calculator/8.0.0/data/screenshot@2x.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/calculator/2.0.3/data/screenshot-extended@2x.png</image>
+      <image>https://raw.githubusercontent.com/elementary/calculator/8.0.0/data/screenshot-extended@2x.png</image>
     </screenshot>
   </screenshots>
 
@@ -50,12 +50,23 @@
   <url type="homepage">https://elementary.io/</url>
   <url type="translate">https://l10n.elementary.io/projects/calculator</url>
 
-  <developer_name>elementary, Inc.</developer_name>
+  <developer id="org.elementaryos">
+    <name>elementary, Inc.</name>
+  </developer>
   <project_group>elementary</project_group>
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="2.0.3" date="2023-11-29" urgency="medium">
+    <release version="8.0.0" date="2024-05-15" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.0.3" date="2023-12-04" urgency="medium">
       <description>
         <p>Minor updates:</p>
         <ul>
@@ -104,29 +115,8 @@
       </description>
     </release>
 
-    <release version="1.7.2" date="2021-12-13" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Update to elementary 6.1 runtime</li>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-
-    <release version="1.7.1" date="2021-10-26" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Showing advanced controls only affects the focused window</li>
-          <li>Focus the main text entry on startup</li>
-          <li>Show the correct window title in Multitasking View</li>
-          <li>Updated translations</li>
-          <li>Added 'New Window' Desktop Action</li>
-        </ul>
-      </description>
-    </release>
-
+    <release version="1.7.2" date="2021-12-13" urgency="medium" />
+    <release version="1.7.1" date="2021-10-26" urgency="medium" />
     <release version="1.7.0" date="2021-08-09" urgency="medium" />
     <release version="1.6.2" date="2021-07-19" urgency="medium" />
     <release version="1.6.1" date="2021-05-14" urgency="medium" />
