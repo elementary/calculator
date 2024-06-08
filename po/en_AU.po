@@ -3,21 +3,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 18:04+0000\n"
-"PO-Revision-Date: 2017-07-21 01:05+0000\n"
-"Last-Translator: Thomas Sviund <sviundt@gmail.com>\n"
-"Language-Team: English (Australia) <https://weblate.elementary.io/projects/"
+"PO-Revision-Date: 2024-06-08 12:45+0000\n"
+"Last-Translator: Takumi Nishino <nistak04@yahoo.co.jp>\n"
+"Language-Team: English (Australia) <https://l10n.elementary.io/projects/"
 "calculator/calculator/en_AU/>\n"
 "Language: en_AU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: src/MainWindow.vala:85
 msgid "Calculator"
-msgstr ""
+msgstr "Calculator"
 
 #: src/MainWindow.vala:95 src/MainWindow.vala:783
 msgid "Show extended functionality"
@@ -25,7 +25,7 @@ msgstr "Show extended functionality"
 
 #: src/MainWindow.vala:101 src/HistoryDialog.vala:40
 msgid "History"
-msgstr ""
+msgstr "History"
 
 #: src/MainWindow.vala:123
 #, fuzzy
@@ -40,11 +40,11 @@ msgstr "Add last result"
 
 #: src/MainWindow.vala:134
 msgid "Backspace"
-msgstr ""
+msgstr "Backspace"
 
 #: src/MainWindow.vala:142
 msgid "Clear entry"
-msgstr ""
+msgstr "Clear entry"
 
 #: src/MainWindow.vala:149
 msgid "Add"
@@ -52,19 +52,19 @@ msgstr "Add"
 
 #: src/MainWindow.vala:156
 msgid "Subtract"
-msgstr ""
+msgstr "Subtract"
 
 #: src/MainWindow.vala:163
 msgid "Multiply"
-msgstr ""
+msgstr "Multiply"
 
 #: src/MainWindow.vala:170
 msgid "Divide"
-msgstr ""
+msgstr "Divide"
 
 #: src/MainWindow.vala:187
 msgid "Percentage"
-msgstr ""
+msgstr "Percentage"
 
 #: src/MainWindow.vala:269
 msgid "Set memory value"
@@ -92,7 +92,7 @@ msgstr ""
 
 #: src/MainWindow.vala:298
 msgid "Start Group"
-msgstr ""
+msgstr "Start Group"
 
 #: src/MainWindow.vala:304
 msgid "End Group"
