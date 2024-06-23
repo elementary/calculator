@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 18:04+0000\n"
-"PO-Revision-Date: 2024-06-03 16:54+0000\n"
+"PO-Revision-Date: 2024-06-23 22:07+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/calculator/extra/"
 "es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2017-02-10 05:38+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -93,7 +93,7 @@ msgstr ""
 #: data/calculator.metainfo.xml.in:103
 msgid "Show the correct window title in Multitasking View"
 msgstr ""
-"Ahora se muestra el título correcto de la ventana en la vista multitarea"
+"Ahora se muestra el título correcto de la ventana en la Vista Multitarea"
 
 #: data/calculator.metainfo.xml.in:105
 msgid "Added 'New Window' Desktop Action"
