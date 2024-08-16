@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 18:04+0000\n"
-"PO-Revision-Date: 2023-07-08 14:07+0000\n"
+"PO-Revision-Date: 2024-08-17 15:16+0000\n"
 "Last-Translator: Max <pereiraalcizmax@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "calculator/extra/pt_BR/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -94,7 +94,7 @@ msgstr "Mostra o título correto da janela na Visão de Multitarefa"
 
 #: data/calculator.metainfo.xml.in:105
 msgid "Added 'New Window' Desktop Action"
-msgstr "Adicionada a ação da área de trabalho 'Nova janela'"
+msgstr "Adicionou ação de 'Nova Janela'"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:6
