@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:38+0000\n"
-"PO-Revision-Date: 2022-07-24 12:21+0000\n"
-"Last-Translator: Vincent Yu <coolplayyhj@gmail.com>\n"
+"PO-Revision-Date: 2024-09-02 00:47+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "calculator/extra/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -52,34 +52,32 @@ msgstr "已改善的翻譯"
 
 #: data/calculator.metainfo.xml.in:73
 msgid "Branding color changed to Mint 500"
-msgstr ""
+msgstr "改用 Mint 500 作為主要色彩"
 
 #: data/calculator.metainfo.xml.in:86
 msgid "Always use elementary styles and icons, even on other platforms"
-msgstr ""
+msgstr "即使在其他平台上也總是使用 elementary 的風格和圖示"
 
 #: data/calculator.metainfo.xml.in:87
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
+msgstr "總是用 \"Ctrl + V\" 鍵盤快捷鍵來貼上文字"
 
 #: data/calculator.metainfo.xml.in:101
 msgid "Redesigned app icon"
-msgstr ""
+msgstr "重新設計應用程式圖示"
 
 #: data/calculator.metainfo.xml.in:102
-#, fuzzy
-#| msgid "Use slim titlebar"
 msgid "Flat titlebar"
-msgstr "使用更細的標題列"
+msgstr "扁平化標題列"
 
 #: data/calculator.metainfo.xml.in:112
 msgid "Update for OS 7 and Gtk 4"
-msgstr ""
+msgstr "為 elementary OS 7 及 Gtk 4 進行更新"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:10
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr "計算器;數學;算數;科學運算;"
+msgstr "計算器;數學;算數;科學運算;計算機;"
 
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
