@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:04+0000\n"
+"POT-Creation-Date: 2024-09-01 10:38+0000\n"
 "PO-Revision-Date: 2022-07-23 14:31+0000\n"
 "Last-Translator: Vincent Yu <coolplayyhj@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Calculator"
 msgstr "計算機"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:783
+#: src/MainWindow.vala:95 src/MainWindow.vala:782
 msgid "Show extended functionality"
 msgstr "顯示擴展功能"
 
@@ -159,7 +159,7 @@ msgstr "反正切"
 msgid "Reciprocal"
 msgstr "倒數"
 
-#: src/MainWindow.vala:778
+#: src/MainWindow.vala:777
 msgid "Hide extended functionality"
 msgstr "隱藏擴展功能"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:04+0000\n"
+"POT-Creation-Date: 2024-09-01 10:38+0000\n"
 "PO-Revision-Date: 2018-08-19 04:26+0000\n"
 "Last-Translator: Anand Kumar <anand@anandkumar.net>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/calculator/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Calculator"
 msgstr "गणक"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:783
+#: src/MainWindow.vala:95 src/MainWindow.vala:782
 msgid "Show extended functionality"
 msgstr "विस्तृत कार्यक्षमता दिखाएँ"
 
@@ -167,7 +167,7 @@ msgstr "स्पर्शज्या"
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:778
+#: src/MainWindow.vala:777
 msgid "Hide extended functionality"
 msgstr "विस्तृत कार्यक्षमता छिपाएँ"
 

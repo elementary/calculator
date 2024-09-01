@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:04+0000\n"
+"POT-Creation-Date: 2024-09-01 10:38+0000\n"
 "PO-Revision-Date: 2018-05-27 08:53+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/calculator/"
@@ -17,7 +17,7 @@ msgstr ""
 msgid "Calculator"
 msgstr "Calculatora"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:783
+#: src/MainWindow.vala:95 src/MainWindow.vala:782
 msgid "Show extended functionality"
 msgstr "Afișați funcționalitate extinsă"
 
@@ -165,7 +165,7 @@ msgstr "Tangentă"
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:778
+#: src/MainWindow.vala:777
 msgid "Hide extended functionality"
 msgstr "Ascundeți funcționalitatea extinsă"
 

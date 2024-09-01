@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:04+0000\n"
+"POT-Creation-Date: 2024-09-01 10:38+0000\n"
 "PO-Revision-Date: 2016-10-16 11:24+0000\n"
 "Last-Translator: Waqar Ahmed <waqar.17a@gmail.com>\n"
 "Language-Team: \n"
@@ -17,7 +17,7 @@ msgstr ""
 msgid "Calculator"
 msgstr "کیلکولیٹر"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:783
+#: src/MainWindow.vala:95 src/MainWindow.vala:782
 msgid "Show extended functionality"
 msgstr "مزید functionality دکھائیں"
 
@@ -165,7 +165,7 @@ msgstr "ٹینجنٹ"
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:778
+#: src/MainWindow.vala:777
 msgid "Hide extended functionality"
 msgstr "مزید functionality چھپائیں"
 
