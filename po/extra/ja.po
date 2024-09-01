@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:04+0000\n"
+"POT-Creation-Date: 2024-09-01 10:38+0000\n"
 "PO-Revision-Date: 2023-06-02 09:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
@@ -21,12 +21,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
-#: data/io.elementary.calculator.desktop.in:3
+#: data/io.elementary.calculator.desktop.in:6
 msgid "Calculator"
 msgstr "電卓"
 
 #: data/calculator.metainfo.xml.in:11
-#: data/io.elementary.calculator.desktop.in:4
+#: data/io.elementary.calculator.desktop.in:7
 msgid "Solve simple equations"
 msgstr "簡単な式を計算します"
 
@@ -38,73 +38,73 @@ msgstr ""
 "日常用途を想定した、シンプルな電卓です。基本的な計算と科学的な計算が可能で、"
 "サイン・コサイン・タンジェントといった三角関数などにも対応しています。"
 
-#: data/calculator.metainfo.xml.in:46
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/calculator.metainfo.xml.in:53 data/calculator.metainfo.xml.in:68
-#: data/calculator.metainfo.xml.in:79 data/calculator.metainfo.xml.in:89
-#: data/calculator.metainfo.xml.in:99
+#: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
+#: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
+#: data/calculator.metainfo.xml.in:110
 msgid "Minor updates:"
 msgstr "そのほかのアップデート:"
 
-#: data/calculator.metainfo.xml.in:55
-msgid "Always use elementary styles and icons, even on other platforms"
-msgstr "ほかのプラットフォームであっても、常に elementary "
-"スタイルとアイコンを使用するように変更"
-
-#: data/calculator.metainfo.xml.in:56
-msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr "キーボードショートカット \"Ctrl + V\" で常にテキストを貼り付けするように変更"
-
-#: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:72
-#: data/calculator.metainfo.xml.in:82 data/calculator.metainfo.xml.in:92
-#: data/calculator.metainfo.xml.in:104
+#: data/calculator.metainfo.xml.in:64 data/calculator.metainfo.xml.in:74
+#: data/calculator.metainfo.xml.in:88 data/calculator.metainfo.xml.in:103
+#: data/calculator.metainfo.xml.in:113
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/calculator.metainfo.xml.in:70
+#: data/calculator.metainfo.xml.in:73
+msgid "Branding color changed to Mint 500"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:86
+msgid "Always use elementary styles and icons, even on other platforms"
+msgstr ""
+"ほかのプラットフォームであっても、常に elementary スタイルとアイコンを使用す"
+"るように変更"
+
+#: data/calculator.metainfo.xml.in:87
+msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
+msgstr ""
+"キーボードショートカット \"Ctrl + V\" で常にテキストを貼り付けするように変更"
+
+#: data/calculator.metainfo.xml.in:101
 msgid "Redesigned app icon"
 msgstr "アプリアイコンを再デザイン"
 
-#: data/calculator.metainfo.xml.in:71
+#: data/calculator.metainfo.xml.in:102
 msgid "Flat titlebar"
 msgstr "タイトルバーが平らになるように修正"
 
-#: data/calculator.metainfo.xml.in:81
+#: data/calculator.metainfo.xml.in:112
 msgid "Update for OS 7 and Gtk 4"
 msgstr "elementary OS 7 と Gtk 4 のためのアップデート"
 
-#: data/calculator.metainfo.xml.in:91
-msgid "Update to elementary 6.1 runtime"
-msgstr "elementary ランタイムのバージョンを 6.1 にアップデート"
-
-#: data/calculator.metainfo.xml.in:101
-msgid "Showing advanced controls only affects the focused window"
-msgstr ""
-"高度なオプションを表示する場合、現在フォーカスされているウィンドウにのみ適用"
-"されるように修正"
-
-#: data/calculator.metainfo.xml.in:102
-msgid "Focus the main text entry on startup"
-msgstr "起動時にテキストエントリーにフォーカスするように修正"
-
-#: data/calculator.metainfo.xml.in:103
-msgid "Show the correct window title in Multitasking View"
-msgstr "“マルチタスク画面”で適切なウィンドウタイトルを表示するように修正"
-
-#: data/calculator.metainfo.xml.in:105
-msgid "Added 'New Window' Desktop Action"
-msgstr "“新しいウィンドウ”デスクトップアクションを追加"
-
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/io.elementary.calculator.desktop.in:6
+#: data/io.elementary.calculator.desktop.in:10
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
 msgstr "Calculation;Mathematics;Arithmetic;Scientific;計算;数学;算数;科学;"
 
-#: data/io.elementary.calculator.desktop.in:16
+#: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "新しいウィンドウ"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
+
+#~ msgid "Update to elementary 6.1 runtime"
+#~ msgstr "elementary ランタイムのバージョンを 6.1 にアップデート"
+
+#~ msgid "Showing advanced controls only affects the focused window"
+#~ msgstr ""
+#~ "高度なオプションを表示する場合、現在フォーカスされているウィンドウにのみ適"
+#~ "用されるように修正"
+
+#~ msgid "Focus the main text entry on startup"
+#~ msgstr "起動時にテキストエントリーにフォーカスするように修正"
+
+#~ msgid "Show the correct window title in Multitasking View"
+#~ msgstr "“マルチタスク画面”で適切なウィンドウタイトルを表示するように修正"
+
+#~ msgid "Added 'New Window' Desktop Action"
+#~ msgstr "“新しいウィンドウ”デスクトップアクションを追加"
 
 #~ msgid "New features:"
 #~ msgstr "新機能:"

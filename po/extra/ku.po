@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:04+0000\n"
+"POT-Creation-Date: 2024-09-01 10:38+0000\n"
 "PO-Revision-Date: 2017-01-19 19:50+0000\n"
 "Last-Translator: Rokar <Unknown>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
@@ -19,12 +19,12 @@ msgstr ""
 "X-Generator: Launchpad (build 18302)\n"
 
 #: data/calculator.metainfo.xml.in:10
-#: data/io.elementary.calculator.desktop.in:3
+#: data/io.elementary.calculator.desktop.in:6
 msgid "Calculator"
 msgstr "Makîneya Hesaban"
 
 #: data/calculator.metainfo.xml.in:11
-#: data/io.elementary.calculator.desktop.in:4
+#: data/io.elementary.calculator.desktop.in:7
 msgid "Solve simple equations"
 msgstr "naşî hevsengî çareserkirin"
 
@@ -36,68 +36,48 @@ msgstr ""
 "yek Makîneya Hesaban bo hamu roj. ew alîkarî, Hesaban naşî û zanistî, "
 "jêgirtin têgoşezaniya gogkî, sin, cos, û tan tê de."
 
-#: data/calculator.metainfo.xml.in:46
-msgid "elementary, Inc."
-msgstr ""
-
-#: data/calculator.metainfo.xml.in:53 data/calculator.metainfo.xml.in:68
-#: data/calculator.metainfo.xml.in:79 data/calculator.metainfo.xml.in:89
-#: data/calculator.metainfo.xml.in:99
+#: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
+#: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
+#: data/calculator.metainfo.xml.in:110
 msgid "Minor updates:"
 msgstr ""
 
-#: data/calculator.metainfo.xml.in:55
-msgid "Always use elementary styles and icons, even on other platforms"
-msgstr ""
-
-#: data/calculator.metainfo.xml.in:56
-msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
-
-#: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:72
-#: data/calculator.metainfo.xml.in:82 data/calculator.metainfo.xml.in:92
-#: data/calculator.metainfo.xml.in:104
+#: data/calculator.metainfo.xml.in:64 data/calculator.metainfo.xml.in:74
+#: data/calculator.metainfo.xml.in:88 data/calculator.metainfo.xml.in:103
+#: data/calculator.metainfo.xml.in:113
 msgid "Updated translations"
 msgstr ""
 
-#: data/calculator.metainfo.xml.in:70
-msgid "Redesigned app icon"
+#: data/calculator.metainfo.xml.in:73
+msgid "Branding color changed to Mint 500"
 msgstr ""
 
-#: data/calculator.metainfo.xml.in:71
-msgid "Flat titlebar"
+#: data/calculator.metainfo.xml.in:86
+msgid "Always use elementary styles and icons, even on other platforms"
 msgstr ""
 
-#: data/calculator.metainfo.xml.in:81
-msgid "Update for OS 7 and Gtk 4"
-msgstr ""
-
-#: data/calculator.metainfo.xml.in:91
-msgid "Update to elementary 6.1 runtime"
+#: data/calculator.metainfo.xml.in:87
+msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
 msgstr ""
 
 #: data/calculator.metainfo.xml.in:101
-msgid "Showing advanced controls only affects the focused window"
+msgid "Redesigned app icon"
 msgstr ""
 
 #: data/calculator.metainfo.xml.in:102
-msgid "Focus the main text entry on startup"
+msgid "Flat titlebar"
 msgstr ""
 
-#: data/calculator.metainfo.xml.in:103
-msgid "Show the correct window title in Multitasking View"
-msgstr ""
-
-#: data/calculator.metainfo.xml.in:105
-msgid "Added 'New Window' Desktop Action"
+#: data/calculator.metainfo.xml.in:112
+msgid "Update for OS 7 and Gtk 4"
 msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/io.elementary.calculator.desktop.in:6
+#: data/io.elementary.calculator.desktop.in:10
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
 msgstr ""
 
-#: data/io.elementary.calculator.desktop.in:16
+#: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr ""
 

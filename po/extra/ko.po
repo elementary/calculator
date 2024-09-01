@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:04+0000\n"
+"POT-Creation-Date: 2024-09-01 10:38+0000\n"
 "PO-Revision-Date: 2022-08-12 04:28+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/calculator/extra/"
@@ -21,12 +21,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
-#: data/io.elementary.calculator.desktop.in:3
+#: data/io.elementary.calculator.desktop.in:6
 msgid "Calculator"
 msgstr "계산기"
 
 #: data/calculator.metainfo.xml.in:11
-#: data/io.elementary.calculator.desktop.in:4
+#: data/io.elementary.calculator.desktop.in:7
 msgid "Solve simple equations"
 msgstr "간단한 방정식 풀이"
 
@@ -38,72 +38,70 @@ msgstr ""
 "일상에 사용하는 간편한 계산기. 기본 연산과 삼각함수, 사인, 코사인, 탄젠트의 "
 "과학용 연산도 지원합니다."
 
-#: data/calculator.metainfo.xml.in:46
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
-
-#: data/calculator.metainfo.xml.in:53 data/calculator.metainfo.xml.in:68
-#: data/calculator.metainfo.xml.in:79 data/calculator.metainfo.xml.in:89
-#: data/calculator.metainfo.xml.in:99
+#: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
+#: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
+#: data/calculator.metainfo.xml.in:110
 msgid "Minor updates:"
 msgstr "소소한 업데이트:"
 
-#: data/calculator.metainfo.xml.in:55
-msgid "Always use elementary styles and icons, even on other platforms"
-msgstr ""
-
-#: data/calculator.metainfo.xml.in:56
-msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
-
-#: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:72
-#: data/calculator.metainfo.xml.in:82 data/calculator.metainfo.xml.in:92
-#: data/calculator.metainfo.xml.in:104
+#: data/calculator.metainfo.xml.in:64 data/calculator.metainfo.xml.in:74
+#: data/calculator.metainfo.xml.in:88 data/calculator.metainfo.xml.in:103
+#: data/calculator.metainfo.xml.in:113
 msgid "Updated translations"
 msgstr "최신 번역"
 
-#: data/calculator.metainfo.xml.in:70
+#: data/calculator.metainfo.xml.in:73
+msgid "Branding color changed to Mint 500"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:86
+msgid "Always use elementary styles and icons, even on other platforms"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:87
+msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:101
 msgid "Redesigned app icon"
 msgstr ""
 
-#: data/calculator.metainfo.xml.in:71
+#: data/calculator.metainfo.xml.in:102
 #, fuzzy
 #| msgid "Use slim titlebar"
 msgid "Flat titlebar"
 msgstr "얇은 제목 줄 사용"
 
-#: data/calculator.metainfo.xml.in:81
+#: data/calculator.metainfo.xml.in:112
 msgid "Update for OS 7 and Gtk 4"
 msgstr ""
 
-#: data/calculator.metainfo.xml.in:91
-msgid "Update to elementary 6.1 runtime"
-msgstr "elementary 6.1 runtime으로 업데이트"
-
-#: data/calculator.metainfo.xml.in:101
-msgid "Showing advanced controls only affects the focused window"
-msgstr "고급 컨트롤을 표시하면 초점이 맞춰진 창에만 영향을 줍니다"
-
-#: data/calculator.metainfo.xml.in:102
-msgid "Focus the main text entry on startup"
-msgstr "시작 시 기본 텍스트 항목에 초점 맞추기"
-
-#: data/calculator.metainfo.xml.in:103
-msgid "Show the correct window title in Multitasking View"
-msgstr "멀티태스킹 보기에서 올바른 창 제목 표시"
-
-#: data/calculator.metainfo.xml.in:105
-msgid "Added 'New Window' Desktop Action"
-msgstr "'새 창' 데스크톱 작업 추가"
-
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/io.elementary.calculator.desktop.in:6
+#: data/io.elementary.calculator.desktop.in:10
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
 msgstr "계산;수학;산술;과학;"
 
-#: data/io.elementary.calculator.desktop.in:16
+#: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "새 창"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
+
+#~ msgid "Update to elementary 6.1 runtime"
+#~ msgstr "elementary 6.1 runtime으로 업데이트"
+
+#~ msgid "Showing advanced controls only affects the focused window"
+#~ msgstr "고급 컨트롤을 표시하면 초점이 맞춰진 창에만 영향을 줍니다"
+
+#~ msgid "Focus the main text entry on startup"
+#~ msgstr "시작 시 기본 텍스트 항목에 초점 맞추기"
+
+#~ msgid "Show the correct window title in Multitasking View"
+#~ msgstr "멀티태스킹 보기에서 올바른 창 제목 표시"
+
+#~ msgid "Added 'New Window' Desktop Action"
+#~ msgstr "'새 창' 데스크톱 작업 추가"
 
 #~ msgid "New features:"
 #~ msgstr "새로운 기능:"

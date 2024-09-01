@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 18:04+0000\n"
+"POT-Creation-Date: 2024-09-01 10:38+0000\n"
 "PO-Revision-Date: 2022-03-31 22:10+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -21,12 +21,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
-#: data/io.elementary.calculator.desktop.in:3
+#: data/io.elementary.calculator.desktop.in:6
 msgid "Calculator"
 msgstr "بژمێر"
 
 #: data/calculator.metainfo.xml.in:11
-#: data/io.elementary.calculator.desktop.in:4
+#: data/io.elementary.calculator.desktop.in:7
 msgid "Solve simple equations"
 msgstr "شیکاکردنی هاوکێشە سادەکان"
 
@@ -38,72 +38,70 @@ msgstr ""
 "بژمێرێکی سادە بۆ کاوروباری هەمووان. ئەم بژمێرە شیکاری هاوکێشە سادەکان و "
 "هەندێک هاوکێشەی زانستی وەکو ساین، کۆساین، و تان لەخۆ دەگرێت."
 
-#: data/calculator.metainfo.xml.in:46
-msgid "elementary, Inc."
-msgstr "کۆمپانیای هاوپشکی ئێلێمەنتەری."
-
-#: data/calculator.metainfo.xml.in:53 data/calculator.metainfo.xml.in:68
-#: data/calculator.metainfo.xml.in:79 data/calculator.metainfo.xml.in:89
-#: data/calculator.metainfo.xml.in:99
+#: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
+#: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
+#: data/calculator.metainfo.xml.in:110
 msgid "Minor updates:"
 msgstr "وردە نوێکاری:"
 
-#: data/calculator.metainfo.xml.in:55
-msgid "Always use elementary styles and icons, even on other platforms"
-msgstr ""
-
-#: data/calculator.metainfo.xml.in:56
-msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
-
-#: data/calculator.metainfo.xml.in:57 data/calculator.metainfo.xml.in:72
-#: data/calculator.metainfo.xml.in:82 data/calculator.metainfo.xml.in:92
-#: data/calculator.metainfo.xml.in:104
+#: data/calculator.metainfo.xml.in:64 data/calculator.metainfo.xml.in:74
+#: data/calculator.metainfo.xml.in:88 data/calculator.metainfo.xml.in:103
+#: data/calculator.metainfo.xml.in:113
 msgid "Updated translations"
 msgstr "وەرگێڕدراوە نوێکان"
 
-#: data/calculator.metainfo.xml.in:70
+#: data/calculator.metainfo.xml.in:73
+msgid "Branding color changed to Mint 500"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:86
+msgid "Always use elementary styles and icons, even on other platforms"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:87
+msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:101
 msgid "Redesigned app icon"
 msgstr ""
 
-#: data/calculator.metainfo.xml.in:71
+#: data/calculator.metainfo.xml.in:102
 #, fuzzy
 #| msgid "Use slim titlebar"
 msgid "Flat titlebar"
 msgstr "بەکارهێنانی تایتڵباڕێکی باریک"
 
-#: data/calculator.metainfo.xml.in:81
+#: data/calculator.metainfo.xml.in:112
 msgid "Update for OS 7 and Gtk 4"
 msgstr ""
 
-#: data/calculator.metainfo.xml.in:91
-msgid "Update to elementary 6.1 runtime"
-msgstr "نوێکردنەوە بۆ ڕەنتایمی ئێلێمەنتەری ٦.١"
-
-#: data/calculator.metainfo.xml.in:101
-msgid "Showing advanced controls only affects the focused window"
-msgstr "پشاندنی کۆنتڕۆڵی پێشکەوتوو تەنها کاریگەری لەسەر پەنجەری کارا دەبێت"
-
-#: data/calculator.metainfo.xml.in:102
-msgid "Focus the main text entry on startup"
-msgstr "سەرنج بخە سەر دەقی سەرەکی هاتنەناو لە کاتی دەست پێ کردن"
-
-#: data/calculator.metainfo.xml.in:103
-msgid "Show the correct window title in Multitasking View"
-msgstr "پیشاندانی تایتڵی دروستی پەنجەرەکان لە مەڵتی-تاسکیندا"
-
-#: data/calculator.metainfo.xml.in:105
-msgid "Added 'New Window' Desktop Action"
-msgstr "کرداری ڕوومێزی 'پەنجەری تازە' زیاد کرا"
-
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/io.elementary.calculator.desktop.in:6
+#: data/io.elementary.calculator.desktop.in:10
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
 msgstr "ژماردن; بیرکاری; ژمێرکاری; زانستی;"
 
-#: data/io.elementary.calculator.desktop.in:16
+#: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "پەنجەرەی تازە"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "کۆمپانیای هاوپشکی ئێلێمەنتەری."
+
+#~ msgid "Update to elementary 6.1 runtime"
+#~ msgstr "نوێکردنەوە بۆ ڕەنتایمی ئێلێمەنتەری ٦.١"
+
+#~ msgid "Showing advanced controls only affects the focused window"
+#~ msgstr "پشاندنی کۆنتڕۆڵی پێشکەوتوو تەنها کاریگەری لەسەر پەنجەری کارا دەبێت"
+
+#~ msgid "Focus the main text entry on startup"
+#~ msgstr "سەرنج بخە سەر دەقی سەرەکی هاتنەناو لە کاتی دەست پێ کردن"
+
+#~ msgid "Show the correct window title in Multitasking View"
+#~ msgstr "پیشاندانی تایتڵی دروستی پەنجەرەکان لە مەڵتی-تاسکیندا"
+
+#~ msgid "Added 'New Window' Desktop Action"
+#~ msgstr "کرداری ڕوومێزی 'پەنجەری تازە' زیاد کرا"
 
 #~ msgid "New features:"
 #~ msgstr "تایبەتمەندییە تازەکان:"
