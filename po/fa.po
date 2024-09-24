@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:38+0000\n"
-"PO-Revision-Date: 2016-05-27 15:28+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2024-09-25 10:14+0000\n"
+"Last-Translator: Hossein <hossein17@duck.com>\n"
+"Language-Team: Persian <https://l10n.elementary.io/projects/calculator/"
+"calculator/fa/>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: src/MainWindow.vala:85
 msgid "Calculator"
@@ -27,11 +29,9 @@ msgstr "پیشینه"
 
 #: src/MainWindow.vala:123
 msgid "Calculate Result"
-msgstr ""
+msgstr "نتیجه محاسبه"
 
 #: src/MainWindow.vala:130
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
 msgstr "افزودن آخرین نتیجه"
 
@@ -49,117 +49,115 @@ msgstr "افزودن"
 
 #: src/MainWindow.vala:156
 msgid "Subtract"
-msgstr ""
+msgstr "تفریق"
 
 #: src/MainWindow.vala:163
 msgid "Multiply"
-msgstr ""
+msgstr "ضرب"
 
 #: src/MainWindow.vala:170
 msgid "Divide"
-msgstr ""
+msgstr "تقسیم"
 
 #: src/MainWindow.vala:187
 msgid "Percentage"
-msgstr ""
+msgstr "درصد"
 
 #: src/MainWindow.vala:269
 msgid "Set memory value"
-msgstr ""
+msgstr "مقدار حافظه را تنظیم کنید"
 
 #: src/MainWindow.vala:274
 msgid "Recall value from memory"
-msgstr ""
+msgstr "مقدار را از حافظه به بیاورید"
 
 #: src/MainWindow.vala:278
 msgid "Add to stored value"
-msgstr ""
+msgstr "به ارزش ذخیره شده اضافه کنید"
 
 #: src/MainWindow.vala:282
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "از مقدار ذخیره شده کم کنید"
 
 #: src/MainWindow.vala:287
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "پاک کردن ورودی"
+msgstr "پاک کردن حافظه"
 
 #: src/MainWindow.vala:292
 msgid "Grand Total"
-msgstr ""
+msgstr "جمع کل"
 
 #: src/MainWindow.vala:298
 msgid "Start Group"
-msgstr ""
+msgstr "گروه شروع"
 
 #: src/MainWindow.vala:304
 msgid "End Group"
-msgstr ""
+msgstr "گروه پایان"
 
 #: src/MainWindow.vala:310
 msgid "Exponent"
-msgstr ""
+msgstr "توان"
 
 #: src/MainWindow.vala:316
 msgid "Root"
-msgstr ""
+msgstr "ریشه"
 
 #: src/MainWindow.vala:322
 msgid "Sine"
-msgstr ""
+msgstr "سینوس"
 
 #: src/MainWindow.vala:328
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "سینوس هایپربولیک"
 
 #: src/MainWindow.vala:334
 msgid "Cosine"
-msgstr ""
+msgstr "کوسینوس"
 
 #: src/MainWindow.vala:340
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "کسینوس هایپربولیک"
 
 #: src/MainWindow.vala:346
 msgid "Tangent"
-msgstr ""
+msgstr "تانژانت"
 
 #: src/MainWindow.vala:352
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "تانژانت هایپربولیک"
 
 #: src/MainWindow.vala:358
 msgid "Pi"
-msgstr ""
+msgstr "Pi"
 
 #: src/MainWindow.vala:364
 msgid "Euler's Number"
-msgstr ""
+msgstr "شماره اویلر"
 
 #: src/MainWindow.vala:370
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "لگاریتم بر پایه 10"
 
 #: src/MainWindow.vala:376
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "لوگاریتم طبیعی"
 
 #: src/MainWindow.vala:382
 msgid "Inverse Sine"
-msgstr ""
+msgstr "سینوس معکوس"
 
 #: src/MainWindow.vala:388
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "کسینوس معکوس"
 
 #: src/MainWindow.vala:394
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "تانژانت معکوس"
 
 #: src/MainWindow.vala:398
 msgid "Reciprocal"
-msgstr ""
+msgstr "متقابل"
 
 #: src/MainWindow.vala:777
 msgid "Hide extended functionality"
@@ -167,13 +165,11 @@ msgstr "پنهان کردن قابلیت های اضافی"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "یک عبارت یا نتیجه قبلی را در محاسبه جاری وارد کنید."
 
 #: src/HistoryDialog.vala:81
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "مقدار برای اضافه شدن"
+msgstr "مقدار برای اضافه شدن:"
 
 #: src/HistoryDialog.vala:86
 msgid "Result"
@@ -185,10 +181,8 @@ msgstr "عبارت"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:113
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "پاک کردن ورودی"
+msgstr "پاک کردن تاریخچه"
 
 #: src/HistoryDialog.vala:116
 msgid "Close"
@@ -196,22 +190,22 @@ msgstr "بستن"
 
 #: src/HistoryDialog.vala:118
 msgid "Insert"
-msgstr ""
+msgstr "وارد کردن"
 
 #: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
-msgstr "'%s' غیر قابل قبول است"
+msgstr "'%s' غیر قابل قبول است."
 
 #: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "پرانتز مطابقت ندارد."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
-msgstr "'%s' ناشناخته است"
+msgstr "'%s' ناشناخته است."
 
 #~ msgid "translator-credits"
 #~ msgstr ""
