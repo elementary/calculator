@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:38+0000\n"
-"PO-Revision-Date: 2024-09-25 10:14+0000\n"
+"PO-Revision-Date: 2024-09-26 17:16+0000\n"
 "Last-Translator: Hossein <hossein17@duck.com>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/calculator/extra/"
 "fa/>\n"
@@ -27,55 +27,57 @@ msgstr "ماشین‌حساب"
 #: data/calculator.metainfo.xml.in:11
 #: data/io.elementary.calculator.desktop.in:7
 msgid "Solve simple equations"
-msgstr ""
+msgstr "حل معادلات ساده"
 
 #: data/calculator.metainfo.xml.in:13
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
+"یک ماشین حساب ساده برای استفاده روزمره. از محاسبات پایه و برخی علمی از جمله "
+"توابع مثلثات، sin، cos و tan پشتیبانی می کند."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
 #: data/calculator.metainfo.xml.in:110
 msgid "Minor updates:"
-msgstr ""
+msgstr "آپدیت جزئی:"
 
 #: data/calculator.metainfo.xml.in:64 data/calculator.metainfo.xml.in:74
 #: data/calculator.metainfo.xml.in:88 data/calculator.metainfo.xml.in:103
 #: data/calculator.metainfo.xml.in:113
 msgid "Updated translations"
-msgstr ""
+msgstr "ترجمه های به روز شده"
 
 #: data/calculator.metainfo.xml.in:73
 msgid "Branding color changed to Mint 500"
-msgstr ""
+msgstr "رنگ برند به Mint 500 تغییر کرد"
 
 #: data/calculator.metainfo.xml.in:86
 msgid "Always use elementary styles and icons, even on other platforms"
-msgstr ""
+msgstr "همیشه از استایل و آیکون های المنتری استفاده کنید حتی در پلتفرم های دیگر"
 
 #: data/calculator.metainfo.xml.in:87
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
+msgstr "همیشه متن را با میانبر صفحه کلید \"Ctrl + V\" جای‌گذاری کنید"
 
 #: data/calculator.metainfo.xml.in:101
 msgid "Redesigned app icon"
-msgstr ""
+msgstr "آیکون برنامه بازطراحی شده"
 
 #: data/calculator.metainfo.xml.in:102
 msgid "Flat titlebar"
-msgstr ""
+msgstr "نوار عنوان تخت"
 
 #: data/calculator.metainfo.xml.in:112
 msgid "Update for OS 7 and Gtk 4"
-msgstr ""
+msgstr "به روز رسانی برای OS 7 و Gtk 4"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:10
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "محاسبات;ریاضی;حساب;علمی;"
 
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
-msgstr ""
+msgstr "پنجره جدید"
