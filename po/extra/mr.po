@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:38+0000\n"
+"POT-Creation-Date: 2024-11-04 15:04+0000\n"
 "PO-Revision-Date: 2023-02-08 09:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/calculator/extra/"
@@ -36,6 +36,10 @@ msgid ""
 msgstr ""
 "रोजच्या वापरासाठी एक साधारण कॅल्क्युलेटर.साधारण आणि काही वैज्ञानिक गणिते जसे "
 "त्रिकोणमिती functions ,sin cos आणि tan वगैरे करण्यासाठी उपयुक्त."
+
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr "एलिमेंटरी, Inc."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -81,9 +85,6 @@ msgstr "मोजणी; गणित; अंकगणित; वैज्ञा
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "नवीन विंडो"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "एलिमेंटरी, Inc."
 
 #~ msgid "Update to elementary 6.1 runtime"
 #~ msgstr "elementary 6.1 रनटाइम वर अपडेट करा"

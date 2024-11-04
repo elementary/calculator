@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:38+0000\n"
+"POT-Creation-Date: 2024-11-04 15:04+0000\n"
 "PO-Revision-Date: 2021-07-26 17:09+0000\n"
 "Last-Translator: elSolus <tumbleweed@tuta.io>\n"
 "Language-Team: Punjabi <https://l10n.elementary.io/projects/calculator/extra/"
@@ -36,6 +36,10 @@ msgid ""
 msgstr ""
 "ਰੋਜ਼ਮੱਰਾ ਦੀ ਵਰਤੋਂ ਲਈ ਇੱਕ ਸਾਦਾ ਕੈਲਕੂਲੇਟਰ। ਇਹ ਮੁੱਢਲੇ ਅਤੇ ਕੁਝ ਸਾਇੰਸੀ ਹਿਸਾਬ ਕਿਵੇਂ ਤ੍ਰਿਕੋਨਮਿਤੀ ਦੇ "
 "ਫੰਕਸ਼ਨ ਜਿਵੇਂ ਸਾਈਨ, ਕੌਸ, ਅਤੇ ਟੈਨ ਨੂੰ ਵੀ ਹੱਲ ਕਰਨ ਦੇ ਕਾਬਲ ਹੈ।"
+
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr "ਐਲੀਮੈਂਟਰੀ, ਇਨਕਾਰਪੋਰੇਟਿਡ"
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -83,9 +87,6 @@ msgstr ""
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "ਐਲੀਮੈਂਟਰੀ, ਇਨਕਾਰਪੋਰੇਟਿਡ"
 
 #~ msgid "New features:"
 #~ msgstr "ਨਵੇਂ ਫ਼ੀਚਰ:"

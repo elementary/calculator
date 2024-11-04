@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:38+0000\n"
+"POT-Creation-Date: 2024-11-04 15:04+0000\n"
 "PO-Revision-Date: 2018-10-11 13:16+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/calculator/"
@@ -37,6 +37,11 @@ msgid ""
 msgstr ""
 "दैनिक इस्तेमाल के लिए एक साधारण कैलकुलेटर। यह बुनियादी और कुछ वैज्ञानिक गणनाओं का समर्थन "
 "करता है जिसमें त्रिकोणमिति फ़ंक्शंस, sin, cos, tan शामिल हैं।"
+
+#: data/calculator.metainfo.xml.in:54
+#, fuzzy
+msgid "elementary, Inc."
+msgstr "एलीमेंट्री एलएलसी."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -82,10 +87,6 @@ msgstr ""
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr ""
-
-#, fuzzy
-#~ msgid "elementary, Inc."
-#~ msgstr "एलीमेंट्री एलएलसी."
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"

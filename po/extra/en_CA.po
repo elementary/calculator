@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:38+0000\n"
+"POT-Creation-Date: 2024-11-04 15:04+0000\n"
 "PO-Revision-Date: 2018-07-12 14:31-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -34,6 +34,11 @@ msgid ""
 msgstr ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
+
+#: data/calculator.metainfo.xml.in:54
+#, fuzzy
+msgid "elementary, Inc."
+msgstr "elementary LLC."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -79,10 +84,6 @@ msgstr ""
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr ""
-
-#, fuzzy
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary LLC."
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"

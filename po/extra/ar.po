@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:38+0000\n"
+"POT-Creation-Date: 2024-11-04 15:04+0000\n"
 "PO-Revision-Date: 2020-05-13 05:10+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/calculator/extra/"
@@ -37,6 +37,11 @@ msgid ""
 msgstr ""
 "آلة حاسبة بسيطة للإستخدام اليومي. تدعم الدوال البسيطة وبعض الدوال العلمية "
 "مثل دوال حساب المثلثات، الجيب، جيب التمام، والظل."
+
+#: data/calculator.metainfo.xml.in:54
+#, fuzzy
+msgid "elementary, Inc."
+msgstr "elementary LLC."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -82,10 +87,6 @@ msgstr "الحساب;الرياضيات;الحساب;العلمية;"
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr ""
-
-#, fuzzy
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary LLC."
 
 #, fuzzy
 #~| msgid "Minor updates:"

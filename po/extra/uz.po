@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:38+0000\n"
+"POT-Creation-Date: 2024-11-04 15:04+0000\n"
 "PO-Revision-Date: 2021-03-21 16:47+0000\n"
 "Last-Translator: Shukrullo Turgunov <shookrullo@gmail.com>\n"
 "Language-Team: Uzbek <https://l10n.elementary.io/projects/calculator/extra/"
@@ -37,6 +37,10 @@ msgstr ""
 "Kundalik foydalanish uchun oddiy kalkulyator. Oddiy va ba'zi ilmiy, "
 "trigonometrik funksiyalar jumladan sinus, kosinus va tangenslarni "
 "hisoblashni ham amalga oshira oladi."
+
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -84,9 +88,6 @@ msgstr "Hisoblash;Matematika;Arifmetika;Fan;"
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr ""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "Yangi imkoniyatlar:"

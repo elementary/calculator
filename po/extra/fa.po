@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:38+0000\n"
+"POT-Creation-Date: 2024-11-04 15:04+0000\n"
 "PO-Revision-Date: 2024-09-26 17:16+0000\n"
 "Last-Translator: Hossein <hossein17@duck.com>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/calculator/extra/"
@@ -37,6 +37,10 @@ msgstr ""
 "یک ماشین حساب ساده برای استفاده روزمره. از محاسبات پایه و برخی علمی از جمله "
 "توابع مثلثات، sin، cos و tan پشتیبانی می کند."
 
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr ""
+
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
 #: data/calculator.metainfo.xml.in:110
@@ -55,7 +59,8 @@ msgstr "رنگ برند به Mint 500 تغییر کرد"
 
 #: data/calculator.metainfo.xml.in:86
 msgid "Always use elementary styles and icons, even on other platforms"
-msgstr "همیشه از استایل و آیکون های المنتری استفاده کنید حتی در پلتفرم های دیگر"
+msgstr ""
+"همیشه از استایل و آیکون های المنتری استفاده کنید حتی در پلتفرم های دیگر"
 
 #: data/calculator.metainfo.xml.in:87
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""

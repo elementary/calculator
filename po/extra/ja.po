@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:38+0000\n"
+"POT-Creation-Date: 2024-11-04 15:04+0000\n"
 "PO-Revision-Date: 2024-09-02 00:47+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
@@ -37,6 +37,10 @@ msgid ""
 msgstr ""
 "日常用途を想定した、シンプルな電卓です。基本的な計算と科学的な計算が可能で、"
 "サイン・コサイン・タンジェントといった三角関数などにも対応しています。"
+
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -85,9 +89,6 @@ msgstr "Calculation;Mathematics;Arithmetic;Scientific;計算;数学;算数;科�
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "新しいウィンドウ"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Update to elementary 6.1 runtime"
 #~ msgstr "elementary ランタイムのバージョンを 6.1 にアップデート"

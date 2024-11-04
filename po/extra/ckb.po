@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:38+0000\n"
+"POT-Creation-Date: 2024-11-04 15:04+0000\n"
 "PO-Revision-Date: 2022-03-31 22:10+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -37,6 +37,10 @@ msgid ""
 msgstr ""
 "بژمێرێکی سادە بۆ کاوروباری هەمووان. ئەم بژمێرە شیکاری هاوکێشە سادەکان و "
 "هەندێک هاوکێشەی زانستی وەکو ساین، کۆساین، و تان لەخۆ دەگرێت."
+
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr "کۆمپانیای هاوپشکی ئێلێمەنتەری."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -84,9 +88,6 @@ msgstr "ژماردن; بیرکاری; ژمێرکاری; زانستی;"
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "پەنجەرەی تازە"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "کۆمپانیای هاوپشکی ئێلێمەنتەری."
 
 #~ msgid "Update to elementary 6.1 runtime"
 #~ msgstr "نوێکردنەوە بۆ ڕەنتایمی ئێلێمەنتەری ٦.١"

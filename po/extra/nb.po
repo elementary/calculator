@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:38+0000\n"
+"POT-Creation-Date: 2024-11-04 15:04+0000\n"
 "PO-Revision-Date: 2024-07-05 14:16+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -38,6 +38,10 @@ msgstr ""
 "En enkel kalkulator for hverdagsbruk. Den støtter enkle, og noen "
 "vitenskapelige utregninger, inkludert trigonometrifunksjoner, sinus, "
 "cosinus, og tangens."
+
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -85,9 +89,6 @@ msgstr "Utregning;matematikk;aritmetikk;vitenskapelig;"
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "Nytt vindu"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Update to elementary 6.1 runtime"
 #~ msgstr "Oppdatering til elementary 6.1-kjøretidsmiljø"

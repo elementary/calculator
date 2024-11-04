@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 10:38+0000\n"
+"POT-Creation-Date: 2024-11-04 15:04+0000\n"
 "PO-Revision-Date: 2023-06-02 09:07+0000\n"
 "Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
 "io>\n"
@@ -38,6 +38,10 @@ msgstr ""
 "Kalkulator sederhana untuk pemakaian sehari-hari. Mendukung perhitungan "
 "dasar dan beberapa perhitungan ilmiah termasuk fungsi trigonometri, sin, "
 "cos, dan tan."
+
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr "elementary, PT."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -83,9 +87,6 @@ msgstr "Perhitungan;Matematika;Aritmatika;Ilmiah;"
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "Jendela baru"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, PT."
 
 #~ msgid "Update to elementary 6.1 runtime"
 #~ msgstr "Perbarui ke runtime elementary 6.1"
