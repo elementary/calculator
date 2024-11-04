@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-01 10:38+0000\n"
-"PO-Revision-Date: 2023-06-02 09:07+0000\n"
+"PO-Revision-Date: 2024-11-04 15:03+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/calculator/extra/"
 "fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -53,7 +53,7 @@ msgstr "Mise à jour des traductions"
 
 #: data/calculator.metainfo.xml.in:73
 msgid "Branding color changed to Mint 500"
-msgstr ""
+msgstr "Couleur du logo changée pour Mint 500"
 
 #: data/calculator.metainfo.xml.in:86
 msgid "Always use elementary styles and icons, even on other platforms"
