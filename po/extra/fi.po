@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-04 15:04+0000\n"
-"PO-Revision-Date: 2021-07-25 13:17+0000\n"
+"PO-Revision-Date: 2024-12-02 15:16+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/calculator/extra/"
 "fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -86,7 +86,7 @@ msgstr "Laskenta;Matematiikka;Aritmetiikka;Tieteellinen;"
 
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
-msgstr ""
+msgstr "Uusi ikkuna"
 
 #~ msgid "New features:"
 #~ msgstr "Uudet ominaisuudet:"
