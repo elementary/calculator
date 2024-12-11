@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-04 15:04+0000\n"
-"PO-Revision-Date: 2024-09-02 00:47+0000\n"
+"PO-Revision-Date: 2024-12-12 05:36+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
 "extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -46,7 +46,7 @@ msgstr "elementary, Inc."
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
 #: data/calculator.metainfo.xml.in:110
 msgid "Minor updates:"
-msgstr "そのほかのアップデート:"
+msgstr "マイナーアップデート:"
 
 #: data/calculator.metainfo.xml.in:64 data/calculator.metainfo.xml.in:74
 #: data/calculator.metainfo.xml.in:88 data/calculator.metainfo.xml.in:103
