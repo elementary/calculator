@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 15:04+0000\n"
+"POT-Creation-Date: 2025-01-19 20:47+0000\n"
 "PO-Revision-Date: 2018-01-03 19:17+0000\n"
 "Last-Translator: Arkadeepta Roy <arkadeepta.roy2016@vitstudent.ac.in>\n"
 "Language-Team: Bengali <https://weblate.elementary.io/projects/calculator/"
@@ -37,10 +37,6 @@ msgid ""
 msgstr ""
 "দৈনন্দিন ব্যবহারের জন্য একটি সহজ ক্যালকুলেটর। এটা মৌলিক এবং ত্রিকোণমিতি ফাংশন, "
 "পাপ, কস, এবং তান সহ কিছু বৈজ্ঞানিক গণনা সমর্থন করে।"
-
-#: data/calculator.metainfo.xml.in:54
-msgid "elementary, Inc."
-msgstr ""
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99

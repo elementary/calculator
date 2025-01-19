@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 15:04+0000\n"
+"POT-Creation-Date: 2025-01-19 20:47+0000\n"
 "PO-Revision-Date: 2020-10-20 05:15+0000\n"
 "Last-Translator: Trkien618 <hacngoctrungkien@gmail.com>\n"
 "Language-Team: Vietnamese <https://l10n.elementary.io/projects/calculator/"
@@ -36,10 +36,6 @@ msgid ""
 msgstr ""
 "Một máy tính đơn giản để sử dụng hàng ngày. Nó hỗ trợ một số phép tính khoa "
 "học và cơ bản bao gồm các hàm lượng giác, sin, cos và tan."
-
-#: data/calculator.metainfo.xml.in:54
-msgid "elementary, Inc."
-msgstr ""
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99

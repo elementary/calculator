@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 15:04+0000\n"
+"POT-Creation-Date: 2025-01-19 20:47+0000\n"
 "PO-Revision-Date: 2016-08-04 00:05+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -36,10 +36,6 @@ msgstr ""
 "Lihtne kalkulaator igapäevasteks arvutusteks. Toetab baas- ning mõningaid "
 "teaduslike funktsioone, kaasaarvatud trigonomeetrilise funktsioone, nagu "
 "sin, cos ja tan."
-
-#: data/calculator.metainfo.xml.in:54
-msgid "elementary, Inc."
-msgstr ""
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99

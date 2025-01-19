@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 15:04+0000\n"
+"POT-Creation-Date: 2025-01-19 20:47+0000\n"
 "PO-Revision-Date: 2024-09-20 09:43+0000\n"
 "Last-Translator: Sinan Decron <sinanveyasinan@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/calculator/extra/"
@@ -37,10 +37,6 @@ msgid ""
 msgstr ""
 "Günlük kullanım için basit bir hesap makinesi. Basit hesaplamaları ve sin, "
 "cos, ve tan gibi bazı trigonometrik fonksiyonları destekler."
-
-#: data/calculator.metainfo.xml.in:54
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -89,6 +85,9 @@ msgstr ""
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "Yeni Pencere"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "Update to elementary 6.1 runtime"
 #~ msgstr "Elementary 6.1 çalışma zamanına güncellendi"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 15:04+0000\n"
+"POT-Creation-Date: 2025-01-19 20:47+0000\n"
 "PO-Revision-Date: 2021-09-04 00:28+0000\n"
 "Last-Translator: Silviu Popescu <teodorspopescu@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/calculator/"
@@ -39,10 +39,6 @@ msgstr ""
 "Un calculator simplu pentru utilizare zilnică. Suportă calcule de bază și "
 "câteva calcule științifice cum ar fi funcții de trigonometrie sin, cos și "
 "tan."
-
-#: data/calculator.metainfo.xml.in:54
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -90,6 +86,9 @@ msgstr "Calculare;Matematică;Aritmetic;Științific;"
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr ""
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "New features:"
 #~ msgstr "Noi funcționalități:"

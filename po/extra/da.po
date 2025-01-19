@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 15:04+0000\n"
+"POT-Creation-Date: 2025-01-19 20:47+0000\n"
 "PO-Revision-Date: 2020-05-26 14:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/calculator/extra/"
@@ -38,10 +38,6 @@ msgstr ""
 "En simpel lommeregner til hverdagsbrug. Den understøtter grundlæggende og "
 "nogle videnskabelige udregninger inklusive trigonometri-funktioner, sin, "
 "cos, og tan."
-
-#: data/calculator.metainfo.xml.in:54
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -89,6 +85,9 @@ msgstr "Udregning;Lommeregner;Matematik;Videnskab;"
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr ""
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #, fuzzy
 #~| msgid "Minor updates:"

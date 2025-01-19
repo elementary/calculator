@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 15:04+0000\n"
+"POT-Creation-Date: 2025-01-19 20:47+0000\n"
 "PO-Revision-Date: 2024-09-02 20:05+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/calculator/extra/"
@@ -38,10 +38,6 @@ msgstr ""
 "Una calculadora senzilla per a l'ús diari. És compatible amb càlculs bàsics "
 "i alguns càlculs científics que inclouen funcions trigonomètriques, sinus, "
 "cosinus, i tangents."
-
-#: data/calculator.metainfo.xml.in:54
-msgid "elementary, Inc."
-msgstr "elementary, Inc."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -88,6 +84,9 @@ msgstr "Càlcul;Matemàtiques;Aritmètica;Científic;"
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "Finestra nova"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
 
 #~ msgid "Update to elementary 6.1 runtime"
 #~ msgstr "Actualització de l'entorn d'execució de l'elementary a 6.1"

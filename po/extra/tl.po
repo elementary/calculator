@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 15:04+0000\n"
+"POT-Creation-Date: 2025-01-19 20:47+0000\n"
 "PO-Revision-Date: 2018-09-22 01:27+0000\n"
 "Last-Translator: Axel Philip Advento <badwolf.bloodseeker.rev@gmail.com>\n"
 "Language-Team: Tagalog <https://weblate.elementary.io/projects/calculator/"
@@ -39,11 +39,6 @@ msgstr ""
 "Isang simpleng talatuusan para sa pang-araw-araw na paggamit. Sumusuporta sa "
 "mga simple at siyentipikong kalkulasyon kabilang ang mga trigonometrikong "
 "function na sin, cos, at tan."
-
-#: data/calculator.metainfo.xml.in:54
-#, fuzzy
-msgid "elementary, Inc."
-msgstr "elementary LLC."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -89,6 +84,10 @@ msgstr ""
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr ""
+
+#, fuzzy
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary LLC."
 
 #~ msgid "About Calculator"
 #~ msgstr "Tungkol sa Kalkulador"
