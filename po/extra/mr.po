@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-04 15:04+0000\n"
-"PO-Revision-Date: 2023-02-08 09:25+0000\n"
+"PO-Revision-Date: 2025-01-19 20:46+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/calculator/extra/"
 "mr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.9.2\n"
 
 #: data/calculator.metainfo.xml.in:10
 #: data/io.elementary.calculator.desktop.in:6
@@ -55,15 +55,15 @@ msgstr "अद्ययावत भाषांतर"
 
 #: data/calculator.metainfo.xml.in:73
 msgid "Branding color changed to Mint 500"
-msgstr ""
+msgstr "ब्रँडिंग रंग मिंट 500 मध्ये बदलला"
 
 #: data/calculator.metainfo.xml.in:86
 msgid "Always use elementary styles and icons, even on other platforms"
-msgstr ""
+msgstr "इतर प्लॅटफॉर्मवर देखील नेहमी elementary शैली आणि चिन्ह वापरा"
 
 #: data/calculator.metainfo.xml.in:87
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
+msgstr "कीबोर्ड शॉर्टकट \"Ctrl + V\" ने नेहमी मजकूर पेस्ट करा"
 
 #: data/calculator.metainfo.xml.in:101
 msgid "Redesigned app icon"
