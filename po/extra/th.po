@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-19 20:47+0000\n"
-"PO-Revision-Date: 2024-03-01 19:12+0000\n"
+"PO-Revision-Date: 2025-02-03 01:12+0000\n"
 "Last-Translator: Aefgh Threenine <aefgh39622@gmail.com>\n"
 "Language-Team: Thai <https://l10n.elementary.io/projects/calculator/extra/th/"
 ">\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.9.2\n"
 
 #: data/calculator.metainfo.xml.in:10
 #: data/io.elementary.calculator.desktop.in:6
@@ -27,13 +27,16 @@ msgstr "เครื่องคิดเลข"
 #: data/calculator.metainfo.xml.in:11
 #: data/io.elementary.calculator.desktop.in:7
 msgid "Solve simple equations"
-msgstr ""
+msgstr "แก้สมการอย่างง่าย"
 
 #: data/calculator.metainfo.xml.in:13
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
+"เครื่องคิดเลขอย่างง่ายสำหรับใช้ในชีวิตประจำวัน "
+"แอปพลิเคชันนี้รองรับการคำนวณทางวิทยาศาสตร์ทั้งแบบพื้นฐานและแบบอื่นๆ บางแบบ "
+"รวมไปถึงฟังก์ชันตรีโกณมิติ ไซน์ โคไซน์ และแทนเจนต์"
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
