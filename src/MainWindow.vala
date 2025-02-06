@@ -22,7 +22,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
     private static GLib.Settings settings;
 
     private Gtk.Revealer extended_revealer;
-    private Gtk.Entry entry;
+    private Gtk.Text entry;
     private Gtk.Button button_calc;
     private Gtk.Button button_history;
     private Gtk.Button button_ans;
@@ -112,7 +112,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         headerbar.add_css_class (Granite.STYLE_CLASS_DEFAULT_DECORATION);
         headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
 
-        entry = new Gtk.Entry () {
+        entry = new Gtk.Text () {
             xalign = 1,
             vexpand = true,
             valign = Gtk.Align.FILL
