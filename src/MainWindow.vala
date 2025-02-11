@@ -486,7 +486,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
 		overlay_split_view.sidebar = history_sidebar;
 
         child = overlay_split_view;
-        
+
         var null_title = new Gtk.Grid () {
             visible = false
         };

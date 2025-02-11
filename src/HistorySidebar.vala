@@ -64,7 +64,7 @@ namespace PantheonCalculator {
                 hexpand = true,
                 vexpand = true
             };
-            
+
             var main_box = new Gtk.Box (VERTICAL, 0) {
                hexpand = true,
                vexpand = true
@@ -82,18 +82,22 @@ namespace PantheonCalculator {
             history_list.insert (0, entry);
         }
 
-        private Gtk.Widget create_widget_func (Object object) {   
+        private Gtk.Widget create_widget_func (Object object) {
             var history = (MainWindow.History) object;
 
-            var exp_label = new Gtk.Label (history.exp) {
-                halign = START
+            var exp_label = new Gtk.Label () {
+                halign = START,
+                ellipsize = END,
+                tooltip_text = history.exp
             };
             exp_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
             exp_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
             var output_label = new Gtk.Label ("<b>%s</b>".printf (history.output)) {
                 halign = START,
-                use_markup = true
+                use_markup = true,
+                ellipsize = END,
+                tooltip_text = history.output
             };
 
             var row_grid = new Gtk.Grid () {
