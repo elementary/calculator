@@ -27,8 +27,6 @@ namespace PantheonCalculator {
         public signal void added (string text);
 
         construct {
-            history_list = new GLib.ListStore (typeof (MainWindow.History));
-
             var clear_button = new Gtk.Button () {
                 icon_name = "user-trash-full-symbolic",
                 tooltip_text = _("Clear History")
@@ -45,6 +43,8 @@ namespace PantheonCalculator {
             headerbar.pack_end (clear_button);
             headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
             headerbar.add_css_class (Granite.STYLE_CLASS_DEFAULT_DECORATION);
+
+            history_list = new GLib.ListStore (typeof (MainWindow.History));
 
             var listbox = new Gtk.ListBox () {
                 hexpand = true
@@ -85,7 +85,7 @@ namespace PantheonCalculator {
         private Gtk.Widget create_widget_func (Object object) {
             var history = (MainWindow.History) object;
 
-            var exp_label = new Gtk.Label () {
+            var exp_label = new Gtk.Label (history.exp) {
                 halign = START,
                 ellipsize = END,
                 tooltip_text = history.exp
