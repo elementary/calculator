@@ -72,8 +72,8 @@ namespace PantheonCalculator {
             main_box.append (listbox_scrolled);
 
             var toolbar_view = new Adw.ToolbarView ();
-		    toolbar_view.add_top_bar (headerbar);
-		    toolbar_view.content = main_box;
+            toolbar_view.add_top_bar (headerbar);
+            toolbar_view.content = main_box;
 
             attach (toolbar_view, 0, 0);
         }

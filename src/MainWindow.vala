@@ -465,8 +465,8 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         global_box.append (main_grid);
 
         var toolbar_view = new Adw.ToolbarView ();
-		toolbar_view.add_top_bar (headerbar);
-		toolbar_view.content = global_box;
+        toolbar_view.add_top_bar (headerbar);
+        toolbar_view.content = global_box;
 
         history_sidebar = new HistorySidebar ();
         history_sidebar.added.connect (history_added);
@@ -480,10 +480,10 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         overlay_split_view = new Adw.OverlaySplitView () {
             collapsed = true,
             max_sidebar_width = 175,
-			min_sidebar_width = 175,
+            min_sidebar_width = 175,
         };
-		overlay_split_view.content = toolbar_view;
-		overlay_split_view.sidebar = history_sidebar;
+        overlay_split_view.content = toolbar_view;
+        overlay_split_view.sidebar = history_sidebar;
 
         child = overlay_split_view;
 
