@@ -4,7 +4,7 @@ executable(
     'Application.vala',
     'Button.vala',
     'MainWindow.vala',
-    'HistoryDialog.vala',
+    'HistorySidebar.vala',
     'Core/Token.vala',
     'Core/Scanner.vala',
     'Core/Evaluation.vala',
