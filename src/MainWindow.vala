@@ -31,7 +31,8 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
     private Gtk.Button button_mc;
     private Gtk.Button button_gt;
     private Gtk.ToggleButton button_extended;
-    private HistoryDialog history_dialog;
+    private HistorySidebar history_sidebar;
+    private Adw.OverlaySplitView overlay_split_view;
 
     private Gtk.InfoBar infobar;
     private Gtk.Label infobar_label;
@@ -44,7 +45,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
     /* Define the decimal places */
     private int decimal_places;
 
-    public struct History { string exp; string output; }
     private double memory_value = 0;
 
     private const string ACTION_PREFIX = "win.";
@@ -107,8 +107,8 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             show_title_buttons = true,
             title_widget = new Gtk.Label (null)
         };
+        headerbar.pack_start (button_history);
         headerbar.pack_end (button_extended);
-        headerbar.pack_end (button_history);
         headerbar.add_css_class (Granite.STYLE_CLASS_DEFAULT_DECORATION);
         headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
 
@@ -464,8 +464,33 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         global_box.append (infobar);
         global_box.append (main_grid);
 
-        child = global_box;
-        set_titlebar (headerbar);
+        var toolbar_view = new Adw.ToolbarView ();
+		toolbar_view.add_top_bar (headerbar);
+		toolbar_view.content = global_box;
+
+        history_sidebar = new HistorySidebar ();
+        history_sidebar.added.connect (history_added);
+        history_sidebar.clear_history.connect (() => {
+            history.foreach ((entry) => {
+                history.delete_link (history.find (entry));
+            });
+            button_ans.sensitive = false;
+        });
+
+        overlay_split_view = new Adw.OverlaySplitView () {
+            collapsed = true,
+            max_sidebar_width = 175,
+			min_sidebar_width = 175,
+        };
+		overlay_split_view.content = toolbar_view;
+		overlay_split_view.sidebar = history_sidebar;
+
+        child = overlay_split_view;
+        
+        var null_title = new Gtk.Grid () {
+            visible = false
+        };
+        set_titlebar (null_title);
 
         entry.grab_focus ();
 
@@ -593,7 +618,9 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             try {
                 var output = eval.evaluate (entry.get_text (), decimal_places);
                 if (entry.get_text () != output) {
-                    History history_entry = History () { exp = entry.get_text (), output = output };
+                    History history_entry = new History ();
+                    history_entry.exp = entry.get_text ();
+                    history_entry.output = output;
                     history.append (history_entry);
                     update_history_dialog (history_entry);
                     entry.set_text (output);
@@ -787,30 +814,13 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         entry.set_position (position);
     }
 
-    private void show_history (Gtk.Button button) {
+    private void show_history () {
+        overlay_split_view.show_sidebar = true;
         position = entry.get_position ();
-
-        history_dialog = new HistoryDialog (history) {
-            transient_for = this
-        };
-        history_dialog.present ();
-
-        history_dialog.added.connect (history_added);
-        history_dialog.clear_history.connect (() => {
-            history.foreach ((entry) => {
-                history.delete_link (history.find (entry));
-            });
-            button_ans.sensitive = false;
-        });
-        history_dialog.hide.connect (() => {
-            button_history.sensitive = history != null;
-        });
     }
 
     private void update_history_dialog (History entry) {
-        if (history_dialog != null) {
-            history_dialog.append (entry);
-        }
+        history_sidebar.append (entry);
     }
 
     private void history_added (string input) {
@@ -819,6 +829,8 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         position += input.length;
         entry.grab_focus ();
         entry.set_position (position);
+
+        overlay_split_view.show_sidebar = false;
     }
 
     private void remove_error () {
@@ -845,5 +857,10 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             entry.do_insert_text (replacement_text, entry.cursor_position + replacement_text.char_count (), ref position);
             Signal.stop_emission_by_name ((void*) entry.get_delegate (), "insert-text");
         }
+    }
+
+    public class History : GLib.Object {
+        public string exp { get; set; }
+        public string output { get; set; }
     }
 }
