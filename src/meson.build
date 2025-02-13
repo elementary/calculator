@@ -8,6 +8,7 @@ executable(
     'Core/Token.vala',
     'Core/Scanner.vala',
     'Core/Evaluation.vala',
+    css_gresource,
     dependencies: [
         core_deps,
         dependency('gtk4'),
