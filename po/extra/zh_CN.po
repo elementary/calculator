@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-19 20:47+0000\n"
+"POT-Creation-Date: 2025-03-01 21:49+0000\n"
 "PO-Revision-Date: 2022-07-24 12:21+0000\n"
 "Last-Translator: Vincent Yu <coolplayyhj@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -35,6 +35,10 @@ msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr "一款能满足日常计算需求的计算器。支持基础计算和部分科学计算。"
+
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr "elementary LLC."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -82,9 +86,6 @@ msgstr "计算器;数学;算数;科学;"
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "新窗口"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary LLC."
 
 #~ msgid "Update to elementary 6.1 runtime"
 #~ msgstr "更新至elementary 6.1版本运行库"
