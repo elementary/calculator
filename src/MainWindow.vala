@@ -130,7 +130,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             tooltip_text = _("Insert last result")
         };
 
-        button_del = new Button ("Del") {
+        button_del = new Button.from_icon_name ("edit-clear-symbolic") {
             tooltip_text = _("Backspace")
         };
 
