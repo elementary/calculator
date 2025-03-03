@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-19 20:47+0000\n"
+"POT-Creation-Date: 2025-03-01 21:49+0000\n"
 "PO-Revision-Date: 2018-10-18 05:23-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -30,6 +30,10 @@ msgstr ""
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
 msgstr ""
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71

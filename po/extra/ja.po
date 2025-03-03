@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-19 20:47+0000\n"
-"PO-Revision-Date: 2024-12-12 05:36+0000\n"
+"POT-Creation-Date: 2025-03-01 21:49+0000\n"
+"PO-Revision-Date: 2025-03-01 21:47+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/calculator/"
 "extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8.4\n"
+"X-Generator: Weblate 5.9.2\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -38,6 +38,10 @@ msgstr ""
 "日常用途を想定した、シンプルな電卓です。基本的な計算と科学的な計算が可能で、"
 "サイン・コサイン・タンジェントといった三角関数などにも対応しています。"
 
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
 #: data/calculator.metainfo.xml.in:110
@@ -57,8 +61,8 @@ msgstr "ブランドカラーをミント 500 に変更"
 #: data/calculator.metainfo.xml.in:86
 msgid "Always use elementary styles and icons, even on other platforms"
 msgstr ""
-"ほかのプラットフォームであっても、常に elementary スタイルとアイコンを使用す"
-"るように変更"
+"他のプラットフォームであっても、常に elementary スタイルとアイコンを使用する"
+"ように変更"
 
 #: data/calculator.metainfo.xml.in:87
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
@@ -85,9 +89,6 @@ msgstr "Calculation;Mathematics;Arithmetic;Scientific;計算;数学;算数;科�
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "新しいウィンドウ"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Update to elementary 6.1 runtime"
 #~ msgstr "elementary ランタイムのバージョンを 6.1 にアップデート"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-19 20:47+0000\n"
+"POT-Creation-Date: 2025-03-01 21:49+0000\n"
 "PO-Revision-Date: 2024-09-26 17:16+0000\n"
 "Last-Translator: Hossein <hossein17@duck.com>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/calculator/extra/"
@@ -36,6 +36,10 @@ msgid ""
 msgstr ""
 "یک ماشین حساب ساده برای استفاده روزمره. از محاسبات پایه و برخی علمی از جمله "
 "توابع مثلثات، sin، cos و tan پشتیبانی می کند."
+
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
