@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-19 20:47+0000\n"
+"POT-Creation-Date: 2025-03-01 21:49+0000\n"
 "PO-Revision-Date: 2024-09-02 20:05+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
@@ -39,6 +39,10 @@ msgstr ""
 "Простий калькулятор для повсякденного вжитку. Підтримує базові та деякі "
 "інженерні обчислення, включно з тригонометричними функціями, синусом, "
 "косинусом і тангенсом."
+
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
@@ -86,9 +90,6 @@ msgstr "Обчислення;Математика;Арифметика;Наук�
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "Нове вікно"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Update to elementary 6.1 runtime"
 #~ msgstr "Оновлення середовища виконання elementary до версії 6.1"

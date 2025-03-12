@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-19 20:47+0000\n"
+"POT-Creation-Date: 2025-03-01 21:49+0000\n"
 "PO-Revision-Date: 2025-02-03 01:12+0000\n"
 "Last-Translator: Aefgh Threenine <aefgh39622@gmail.com>\n"
 "Language-Team: Thai <https://l10n.elementary.io/projects/calculator/extra/th/"
@@ -37,6 +37,10 @@ msgstr ""
 "เครื่องคิดเลขอย่างง่ายสำหรับใช้ในชีวิตประจำวัน "
 "แอปพลิเคชันนี้รองรับการคำนวณทางวิทยาศาสตร์ทั้งแบบพื้นฐานและแบบอื่นๆ บางแบบ "
 "รวมไปถึงฟังก์ชันตรีโกณมิติ ไซน์ โคไซน์ และแทนเจนต์"
+
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
