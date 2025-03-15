@@ -30,7 +30,10 @@ public class PantheonCalculator.Button : Gtk.Button {
     }
 
     public Button.from_icon_name (string icon_name) {
-        var image = new Gtk.Image.from_icon_name (icon_name);
+        var image = new Gtk.Image.from_icon_name (icon_name) {
+            valign = CENTER,
+            halign = CENTER
+        };
         child = image;
     }
 
