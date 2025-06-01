@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-01 21:49+0000\n"
-"PO-Revision-Date: 2024-09-02 00:47+0000\n"
-"Last-Translator: José Rafael <jrafaeldesantana@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
+"PO-Revision-Date: 2025-05-16 14:55+0000\n"
+"Last-Translator: Renato Trevisan <rjltrevisan@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://l10n.elementaryos.org/projects/"
 "calculator/extra/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -47,7 +47,7 @@ msgstr "elementary, Inc."
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
 #: data/calculator.metainfo.xml.in:110
 msgid "Minor updates:"
-msgstr "Pequenas atualizações:"
+msgstr "Atualizações menores:"
 
 #: data/calculator.metainfo.xml.in:64 data/calculator.metainfo.xml.in:74
 #: data/calculator.metainfo.xml.in:88 data/calculator.metainfo.xml.in:103
@@ -57,7 +57,7 @@ msgstr "Traduções atualizadas"
 
 #: data/calculator.metainfo.xml.in:73
 msgid "Branding color changed to Mint 500"
-msgstr "Cor da marca alterado para Mint 500"
+msgstr "Cor da marca alterada para Mint 500"
 
 #: data/calculator.metainfo.xml.in:86
 msgid "Always use elementary styles and icons, even on other platforms"
