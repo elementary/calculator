@@ -3,15 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-01 21:49+0000\n"
-"PO-Revision-Date: 2016-05-27 15:29+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2025-06-05 06:55+0000\n"
+"Last-Translator: lenify <lenify@tutanota.com>\n"
+"Language-Team: Belarusian <https://l10n.elementaryos.org/projects/calculator/"
+"calculator/be/>\n"
+"Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: src/MainWindow.vala:85
 msgid "Calculator"
@@ -27,13 +30,11 @@ msgstr "Гісторыя"
 
 #: src/MainWindow.vala:123
 msgid "Calculate Result"
-msgstr ""
+msgstr "Паказаць вынік"
 
 #: src/MainWindow.vala:130
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
-msgstr "Дадаць апошні вынік"
+msgstr "Уставіць апошні вынік"
 
 #: src/MainWindow.vala:134
 msgid "Backspace"
@@ -49,117 +50,115 @@ msgstr "Дадаць"
 
 #: src/MainWindow.vala:156
 msgid "Subtract"
-msgstr ""
+msgstr "Адняць"
 
 #: src/MainWindow.vala:163
 msgid "Multiply"
-msgstr ""
+msgstr "Памножыць"
 
 #: src/MainWindow.vala:170
 msgid "Divide"
-msgstr ""
+msgstr "Падзялиць"
 
 #: src/MainWindow.vala:187
 msgid "Percentage"
-msgstr ""
+msgstr "Працэнты"
 
 #: src/MainWindow.vala:269
 msgid "Set memory value"
-msgstr ""
+msgstr "Запомніць значэнне"
 
 #: src/MainWindow.vala:274
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Узяць значэнне з памяці"
 
 #: src/MainWindow.vala:278
 msgid "Add to stored value"
-msgstr ""
+msgstr "Дадаць да захаванага значэння"
 
 #: src/MainWindow.vala:282
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Адняць ад захаванага значэння"
 
 #: src/MainWindow.vala:287
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "Ачысьціць запіс"
+msgstr "Ачысціць памяць"
 
 #: src/MainWindow.vala:292
 msgid "Grand Total"
-msgstr ""
+msgstr "Агульная сума"
 
 #: src/MainWindow.vala:298
 msgid "Start Group"
-msgstr ""
+msgstr "Адкрыць дужкі"
 
 #: src/MainWindow.vala:304
 msgid "End Group"
-msgstr ""
+msgstr "Закрыць дужкі"
 
 #: src/MainWindow.vala:310
 msgid "Exponent"
-msgstr ""
+msgstr "Экспанент"
 
 #: src/MainWindow.vala:316
 msgid "Root"
-msgstr ""
+msgstr "Корань"
 
 #: src/MainWindow.vala:322
 msgid "Sine"
-msgstr ""
+msgstr "Сінус"
 
 #: src/MainWindow.vala:328
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Гіпербалічны сінус"
 
 #: src/MainWindow.vala:334
 msgid "Cosine"
-msgstr ""
+msgstr "Косінус"
 
 #: src/MainWindow.vala:340
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Гіпербалічны косінус"
 
 #: src/MainWindow.vala:346
 msgid "Tangent"
-msgstr ""
+msgstr "Тангенс"
 
 #: src/MainWindow.vala:352
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Гіпербалічны тангенс"
 
 #: src/MainWindow.vala:358
 msgid "Pi"
-msgstr ""
+msgstr "Лік пі"
 
 #: src/MainWindow.vala:364
 msgid "Euler's Number"
-msgstr ""
+msgstr "Лік Эйлера"
 
 #: src/MainWindow.vala:370
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Дзесятковы лагарыфм"
 
 #: src/MainWindow.vala:376
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Натуральны лагарыфм"
 
 #: src/MainWindow.vala:382
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Зваротны сінус"
 
 #: src/MainWindow.vala:388
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "Зваротны косінус"
 
 #: src/MainWindow.vala:394
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "Зваротны тангенс"
 
 #: src/MainWindow.vala:398
 msgid "Reciprocal"
-msgstr ""
+msgstr "Адваротны лік"
 
 #: src/MainWindow.vala:777
 msgid "Hide extended functionality"
@@ -167,13 +166,11 @@ msgstr "Схаваць пашыраны функцыянал"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Устаўка папярэдняга выразу ці рэзультату ў бягучае вылічэнне."
 
 #: src/HistoryDialog.vala:81
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Дадаць значэнне:"
+msgstr "Уставіць значэнне:"
 
 #: src/HistoryDialog.vala:86
 msgid "Result"
@@ -185,10 +182,8 @@ msgstr "Выраз"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:113
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "Ачысьціць запіс"
+msgstr "Ачысціць гісторыю"
 
 #: src/HistoryDialog.vala:116
 msgid "Close"
@@ -196,16 +191,16 @@ msgstr "Зачыніць"
 
 #: src/HistoryDialog.vala:118
 msgid "Insert"
-msgstr ""
+msgstr "Уставіць"
 
 #: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
-msgstr "'%s'  з'яўляецца несапраўдным."
+msgstr "'%s' з'яўляецца несапраўдным."
 
 #: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "Дужкі не супадаюць."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:169
