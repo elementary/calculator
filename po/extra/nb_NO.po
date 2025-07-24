@@ -1,90 +1,82 @@
-# Belarusian translations for extra package.
-# Copyright (C) 2018 THE extra'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the extra package.
-# Automatically generated, 2018.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-01 21:49+0000\n"
-"PO-Revision-Date: 2025-06-05 06:55+0000\n"
-"Last-Translator: lenify <lenify@tutanota.com>\n"
-"Language-Team: Belarusian <https://l10n.elementaryos.org/projects/calculator/"
-"extra/be/>\n"
-"Language: be\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.11.4\n"
 
 #: data/calculator.metainfo.xml.in:10
 #: data/io.elementary.calculator.desktop.in:6
 msgid "Calculator"
-msgstr "Калькулятар"
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:11
 #: data/io.elementary.calculator.desktop.in:7
 msgid "Solve simple equations"
-msgstr "Вырашайце нескладаныя ўраўненні"
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:13
 msgid ""
 "A simple calculator for everyday use. It supports basic and some scientific "
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
-"Просты калькулятар для штодзённага выкарыстання. Ён падтрымлівае ўсе базавыя "
-"і некаторыя навуковыя вылічэнні, напрыклад трыганаметрычныя функцыі, сінусы, "
-"косінусы і тангенсы."
 
 #: data/calculator.metainfo.xml.in:54
 msgid "elementary, Inc."
-msgstr "elementary, Inc."
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
 #: data/calculator.metainfo.xml.in:110
 msgid "Minor updates:"
-msgstr "Нязначныя абнаўленні:"
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:64 data/calculator.metainfo.xml.in:74
 #: data/calculator.metainfo.xml.in:88 data/calculator.metainfo.xml.in:103
 #: data/calculator.metainfo.xml.in:113
 msgid "Updated translations"
-msgstr "Абноўлены пераклады"
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:73
 msgid "Branding color changed to Mint 500"
-msgstr "Колер брэндынгу зменены на Мятны 500"
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:86
 msgid "Always use elementary styles and icons, even on other platforms"
 msgstr ""
-"Заўсёды выкарыстоўваюцца стылі і значкі elementary, нават на іншых платформах"
 
 #: data/calculator.metainfo.xml.in:87
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr "Устаўка тэксту на \"Ctrl + V\" цяпер заўжды працуе"
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:101
 msgid "Redesigned app icon"
-msgstr "Зменены значок праграмы"
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:102
 msgid "Flat titlebar"
-msgstr "Плоская верхняя панэль"
+msgstr ""
 
 #: data/calculator.metainfo.xml.in:112
 msgid "Update for OS 7 and Gtk 4"
-msgstr "Абнаўленні да OS 7 і Gtk 4"
+msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:10
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr "Вылічэнні;Вылічэнне;Вылічванне;Матэматыка;Арыфметыка;Навуковы;"
+msgstr ""
 
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
-msgstr "Новае акно"
+msgstr ""
