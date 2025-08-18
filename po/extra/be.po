@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-12 20:06+0000\n"
-"PO-Revision-Date: 2025-06-05 06:55+0000\n"
+"PO-Revision-Date: 2025-08-19 06:55+0000\n"
 "Last-Translator: lenify <lenify@tutanota.com>\n"
 "Language-Team: Belarusian <https://l10n.elementaryos.org/projects/calculator/"
 "extra/be/>\n"
@@ -51,7 +51,7 @@ msgstr "Нязначныя абнаўленні:"
 
 #: data/calculator.metainfo.xml.in:64
 msgid "Replace \"Del\" button with an icon"
-msgstr ""
+msgstr "Кнопка \"Del\" цяпер значок"
 
 #: data/calculator.metainfo.xml.in:65 data/calculator.metainfo.xml.in:74
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:98
