@@ -585,9 +585,11 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         entry.insert_text (function_call, -1, ref selection_start);
         new_position += function_call.char_count ();
         entry.grab_focus ();
-        if (selected_text = "") {
-            entry.set_position (new_position - 1);
+        if (selected_text == "") {
+            new_position--;
         }
+
+        entry.set_position (new_position);
     }
 
     private void button_calc_clicked () {
