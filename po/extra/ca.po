@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 21:49+0000\n"
-"PO-Revision-Date: 2024-09-02 20:05+0000\n"
+"POT-Creation-Date: 2025-08-12 20:06+0000\n"
+"PO-Revision-Date: 2025-08-14 08:55+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/calculator/extra/"
-"ca/>\n"
+"Language-Team: Catalan <https://l10n.elementaryos.org/projects/calculator/"
+"extra/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -43,40 +43,44 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
-#: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
-#: data/calculator.metainfo.xml.in:110
+#: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:72
+#: data/calculator.metainfo.xml.in:81 data/calculator.metainfo.xml.in:94
+#: data/calculator.metainfo.xml.in:109 data/calculator.metainfo.xml.in:120
 msgid "Minor updates:"
 msgstr "Actualitzacions menors:"
 
-#: data/calculator.metainfo.xml.in:64 data/calculator.metainfo.xml.in:74
-#: data/calculator.metainfo.xml.in:88 data/calculator.metainfo.xml.in:103
-#: data/calculator.metainfo.xml.in:113
+#: data/calculator.metainfo.xml.in:64
+msgid "Replace \"Del\" button with an icon"
+msgstr "Substitució del botó Supr per una icona"
+
+#: data/calculator.metainfo.xml.in:65 data/calculator.metainfo.xml.in:74
+#: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:98
+#: data/calculator.metainfo.xml.in:113 data/calculator.metainfo.xml.in:123
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/calculator.metainfo.xml.in:73
+#: data/calculator.metainfo.xml.in:83
 msgid "Branding color changed to Mint 500"
 msgstr "El color de la marca ha canviat a Mint 500."
 
-#: data/calculator.metainfo.xml.in:86
+#: data/calculator.metainfo.xml.in:96
 msgid "Always use elementary styles and icons, even on other platforms"
 msgstr ""
 "Usa sempre estils i icones d'elementary, fins i tot en altres plataformes"
 
-#: data/calculator.metainfo.xml.in:87
+#: data/calculator.metainfo.xml.in:97
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
 msgstr "Enganxeu sempre el text amb la drecera de teclat \"Ctrl + V\""
 
-#: data/calculator.metainfo.xml.in:101
+#: data/calculator.metainfo.xml.in:111
 msgid "Redesigned app icon"
 msgstr "Icona redissenyada"
 
-#: data/calculator.metainfo.xml.in:102
+#: data/calculator.metainfo.xml.in:112
 msgid "Flat titlebar"
 msgstr "Barra de títol prima"
 
-#: data/calculator.metainfo.xml.in:112
+#: data/calculator.metainfo.xml.in:122
 msgid "Update for OS 7 and Gtk 4"
 msgstr "Actualització per al SO 7 i Gtk 4"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-01 21:49+0000\n"
+"POT-Creation-Date: 2025-08-12 20:06+0000\n"
 "PO-Revision-Date: 2025-08-03 09:55+0000\n"
 "Last-Translator: JieXu <xujie0739@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://"
@@ -40,39 +40,43 @@ msgstr "一款能满足日常计算需求的计算器。支持基础计算和部
 msgid "elementary, Inc."
 msgstr "elementary LLC."
 
-#: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
-#: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
-#: data/calculator.metainfo.xml.in:110
+#: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:72
+#: data/calculator.metainfo.xml.in:81 data/calculator.metainfo.xml.in:94
+#: data/calculator.metainfo.xml.in:109 data/calculator.metainfo.xml.in:120
 msgid "Minor updates:"
 msgstr "次要更新："
 
-#: data/calculator.metainfo.xml.in:64 data/calculator.metainfo.xml.in:74
-#: data/calculator.metainfo.xml.in:88 data/calculator.metainfo.xml.in:103
-#: data/calculator.metainfo.xml.in:113
+#: data/calculator.metainfo.xml.in:64
+msgid "Replace \"Del\" button with an icon"
+msgstr ""
+
+#: data/calculator.metainfo.xml.in:65 data/calculator.metainfo.xml.in:74
+#: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:98
+#: data/calculator.metainfo.xml.in:113 data/calculator.metainfo.xml.in:123
 msgid "Updated translations"
 msgstr "更新翻译"
 
-#: data/calculator.metainfo.xml.in:73
+#: data/calculator.metainfo.xml.in:83
 msgid "Branding color changed to Mint 500"
 msgstr "改用 Mint 500 作为主要色彩"
 
-#: data/calculator.metainfo.xml.in:86
+#: data/calculator.metainfo.xml.in:96
 msgid "Always use elementary styles and icons, even on other platforms"
 msgstr "即使在其他平台上也总是使用 elementary 的风格和图标"
 
-#: data/calculator.metainfo.xml.in:87
+#: data/calculator.metainfo.xml.in:97
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
 msgstr "总是用 \"Ctrl + V\" 键盘快捷键来粘贴文字"
 
-#: data/calculator.metainfo.xml.in:101
+#: data/calculator.metainfo.xml.in:111
 msgid "Redesigned app icon"
 msgstr "重新设计应用程序图标"
 
-#: data/calculator.metainfo.xml.in:102
+#: data/calculator.metainfo.xml.in:112
 msgid "Flat titlebar"
 msgstr "扁平化标题栏"
 
-#: data/calculator.metainfo.xml.in:112
+#: data/calculator.metainfo.xml.in:122
 msgid "Update for OS 7 and Gtk 4"
 msgstr ""
 
