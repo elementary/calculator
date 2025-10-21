@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-12 20:06+0000\n"
-"PO-Revision-Date: 2018-06-13 00:06+0000\n"
-"Last-Translator: Richard Sjöqvist <richard@spiro.se>\n"
-"Language-Team: Swedish <https://weblate.elementary.io/projects/calculator/"
+"PO-Revision-Date: 2025-10-22 08:07+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <https://l10n.elementaryos.org/projects/calculator/"
 "extra/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -36,62 +36,61 @@ msgid ""
 "calculations including trigonometry functions, sin, cos, and tan."
 msgstr ""
 "En enkel kalkylator för vardaglig använding. Den har stöd för basfunktioner "
-"och några vetenskapliga funktioner såsom trigonometri funktioner sin, cos "
+"och några vetenskapliga funktioner såsom trigonometrifunktionerna sin, cos "
 "och tan."
 
 #: data/calculator.metainfo.xml.in:54
-#, fuzzy
 msgid "elementary, Inc."
-msgstr "elementary LLC."
+msgstr "elementary, Inc."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:72
 #: data/calculator.metainfo.xml.in:81 data/calculator.metainfo.xml.in:94
 #: data/calculator.metainfo.xml.in:109 data/calculator.metainfo.xml.in:120
 msgid "Minor updates:"
-msgstr ""
+msgstr "Mindre uppdateringar:"
 
 #: data/calculator.metainfo.xml.in:64
 msgid "Replace \"Del\" button with an icon"
-msgstr ""
+msgstr "Ersätt \"Del\"-knappen med en ikon"
 
 #: data/calculator.metainfo.xml.in:65 data/calculator.metainfo.xml.in:74
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:98
 #: data/calculator.metainfo.xml.in:113 data/calculator.metainfo.xml.in:123
 msgid "Updated translations"
-msgstr ""
+msgstr "Uppdaterade översättningar"
 
 #: data/calculator.metainfo.xml.in:83
 msgid "Branding color changed to Mint 500"
-msgstr ""
+msgstr "Färgen på varumärket ändrades till Mint 500"
 
 #: data/calculator.metainfo.xml.in:96
 msgid "Always use elementary styles and icons, even on other platforms"
-msgstr ""
+msgstr "Använd alltid elementära stilar och ikoner, även på andra plattformar"
 
 #: data/calculator.metainfo.xml.in:97
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr ""
+msgstr "Klistra alltid in text med tangentbordsgenvägen \"Ctrl + V\""
 
 #: data/calculator.metainfo.xml.in:111
 msgid "Redesigned app icon"
-msgstr ""
+msgstr "Omdesignad appikon"
 
 #: data/calculator.metainfo.xml.in:112
 msgid "Flat titlebar"
-msgstr ""
+msgstr "Platt titelfält"
 
 #: data/calculator.metainfo.xml.in:122
 msgid "Update for OS 7 and Gtk 4"
-msgstr ""
+msgstr "Uppdatering för OS 7 och Gtk 4"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:10
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
+msgstr "Beräkning;Matematik;Aritmetik;Vetenskaplig;"
 
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
-msgstr ""
+msgstr "Nytt fönster"
 
 #~ msgid "accessories-calculator"
 #~ msgstr "accessories-calculator"
