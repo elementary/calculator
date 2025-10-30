@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-12 20:06+0000\n"
-"PO-Revision-Date: 2025-10-22 08:07+0000\n"
+"PO-Revision-Date: 2025-10-30 22:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/calculator/"
 "calculator/sv/>\n"
@@ -45,7 +45,7 @@ msgstr "Töm inmatning"
 
 #: src/MainWindow.vala:149
 msgid "Add"
-msgstr "Lägg till"
+msgstr "Addera"
 
 #: src/MainWindow.vala:156
 msgid "Subtract"
@@ -73,7 +73,7 @@ msgstr "Återkalla värde från minnet"
 
 #: src/MainWindow.vala:278
 msgid "Add to stored value"
-msgstr "Lägg till lagrat värde"
+msgstr "Addera till lagrat värde"
 
 #: src/MainWindow.vala:282
 msgid "Subtract from stored value"
@@ -85,7 +85,7 @@ msgstr "Töm minnet"
 
 #: src/MainWindow.vala:292
 msgid "Grand Total"
-msgstr "Total"
+msgstr "Totalsumma"
 
 #: src/MainWindow.vala:298
 msgid "Start Group"
@@ -157,7 +157,7 @@ msgstr "Inversa tangens"
 
 #: src/MainWindow.vala:398
 msgid "Reciprocal"
-msgstr "Reciprocal"
+msgstr "Reciprok"
 
 #: src/MainWindow.vala:777
 msgid "Hide extended functionality"
