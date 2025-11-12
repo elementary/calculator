@@ -3,15 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-12 20:06+0000\n"
-"PO-Revision-Date: 2017-02-20 08:30+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2025-11-13 17:55+0000\n"
+"Last-Translator: Orionas Kakomoiroglou "
+"<209243298+OrionasKakomoiroglou@users.noreply.github.com>\n"
+"Language-Team: Greek <https://l10n.elementaryos.org/projects/calculator/"
+"calculator/el/>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-02-21 05:44+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/MainWindow.vala:85
 msgid "Calculator"
@@ -30,14 +33,12 @@ msgid "Calculate Result"
 msgstr "Υπολογισμός αποτελέσματος"
 
 #: src/MainWindow.vala:130
-#, fuzzy
-#| msgid "Add last result"
 msgid "Insert last result"
-msgstr "Προσθήκη τελευταίου αποτελέσματος"
+msgstr "Εισαγωγή τελευταίου αποτελέσματος"
 
 #: src/MainWindow.vala:134
 msgid "Backspace"
-msgstr ""
+msgstr "Διαγραφή"
 
 #: src/MainWindow.vala:142
 msgid "Clear entry"
@@ -65,41 +66,39 @@ msgstr "Ποσοστό"
 
 #: src/MainWindow.vala:269
 msgid "Set memory value"
-msgstr ""
+msgstr "Ορισμός τιμής μνήμης"
 
 #: src/MainWindow.vala:274
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Ανάκληση τιμής από τη μνήμη"
 
 #: src/MainWindow.vala:278
 msgid "Add to stored value"
-msgstr ""
+msgstr "Προσθήκη στην αποθηκευμένη τιμή"
 
 #: src/MainWindow.vala:282
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Αφαίρεση από την αποθηκευμένη τιμή"
 
 #: src/MainWindow.vala:287
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear memory"
-msgstr "Εκκαθάριση καταχώρησης"
+msgstr "Εκκαθάριση μνήμης"
 
 #: src/MainWindow.vala:292
 msgid "Grand Total"
-msgstr ""
+msgstr "Σύνολο"
 
 #: src/MainWindow.vala:298
 msgid "Start Group"
-msgstr ""
+msgstr "Έναρξη ομάδας"
 
 #: src/MainWindow.vala:304
 msgid "End Group"
-msgstr ""
+msgstr "Λήξη ομάδας"
 
 #: src/MainWindow.vala:310
 msgid "Exponent"
-msgstr ""
+msgstr "Δύναμη"
 
 #: src/MainWindow.vala:316
 msgid "Root"
@@ -107,59 +106,59 @@ msgstr "Ρίζα"
 
 #: src/MainWindow.vala:322
 msgid "Sine"
-msgstr ""
+msgstr "Ημίτονο"
 
 #: src/MainWindow.vala:328
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Υπερβολικό ημίτονο"
 
 #: src/MainWindow.vala:334
 msgid "Cosine"
-msgstr ""
+msgstr "Συνημίτονο"
 
 #: src/MainWindow.vala:340
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Υπερβολικό συνημίτονο"
 
 #: src/MainWindow.vala:346
 msgid "Tangent"
-msgstr ""
+msgstr "Εφαπτομένη"
 
 #: src/MainWindow.vala:352
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Υπερβολική εφαπτομένη"
 
 #: src/MainWindow.vala:358
 msgid "Pi"
-msgstr ""
+msgstr "π"
 
 #: src/MainWindow.vala:364
 msgid "Euler's Number"
-msgstr ""
+msgstr "Αριθμός Όιλερ"
 
 #: src/MainWindow.vala:370
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Κοινός λογάριθμος"
 
 #: src/MainWindow.vala:376
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Φυσικός λογάριθμος"
 
 #: src/MainWindow.vala:382
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Τόξο ημιτόνου"
 
 #: src/MainWindow.vala:388
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "Τόξο συνημιτόνου"
 
 #: src/MainWindow.vala:394
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "Τόξο εφαπτομένης"
 
 #: src/MainWindow.vala:398
 msgid "Reciprocal"
-msgstr ""
+msgstr "Αντίστροφος"
 
 #: src/MainWindow.vala:777
 msgid "Hide extended functionality"
@@ -167,13 +166,11 @@ msgstr "Απόκρυψη εκτεταμένης λειτουργικότητας
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Εισάγετε μια προηγούμενη έκφραση ή αποτέλεσμα στον τρέχων υπολογισμό."
 
 #: src/HistoryDialog.vala:81
-#, fuzzy
-#| msgid "Value to add:"
 msgid "Value to insert:"
-msgstr "Τιμή προς πρόσθεση"
+msgstr "Τιμή προς εισαγωγή:"
 
 #: src/HistoryDialog.vala:86
 msgid "Result"
@@ -185,10 +182,8 @@ msgstr "Έκφραση"
 
 #. Use a custom response code for "Clear History" action
 #: src/HistoryDialog.vala:113
-#, fuzzy
-#| msgid "Clear entry"
 msgid "Clear History"
-msgstr "Εκκαθάριση καταχώρησης"
+msgstr "Εκκαθάριση ιστορικού"
 
 #: src/HistoryDialog.vala:116
 msgid "Close"
@@ -196,22 +191,22 @@ msgstr "Κλείσιμο"
 
 #: src/HistoryDialog.vala:118
 msgid "Insert"
-msgstr ""
+msgstr "Εισαγωγή"
 
 #: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "Το '%s' δεν είναι έγκυρο."
 
 #: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "Αναντιστοιχία παρένθεσης."
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:169
 #, c-format
 msgid "'%s' is unknown."
-msgstr ""
+msgstr "Το '%s' είναι άγνωστο."
 
 #~ msgid "translator-credits"
 #~ msgstr ""
