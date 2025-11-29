@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-12 20:06+0000\n"
-"PO-Revision-Date: 2024-05-14 09:13+0000\n"
-"Last-Translator: Sven <622b1a13-49d8-4ace-bca7-48bff17b4780@unbox.at>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/calculator/extra/"
-"nl/>\n"
+"PO-Revision-Date: 2025-11-30 07:55+0000\n"
+"Last-Translator: exbu <meharmsen@me.com>\n"
+"Language-Team: Dutch <https://l10n.elementaryos.org/projects/calculator/"
+"extra/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-03-20 06:06+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -61,7 +61,7 @@ msgstr "Bijgewerkte vertalingen"
 
 #: data/calculator.metainfo.xml.in:83
 msgid "Branding color changed to Mint 500"
-msgstr ""
+msgstr "Huisstijlkleur gewijzigd naar Mint 500"
 
 #: data/calculator.metainfo.xml.in:96
 msgid "Always use elementary styles and icons, even on other platforms"
