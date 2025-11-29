@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-12 20:06+0000\n"
 "PO-Revision-Date: 2025-11-30 07:55+0000\n"
-"Last-Translator: exbu <meharmsen@me.com>\n"
+"Last-Translator: Bas Ernst <bas@ernstgenova.it>\n"
 "Language-Team: Dutch <https://l10n.elementaryos.org/projects/calculator/"
 "extra/nl/>\n"
 "Language: nl\n"
@@ -51,7 +51,7 @@ msgstr "Kleine updates:"
 
 #: data/calculator.metainfo.xml.in:64
 msgid "Replace \"Del\" button with an icon"
-msgstr ""
+msgstr "Vervang de \"Del\"-toets met een icoon"
 
 #: data/calculator.metainfo.xml.in:65 data/calculator.metainfo.xml.in:74
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:98
