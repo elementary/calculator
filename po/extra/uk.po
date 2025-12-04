@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-12 20:06+0000\n"
-"PO-Revision-Date: 2024-09-02 20:05+0000\n"
+"PO-Revision-Date: 2025-12-05 19:55+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
-"Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
+"Language-Team: Ukrainian <https://l10n.elementaryos.org/projects/calculator/"
 "extra/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -52,7 +52,7 @@ msgstr "Незначні оновлення:"
 
 #: data/calculator.metainfo.xml.in:64
 msgid "Replace \"Del\" button with an icon"
-msgstr ""
+msgstr "Кнопку «Del» замінено піктограмою"
 
 #: data/calculator.metainfo.xml.in:65 data/calculator.metainfo.xml.in:74
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:98
