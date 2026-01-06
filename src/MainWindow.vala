@@ -91,7 +91,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         history = new List<History?> ();
         position = 0;
         button_extended = new Gtk.ToggleButton () {
-            icon_name = "pane-hide-symbolic",
+            icon_name = "view-sidebar-end-symbolic",
             tooltip_text = _("Show extended functionality")
         };
         button_extended.toggled.connect (toggle_grid);
@@ -773,12 +773,12 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         position = entry.get_position ();
         if (button.get_active ()) {
             /* Show extended functionality */
-            button.icon_name = "pane-show-symbolic";
+            button.icon_name = "view-sidebar-end-symbolic";
             button.tooltip_text = _("Hide extended functionality");
             extended_revealer.reveal_child = true;
         } else {
             /* Hide extended functionality */
-            button.icon_name = "pane-hide-symbolic";
+            button.icon_name = "view-sidebar-end-symbolic";
             button.tooltip_text = _("Show extended functionality");
             extended_revealer.reveal_child = false;
         }
