@@ -773,12 +773,10 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         position = entry.get_position ();
         if (button.get_active ()) {
             /* Show extended functionality */
-            button.icon_name = "view-sidebar-end-symbolic";
             button.tooltip_text = _("Hide extended functionality");
             extended_revealer.reveal_child = true;
         } else {
             /* Hide extended functionality */
-            button.icon_name = "view-sidebar-end-symbolic";
             button.tooltip_text = _("Show extended functionality");
             extended_revealer.reveal_child = false;
         }
