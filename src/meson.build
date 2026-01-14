@@ -1,5 +1,6 @@
 executable(
     meson.project_name(),
+    gresource,
     config_file,
     'Application.vala',
     'Button.vala',
