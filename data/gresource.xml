@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <gresources>
   <gresource prefix="io/elementary/calculator/icons">
-    <file compressed="true" preprocess="xml-stripblanks">view-sidebar-end-symbolic.svg</file>
+    <file alias="scalable/actions/view-sidebar-end-symbolic.svg" compressed="true" preprocess="xml-stripblanks">view-sidebar-end-symbolic.svg</file>
   </gresource>
 </gresources>
