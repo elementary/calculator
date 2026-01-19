@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-12 20:06+0000\n"
+"POT-Creation-Date: 2026-01-19 16:42+0000\n"
 "PO-Revision-Date: 2025-06-05 06:55+0000\n"
 "Last-Translator: lenify <lenify@tutanota.com>\n"
 "Language-Team: Belarusian <https://l10n.elementaryos.org/projects/calculator/"
@@ -20,7 +20,8 @@ msgstr ""
 msgid "Calculator"
 msgstr "Калькулятар"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:782
+#. Hide extended functionality
+#: src/MainWindow.vala:95 src/MainWindow.vala:780
 msgid "Show extended functionality"
 msgstr "Паказаць пашыраную функцыянальнасць"
 
@@ -160,7 +161,8 @@ msgstr "Зваротны тангенс"
 msgid "Reciprocal"
 msgstr "Адваротны лік"
 
-#: src/MainWindow.vala:777
+#. Show extended functionality
+#: src/MainWindow.vala:776
 msgid "Hide extended functionality"
 msgstr "Схаваць пашыраны функцыянал"
 

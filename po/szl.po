@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-12 20:06+0000\n"
+"POT-Creation-Date: 2026-01-19 16:42+0000\n"
 "PO-Revision-Date: 2020-02-20 17:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/calculator/"
@@ -18,7 +18,8 @@ msgstr ""
 msgid "Calculator"
 msgstr "Kalkulatōr"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:782
+#. Hide extended functionality
+#: src/MainWindow.vala:95 src/MainWindow.vala:780
 msgid "Show extended functionality"
 msgstr "Pokoż rozszyrzōne funkcyje"
 
@@ -166,7 +167,8 @@ msgstr "Tangyns"
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:777
+#. Show extended functionality
+#: src/MainWindow.vala:776
 msgid "Hide extended functionality"
 msgstr "Skryj rozszyrzōne funkcyje"
 

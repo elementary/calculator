@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-12 20:06+0000\n"
+"POT-Creation-Date: 2026-01-19 16:42+0000\n"
 "PO-Revision-Date: 2022-01-01 17:28+0000\n"
 "Last-Translator: aalhaif <aalhaif@hotmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/calculator/"
@@ -20,7 +20,8 @@ msgstr ""
 msgid "Calculator"
 msgstr "الحاسبة"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:782
+#. Hide extended functionality
+#: src/MainWindow.vala:95 src/MainWindow.vala:780
 msgid "Show extended functionality"
 msgstr "إظهار الإعدادات المتقدمة"
 
@@ -164,7 +165,8 @@ msgstr "المُماسّ"
 msgid "Reciprocal"
 msgstr ""
 
-#: src/MainWindow.vala:777
+#. Show extended functionality
+#: src/MainWindow.vala:776
 msgid "Hide extended functionality"
 msgstr "إخفاء الإعدادات المتقدمة"
 

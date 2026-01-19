@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-12 20:06+0000\n"
+"POT-Creation-Date: 2026-01-19 16:42+0000\n"
 "PO-Revision-Date: 2021-08-10 10:58+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -19,7 +19,8 @@ msgstr ""
 msgid "Calculator"
 msgstr "Calculator"
 
-#: src/MainWindow.vala:95 src/MainWindow.vala:782
+#. Hide extended functionality
+#: src/MainWindow.vala:95 src/MainWindow.vala:780
 msgid "Show extended functionality"
 msgstr "Show extended functionality"
 
@@ -159,7 +160,8 @@ msgstr "Inverse Tangent"
 msgid "Reciprocal"
 msgstr "Reciprocal"
 
-#: src/MainWindow.vala:777
+#. Show extended functionality
+#: src/MainWindow.vala:776
 msgid "Hide extended functionality"
 msgstr "Hide extended functionality"
 
