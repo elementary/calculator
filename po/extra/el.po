@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-12 20:06+0000\n"
+"POT-Creation-Date: 2026-01-19 16:42+0000\n"
 "PO-Revision-Date: 2025-11-13 17:55+0000\n"
 "Last-Translator: Orionas Kakomoiroglou "
 "<209243298+OrionasKakomoiroglou@users.noreply.github.com>\n"
@@ -90,9 +90,7 @@ msgstr "Ενημέρωση για το OS 7 και το GTK 4"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:10
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr ""
-"Υπολογισμός;Μαθηματικά;Αριθμητική;Κομπιουτεράκι;Επιστημονική;Νούμερα;Αριθμός;Αριθμομηχανή;"
-""
+msgstr "Υπολογισμός;Μαθηματικά;Αριθμητική;Κομπιουτεράκι;Επιστημονική;Νούμερα;Αριθμός;Αριθμομηχανή;"
 
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
