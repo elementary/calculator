@@ -74,8 +74,8 @@ class PantheonCalculator.Core.CoreTest : Object {
         assert_equal ("e^5.25 / exp(5.25)", "1");
         assert_equal ("10^(log(2.2))", "2.2");
         assert_equal ("3.141592654*3.141592654", "9.869604404"); // https://github.com/elementary/calculator/issues/7
-        assert_equal ("10 + 5 - 10%", "14.9"); // https://github.com/elementary/calculator/issues/44
-        assert_equal ("10 - 10% + 5", "14.9"); // https://github.com/elementary/calculator/issues/44
+        assert_equal ("10 + 5 - 10%", "13.5"); // https://github.com/elementary/calculator/issues/44
+        assert_equal ("10 - 10% + 5", "14"); // https://github.com/elementary/calculator/issues/44
 
         assert_equal ("25,123 - 234,2", "-209,077", ",", "."); // https://github.com/elementary/calculator/issues/48
         assert_equal ("25.000,123 - 234000,2", "-209.000,077", ",", "."); // https://github.com/elementary/calculator/issues/48

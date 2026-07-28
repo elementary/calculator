@@ -24,7 +24,8 @@ namespace PantheonCalculator.Core {
     private errordomain EVAL_ERROR {
         NO_FUNCTION,
         NO_OPERATOR,
-        NO_CONSTANT
+        NO_CONSTANT,
+        NO_NUMBER
     }
 
     private errordomain SHUNTING_ERROR {
@@ -61,7 +62,11 @@ namespace PantheonCalculator.Core {
             Operator () { symbol = "mod", inputs = 2, prec = 2, fixity = "LEFT", eval = (a, b) => a % b },
             Operator () { symbol = "^", inputs = 2, prec = 3, fixity = "RIGHT", eval = (a, b) => Math.pow (a, b) },
             Operator () { symbol = "E", inputs = 2, prec = 4, fixity = "RIGHT", eval = (a, b) => a * Math.pow (10, b) },
-            Operator () { symbol = "%", inputs = 1, prec = 5, fixity = "LEFT", eval = (a, b) => b / 100.0 }
+            //Internal use only
+            //Hgh precedence multiply and divide for percentage evaluation
+            //Percentage always evaluates first as if it has parens around it
+            Operator () { symbol = "<*>", inputs = 2, prec = 7, fixity = "LEFT", eval = (a, b) => a * b },
+            Operator () { symbol = "<÷>", inputs = 2, prec = 6, fixity = "LEFT", eval = (a, b) => a / b }
         };
 
         private struct Function { string symbol; int inputs; Eval eval;}
@@ -125,6 +130,9 @@ namespace PantheonCalculator.Core {
                         output.append (t);
                         break;
                     case TokenType.CONSTANT:
+                        output.append (t);
+                        break;
+                    case TokenType.CURRENT_LEFT_VALUE:
                         output.append (t);
                         break;
                     case TokenType.FUNCTION:
@@ -208,6 +216,20 @@ namespace PantheonCalculator.Core {
             foreach (Token t in token_list) {
                 if (t.token_type == TokenType.NUMBER) {
                     stack.push_tail (t);
+                } else if (t.token_type == TokenType.CURRENT_LEFT_VALUE) {
+                    var t1 = stack.pop_tail ();
+                    Token t2;
+                    if (!stack.is_empty () && stack.peek_tail ().token_type == TokenType.NUMBER) {
+                        t2 = stack.peek_tail ().dup ();
+                    } else if (stack.is_empty ()) {
+                        t2 = new Token ("1", TokenType.NUMBER);
+                    } else {
+                        throw new EVAL_ERROR.NO_NUMBER ("");
+                    }
+
+                    stack.push_tail (t2);
+                    stack.push_tail (t1);
+
                 } else if (t.token_type == TokenType.CONSTANT) {
                     try {
                         Constant c = get_constant (t);
@@ -306,6 +328,7 @@ namespace PantheonCalculator.Core {
             if (fabs (d) - 0.0 < double.EPSILON) {
                 d = 0.0;
             }
+
             return new Token (d.to_string (), TokenType.NUMBER);
         }
 
