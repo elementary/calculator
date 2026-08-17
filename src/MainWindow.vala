@@ -235,7 +235,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         var basic_grid = new Gtk.Grid () {
             column_spacing = 6,
             row_spacing = 6,
-            row_spacing = 6,
             row_homogeneous = true
         };
 
@@ -438,18 +437,19 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         extended_grid.attach (button_reciprocal, 3, 5, 1, 1);
 
         extended_revealer = new Gtk.Revealer () {
-            transition_type = Gtk.RevealerTransitionType.SLIDE_LEFT,
-            child = extended_grid
+            child = extended_grid,
+            transition_type = SLIDE_LEFT,
+            overflow = VISIBLE
         };
 
-        var main_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
+        var main_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
             margin_start = 6,
             margin_end = 6,
             margin_bottom = 6,
             margin_top = 6
         };
-        main_grid.append (basic_grid);
-        main_grid.append (extended_revealer);
+        main_box.append (basic_grid);
+        main_box.append (extended_revealer);
 
         infobar_label = new Gtk.Label ("");
 
@@ -462,7 +462,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
 
         var global_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         global_box.append (infobar);
-        global_box.append (main_grid);
+        global_box.append (main_box);
 
         child = global_box;
         set_titlebar (headerbar);
