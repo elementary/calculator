@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-19 16:42+0000\n"
-"PO-Revision-Date: 2026-09-02 07:14+0000\n"
-"Last-Translator: \"@sandalian\" <yenisetiawan@gmail.com>\n"
+"PO-Revision-Date: 2026-09-03 11:01+0000\n"
+"Last-Translator: Chairul Akmal <chairulakmal@protonmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementaryos.org/projects/calculator/"
 "extra/id/>\n"
 "Language: id\n"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: data/calculator.metainfo.xml.in:54
 msgid "elementary, Inc."
-msgstr "elementary, PT."
+msgstr "elementary, Inc."
 
 #: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:72
 #: data/calculator.metainfo.xml.in:81 data/calculator.metainfo.xml.in:94
@@ -60,7 +60,7 @@ msgstr "Terjemahan diperbarui"
 
 #: data/calculator.metainfo.xml.in:83
 msgid "Branding color changed to Mint 500"
-msgstr ""
+msgstr "Warna merek diubah menjadi Mint 500"
 
 #: data/calculator.metainfo.xml.in:96
 msgid "Always use elementary styles and icons, even on other platforms"
