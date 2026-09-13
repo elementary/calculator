@@ -19,3 +19,4 @@ Actions=new-window;
 [Desktop Action new-window]
 Name=New Window
 Exec=io.elementary.calculator
+Icon=window-new

@@ -1,5 +1,6 @@
 executable(
     meson.project_name(),
+    gresource,
     config_file,
     'Application.vala',
     'Button.vala',
@@ -8,7 +9,6 @@ executable(
     'Core/Token.vala',
     'Core/Scanner.vala',
     'Core/Evaluation.vala',
-    css_gresource,
     dependencies: [
         core_deps,
         dependency('gtk4'),

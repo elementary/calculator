@@ -91,7 +91,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         history = new List<History?> ();
         position = 0;
         button_extended = new Gtk.ToggleButton () {
-            icon_name = "pane-hide-symbolic",
+            icon_name = "view-sidebar-end-symbolic",
             tooltip_text = _("Show extended functionality")
         };
         button_extended.toggled.connect (toggle_grid);
@@ -131,7 +131,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
             tooltip_text = _("Insert last result")
         };
 
-        button_del = new Button ("Del") {
+        button_del = new Button.from_icon_name ("edit-clear-symbolic") {
             tooltip_text = _("Backspace")
         };
 
@@ -235,7 +235,6 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
 
         var basic_grid = new Gtk.Grid () {
             column_spacing = 6,
-            row_spacing = 6,
             row_spacing = 6,
             row_homogeneous = true
         };
@@ -439,18 +438,19 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         extended_grid.attach (button_reciprocal, 3, 5, 1, 1);
 
         extended_revealer = new Gtk.Revealer () {
-            transition_type = Gtk.RevealerTransitionType.SLIDE_LEFT,
-            child = extended_grid
+            child = extended_grid,
+            transition_type = SLIDE_LEFT,
+            overflow = VISIBLE
         };
 
-        var main_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
+        var main_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
             margin_start = 6,
             margin_end = 6,
             margin_bottom = 6,
             margin_top = 6
         };
-        main_grid.append (basic_grid);
-        main_grid.append (extended_revealer);
+        main_box.append (basic_grid);
+        main_box.append (extended_revealer);
 
         infobar_label = new Gtk.Label ("");
 
@@ -463,7 +463,7 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
 
         var global_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         global_box.append (infobar);
-        global_box.append (main_grid);
+        global_box.append (main_box);
 
         child = global_box;
         set_titlebar (headerbar);
@@ -774,12 +774,10 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         position = entry.get_position ();
         if (button.get_active ()) {
             /* Show extended functionality */
-            button.icon_name = "pane-show-symbolic";
             button.tooltip_text = _("Hide extended functionality");
             extended_revealer.reveal_child = true;
         } else {
             /* Hide extended functionality */
-            button.icon_name = "pane-hide-symbolic";
             button.tooltip_text = _("Show extended functionality");
             extended_revealer.reveal_child = false;
         }

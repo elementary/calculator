@@ -36,7 +36,8 @@ i18n.merge_file(
     install_dir: get_option('datadir') / 'metainfo',
 )
 
-css_gresource = gnome.compile_resources(
-    'gresource_css',
-    'io.elementary.calculator.gresource.xml'
+gresource = gnome.compile_resources(
+    'gresource',
+    'gresource.xml',
+    source_dir: 'icons'
 )

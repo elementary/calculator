@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-19 20:47+0000\n"
-"PO-Revision-Date: 2024-09-02 20:05+0000\n"
+"POT-Creation-Date: 2026-01-19 16:42+0000\n"
+"PO-Revision-Date: 2025-12-05 19:55+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
-"Language-Team: Ukrainian <https://l10n.elementary.io/projects/calculator/"
+"Language-Team: Ukrainian <https://l10n.elementaryos.org/projects/calculator/"
 "extra/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:44+0000\n"
 
 #: data/calculator.metainfo.xml.in:10
@@ -40,41 +40,49 @@ msgstr ""
 "інженерні обчислення, включно з тригонометричними функціями, синусом, "
 "косинусом і тангенсом."
 
-#: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:71
-#: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:99
-#: data/calculator.metainfo.xml.in:110
+#: data/calculator.metainfo.xml.in:54
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/calculator.metainfo.xml.in:62 data/calculator.metainfo.xml.in:72
+#: data/calculator.metainfo.xml.in:81 data/calculator.metainfo.xml.in:94
+#: data/calculator.metainfo.xml.in:109 data/calculator.metainfo.xml.in:120
 msgid "Minor updates:"
 msgstr "Незначні оновлення:"
 
-#: data/calculator.metainfo.xml.in:64 data/calculator.metainfo.xml.in:74
-#: data/calculator.metainfo.xml.in:88 data/calculator.metainfo.xml.in:103
-#: data/calculator.metainfo.xml.in:113
+#: data/calculator.metainfo.xml.in:64
+msgid "Replace \"Del\" button with an icon"
+msgstr "Кнопку «Del» замінено піктограмою"
+
+#: data/calculator.metainfo.xml.in:65 data/calculator.metainfo.xml.in:74
+#: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:98
+#: data/calculator.metainfo.xml.in:113 data/calculator.metainfo.xml.in:123
 msgid "Updated translations"
 msgstr "Оновлення перекладів"
 
-#: data/calculator.metainfo.xml.in:73
+#: data/calculator.metainfo.xml.in:83
 msgid "Branding color changed to Mint 500"
 msgstr "Колір брендингу змінено на Mint 500"
 
-#: data/calculator.metainfo.xml.in:86
+#: data/calculator.metainfo.xml.in:96
 msgid "Always use elementary styles and icons, even on other platforms"
 msgstr ""
 "Завжди використовуються стилі та піктограми elementary, навіть на інших "
 "платформах"
 
-#: data/calculator.metainfo.xml.in:87
+#: data/calculator.metainfo.xml.in:97
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
 msgstr "Текст завжди вставлятиметься комбінацією клавіш «Ctrl + V»"
 
-#: data/calculator.metainfo.xml.in:101
+#: data/calculator.metainfo.xml.in:111
 msgid "Redesigned app icon"
 msgstr "Оновлена піктограма застосунку"
 
-#: data/calculator.metainfo.xml.in:102
+#: data/calculator.metainfo.xml.in:112
 msgid "Flat titlebar"
 msgstr "Пласка панель заголовка"
 
-#: data/calculator.metainfo.xml.in:112
+#: data/calculator.metainfo.xml.in:122
 msgid "Update for OS 7 and Gtk 4"
 msgstr "Оновлення для OS 7 і Gtk 4"
 
@@ -86,9 +94,6 @@ msgstr "Обчислення;Математика;Арифметика;Наук�
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
 msgstr "Нове вікно"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
 
 #~ msgid "Update to elementary 6.1 runtime"
 #~ msgstr "Оновлення середовища виконання elementary до версії 6.1"
