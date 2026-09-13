@@ -18,8 +18,6 @@
  * Authored by: Marvin Beckers <beckersmarvin@gmail.com>
  */
 
-using GLib.Math;
-
 namespace PantheonCalculator.Core {
     private errordomain EVAL_ERROR {
         NO_FUNCTION,
@@ -303,7 +301,7 @@ namespace PantheonCalculator.Core {
 
         private Token compute (Eval eval, Token t1, Token t2) throws EVAL_ERROR {
             double d = eval (double.parse (t1.content), double.parse (t2.content));
-            if (fabs (d) - 0.0 < double.EPSILON) {
+            if (Math.fabs (d) - 0.0 < double.EPSILON) {
                 d = 0.0;
             }
             return new Token (d.to_string (), TokenType.NUMBER);
