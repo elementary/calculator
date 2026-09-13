@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pantheon-calculator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-19 16:42+0000\n"
-"PO-Revision-Date: 2026-09-03 11:01+0000\n"
+"PO-Revision-Date: 2026-09-09 07:51+0000\n"
 "Last-Translator: Chairul Akmal <chairulakmal@protonmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementaryos.org/projects/calculator/"
 "extra/id/>\n"
@@ -50,7 +50,7 @@ msgstr "Pembaruan kecil:"
 
 #: data/calculator.metainfo.xml.in:64
 msgid "Replace \"Del\" button with an icon"
-msgstr "Timpa tombol \"Del\" dengan sebuah ikon"
+msgstr "Ganti tombol \"Del\" dengan sebuah ikon"
 
 #: data/calculator.metainfo.xml.in:65 data/calculator.metainfo.xml.in:74
 #: data/calculator.metainfo.xml.in:84 data/calculator.metainfo.xml.in:98
@@ -68,7 +68,7 @@ msgstr "Selalu gunakan gaya dan ikon elementary, bahkan di platform lain"
 
 #: data/calculator.metainfo.xml.in:97
 msgid "Always paste text with the keyboard shortcut \"Ctrl + V\""
-msgstr "Selalu tempel teks dengan pintasan keyboard \"Ctrl + V\""
+msgstr "Selalu tempel teks dengan pintasan papan ketik \"Ctrl + V\""
 
 #: data/calculator.metainfo.xml.in:111
 msgid "Redesigned app icon"
@@ -76,7 +76,7 @@ msgstr "Ikon aplikasi yang didesain ulang"
 
 #: data/calculator.metainfo.xml.in:112
 msgid "Flat titlebar"
-msgstr "Bilah judul Datar"
+msgstr "Bilah judul datar"
 
 #: data/calculator.metainfo.xml.in:122
 msgid "Update for OS 7 and Gtk 4"
@@ -85,11 +85,11 @@ msgstr "Pembaruan untuk OS 7 dan Gtk 4"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/io.elementary.calculator.desktop.in:10
 msgid "Calculation;Mathematics;Arithmetic;Scientific;"
-msgstr "Perhitungan;Matematika;Aritmatika;Ilmiah;"
+msgstr "Perhitungan;Matematika;Aritmetika;Ilmiah;"
 
 #: data/io.elementary.calculator.desktop.in:21
 msgid "New Window"
-msgstr "Jendela baru"
+msgstr "Jendela Baru"
 
 #~ msgid "Update to elementary 6.1 runtime"
 #~ msgstr "Perbarui ke runtime elementary 6.1"
