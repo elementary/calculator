@@ -573,18 +573,23 @@ public class PantheonCalculator.MainWindow : Gtk.ApplicationWindow {
         var token = variant.get_string ();
         int selection_start = -1;
         int selection_end = -1;
+        var selected_text = "";
+        int new_position = entry.get_position ();
         if (entry.get_selection_bounds (out selection_start, out selection_end)) {
-            int new_position = selection_start;
-            string selected_text = entry.get_chars (selection_start, selection_end);
-            string function_call = token + "(" + selected_text + ")";
-            entry.delete_text (selection_start, selection_end);
-            entry.insert_text (function_call, -1, ref selection_start);
-            new_position += function_call.char_count ();
-            entry.grab_focus ();
-            entry.set_position (new_position);
-        } else {
-            activate_action (ACTION_INSERT, variant);
+            new_position = selection_start;
+            selected_text = entry.get_chars (selection_start, selection_end);
         }
+
+        string function_call = token + "(" + selected_text + ")";
+        entry.delete_text (selection_start, selection_end);
+        entry.insert_text (function_call, -1, ref selection_start);
+        new_position += function_call.char_count ();
+        entry.grab_focus ();
+        if (selected_text == "") {
+            new_position--;
+        }
+
+        entry.set_position (new_position);
     }
 
     private void button_calc_clicked () {
