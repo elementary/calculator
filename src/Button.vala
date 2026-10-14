@@ -35,6 +35,13 @@ public class PantheonCalculator.Button : Gtk.Button {
             halign = CENTER
         };
         child = image;
+
+        /*
+         * Our stylesheet removes background, border, box-shadow properties from image buttons.
+         * That looks rather out of place in Calculator because surrounding text buttons have
+         * these properties. So remove the image-button class.
+         */
+        remove_css_class ("image-button");
     }
 
     construct {
