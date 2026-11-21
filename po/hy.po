@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-19 16:42+0000\n"
-"PO-Revision-Date: 2016-05-27 15:28+0000\n"
-"Last-Translator: Maxwell Barvian <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-11-21 16:10+0000\n"
+"Last-Translator: Davit Yedigaryan <davit.yedigaryan.1993@gmail.com>\n"
+"Language-Team: Armenian <https://l10n.elementaryos.org/projects/calculator/"
+"calculator/hy/>\n"
+"Language: hy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2016-12-31 04:43+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: src/MainWindow.vala:85
 msgid "Calculator"
@@ -28,7 +30,7 @@ msgstr "Պատմություն"
 
 #: src/MainWindow.vala:123
 msgid "Calculate Result"
-msgstr ""
+msgstr "Հաշվել արդյունքը"
 
 #: src/MainWindow.vala:130
 #, fuzzy
@@ -42,136 +44,136 @@ msgstr "Ետ"
 
 #: src/MainWindow.vala:142
 msgid "Clear entry"
-msgstr ""
+msgstr "Մաքրել մուտքագրումը"
 
 #: src/MainWindow.vala:149
 msgid "Add"
-msgstr ""
+msgstr "Գումարել"
 
 #: src/MainWindow.vala:156
 msgid "Subtract"
-msgstr ""
+msgstr "Հանել"
 
 #: src/MainWindow.vala:163
 msgid "Multiply"
-msgstr ""
+msgstr "Բազմապատկել"
 
 #: src/MainWindow.vala:170
 msgid "Divide"
-msgstr ""
+msgstr "Բաժանել"
 
 #: src/MainWindow.vala:187
 msgid "Percentage"
-msgstr ""
+msgstr "Տոկոս"
 
 #: src/MainWindow.vala:269
 msgid "Set memory value"
-msgstr ""
+msgstr "Սահմանել հիշողության արժեքը"
 
 #: src/MainWindow.vala:274
 msgid "Recall value from memory"
-msgstr ""
+msgstr "Վերականգնել արժեքը հիշողությունից"
 
 #: src/MainWindow.vala:278
 msgid "Add to stored value"
-msgstr ""
+msgstr "Գումարել պահված արժեքին"
 
 #: src/MainWindow.vala:282
 msgid "Subtract from stored value"
-msgstr ""
+msgstr "Հանել պահված արժեքից"
 
 #: src/MainWindow.vala:287
 msgid "Clear memory"
-msgstr ""
+msgstr "Մաքրել հիշողությունը"
 
 #: src/MainWindow.vala:292
 msgid "Grand Total"
-msgstr ""
+msgstr "Ընդհանուր գումար"
 
 #: src/MainWindow.vala:298
 msgid "Start Group"
-msgstr ""
+msgstr "Բացել փակագծերը"
 
 #: src/MainWindow.vala:304
 msgid "End Group"
-msgstr ""
+msgstr "Փակել փակագծերը"
 
 #: src/MainWindow.vala:310
 msgid "Exponent"
-msgstr ""
+msgstr "Աստիճան"
 
 #: src/MainWindow.vala:316
 msgid "Root"
-msgstr ""
+msgstr "Արմատ"
 
 #: src/MainWindow.vala:322
 msgid "Sine"
-msgstr ""
+msgstr "Սինուս"
 
 #: src/MainWindow.vala:328
 msgid "Hyperbolic Sine"
-msgstr ""
+msgstr "Հիպերբոլիկ սինուս"
 
 #: src/MainWindow.vala:334
 msgid "Cosine"
-msgstr ""
+msgstr "Կոսինուս"
 
 #: src/MainWindow.vala:340
 msgid "Hyperbolic Cosine"
-msgstr ""
+msgstr "Հիպերբոլիկ կոսինուս"
 
 #: src/MainWindow.vala:346
 msgid "Tangent"
-msgstr ""
+msgstr "Տանգենս"
 
 #: src/MainWindow.vala:352
 msgid "Hyperbolic Tangent"
-msgstr ""
+msgstr "Հիպերբոլիկ տանգենս"
 
 #: src/MainWindow.vala:358
 msgid "Pi"
-msgstr ""
+msgstr "Պի"
 
 #: src/MainWindow.vala:364
 msgid "Euler's Number"
-msgstr ""
+msgstr "Էյլերի թիվ"
 
 #: src/MainWindow.vala:370
 msgid "Logarithm Base 10"
-msgstr ""
+msgstr "Տասնորդական լոգարիթմ"
 
 #: src/MainWindow.vala:376
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Բնական լոգարիթմ"
 
 #: src/MainWindow.vala:382
 msgid "Inverse Sine"
-msgstr ""
+msgstr "Արկսինուս"
 
 #: src/MainWindow.vala:388
 msgid "Inverse Cosine"
-msgstr ""
+msgstr "Արկկոսինուս"
 
 #: src/MainWindow.vala:394
 msgid "Inverse Tangent"
-msgstr ""
+msgstr "Արկտանգենս"
 
 #: src/MainWindow.vala:398
 msgid "Reciprocal"
-msgstr ""
+msgstr "Հակադարձ արժեք"
 
 #. Show extended functionality
 #: src/MainWindow.vala:776
 msgid "Hide extended functionality"
-msgstr ""
+msgstr "Թաքցնել ընդլայնված հնարավորությունները"
 
 #: src/HistoryDialog.vala:43
 msgid "Insert a previous expression or result into the current calculation."
-msgstr ""
+msgstr "Ընթացիկ հաշվարկի մեջ տեղադրեք նախորդ արտահայտությունը կամ արդյունքը։"
 
 #: src/HistoryDialog.vala:81
 msgid "Value to insert:"
-msgstr ""
+msgstr "Տեղադրվող արժեքը՝"
 
 #: src/HistoryDialog.vala:86
 msgid "Result"
@@ -194,16 +196,16 @@ msgstr "Փակել"
 
 #: src/HistoryDialog.vala:118
 msgid "Insert"
-msgstr ""
+msgstr "Տեղադրել"
 
 #: src/Core/Scanner.vala:68
 #, c-format
 msgid "'%s' is invalid."
-msgstr ""
+msgstr "«%s»-ն անվավեր է։"
 
 #: src/Core/Scanner.vala:116
 msgid "Mismatched parenthesis."
-msgstr ""
+msgstr "Փակագծերը չեն համապատասխանում։"
 
 #. If no rule matches the character at pos, throw an error.
 #: src/Core/Scanner.vala:169
